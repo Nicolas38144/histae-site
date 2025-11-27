@@ -1,0 +1,36 @@
+.switch {
+  width: 57px;
+  height: 32px;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.thumb {
+  width: 30px;
+  height: 30px;
+  background: var(--bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 2px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.light, .dark {
+  background: var(--toggle-bg);
+}
+
+.light .thumb {
+  transform: translateX(0);
+}
+
+.dark .thumb {
+  transform: translateX(23px);
+}

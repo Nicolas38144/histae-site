@@ -1,0 +1,18 @@
+:root {
+  --bg: #ffffff;
+  --menu-item-bg: #ffffff;
+  --menu-item-text-hoover: #1f2937;
+  --menu-item-underline: #1f2937;
+  --text: #1f2937;
+  --language-bg: #444444;
+  --toggle-bg: #dcdcdc;
+}
+
+html.dark {
+  --bg: #242424;
+  --menu-item-text-hoover: #1f2937;
+  --menu-item-underline: #ffffff;
+  --text: #f7f7f7;
+  --language-bg: #444444;
+  --toggle-bg: #333;
+}

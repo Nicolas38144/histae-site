@@ -1,0 +1,18 @@
+{
+  "Home": {
+    "title": "Accueil"
+  },
+
+	"About": {
+    "title": "En savoir plus"
+	},
+
+  "NavBar": {
+    "brand": "Vibaio",
+    "products": "Products",
+    "about": "En savoir plus",
+    "security": "Sécurité",
+    "download": "Télécharger",
+    "language": "Langue"
+  }
+}

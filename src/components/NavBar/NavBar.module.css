@@ -1,0 +1,80 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  padding: 9px 18px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.menuItem {
+  cursor: pointer;
+  position: relative;
+  padding: 5px 15px;
+  background-color: transparent;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: var(--menu-item-underline);
+  text-underline-offset: 10px;
+}
+
+.menuItem:hover {
+  background-color: var(--menu-item-bg);
+  color: var(--menu-item-text-hoover);
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.langBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 5px 15px;
+  background-color: transparent;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  transition: all 0.2s ease;
+  color: var(--color);
+}
+
+.langBtn:hover {
+  background-color: var(--toggle-bg);
+}
+
+.langIcon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
