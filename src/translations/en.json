@@ -3,8 +3,16 @@
     "title": "Home"
   },
 
-	"About": {
+	"Feature": {
+    "title": "Feature"
+	},
+
+  "About": {
     "title": "About"
+  },
+
+	"Security": {
+    "title": "Security"
 	},
 
   "NavBar": {

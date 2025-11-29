@@ -3,13 +3,21 @@
     "title": "Accueil"
   },
 
+	"Feature": {
+    "title": "Produits"
+	},
+
 	"About": {
     "title": "En savoir plus"
 	},
 
+  "Security": {
+    "title": "Sécurité"
+	},
+
   "NavBar": {
     "brand": "Vibaio",
-    "products": "Products",
+    "products": "Produits",
     "about": "En savoir plus",
     "security": "Sécurité",
     "download": "Télécharger",
