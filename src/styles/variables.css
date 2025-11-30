@@ -6,6 +6,9 @@
   --text: #1f2937;
   --language-bg: #444444;
   --toggle-bg: #dcdcdc;
+  --popup-bg: #ffffff;
+  --popup-button-hoover: #eee;
+  --popup-local-name: #9a9a9a;
 }
 
 html.dark {
@@ -15,4 +18,6 @@ html.dark {
   --text: #f7f7f7;
   --language-bg: #444444;
   --toggle-bg: #333;
+  --popup-button-hoover: #333;
+  --popup-local-name: #9a9a9a;
 }

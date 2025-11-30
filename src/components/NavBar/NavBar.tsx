@@ -5,13 +5,18 @@ import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import languageLight from "../../assets/language-light.svg";
 import languageDark from "../../assets/language-dark.svg";
 import { useTranslation } from "react-i18next";
-
+import { useState } from "react";
+import LanguageSelector from "../LanguageSelector/LanguageSelector";
+import { useLanguages } from "../../hooks/useLanguages";
 
 function NavBar() {
   const navigate = useNavigate();
   const { theme } = useTheme();
   const { lang } = useParams();
   const { t } = useTranslation();
+  const { languages } = useLanguages();
+
+  const [showLangPopup, setShowLangPopup] = useState(false);
 
   const navItems = [
     { label: t("NavBar.products"), link: `/${lang}/feature` },
@@ -21,6 +26,7 @@ function NavBar() {
   ];
 
   return (
+    <>
     <nav className={`${styles.nav} ${styles[theme]}`}>
       <div className={styles.left}>
         <h1 className={styles.logo} onClick={() => navigate(`/${lang}`)}>
@@ -41,7 +47,7 @@ function NavBar() {
 
       <div className={styles.right}>
         <ThemeToggle />
-        <button className={styles.langBtn}>
+        <button className={styles.langBtn} onClick={() => setShowLangPopup(true)}>
           <img
             src={theme === "dark" ? languageLight : languageDark}
             alt={t("NavBar.language")}
@@ -51,6 +57,14 @@ function NavBar() {
         </button>
       </div>
     </nav>
+
+    {showLangPopup && (
+        <LanguageSelector
+          languages={languages}
+          onClose={() => setShowLangPopup(false)}
+        />
+      )}
+    </>
   );
 }
 

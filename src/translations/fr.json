@@ -22,5 +22,17 @@
     "security": "Sécurité",
     "download": "Télécharger",
     "language": "Langue"
+  },
+
+  "LanguageSelector": {
+    "choose": "Choisir une langue",
+    "close": "Fermer"
+  },
+
+  "language": {
+    "fr": "français",
+    "en": "anglais",
+    "it": "italien",
+    "es": "espagnol"
   }
 }

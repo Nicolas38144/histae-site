@@ -1,0 +1,38 @@
+{
+  "Home": {
+    "title": "Home"
+  },
+
+  "Feature": {
+    "title": "Funzionalità"
+  },
+
+  "About": {
+    "title": "Informazioni"
+  },
+
+  "Security": {
+    "title": "Sicurezza"
+  },
+
+  "NavBar": {
+    "brand": "Vibaio",
+    "products": "Prodotti",
+    "about": "Altre informazioni",
+    "security": "Sicurezza",
+    "download": "Scarica",
+    "language": "Lingua"
+  },
+
+  "LanguageSelector": {
+    "choose": "Scegli la tua lingua",
+    "close": "Chiudere"
+  },
+  
+  "language": {
+    "fr": "francese",
+    "en": "inglese",
+    "it": "italiano",
+    "es": "spagnolo"
+  }
+}
