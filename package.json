@@ -1,11 +1,12 @@
 {
-  "name": "vibaio-site",
+  "name": "histae-site",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "postbuild": "./deploy.sh",
     "lint": "eslint .",
     "preview": "vite preview"
   },
