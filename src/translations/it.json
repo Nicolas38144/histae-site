@@ -15,6 +15,13 @@
     "title": "Sicurezza"
   },
 
+  "Download": {
+    "title": "Scarica l'applicazione",
+    "subtitle": "Disponibile su iOS e Android.",
+    "availableOn": "Scarica su",
+    "getItOn": "DISPONIBILE SU"
+  },
+
   "NavBar": {
     "brand": "Histae",
     "products": "Prodotti",

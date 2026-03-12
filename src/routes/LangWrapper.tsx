@@ -7,6 +7,7 @@ import About from "../pages/About";
 import NavBar from "../components/NavBar/NavBar";
 import Feature from "../pages/Feature";
 import Security from "../pages/Security";
+import Download from "../pages/Download";
 
 interface LangWrapperProps {
   supportedLangs: string[];
@@ -36,6 +37,7 @@ export default function LangWrapper({ supportedLangs, fallbackLng }: LangWrapper
         <Route path="feature" element={<Feature />} />
         <Route path="about" element={<About />} />
         <Route path="security" element={<Security />} />
+        <Route path="download" element={<Download />} />
         <Route path="*" element={<Navigate to={`/${lang}`} replace />} />
       </Routes>
     </>
