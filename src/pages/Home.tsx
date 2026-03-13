@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <div className="home">
       <h1>{t("Home.title")}</h1>
+      <p>Promis maintenant je révise à fond le toeic !</p>
     </div>
   );
 };

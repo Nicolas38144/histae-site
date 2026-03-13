@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "postbuild": "./deploy.sh",
     "lint": "eslint .",
     "preview": "vite preview"
   },
