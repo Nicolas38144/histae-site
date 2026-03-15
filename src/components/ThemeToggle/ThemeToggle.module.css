@@ -1,6 +1,6 @@
 .switch {
-  width: 57px;
-  height: 32px;
+  width: 44px;
+  height: 24px;
   border-radius: 30px;
   position: relative;
   cursor: pointer;
@@ -10,8 +10,8 @@
 }
 
 .thumb {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background: var(--bg);
   border-radius: 50%;
   display: flex;
@@ -20,7 +20,7 @@
   position: absolute;
   left: 2px;
   transition: all 0.3s ease;
-  font-size: 1.1rem;
+  font-size: 0.85rem;
 }
 
 .light, .dark {
@@ -32,5 +32,5 @@
 }
 
 .dark .thumb {
-  transform: translateX(23px);
+  transform: translateX(20px);
 }

@@ -9,6 +9,11 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  animation: fadeIn 0.250s ease-out forwards;
+}
+
+.overlay.closing {
+  animation: fadeOut 0.250s ease-out forwards;
 }
 
 .popup {
@@ -18,6 +23,43 @@
   border-radius: 12px;
   max-width: 600px;
   width: 90%;
+  animation: scaleIn 0.250s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.popup.closingPopup {
+  animation: scaleOut 0.250s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
 }
 
 .languagePopup {
@@ -81,4 +123,9 @@
   width: 25px;
   height: 25px;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.closeButton:hover .closeIcon {
+  transform: rotate(120deg); 
 }

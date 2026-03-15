@@ -2,15 +2,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-weight: 600;
-  padding: 9px 18px;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg);
+  /* Optional glassmorphism, if desired in the future */
+  /* backdrop-filter: blur(10px); */
+  /* background-color: color-mix(in srgb, var(--bg) 90%, transparent); */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .left {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+
+.mobileHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburgerBtn {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+  padding: 5px;
+}
+
+.hamburgerBtn svg {
+  width: 28px;
+  height: 28px;
 }
 
 .logo {
@@ -30,23 +58,33 @@
 .menuItem {
   cursor: pointer;
   position: relative;
-  padding: 5px 15px;
+  padding: 8px 16px;
   background-color: transparent;
-  border-radius: 25px;
-  font-size: 1.3rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
   transition: all 0.2s ease;
   display: inline-block;
-  text-decoration: underline;
-  text-decoration-color: var(--menu-item-underline);
-  text-underline-offset: 10px;
+}
+
+/* Elegant underline hover effect instead of background fill defaults */
+.menuItem::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0px;
+  left: 50%;
+  background-color: var(--menu-item-underline);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.menuItem:hover::after {
+  width: 70%;
 }
 
 .menuItem:hover {
-  background-color: var(--menu-item-bg);
   color: var(--menu-item-text-hoover);
-  text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s ease;
 }
 
 .right {
@@ -60,13 +98,13 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
-  padding: 5px 15px;
+  padding: 8px 16px;
   background-color: transparent;
   border: none;
-  border-radius: 25px;
-  font-size: 1.3rem;
+  border-radius: 20px;
+  font-size: 1.1rem;
   transition: all 0.2s ease;
-  color: var(--color);
+  color: var(--text);
 }
 
 .langBtn:hover {
@@ -74,7 +112,64 @@
 }
 
 .langIcon {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   display: block;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1025px) {
+  .hamburgerBtn {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg);
+    border-top: 1px solid var(--toggle-bg);
+    padding: 20px 0;
+    gap: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu.open {
+    display: flex;
+    animation: slideDown 0.3s ease-out forwards;
+  }
+
+  .menuItem {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menuItem::after {
+    display: none;
+  }
+
+  /* Optional: On smaller screens, hide the "Language" text to maximize space */
+  @media (max-width: 480px) {
+    .langText {
+      display: none;
+    }
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

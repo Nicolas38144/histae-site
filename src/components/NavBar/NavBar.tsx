@@ -17,6 +17,7 @@ function NavBar() {
   const { languages } = useLanguages();
 
   const [showLangPopup, setShowLangPopup] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
     { label: t("NavBar.products"), link: `/${lang}/feature` },
@@ -25,19 +26,28 @@ function NavBar() {
     { label: t("NavBar.download"), link: `/${lang}/download` },
   ];
 
+  const handleNavigation = (link: string) => {
+    setIsMobileMenuOpen(false);
+    navigate(link);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <>
     <nav className={`${styles.nav} ${styles[theme]}`}>
       <div className={styles.left}>
-        <h1 className={styles.logo} onClick={() => navigate(`/${lang}`)}>
+        <h1 className={styles.logo} onClick={() => handleNavigation(`/${lang}`)}>
           {t("NavBar.brand")}
         </h1>
-        <ul className={styles.menu}>
+        <ul className={`${styles.menu} ${isMobileMenuOpen ? styles.open : ""}`}>
           {navItems.map((item, index) => (
             <li
               key={index}
               className={styles.menuItem}
-              onClick={() => navigate(item.link)}
+              onClick={() => handleNavigation(item.link)}
             >
               {item.label}
             </li>
@@ -53,7 +63,12 @@ function NavBar() {
             alt={t("NavBar.language")}
             className={styles.langIcon}
           />
-          {t("NavBar.language")}
+          <span className={styles.langText}>{t("NavBar.language")}</span>
+        </button>
+        <button className={styles.hamburgerBtn} onClick={toggleMobileMenu} aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
         </button>
       </div>
     </nav>
