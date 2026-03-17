@@ -8,7 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: var(--bg);
+  background: transparent;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -98,15 +98,15 @@
   cursor: pointer;
   padding: 8px 16px;
   background-color: transparent;
-  border: none;
-  border-radius: 20px;
   font-size: 1.2rem;
   transition: all 0.2s ease;
   color: var(--text);
+  border: 1px solid transparent;
+  border-radius: 20px;
 }
 
 .langBtn:hover {
-  background-color: var(--toggle-bg);
+  border: solid 1px var(--text);
 }
 
 .langIcon {

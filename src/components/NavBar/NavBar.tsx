@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import { useTheme } from "../../hooks/useTheme";
-import ThemeToggle from "../ThemeToggle/ThemeToggle";
+// import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import languageLight from "../../assets/language-light.svg";
 import languageDark from "../../assets/language-dark.svg";
 import { useTranslation } from "react-i18next";
@@ -56,7 +56,7 @@ function NavBar() {
       </div>
 
       <div className={styles.right}>
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
         <button className={styles.langBtn} onClick={() => setShowLangPopup(true)}>
           <img
             src={theme === "dark" ? languageLight : languageDark}

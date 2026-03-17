@@ -1,13 +1,10 @@
 import AppRoutes from "./routes/AppRoutes";
 import "./styles/variables.css";
+import styles from "./App.module.css";
 
 export default function App() {
   return (
-    <div style={{ 
-      background: "var(--bg)",
-      color: "var(--text)",
-      height: "100vh",
-    }}>
+    <div className={styles.appContainer}>
       <AppRoutes />
     </div>
   );

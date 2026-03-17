@@ -12,10 +12,16 @@
 }
 
 html.dark {
-  --bg: #242424;
+  /* --bg: #111418; */
+  --bg: #15202c;
+  --linear-bg: linear-gradient(
+      to bottom right,
+      #15202c 30%,
+      #3b1f4a 85%
+    );
   --menu-item-text-hoover: #ffffff;
   --menu-item-underline: #ffffff;
-  --text: #f7f7f7;
+  --text: #f0f2f4;
   --language-bg: #444444;
   --toggle-bg: #333;
   --popup-button-hoover: #333;

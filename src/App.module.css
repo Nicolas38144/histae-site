@@ -1,0 +1,37 @@
+.appContainer {
+  background: var(--linear-bg);
+  color: var(--text);
+  /* minHeight: 100vh; */
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔥 Effet lumière subtil (les fameuses "bulles") */
+.appContainer::before,
+.appContainer::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
+}
+
+/* lumière bleue */
+.appContainer::before {
+  width: 400px;
+  height: 400px;
+  background: #3b82f6;
+  top: -120px;
+  left: -120px;
+  opacity: 0.2;
+}
+
+/* lumière violette */
+.appContainer::after {
+  width: 350px;
+  height: 350px;
+  background: #6366f1;
+  bottom: -120px;
+  right: -120px;
+  opacity: 0.15;
+}
