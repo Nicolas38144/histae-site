@@ -1,6 +1,6 @@
 .appContainer {
   background: var(--linear-bg);
-  color: var(--text);
+  color: var(--white);
   /* minHeight: 100vh; */
   position: relative;
   overflow: hidden;

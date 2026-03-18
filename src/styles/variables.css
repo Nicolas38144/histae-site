@@ -1,13 +1,10 @@
 :root {
-  --bg: #ffffff;
-  --menu-item-bg: #ffffff;
+  --bg: #f0f2f4;
   --menu-item-text-hoover: #1f2937;
   --menu-item-underline: #1f2937;
-  --text: #1f2937;
-  --language-bg: #444444;
+  --white: #1f2937;
   --toggle-bg: #dcdcdc;
-  --popup-bg: #ffffff;
-  --popup-button-hoover: #eee;
+  --popup-bg: #f0f2f4;
   --popup-local-name: #9a9a9a;
 }
 
@@ -19,11 +16,9 @@ html.dark {
       #15202c 30%,
       #3b1f4a 85%
     );
-  --menu-item-text-hoover: #ffffff;
-  --menu-item-underline: #ffffff;
-  --text: #f0f2f4;
-  --language-bg: #444444;
+  --menu-item-text-hoover: #f0f2f4;
+  --menu-item-underline: #f0f2f4;
+  --white: #f0f2f4;
   --toggle-bg: #333;
-  --popup-button-hoover: #333;
   --popup-local-name: #9a9a9a;
 }

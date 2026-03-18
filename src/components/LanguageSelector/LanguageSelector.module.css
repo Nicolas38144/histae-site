@@ -17,12 +17,15 @@
 }
 
 .popup {
-  background: var(--bg);
-  color: var(--text);
+  background: var(--linear-bg);
+  color: var(--white);
   padding: 20px;
+  margin: 0px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   max-width: 600px;
   width: 90%;
+  min-height: 200px;
   animation: scaleIn 0.250s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
@@ -74,13 +77,8 @@
   width: 25px;
   border: none;
   cursor: pointer;
-  background: var(--bg);
-  color: var(--text);
   padding: 0px;
-}
-
-.closeButton:hover {
-  color: var(--popup-button-hoover);
+  background: transparent;
 }
 
 .languagePopup h3 { margin: 0px; }
@@ -95,7 +93,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: var(--bg);
+  background: rgba(0,0,0,0.2);
   border: none;
   padding: 10px;
   border-radius: 8px;
@@ -104,13 +102,13 @@
 }
 
 .languageGrid button:hover {
-  background: var(--popup-button-hoover);
+  background: rgba(0,0,0,0.4);
 }
 
 .langName {
   font-weight: bold;
   font-size: 1rem;
-  color: var(--text);
+  color: var(--white);
 }
 
 .langLocal {
@@ -126,6 +124,6 @@
   transition: transform 0.3s ease;
 }
 
-.closeButton:hover .closeIcon {
+.closeIcon:hover {
   transform: rotate(120deg); 
 }
