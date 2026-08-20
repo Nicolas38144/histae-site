@@ -37,3 +37,10 @@ export function localizedHref(locale: Locale, routeId: SiteRouteId): string {
   const path = siteRoutes[routeId].path;
   return path ? `/${locale}/${path}` : `/${locale}`;
 }
+
+export function switchPathLocale(pathname: string, targetLocale: Locale): string {
+  const segments = pathname.split("/").filter(Boolean);
+  if (segments[0] && isLocale(segments[0])) segments[0] = targetLocale;
+  else segments.unshift(targetLocale);
+  return `/${segments.join("/")}`;
+}

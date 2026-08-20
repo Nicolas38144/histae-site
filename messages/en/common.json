@@ -15,8 +15,24 @@
     "skip": "Skip to content",
     "navigation": "Main navigation"
   },
+  "seo": {
+    "home": { "title": "A more human dating app" },
+    "feature": { "title": "Dating app features" },
+    "pricing": { "title": "Free and Premium pricing" },
+    "safety": { "title": "Safety and privacy" },
+    "about": { "title": "Our vision for dating" },
+    "download": { "title": "App coming soon" }
+  },
   "footer": {
     "line": "Histae — give a connection the time to exist.",
-    "madeFor": "A considered product, still in the making."
+    "summary": "A dating app built around time, reciprocity and consent at every step.",
+    "navigation": "Footer navigation",
+    "exploreTitle": "Discover",
+    "projectTitle": "The project",
+    "statusLabel": "Project status",
+    "status": "iOS and Android app in development",
+    "availability": "The initial launch is planned for France. Official links will be published on this website.",
+    "rights": "All rights reserved.",
+    "madeFor": "A showcase website designed with care."
   }
 }

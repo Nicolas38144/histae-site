@@ -15,8 +15,24 @@
     "skip": "Aller au contenu",
     "navigation": "Navigation principale"
   },
+  "seo": {
+    "home": { "title": "Application de rencontre plus humaine" },
+    "feature": { "title": "Fonctionnalités de l’application" },
+    "pricing": { "title": "Tarifs Free et Premium" },
+    "safety": { "title": "Sécurité et confidentialité" },
+    "about": { "title": "Notre vision des rencontres" },
+    "download": { "title": "Application bientôt disponible" }
+  },
   "footer": {
     "line": "Histae — prendre le temps de se rencontrer.",
-    "madeFor": "Une vitrine en construction, pensée avec attention."
+    "summary": "Une application de rencontre fondée sur le temps, la réciprocité et le consentement à chaque étape.",
+    "navigation": "Navigation du pied de page",
+    "exploreTitle": "Découvrir",
+    "projectTitle": "Le projet",
+    "statusLabel": "Statut du projet",
+    "status": "Application iOS et Android en préparation",
+    "availability": "Un premier lancement est prévu en France. Les liens officiels seront publiés sur ce site.",
+    "rights": "Tous droits réservés.",
+    "madeFor": "Une vitrine pensée avec attention."
   }
 }

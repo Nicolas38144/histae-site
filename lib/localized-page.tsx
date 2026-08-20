@@ -25,16 +25,17 @@ export function createLocalizedPage(render: (locale: Locale) => ReactNode) {
 export function getRouteMetadataCopy(messages: AppMessages, routeId: SiteRouteId) {
   switch (routeId) {
     case "home":
-      return { title: messages.home.title, description: messages.home.intro };
+      return { title: messages.seo.home.title, description: messages.home.intro };
     case "pricing":
-      return { title: messages.pricing.title, description: messages.pricing.intro };
+      return { title: messages.seo.pricing.title, description: messages.pricing.intro };
     case "feature":
+      return { title: messages.seo.feature.title, description: messages.pages.feature.intro };
     case "safety":
+      return { title: messages.seo.safety.title, description: messages.pages.safety.intro };
     case "about":
-    case "download": {
-      const page = messages.pages[routeId];
-      return { title: page.title, description: page.intro };
-    }
+      return { title: messages.seo.about.title, description: messages.pages.about.intro };
+    case "download":
+      return { title: messages.seo.download.title, description: messages.pages.download.intro };
   }
 }
 

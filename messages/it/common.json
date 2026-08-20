@@ -15,8 +15,24 @@
     "skip": "Vai al contenuto",
     "navigation": "Navigazione principale"
   },
+  "seo": {
+    "home": { "title": "Un’app di incontri più umana" },
+    "feature": { "title": "Funzioni dell’app" },
+    "pricing": { "title": "Prezzi Free e Premium" },
+    "safety": { "title": "Sicurezza e privacy" },
+    "about": { "title": "La nostra idea di incontri" },
+    "download": { "title": "App in arrivo" }
+  },
   "footer": {
     "line": "Histae — dare a un incontro il tempo di esistere.",
-    "madeFor": "Un prodotto attento, ancora in costruzione."
+    "summary": "Un’app di incontri fondata sul tempo, sulla reciprocità e sul consenso in ogni fase.",
+    "navigation": "Navigazione del piè di pagina",
+    "exploreTitle": "Scopri",
+    "projectTitle": "Il progetto",
+    "statusLabel": "Stato del progetto",
+    "status": "App iOS e Android in preparazione",
+    "availability": "Il primo lancio è previsto in Francia. I link ufficiali saranno pubblicati su questo sito.",
+    "rights": "Tutti i diritti riservati.",
+    "madeFor": "Un sito vetrina progettato con attenzione."
   }
 }

@@ -15,8 +15,24 @@
     "skip": "Ir al contenido",
     "navigation": "Navegación principal"
   },
+  "seo": {
+    "home": { "title": "Una app de citas más humana" },
+    "feature": { "title": "Funciones de la aplicación" },
+    "pricing": { "title": "Precios Free y Premium" },
+    "safety": { "title": "Seguridad y privacidad" },
+    "about": { "title": "Nuestra visión de las citas" },
+    "download": { "title": "Aplicación próximamente" }
+  },
   "footer": {
     "line": "Histae — dar a un encuentro el tiempo de existir.",
-    "madeFor": "Un producto atento, todavía en construcción."
+    "summary": "Una aplicación de citas basada en el tiempo, la reciprocidad y el consentimiento en cada etapa.",
+    "navigation": "Navegación del pie de página",
+    "exploreTitle": "Descubrir",
+    "projectTitle": "El proyecto",
+    "statusLabel": "Estado del proyecto",
+    "status": "Aplicación para iOS y Android en preparación",
+    "availability": "El primer lanzamiento está previsto en Francia. Los enlaces oficiales se publicarán en este sitio.",
+    "rights": "Todos los derechos reservados.",
+    "madeFor": "Un sitio de presentación diseñado con atención."
   }
 }

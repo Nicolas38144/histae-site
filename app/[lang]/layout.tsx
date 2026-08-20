@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
@@ -32,13 +31,10 @@ export default async function LocaleLayout({ children, params }: Readonly<{ chil
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
   setRequestLocale(lang);
-  const messages = getMessagesForLocale(lang);
   return (
     <html lang={lang}>
       <body>
-        <NextIntlClientProvider locale={lang} messages={messages}>
-          <PageShell locale={lang}>{children}</PageShell>
-        </NextIntlClientProvider>
+        <PageShell locale={lang}>{children}</PageShell>
       </body>
     </html>
   );
