@@ -4,7 +4,7 @@ import { localizedHref, type Locale, type SiteRouteId } from "../lib/site-config
 
 const footerGroups: Array<{ titleKey: "exploreTitle" | "projectTitle"; routes: SiteRouteId[] }> = [
   { titleKey: "exploreTitle", routes: ["home", "feature", "pricing", "safety"] },
-  { titleKey: "projectTitle", routes: ["about", "download"] },
+  { titleKey: "projectTitle", routes: ["about", "faq", "download"] },
 ];
 
 export async function SiteFooter({ locale }: { locale: Locale }) {
@@ -15,6 +15,7 @@ export async function SiteFooter({ locale }: { locale: Locale }) {
     pricing: t("nav.pricing"),
     safety: t("nav.safety"),
     about: t("nav.about"),
+    faq: t("nav.faq"),
     download: t("nav.download"),
   };
 

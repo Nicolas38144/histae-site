@@ -44,10 +44,6 @@
         "messaging": {
           "title": "Messaging tied to the match",
           "text": "Messages are timestamped, limited to 2,000 characters and marked read only by the recipient. An expired match accepts no new message."
-        },
-        "pricing": {
-          "title": "Clear allowances and prices",
-          "text": "Free includes {freeContinuations} successful continuations per week. Premium plans unlimited continuations at {monthlyPrice} per month or {annualPrice} per year, with a {trialDays}-day trial in the current catalogue."
         }
       }
     },
@@ -68,29 +64,9 @@
           "title": "Withdrawing consent has a real effect",
           "text": "Withdrawing sensitive-data consent removes the relevant sex and preference data. Withdrawing location consent immediately removes stored presence."
         },
-        "locationRetention": {
-          "title": "Location does not remain indefinitely",
-          "text": "A position becomes stale after one hour and is deleted after 24 hours. It disappears immediately when location consent is withdrawn."
-        },
-        "blocking": {
-          "title": "Blocking cuts the link immediately",
-          "text": "A block ends matches between both accounts, hides them from lists and prevents a new match while the block remains active."
-        },
-        "reporting": {
-          "title": "Report with useful context",
-          "text": "Inappropriate content, fake profiles, harassment, spam or another reason can be reported, with the related match when one exists."
-        },
         "rights": {
           "title": "Exercise data rights from the account",
           "text": "Access, portability, rectification, restriction, objection and erasure each have a dedicated, trackable journey."
-        },
-        "export": {
-          "title": "Export what belongs to you",
-          "text": "The export gathers profile, preferences, traits, consent, matches, sent messages, reports, blocks, subscription and the user’s own swipe decisions without revealing incoming choices from others."
-        },
-        "deletion": {
-          "title": "Deletion means actual erasure",
-          "text": "Deletion removes profile, preferences, traits, location, sessions, blocks, subscription and discovery decisions, anonymises messages and ends matches."
         }
       }
     },
@@ -111,10 +87,6 @@
           "title": "Privacy built into how it works",
           "text": "Sensitive data, location, rights and erasure are not afterthoughts: they determine what the product can display and process."
         },
-        "launch": {
-          "title": "A transparent launch",
-          "text": "The mobile app, store publication and payment journey are still being prepared. We will not present them as available before they truly open."
-        },
         "community": {
           "title": "A space to improve together",
           "text": "A community’s quality depends on its members, and on tools that let them set their own boundaries."
@@ -129,18 +101,6 @@
         "availability": {
           "title": "No pretend button",
           "text": "We would rather announce real availability than send you to an empty page."
-        },
-        "product": {
-          "title": "Already at the product’s core",
-          "text": "Profiles, mutual preferences, feed, reciprocal likes, match pacing, messaging, consent and safety tools already form a coherent journey."
-        },
-        "france": {
-          "title": "Launching first in France",
-          "text": "Passwordless access is currently designed for French +33 phone numbers, with a one-time code delivered by SMS."
-        },
-        "pricing": {
-          "title": "Plans already defined",
-          "text": "Free costs nothing; Premium is listed at {monthlyPrice} per month or {annualPrice} per year with a {trialDays}-day trial. Purchases will open with the launch payment journey."
         },
         "finalization": {
           "title": "What we are finalising",

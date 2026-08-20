@@ -5,6 +5,7 @@
     "pricing": "Tarifs",
     "safety": "Sécurité",
     "about": "À propos",
+    "faq": "FAQ",
     "download": "Télécharger"
   },
   "common": {
@@ -21,6 +22,7 @@
     "pricing": { "title": "Tarifs Free et Premium" },
     "safety": { "title": "Sécurité et confidentialité" },
     "about": { "title": "Notre vision des rencontres" },
+    "faq": { "title": "Questions fréquentes sur Histae" },
     "download": { "title": "Application bientôt disponible" }
   },
   "footer": {

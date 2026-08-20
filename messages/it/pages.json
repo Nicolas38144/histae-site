@@ -44,10 +44,6 @@
         "messaging": {
           "title": "Messaggi legati al match",
           "text": "I messaggi sono datati, limitati a 2.000 caratteri e solo il destinatario può segnarli come letti. Un match scaduto non accetta nuovi messaggi."
-        },
-        "pricing": {
-          "title": "Quote e prezzi chiari",
-          "text": "Free include {freeContinuations} continuazioni riuscite a settimana. Premium prevede continuazioni illimitate a {monthlyPrice} al mese o {annualPrice} all’anno, con {trialDays} giorni di prova nel catalogo attuale."
         }
       }
     },
@@ -68,29 +64,9 @@
           "title": "Poter cambiare idea",
           "text": "I consensi sensibili sono revocabili. Ritirare quello per la posizione elimina la presenza; ritirare quello per i dati sensibili elimina le preferenze associate."
         },
-        "locationRetention": {
-          "title": "Una posizione che non resta per sempre",
-          "text": "La posizione diventa obsoleta dopo un’ora e viene eliminata dopo 24 ore. Scompare subito quando il consenso viene ritirato."
-        },
-        "blocking": {
-          "title": "Bloccare per interrompere il contatto",
-          "text": "Un blocco chiude i match esistenti tra due persone e impedisce che vengano creati di nuovo."
-        },
-        "reporting": {
-          "title": "Segnalare con contesto",
-          "text": "Contenuti inappropriati, profili falsi, molestie, spam o altre situazioni possono essere segnalati e rivisti dalla moderazione autorizzata."
-        },
         "rights": {
           "title": "Esercitare i propri diritti",
           "text": "Accesso, rettifica, portabilità, limitazione, opposizione e cancellazione hanno percorsi dedicati e tracciabili."
-        },
-        "export": {
-          "title": "Esportare ciò che ti appartiene",
-          "text": "L’esportazione riunisce profilo, preferenze, tratti, consensi, match, messaggi inviati, segnalazioni, blocchi, abbonamento e swipe propri senza rivelare le scelte in entrata degli altri."
-        },
-        "deletion": {
-          "title": "Eliminare davvero",
-          "text": "La cancellazione dell’account rimuove i dati principali, l’attività di scoperta e i messaggi associati nei diversi sistemi di Histae."
         }
       }
     },
@@ -111,10 +87,6 @@
           "title": "Privacy fin dalla progettazione",
           "text": "Ridurre l’esposizione, separare i consensi e dare controllo sui dati sono scelte di prodotto, non aggiunte tardive."
         },
-        "launch": {
-          "title": "Trasparenza sullo stato di avanzamento",
-          "text": "Le app mobili, la pubblicazione negli store, i pagamenti e il percorso commerciale sono ancora in preparazione. Non li presentiamo come disponibili."
-        },
         "community": {
           "title": "Uno spazio da migliorare insieme",
           "text": "La qualità di una comunità dipende dai suoi membri e dagli strumenti che consentono di porre limiti."
@@ -129,18 +101,6 @@
         "availability": {
           "title": "Nessun pulsante finto",
           "text": "Preferiamo annunciare una disponibilità reale invece di mandarti a una pagina vuota."
-        },
-        "product": {
-          "title": "Già al cuore del prodotto",
-          "text": "Profili, preferenze reciproche, feed, like reciproci, ritmo dei match, messaggi, consensi e sicurezza formano già un percorso coerente."
-        },
-        "france": {
-          "title": "Primo lancio in Francia",
-          "text": "L’accesso senza password è attualmente previsto per numeri francesi +33, con un codice monouso inviato via SMS."
-        },
-        "pricing": {
-          "title": "Piani già definiti",
-          "text": "Free è gratuito; Premium è indicato a {monthlyPrice} al mese o {annualPrice} all’anno con {trialDays} giorni di prova. Gli acquisti apriranno con il percorso di pagamento del lancio."
         },
         "finalization": {
           "title": "Ancora in arrivo",

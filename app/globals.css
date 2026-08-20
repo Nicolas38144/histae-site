@@ -265,6 +265,17 @@ h1, h2, h3 { text-wrap: balance; }
 .page-closing { padding-bottom: clamp(5rem, 10vw, 9rem); }
 .page-closing p { max-width: 38rem; margin-bottom: 1rem; color: var(--muted); }
 
+.faq-list { display: grid; padding-bottom: clamp(3rem, 7vw, 6rem); border-top: 1px solid var(--line); }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item summary { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 2rem; padding: clamp(1.4rem, 3vw, 2.1rem) 0; cursor: pointer; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.3rem, 2.5vw, 1.85rem); list-style: none; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-toggle { display: grid; width: 2.2rem; height: 2.2rem; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--lavender); font-family: inherit; font-size: 1.35rem; transition: transform 180ms ease, border-color 180ms ease; }
+.faq-item[open] .faq-toggle { transform: rotate(45deg); border-color: rgba(182, 156, 255, 0.55); }
+.faq-answer { max-width: 48rem; padding: 0 0 clamp(1.6rem, 3vw, 2.3rem); }
+.faq-answer p { color: var(--muted); font-size: 1.05rem; }
+.faq-answer .text-link { display: inline-flex; margin-top: 1rem; }
+.faq-closing { padding-top: 0; }
+
 .site-footer { border-top: 1px solid var(--line); background: rgba(7, 12, 21, 0.38); }
 .footer-main { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 1fr) minmax(16rem, 0.9fr); gap: clamp(2.5rem, 6vw, 5rem); padding-block: clamp(3.8rem, 7vw, 6rem); }
 .footer-brand { max-width: 27rem; }

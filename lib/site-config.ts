@@ -19,7 +19,7 @@ export const defaultLocale = resolveDefaultLocale(siteConfig.defaultLocale);
 
 export const siteRoutes = siteConfig.routes;
 export type SiteRouteId = keyof typeof siteRoutes;
-export type InformationPageName = Exclude<SiteRouteId, "home" | "pricing">;
+export type InformationPageName = Exclude<SiteRouteId, "home" | "pricing" | "faq">;
 
 export function isSiteRouteId(value: string): value is SiteRouteId {
   return Object.prototype.hasOwnProperty.call(siteRoutes, value);
@@ -27,11 +27,6 @@ export function isSiteRouteId(value: string): value is SiteRouteId {
 
 export const siteRouteIds = Object.keys(siteRoutes).filter(isSiteRouteId);
 export const navigationRouteIds = siteRouteIds.filter((routeId) => siteRoutes[routeId].navigation);
-
-export function routePath(routeId: SiteRouteId): string {
-  const path = siteRoutes[routeId].path;
-  return path ? `/${path}` : "/";
-}
 
 export function localizedHref(locale: Locale, routeId: SiteRouteId): string {
   const path = siteRoutes[routeId].path;

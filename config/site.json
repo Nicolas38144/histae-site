@@ -12,6 +12,7 @@
     "feature": { "path": "feature", "navigation": true, "priority": 0.8 },
     "pricing": { "path": "pricing", "navigation": true, "priority": 0.8 },
     "safety": { "path": "security", "navigation": true, "priority": 0.8 },
+    "faq": { "path": "faq", "navigation": true, "priority": 0.8 },
     "about": { "path": "about", "navigation": true, "priority": 0.8 },
     "download": { "path": "download", "navigation": false, "priority": 0.8 }
   },

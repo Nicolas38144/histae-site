@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
-import { getCommercialValues } from "../lib/plans";
 import { localizedHref, type InformationPageName, type Locale } from "../lib/site-config";
 import { getMessagesForLocale, type AppMessages } from "../messages";
 
@@ -17,16 +16,7 @@ export async function InformationPage({ locale, pageName }: { locale: Locale; pa
   const t = await getTranslations({ locale });
   const messages = getMessagesForLocale(locale);
   const page = messages.pages[pageName];
-  const commercialValues = getCommercialValues(locale);
-  const blocks = getPageBlockEntries(messages, pageName).map(([blockId, block]) => {
-    if (pageName === "feature" && blockId === "pricing") {
-      return { ...block, text: t("pages.feature.blocks.pricing.text", commercialValues) };
-    }
-    if (pageName === "download" && blockId === "pricing") {
-      return { ...block, text: t("pages.download.blocks.pricing.text", commercialValues) };
-    }
-    return block;
-  });
+  const blocks = getPageBlockEntries(messages, pageName).map(([, block]) => block);
   const footerNote = pageName === "download" ? messages.pages.download.footerNote : undefined;
 
   return (

@@ -1,0 +1,54 @@
+{
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "The essential answers about Histae.",
+    "intro": "Availability, how connections work, pricing and privacy: here is what to know before launch.",
+    "items": {
+      "availability": {
+        "question": "When and where will Histae be available?",
+        "answer": "The iOS and Android app is in development. The initial launch is planned for France, with no confirmed public date yet. Official store links will be published on this website as soon as they open.",
+        "linkLabel": "Follow availability"
+      },
+      "account": {
+        "question": "How will I create an account?",
+        "answer": "Access is designed to be passwordless, using a one-time code sent by SMS. The initial launch supports French +33 phone numbers.",
+        "linkLabel": "See the safety measures"
+      },
+      "discovery": {
+        "question": "How are suggested profiles selected?",
+        "answer": "Discovery checks age ranges, who each person is looking for and maximum distance in both directions. It uses a recent, consented location and excludes profiles already assessed, blocked or matched.",
+        "linkLabel": "Explore the features"
+      },
+      "match": {
+        "question": "How does a match work?",
+        "answer": "A match exists only after two reciprocal likes. A first 24-hour window opens the conversation, then a second 24-hour window lets both people decide whether they want to continue.",
+        "linkLabel": "Understand the journey"
+      },
+      "photos": {
+        "question": "Why are photos not visible immediately?",
+        "answer": "Histae puts the profile, personality and conversation first. Photos are revealed only after both people agree, independently from their decision to continue the match.",
+        "linkLabel": "See how photo reveal works"
+      },
+      "pricing": {
+        "question": "What is the difference between Free and Premium?",
+        "answer": "Free includes messaging, mutual photo reveal and {freeContinuations} successful continuations per week. Premium plans unlimited continuations at {monthlyPrice} per month or {annualPrice} per year, with a {trialDays}-day trial.",
+        "linkLabel": "Compare pricing"
+      },
+      "location": {
+        "question": "How is location used and retained?",
+        "answer": "Location is used only for discovery with separate consent, and the displayed distance is rounded. It becomes stale after one hour, is deleted after 24 hours without an update and disappears immediately when consent is withdrawn.",
+        "linkLabel": "Read the privacy commitments"
+      },
+      "moderation": {
+        "question": "Can I block or report someone?",
+        "answer": "Yes. Blocking cuts the connection, closes the related matches and prevents them from being recreated while the block remains active. A report can include its reason and, when relevant, the related match.",
+        "linkLabel": "See the available protections"
+      },
+      "privacy": {
+        "question": "How can I exercise my rights or delete my data?",
+        "answer": "Histae provides dedicated journeys for access, portability, correction, restriction, objection and erasure. The export gathers account data; deletion removes the main data, anonymises messages and closes matches.",
+        "linkLabel": "Learn more about your rights"
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@
     "pricing": "Pricing",
     "safety": "Safety",
     "about": "About",
+    "faq": "FAQ",
     "download": "Download"
   },
   "common": {
@@ -21,6 +22,7 @@
     "pricing": { "title": "Free and Premium pricing" },
     "safety": { "title": "Safety and privacy" },
     "about": { "title": "Our vision for dating" },
+    "faq": { "title": "Frequently asked questions about Histae" },
     "download": { "title": "App coming soon" }
   },
   "footer": {

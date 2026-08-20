@@ -1,0 +1,54 @@
+{
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Las respuestas esenciales sobre Histae.",
+    "intro": "Disponibilidad, funcionamiento de los encuentros, precios y privacidad: esto es lo que debes saber antes del lanzamiento.",
+    "items": {
+      "availability": {
+        "question": "¿Cuándo y dónde estará disponible Histae?",
+        "answer": "La aplicación para iOS y Android está en preparación. El primer lanzamiento está previsto en Francia, todavía sin una fecha pública confirmada. Los enlaces oficiales se publicarán en este sitio cuando estén disponibles.",
+        "linkLabel": "Seguir la disponibilidad"
+      },
+      "account": {
+        "question": "¿Cómo se creará una cuenta?",
+        "answer": "El acceso está diseñado sin contraseña, mediante un código de un solo uso enviado por SMS. El lanzamiento inicial admite números franceses con prefijo +33.",
+        "linkLabel": "Ver las medidas de seguridad"
+      },
+      "discovery": {
+        "question": "¿Cómo se seleccionan los perfiles sugeridos?",
+        "answer": "El descubrimiento comprueba en ambos sentidos las edades, a quién busca cada persona y la distancia máxima. Utiliza una ubicación reciente y consentida, y excluye perfiles ya evaluados, bloqueados o emparejados.",
+        "linkLabel": "Descubrir las funciones"
+      },
+      "match": {
+        "question": "¿Cómo funciona un match?",
+        "answer": "Un match solo existe después de dos likes recíprocos. Una primera ventana de 24 horas abre la conversación y una segunda ventana de 24 horas permite que ambas personas decidan si quieren continuar.",
+        "linkLabel": "Entender el recorrido"
+      },
+      "photos": {
+        "question": "¿Por qué las fotos no se muestran inmediatamente?",
+        "answer": "Histae da prioridad al perfil, la personalidad y la conversación. Las fotos solo se revelan cuando ambas personas están de acuerdo, independientemente de su decisión de continuar el match.",
+        "linkLabel": "Ver cómo funciona la revelación"
+      },
+      "pricing": {
+        "question": "¿Qué diferencia hay entre Free y Premium?",
+        "answer": "Free incluye mensajes, revelación mutua de fotos y {freeContinuations} continuaciones exitosas por semana. Premium prevé continuaciones ilimitadas por {monthlyPrice} al mes o {annualPrice} al año, con {trialDays} días de prueba.",
+        "linkLabel": "Comparar precios"
+      },
+      "location": {
+        "question": "¿Cómo se utiliza y conserva la ubicación?",
+        "answer": "La ubicación se utiliza solo para el descubrimiento con un consentimiento separado, y la distancia mostrada se redondea. Queda obsoleta tras una hora, se elimina después de 24 horas sin actualización y desaparece al retirar el consentimiento.",
+        "linkLabel": "Consultar los compromisos de privacidad"
+      },
+      "moderation": {
+        "question": "¿Se puede bloquear o denunciar a una persona?",
+        "answer": "Sí. Un bloqueo corta el vínculo, cierra los matches relacionados e impide que se vuelvan a crear mientras siga activo. Una denuncia puede incluir el motivo y, cuando corresponda, el match relacionado.",
+        "linkLabel": "Ver las protecciones disponibles"
+      },
+      "privacy": {
+        "question": "¿Cómo se ejercen los derechos o se eliminan los datos?",
+        "answer": "Histae ofrece recorridos para el acceso, la portabilidad, la rectificación, la restricción, la oposición y la eliminación. La exportación reúne los datos de la cuenta; la eliminación borra los datos principales, anonimiza los mensajes y cierra los matches.",
+        "linkLabel": "Más información sobre tus derechos"
+      }
+    }
+  }
+}

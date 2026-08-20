@@ -44,10 +44,6 @@
         "messaging": {
           "title": "Une messagerie liée au match",
           "text": "Les messages sont horodatés, limités à 2 000 caractères et marqués comme lus uniquement par leur destinataire. Un match expiré n’accepte plus de message."
-        },
-        "pricing": {
-          "title": "Un quota et des tarifs lisibles",
-          "text": "Free inclut {freeContinuations} continuations réussies par semaine. Premium prévoit les continuations illimitées à {monthlyPrice} par mois ou {annualPrice} par an, avec {trialDays} jours d’essai au catalogue actuel."
         }
       }
     },
@@ -68,29 +64,9 @@
           "title": "Retirer un accord produit un effet réel",
           "text": "Retirer le consentement aux données sensibles supprime le sexe et les préférences concernés. Retirer la localisation efface immédiatement la présence enregistrée."
         },
-        "locationRetention": {
-          "title": "Une localisation qui ne reste pas indéfiniment",
-          "text": "La position est considérée obsolète après une heure et supprimée après 24 heures. Elle disparaît immédiatement si le consentement est retiré."
-        },
-        "blocking": {
-          "title": "Bloquer coupe immédiatement le lien",
-          "text": "Un blocage clôt les matchs entre les deux comptes, les masque des listes et empêche leur recréation tant que le blocage reste actif."
-        },
-        "reporting": {
-          "title": "Signaler avec un contexte utile",
-          "text": "Contenu inapproprié, faux profil, harcèlement, spam ou autre motif peuvent être signalés. Lorsqu’il existe, le match concerné peut être joint au signalement."
-        },
         "rights": {
           "title": "Exercer ses droits depuis son compte",
           "text": "Accès, portabilité, rectification, restriction, objection et effacement disposent chacun d’un parcours dédié et suivi."
-        },
-        "export": {
-          "title": "Exporter ce qui vous appartient",
-          "text": "L’export rassemble profil, préférences, traits, consentements, matchs, messages envoyés, signalements, blocages, abonnement et décisions de swipe prises par l’utilisateur, sans révéler les choix entrants des autres."
-        },
-        "deletion": {
-          "title": "Supprimer signifie réellement effacer",
-          "text": "La suppression retire profil, préférences, traits, localisation, sessions, blocages, abonnement et décisions de découverte, anonymise les messages et clôt les matchs."
         }
       }
     },
@@ -111,10 +87,6 @@
           "title": "Une vie privée pensée dans le fonctionnement",
           "text": "Les données sensibles, la localisation, les droits et l’effacement ne sont pas ajoutés après coup : ils déterminent ce que le produit peut afficher et traiter."
         },
-        "launch": {
-          "title": "Un lancement annoncé avec transparence",
-          "text": "L’application mobile, sa publication sur les stores et le parcours de paiement restent en préparation. Nous ne les présenterons pas comme disponibles avant leur ouverture réelle."
-        },
         "community": {
           "title": "Un espace à améliorer avec vous",
           "text": "La qualité d’une communauté dépend des personnes qui la composent, mais aussi des outils qui leur donnent le pouvoir de poser leurs limites."
@@ -129,18 +101,6 @@
         "availability": {
           "title": "Pas de faux bouton",
           "text": "Nous préférons annoncer une disponibilité réelle plutôt que de vous envoyer vers une page vide."
-        },
-        "product": {
-          "title": "Ce qui est déjà au cœur du produit",
-          "text": "Le profil, les préférences mutuelles, le feed, les likes réciproques, le rythme des matchs, la messagerie, les consentements et les outils de sécurité forment déjà un parcours cohérent."
-        },
-        "france": {
-          "title": "Une première activation en France",
-          "text": "L’accès sans mot de passe est actuellement prévu pour les numéros français en +33, avec un code à usage unique envoyé par SMS."
-        },
-        "pricing": {
-          "title": "Des offres déjà définies",
-          "text": "Free est gratuit ; Premium est affiché à {monthlyPrice} par mois ou {annualPrice} par an avec {trialDays} jours d’essai. L’achat sera ouvert avec le parcours de paiement du lancement."
         },
         "finalization": {
           "title": "Ce que nous finalisons",
