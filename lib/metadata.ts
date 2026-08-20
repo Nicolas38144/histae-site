@@ -1,13 +1,31 @@
 import type { Metadata } from "next";
-import { locales, type Locale } from "./locales";
+import {
+  defaultLocale,
+  localeConfig,
+  locales,
+  localizedHref,
+  publicUrl,
+  siteRoutes,
+  type Locale,
+  type SiteRouteId,
+} from "./site-config";
 
-export const publicUrl = "https://histae.com";
+export { publicUrl } from "./site-config";
 
-export function createLocaleMetadata(locale: Locale, title: string, description: string, path = ""): Metadata {
-  const normalizedPath = path ? `${path}/` : "";
-  const canonical = `${publicUrl}/${locale}/${normalizedPath}`;
-  const languages = Object.fromEntries(locales.map((targetLocale) => [targetLocale, `${publicUrl}/${targetLocale}/${normalizedPath}`]));
+export function absoluteLocalizedUrl(locale: Locale, routeId: SiteRouteId): string {
+  return `${publicUrl}${localizedHref(locale, routeId)}/`;
+}
+
+export function createLocaleMetadata(locale: Locale, routeId: SiteRouteId, title: string, description: string): Metadata {
+  const canonical = absoluteLocalizedUrl(locale, routeId);
+  const languages = Object.fromEntries([
+    ...locales.map((targetLocale) => [targetLocale, absoluteLocalizedUrl(targetLocale, routeId)]),
+    ["x-default", absoluteLocalizedUrl(defaultLocale, routeId)],
+  ]);
   const socialImage = `${publicUrl}/og.png`;
+  const alternateLocale = locales
+    .filter((targetLocale) => targetLocale !== locale)
+    .map((targetLocale) => localeConfig[targetLocale].openGraph);
 
   return {
     title,
@@ -15,7 +33,8 @@ export function createLocaleMetadata(locale: Locale, title: string, description:
     alternates: { canonical, languages },
     openGraph: {
       type: "website",
-      locale,
+      locale: localeConfig[locale].openGraph,
+      alternateLocale,
       title: `Histae — ${title}`,
       description,
       images: [{ url: socialImage, width: 1728, height: 904, alt: "Histae" }],
@@ -26,5 +45,10 @@ export function createLocaleMetadata(locale: Locale, title: string, description:
       description,
       images: [socialImage],
     },
+    robots: { index: true, follow: true },
   };
+}
+
+export function routePriority(routeId: SiteRouteId): number {
+  return siteRoutes[routeId].priority;
 }

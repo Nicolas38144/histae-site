@@ -1,9 +1,4 @@
-import { notFound } from "next/navigation";
 import { HomePage } from "../../components/home-page";
-import { getContent, isLocale } from "../../lib/site-content";
+import { createLocalizedPage } from "../../lib/localized-page";
 
-export default async function LocaleHomePage({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = await params;
-  if (!isLocale(lang)) notFound();
-  return <HomePage locale={lang} copy={getContent(lang)} />;
-}
+export default createLocalizedPage((locale) => <HomePage locale={locale} />);

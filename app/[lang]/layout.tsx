@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import "../globals.css";
 import { PageShell } from "../../components/page-shell";
-import { content, getContent, isLocale, locales } from "../../lib/site-content";
-import { createLocaleMetadata } from "../../lib/metadata";
+import { createLocaleMetadata, publicUrl } from "../../lib/metadata";
+import { getRouteMetadataCopy } from "../../lib/localized-page";
+import { isLocale, locales } from "../../lib/site-config";
+import { getMessagesForLocale } from "../../messages";
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -9,16 +15,31 @@ export function generateStaticParams() {
 
 export const dynamicParams = false;
 
-export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
   if (!isLocale(lang)) return {};
 
-  const copy = getContent(lang);
-  return createLocaleMetadata(lang, copy.home.title, copy.home.intro);
+  const copy = getRouteMetadataCopy(getMessagesForLocale(lang), "home");
+  return {
+    ...createLocaleMetadata(lang, "home", copy.title, copy.description),
+    metadataBase: new URL(publicUrl),
+    title: { default: `${copy.title} · Histae`, template: "%s · Histae" },
+    icons: { icon: "/logo.png" },
+  };
 }
 
 export default async function LocaleLayout({ children, params }: Readonly<{ children: React.ReactNode; params: Promise<{ lang: string }> }>) {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
-  return <PageShell locale={lang} copy={content[lang]}>{children}</PageShell>;
+  setRequestLocale(lang);
+  const messages = getMessagesForLocale(lang);
+  return (
+    <html lang={lang}>
+      <body>
+        <NextIntlClientProvider locale={lang} messages={messages}>
+          <PageShell locale={lang}>{children}</PageShell>
+        </NextIntlClientProvider>
+      </body>
+    </html>
+  );
 }

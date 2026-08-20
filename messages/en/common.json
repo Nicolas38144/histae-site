@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Home",
+    "feature": "Features",
+    "pricing": "Pricing",
+    "safety": "Safety",
+    "about": "About",
+    "download": "Download"
+  },
+  "common": {
+    "backHome": "Back home",
+    "language": "Language",
+    "close": "Close",
+    "menu": "Open menu",
+    "skip": "Skip to content",
+    "navigation": "Main navigation"
+  },
+  "footer": {
+    "line": "Histae — give a connection the time to exist.",
+    "madeFor": "A considered product, still in the making."
+  }
+}

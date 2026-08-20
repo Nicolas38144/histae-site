@@ -1,13 +1,19 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
-import { languageNames, locales, type Locale, type SiteCopy } from "../lib/site-content";
+import { Link, usePathname } from "../i18n/navigation";
+import {
+  localeConfig,
+  locales,
+  navigationRouteIds,
+  routePath,
+  type Locale,
+  type SiteRouteId,
+} from "../lib/site-config";
 
-type SiteHeaderProps = { locale: Locale; copy: SiteCopy };
-
-export function SiteHeader({ locale, copy }: SiteHeaderProps) {
+export function SiteHeader({ locale }: { locale: Locale }) {
+  const t = useTranslations();
   const pathname = usePathname();
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,21 +27,25 @@ export function SiteHeader({ locale, copy }: SiteHeaderProps) {
     if (!isLanguageOpen && dialog.open) dialog.close();
   }, [isLanguageOpen]);
 
-  const normalizedPath = pathname.replace(/\/$/, "") || `/${locale}`;
-  const pathAfterLocale = normalizedPath.replace(/^\/(fr|en|es|it)(?=\/|$)/, "");
-  const localizedPath = (targetLocale: Locale) => `/${targetLocale}${pathAfterLocale}` || `/${targetLocale}`;
-
-  const navigation = [
-    { href: `/${locale}`, label: copy.nav.home },
-    { href: `/${locale}/feature`, label: copy.nav.feature },
-    { href: `/${locale}/security`, label: copy.nav.safety },
-    { href: `/${locale}/about`, label: copy.nav.about },
-  ];
+  const normalizedPath = pathname.replace(/\/$/, "") || "/";
+  const navLabels: Record<SiteRouteId, string> = {
+    home: t("nav.home"),
+    feature: t("nav.feature"),
+    pricing: t("nav.pricing"),
+    safety: t("nav.safety"),
+    about: t("nav.about"),
+    download: t("nav.download"),
+  };
+  const navigation = navigationRouteIds.map((routeId) => ({
+    routeId,
+    href: routePath(routeId),
+    label: navLabels[routeId],
+  }));
 
   return (
     <header className="site-header">
       <div className="shell header-content">
-        <Link className="wordmark" href={`/${locale}`} onClick={() => setIsMenuOpen(false)} aria-label="Histae">
+        <Link className="wordmark" href="/" locale={locale} onClick={() => setIsMenuOpen(false)} aria-label="Histae">
           Histae<span aria-hidden="true">.</span>
         </Link>
 
@@ -46,15 +56,16 @@ export function SiteHeader({ locale, copy }: SiteHeaderProps) {
           aria-expanded={isMenuOpen}
           onClick={() => setIsMenuOpen((current) => !current)}
         >
-          <span className="menu-trigger-label">{copy.common.menu}</span>
+          <span className="menu-trigger-label">{t("common.menu")}</span>
           <span className="menu-lines" aria-hidden="true"><i /><i /></span>
         </button>
 
-        <nav id="site-navigation" className="site-navigation" data-open={isMenuOpen} aria-label="Navigation principale">
+        <nav id="site-navigation" className="site-navigation" data-open={isMenuOpen} aria-label={t("common.navigation")}>
           {navigation.map((item) => (
             <Link
-              key={item.href}
+              key={item.routeId}
               href={item.href}
+              locale={locale}
               aria-current={normalizedPath === item.href ? "page" : undefined}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -66,10 +77,10 @@ export function SiteHeader({ locale, copy }: SiteHeaderProps) {
         <div className="header-actions">
           <button className="language-trigger" type="button" onClick={() => setIsLanguageOpen(true)} aria-haspopup="dialog">
             <span className="language-marker" aria-hidden="true">{locale.toUpperCase()}</span>
-            <span>{copy.common.language}</span>
+            <span>{t("common.language")}</span>
           </button>
-          <Link className="header-cta" href={`/${locale}/download`}>
-            {copy.nav.download}
+          <Link className="header-cta" href={routePath("download")} locale={locale}>
+            {t("nav.download")}
           </Link>
         </div>
       </div>
@@ -81,20 +92,21 @@ export function SiteHeader({ locale, copy }: SiteHeaderProps) {
           <div className="dialog-heading">
             <div>
               <p className="eyebrow">Histae</p>
-              <h2 id="language-dialog-title">{copy.common.language}</h2>
+              <h2 id="language-dialog-title">{t("common.language")}</h2>
             </div>
-            <button className="dialog-close" type="button" onClick={() => dialogRef.current?.close()} aria-label={copy.common.close}>×</button>
+            <button className="dialog-close" type="button" onClick={() => dialogRef.current?.close()} aria-label={t("common.close")}>×</button>
           </div>
           <div className="language-list">
             {locales.map((targetLocale) => (
               <Link
                 key={targetLocale}
-                href={localizedPath(targetLocale)}
+                href={normalizedPath}
+                locale={targetLocale}
                 lang={targetLocale}
                 aria-current={targetLocale === locale ? "true" : undefined}
                 onClick={() => dialogRef.current?.close()}
               >
-                <span>{languageNames[targetLocale]}</span>
+                <span>{localeConfig[targetLocale].label}</span>
                 <span aria-hidden="true">{targetLocale.toUpperCase()}</span>
               </Link>
             ))}

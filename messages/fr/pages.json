@@ -1,0 +1,157 @@
+{
+  "pages": {
+    "feature": {
+      "eyebrow": "Fonctionnalités",
+      "title": "Tout le parcours, de la découverte à la suite.",
+      "intro": "Histae organise chaque étape de la rencontre : profil, compatibilité, décision réciproque, conversation, continuation, sécurité et maîtrise des données.",
+      "blocks": {
+        "profile": {
+          "title": "Un profil qui va au-delà d’une photo",
+          "text": "Prénom, âge, bio et traits de personnalité permettent de se présenter. Dans le feed, la date de naissance exacte et la photo ne sont pas exposées."
+        },
+        "preferences": {
+          "title": "Des préférences vérifiées des deux côtés",
+          "text": "Les tranches d’âge, la personne recherchée et la distance maximale sont appliquées dans les deux sens. Un profil n’est proposé que si les critères sont mutuellement compatibles."
+        },
+        "location": {
+          "title": "Une localisation consentie et temporaire",
+          "text": "La découverte exige une position récente et un consentement dédié. La position devient obsolète après une heure et est supprimée après 24 heures sans mise à jour."
+        },
+        "discovery": {
+          "title": "Une découverte claire et contextualisée",
+          "text": "Chaque proposition affiche les informations utiles, les traits et une distance arrondie. Les profils déjà évalués, bloqués ou déjà liés par un match sont exclus."
+        },
+        "stableDecisions": {
+          "title": "Des décisions stables",
+          "text": "Un like ou un pass est enregistré comme un choix définitif pendant sa conservation. Rejouer la même décision est possible, la transformer après coup ne l’est pas."
+        },
+        "reciprocity": {
+          "title": "Un match créé uniquement par réciprocité",
+          "text": "Aucune personne n’est prévenue d’un like isolé. Le match naît seulement lorsque les deux personnes se sont mutuellement choisies."
+        },
+        "conversationWindow": {
+          "title": "24 heures pour commencer à échanger",
+          "text": "À la création du match, une première fenêtre de 24 heures ouvre la messagerie sans exposer immédiatement les photos."
+        },
+        "continuationWindow": {
+          "title": "24 heures supplémentaires pour choisir la suite",
+          "text": "À l’échéance, une seconde fenêtre de 24 heures permet à chacun d’indiquer s’il souhaite continuer. Deux accords confirment le match."
+        },
+        "photoReveal": {
+          "title": "Une révélation des photos indépendante",
+          "text": "Chaque personne peut consentir à la révélation. Les photos n’apparaissent qu’après deux accords, séparément du choix de continuer."
+        },
+        "messaging": {
+          "title": "Une messagerie liée au match",
+          "text": "Les messages sont horodatés, limités à 2 000 caractères et marqués comme lus uniquement par leur destinataire. Un match expiré n’accepte plus de message."
+        },
+        "pricing": {
+          "title": "Un quota et des tarifs lisibles",
+          "text": "Free inclut {freeContinuations} continuations réussies par semaine. Premium prévoit les continuations illimitées à {monthlyPrice} par mois ou {annualPrice} par an, avec {trialDays} jours d’essai au catalogue actuel."
+        }
+      }
+    },
+    "safety": {
+      "eyebrow": "Sécurité et vie privée",
+      "title": "Un cadre clair pour mieux se rencontrer.",
+      "intro": "La confiance se construit avec des règles lisibles, des protections concrètes et des moyens d’agir directement depuis son compte.",
+      "blocks": {
+        "passwordless": {
+          "title": "Un accès sans mot de passe",
+          "text": "La création de session repose sur un code à usage unique envoyé au téléphone. Les sessions sont renouvelées par rotation et les tentatives sont limitées contre les abus."
+        },
+        "consents": {
+          "title": "Des consentements séparés",
+          "text": "Les CGU, la notice de confidentialité, les données sensibles et la localisation sont présentées séparément. Aucun choix marketing n’est ajouté au parcours."
+        },
+        "consentWithdrawal": {
+          "title": "Retirer un accord produit un effet réel",
+          "text": "Retirer le consentement aux données sensibles supprime le sexe et les préférences concernés. Retirer la localisation efface immédiatement la présence enregistrée."
+        },
+        "locationRetention": {
+          "title": "Une localisation qui ne reste pas indéfiniment",
+          "text": "La position est considérée obsolète après une heure et supprimée après 24 heures. Elle disparaît immédiatement si le consentement est retiré."
+        },
+        "blocking": {
+          "title": "Bloquer coupe immédiatement le lien",
+          "text": "Un blocage clôt les matchs entre les deux comptes, les masque des listes et empêche leur recréation tant que le blocage reste actif."
+        },
+        "reporting": {
+          "title": "Signaler avec un contexte utile",
+          "text": "Contenu inapproprié, faux profil, harcèlement, spam ou autre motif peuvent être signalés. Lorsqu’il existe, le match concerné peut être joint au signalement."
+        },
+        "rights": {
+          "title": "Exercer ses droits depuis son compte",
+          "text": "Accès, portabilité, rectification, restriction, objection et effacement disposent chacun d’un parcours dédié et suivi."
+        },
+        "export": {
+          "title": "Exporter ce qui vous appartient",
+          "text": "L’export rassemble profil, préférences, traits, consentements, matchs, messages envoyés, signalements, blocages, abonnement et décisions de swipe prises par l’utilisateur, sans révéler les choix entrants des autres."
+        },
+        "deletion": {
+          "title": "Supprimer signifie réellement effacer",
+          "text": "La suppression retire profil, préférences, traits, localisation, sessions, blocages, abonnement et décisions de découverte, anonymise les messages et clôt les matchs."
+        }
+      }
+    },
+    "about": {
+      "eyebrow": "À propos",
+      "title": "Nous croyons aux rencontres qui prennent leur temps.",
+      "intro": "Histae part d’un constat simple : une application de rencontre peut encourager la curiosité sans réduire les personnes à une succession de choix instantanés.",
+      "blocks": {
+        "promise": {
+          "title": "Une promesse modeste",
+          "text": "Nous ne décidons pas à la place des gens. Nous concevons les règles qui permettent une rencontre plus consciente et plus réciproque."
+        },
+        "product": {
+          "title": "Un socle produit déjà concret",
+          "text": "Profils, préférences mutuelles, feed, likes réciproques, matchs temporisés, messagerie, consentements et outils de sécurité structurent déjà le produit."
+        },
+        "privacy": {
+          "title": "Une vie privée pensée dans le fonctionnement",
+          "text": "Les données sensibles, la localisation, les droits et l’effacement ne sont pas ajoutés après coup : ils déterminent ce que le produit peut afficher et traiter."
+        },
+        "launch": {
+          "title": "Un lancement annoncé avec transparence",
+          "text": "L’application mobile, sa publication sur les stores et le parcours de paiement restent en préparation. Nous ne les présenterons pas comme disponibles avant leur ouverture réelle."
+        },
+        "community": {
+          "title": "Un espace à améliorer avec vous",
+          "text": "La qualité d’une communauté dépend des personnes qui la composent, mais aussi des outils qui leur donnent le pouvoir de poser leurs limites."
+        }
+      }
+    },
+    "download": {
+      "eyebrow": "Lancement",
+      "title": "Histae arrive bientôt.",
+      "intro": "L’application iOS et Android est en préparation. Les liens de téléchargement seront publiés ici dès leur disponibilité réelle.",
+      "blocks": {
+        "availability": {
+          "title": "Pas de faux bouton",
+          "text": "Nous préférons annoncer une disponibilité réelle plutôt que de vous envoyer vers une page vide."
+        },
+        "product": {
+          "title": "Ce qui est déjà au cœur du produit",
+          "text": "Le profil, les préférences mutuelles, le feed, les likes réciproques, le rythme des matchs, la messagerie, les consentements et les outils de sécurité forment déjà un parcours cohérent."
+        },
+        "france": {
+          "title": "Une première activation en France",
+          "text": "L’accès sans mot de passe est actuellement prévu pour les numéros français en +33, avec un code à usage unique envoyé par SMS."
+        },
+        "pricing": {
+          "title": "Des offres déjà définies",
+          "text": "Free est gratuit ; Premium est affiché à {monthlyPrice} par mois ou {annualPrice} par an avec {trialDays} jours d’essai. L’achat sera ouvert avec le parcours de paiement du lancement."
+        },
+        "finalization": {
+          "title": "Ce que nous finalisons",
+          "text": "Les applications mobiles, leur publication, les opérations de lancement et le futur parcours commercial doivent encore être finalisés et validés."
+        },
+        "officialLinks": {
+          "title": "Une disponibilité annoncée ici",
+          "text": "Cette page deviendra le point d’accès officiel aux versions App Store et Google Play dès leur ouverture."
+        }
+      },
+      "footerNote": "Revenez prochainement pour les liens App Store et Google Play."
+    }
+  }
+}

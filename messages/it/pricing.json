@@ -1,0 +1,35 @@
+{
+  "pricing": {
+    "eyebrow": "Prezzi semplici",
+    "title": "Scegli il tuo ritmo, senza prezzi nascosti.",
+    "intro": "Il catalogo attuale offre un’esperienza gratuita completa e un piano Premium incentrato sulle continuazioni illimitate.",
+    "premiumBadge": "Premium",
+    "notice": "Questi prezzi provengono dal catalogo attuale dell’API. Gli acquisti di abbonamenti e i pagamenti saranno attivati con il lancio commerciale dell’app.",
+    "cta": "Vedi tutti i prezzi",
+    "plans": {
+      "free": {
+        "name": "Free",
+        "description": "L’essenziale dell’esperienza Histae, gratuitamente."
+      },
+      "premium": {
+        "name": "Premium",
+        "description": "Per continuare gli incontri senza limite settimanale."
+      }
+    },
+    "features": {
+      "messaging": "Messaggi finché il match resta aperto",
+      "photoReveal": "Rivelazione reciproca delle foto",
+      "limitedContinuations": "{count} continuazioni riuscite a settimana",
+      "unlimitedContinuations": "Continuazioni illimitate"
+    },
+    "billing": {
+      "freePeriod": "per sempre",
+      "noSubscription": "Nessun abbonamento richiesto",
+      "monthlyPeriod": "al mese",
+      "annualPeriod": "{price} all’anno",
+      "monthlyOffer": "mensile",
+      "annualOffer": "annuale",
+      "trial": "Prova di {days} giorni prevista"
+    }
+  }
+}

@@ -1,17 +1,28 @@
 import Link from "next/link";
-import type { Locale, SiteCopy } from "../lib/site-content";
+import { getTranslations } from "next-intl/server";
+import { localizedHref, type Locale } from "../lib/site-config";
+import { getMessagesForLocale } from "../messages";
+import { PricingCards } from "./pricing-cards";
+import { StructuredData } from "./structured-data";
 
-export function HomePage({ locale, copy }: { locale: Locale; copy: SiteCopy }) {
+export async function HomePage({ locale }: { locale: Locale }) {
+  const t = await getTranslations({ locale });
+  const messages = getMessagesForLocale(locale);
+  const principles = Object.values(messages.home.principles);
+  const steps = Object.values(messages.home.steps);
+  const features = Object.values(messages.home.features);
+
   return (
     <main id="main-content">
+      <StructuredData locale={locale} />
       <section className="hero shell" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <p className="eyebrow">{copy.home.eyebrow}</p>
-          <h1 id="hero-title">{copy.home.title}</h1>
-          <p className="hero-intro">{copy.home.intro}</p>
+          <p className="eyebrow">{t("home.eyebrow")}</p>
+          <h1 id="hero-title">{t("home.title")}</h1>
+          <p className="hero-intro">{t("home.intro")}</p>
           <div className="hero-actions">
-            <Link className="button button-primary" href={`/${locale}/download`}>{copy.home.primary}</Link>
-            <Link className="text-link" href={`/${locale}/feature`}>{copy.home.secondary}<span aria-hidden="true"> →</span></Link>
+            <Link className="button button-primary" href={localizedHref(locale, "download")}>{t("home.primary")}</Link>
+            <Link className="text-link" href={localizedHref(locale, "feature")}>{t("home.secondary")}<span aria-hidden="true"> →</span></Link>
           </div>
         </div>
         <div className="hero-art" aria-hidden="true">
@@ -28,10 +39,10 @@ export function HomePage({ locale, copy }: { locale: Locale; copy: SiteCopy }) {
       <section className="shell section" aria-labelledby="principles-title">
         <div className="section-heading">
           <p className="eyebrow">Histae</p>
-          <h2 id="principles-title">{copy.home.principlesTitle}</h2>
+          <h2 id="principles-title">{t("home.principlesTitle")}</h2>
         </div>
         <div className="principles-grid">
-          {copy.home.principles.map((principle, index) => (
+          {principles.map((principle, index) => (
             <article className="principle-card" key={principle.title}>
               <span aria-hidden="true">0{index + 1}</span>
               <h3>{principle.title}</h3>
@@ -44,12 +55,12 @@ export function HomePage({ locale, copy }: { locale: Locale; copy: SiteCopy }) {
       <section className="rhythm-section">
         <div className="shell rhythm-layout">
           <div className="section-heading">
-            <p className="eyebrow">{copy.home.rhythmEyebrow}</p>
-            <h2>{copy.home.rhythmTitle}</h2>
-            <p>{copy.home.rhythmIntro}</p>
+            <p className="eyebrow">{t("home.rhythmEyebrow")}</p>
+            <h2>{t("home.rhythmTitle")}</h2>
+            <p>{t("home.rhythmIntro")}</p>
           </div>
           <ol className="steps-list">
-            {copy.home.steps.map((step) => (
+            {steps.map((step) => (
               <li key={step.title}>
                 <h3>{step.title}</h3>
                 <p>{step.text}</p>
@@ -59,22 +70,54 @@ export function HomePage({ locale, copy }: { locale: Locale; copy: SiteCopy }) {
         </div>
       </section>
 
+      <section className="shell section features-section" aria-labelledby="features-title">
+        <div className="section-heading">
+          <p className="eyebrow">{t("home.featuresEyebrow")}</p>
+          <h2 id="features-title">{t("home.featuresTitle")}</h2>
+          <p>{t("home.featuresIntro")}</p>
+        </div>
+        <div className="features-grid">
+          {features.map((feature, index) => (
+            <article className="feature-card" key={feature.title}>
+              <span aria-hidden="true">0{index + 1}</span>
+              <h3>{feature.title}</h3>
+              <p>{feature.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="pricing-section" aria-labelledby="pricing-title">
+        <div className="shell">
+          <div className="section-heading">
+            <p className="eyebrow">{t("pricing.eyebrow")}</p>
+            <h2 id="pricing-title">{t("pricing.title")}</h2>
+            <p>{t("pricing.intro")}</p>
+          </div>
+          <PricingCards locale={locale} />
+          <div className="pricing-footer">
+            <p>{t("pricing.notice")}</p>
+            <Link className="text-link" href={localizedHref(locale, "pricing")}>{t("pricing.cta")}<span aria-hidden="true"> →</span></Link>
+          </div>
+        </div>
+      </section>
+
       <section className="shell safety-teaser" aria-labelledby="safety-title">
         <div>
-          <p className="eyebrow">{copy.home.safetyEyebrow}</p>
-          <h2 id="safety-title">{copy.home.safetyTitle}</h2>
+          <p className="eyebrow">{t("home.safetyEyebrow")}</p>
+          <h2 id="safety-title">{t("home.safetyTitle")}</h2>
         </div>
         <div>
-          <p>{copy.home.safetyText}</p>
-          <Link className="text-link" href={`/${locale}/security`}>{copy.home.safetyLink}<span aria-hidden="true"> →</span></Link>
+          <p>{t("home.safetyText")}</p>
+          <Link className="text-link" href={localizedHref(locale, "safety")}>{t("home.safetyLink")}<span aria-hidden="true"> →</span></Link>
         </div>
       </section>
 
       <section className="shell closing-section" aria-labelledby="closing-title">
         <p className="eyebrow">Histae</p>
-        <h2 id="closing-title">{copy.home.closingTitle}</h2>
-        <p>{copy.home.closingText}</p>
-        <Link className="button button-primary" href={`/${locale}/download`}>{copy.home.primary}</Link>
+        <h2 id="closing-title">{t("home.closingTitle")}</h2>
+        <p>{t("home.closingText")}</p>
+        <Link className="button button-primary" href={localizedHref(locale, "download")}>{t("home.primary")}</Link>
       </section>
     </main>
   );

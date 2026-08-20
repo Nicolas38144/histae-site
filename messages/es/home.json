@@ -1,0 +1,88 @@
+{
+  "home": {
+    "eyebrow": "Otra manera de conocerse",
+    "title": "Dar a un encuentro el tiempo de existir.",
+    "intro": "Histae está pensada para quienes prefieren la atención al reflejo, la curiosidad al desplazamiento infinito y el consentimiento en cada etapa.",
+    "primary": "Descubrir el lanzamiento",
+    "secondary": "Entender el principio",
+    "principlesTitle": "Lo que queremos proteger",
+    "principles": {
+      "time": {
+        "title": "El tiempo",
+        "text": "Sin carrera de swipes. Cada conversación tiene espacio para respirar."
+      },
+      "reciprocity": {
+        "title": "La reciprocidad",
+        "text": "Una conexión no avanza en solitario: ambas personas deciden qué viene después."
+      },
+      "respect": {
+        "title": "El respeto",
+        "text": "Las herramientas de denuncia y la moderación forman parte del producto, no de una nota al pie."
+      }
+    },
+    "rhythmEyebrow": "Un ritmo más humano",
+    "rhythmTitle": "Un encuentro se construye paso a paso.",
+    "rhythmIntro": "El producto organiza el descubrimiento, la reciprocidad y el consentimiento compartido antes de abrir más la relación.",
+    "steps": {
+      "preferences": {
+        "title": "01 · Descubrir",
+        "text": "El feed presenta la compatibilidad útil — rasgos, edad y distancia — sin exponer de entrada la fecha exacta de nacimiento ni la foto."
+      },
+      "mutualChoice": {
+        "title": "02 · Elegirse",
+        "text": "Una conversación solo se abre cuando el interés es recíproco. Un like o un descarte no se transforma después por impulso."
+      },
+      "conversation": {
+        "title": "03 · Conversar",
+        "text": "Cada match comienza con una ventana de conversación de 24 horas para intercambiar sin acumular conexiones inactivas."
+      },
+      "continuation": {
+        "title": "04 · Continuar juntos",
+        "text": "Después, ambas personas eligen si quieren continuar. La revelación de fotos sigue el mismo consentimiento mutuo."
+      }
+    },
+    "featuresEyebrow": "Lo esencial ya está diseñado",
+    "featuresTitle": "Una experiencia completa, no solo una promesa.",
+    "featuresIntro": "La base técnica de Histae ya cubre el recorrido que convierte un perfil en una conversación elegida.",
+    "features": {
+      "profiles": {
+        "title": "Perfiles y rasgos",
+        "text": "Nombre, edad, biografía y rasgos ayudan a conocer a alguien antes de revelar su foto."
+      },
+      "preferences": {
+        "title": "Preferencias mutuas",
+        "text": "Rangos de edad, persona buscada y distancia máxima se comprueban en ambos sentidos."
+      },
+      "location": {
+        "title": "Descubrimiento geolocalizado",
+        "text": "El feed usa una ubicación reciente, muestra una distancia redondeada y requiere un consentimiento separado."
+      },
+      "likes": {
+        "title": "Likes recíprocos",
+        "text": "Solo dos likes crean un match. Los perfiles evaluados, bloqueados o ya emparejados salen del feed."
+      },
+      "matches": {
+        "title": "Matches en dos etapas",
+        "text": "Una primera ventana de 24 horas abre la conversación y una segunda permite elegir juntos si continuar."
+      },
+      "photoReveal": {
+        "title": "Revelación mutua",
+        "text": "Las fotos aparecen únicamente con el acuerdo de ambos, independientemente de la continuación."
+      },
+      "messaging": {
+        "title": "Mensajes y lectura",
+        "text": "Los mensajes pertenecen al match, se fechan y solo el destinatario puede marcarlos como leídos."
+      },
+      "privacy": {
+        "title": "Seguridad y privacidad",
+        "text": "Consentimientos, bloqueos, denuncias, exportación, derechos y eliminación completa forman parte de la cuenta."
+      }
+    },
+    "safetyEyebrow": "Una atención práctica a la seguridad",
+    "safetyTitle": "El respeto nunca debería ser opcional.",
+    "safetyText": "Bloqueo, denuncias y moderación permiten actuar. Los datos sensibles y la ubicación dependen de consentimientos claros y revocables, con derechos de acceso, exportación y eliminación.",
+    "safetyLink": "Ver nuestros compromisos de seguridad",
+    "closingTitle": "Menos reflejos. Más intención real.",
+    "closingText": "La aplicación está en preparación. Sigue el lanzamiento para descubrir Histae cuando llegue."
+  }
+}

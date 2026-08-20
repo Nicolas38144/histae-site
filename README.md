@@ -21,6 +21,7 @@ Alternative URL: https://histae.com
 * [Next.js](https://nextjs.org/) — React framework for production
 * [React](https://react.dev/) — User interface library
 * [TypeScript](https://www.typescriptlang.org/) — Static type checking for JavaScript
+* [next-intl](https://next-intl.dev/) — Internationalization and localized navigation
 * CSS — Styling and responsive design
 * Node.js — JavaScript runtime
 
@@ -31,6 +32,9 @@ Alternative URL: https://histae.com
 .
 ├── app/                # Next.js App Router pages and layouts
 ├── components/         # Reusable React components
+├── config/             # Shared locales, routes and commercial catalogue
+├── i18n/               # next-intl request and navigation configuration
+├── translations/           # Translation catalogs split by locale and domain
 ├── public/             # Static assets
 ├── lib/                # Utilities and shared logic
 ├── next.config.ts      # Next.js configuration
@@ -47,8 +51,19 @@ The website takes advantage of Next.js features to provide a fast and modern exp
 * Optimized routing
 * Image optimization
 * SEO-friendly metadata
+* Canonical and hreflang links for every localized route
 * Responsive design
 * Type-safe development with TypeScript
+
+## Quality checks
+
+```bash
+pnpm typecheck
+pnpm lint
+pnpm build
+```
+
+The production build validates all localized pages, their canonical URLs, hreflang links, language switch links and heading structure.
 
 ## Roadmap
 

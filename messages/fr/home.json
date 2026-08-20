@@ -1,0 +1,88 @@
+{
+  "home": {
+    "eyebrow": "Une autre façon de se rencontrer",
+    "title": "Prendre le temps de laisser une rencontre exister.",
+    "intro": "Histae est une application pensée pour celles et ceux qui préfèrent l’attention au réflexe, la curiosité au défilement, et le consentement à chaque étape.",
+    "primary": "Découvrir le lancement",
+    "secondary": "Comprendre le principe",
+    "principlesTitle": "Ce que nous voulons préserver",
+    "principles": {
+      "time": {
+        "title": "Le temps",
+        "text": "Pas de course au swipe. Chaque échange est conçu pour pouvoir respirer."
+      },
+      "reciprocity": {
+        "title": "La réciprocité",
+        "text": "La suite d’un match ne se décide pas seul : elle se choisit à deux."
+      },
+      "respect": {
+        "title": "Le respect",
+        "text": "Des outils de signalement et une modération font partie du produit, pas d’une note de bas de page."
+      }
+    },
+    "rhythmEyebrow": "Un rythme plus humain",
+    "rhythmTitle": "De la découverte à la suite, chaque étape est choisie.",
+    "rhythmIntro": "Le produit rapproche des profils compatibles, puis laisse la réciprocité et le consentement décider de la suite.",
+    "steps": {
+      "preferences": {
+        "title": "01 · Définir ce qui compte",
+        "text": "Âges, distance, personnes recherchées et traits donnent un cadre clair à la découverte."
+      },
+      "mutualChoice": {
+        "title": "02 · Se choisir vraiment",
+        "text": "Le feed applique les préférences des deux personnes. Seuls deux likes réciproques créent un match."
+      },
+      "conversation": {
+        "title": "03 · Échanger pendant 24 heures",
+        "text": "La conversation commence sans exposer immédiatement les photos, avec du temps pour découvrir la personne."
+      },
+      "continuation": {
+        "title": "04 · Continuer et révéler ensemble",
+        "text": "La continuation et la révélation des photos sont deux décisions partagées : chaque personne garde son rythme."
+      }
+    },
+    "featuresEyebrow": "Déjà au cœur du produit",
+    "featuresTitle": "Une expérience complète, pensée comme un ensemble.",
+    "featuresIntro": "Profil, découverte, conversation et maîtrise des données fonctionnent ensemble pour créer un cadre plus lisible.",
+    "features": {
+      "profiles": {
+        "title": "Profils et traits",
+        "text": "Prénom, âge, bio et traits de personnalité aident à comprendre une personne avant que sa photo ne soit révélée."
+      },
+      "preferences": {
+        "title": "Préférences mutuelles",
+        "text": "Tranches d’âge, personne recherchée et distance maximale sont vérifiées dans les deux sens."
+      },
+      "location": {
+        "title": "Découverte géolocalisée",
+        "text": "Le feed utilise une position récente, avec une distance arrondie et un consentement de localisation séparé."
+      },
+      "likes": {
+        "title": "Likes réciproques",
+        "text": "Un match naît uniquement de deux likes. Les profils déjà évalués, bloqués ou appariés disparaissent du feed."
+      },
+      "matches": {
+        "title": "Matchs en deux temps",
+        "text": "Une première fenêtre de 24 heures ouvre la conversation, puis une seconde permet de choisir la continuation à deux."
+      },
+      "photoReveal": {
+        "title": "Révélation mutuelle",
+        "text": "La photo n’apparaît qu’après l’accord des deux personnes, indépendamment de la décision de continuer."
+      },
+      "messaging": {
+        "title": "Messagerie et lecture",
+        "text": "Les messages sont liés au match, horodatés et peuvent être marqués comme lus uniquement par leur destinataire."
+      },
+      "privacy": {
+        "title": "Sécurité et vie privée",
+        "text": "Consentements, blocages, signalements, export, demandes RGPD et suppression complète sont intégrés au compte."
+      }
+    },
+    "safetyEyebrow": "Une attention concrète à la sécurité",
+    "safetyTitle": "Le respect ne devrait jamais être optionnel.",
+    "safetyText": "Histae intègre le blocage, le signalement, la modération et des droits directement accessibles. Les choix sensibles, comme la localisation ou les préférences, reposent sur un consentement explicite et révocable.",
+    "safetyLink": "Voir nos engagements de sécurité",
+    "closingTitle": "Moins de réflexes. Plus de vraies intentions.",
+    "closingText": "L’application est en préparation. Suivez son lancement pour découvrir Histae dès son arrivée."
+  }
+}

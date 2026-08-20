@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "feature": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "safety": "Sécurité",
+    "about": "À propos",
+    "download": "Télécharger"
+  },
+  "common": {
+    "backHome": "Retour à l’accueil",
+    "language": "Langue",
+    "close": "Fermer",
+    "menu": "Ouvrir le menu",
+    "skip": "Aller au contenu",
+    "navigation": "Navigation principale"
+  },
+  "footer": {
+    "line": "Histae — prendre le temps de se rencontrer.",
+    "madeFor": "Une vitrine en construction, pensée avec attention."
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "pages": {
+    "feature": {
+      "eyebrow": "Funciones",
+      "title": "Todo el recorrido, desde el descubrimiento.",
+      "intro": "Histae organiza cada etapa: perfil, compatibilidad, elección recíproca, conversación, continuación, seguridad y control de los datos.",
+      "blocks": {
+        "profile": {
+          "title": "Un perfil más allá de la foto",
+          "text": "Nombre, edad, biografía, género, distancia y rasgos permiten descubrir a alguien sin exponer de inmediato su fecha exacta de nacimiento ni su foto."
+        },
+        "preferences": {
+          "title": "Compatibilidad en ambos sentidos",
+          "text": "Los criterios de edad, género buscado y distancia se comprueban para ambas personas, no solo para quien consulta el feed."
+        },
+        "location": {
+          "title": "Una ubicación consentida y temporal",
+          "text": "El descubrimiento requiere una posición reciente y un consentimiento específico. La posición queda obsoleta tras una hora y se elimina después de 24 horas sin actualizarse."
+        },
+        "discovery": {
+          "title": "Un feed más claro",
+          "text": "Los perfiles ya descartados, bloqueados o emparejados se excluyen para concentrar la atención en nuevas posibilidades relevantes."
+        },
+        "stableDecisions": {
+          "title": "Decisiones estables",
+          "text": "Un like o un pass queda registrado durante su periodo de conservación. Se puede repetir la misma decisión, pero no transformarla después."
+        },
+        "reciprocity": {
+          "title": "El interés debe ser recíproco",
+          "text": "Nadie recibe aviso de un like aislado. El match nace únicamente cuando las dos personas se han elegido."
+        },
+        "conversationWindow": {
+          "title": "24 horas para empezar a hablar",
+          "text": "Al crear el match, una primera ventana de 24 horas abre los mensajes sin mostrar inmediatamente las fotos."
+        },
+        "continuationWindow": {
+          "title": "Otras 24 horas para elegir la continuación",
+          "text": "Al terminar, una segunda ventana de 24 horas permite decidir si continuar. Dos acuerdos confirman el match."
+        },
+        "photoReveal": {
+          "title": "Revelación de fotos independiente",
+          "text": "Cada persona puede consentir a la revelación. Las fotos aparecen con dos acuerdos, independientemente de la decisión de continuar."
+        },
+        "messaging": {
+          "title": "Mensajes vinculados al match",
+          "text": "Los mensajes se fechan, tienen un máximo de 2.000 caracteres y solo el destinatario puede marcarlos como leídos. Un match expirado no admite mensajes nuevos."
+        },
+        "pricing": {
+          "title": "Cuotas y precios claros",
+          "text": "Free incluye {freeContinuations} continuaciones exitosas por semana. Premium prevé continuaciones ilimitadas por {monthlyPrice} al mes o {annualPrice} al año, con {trialDays} días de prueba en el catálogo actual."
+        }
+      }
+    },
+    "safety": {
+      "eyebrow": "Seguridad",
+      "title": "Un marco claro para conocerse mejor.",
+      "intro": "La confianza también nace de reglas comprensibles, protecciones técnicas y la posibilidad de actuar cuando algo no está bien.",
+      "blocks": {
+        "passwordless": {
+          "title": "Proteger el acceso",
+          "text": "El acceso sin contraseña se verifica por teléfono y las sesiones se renuevan de forma segura, con límites contra intentos abusivos."
+        },
+        "consents": {
+          "title": "Consentir con claridad",
+          "text": "Las condiciones, la privacidad, los datos sensibles y la ubicación se gestionan por separado. Histae no añade consentimiento de marketing implícito."
+        },
+        "consentWithdrawal": {
+          "title": "Poder cambiar de opinión",
+          "text": "Los consentimientos sensibles son revocables. Retirar el de ubicación elimina la presencia; retirar el de datos sensibles elimina las preferencias asociadas."
+        },
+        "locationRetention": {
+          "title": "Una ubicación que no permanece indefinidamente",
+          "text": "La posición queda obsoleta tras una hora y se elimina después de 24 horas. Desaparece inmediatamente cuando se retira el consentimiento."
+        },
+        "blocking": {
+          "title": "Bloquear para cortar el contacto",
+          "text": "Un bloqueo cierra los matches existentes entre dos personas y evita que se creen de nuevo."
+        },
+        "reporting": {
+          "title": "Denunciar con contexto",
+          "text": "Contenido inapropiado, perfil falso, acoso, spam u otra situación pueden señalarse y revisarse por moderación autorizada."
+        },
+        "rights": {
+          "title": "Ejercer tus derechos",
+          "text": "Acceso, rectificación, portabilidad, limitación, oposición y supresión cuentan con recorridos específicos y con seguimiento."
+        },
+        "export": {
+          "title": "Exportar lo que te pertenece",
+          "text": "La exportación reúne perfil, preferencias, rasgos, consentimientos, matches, mensajes enviados, denuncias, bloqueos, suscripción y swipes propios sin revelar las decisiones entrantes de otras personas."
+        },
+        "deletion": {
+          "title": "Eliminar de verdad",
+          "text": "La eliminación de la cuenta borra los datos principales, la actividad de descubrimiento y los mensajes asociados en los distintos sistemas de Histae."
+        }
+      }
+    },
+    "about": {
+      "eyebrow": "Nosotros",
+      "title": "Creemos que los encuentros merecen tiempo.",
+      "intro": "Histae parte de una idea simple: una aplicación de citas puede fomentar la curiosidad sin reducir a las personas a una serie de elecciones instantáneas.",
+      "blocks": {
+        "promise": {
+          "title": "Una promesa modesta",
+          "text": "No decidimos por las personas. Diseñamos reglas que hacen un encuentro más consciente y recíproco."
+        },
+        "product": {
+          "title": "Una base concreta",
+          "text": "Perfil, preferencias, descubrimiento, likes recíprocos, matches, mensajería, consentimientos y seguridad forman ya un recorrido coherente."
+        },
+        "privacy": {
+          "title": "La privacidad desde el diseño",
+          "text": "Minimizar la exposición, separar los consentimientos y permitir el control de los datos son decisiones de producto, no añadidos tardíos."
+        },
+        "launch": {
+          "title": "Transparencia sobre el avance",
+          "text": "Las aplicaciones móviles, la publicación en las tiendas, el pago y el recorrido comercial todavía se están preparando. No los presentamos como disponibles."
+        },
+        "community": {
+          "title": "Un espacio para mejorar juntos",
+          "text": "La calidad de una comunidad depende de sus miembros y de las herramientas que les permiten poner límites."
+        }
+      }
+    },
+    "download": {
+      "eyebrow": "Lanzamiento",
+      "title": "Histae llega pronto.",
+      "intro": "La aplicación para iOS y Android está en preparación. Los enlaces de descarga se publicarán aquí cuando se abra el lanzamiento.",
+      "blocks": {
+        "availability": {
+          "title": "Sin botón falso",
+          "text": "Preferimos anunciar una disponibilidad real antes que enviarte a una página vacía."
+        },
+        "product": {
+          "title": "Ya en el corazón del producto",
+          "text": "Perfiles, preferencias mutuas, feed, likes recíprocos, ritmo de los matches, mensajes, consentimientos y seguridad ya forman un recorrido coherente."
+        },
+        "france": {
+          "title": "Primer lanzamiento en Francia",
+          "text": "El acceso sin contraseña está previsto actualmente para números franceses +33, con un código de un solo uso enviado por SMS."
+        },
+        "pricing": {
+          "title": "Planes ya definidos",
+          "text": "Free es gratuito; Premium figura a {monthlyPrice} al mes o {annualPrice} al año con {trialDays} días de prueba. Las compras se abrirán con el sistema de pagos del lanzamiento."
+        },
+        "finalization": {
+          "title": "Lo que falta",
+          "text": "Ahora finalizamos las aplicaciones móviles, la publicación en las tiendas, la operación del lanzamiento y el recorrido comercial."
+        },
+        "officialLinks": {
+          "title": "Disponibilidad anunciada aquí",
+          "text": "Esta página será el acceso oficial a las versiones de App Store y Google Play cuando estén disponibles."
+        }
+      },
+      "footerNote": "Vuelve pronto para los enlaces de App Store y Google Play."
+    }
+  }
+}

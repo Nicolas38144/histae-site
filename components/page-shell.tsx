@@ -1,15 +1,18 @@
 import type { ReactNode } from "react";
-import { type Locale, type SiteCopy } from "../lib/site-content";
+import { getTranslations } from "next-intl/server";
+import type { Locale } from "../lib/site-config";
 import { SiteFooter } from "./site-footer";
 import { SiteHeader } from "./site-header";
 
-export function PageShell({ children, locale, copy }: { children: ReactNode; locale: Locale; copy: SiteCopy }) {
+export async function PageShell({ children, locale }: { children: ReactNode; locale: Locale }) {
+  const t = await getTranslations({ locale });
+
   return (
     <div className="site-frame" lang={locale}>
-      <a className="skip-link" href="#main-content">{copy.common.skip}</a>
-      <SiteHeader locale={locale} copy={copy} />
+      <a className="skip-link" href="#main-content">{t("common.skip")}</a>
+      <SiteHeader locale={locale} />
       {children}
-      <SiteFooter locale={locale} copy={copy} />
+      <SiteFooter locale={locale} />
     </div>
   );
 }

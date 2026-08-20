@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Home",
+    "feature": "Funzioni",
+    "pricing": "Prezzi",
+    "safety": "Sicurezza",
+    "about": "Chi siamo",
+    "download": "Scarica"
+  },
+  "common": {
+    "backHome": "Torna alla home",
+    "language": "Lingua",
+    "close": "Chiudi",
+    "menu": "Apri menu",
+    "skip": "Vai al contenuto",
+    "navigation": "Navigazione principale"
+  },
+  "footer": {
+    "line": "Histae — dare a un incontro il tempo di esistere.",
+    "madeFor": "Un prodotto attento, ancora in costruzione."
+  }
+}

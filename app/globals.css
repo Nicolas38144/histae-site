@@ -216,6 +216,36 @@ h1, h2, h3 { text-wrap: balance; }
 .steps-list h3 { font-size: 1.05rem; }
 .steps-list p { margin-top: 0.6rem; color: var(--muted); }
 
+.features-section { padding-bottom: 0; }
+.features-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 3rem; }
+.feature-card { min-height: 13rem; padding: 1.6rem; border: 1px solid var(--line); border-radius: 1rem; background: linear-gradient(145deg, rgba(182, 156, 255, 0.09), rgba(255, 255, 255, 0.025)); }
+.feature-card > span { color: var(--lilac); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.1em; }
+.feature-card h3 { margin-top: 2.2rem; font-family: Georgia, "Times New Roman", serif; font-size: 1.65rem; font-weight: 500; }
+.feature-card p { max-width: 31rem; margin-top: 0.65rem; color: var(--muted); }
+
+.pricing-section { margin-top: clamp(5rem, 10vw, 9rem); padding-block: clamp(5rem, 10vw, 9rem); border-block: 1px solid var(--line); background: rgba(255, 255, 255, 0.025); }
+.pricing-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 3rem; }
+.pricing-card { position: relative; min-height: 27rem; padding: clamp(1.5rem, 4vw, 2.3rem); border: 1px solid var(--line); border-radius: 1.25rem; background: var(--panel); }
+.pricing-card[data-featured="true"] { border-color: rgba(182, 156, 255, 0.62); background: linear-gradient(145deg, rgba(182, 156, 255, 0.16), rgba(240, 154, 130, 0.08)); box-shadow: 0 24px 70px rgba(0, 0, 0, 0.2); }
+.pricing-card-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.pricing-card-heading h3 { font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; font-weight: 500; }
+.plan-badge { padding: 0.35rem 0.65rem; border-radius: 999px; background: var(--lavender); color: var(--night); font-size: 0.68rem; font-weight: 850; letter-spacing: 0.08em; text-transform: uppercase; }
+.plan-price { display: flex; align-items: baseline; gap: 0.65rem; margin-top: 2rem; }
+.plan-price strong { font-family: Georgia, "Times New Roman", serif; font-size: clamp(3.2rem, 7vw, 5rem); font-weight: 500; letter-spacing: -0.065em; line-height: 1; }
+.plan-price span, .plan-annual, .plan-description, .pricing-notice, .pricing-footer p { color: var(--muted); }
+.plan-annual { margin-top: 0.4rem; }
+.plan-trial { display: inline-flex; margin-top: 0.9rem; padding: 0.35rem 0.7rem; border: 1px solid rgba(240, 154, 130, 0.36); border-radius: 999px; color: var(--coral); font-size: 0.78rem; font-weight: 750; }
+.plan-description { margin-top: 1.8rem; }
+.pricing-card ul { display: grid; gap: 0.8rem; margin: 1.6rem 0 0; padding: 1.5rem 0 0; border-top: 1px solid var(--line); list-style: none; }
+.pricing-card li { position: relative; padding-left: 1.5rem; }
+.pricing-card li::before { position: absolute; top: 0.15rem; left: 0; color: var(--coral); content: "✓"; font-weight: 900; }
+.pricing-footer { display: flex; align-items: flex-start; justify-content: space-between; gap: 2rem; margin-top: 1.5rem; }
+.pricing-footer p { max-width: 45rem; font-size: 0.92rem; }
+.pricing-footer .text-link { flex: 0 0 auto; }
+.pricing-page-content { padding-bottom: 2rem; }
+.pricing-page-content .pricing-grid { margin-top: 0; }
+.pricing-notice { max-width: 48rem; margin-top: 1.5rem; font-size: 0.92rem; }
+
 .safety-teaser { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 8vw, 8rem); margin-block: clamp(5rem, 10vw, 9rem); padding: clamp(2rem, 5vw, 4rem); border-radius: 1.5rem; background: linear-gradient(125deg, rgba(182, 156, 255, 0.18), rgba(240, 154, 130, 0.14)); }
 .safety-teaser > div:last-child { align-self: end; }
 .safety-teaser > div:last-child > p { color: var(--muted); font-size: 1.08rem; }
@@ -258,6 +288,11 @@ h1, h2, h3 { text-wrap: balance; }
   .principles-grid { grid-template-columns: 1fr; }
   .principle-card { min-height: auto; }
   .principle-card h3 { margin-top: 1.8rem; }
+  .features-grid { grid-template-columns: 1fr; }
+  .feature-card { min-height: auto; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .pricing-card { min-height: auto; }
+  .pricing-footer { flex-direction: column; }
   .rhythm-layout, .safety-teaser { grid-template-columns: 1fr; }
   .footer-content { align-items: flex-start; flex-direction: column; }
   .footer-note { text-align: left; }

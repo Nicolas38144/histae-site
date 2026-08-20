@@ -1,14 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
-import { locales, type Locale } from "../lib/locales";
+import { routing } from "../../i18n/routing";
+import type { Locale } from "../../lib/site-config";
 
-const supportedLanguages = locales;
-type LanguageCode = Locale;
-
-function getBrowserLanguage(): LanguageCode {
+function getBrowserLanguage(): Locale {
   const primaryLanguage = (navigator.languages[0] ?? navigator.language).toLowerCase().split("-")[0];
-  return supportedLanguages.includes(primaryLanguage as LanguageCode) ? (primaryLanguage as LanguageCode) : "fr";
+  return routing.locales.find((locale) => locale === primaryLanguage) ?? routing.defaultLocale;
 }
 
 export default function RootPage() {

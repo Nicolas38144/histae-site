@@ -1,0 +1,88 @@
+{
+  "home": {
+    "eyebrow": "A different way to meet",
+    "title": "Give a connection the time to exist.",
+    "intro": "Histae is for people who prefer attention over reflexes, curiosity over endless scrolling, and consent at every step.",
+    "primary": "Discover the launch",
+    "secondary": "How it works",
+    "principlesTitle": "What we want to protect",
+    "principles": {
+      "time": {
+        "title": "Time",
+        "text": "No swiping race. Every conversation is given room to breathe."
+      },
+      "reciprocity": {
+        "title": "Reciprocity",
+        "text": "A match never moves forward alone: both people choose what comes next."
+      },
+      "respect": {
+        "title": "Respect",
+        "text": "Reporting tools and moderation are part of the product, not a footnote."
+      }
+    },
+    "rhythmEyebrow": "A more human pace",
+    "rhythmTitle": "From discovery onward, every step is chosen.",
+    "rhythmIntro": "Histae brings compatible profiles together, then lets reciprocity and consent decide what happens next.",
+    "steps": {
+      "preferences": {
+        "title": "01 · Define what matters",
+        "text": "Age ranges, distance, who you are looking for and personality traits give discovery a clear framework."
+      },
+      "mutualChoice": {
+        "title": "02 · Choose each other",
+        "text": "The feed applies both people’s preferences. Only two reciprocal likes create a match."
+      },
+      "conversation": {
+        "title": "03 · Talk for 24 hours",
+        "text": "Conversation begins without immediately exposing photos, leaving room to discover the person first."
+      },
+      "continuation": {
+        "title": "04 · Continue and reveal together",
+        "text": "Continuing and revealing photos are separate shared choices, so both people keep their own pace."
+      }
+    },
+    "featuresEyebrow": "Already at the product’s core",
+    "featuresTitle": "A complete experience designed as one system.",
+    "featuresIntro": "Profiles, discovery, conversation and data control work together to create a clearer framework.",
+    "features": {
+      "profiles": {
+        "title": "Profiles and traits",
+        "text": "First name, age, bio and personality traits help people understand someone before their photo is revealed."
+      },
+      "preferences": {
+        "title": "Mutual preferences",
+        "text": "Age ranges, who each person is looking for and maximum distance are checked in both directions."
+      },
+      "location": {
+        "title": "Location-based discovery",
+        "text": "The feed uses a recent location, shows rounded distance and relies on separate location consent."
+      },
+      "likes": {
+        "title": "Reciprocal likes",
+        "text": "Only two likes create a match. Assessed, blocked and already matched profiles leave the feed."
+      },
+      "matches": {
+        "title": "Two-stage matches",
+        "text": "A first 24-hour window opens conversation, then a second lets both people choose whether to continue."
+      },
+      "photoReveal": {
+        "title": "Mutual reveal",
+        "text": "Photos appear only after both people agree, independently from the decision to continue."
+      },
+      "messaging": {
+        "title": "Messaging and read status",
+        "text": "Messages belong to the match, are timestamped and can only be marked read by their recipient."
+      },
+      "privacy": {
+        "title": "Safety and privacy",
+        "text": "Consent, blocks, reports, data export, rights requests and complete deletion are built into the account."
+      }
+    },
+    "safetyEyebrow": "A practical approach to safety",
+    "safetyTitle": "Respect should never be optional.",
+    "safetyText": "Histae includes blocking, reporting, moderation and directly accessible data rights. Sensitive choices, such as location and preferences, rely on explicit consent that can be withdrawn.",
+    "safetyLink": "Read our safety commitments",
+    "closingTitle": "Fewer reflexes. More real intention.",
+    "closingText": "The app is being prepared. Follow the launch to discover Histae when it arrives."
+  }
+}

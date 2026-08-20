@@ -1,0 +1,157 @@
+{
+  "pages": {
+    "feature": {
+      "eyebrow": "Features",
+      "title": "The whole journey, from discovery onward.",
+      "intro": "Histae organises every stage of a connection: profile, compatibility, reciprocal choice, conversation, continuation, safety and data control.",
+      "blocks": {
+        "profile": {
+          "title": "A profile that goes beyond a picture",
+          "text": "First name, age, bio and personality traits help people introduce themselves. The feed does not expose an exact birth date or profile photo."
+        },
+        "preferences": {
+          "title": "Preferences checked both ways",
+          "text": "Age ranges, who each person is looking for and maximum distance are applied mutually. A profile appears only when both sets of criteria are compatible."
+        },
+        "location": {
+          "title": "Location that is consensual and temporary",
+          "text": "Discovery requires a recent position and dedicated consent. The position becomes stale after one hour and is deleted after 24 hours without an update."
+        },
+        "discovery": {
+          "title": "Clear, contextual discovery",
+          "text": "Every suggestion shows useful information, traits and a rounded distance. Profiles already assessed, blocked or already matched are excluded."
+        },
+        "stableDecisions": {
+          "title": "Stable decisions",
+          "text": "A like or pass is recorded as a stable choice for its retention period. Retrying the same decision is fine; changing it afterwards is not."
+        },
+        "reciprocity": {
+          "title": "A match created only by reciprocity",
+          "text": "Nobody is notified of an isolated like. A match exists only after both people have chosen each other."
+        },
+        "conversationWindow": {
+          "title": "24 hours to start talking",
+          "text": "When a match is created, a first 24-hour window opens messaging without immediately exposing photos."
+        },
+        "continuationWindow": {
+          "title": "Another 24 hours to choose what comes next",
+          "text": "At expiry, a second 24-hour window lets each person choose whether to continue. Two agreements confirm the match."
+        },
+        "photoReveal": {
+          "title": "Independent mutual photo reveal",
+          "text": "Each person can consent to reveal. Photos appear only after two agreements, separately from the decision to continue."
+        },
+        "messaging": {
+          "title": "Messaging tied to the match",
+          "text": "Messages are timestamped, limited to 2,000 characters and marked read only by the recipient. An expired match accepts no new message."
+        },
+        "pricing": {
+          "title": "Clear allowances and prices",
+          "text": "Free includes {freeContinuations} successful continuations per week. Premium plans unlimited continuations at {monthlyPrice} per month or {annualPrice} per year, with a {trialDays}-day trial in the current catalogue."
+        }
+      }
+    },
+    "safety": {
+      "eyebrow": "Safety and privacy",
+      "title": "A clear framework for meeting better.",
+      "intro": "Trust comes from understandable rules, practical protections and ways to act directly from your account.",
+      "blocks": {
+        "passwordless": {
+          "title": "Passwordless access",
+          "text": "Sessions start with a one-time code sent to the phone. Sessions rotate and attempts are limited to reduce abuse."
+        },
+        "consents": {
+          "title": "Separate consent choices",
+          "text": "Terms, the privacy notice, sensitive data and location are presented separately. No marketing choice is added to the journey."
+        },
+        "consentWithdrawal": {
+          "title": "Withdrawing consent has a real effect",
+          "text": "Withdrawing sensitive-data consent removes the relevant sex and preference data. Withdrawing location consent immediately removes stored presence."
+        },
+        "locationRetention": {
+          "title": "Location does not remain indefinitely",
+          "text": "A position becomes stale after one hour and is deleted after 24 hours. It disappears immediately when location consent is withdrawn."
+        },
+        "blocking": {
+          "title": "Blocking cuts the link immediately",
+          "text": "A block ends matches between both accounts, hides them from lists and prevents a new match while the block remains active."
+        },
+        "reporting": {
+          "title": "Report with useful context",
+          "text": "Inappropriate content, fake profiles, harassment, spam or another reason can be reported, with the related match when one exists."
+        },
+        "rights": {
+          "title": "Exercise data rights from the account",
+          "text": "Access, portability, rectification, restriction, objection and erasure each have a dedicated, trackable journey."
+        },
+        "export": {
+          "title": "Export what belongs to you",
+          "text": "The export gathers profile, preferences, traits, consent, matches, sent messages, reports, blocks, subscription and the user’s own swipe decisions without revealing incoming choices from others."
+        },
+        "deletion": {
+          "title": "Deletion means actual erasure",
+          "text": "Deletion removes profile, preferences, traits, location, sessions, blocks, subscription and discovery decisions, anonymises messages and ends matches."
+        }
+      }
+    },
+    "about": {
+      "eyebrow": "About",
+      "title": "We believe connections deserve time.",
+      "intro": "Histae starts from a simple idea: a dating app can encourage curiosity without reducing people to a stream of instant choices.",
+      "blocks": {
+        "promise": {
+          "title": "A modest promise",
+          "text": "We do not decide for people. We design the rules that make a connection more conscious and reciprocal."
+        },
+        "product": {
+          "title": "A concrete product foundation",
+          "text": "Profiles, mutual preferences, feed, reciprocal likes, timed matches, messaging, consent and safety tools already shape the product."
+        },
+        "privacy": {
+          "title": "Privacy built into how it works",
+          "text": "Sensitive data, location, rights and erasure are not afterthoughts: they determine what the product can display and process."
+        },
+        "launch": {
+          "title": "A transparent launch",
+          "text": "The mobile app, store publication and payment journey are still being prepared. We will not present them as available before they truly open."
+        },
+        "community": {
+          "title": "A space to improve together",
+          "text": "A community’s quality depends on its members, and on tools that let them set their own boundaries."
+        }
+      }
+    },
+    "download": {
+      "eyebrow": "Launch",
+      "title": "Histae is coming soon.",
+      "intro": "The iOS and Android app is being prepared. Download links will be published here when the launch opens.",
+      "blocks": {
+        "availability": {
+          "title": "No pretend button",
+          "text": "We would rather announce real availability than send you to an empty page."
+        },
+        "product": {
+          "title": "Already at the product’s core",
+          "text": "Profiles, mutual preferences, feed, reciprocal likes, match pacing, messaging, consent and safety tools already form a coherent journey."
+        },
+        "france": {
+          "title": "Launching first in France",
+          "text": "Passwordless access is currently designed for French +33 phone numbers, with a one-time code delivered by SMS."
+        },
+        "pricing": {
+          "title": "Plans already defined",
+          "text": "Free costs nothing; Premium is listed at {monthlyPrice} per month or {annualPrice} per year with a {trialDays}-day trial. Purchases will open with the launch payment journey."
+        },
+        "finalization": {
+          "title": "What we are finalising",
+          "text": "The mobile apps, store publication, launch operations and future commercial journey still need to be completed and validated."
+        },
+        "officialLinks": {
+          "title": "Availability announced here",
+          "text": "This page will become the official path to the App Store and Google Play versions when they open."
+        }
+      },
+      "footerNote": "Come back soon for App Store and Google Play links."
+    }
+  }
+}

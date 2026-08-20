@@ -1,17 +1,6 @@
-import { notFound } from "next/navigation";
 import { InformationPage } from "../../../components/information-page";
-import { createLocaleMetadata } from "../../../lib/metadata";
-import { getContent, isLocale } from "../../../lib/site-content";
+import { createLocalizedPage, createPageMetadata } from "../../../lib/localized-page";
 
-export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = await params;
-  if (!isLocale(lang)) return {};
-  const page = getContent(lang).pages.safety;
-  return createLocaleMetadata(lang, page.title, page.intro, "security");
-}
+export const generateMetadata = createPageMetadata("safety");
 
-export default async function SecurityPage({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = await params;
-  if (!isLocale(lang)) notFound();
-  return <InformationPage locale={lang} copy={getContent(lang)} pageName="safety" />;
-}
+export default createLocalizedPage((locale) => <InformationPage locale={locale} pageName="safety" />);
