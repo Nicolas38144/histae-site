@@ -69,6 +69,8 @@ The production build validates all localized pages, their canonical URLs, hrefla
 
 The current website represents the first public presence of Histae.
 
+The detailed backlog, priorities and completion criteria are maintained in [roadmap.md](roadmap.md).
+
 Future developments include:
 
 * Official launch of the Histae dating application
