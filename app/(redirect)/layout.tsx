@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(publicUrl),
   title: "Histae",
   description: "Histae organise la découverte, les matchs réciproques et la conversation autour du temps, du consentement et du contrôle des données.",
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
   icons: { icon: "/logo.png" },
 };
 
