@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { localizedHref, type Locale, type SiteRouteId } from "../lib/site-config";
+import { legalDocumentHref, legalDocumentIds, legalDocuments } from "../lib/legal-documents";
 
 const footerGroups: Array<{ titleKey: "exploreTitle" | "projectTitle"; routes: SiteRouteId[] }> = [
   { titleKey: "exploreTitle", routes: ["home", "feature", "pricing", "safety"] },
@@ -48,6 +49,19 @@ export async function SiteFooter({ locale }: { locale: Locale }) {
           <p className="footer-status-value"><span aria-hidden="true" />{t("footer.status")}</p>
           <p>{t("footer.availability")}</p>
         </div>
+
+        <nav className="footer-column footer-legal" aria-label={t("footer.legalTitle")}>
+          <h2>{t("footer.legalTitle")}</h2>
+          <ul>
+            {legalDocumentIds.map((document) => (
+              <li key={document}>
+                <Link href={legalDocumentHref(locale, document)}>
+                  {t(`footer.legalLinks.${legalDocuments[document].labelKey}`)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
 
       <div className="shell footer-bottom">

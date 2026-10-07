@@ -9,6 +9,14 @@ Ces quatre fichiers sont des **sources de travail en français**, pas des textes
 | `consentement-donnees-sensibles.md` | `SENSITIVE_DATA_CONSENT_VERSION`, `SENSITIVE_DATA_CONSENT_URL` |
 | `consentement-localisation.md` | `LOCATION_CONSENT_VERSION`, `LOCATION_CONSENT_URL` |
 
+## Intégration au site
+
+Les originaux français restent dans ce dossier. Leurs traductions de travail sont dans `en/`, `es/` et `it/`, avec les mêmes noms de fichiers. Toute modification du français doit être répercutée dans les traductions et leur validation.
+
+Le site génère une page HTML pour chaque document et langue sous `/{lang}/legal/{nom-du-fichier}/`, accessible depuis le footer. Le sélecteur de langue conserve le document consulté. Les textes sont lus directement depuis ces fichiers au moment de la compilation.
+
+Ces pages conservent les mentions de brouillon et les champs à compléter. Elles sont en `noindex, follow` et absentes du sitemap tant que les textes ne sont pas finalisés. Après validation des textes et des traductions, adapter les métadonnées de la page juridique et le sitemap pour permettre leur indexation.
+
 ## Avant publication
 
 1. Remplacer tous les marqueurs `[À COMPLÉTER]` et `[À VALIDER]`. Vérifier l’identité de l’éditeur et du responsable de traitement, les contacts, l’hébergeur, les sous-traitants, les transferts éventuels, toutes les durées de conservation et le parcours commercial réel.

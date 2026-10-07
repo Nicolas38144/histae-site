@@ -31,6 +31,13 @@
     "navigation": "Footer navigation",
     "exploreTitle": "Discover",
     "projectTitle": "The project",
+    "legalTitle": "Legal information",
+    "legalLinks": {
+      "terms": "Terms of use",
+      "privacy": "Privacy policy",
+      "sensitiveData": "Sensitive data consent",
+      "location": "Location consent"
+    },
     "statusLabel": "Project status",
     "status": "iOS and Android app in development",
     "availability": "The initial launch is planned for France. Official links will be published on this website.",

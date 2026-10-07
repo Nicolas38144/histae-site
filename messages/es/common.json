@@ -31,6 +31,13 @@
     "navigation": "Navegación del pie de página",
     "exploreTitle": "Descubrir",
     "projectTitle": "El proyecto",
+    "legalTitle": "Información legal",
+    "legalLinks": {
+      "terms": "Condiciones de uso",
+      "privacy": "Política de privacidad",
+      "sensitiveData": "Consentimiento para datos sensibles",
+      "location": "Consentimiento de ubicación"
+    },
     "statusLabel": "Estado del proyecto",
     "status": "Aplicación para iOS y Android en preparación",
     "availability": "El primer lanzamiento está previsto en Francia. Los enlaces oficiales se publicarán en este sitio.",

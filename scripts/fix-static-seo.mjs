@@ -1,11 +1,17 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const outputDirectory = path.resolve("out");
 const configUrl = new URL("../config/site.json", import.meta.url);
 const siteConfig = JSON.parse(await readFile(configUrl, "utf8"));
 const locales = Object.keys(siteConfig.locales);
-const routes = Object.values(siteConfig.routes);
+const legalDocuments = (await readdir(new URL("../docs/legal/", import.meta.url)))
+  .filter((file) => file.endsWith(".md") && file !== "README.md")
+  .map((file) => file.slice(0, -3));
+const routes = [
+  ...Object.values(siteConfig.routes).map((route) => ({ ...route, indexable: true })),
+  ...legalDocuments.map((document) => ({ path: `legal/${document}`, indexable: false })),
+];
 
 function pageUrl(locale, route) {
   const suffix = route.path ? `${route.path}/` : "";
@@ -62,8 +68,32 @@ for (const locale of locales) {
 
     assertIncludes(head, `<link rel="canonical" href="${canonical}"`, `${file}: invalid canonical URL`);
     assertIncludes(head, '<meta name="description"', `${file}: missing meta description`);
+    assertIncludes(head, '<title>', `${file}: missing title`);
+    const robots = head.match(/<meta name="robots" content="([^"]+)"/)?.[1];
+    const robotDirectives = robots?.split(/\s*,\s*/) ?? [];
+    if (!robotDirectives.includes(route.indexable ? "index" : "noindex") || !robotDirectives.includes("follow")) {
+      throw new Error(`${file}: unexpected robots directives ${robots ?? "none"}`);
+    }
     if ((html.match(/<h1(?:\s|>)/g) ?? []).length !== 1) throw new Error(`${file}: expected exactly one h1`);
     if (head.includes("hrefLang=")) throw new Error(`${file}: non-normalized hrefLang attribute remains in head`);
+
+    const header = html.match(/<header\b[^>]*>([\s\S]*?)<\/header>/)?.[1];
+    const footer = html.match(/<footer\b[^>]*>([\s\S]*?)<\/footer>/)?.[1];
+    if (!header || !footer) throw new Error(`${file}: missing site header or footer`);
+    const faqHref = `/${locale}/${siteConfig.routes.faq.path}/`;
+    const primaryNavigation = header.match(/<nav\b[^>]*id="site-navigation"[^>]*>([\s\S]*?)<\/nav>/)?.[1];
+    if (!primaryNavigation) throw new Error(`${file}: missing primary navigation`);
+    if (primaryNavigation.includes(`href="${faqHref}"`)) throw new Error(`${file}: FAQ remains in the menu`);
+    assertIncludes(footer, `href="${faqHref}"`, `${file}: FAQ missing from footer`);
+    for (const document of legalDocuments) {
+      assertIncludes(footer, `href="/${locale}/legal/${document}/"`, `${file}: legal document missing from footer: ${document}`);
+    }
+    if (!route.indexable) {
+      assertIncludes(html, `class="legal-document" lang="${locale}"`, `${file}: legal document has incorrect language`);
+      if (route.path.endsWith("politique-confidentialite") && !/<table(?:\s|>)/.test(html)) {
+        throw new Error(`${file}: privacy table not rendered`);
+      }
+    }
 
     const languageLinks = html.match(/<a[^>]+lang="[^"]+"[^>]*>/g) ?? [];
     for (const targetLocale of locales) {
@@ -78,9 +108,22 @@ for (const locale of locales) {
   }
 }
 
+const sitemap = await readFile(path.join(outputDirectory, "sitemap.xml"), "utf8");
+const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+const expectedSitemapUrls = locales.flatMap((locale) => routes.filter((route) => route.indexable).map((route) => pageUrl(locale, route)));
+if (sitemapUrls.length !== expectedSitemapUrls.length || new Set(sitemapUrls).size !== expectedSitemapUrls.length) {
+  throw new Error("Sitemap has duplicate, missing or unexpected URLs");
+}
+for (const url of expectedSitemapUrls) {
+  if (!sitemapUrls.includes(url)) throw new Error(`Sitemap missing canonical URL: ${url}`);
+}
+const robotsFile = await readFile(path.join(outputDirectory, "robots.txt"), "utf8");
+assertIncludes(robotsFile, `Sitemap: ${siteConfig.publicUrl}/sitemap.xml`, "robots.txt has an incorrect sitemap URL");
+if (/^Disallow:\s*\/\s*$/m.test(robotsFile)) throw new Error("robots.txt blocks the entire site");
+
 const expectedPageCount = locales.length * routes.length;
 if (localizedPageCount !== expectedPageCount) {
   throw new Error(`Expected ${expectedPageCount} localized pages, validated ${localizedPageCount}`);
 }
 
-console.log(`Validated SEO metadata for ${localizedPageCount} localized pages.`);
+console.log(`Validated SEO, navigation and legal documents for ${localizedPageCount} localized pages; ${sitemapUrls.length} indexable sitemap URLs.`);
