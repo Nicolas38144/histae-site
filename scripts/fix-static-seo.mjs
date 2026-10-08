@@ -1,13 +1,11 @@
-import { readFile, readdir, writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const outputDirectory = path.resolve("out");
 const configUrl = new URL("../config/site.json", import.meta.url);
 const siteConfig = JSON.parse(await readFile(configUrl, "utf8"));
 const locales = Object.keys(siteConfig.locales);
-const legalDocuments = (await readdir(new URL("../docs/legal/", import.meta.url)))
-  .filter((file) => file.endsWith(".md") && file !== "README.md")
-  .map((file) => file.slice(0, -3));
+const legalDocuments = Object.keys(siteConfig.legalDocuments);
 const routes = [
   ...Object.values(siteConfig.routes).map((route) => ({ ...route, indexable: true })),
   ...legalDocuments.map((document) => ({ path: `legal/${document}`, indexable: false })),
@@ -90,7 +88,7 @@ for (const locale of locales) {
     }
     if (!route.indexable) {
       assertIncludes(html, `class="legal-document" lang="${locale}"`, `${file}: legal document has incorrect language`);
-      if (route.path.endsWith("politique-confidentialite") && !/<table(?:\s|>)/.test(html)) {
+      if (route.path.endsWith("privacy-policy") && !/<table(?:\s|>)/.test(html)) {
         throw new Error(`${file}: privacy table not rendered`);
       }
     }

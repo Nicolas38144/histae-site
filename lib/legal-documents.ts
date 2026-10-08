@@ -1,25 +1,9 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import siteConfig from "../config/site.json";
 import type { Locale } from "./site-config";
 
-export const legalDocuments = {
-  "conditions-utilisation": {
-    labelKey: "terms",
-    title: "Conditions générales d’utilisation de Histae",
-  },
-  "politique-confidentialite": {
-    labelKey: "privacy",
-    title: "Politique de confidentialité de Histae",
-  },
-  "consentement-donnees-sensibles": {
-    labelKey: "sensitiveData",
-    title: "Consentement au traitement des données sensibles",
-  },
-  "consentement-localisation": {
-    labelKey: "location",
-    title: "Consentement à l’utilisation de la localisation",
-  },
-} as const;
+export const legalDocuments = siteConfig.legalDocuments;
 
 export type LegalDocumentId = keyof typeof legalDocuments;
 
@@ -35,8 +19,9 @@ export function legalDocumentHref(locale: Locale, document: LegalDocumentId): st
 
 export function readLegalDocument(document: LegalDocumentId, locale: Locale): Promise<string> {
   const directory = path.join(process.cwd(), "docs", "legal");
+  const source = legalDocuments[document].source;
   const file = locale === "fr"
-    ? path.join(directory, `${document}.md`)
-    : path.join(directory, locale, `${document}.md`);
+    ? path.join(directory, `${source}.md`)
+    : path.join(directory, locale, `${source}.md`);
   return readFile(file, "utf8");
 }

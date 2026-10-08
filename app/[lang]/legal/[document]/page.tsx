@@ -8,7 +8,6 @@ import {
   isLegalDocumentId,
   legalDocumentHref,
   legalDocumentIds,
-  legalDocuments,
   readLegalDocument,
 } from "../../../../lib/legal-documents";
 import { defaultLocale, isLocale, localeConfig, locales, localizedHref, publicUrl } from "../../../../lib/site-config";
@@ -28,8 +27,8 @@ export async function generateMetadata({ params }: LegalPageProps): Promise<Meta
     readLegalDocument(document, lang),
     getTranslations({ locale: lang }),
   ]);
-  const title = source.match(/^# (.+)/)?.[1] ?? legalDocuments[document].title;
-  const description = `${t("footer.legalTitle")} — ${t(`footer.legalLinks.${legalDocuments[document].labelKey}`)}. Histae.`;
+  const title = source.match(/^# (.+)/)?.[1] ?? t(`footer.legalLinks.${document}`);
+  const description = `${t("footer.legalTitle")} — ${t(`footer.legalLinks.${document}`)}. Histae.`;
 
   return {
     title,
@@ -68,7 +67,7 @@ export default async function LegalPage({ params }: LegalPageProps) {
         <article className="legal-document" lang={lang}>
           <Markdown remarkPlugins={[remarkGfm]} components={{
             table: ({ children }) => (
-              <div className="legal-table-scroll" role="region" aria-label={t("footer.legalLinks.privacy")} tabIndex={0}>
+              <div className="legal-table-scroll" role="region" aria-label={t("footer.legalLinks.privacy-policy")} tabIndex={0}>
                 <table>{children}</table>
               </div>
             ),

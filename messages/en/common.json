@@ -33,10 +33,10 @@
     "projectTitle": "The project",
     "legalTitle": "Legal information",
     "legalLinks": {
-      "terms": "Terms of use",
-      "privacy": "Privacy policy",
-      "sensitiveData": "Sensitive data consent",
-      "location": "Location consent"
+      "terms-of-use": "Terms of use",
+      "privacy-policy": "Privacy policy",
+      "sensitive-data-consent": "Sensitive data consent",
+      "location-consent": "Location consent"
     },
     "statusLabel": "Project status",
     "status": "iOS and Android app in development",

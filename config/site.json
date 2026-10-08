@@ -16,6 +16,12 @@
     "about": { "path": "about", "navigation": true, "priority": 0.8 },
     "download": { "path": "download", "navigation": false, "priority": 0.8 }
   },
+  "legalDocuments": {
+    "terms-of-use": { "source": "conditions-utilisation" },
+    "privacy-policy": { "source": "politique-confidentialite" },
+    "sensitive-data-consent": { "source": "consentement-donnees-sensibles" },
+    "location-consent": { "source": "consentement-localisation" }
+  },
   "plans": {
     "free": {
       "priceCents": 0,

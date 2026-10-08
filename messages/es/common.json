@@ -33,10 +33,10 @@
     "projectTitle": "El proyecto",
     "legalTitle": "Información legal",
     "legalLinks": {
-      "terms": "Condiciones de uso",
-      "privacy": "Política de privacidad",
-      "sensitiveData": "Consentimiento para datos sensibles",
-      "location": "Consentimiento de ubicación"
+      "terms-of-use": "Condiciones de uso",
+      "privacy-policy": "Política de privacidad",
+      "sensitive-data-consent": "Consentimiento para datos sensibles",
+      "location-consent": "Consentimiento de ubicación"
     },
     "statusLabel": "Estado del proyecto",
     "status": "Aplicación para iOS y Android en preparación",

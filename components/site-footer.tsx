@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { localizedHref, type Locale, type SiteRouteId } from "../lib/site-config";
-import { legalDocumentHref, legalDocumentIds, legalDocuments } from "../lib/legal-documents";
+import { legalDocumentHref, legalDocumentIds } from "../lib/legal-documents";
 
 const footerGroups: Array<{ titleKey: "exploreTitle" | "projectTitle"; routes: SiteRouteId[] }> = [
   { titleKey: "exploreTitle", routes: ["home", "feature", "pricing", "safety"] },
@@ -56,7 +56,7 @@ export async function SiteFooter({ locale }: { locale: Locale }) {
             {legalDocumentIds.map((document) => (
               <li key={document}>
                 <Link href={legalDocumentHref(locale, document)}>
-                  {t(`footer.legalLinks.${legalDocuments[document].labelKey}`)}
+                  {t(`footer.legalLinks.${document}`)}
                 </Link>
               </li>
             ))}
