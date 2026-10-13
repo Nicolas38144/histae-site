@@ -112,3 +112,12 @@ React keys use stable catalogue or content identifiers rather than translated la
 TypeScript is strict and checks unused code and switch fallthrough. ESLint includes the Next.js Core Web Vitals
 and TypeScript configurations. Run all three quality checks above before shipping; the static build also validates
 localized navigation and SEO. Do not commit generated `.next`, `out` or TypeScript build cache files.
+
+## Journaux du serveur Nginx
+
+L’image copie `nginx-logging.conf` dans `/etc/nginx/conf.d/00-logging.conf`. Chaque serveur utilise le format `histae_safe` : heure, méthode normalisée, catégorie de route, statut, durée et UUID de requête validé.
+Les URL complètes, paramètres, identifiants de comptes dans les chemins, IP, cookies, Authorization, Referer et User-Agent sont exclus des logs d’accès. Les erreurs Nginx ordinaires sont filtrées ; seuls les diagnostics
+critiques sont conservés. La pile `reverse-proxy` borne les logs Docker à cinq fichiers de 10 Mo par conteneur.
+
+Lors d’une copie manuelle sur le serveur, copier aussi **`nginx-logging.conf`**, puis reconstruire l’image.
+La vérification reproductible est décrite dans `../histae-api-rust/docs/security-hardening.md`.

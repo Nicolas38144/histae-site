@@ -2,12 +2,15 @@ FROM node:24-alpine AS build
 WORKDIR /app
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
-RUN corepack enable && pnpm install --frozen-lockfile
+RUN if command -v corepack >/dev/null 2>&1; then corepack disable pnpm; fi \
+    && npm install --global "$(node -p "require('./package.json').packageManager.split('+')[0]")" \
+    && pnpm install --frozen-lockfile
 
 COPY . ./
 RUN pnpm build
 
 FROM nginx:1.28-alpine
+COPY nginx-logging.conf /etc/nginx/conf.d/00-logging.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/out /usr/share/nginx/html
 
