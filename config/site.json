@@ -31,7 +31,7 @@
     },
     "premium": {
       "monthlyPriceCents": 500,
-      "annualPriceCents": 3000,
+      "annualPriceCents": 4800,
       "trialDays": 30,
       "featured": true,
       "features": ["messaging", "photoReveal", "unlimitedContinuations"]
