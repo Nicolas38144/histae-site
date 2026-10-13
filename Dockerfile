@@ -9,12 +9,12 @@ RUN if command -v corepack >/dev/null 2>&1; then corepack disable pnpm; fi \
 COPY . ./
 RUN pnpm build
 
-FROM nginx:1.28-alpine
-COPY nginx-logging.conf /etc/nginx/conf.d/00-logging.conf
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /app/out /usr/share/nginx/html
+FROM caddy:2.11.7-alpine@sha256:d8542f48d34a9cf4e4c11a478865229840e87e4c96ea3f439101f31a5d35f75f
+ENV XDG_CONFIG_HOME=/tmp/caddy-config XDG_DATA_HOME=/tmp/caddy-data
+USER 1000:1000
+COPY Caddyfile caddy-common.caddy /etc/caddy/
+COPY --from=build /app/out /srv
 
 EXPOSE 80
-# Teste une page exportée directement, sans suivre la redirection de langue de /.
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 CMD wget -q -T 2 -O /dev/null http://127.0.0.1/fr/ || exit 1
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["caddy", "run", "--config", "/etc/caddy/Caddyfile", "--adapter", "caddyfile"]

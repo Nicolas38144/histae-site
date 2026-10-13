@@ -113,11 +113,23 @@ TypeScript is strict and checks unused code and switch fallthrough. ESLint inclu
 and TypeScript configurations. Run all three quality checks above before shipping; the static build also validates
 localized navigation and SEO. Do not commit generated `.next`, `out` or TypeScript build cache files.
 
-## Journaux du serveur Nginx
+## Serveur Caddy et confidentialité des logs
 
-L’image copie `nginx-logging.conf` dans `/etc/nginx/conf.d/00-logging.conf`. Chaque serveur utilise le format `histae_safe` : heure, méthode normalisée, catégorie de route, statut, durée et UUID de requête validé.
-Les URL complètes, paramètres, identifiants de comptes dans les chemins, IP, cookies, Authorization, Referer et User-Agent sont exclus des logs d’accès. Les erreurs Nginx ordinaires sont filtrées ; seuls les diagnostics
-critiques sont conservés. La pile `reverse-proxy` borne les logs Docker à cinq fichiers de 10 Mo par conteneur.
+L’image finale utilise Caddy **2.11.7**, figé par digest, pour servir les fichiers statiques.
+`Caddyfile` désactive l’API d’administration, HTTPS automatique et la sauvegarde de configuration.
+Il écoute en HTTP interne et charge `caddy-common.caddy` pour la politique commune des logs et du corps HTTP.
+Le runtime utilise UID/GID 1000, une racine en lecture seule et uniquement `NET_BIND_SERVICE`.
 
-Lors d’une copie manuelle sur le serveur, copier aussi **`nginx-logging.conf`**, puis reconstruire l’image.
-La vérification reproductible est décrite dans `../histae-api-rust/docs/security-hardening.md`.
+Les logs JSON suppriment la requête complète et les en-têtes de réponse. Ils conservent le statut,
+la durée, des métriques numériques, la méthode normalisée, la catégorie de route et l’UUID de réponse
+API validé. Les URL, paramètres, IP, cookies et autres en-têtes privés sont exclus. Les erreurs HTTP
+ordinaires sont représentées par ce log expurgé ; le logger runtime ne les duplique pas.
+La pile `reverse-proxy` borne les logs Docker à cinq fichiers de 10 Mo par conteneur.
+
+Lors d’une copie manuelle, copier **`Caddyfile`**, **`caddy-common.caddy`** et **`Dockerfile`**, puis reconstruire
+et recréer le service. Les anciens fichiers `nginx.conf` et `nginx-logging.conf` sont supprimés.
+Le guide et les vérifications sont dans `../histae-api-rust/docs/caddy-migration.md`.
+
+Les redirections du domaine canonique, des langues et des anciennes routes juridiques sont conservées.
+Les ressources publiques gardent leur cache d’un jour et une page absente garde le statut 404.
+Les en-têtes CSP et protections navigateur s’appliquent aussi aux réponses d’erreur.

@@ -1,0 +1,87 @@
+{
+	admin off
+	auto_https off
+	persist_config off
+	log default {
+		output stderr
+		level ERROR
+		# Keep request failures only in sanitized access logs.
+		exclude http.log.access http.log.error
+	}
+}
+
+import caddy-common.caddy
+:80 {
+	import histae_access
+	root * /srv
+	encode gzip {
+		minimum_length 256
+		match {
+			header Content-Type text/html*
+			header Content-Type text/plain*
+			header Content-Type text/css*
+			header Content-Type application/javascript*
+			header Content-Type application/json*
+			header Content-Type image/svg+xml*
+		}
+	}
+
+	header {
+		Content-Security-Policy "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; manifest-src 'self'"
+		Cross-Origin-Opener-Policy same-origin
+		Cross-Origin-Resource-Policy same-origin
+		Permissions-Policy "camera=(), geolocation=(), microphone=(), payment=()"
+		Referrer-Policy strict-origin-when-cross-origin
+		X-Content-Type-Options nosniff
+		X-Frame-Options DENY
+	}
+
+	@canonical host histae.com
+	redir @canonical https://www.histae.com{uri} 308
+
+	@english {
+		path /
+		header_regexp Accept-Language (?i)^en
+	}
+	@spanish {
+		path /
+		header_regexp Accept-Language (?i)^es
+	}
+	@italian {
+		path /
+		header_regexp Accept-Language (?i)^it
+	}
+	# Keep language selection ordered, with French as the default.
+	route / {
+		redir @english /en/ 302
+		redir @spanish /es/ 302
+		redir @italian /it/ 302
+		redir * /fr/ 302
+	}
+
+	map {query} {histae_query_suffix} {
+		"" ""
+		default "?{query}"
+	}
+
+	@terms path_regexp terms ^/(fr|en|es|it)/legal/conditions-utilisation/?$
+	@privacy path_regexp privacy ^/(fr|en|es|it)/legal/politique-confidentialite/?$
+	@sensitive path_regexp sensitive ^/(fr|en|es|it)/legal/consentement-donnees-sensibles/?$
+	@location path_regexp location ^/(fr|en|es|it)/legal/consentement-localisation/?$
+	redir @terms /{re.terms.1}/legal/terms-of-use/{histae_query_suffix} 308
+	redir @privacy /{re.privacy.1}/legal/privacy-policy/{histae_query_suffix} 308
+	redir @sensitive /{re.sensitive.1}/legal/sensitive-data-consent/{histae_query_suffix} 308
+	redir @location /{re.location.1}/legal/location-consent/{histae_query_suffix} 308
+
+	@asset path_regexp (?i)\.(?:js|css|png|jpg|jpeg|gif|webp|avif|svg|ico|woff2?|eot|ttf|otf|webmanifest)$
+	header @asset Cache-Control "public, max-age=86400"
+	# Dotfiles and source maps must never be served, even if included by mistake.
+	@private path_regexp (?i)(?:^|/)\.|\.(?:map|ts|tsx|jsx)$
+	respond @private 404
+	file_server
+	handle_errors 404 {
+		header -Cache-Control
+		rewrite * /404.html
+		file_server
+	}
+}

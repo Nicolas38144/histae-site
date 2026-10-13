@@ -22,7 +22,7 @@ Le site génère une page HTML pour chaque document et langue sous `/{lang}/lega
 | `consentement-donnees-sensibles.md` | `/{lang}/legal/sensitive-data-consent/` |
 | `consentement-localisation.md` | `/{lang}/legal/location-consent/` |
 
-La correspondance entre routes et sources est définie dans `config/site.json`. Le sélecteur de langue conserve le document consulté. Les textes sont lus directement depuis ces fichiers au moment de la compilation. Nginx redirige les anciennes adresses françaises vers les nouvelles avec le statut permanent 308, en conservant la langue et les paramètres de requête.
+La correspondance entre routes et sources est définie dans `config/site.json`. Le sélecteur de langue conserve le document consulté. Les textes sont lus directement depuis ces fichiers au moment de la compilation. Caddy redirige les anciennes adresses françaises vers les nouvelles avec le statut permanent 308, en conservant la langue et les paramètres de requête.
 
 Ces pages conservent les mentions de brouillon et les champs à compléter. Elles sont en `noindex, follow` et absentes du sitemap tant que les textes ne sont pas finalisés. Après validation des textes et des traductions, adapter les métadonnées de la page juridique et le sitemap pour permettre leur indexation.
 
