@@ -1,6 +1,6 @@
 # Politique de confidentialité de Histae
 
-> **Brouillon du 7 octobre 2026 — à compléter et faire valider avant publication.** Les passages entre crochets et les durées à confirmer ne doivent pas rester dans la version publiée.
+> **Brouillon du 13 octobre 2026 — à compléter et faire valider avant publication.** Les passages entre crochets et les durées à confirmer ne doivent pas rester dans la version publiée.
 
 **Version publiée :** [À COMPLÉTER après validation]  
 **Date d’entrée en vigueur :** [À COMPLÉTER]  
@@ -50,3 +50,8 @@ Depuis le compte, l’utilisateur peut demander l’accès, la rectification, la
 Histae utilise des contrôles d’accès, des limitations de tentatives, une modération et des mesures techniques destinées à protéger les données. Les critères de découverte filtrent les profils selon les préférences mutuelles. Certains contenus font l’objet d’une analyse automatisée et peuvent être soumis à une revue humaine avant leur affichage. **À VALIDER :** description des éventuelles décisions produisant des effets juridiques ou similaires, et des voies de contestation correspondantes.
 
 Une modification importante des finalités, destinataires, durées ou droits fera l’objet d’une information adaptée. La version et la date d’entrée en vigueur de la notice resteront accessibles. Les autres informations obligatoires de l’article 13 du RGPD, notamment les transferts et la source des données si elle ne vient pas de l’utilisateur, doivent être vérifiées dans la version finale.
+
+
+## Publicités récompensées facultatives — avant activation
+
+Les publicités récompensées sont prévues via Google AdMob dans l’application mobile, sans publicité sur ce site. Leur activation nécessite une information dédiée et des choix publicitaires séparés, modifiables et retirables. Regarder une vidéo ou accepter la continuation ne constitue pas un consentement au suivi ou à la personnalisation. Les trois crédits gratuits restent accessibles sans regarder de publicité. Le SDK peut traiter notamment des identifiants techniques, des informations sur l’appareil et l’interaction publicitaire selon les choix applicables ; la liste précise, les destinataires, transferts et garanties doivent être validés avant activation. Histae ne transmet pas au réseau publicitaire le numéro de téléphone, l’UUID du compte, le profil, le sexe, les préférences, la position précise ni les messages. Une intention aléatoire temporaire relie la récompense au compte côté Histae ; la preuve signée et l’unicité de la transaction conditionnent l’ajout du crédit. Les intentions et preuves internes sont conservées au plus 90 jours, puis purgées lors d’une passe de maintenance ; le solde acquis reste conservé pendant la vie du compte. Ces données figurent dans l’export et sont supprimées lors de l’effacement du compte. Les accords de continuation de l’autre personne ne sont pas révélés.

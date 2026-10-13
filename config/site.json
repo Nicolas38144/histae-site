@@ -2,39 +2,100 @@
   "publicUrl": "https://www.histae.com",
   "defaultLocale": "fr",
   "locales": {
-    "fr": { "label": "Français", "openGraph": "fr_FR" },
-    "en": { "label": "English", "openGraph": "en_GB" },
-    "es": { "label": "Español", "openGraph": "es_ES" },
-    "it": { "label": "Italiano", "openGraph": "it_IT" }
+    "fr": {
+      "label": "Français",
+      "openGraph": "fr_FR"
+    },
+    "en": {
+      "label": "English",
+      "openGraph": "en_GB"
+    },
+    "es": {
+      "label": "Español",
+      "openGraph": "es_ES"
+    },
+    "it": {
+      "label": "Italiano",
+      "openGraph": "it_IT"
+    }
   },
   "routes": {
-    "home": { "path": "", "navigation": true, "priority": 1 },
-    "feature": { "path": "feature", "navigation": true, "priority": 0.8 },
-    "pricing": { "path": "pricing", "navigation": true, "priority": 0.8 },
-    "safety": { "path": "security", "navigation": true, "priority": 0.8 },
-    "faq": { "path": "faq", "navigation": false, "priority": 0.8 },
-    "about": { "path": "about", "navigation": true, "priority": 0.8 },
-    "download": { "path": "download", "navigation": false, "priority": 0.8 }
+    "home": {
+      "path": "",
+      "navigation": true,
+      "priority": 1
+    },
+    "feature": {
+      "path": "feature",
+      "navigation": true,
+      "priority": 0.8
+    },
+    "pricing": {
+      "path": "pricing",
+      "navigation": true,
+      "priority": 0.8
+    },
+    "safety": {
+      "path": "security",
+      "navigation": true,
+      "priority": 0.8
+    },
+    "faq": {
+      "path": "faq",
+      "navigation": false,
+      "priority": 0.8
+    },
+    "about": {
+      "path": "about",
+      "navigation": true,
+      "priority": 0.8
+    },
+    "download": {
+      "path": "download",
+      "navigation": false,
+      "priority": 0.8
+    }
   },
   "legalDocuments": {
-    "terms-of-use": { "source": "conditions-utilisation" },
-    "privacy-policy": { "source": "politique-confidentialite" },
-    "sensitive-data-consent": { "source": "consentement-donnees-sensibles" },
-    "location-consent": { "source": "consentement-localisation" }
+    "terms-of-use": {
+      "source": "conditions-utilisation"
+    },
+    "privacy-policy": {
+      "source": "politique-confidentialite"
+    },
+    "sensitive-data-consent": {
+      "source": "consentement-donnees-sensibles"
+    },
+    "location-consent": {
+      "source": "consentement-localisation"
+    }
   },
   "plans": {
     "free": {
       "priceCents": 0,
-      "successfulContinuationsPerWeek": 3,
+      "successfulContinuationsPerWeek": 6,
       "featured": false,
-      "features": ["messaging", "photoReveal", "limitedContinuations"]
+      "features": [
+        "messaging",
+        "photoReveal",
+        "limitedContinuations",
+        "rewardedCredits",
+        "weeklyLimit"
+      ],
+      "weeklyIncludedCredits": 3,
+      "advertisingCreditStockLimit": 3
     },
     "premium": {
       "monthlyPriceCents": 500,
       "annualPriceCents": 4800,
       "trialDays": 30,
       "featured": true,
-      "features": ["messaging", "photoReveal", "unlimitedContinuations"]
+      "features": [
+        "messaging",
+        "photoReveal",
+        "unlimitedContinuations",
+        "noAds"
+      ]
     }
   }
 }

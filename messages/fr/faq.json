@@ -21,7 +21,7 @@
       },
       "match": {
         "question": "Comment fonctionne un match ?",
-        "answer": "Un match existe uniquement après deux likes réciproques. Une première fenêtre de 24 heures ouvre la conversation, puis une seconde de 24 heures permet aux deux personnes de décider si elles souhaitent continuer.",
+        "answer": "Après deux likes réciproques, vous échangez pendant 24 heures. L’envoi est ensuite suspendu pendant 24 heures : l’historique reste lisible et chacun choisit de continuer ou de terminer. Les choix restent privés jusqu’aux deux accords, qui rouvrent la conversation. Un refus ou l’absence de deux accords dans le délai termine le match, sans préciser qui a refusé.",
         "linkLabel": "Comprendre le parcours"
       },
       "photos": {
@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "Quelle différence entre Free et Premium ?",
-        "answer": "Free inclut la messagerie, la révélation mutuelle des photos et {freeContinuations} continuations réussies par semaine. Premium prévoit les continuations illimitées à {monthlyPrice} par mois ou {annualPrice} par an, avec {trialDays} jours d’essai.",
+        "answer": "Free reçoit {freeCredits} crédits chaque lundi à 00:00 UTC, sans cumul. Une vidéo facultative donne 1 crédit supplémentaire, avec un stock de {advertisingStock} conservé entre les semaines. Chaque personne Free réserve 1 crédit en choisissant de continuer ; il est débité seulement après les deux accords. Un refus ou une expiration libère la réservation. Maximum {weeklyMaximum} continuations confirmées par personne Free et par semaine. Premium supprime les publicités et cette limite à {monthlyPrice} par mois ou {annualPrice} par an, avec {trialDays} jours d’essai prévus.",
         "linkLabel": "Comparer les tarifs"
       },
       "location": {

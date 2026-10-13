@@ -35,7 +35,7 @@
         },
         "continuationWindow": {
           "title": "Otras 24 horas para elegir la continuación",
-          "text": "Al terminar, una segunda ventana de 24 horas permite decidir si continuar. Dos acuerdos confirman el match."
+          "text": "Durante las 24 horas de decisión se pausa el envío y el historial sigue visible. Las decisiones permanecen privadas hasta que ambos aceptan. Un rechazo termina el match inmediatamente; sin dos acuerdos antes del plazo, caduca."
         },
         "photoReveal": {
           "title": "Revelación de fotos independiente",
@@ -44,6 +44,10 @@
         "messaging": {
           "title": "Mensajes vinculados al match",
           "text": "Los mensajes se fechan, tienen un máximo de 2.000 caracteres y solo el destinatario puede marcarlos como leídos. Un match expirado no admite mensajes nuevos."
+        },
+        "continuationCredits": {
+          "title": "Una decisión y un coste claros",
+          "text": "Cada participante Free recibe {freeCredits} créditos el lunes a las 00:00 UTC y reserva su propio crédito al aceptar. Ambos créditos se consumen solo tras los dos acuerdos. Un vídeo opcional da 1 crédito; el saldo publicitario de hasta {advertisingStock} se conserva entre semanas. Máximo {weeklyMaximum} continuaciones confirmadas por semana. Premium no tiene anuncios, consumo de créditos ni límite semanal."
         }
       }
     },
@@ -58,7 +62,7 @@
         },
         "consents": {
           "title": "Consentir con claridad",
-          "text": "Las condiciones, la privacidad, los datos sensibles y la ubicación se gestionan por separado. Histae no añade consentimiento de marketing implícito."
+          "text": "Las condiciones, el aviso de privacidad, los datos sensibles y la ubicación se presentan por separado. Las decisiones publicitarias también serán independientes: continuar un match no significa aceptar el seguimiento publicitario."
         },
         "consentWithdrawal": {
           "title": "Poder cambiar de opinión",

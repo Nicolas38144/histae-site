@@ -44,3 +44,9 @@ Les brouillons s’appuient sur les contrats actuels de `docs/http-contract.md`,
 - [CNIL — géolocalisation des applications mobiles](https://www.cnil.fr/fr/geolocalisation-applications-mobiles-quelles-regles)
 - [CNIL — applications de rencontre et vie privée](https://www.cnil.fr/fr/sites-et-applications-de-rencontres-comment-proteger-votre-intimite)
 - [RGPD, notamment articles 7, 9 et 13](https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=fr)
+
+## Modification du 13 octobre 2026
+
+Les CGU et notices des quatre langues décrivent la pause des messages, les décisions privées, le coût pour chaque participant Free, les allocations et réservations, et la publicité récompensée envisagée. Le fournisseur reste désactivé tant que le parcours mobile et les choix publicitaires ne sont pas intégrés et validés. Publier de nouvelles versions validées avant activation ; les versions API et `LEGAL_REVIEW_REFERENCE` ne sont pas modifiées par cette rédaction. Les récompenses restent internes au compte, non transférables et sans valeur monétaire.
+
+Sources complémentaires : [Google — règles des annonces récompensées](https://support.google.com/admob/answer/7313578?hl=fr), [Google — UMP](https://developers.google.com/admob/flutter/privacy), [CNIL — recommandations mobiles](https://www.cnil.fr/fr/recommandations-applications-mobiles).

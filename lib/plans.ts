@@ -4,13 +4,16 @@ import type { Locale } from "./site-config";
 export const planCatalog = siteConfig.plans;
 export type PlanId = keyof typeof planCatalog;
 
-export const planIds: PlanId[] = ["free", "premium"];
+export const planIds = ["free", "premium"] as const satisfies readonly PlanId[];
 
 export const planFeatureIds = [
   "messaging",
   "photoReveal",
   "limitedContinuations",
   "unlimitedContinuations",
+  "rewardedCredits",
+  "weeklyLimit",
+  "noAds",
 ] as const;
 
 export type PlanFeatureId = (typeof planFeatureIds)[number];
@@ -21,8 +24,10 @@ function isPlanFeatureId(value: string): value is PlanFeatureId {
 
 export function getPlanFeatureIds(planId: PlanId): PlanFeatureId[] {
   const features = planCatalog[planId].features;
-  if (!features.every(isPlanFeatureId)) throw new Error(`Unknown feature in ${planId} plan`);
-  return features.filter(isPlanFeatureId);
+  return features.map((feature) => {
+    if (!isPlanFeatureId(feature)) throw new Error(`Unknown feature in ${planId} plan: ${feature}`);
+    return feature;
+  });
 }
 
 export function formatEuro(cents: number, locale: Locale): string {
@@ -41,6 +46,9 @@ export function priceAmount(cents: number): string {
 export function getCommercialValues(locale: Locale) {
   return {
     freeContinuations: planCatalog.free.successfulContinuationsPerWeek,
+    freeCredits: planCatalog.free.weeklyIncludedCredits,
+    advertisingStock: planCatalog.free.advertisingCreditStockLimit,
+    weeklyMaximum: planCatalog.free.successfulContinuationsPerWeek,
     monthlyPrice: formatEuro(planCatalog.premium.monthlyPriceCents, locale),
     annualPrice: formatEuro(planCatalog.premium.annualPriceCents, locale),
     trialDays: planCatalog.premium.trialDays,

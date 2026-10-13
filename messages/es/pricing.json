@@ -2,25 +2,28 @@
   "pricing": {
     "eyebrow": "Precios sencillos",
     "title": "Elige tu ritmo, sin ocultar el precio.",
-    "intro": "El catálogo actual ofrece una experiencia gratuita completa y un plan Premium centrado en continuaciones ilimitadas.",
+    "intro": "Free incluye tres créditos gratuitos cada semana. Un vídeo opcional permite sumar créditos; Premium elimina los anuncios y el límite semanal.",
     "premiumBadge": "Premium",
     "notice": "Estos precios proceden del catálogo actual de la API. Las compras de suscripción y los pagos se activarán con el lanzamiento comercial de la aplicación.",
     "cta": "Ver todos los precios",
     "plans": {
       "free": {
         "name": "Free",
-        "description": "Lo esencial de la experiencia Histae, gratis."
+        "description": "Tres créditos cada lunes a las 00:00 UTC, sin acumular. Cada participante Free consume su propio crédito cuando ambos aceptan."
       },
       "premium": {
         "name": "Premium",
-        "description": "Para continuar los encuentros sin límite semanal."
+        "description": "Sin anuncios ni créditos que consumir, con continuaciones ilimitadas. Ambas personas deben aceptar."
       }
     },
     "features": {
       "messaging": "Mensajes mientras el match esté abierto",
       "photoReveal": "Revelación mutua de fotos",
-      "limitedContinuations": "{count} continuaciones exitosas por semana",
-      "unlimitedContinuations": "Continuaciones ilimitadas"
+      "limitedContinuations": "{count} créditos gratuitos cada semana",
+      "unlimitedContinuations": "Continuaciones ilimitadas",
+      "rewardedCredits": "1 crédito por vídeo opcional · hasta {stock} acumulados",
+      "weeklyLimit": "Hasta {count} continuaciones confirmadas por semana",
+      "noAds": "Sin anuncios ni consumo de créditos"
     },
     "billing": {
       "freePeriod": "para siempre",

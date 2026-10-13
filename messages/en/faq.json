@@ -21,7 +21,7 @@
       },
       "match": {
         "question": "How does a match work?",
-        "answer": "A match exists only after two reciprocal likes. A first 24-hour window opens the conversation, then a second 24-hour window lets both people decide whether they want to continue.",
+        "answer": "After two mutual likes, you can talk for 24 hours. Sending is then paused for a further 24 hours: history remains readable and each person can continue or end the match. Choices stay private until both agree, reopening the conversation. A decline or no mutual agreement within the deadline ends the match without naming who declined.",
         "linkLabel": "Understand the journey"
       },
       "photos": {
@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "What is the difference between Free and Premium?",
-        "answer": "Free includes messaging, mutual photo reveal and {freeContinuations} successful continuations per week. Premium plans unlimited continuations at {monthlyPrice} per month or {annualPrice} per year, with a {trialDays}-day trial.",
+        "answer": "Free receives {freeCredits} credits every Monday at 00:00 UTC, without rollover. An optional video earns 1 extra credit, with up to {advertisingStock} advertising credits retained across weeks. Each Free participant reserves 1 credit when choosing to continue; it is charged only after both agree. Declining or expiry releases reservations. Each Free participant can confirm at most {weeklyMaximum} continuations per week. Premium removes ads and this limit at {monthlyPrice} per month or {annualPrice} per year, with a planned {trialDays}-day trial.",
         "linkLabel": "Compare pricing"
       },
       "location": {

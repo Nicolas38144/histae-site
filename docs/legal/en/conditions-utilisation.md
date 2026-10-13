@@ -1,6 +1,6 @@
 # Histae Terms of Use
 
-> **Draft dated 7 October 2026 — to be completed and reviewed before publication.** Text in square brackets must not remain in the published version.
+> **Draft dated 13 October 2026 — to be completed and reviewed before publication.** Text in square brackets must not remain in the published version.
 
 **Published version:** [TO BE COMPLETED after review]  
 **Effective date:** [TO BE COMPLETED]  
@@ -18,7 +18,7 @@ Acceptance of these terms is required to use the service. Acknowledgement of the
 
 Discovery uses the profile, mutual preferences and a recent location when the user has agreed to its use. It does not guarantee profile suggestions, matches or a response from another person. A match is created only after two mutual likes.
 
-The conversation opens for an initial period of 24 hours. An additional 24-hour period then allows both people to decide whether they wish to continue the match. Revealing photos requires separate agreement from both people and does not depend on their decision to continue. These periods and rules reflect the service currently planned; any significant change will be indicated in the app and in a new version of these terms.
+After two mutual likes, you can talk for 24 hours. Sending is then paused for a further 24 hours: history remains readable and each person can continue or end the match. Choices stay private until both agree, reopening the conversation. A decline or no mutual agreement within the deadline ends the match without naming who declined.
 
 Users can block or report another person. Blocking stops the interactions concerned. Reports may be examined by the authorised team.
 
@@ -47,3 +47,8 @@ Users may request account deletion through the process provided in the app or ex
 The applicable version is the one presented and accepted in the app. A substantial change will be communicated anew and, where necessary, require renewed acceptance. The version and effective date must remain accessible alongside the text.
 
 For questions about these terms: [TO BE COMPLETED: contact address]. Information on applicable law, complaints and any consumer mediator: [TO BE COMPLETED after legal review].
+
+
+## Continuation credits and optional advertising
+
+Free receives three free credits every Monday at 00:00 UTC, without rollover. Each Free participant reserves one credit when accepting; both are charged atomically after both agree. Declining or expiry releases reservations. A voluntary advertising video can earn an extra credit, with up to three advertising credits retained across weeks. Credits belong to the account, are non-transferable and have no monetary value. Free is limited to six confirmed continuations per person per week. Premium (EUR 5 per month or EUR 48 per year, with a planned 30-day trial) has no credit charges, no ads and no weekly limit. Mutual agreement is always required.

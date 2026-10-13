@@ -1,6 +1,6 @@
 # Conditions générales d’utilisation de Histae
 
-> **Brouillon du 7 octobre 2026 — à compléter et faire valider avant publication.** Les passages entre crochets ne doivent pas rester dans la version publiée.
+> **Brouillon du 13 octobre 2026 — à compléter et faire valider avant publication.** Les passages entre crochets ne doivent pas rester dans la version publiée.
 
 **Version publiée :** [À COMPLÉTER après validation]  
 **Date d’entrée en vigueur :** [À COMPLÉTER]  
@@ -18,7 +18,7 @@ L’acceptation des présentes conditions est nécessaire pour utiliser le servi
 
 La découverte utilise le profil, les préférences réciproques et une position récente lorsque l’utilisateur a accepté son utilisation. Elle ne garantit ni proposition de profil, ni match, ni réponse d’une autre personne. Un match n’est créé qu’après deux appréciations réciproques.
 
-La conversation s’ouvre pour une première période de 24 heures. Une période supplémentaire de 24 heures permet ensuite aux deux personnes de décider si elles souhaitent poursuivre le match. La révélation des photos exige un accord distinct des deux personnes et ne dépend pas de leur décision de poursuivre. Ces durées et règles sont celles du service actuellement prévu ; toute évolution significative sera indiquée dans l’application et dans une nouvelle version des présentes conditions.
+Après deux likes réciproques, vous échangez pendant 24 heures. L’envoi est ensuite suspendu pendant 24 heures : l’historique reste lisible et chacun choisit de continuer ou de terminer. Les choix restent privés jusqu’aux deux accords, qui rouvrent la conversation. Un refus ou l’absence de deux accords dans le délai termine le match, sans préciser qui a refusé.
 
 Les utilisateurs peuvent bloquer ou signaler une autre personne. Un blocage interrompt les interactions concernées. Les signalements peuvent être examinés par l’équipe habilitée.
 
@@ -47,3 +47,8 @@ L’utilisateur peut demander l’effacement de son compte depuis le parcours pr
 La version applicable est celle présentée et acceptée dans l’application. Une modification substantielle fera l’objet d’une nouvelle information et, lorsque nécessaire, d’une nouvelle acceptation. La version et la date d’entrée en vigueur doivent rester accessibles avec le texte.
 
 Pour toute question sur ces conditions : [À COMPLÉTER : adresse de contact]. Les informations relatives au droit applicable, aux réclamations et à un éventuel médiateur de la consommation sont : [À COMPLÉTER après validation juridique].
+
+
+## Crédits de continuation et publicités facultatives
+
+Free reçoit trois crédits gratuits chaque lundi à 00:00 UTC, sans cumul. Chaque participant Free réserve un crédit lors de son accord ; les deux participants sont débités atomiquement après les deux accords. Un refus ou une expiration libère les réservations. Une vidéo publicitaire volontaire peut donner un crédit supplémentaire, jusqu’à trois crédits publicitaires en stock, conservés entre les semaines. Les crédits sont internes au compte, non transférables et sans valeur monétaire. Free est limité à six continuations confirmées par personne et par semaine. Premium (5 EUR par mois ou 48 EUR par an, essai prévu de 30 jours) ne consomme pas de crédit, ne diffuse pas de publicité et n’impose pas cette limite. L’accord mutuel reste toujours nécessaire.

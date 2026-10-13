@@ -35,7 +35,7 @@
         },
         "continuationWindow": {
           "title": "24 heures supplémentaires pour choisir la suite",
-          "text": "À l’échéance, une seconde fenêtre de 24 heures permet à chacun d’indiquer s’il souhaite continuer. Deux accords confirment le match."
+          "text": "L’envoi est suspendu et l’historique reste lisible pendant les 24 heures de décision. Les choix restent privés jusqu’aux deux accords. Un refus termine immédiatement le match ; sans deux accords dans le délai, il expire."
         },
         "photoReveal": {
           "title": "Une révélation des photos indépendante",
@@ -44,6 +44,10 @@
         "messaging": {
           "title": "Une messagerie liée au match",
           "text": "Les messages sont horodatés, limités à 2 000 caractères et marqués comme lus uniquement par leur destinataire. Un match expiré n’accepte plus de message."
+        },
+        "continuationCredits": {
+          "title": "Continuer avec un choix et un coût explicites",
+          "text": "Chaque personne Free reçoit {freeCredits} crédits le lundi à 00:00 UTC et réserve son propre crédit en acceptant. Les deux crédits sont débités seulement après deux accords. Une vidéo facultative donne 1 crédit ; le stock publicitaire de {advertisingStock} reste acquis. Maximum {weeklyMaximum} continuations confirmées par semaine. Premium est sans publicité, sans crédit et illimité."
         }
       }
     },
@@ -58,7 +62,7 @@
         },
         "consents": {
           "title": "Des consentements séparés",
-          "text": "Les CGU, la notice de confidentialité, les données sensibles et la localisation sont présentées séparément. Aucun choix marketing n’est ajouté au parcours."
+          "text": "Les CGU, la notice de confidentialité, les données sensibles et la localisation sont présentées séparément. Les choix publicitaires seront également séparés : continuer un match ne vaut pas accord au suivi publicitaire."
         },
         "consentWithdrawal": {
           "title": "Retirer un accord produit un effet réel",

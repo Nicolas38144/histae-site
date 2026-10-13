@@ -34,7 +34,7 @@ Alternative URL: https://histae.com
 ├── components/         # Reusable React components
 ├── config/             # Shared locales, routes and commercial catalogue
 ├── i18n/               # next-intl request and navigation configuration
-├── translations/           # Translation catalogs split by locale and domain
+├── messages/           # Translation catalogs split by locale and domain
 ├── public/             # Static assets
 ├── lib/                # Utilities and shared logic
 ├── next.config.ts      # Next.js configuration
@@ -97,3 +97,18 @@ Built with **Next.js** and **TypeScript**.
 **Histae — Dating app coming soon.**
 
 **Website:** [www.histae.com](https://www.histae.com)
+
+## Règles de continuation
+
+Le catalogue `config/site.json` distingue les trois crédits gratuits hebdomadaires, le stock publicitaire de trois crédits et le plafond de six continuations confirmées par participant Free. Les valeurs sont injectées dans les tarifs, la FAQ et la page des fonctionnalités, dans les quatre langues. Les choix restent privés et l’envoi est suspendu pendant les 24 heures de décision. Les textes juridiques décrivent aussi la publicité récompensée prévue et restent des brouillons à valider avant son activation. Aucun SDK publicitaire n’est ajouté au site.
+
+## Next.js and TypeScript conventions
+
+Presentation components remain Server Components unless browser interactivity requires a client boundary.
+`lib/plans.ts` validates the configured feature identifiers; `lib/pricing.ts` builds typed, localized card models;
+`PricingCard` renders them. Prices and credit limits come from `config/site.json`, with text supplied by next-intl.
+React keys use stable catalogue or content identifiers rather than translated labels.
+
+TypeScript is strict and checks unused code and switch fallthrough. ESLint includes the Next.js Core Web Vitals
+and TypeScript configurations. Run all three quality checks above before shipping; the static build also validates
+localized navigation and SEO. Do not commit generated `.next`, `out` or TypeScript build cache files.

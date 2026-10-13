@@ -1,6 +1,6 @@
 # Histae Privacy Policy
 
-> **Draft dated 7 October 2026 — to be completed and reviewed before publication.** Text in square brackets and retention periods requiring confirmation must not remain in the published version.
+> **Draft dated 13 October 2026 — to be completed and reviewed before publication.** Text in square brackets and retention periods requiring confirmation must not remain in the published version.
 
 **Published version:** [TO BE COMPLETED after review]  
 **Effective date:** [TO BE COMPLETED]  
@@ -50,3 +50,8 @@ From their account, users may request access, rectification, portability, restri
 Histae uses access controls, limits on attempts, moderation and technical measures designed to protect data. Discovery criteria filter profiles based on mutual preferences. Some content undergoes automated analysis and may be subject to human review before display. **TO BE REVIEWED:** description of any decisions producing legal or similarly significant effects, and the corresponding avenues for challenge.
 
 A significant change to purposes, recipients, retention periods or rights will be communicated appropriately. The notice's version and effective date will remain accessible. Other mandatory information under GDPR Article 13, including transfers and the source of data when it does not come from the user, must be checked in the final version.
+
+
+## Optional rewarded advertising — before activation
+
+Google AdMob rewarded ads are planned for the mobile app, with no ads on this website. Activation requires dedicated information and separate advertising choices that can be changed or withdrawn. Watching a video or agreeing to continue does not constitute consent to tracking or personalization. The three free credits remain available without watching ads. Depending on applicable choices, the SDK may process technical identifiers, device information and advertising interactions; the precise data, recipients, transfers and safeguards must be reviewed before activation. Histae does not send the phone number, account UUID, profile, sex, preferences, precise location or messages to the ad network. A temporary random intent links the reward to the account within Histae; a signed proof and a unique transaction are required to add a credit. Internal intents and proofs are retained for up to 90 days and purged during maintenance; earned balances remain for the account lifetime. These data are included in the export and removed on account erasure. The other person’s individual continuation choices are not disclosed.

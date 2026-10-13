@@ -35,7 +35,7 @@
         },
         "continuationWindow": {
           "title": "Another 24 hours to choose what comes next",
-          "text": "At expiry, a second 24-hour window lets each person choose whether to continue. Two agreements confirm the match."
+          "text": "Sending is paused and history stays readable during the 24-hour decision window. Choices remain private until both agree. A decline ends the match immediately; without both agreements by the deadline, it expires."
         },
         "photoReveal": {
           "title": "Independent mutual photo reveal",
@@ -44,6 +44,10 @@
         "messaging": {
           "title": "Messaging tied to the match",
           "text": "Messages are timestamped, limited to 2,000 characters and marked read only by the recipient. An expired match accepts no new message."
+        },
+        "continuationCredits": {
+          "title": "A clear choice and credit cost",
+          "text": "Each Free participant receives {freeCredits} credits on Monday at 00:00 UTC and reserves their own credit when accepting. Both credits are charged only after both agree. An optional video earns 1 credit; up to {advertisingStock} advertising credits are retained across weeks. At most {weeklyMaximum} confirmed continuations per week. Premium has no ads, no credit charges and no weekly limit."
         }
       }
     },
@@ -58,7 +62,7 @@
         },
         "consents": {
           "title": "Separate consent choices",
-          "text": "Terms, the privacy notice, sensitive data and location are presented separately. No marketing choice is added to the journey."
+          "text": "Terms, the privacy notice, sensitive data and location are presented separately. Advertising choices will also be separate: agreeing to continue a match does not mean agreeing to advertising tracking."
         },
         "consentWithdrawal": {
           "title": "Withdrawing consent has a real effect",
