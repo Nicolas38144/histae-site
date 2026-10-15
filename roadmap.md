@@ -1,6 +1,6 @@
 # Histae Site — feuille de route
 
-État au 5 septembre 2026.
+Travaux ouverts après la revue du 15 octobre 2026.
 
 Cette feuille de route contient uniquement les travaux encore ouverts de la vitrine publique. Le site est un export
 statique Next.js, sans dépendance d'exécution à l'API. Il présente Histae en français, anglais, espagnol et italien.
@@ -20,7 +20,7 @@ valider une source de référence avant publication ; le site se charge ensuite 
 
 ## État acquis
 
-- export statique Next.js avec sept routes dans quatre langues, soit 28 pages localisées ;
+- export statique de 28 pages produit et 16 pages juridiques dans quatre langues, soit 44 pages localisées ;
 - navigation localisée, sélecteur de langue et redirection vers la langue par défaut ;
 - canonical, `hreflang`, `x-default`, métadonnées sociales, sitemap, robots et manifest ;
 - contrôle post-build de la langue du document, des canonical, des alternates, des liens de langue et de l'unique `h1` ;
@@ -28,9 +28,10 @@ valider une source de référence avant publication ; le site se charge ensuite 
 - catalogue marketing centralisé dans `config/site.json` ;
 - aucune dépendance actuelle du navigateur à l'API et aucun mécanisme de mesure d'audience identifié.
 
-Au 5 septembre 2026, les montants et limites déclarés dans `config/site.json` correspondent au catalogue initial de
-l'API : gratuit, Premium à 5 € par mois ou 30 € par an, essai de 30 jours et trois continuations hebdomadaires pour
-le plan gratuit. Cette concordance doit être vérifiée à chaque changement, pas supposée durable.
+Le catalogue `config/site.json` affiche Premium à 5 € par mois ou 48 € par an, avec 30 jours d’essai. Free
+reçoit 3 crédits gratuits par semaine, peut conserver 3 crédits publicitaires et confirme au plus 6 continuations
+par semaine. Les règles sont décrites dans le [guide API](../histae-api-rust/docs/continuation-and-rewards.md).
+La concordance avec la version réellement livrée doit être vérifiée à chaque publication.
 
 ## Niveaux de priorité
 
@@ -71,8 +72,6 @@ les coordonnées, les bases légales et les traductions doivent être validés p
 - [ ] Ajouter les coordonnées validées pour support, exercice des droits et signalement de sécurité.
 - [ ] Décider, à partir des mécanismes réellement déployés, si une politique ou un consentement cookies est requis ;
   ne pas ajouter de bandeau décoratif en l'absence de choix à recueillir.
-- [ ] Ajouter les routes légales dans la configuration commune, le footer, le sitemap et les quatre catalogues de
-  traduction sans créer de lien mort.
 - [ ] Afficher version ou date d'effet lorsque nécessaire et définir comment une ancienne version peut être retrouvée.
 
 ### Validation
@@ -152,8 +151,9 @@ d'un canal de support adapté.
 
 ### Couverture déjà présente
 
-Le script `scripts/fix-static-seo.mjs` contrôle déjà les 28 pages pour `lang`, canonical, `hreflang`, `x-default`,
-description, changement de langue et unicité du `h1`. Ces contrôles doivent être conservés ; ils ne sont pas à recréer.
+Le script `scripts/fix-static-seo.mjs` contrôle les 44 pages localisées pour `lang`, canonical, `hreflang`,
+`x-default`, description, changement de langue et unicité du `h1`, ainsi que le footer et les documents juridiques.
+Il vérifie aussi les 28 URL indexables du sitemap et `robots.txt`. Les brouillons juridiques restent en noindex. Ces contrôles doivent être conservés ; ils ne sont pas à recréer.
 
 ### Travail restant
 
@@ -167,7 +167,7 @@ description, changement de langue et unicité du `h1`. Ces contrôles doivent ê
 - [ ] Ajouter quelques parcours navigateur pour navigation principale, dialogue de langue, footer et appels à l'action.
 - [ ] Ajouter un script unique de validation réunissant typecheck, lint, build et tests ; ajouter un audit des
   dépendances de production sans l'exécuter au chargement du site.
-- [ ] Documenter la méthode de prévisualisation et la vérification des 28 pages générées avant publication.
+- [ ] Documenter la méthode de prévisualisation et la vérification des 44 pages localisées avant publication.
 
 ### Critère de fin
 
@@ -204,14 +204,13 @@ les réponses publiques, pas déduite de `next.config.ts`.
 
 ### Travail
 
-- [ ] Choisir une URL canonique unique entre `histae.com` et `www.histae.com`, puis rediriger l'autre origine en
-  conservant chemin et langue.
+- [ ] vérifier sur le serveur la redirection de `histae.com` vers `www.histae.com` en conservant chemin et langue ;
 - [ ] Vérifier HTTPS, certificat, renouvellement, redirections et absence de contenu mixte.
 - [ ] Définir puis tester CSP, HSTS, anti-framing, `nosniff`, politique de référent et permissions navigateur sur
   toutes les réponses, y compris erreurs et redirections.
 - [ ] Vérifier que `out` ne contient ni secret, source map involontaire, URL interne, fichier de développement ou
   métadonnée de dépôt.
-- [ ] Définir les règles de cache : HTML rapidement remplaçable, actifs immuables fortement cachés, documents
+- [ ] Définir les règles de cache : HTML rapidement remplaçable, ressources publiques cachées un jour selon le Caddyfile actuel, documents
   juridiques invalidables lors d'une mise à jour.
 - [ ] Construire un artefact immuable, conserver la version précédente et répéter un retour arrière.
 - [ ] Réutiliser la supervision retenue pour Histae afin de contrôler disponibilité, certificat et pages localisées,

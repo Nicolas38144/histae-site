@@ -47,9 +47,8 @@ Alternative URL: https://histae.com
 
 The website takes advantage of Next.js features to provide a fast and modern experience:
 
-* Server-side rendering and static generation where appropriate
+* Static export generated at build time, without a Next.js production server
 * Optimized routing
-* Image optimization
 * SEO-friendly metadata
 * Canonical and hreflang links for every localized route
 * Responsive design
