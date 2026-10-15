@@ -23,7 +23,7 @@
         },
         "stableDecisions": {
           "title": "Des décisions stables",
-          "text": "Un like ou un pass est enregistré comme un choix définitif pendant sa conservation. Rejouer la même décision est possible, la transformer après coup ne l’est pas."
+          "text": "Votre like ou votre choix de passer est conservé : un profil déjà évalué ne vous est plus proposé. Cela évite de revoir les mêmes profils dans votre découverte."
         },
         "reciprocity": {
           "title": "Un match créé uniquement par réciprocité",
@@ -47,7 +47,7 @@
         },
         "continuationCredits": {
           "title": "Continuer avec un choix et un coût explicites",
-          "text": "Chaque personne Free reçoit {freeCredits} crédits le lundi à 00:00 UTC et réserve son propre crédit en acceptant. Les deux crédits sont débités seulement après deux accords. Une vidéo facultative donne 1 crédit ; le stock publicitaire de {advertisingStock} reste acquis. Maximum {weeklyMaximum} continuations confirmées par semaine. Premium est sans publicité, sans crédit et illimité."
+          "text": "Chaque personne Free reçoit {freeCredits} crédits chaque semaine. Un crédit est réservé lorsqu’elle choisit de continuer un match après les premières 24 heures, puis consommé seulement après les deux accords. Un refus ou une expiration le libère. Une vidéo facultative rapporte 1 crédit, jusqu’à {advertisingStock} crédits publicitaires conservés entre les semaines. Chaque personne Free peut prolonger au plus {weeklyMaximum} conversations par semaine. Une personne Premium ne consomme pas de crédit ; l’autre personne garde les limites de sa propre offre."
         }
       }
     },
@@ -103,16 +103,16 @@
       "intro": "L’application iOS et Android est en préparation. Les liens de téléchargement seront publiés ici dès leur disponibilité réelle.",
       "blocks": {
         "availability": {
-          "title": "Pas de faux bouton",
-          "text": "Nous préférons annoncer une disponibilité réelle plutôt que de vous envoyer vers une page vide."
+          "title": "Sur iOS et Android",
+          "text": "Les liens App Store et Google Play seront disponibles sur cette page dès la publication de l’application."
         },
         "finalization": {
-          "title": "Ce que nous finalisons",
-          "text": "Les applications mobiles, leur publication, les opérations de lancement et le futur parcours commercial doivent encore être finalisés et validés."
+          "title": "Commencer gratuitement",
+          "text": "Avec Free, vous pourrez créer votre profil, découvrir des personnes compatibles et commencer à échanger. Premium Mensuel et Premium Annuel proposeront les mêmes avantages, avec deux rythmes de facturation."
         },
         "officialLinks": {
-          "title": "Une disponibilité annoncée ici",
-          "text": "Cette page deviendra le point d’accès officiel aux versions App Store et Google Play dès leur ouverture."
+          "title": "Vos liens officiels",
+          "text": "Retrouvez ici les liens vers les boutiques officielles. La date de lancement sera annoncée lorsqu’elle sera confirmée."
         }
       },
       "footerNote": "Revenez prochainement pour les liens App Store et Google Play."

@@ -26,6 +26,9 @@ valider une source de référence avant publication ; le site se charge ensuite 
 - contrôle post-build de la langue du document, des canonical, des alternates, des liens de langue et de l'unique `h1` ;
 - contenu responsive pour accueil, fonctionnalités, tarifs, sécurité, FAQ, à propos et téléchargement ;
 - catalogue marketing centralisé dans `config/site.json` ;
+- trois cartes Free, Premium Mensuel et Premium Annuel, avec coût annuel, équivalent mensuel et économie calculés ;
+- explications des crédits, de l’essai et de la reconduction dans les quatre langues ;
+- liens vers les trois dépôts publics pour consultation et audits, avec les droits de modification et réutilisation réservés ;
 - aucune dépendance actuelle du navigateur à l'API et aucun mécanisme de mesure d'audience identifié.
 
 Le catalogue `config/site.json` affiche Premium à 5 € par mois ou 48 € par an, avec 30 jours d’essai. Free

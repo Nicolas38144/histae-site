@@ -1,10 +1,14 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
+import { getCommercialValues } from "../lib/plans";
 import { localizedHref, type Locale } from "../lib/site-config";
+import { getMessagesForLocale } from "../messages";
 import { PricingCards } from "./pricing-cards";
 
 export async function PricingPage({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale });
+  const { pricing } = getMessagesForLocale(locale);
+  const values = getCommercialValues(locale);
 
   return (
     <main id="main-content" className="information-page pricing-page">
@@ -13,12 +17,69 @@ export async function PricingPage({ locale }: { locale: Locale }) {
         <h1 id="page-title">{t("pricing.title")}</h1>
         <p>{t("pricing.intro")}</p>
       </section>
-      <section className="shell pricing-page-content" aria-label={t("pricing.title")}>
+      <section className="shell pricing-page-content" aria-labelledby="plans-title">
+        <div className="section-heading pricing-comparison-heading">
+          <h2 id="plans-title">{t("pricing.comparisonTitle")}</h2>
+          <p>{t("pricing.comparisonIntro")}</p>
+        </div>
         <PricingCards locale={locale} />
         <p className="pricing-notice">{t("pricing.notice")}</p>
       </section>
+      <section className="shell pricing-explainer" aria-labelledby="continuation-title">
+        <div className="section-heading">
+          <p className="eyebrow">{t("pricing.howItWorks.eyebrow")}</p>
+          <h2 id="continuation-title">{t("pricing.howItWorks.title")}</h2>
+          <p>{t("pricing.howItWorks.intro")}</p>
+        </div>
+        <ol className="pricing-steps">
+          {Object.entries(pricing.howItWorks.steps).map(([id, step], index) => (
+            <li key={id}>
+              <span className="pricing-step-number" aria-hidden="true">0{index + 1}</span>
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+      <section className="shell pricing-explainer" aria-labelledby="credits-title">
+        <div className="section-heading">
+          <p className="eyebrow">{t("pricing.credits.eyebrow")}</p>
+          <h2 id="credits-title">{t("pricing.credits.title")}</h2>
+          <p>{t("pricing.credits.intro")}</p>
+        </div>
+        <div className="pricing-credit-grid">
+          {Object.keys(pricing.credits.items).map((id) => (
+            <article className="pricing-credit" key={id}>
+              <h3>{t(`pricing.credits.items.${id}.title`, values)}</h3>
+              <p>{t(`pricing.credits.items.${id}.text`, values)}</p>
+            </article>
+          ))}
+        </div>
+        <p className="pricing-mutual-note">{t("pricing.credits.mutualNote")}</p>
+      </section>
+      <section className="shell pricing-questions" aria-labelledby="billing-title">
+        <div className="section-heading">
+          <h2 id="billing-title">{t("pricing.questionsTitle")}</h2>
+        </div>
+        <div className="faq-list">
+          {Object.entries(pricing.questions).map(([id, question]) => (
+            <details className="faq-item" key={id}>
+              <summary>
+                <span>{question.title}</span>
+                <span className="faq-toggle" aria-hidden="true">+</span>
+              </summary>
+              <div className="faq-answer"><p>{t(`pricing.questions.${id}.text`, values)}</p></div>
+            </details>
+          ))}
+        </div>
+      </section>
       <section className="shell page-closing">
-        <Link className="text-link" href={localizedHref(locale, "home")}>{t("common.backHome")}<span aria-hidden="true"> →</span></Link>
+        <p>{t("pricing.launchNotice")}</p>
+        <Link className="button button-primary" href={localizedHref(locale, "download")}>{t("pricing.launchCta")}</Link>
+        <Link className="text-link pricing-faq-link" href={localizedHref(locale, "faq")}>{t("pricing.faqCta")}<span aria-hidden="true"> →</span></Link>
+        <div className="pricing-home-link">
+          <Link className="text-link" href={localizedHref(locale, "home")}>{t("common.backHome")}<span aria-hidden="true"> →</span></Link>
+        </div>
       </section>
     </main>
   );

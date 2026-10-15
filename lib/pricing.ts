@@ -1,18 +1,21 @@
 import type { getTranslations } from "next-intl/server";
 import type { AppMessages } from "../messages";
-import { formatEuro, getPlanFeatureIds, planCatalog, planIds, type PlanFeatureId, type PlanId } from "./plans";
+import { formatEuro, getCommercialValues, getPlanFeatureIds, planCatalog, type PlanFeatureId, type PlanId } from "./plans";
 import type { Locale } from "./site-config";
 
 type PricingTranslations = Awaited<ReturnType<typeof getTranslations<"pricing">>>;
 
 export type PricingCardModel = {
-  id: PlanId;
+  id: "free" | "monthly" | "annual";
   name: string;
   description: string;
   featured: boolean;
   price: string;
   period: string;
-  annual: string;
+  billing: string;
+  equivalent?: string;
+  saving?: string;
+  badge?: string;
   trial?: string;
   features: { id: PlanFeatureId; label: string }[];
 };
@@ -38,29 +41,43 @@ export function getPricingCards(
     noAds: t("features.noAds"),
   };
 
-  return planIds.map((planId) => {
-    const common = {
-      id: planId,
-      ...pricing.plans[planId],
-      featured: planCatalog[planId].featured,
-      features: getPlanFeatureIds(planId).map((id) => ({ id, label: featureLabels[id] })),
-    };
-    if (planId === "free") {
-      return {
-        ...common,
-        price: formatEuro(planCatalog.free.priceCents, locale),
-        period: t("billing.freePeriod"),
-        annual: t("billing.noSubscription"),
-      };
-    }
-    return {
-      ...common,
-      price: formatEuro(planCatalog.premium.monthlyPriceCents, locale),
+  const features = (planId: PlanId) => getPlanFeatureIds(planId)
+    .map((id) => ({ id, label: featureLabels[id] }));
+  const values = getCommercialValues(locale);
+  const trial = t("billing.trial", { days: values.trialDays });
+
+  return [
+    {
+      id: "free",
+      ...pricing.plans.free,
+      featured: false,
+      price: formatEuro(planCatalog.free.priceCents, locale),
+      period: t("billing.freePeriod"),
+      billing: t("billing.noSubscription"),
+      features: features("free"),
+    },
+    {
+      id: "monthly",
+      ...pricing.plans.monthly,
+      featured: false,
+      price: values.monthlyPrice,
       period: t("billing.monthlyPeriod"),
-      annual: t("billing.annualPeriod", {
-        price: formatEuro(planCatalog.premium.annualPriceCents, locale),
-      }),
-      trial: t("billing.trial", { days: planCatalog.premium.trialDays }),
-    };
-  });
+      billing: t("billing.monthlyBilling"),
+      trial,
+      features: features("premium"),
+    },
+    {
+      id: "annual",
+      ...pricing.plans.annual,
+      featured: planCatalog.premium.featured,
+      price: values.annualPrice,
+      period: t("billing.annualPeriod"),
+      billing: t("billing.annualBilling"),
+      equivalent: t("billing.monthlyEquivalent", { price: values.annualMonthlyPrice }),
+      saving: t("billing.annualSaving", { amount: values.annualSaving }),
+      badge: t("billing.annualBadge", { percent: values.annualSavingPercent }),
+      trial,
+      features: features("premium"),
+    },
+  ];
 }

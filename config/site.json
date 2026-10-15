@@ -1,6 +1,11 @@
 {
   "publicUrl": "https://www.histae.com",
   "defaultLocale": "fr",
+  "repositories": {
+    "api": "https://github.com/Nicolas38144/histae-api-rust",
+    "app": "https://github.com/Nicolas38144/histae-app",
+    "site": "https://github.com/Nicolas38144/histae-site"
+  },
   "locales": {
     "fr": {
       "label": "Français",

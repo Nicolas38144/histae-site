@@ -4,8 +4,6 @@ import type { Locale } from "./site-config";
 export const planCatalog = siteConfig.plans;
 export type PlanId = keyof typeof planCatalog;
 
-export const planIds = ["free", "premium"] as const satisfies readonly PlanId[];
-
 export const planFeatureIds = [
   "messaging",
   "photoReveal",
@@ -51,6 +49,9 @@ export function getCommercialValues(locale: Locale) {
     weeklyMaximum: planCatalog.free.successfulContinuationsPerWeek,
     monthlyPrice: formatEuro(planCatalog.premium.monthlyPriceCents, locale),
     annualPrice: formatEuro(planCatalog.premium.annualPriceCents, locale),
+    annualMonthlyPrice: formatEuro(planCatalog.premium.annualPriceCents / 12, locale),
+    annualSaving: formatEuro(planCatalog.premium.monthlyPriceCents * 12 - planCatalog.premium.annualPriceCents, locale),
+    annualSavingPercent: Math.round((1 - planCatalog.premium.annualPriceCents / (planCatalog.premium.monthlyPriceCents * 12)) * 100),
     trialDays: planCatalog.premium.trialDays,
   };
 }

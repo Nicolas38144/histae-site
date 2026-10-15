@@ -85,7 +85,8 @@ The website is live, while the dating application itself will be released soon.
 
 ## License
 
-This project is private/proprietary unless otherwise specified.
+The source code is public for review and security audits. The repositories are not open to external contributions.
+The code remains proprietary: modification and reuse rights are reserved. Public visibility does not grant an open-source licence.
 
 All rights reserved.
 
@@ -99,7 +100,20 @@ Built with **Next.js** and **TypeScript**.
 
 ## Règles de continuation
 
-Le catalogue `config/site.json` distingue les trois crédits gratuits hebdomadaires, le stock publicitaire de trois crédits et le plafond de six continuations confirmées par participant Free. Les valeurs sont injectées dans les tarifs, la FAQ et la page des fonctionnalités, dans les quatre langues. Les choix restent privés et l’envoi est suspendu pendant les 24 heures de décision. Les textes juridiques décrivent aussi la publicité récompensée prévue et restent des brouillons à valider avant son activation. Aucun SDK publicitaire n’est ajouté au site.
+Le catalogue `config/site.json` distingue les trois crédits gratuits hebdomadaires, le stock publicitaire de trois crédits et le plafond de six continuations confirmées par participant Free. Les valeurs sont injectées dans les tarifs, la FAQ et la page des fonctionnalités, dans les quatre langues. Les choix restent privés et l’envoi est suspendu pendant les 24 heures de décision. Chaque participant Free utilise son propre crédit ; un participant Premium n’en consomme pas et ne couvre pas le crédit de l’autre. Les textes juridiques décrivent aussi la publicité récompensée prévue et restent des brouillons à valider avant son activation. Aucun SDK publicitaire n’est ajouté au site.
+
+## Présentation des offres et du code public
+
+L’accueil et la page Tarifs présentent trois cartes : Free, Premium Mensuel et Premium Annuel. Les deux formules
+Premium partagent les mêmes fonctionnalités du catalogue. Le prix annuel est affiché comme un paiement unique ;
+son équivalent mensuel, l’économie annuelle et le pourcentage de réduction sont calculés à partir des prix du catalogue.
+La page Tarifs explique les crédits, les deux fenêtres de 24 heures, l’essai, la reconduction et les matchs Free/Premium.
+Le site reste une vitrine : il ne propose ni achat ni précommande, et conserve un état de lancement en préparation.
+
+Les trois dépôts publics sont centralisés dans `config/site.json` et présentés sur les pages Sécurité et À propos,
+avec un accès depuis le footer et la FAQ. La formulation retenue est « code source public et auditable » ; aucun droit
+de modification ou de réutilisation, ni aucune acceptation de contributions externes, n’est annoncé. Cette visibilité
+ne doit pas être présentée comme une licence open source. Les textes sont maintenus dans les quatre langues.
 
 ## Next.js and TypeScript conventions
 

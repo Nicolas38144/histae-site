@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "What is the difference between Free and Premium?",
-        "answer": "Free receives {freeCredits} credits every Monday at 00:00 UTC, without rollover. An optional video earns 1 extra credit, with up to {advertisingStock} advertising credits retained across weeks. Each Free participant reserves 1 credit when choosing to continue; it is charged only after both agree. Declining or expiry releases reservations. Each Free participant can confirm at most {weeklyMaximum} continuations per week. Premium removes ads and this limit at {monthlyPrice} per month or {annualPrice} per year, with a planned {trialDays}-day trial.",
+        "answer": "Free lets you make matches and start chatting for free. You get {freeCredits} free credits each week to extend conversations, with up to {weeklyMaximum} confirmed extensions. An optional video earns 1 extra credit, with up to {advertisingStock} stored. Premium Monthly costs {monthlyPrice} per month; Premium Annual costs {annualPrice} in one yearly payment. Both include the same benefits: no credits to spend and no ads. A {trialDays}-day trial is offered once per eligible account.",
         "linkLabel": "Compare pricing"
       },
       "location": {
@@ -48,6 +48,11 @@
         "question": "How can I exercise my rights or delete my data?",
         "answer": "Histae provides dedicated journeys for access, portability, correction, restriction, objection and erasure. The export gathers account data; deletion removes the main data, anonymises messages and closes matches.",
         "linkLabel": "Learn more about your rights"
+      },
+      "sourceCode": {
+        "question": "Can I read the code and carry out a security audit?",
+        "answer": "Yes. The API, mobile app and website source code is published on GitHub for reading and security audits. External contributions are not accepted, and modification and reuse rights remain reserved. Links to all three repositories are on the Safety page.",
+        "linkLabel": "Browse the public repositories"
       }
     }
   }

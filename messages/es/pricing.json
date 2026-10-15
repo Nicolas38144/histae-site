@@ -1,38 +1,111 @@
 {
   "pricing": {
     "eyebrow": "Precios sencillos",
-    "title": "Elige tu ritmo, sin ocultar el precio.",
-    "intro": "Free incluye tres créditos gratuitos cada semana. Un vídeo opcional permite sumar créditos; Premium elimina los anuncios y el límite semanal.",
-    "premiumBadge": "Premium",
-    "notice": "Estos precios proceden del catálogo actual de la API. Las compras de suscripción y los pagos se activarán con el lanzamiento comercial de la aplicación.",
+    "title": "A tu ritmo. A un precio justo.",
+    "intro": "Descubre Histae gratis o elige Premium para seguir conversando sin límites de créditos ni anuncios. El consentimiento sigue siendo esencial en cada encuentro.",
+    "comparisonTitle": "Un plan gratuito, dos opciones Premium.",
+    "comparisonIntro": "Premium Mensual y Premium Anual incluyen las mismas ventajas. Solo cambia el período de facturación.",
+    "notice": "La prueba Premium está disponible una sola vez por cuenta elegible. El importe y la fecha del primer pago se muestran antes de confirmar la suscripción.",
     "cta": "Ver todos los precios",
     "plans": {
       "free": {
         "name": "Free",
-        "description": "Tres créditos cada lunes a las 00:00 UTC, sin acumular. Cada participante Free consume su propio crédito cuando ambos aceptan."
+        "description": "Para descubrir perfiles, hacer matches y empezar a conversar gratis."
       },
-      "premium": {
-        "name": "Premium",
-        "description": "Sin anuncios ni créditos que consumir, con continuaciones ilimitadas. Ambas personas deben aceptar."
+      "monthly": {
+        "name": "Premium Mensual",
+        "description": "Todas las ventajas Premium, con una suscripción que se renueva cada mes."
+      },
+      "annual": {
+        "name": "Premium Anual",
+        "description": "Las mismas ventajas Premium durante un año, a un mejor precio."
       }
     },
     "features": {
-      "messaging": "Mensajes mientras el match esté abierto",
+      "messaging": "Matches y primeras 24 h de conversación",
       "photoReveal": "Revelación mutua de fotos",
       "limitedContinuations": "{count} créditos gratuitos cada semana",
-      "unlimitedContinuations": "Continuaciones ilimitadas",
+      "unlimitedContinuations": "Conversaciones sin cuota de continuación",
       "rewardedCredits": "1 crédito por vídeo opcional · hasta {stock} acumulados",
-      "weeklyLimit": "Hasta {count} continuaciones confirmadas por semana",
+      "weeklyLimit": "Hasta {count} conversaciones prolongadas por semana",
       "noAds": "Sin anuncios ni consumo de créditos"
     },
     "billing": {
-      "freePeriod": "para siempre",
+      "freePeriod": "gratis",
       "noSubscription": "No requiere suscripción",
       "monthlyPeriod": "al mes",
-      "annualPeriod": "{price} al año",
-      "monthlyOffer": "mensual",
-      "annualOffer": "anual",
-      "trial": "Prueba de {days} días prevista"
-    }
+      "annualPeriod": "al año",
+      "monthlyBilling": "Se factura cada mes tras la prueba",
+      "annualBilling": "Un único pago tras la prueba",
+      "monthlyEquivalent": "Equivale a {price} al mes, con pago anual",
+      "annualSaving": "Ahorras {amount} al año frente al pago mensual",
+      "annualBadge": "Ahorra un {percent} % al año",
+      "trial": "{days} días de prueba"
+    },
+    "howItWorks": {
+      "eyebrow": "El mismo principio en todos los planes",
+      "title": "¿Qué significa prolongar una conversación?",
+      "intro": "Un crédito permite continuar un match después de las primeras 24 horas. No hace falta para hacer un match ni para empezar a hablar.",
+      "steps": {
+        "meet": {
+          "title": "Un match y 24 h para conversar",
+          "text": "Tras dos likes recíprocos, la conversación se abre durante 24 horas. Podéis conoceros tanto con Free como con Premium."
+        },
+        "choose": {
+          "title": "24 h para decidir entre los dos",
+          "text": "El envío de mensajes se pausa, pero el historial sigue siendo legible. Cada persona decide en privado si quiere continuar. Un rechazo o la falta de dos acuerdos dentro del plazo termina el match."
+        },
+        "continue": {
+          "title": "Dos acuerdos para seguir",
+          "text": "La conversación se reabre cuando ambos aceptáis. Cada participante Free utiliza entonces un crédito; una persona Premium no consume ninguno. Revelar las fotos sigue siendo una decisión mutua independiente."
+        }
+      }
+    },
+    "credits": {
+      "eyebrow": "Entender Free",
+      "title": "Tus créditos, sin complicaciones.",
+      "intro": "Un crédito prolonga una conversación. Cada persona utiliza su propio saldo: la suscripción de una no sustituye el crédito de la otra.",
+      "items": {
+        "weekly": {
+          "title": "{freeCredits} créditos gratuitos cada semana",
+          "text": "El saldo gratuito se renueva cada lunes a las 00:00 UTC. Los créditos gratuitos no utilizados no se suman a los de la semana siguiente."
+        },
+        "video": {
+          "title": "Créditos extra, si quieres",
+          "text": "Un vídeo publicitario opcional permite ganar 1 crédito. Puedes conservar hasta {advertisingStock} créditos publicitarios, que se mantienen de una semana a otra."
+        },
+        "limit": {
+          "title": "Hasta {weeklyMaximum} conversaciones prolongadas por semana",
+          "text": "Este límite se aplica a cada persona Free, aunque le queden créditos. Premium elimina el límite y no consume créditos."
+        },
+        "reservation": {
+          "title": "Un crédito utilizado solo si ambos continuáis",
+          "text": "Tu crédito se reserva cuando eliges continuar. Solo se consume tras los dos acuerdos. Si la otra persona rechaza o termina el plazo, la reserva se libera."
+        }
+      },
+      "mutualNote": "Premium nunca permite acceder a una conversación ni a las fotos sin el acuerdo de la otra persona."
+    },
+    "questionsTitle": "Antes de elegir Premium",
+    "questions": {
+      "trial": {
+        "title": "¿Cómo funciona la prueba?",
+        "text": "Las cuentas elegibles disponen de {trialDays} días de prueba Premium, una sola vez por cuenta, con el plan mensual o anual. Se solicita un método de pago. Al terminar la prueba, el plan elegido pasa a ser de pago y se renueva automáticamente, salvo que canceles la renovación antes de esa fecha."
+      },
+      "annual": {
+        "title": "¿La suscripción anual se paga cada mes?",
+        "text": "No. Premium Anual se factura en un único pago de {annualPrice} por 12 meses y después se renueva cada año. El equivalente de {annualMonthlyPrice} al mes solo sirve para comparar las opciones. Ahorras {annualSaving} al año frente a 12 pagos mensuales de {monthlyPrice}."
+      },
+      "renewal": {
+        "title": "¿Puedo detener la renovación?",
+        "text": "Puedes cancelar la renovación desde la gestión de tu suscripción. El acceso Premium sigue siendo válido hasta el final del período en curso. Durante la prueba, cancela antes de la fecha indicada para evitar el primer pago."
+      },
+      "mixed": {
+        "title": "¿Y si solo una persona tiene Premium?",
+        "text": "Ambas personas debéis aceptar continuar. La persona Premium no consume créditos; la persona Free utiliza el suyo y mantiene el límite de {weeklyMaximum} conversaciones prolongadas por semana."
+      }
+    },
+    "launchNotice": "La aplicación para iOS y Android está en preparación. Las suscripciones se elegirán en la aplicación; los enlaces oficiales se publicarán en la página de lanzamiento.",
+    "launchCta": "Consultar la disponibilidad de la aplicación",
+    "faqCta": "Todas las preguntas frecuentes"
   }
 }

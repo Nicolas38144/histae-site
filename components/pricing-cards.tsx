@@ -13,7 +13,7 @@ export async function PricingCards({ locale }: PricingCardsProps) {
 
   return (
     <div className="pricing-grid">
-      {plans.map((plan) => <PricingCard key={plan.id} plan={plan} premiumBadge={pricing.premiumBadge} />)}
+      {plans.map((plan) => <PricingCard key={plan.id} plan={plan} />)}
     </div>
   );
 }

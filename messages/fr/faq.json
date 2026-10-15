@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "Quelle différence entre Free et Premium ?",
-        "answer": "Free reçoit {freeCredits} crédits chaque lundi à 00:00 UTC, sans cumul. Une vidéo facultative donne 1 crédit supplémentaire, avec un stock de {advertisingStock} conservé entre les semaines. Chaque personne Free réserve 1 crédit en choisissant de continuer ; il est débité seulement après les deux accords. Un refus ou une expiration libère la réservation. Maximum {weeklyMaximum} continuations confirmées par personne Free et par semaine. Premium supprime les publicités et cette limite à {monthlyPrice} par mois ou {annualPrice} par an, avec {trialDays} jours d’essai prévus.",
+        "answer": "Free permet de créer des matchs et de commencer à discuter gratuitement. Vous disposez de {freeCredits} crédits gratuits par semaine pour prolonger vos conversations, avec un maximum de {weeklyMaximum} prolongations confirmées. Une vidéo facultative donne 1 crédit supplémentaire, avec un stock de {advertisingStock} maximum. Premium Mensuel coûte {monthlyPrice} par mois ; Premium Annuel coûte {annualPrice} en une fois par an. Les deux offrent les mêmes avantages : aucun crédit à consommer et aucune publicité. Un essai de {trialDays} jours est proposé une seule fois par compte éligible.",
         "linkLabel": "Comparer les tarifs"
       },
       "location": {
@@ -48,6 +48,11 @@
         "question": "Comment exercer ses droits ou supprimer ses données ?",
         "answer": "Histae prévoit des parcours dédiés pour l’accès, la portabilité, la rectification, la restriction, l’objection et l’effacement. L’export rassemble les données du compte ; la suppression efface les données principales, anonymise les messages et clôt les matchs.",
         "linkLabel": "En savoir plus sur vos droits"
+      },
+      "sourceCode": {
+        "question": "Peut-on consulter le code et faire un audit de sécurité ?",
+        "answer": "Oui. Le code source de l’API, de l’application mobile et du site est publié sur GitHub pour être consulté et audité. Les contributions externes ne sont pas acceptées et les droits de modification et de réutilisation restent réservés. Les liens vers les trois dépôts sont disponibles sur la page Sécurité.",
+        "linkLabel": "Consulter les dépôts publics"
       }
     }
   }

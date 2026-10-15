@@ -23,7 +23,7 @@
         },
         "stableDecisions": {
           "title": "Stable decisions",
-          "text": "A like or pass is recorded as a stable choice for its retention period. Retrying the same decision is fine; changing it afterwards is not."
+          "text": "Your like or pass is saved: profiles you have already reviewed are no longer suggested. This keeps the same profiles from appearing again in discovery."
         },
         "reciprocity": {
           "title": "A match created only by reciprocity",
@@ -47,7 +47,7 @@
         },
         "continuationCredits": {
           "title": "A clear choice and credit cost",
-          "text": "Each Free participant receives {freeCredits} credits on Monday at 00:00 UTC and reserves their own credit when accepting. Both credits are charged only after both agree. An optional video earns 1 credit; up to {advertisingStock} advertising credits are retained across weeks. At most {weeklyMaximum} confirmed continuations per week. Premium has no ads, no credit charges and no weekly limit."
+          "text": "Each Free participant receives {freeCredits} credits each week. A credit is reserved when they choose to continue a match after the first 24 hours, then spent only after both people agree. A refusal or expiry releases it. An optional video earns 1 credit, with up to {advertisingStock} advertising credits carried over between weeks. Each Free participant can extend up to {weeklyMaximum} conversations per week. A Premium participant uses no credits; the other person keeps their own plan’s limits."
         }
       }
     },
@@ -103,16 +103,16 @@
       "intro": "The iOS and Android app is being prepared. Download links will be published here when the launch opens.",
       "blocks": {
         "availability": {
-          "title": "No pretend button",
-          "text": "We would rather announce real availability than send you to an empty page."
+          "title": "On iOS and Android",
+          "text": "App Store and Google Play links will appear on this page once the app is published."
         },
         "finalization": {
-          "title": "What we are finalising",
-          "text": "The mobile apps, store publication, launch operations and future commercial journey still need to be completed and validated."
+          "title": "Start for free",
+          "text": "With Free, you will be able to create your profile, discover compatible people and start chatting. Premium Monthly and Premium Annual will offer the same benefits, with two billing periods."
         },
         "officialLinks": {
-          "title": "Availability announced here",
-          "text": "This page will become the official path to the App Store and Google Play versions when they open."
+          "title": "Your official links",
+          "text": "Find links to the official stores here. The launch date will be announced once it is confirmed."
         }
       },
       "footerNote": "Come back soon for App Store and Google Play links."

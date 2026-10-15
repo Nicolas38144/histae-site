@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "¿Qué diferencia hay entre Free y Premium?",
-        "answer": "Free recibe {freeCredits} créditos cada lunes a las 00:00 UTC, sin acumular. Un vídeo opcional da 1 crédito adicional, con un saldo máximo de {advertisingStock} créditos publicitarios conservados entre semanas. Cada participante Free reserva 1 crédito al elegir continuar; solo se consume cuando ambos aceptan. Un rechazo o la caducidad libera la reserva. Máximo {weeklyMaximum} continuaciones confirmadas por persona Free y semana. Premium elimina los anuncios y este límite por {monthlyPrice} al mes o {annualPrice} al año, con una prueba prevista de {trialDays} días.",
+        "answer": "Free permite hacer matches y empezar a conversar gratis. Tienes {freeCredits} créditos gratuitos por semana para prolongar conversaciones, con un máximo de {weeklyMaximum} prolongaciones confirmadas. Un vídeo opcional da 1 crédito adicional, con un saldo máximo de {advertisingStock}. Premium Mensual cuesta {monthlyPrice} al mes; Premium Anual cuesta {annualPrice} en un único pago anual. Ambos incluyen las mismas ventajas: sin créditos que consumir ni anuncios. La prueba de {trialDays} días se ofrece una sola vez por cuenta elegible.",
         "linkLabel": "Comparar precios"
       },
       "location": {
@@ -48,6 +48,11 @@
         "question": "¿Cómo se ejercen los derechos o se eliminan los datos?",
         "answer": "Histae ofrece recorridos para el acceso, la portabilidad, la rectificación, la restricción, la oposición y la eliminación. La exportación reúne los datos de la cuenta; la eliminación borra los datos principales, anonimiza los mensajes y cierra los matches.",
         "linkLabel": "Más información sobre tus derechos"
+      },
+      "sourceCode": {
+        "question": "¿Puedo consultar el código y realizar una auditoría de seguridad?",
+        "answer": "Sí. El código fuente de la API, la aplicación móvil y el sitio se publica en GitHub para su consulta y auditorías de seguridad. No se aceptan contribuciones externas y los derechos de modificación y reutilización quedan reservados. Los enlaces a los tres repositorios están en la página de Seguridad.",
+        "linkLabel": "Consultar los repositorios públicos"
       }
     }
   }

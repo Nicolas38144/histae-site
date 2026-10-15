@@ -6,7 +6,7 @@
     "safety": "Seguridad",
     "about": "Nosotros",
     "faq": "Preguntas frecuentes",
-    "download": "Descargar"
+    "download": "Lanzamiento"
   },
   "common": {
     "backHome": "Volver al inicio",
@@ -17,13 +17,27 @@
     "navigation": "Navegación principal"
   },
   "seo": {
-    "home": { "title": "Una app de citas más humana" },
-    "feature": { "title": "Funciones de la aplicación" },
-    "pricing": { "title": "Precios Free y Premium" },
-    "safety": { "title": "Seguridad y privacidad" },
-    "about": { "title": "Nuestra visión de las citas" },
-    "faq": { "title": "Preguntas frecuentes sobre Histae" },
-    "download": { "title": "Aplicación próximamente" }
+    "home": {
+      "title": "Una app de citas más humana"
+    },
+    "feature": {
+      "title": "Funciones de la aplicación"
+    },
+    "pricing": {
+      "title": "Precios de Free, Premium Mensual y Anual"
+    },
+    "safety": {
+      "title": "Seguridad y privacidad"
+    },
+    "about": {
+      "title": "Nuestra visión de las citas"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes sobre Histae"
+    },
+    "download": {
+      "title": "Aplicación próximamente"
+    }
   },
   "footer": {
     "line": "Histae — dar a un encuentro el tiempo de existir.",
@@ -43,5 +57,27 @@
     "availability": "El primer lanzamiento está previsto en Francia. Los enlaces oficiales se publicarán en este sitio.",
     "rights": "Todos los derechos reservados.",
     "madeFor": "Un sitio de presentación diseñado con atención."
+  },
+  "transparency": {
+    "eyebrow": "Transparencia en la práctica",
+    "title": "Código público que cualquiera puede examinar.",
+    "intro": "El código fuente de la API, la aplicación móvil y el sitio de Histae está disponible en GitHub. Cualquiera puede estudiar su funcionamiento y realizar su propia auditoría de seguridad del código.",
+    "viewCode": "Ver el código en GitHub",
+    "footerLink": "Código fuente y auditorías",
+    "policy": "Los repositorios se publican para su consulta y auditorías de seguridad. No están abiertos a contribuciones externas. Los derechos de modificación y reutilización quedan reservados: publicar el código no otorga una licencia de código abierto.",
+    "repositories": {
+      "api": {
+        "title": "La API Rust",
+        "description": "El funcionamiento del servidor: cuentas, matches, mensajes y reglas de acceso."
+      },
+      "app": {
+        "title": "La aplicación móvil",
+        "description": "El código de la aplicación para entender sus recorridos y su comunicación con la API."
+      },
+      "site": {
+        "title": "El sitio web",
+        "description": "El código de este sitio de presentación, sus páginas y traducciones."
+      }
+    }
   }
 }

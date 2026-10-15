@@ -54,6 +54,7 @@ export function SiteHeader({ copy, locale }: { copy: SiteHeaderCopy; locale: Loc
         <button
           className="menu-trigger"
           type="button"
+          aria-label={isMenuOpen ? copy.common.close : copy.common.menu}
           aria-controls="site-navigation"
           aria-expanded={isMenuOpen}
           onClick={() => setIsMenuOpen((current) => !current)}
@@ -76,7 +77,7 @@ export function SiteHeader({ copy, locale }: { copy: SiteHeaderCopy; locale: Loc
         </nav>
 
         <div className="header-actions">
-          <button className="language-trigger" type="button" onClick={() => setIsLanguageOpen(true)} aria-haspopup="dialog">
+          <button className="language-trigger" type="button" onClick={() => setIsLanguageOpen(true)} aria-label={copy.common.language} aria-haspopup="dialog" aria-controls="language-dialog" aria-expanded={isLanguageOpen}>
             <span className="language-marker" aria-hidden="true">{locale.toUpperCase()}</span>
             <span>{copy.common.language}</span>
           </button>
@@ -86,7 +87,7 @@ export function SiteHeader({ copy, locale }: { copy: SiteHeaderCopy; locale: Loc
         </div>
       </div>
 
-      <dialog ref={dialogRef} className="language-dialog" aria-labelledby="language-dialog-title" onClose={() => setIsLanguageOpen(false)} onClick={(event) => {
+      <dialog id="language-dialog" ref={dialogRef} className="language-dialog" aria-labelledby="language-dialog-title" onClose={() => setIsLanguageOpen(false)} onClick={(event) => {
         if (event.target === event.currentTarget) dialogRef.current?.close();
       }}>
         <div className="language-dialog-content">

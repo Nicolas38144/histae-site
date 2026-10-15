@@ -3,6 +3,7 @@ import { getCommercialValues } from "../lib/plans";
 import { getTranslations } from "next-intl/server";
 import { localizedHref, type InformationPageName, type Locale } from "../lib/site-config";
 import { getMessagesForLocale } from "../messages";
+import { SourceCodeSection } from "./source-code-section";
 
 type InformationPageProps = {
   locale: Locale;
@@ -39,6 +40,7 @@ export async function InformationPage({ locale, pageName }: InformationPageProps
           </article>
         ))}
       </section>
+      {pageName === "safety" || pageName === "about" ? <SourceCodeSection locale={locale} /> : null}
       <section className="shell page-closing">
         {footerNote ? <p>{footerNote}</p> : null}
         <Link className="text-link" href={localizedHref(locale, "home")}>{t("common.backHome")}<span aria-hidden="true"> →</span></Link>

@@ -80,7 +80,7 @@
     },
     "safetyEyebrow": "A practical approach to safety",
     "safetyTitle": "Respect should never be optional.",
-    "safetyText": "Histae includes blocking, reporting, moderation and directly accessible data rights. Sensitive choices, such as location and preferences, rely on explicit consent that can be withdrawn.",
+    "safetyText": "Histae includes blocking, reporting, moderation and directly accessible data rights. Sensitive choices, such as location and preferences, rely on explicit consent that can be withdrawn. The source code is public so anyone can examine it and audit its security.",
     "safetyLink": "Read our safety commitments",
     "closingTitle": "Fewer reflexes. More real intention.",
     "closingText": "The app is being prepared. Follow the launch to discover Histae when it arrives."

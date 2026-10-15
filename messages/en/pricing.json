@@ -1,38 +1,111 @@
 {
   "pricing": {
     "eyebrow": "Simple pricing",
-    "title": "Choose your pace, with no hidden price.",
-    "intro": "Free includes three free credits each week. An optional video can add credits; Premium removes ads and the weekly limit.",
-    "premiumBadge": "Premium",
-    "notice": "These prices come from the API’s current catalogue. Subscription purchases and payments will be enabled with the app’s commercial launch.",
+    "title": "Your pace. A fair price.",
+    "intro": "Discover Histae for free, or choose Premium to keep conversations going without credit limits or ads. Consent stays at the heart of every connection.",
+    "comparisonTitle": "One free plan, two Premium options.",
+    "comparisonIntro": "Premium Monthly and Premium Annual include the same benefits. Only the billing period changes.",
+    "notice": "The Premium trial is available once per eligible account. The amount and date of the first payment are shown before you confirm your subscription.",
     "cta": "See full pricing",
     "plans": {
       "free": {
         "name": "Free",
-        "description": "Three credits every Monday at 00:00 UTC, without rollover. Each Free participant spends their own credit after both people agree."
+        "description": "Discover profiles, make matches and start conversations for free."
       },
-      "premium": {
-        "name": "Premium",
-        "description": "No ads or credits to spend, with unlimited continuations. Both people must still agree."
+      "monthly": {
+        "name": "Premium Monthly",
+        "description": "Every Premium benefit, with a subscription that renews each month."
+      },
+      "annual": {
+        "name": "Premium Annual",
+        "description": "The same Premium benefits for a year, at a better price."
       }
     },
     "features": {
-      "messaging": "Messaging while matches remain open",
+      "messaging": "Matches and the first 24 hours of conversation",
       "photoReveal": "Mutual photo reveal",
       "limitedContinuations": "{count} free credits each week",
-      "unlimitedContinuations": "Unlimited continuations",
+      "unlimitedContinuations": "Keep conversations going without a quota",
       "rewardedCredits": "1 credit per optional video · up to {stock} stored",
-      "weeklyLimit": "Up to {count} confirmed continuations each week",
+      "weeklyLimit": "Extend up to {count} conversations each week",
       "noAds": "No ads or credit charges"
     },
     "billing": {
-      "freePeriod": "forever",
+      "freePeriod": "free",
       "noSubscription": "No subscription required",
       "monthlyPeriod": "per month",
-      "annualPeriod": "{price} per year",
-      "monthlyOffer": "monthly",
-      "annualOffer": "annual",
-      "trial": "{days}-day trial planned"
-    }
+      "annualPeriod": "per year",
+      "monthlyBilling": "Billed monthly after the trial",
+      "annualBilling": "Billed in one payment after the trial",
+      "monthlyEquivalent": "Equivalent to {price} per month, billed yearly",
+      "annualSaving": "Save {amount} a year compared with monthly billing",
+      "annualBadge": "Save {percent}% yearly",
+      "trial": "{days}-day trial"
+    },
+    "howItWorks": {
+      "eyebrow": "The same approach on every plan",
+      "title": "What does extending a conversation mean?",
+      "intro": "A credit lets you continue a match beyond the first 24 hours. You do not need one to make a match or start chatting.",
+      "steps": {
+        "meet": {
+          "title": "Match, then chat for 24 hours",
+          "text": "After two mutual likes, the conversation opens for 24 hours. You can get to know each other on Free or Premium."
+        },
+        "choose": {
+          "title": "24 hours to choose together",
+          "text": "Sending messages then pauses, while your conversation history stays readable. Each person privately decides whether to continue. A refusal or the lack of two agreements within the time limit ends the match."
+        },
+        "continue": {
+          "title": "Two agreements to keep going",
+          "text": "The conversation reopens when you both agree. Each Free participant then uses one credit; a Premium participant uses none. Revealing photos remains a separate mutual decision."
+        }
+      }
+    },
+    "credits": {
+      "eyebrow": "Understanding Free",
+      "title": "Your credits, explained.",
+      "intro": "One credit extends one conversation. Each person uses their own balance: one person’s subscription does not replace the other’s credit.",
+      "items": {
+        "weekly": {
+          "title": "{freeCredits} free credits each week",
+          "text": "Your free balance resets every Monday at 00:00 UTC. Unused free credits do not carry over to the following week."
+        },
+        "video": {
+          "title": "Extra credits, if you want them",
+          "text": "An optional video ad earns 1 credit. You can store up to {advertisingStock} advertising credits, which carry over between weeks."
+        },
+        "limit": {
+          "title": "Extend up to {weeklyMaximum} conversations each week",
+          "text": "This limit applies to each Free participant, even if they have credits left. Premium removes the limit and uses no credits."
+        },
+        "reservation": {
+          "title": "A credit spent only when you both continue",
+          "text": "Your credit is reserved when you choose to continue. It is only spent after both people agree. If the other person declines or the time runs out, the reservation is released."
+        }
+      },
+      "mutualNote": "Premium never grants access to a conversation or photos without the other person’s agreement."
+    },
+    "questionsTitle": "Before choosing Premium",
+    "questions": {
+      "trial": {
+        "title": "How does the trial work?",
+        "text": "Eligible accounts get a {trialDays}-day Premium trial, once per account, on either the monthly or annual plan. A payment method is required. At the end of the trial, your chosen plan becomes paid and renews automatically unless you cancel renewal before that date."
+      },
+      "annual": {
+        "title": "Is the annual subscription paid monthly?",
+        "text": "No. Premium Annual costs {annualPrice} in one payment for 12 months, then renews yearly. The {annualMonthlyPrice} monthly equivalent is only a way to compare plans. You save {annualSaving} a year compared with 12 monthly payments of {monthlyPrice}."
+      },
+      "renewal": {
+        "title": "Can I stop the renewal?",
+        "text": "You can cancel renewal through subscription management. Premium access remains valid until the end of the current period. During the trial, cancel before the stated date to avoid the first payment."
+      },
+      "mixed": {
+        "title": "What if only one person has Premium?",
+        "text": "You must still both agree to continue. The Premium participant uses no credits; the Free participant uses their own and remains limited to {weeklyMaximum} extended conversations each week."
+      }
+    },
+    "launchNotice": "The iOS and Android app is being prepared. Subscriptions will be chosen in the app; official links will be published on the launch page.",
+    "launchCta": "Check app availability",
+    "faqCta": "All frequently asked questions"
   }
 }

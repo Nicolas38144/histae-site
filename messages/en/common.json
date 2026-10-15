@@ -6,7 +6,7 @@
     "safety": "Safety",
     "about": "About",
     "faq": "FAQ",
-    "download": "Download"
+    "download": "App launch"
   },
   "common": {
     "backHome": "Back home",
@@ -17,13 +17,27 @@
     "navigation": "Main navigation"
   },
   "seo": {
-    "home": { "title": "A more human dating app" },
-    "feature": { "title": "Dating app features" },
-    "pricing": { "title": "Free and Premium pricing" },
-    "safety": { "title": "Safety and privacy" },
-    "about": { "title": "Our vision for dating" },
-    "faq": { "title": "Frequently asked questions about Histae" },
-    "download": { "title": "App coming soon" }
+    "home": {
+      "title": "A more human dating app"
+    },
+    "feature": {
+      "title": "Dating app features"
+    },
+    "pricing": {
+      "title": "Free, Premium Monthly and Annual pricing"
+    },
+    "safety": {
+      "title": "Safety and privacy"
+    },
+    "about": {
+      "title": "Our vision for dating"
+    },
+    "faq": {
+      "title": "Frequently asked questions about Histae"
+    },
+    "download": {
+      "title": "App coming soon"
+    }
   },
   "footer": {
     "line": "Histae — give a connection the time to exist.",
@@ -43,5 +57,27 @@
     "availability": "The initial launch is planned for France. Official links will be published on this website.",
     "rights": "All rights reserved.",
     "madeFor": "A showcase website designed with care."
+  },
+  "transparency": {
+    "eyebrow": "Transparency in practice",
+    "title": "Public code, for anyone to examine.",
+    "intro": "The source code for the Histae API, mobile app and website is available on GitHub. Anyone can study how it works and perform their own security audit of the code.",
+    "viewCode": "View the code on GitHub",
+    "footerLink": "Source code and audits",
+    "policy": "The repositories are published for reading and security audits. They are not open to external contributions. Modification and reuse rights remain reserved: publishing the code does not grant an open-source licence.",
+    "repositories": {
+      "api": {
+        "title": "The Rust API",
+        "description": "Server-side behaviour: accounts, matches, messaging and access rules."
+      },
+      "app": {
+        "title": "The mobile app",
+        "description": "The app’s code, showing its user journeys and communication with the API."
+      },
+      "site": {
+        "title": "The website",
+        "description": "The code behind this showcase, its pages and its translations."
+      }
+    }
   }
 }

@@ -39,6 +39,9 @@ export async function SiteFooter({ locale }: { locale: Locale }) {
                     <Link href={localizedHref(locale, routeId)}>{navigationLabels[routeId]}</Link>
                   </li>
                 ))}
+                {group.titleKey === "projectTitle" ? (
+                  <li><Link href={`${localizedHref(locale, "safety")}#source-code`}>{t("transparency.footerLink")}</Link></li>
+                ) : null}
               </ul>
             </div>
           ))}
