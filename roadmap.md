@@ -21,7 +21,7 @@ valider une source de référence avant publication ; le site se charge ensuite 
 ## État acquis
 
 - export statique de 28 pages produit, 16 pages juridiques et 12 pages de retour Stripe dans quatre langues,
-  soit 56 pages localisées ;
+  soit 56 pages localisées, et trois entrées de retour Stripe sans langue imposée ;
 - navigation localisée, sélecteur de langue et redirection vers la langue par défaut ;
 - canonical, `hreflang`, `x-default`, métadonnées sociales, sitemap, robots et manifest ;
 - contrôle post-build de la langue du document, des canonical, des alternates, des liens de langue et de l'unique `h1` ;
@@ -32,8 +32,10 @@ valider une source de référence avant publication ; le site se charge ensuite 
 - liens vers les trois dépôts publics pour consultation et audits, avec les droits de modification et réutilisation réservés ;
 - aucune dépendance actuelle du navigateur à l'API et aucun mécanisme de mesure d'audience identifié.
 
-Les retours `/fr/billing/success`, `/fr/billing/cancel` et `/fr/billing/return` (également en `en`, `es`, `it`)
-guident vers une vérification de l'abonnement dans l'app. Ils ne lisent pas l'identifiant Checkout et ne
+Les entrées `/billing/success`, `/billing/cancel` et `/billing/return` choisissent la première langue
+prise en charge dans les préférences du navigateur, puis rejoignent la page `/{lang}/billing/…` en
+conservant les paramètres. Français en secours, quatre liens de langue si JavaScript est désactivé.
+Les pages localisées guident vers une vérification de l'abonnement dans l'app. Elles ne lisent pas l'identifiant Checkout et ne
 confirment aucun droit. Le code et les URL locales API/Flutter sont préparés ; leur déploiement et les essais
 Stripe sur téléphone restent ouverts ci-dessous.
 
@@ -143,7 +145,8 @@ commerciales et fonctionnelles sensibles.
 - [ ] Définir les parcours publics de support, exercice des droits et signalement d'un problème de sécurité.
 - [ ] Mettre à jour FAQ, données structurées, métadonnées sociales, captures et statut du footer le jour du lancement.
 - [ ] Préparer une procédure de retrait d'un lien si une fiche store est suspendue ou compromise.
-- [ ] Publier les trois pages de retour Stripe, reporter leurs URL dans le `.env` API du serveur, recréer
+- [ ] Publier les trois entrées de langue et les douze pages de retour Stripe, reporter les URL sans langue
+  dans le `.env` API du serveur, recréer
   l'API et compiler l'app avec les mêmes liens publics. Conserver les paiements mobiles désactivés avant
   validation en environnement Stripe test.
 - [ ] Vérifier sur téléphone le retour manuel vers **Mon abonnement**, le rafraîchissement serveur,
@@ -168,7 +171,8 @@ d'un canal de support adapté.
 Le script `scripts/fix-static-seo.mjs` contrôle les 56 pages localisées pour `lang`, canonical, `hreflang`,
 `x-default`, description, changement de langue et unicité du `h1`, ainsi que le footer et les documents juridiques.
 Il vérifie aussi les 28 URL indexables du sitemap et `robots.txt`. Les brouillons juridiques et les retours
-Stripe restent en noindex. Les retours doivent aussi définir `no-referrer` et ne pas exposer `session_id`
+Stripe restent en noindex. Les trois entrées de langue sont contrôlées séparément pour canonical,
+noindex, référent et liens de secours. Les retours doivent aussi définir `no-referrer` et ne pas exposer `session_id`
 dans le HTML. Ces contrôles doivent être conservés ; ils ne sont pas à recréer.
 
 ### Travail restant
@@ -225,6 +229,8 @@ les réponses publiques, pas déduite de `next.config.ts`.
 - [ ] Vérifier pour les retours Stripe la conservation du chemin et du paramètre de succès jusqu'à la page,
   `Cache-Control: no-store`, `Referrer-Policy: no-referrer` et `X-Robots-Tag: noindex, follow`, y compris
   au travers du CDN ; contrôler l'absence d'URL et d'identifiant de session dans les logs applicatifs.
+- [ ] Vérifier le choix de langue sur les entrées sans préfixe : langues régionales, seconde préférence
+  prise en charge, langue non prise en charge, liens déjà localisés et choix manuel sans JavaScript.
 - [ ] Définir puis tester CSP, HSTS, anti-framing, `nosniff`, politique de référent et permissions navigateur sur
   toutes les réponses, y compris erreurs et redirections.
 - [ ] Vérifier que `out` ne contient ni secret, source map involontaire, URL interne, fichier de développement ou

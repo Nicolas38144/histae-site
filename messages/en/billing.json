@@ -1,5 +1,6 @@
 {
   "billing": {
+    "continueInLocale": "Continue in English",
     "eyebrow": "Your Histae subscription",
     "success": {
       "title": "Back from checkout",

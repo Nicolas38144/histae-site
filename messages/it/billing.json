@@ -1,5 +1,6 @@
 {
   "billing": {
+    "continueInLocale": "Continua in italiano",
     "eyebrow": "Il tuo abbonamento Histae",
     "success": {
       "title": "Di ritorno dal pagamento",

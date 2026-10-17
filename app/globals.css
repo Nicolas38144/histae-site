@@ -347,6 +347,7 @@ h1, h2, h3 { text-wrap: balance; }
 .billing-return-next li { padding-left: 0.35rem; }
 .billing-return-next li::marker { color: var(--lavender); font-weight: 700; }
 .billing-return-note { margin-bottom: 1.5rem; color: var(--faint); font-size: 0.9rem; }
+.billing-language-options { display: grid; justify-items: start; gap: 1rem; margin-top: 2rem; }
 
 .language-redirect { min-height: 100svh; background: var(--night); }
 

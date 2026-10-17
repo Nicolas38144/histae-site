@@ -111,6 +111,21 @@ for (const locale of locales) {
   }
 }
 
+let billingEntryCount = 0;
+for (const route of Object.values(siteConfig.billingReturns)) {
+  const file = path.join(outputDirectory, route.path, "index.html");
+  const html = await readFile(file, "utf8");
+  const head = extractHead(html, file);
+  assertIncludes(head, '<meta name="robots" content="noindex, follow"', `${file}: language entry must remain noindex`);
+  assertIncludes(head, '<meta name="referrer" content="no-referrer"', `${file}: language entry must not send a referrer`);
+  assertIncludes(head, `<link rel="canonical" href="${siteConfig.publicUrl}/${route.path}/"`, `${file}: incorrect language entry canonical`);
+  if (html.includes("session_id")) throw new Error(`${file}: language entry exposes a session identifier`);
+  for (const locale of locales) {
+    assertIncludes(html, `href="/${locale}/${route.path}/"`, `${file}: missing fallback for ${locale}`);
+  }
+  billingEntryCount += 1;
+}
+
 const sitemap = await readFile(path.join(outputDirectory, "sitemap.xml"), "utf8");
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 const expectedSitemapUrls = locales.flatMap((locale) => routes.filter((route) => route.indexable).map((route) => pageUrl(locale, route)));
@@ -129,4 +144,4 @@ if (localizedPageCount !== expectedPageCount) {
   throw new Error(`Expected ${expectedPageCount} localized pages, validated ${localizedPageCount}`);
 }
 
-console.log(`Validated SEO, navigation and legal documents for ${localizedPageCount} localized pages; ${sitemapUrls.length} indexable sitemap URLs.`);
+console.log(`Validated SEO, navigation and legal documents for ${localizedPageCount} localized pages and ${billingEntryCount} billing language entries; ${sitemapUrls.length} indexable sitemap URLs.`);

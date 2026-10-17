@@ -17,6 +17,14 @@ function resolveDefaultLocale(value: string): Locale {
 
 export const defaultLocale = resolveDefaultLocale(siteConfig.defaultLocale);
 
+export function preferredLocale(languages: readonly string[]): Locale {
+  for (const language of languages) {
+    const primaryLanguage = language.trim().toLowerCase().split("-")[0];
+    if (isLocale(primaryLanguage)) return primaryLanguage;
+  }
+  return defaultLocale;
+}
+
 export const siteRoutes = siteConfig.routes;
 export type SiteRouteId = keyof typeof siteRoutes;
 export type InformationPageName = Exclude<SiteRouteId, "home" | "pricing" | "faq">;

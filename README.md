@@ -118,22 +118,31 @@ ne doit pas être présentée comme une licence open source. Les textes sont mai
 ## Retours Stripe vers l'application
 
 Trois pages de retour statiques sont définies dans `config/site.json` (`billingReturns`) et disponibles
-dans les quatre langues du site. La configuration API retenue utilise les pages françaises :
+dans les quatre langues du site. Trois points d'entrée sans langue choisissent la langue du navigateur :
 
 ```dotenv
-STRIPE_CHECKOUT_SUCCESS_URL=https://histae.com/fr/billing/success?session_id={CHECKOUT_SESSION_ID}
-STRIPE_CHECKOUT_CANCEL_URL=https://histae.com/fr/billing/cancel
-STRIPE_PORTAL_RETURN_URL=https://histae.com/fr/billing/return
+STRIPE_CHECKOUT_SUCCESS_URL=https://www.histae.com/billing/success?session_id={CHECKOUT_SESSION_ID}
+STRIPE_CHECKOUT_CANCEL_URL=https://www.histae.com/billing/cancel
+STRIPE_PORTAL_RETURN_URL=https://www.histae.com/billing/return
 ```
 
-Ces pages guident vers l'app : revenir manuellement dans Histae, ouvrir **Mon abonnement** depuis le
+Les entrées `/billing/success/`, `/billing/cancel/` et `/billing/return/` sont elles aussi exportées
+statiquement. Elles choisissent avec JavaScript la première langue prise en charge parmi
+`navigator.languages`, puis redirigent avec `location.replace` vers `/{lang}/billing/…/` en conservant
+la chaîne de paramètres sans l'interpréter. Les variantes régionales (`it-IT`, `en-GB`, etc.) sont
+ramenées à leur langue ; une préférence non prise en charge est ignorée au profit de la suivante.
+Si aucune ne correspond, le français sert de secours. Sans JavaScript, quatre liens permettent de
+choisir la langue ; leur destination n'a pas besoin du paramètre de session. Une URL déjà localisée
+conserve sa langue. La redirection de l'accueil par Caddy reste distincte et ne capture pas ces routes.
+
+Les pages localisées guident vers l'app : revenir manuellement dans Histae, ouvrir **Mon abonnement** depuis le
 profil, puis utiliser **Vérifier mon abonnement** si nécessaire. Elles n'affirment pas qu'un paiement,
 un essai ou une résiliation est confirmé. Elles ne lisent ni n'affichent `session_id`, n'utilisent aucun
 stockage navigateur et n'appellent ni l'API ni Stripe. Aucun achat n'est proposé depuis le site.
 Les webhooks et la projection API restent responsables des droits Premium.
 
 Le domaine sans `www` redirige vers `www.histae.com`, puis Caddy sert le chemin avec slash final en
-conservant les paramètres. Les pages restent hors navigation et sitemap, avec `noindex, follow`.
+conservant les paramètres. Les pages et les points d'entrée restent hors navigation et sitemap, avec `noindex, follow`.
 Leur HTML et leur réponse Caddy définissent `no-referrer` ; Caddy ajoute `Cache-Control: no-store` et
 `X-Robots-Tag: noindex, follow`. Les logs communs excluent déjà URL et paramètres. Vérifier que le CDN
 conserve ces règles sur les pages et leurs redirections.
@@ -146,8 +155,9 @@ valeurs publiques ; aucune clé secrète ne doit être embarquée. Une modificat
 une nouvelle compilation. Les paiements mobiles restent désactivés (`BILLING_ENABLED=false`) avant
 les essais Stripe test et la validation de la distribution choisie.
 
-Le build contrôle les douze pages de retour localisées, leurs métadonnées et l'absence d'identifiant
-de session dans le HTML. Le retour au premier plan, le rafraîchissement de l'abonnement, l'annulation,
+Le build contrôle les douze pages de retour localisées et les trois entrées de langue, leurs métadonnées,
+les liens de secours et l'absence d'identifiant de session dans le HTML. Le retour au premier plan,
+le rafraîchissement de l'abonnement, l'annulation,
 le portail et les webhooks retardés restent à vérifier avec l'API et l'app sur téléphone.
 Voir le [parcours API](../histae-api-rust/docs/billing.md#retours-stripe-sur-le-site-vitrine).
 

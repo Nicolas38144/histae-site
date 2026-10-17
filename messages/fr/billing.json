@@ -1,5 +1,6 @@
 {
   "billing": {
+    "continueInLocale": "Continuer en français",
     "eyebrow": "Ton abonnement Histae",
     "success": {
       "title": "Retour de paiement",
