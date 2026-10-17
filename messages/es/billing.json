@@ -1,0 +1,24 @@
+{
+  "billing": {
+    "eyebrow": "Tu suscripción a Histae",
+    "success": {
+      "title": "De vuelta del pago",
+      "description": "Abre la aplicación Histae para comprobar si tu suscripción está activa. La confirmación puede tardar unos instantes."
+    },
+    "cancel": {
+      "title": "¿Prefieres volver más tarde?",
+      "description": "Puedes volver a Histae para consultar tu suscripción y las opciones disponibles cuando quieras."
+    },
+    "return": {
+      "title": "Consulta tu suscripción en Histae",
+      "description": "Después de visitar el portal de Stripe, vuelve a la aplicación para consultar tu suscripción y los cambios que hayas realizado."
+    },
+    "nextTitle": "Volver a tu suscripción",
+    "steps": {
+      "app": "Vuelve a la aplicación Histae en tu teléfono.",
+      "subscription": "Desde tu perfil, abre la pantalla de suscripción (« Mon abonnement »).",
+      "refresh": "Si es necesario, pulsa el botón de verificación (« Vérifier mon abonnement ») para actualizar tu estado."
+    },
+    "note": "Consulta la confirmación y el estado actual de tu suscripción en Histae."
+  }
+}

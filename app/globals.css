@@ -336,6 +336,18 @@ h1, h2, h3 { text-wrap: balance; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 2rem; padding-block: 1.5rem; border-top: 1px solid var(--line); }
 .footer-bottom p { color: var(--faint); font-size: 0.8rem; }
 
+.billing-return-page { padding-block: clamp(2rem, 7vw, 5rem); }
+.billing-return-card { max-width: 760px; padding: clamp(1.5rem, 5vw, 3.5rem); border: 1px solid var(--line); border-radius: 1.5rem; background: var(--panel); box-shadow: var(--shadow); }
+.billing-return-symbol { display: grid; place-items: center; width: 3.25rem; height: 3.25rem; margin-bottom: 1.75rem; border: 1px solid var(--line); border-radius: 1rem; color: var(--lavender); font-size: 1.75rem; }
+.billing-return-card h1 { margin-top: 0.8rem; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 7vw, 3.4rem); line-height: 1.12; letter-spacing: -0.045em; }
+.billing-return-intro { margin-top: 1.5rem; color: var(--muted); font-size: 1.08rem; }
+.billing-return-next { margin-block: 2rem; padding-block: 1.5rem; border-block: 1px solid var(--line); }
+.billing-return-next h2 { font-size: 1.1rem; }
+.billing-return-next ol { display: grid; gap: 0.9rem; margin: 1.1rem 0 0; padding-left: 1.4rem; color: var(--muted); }
+.billing-return-next li { padding-left: 0.35rem; }
+.billing-return-next li::marker { color: var(--lavender); font-weight: 700; }
+.billing-return-note { margin-bottom: 1.5rem; color: var(--faint); font-size: 0.9rem; }
+
 .language-redirect { min-height: 100svh; background: var(--night); }
 
 @media (max-width: 850px) {

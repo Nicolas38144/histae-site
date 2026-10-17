@@ -3,7 +3,6 @@ import {
   defaultLocale,
   localeConfig,
   locales,
-  localizedHref,
   publicUrl,
   siteRoutes,
   type Locale,
@@ -13,14 +12,22 @@ import {
 export { publicUrl } from "./site-config";
 
 export function absoluteLocalizedUrl(locale: Locale, routeId: SiteRouteId): string {
-  return `${publicUrl}${localizedHref(locale, routeId)}/`;
+  return absoluteLocalizedPathUrl(locale, siteRoutes[routeId].path);
+}
+
+function absoluteLocalizedPathUrl(locale: Locale, path: string): string {
+  return `${publicUrl}/${locale}/${path ? `${path}/` : ""}`;
 }
 
 export function createLocaleMetadata(locale: Locale, routeId: SiteRouteId, title: string, description: string): Metadata {
-  const canonical = absoluteLocalizedUrl(locale, routeId);
+  return createPathMetadata(locale, siteRoutes[routeId].path, title, description);
+}
+
+export function createPathMetadata(locale: Locale, path: string, title: string, description: string, indexable = true): Metadata {
+  const canonical = absoluteLocalizedPathUrl(locale, path);
   const languages = Object.fromEntries([
-    ...locales.map((targetLocale) => [targetLocale, absoluteLocalizedUrl(targetLocale, routeId)]),
-    ["x-default", absoluteLocalizedUrl(defaultLocale, routeId)],
+    ...locales.map((targetLocale) => [targetLocale, absoluteLocalizedPathUrl(targetLocale, path)]),
+    ["x-default", absoluteLocalizedPathUrl(defaultLocale, path)],
   ]);
   const socialImage = `${publicUrl}/og.png`;
   const alternateLocale = locales
@@ -45,7 +52,7 @@ export function createLocaleMetadata(locale: Locale, routeId: SiteRouteId, title
       description,
       images: [socialImage],
     },
-    robots: { index: true, follow: true },
+    robots: { index: indexable, follow: true },
   };
 }
 

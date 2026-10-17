@@ -8,6 +8,7 @@ const locales = Object.keys(siteConfig.locales);
 const legalDocuments = Object.keys(siteConfig.legalDocuments);
 const routes = [
   ...Object.values(siteConfig.routes).map((route) => ({ ...route, indexable: true })),
+  ...Object.values(siteConfig.billingReturns).map((route) => ({ ...route, indexable: false })),
   ...legalDocuments.map((document) => ({ path: `legal/${document}`, indexable: false })),
 ];
 
@@ -86,11 +87,15 @@ for (const locale of locales) {
     for (const document of legalDocuments) {
       assertIncludes(footer, `href="/${locale}/legal/${document}/"`, `${file}: legal document missing from footer: ${document}`);
     }
-    if (!route.indexable) {
+    if (route.path.startsWith("legal/")) {
       assertIncludes(html, `class="legal-document" lang="${locale}"`, `${file}: legal document has incorrect language`);
       if (route.path.endsWith("privacy-policy") && !/<table(?:\s|>)/.test(html)) {
         throw new Error(`${file}: privacy table not rendered`);
       }
+    }
+    if (route.path.startsWith("billing/")) {
+      assertIncludes(head, '<meta name="referrer" content="no-referrer"', `${file}: billing return must not send a referrer`);
+      if (html.includes("session_id")) throw new Error(`${file}: billing return exposes a session identifier`);
     }
 
     const languageLinks = html.match(/<a[^>]+lang="[^"]+"[^>]*>/g) ?? [];

@@ -1,0 +1,24 @@
+{
+  "billing": {
+    "eyebrow": "Ton abonnement Histae",
+    "success": {
+      "title": "Retour de paiement",
+      "description": "Pour savoir si ton abonnement est actif, retrouve son état dans l’application Histae. La confirmation peut prendre quelques instants."
+    },
+    "cancel": {
+      "title": "Tu souhaites reprendre plus tard ?",
+      "description": "Tu peux revenir dans Histae pour consulter ton abonnement et retrouver les formules disponibles, quand tu le souhaites."
+    },
+    "return": {
+      "title": "Retrouve ton abonnement dans Histae",
+      "description": "Après ton passage sur le portail Stripe, reviens dans l’application pour retrouver l’état de ton abonnement et tes éventuelles modifications."
+    },
+    "nextTitle": "Revenir à ton abonnement",
+    "steps": {
+      "app": "Reviens dans l’application Histae sur ton téléphone.",
+      "subscription": "Depuis ton profil, ouvre « Mon abonnement ».",
+      "refresh": "Si nécessaire, appuie sur « Vérifier mon abonnement » pour actualiser ton statut."
+    },
+    "note": "La confirmation et l’état actuel de ton abonnement sont à consulter dans Histae."
+  }
+}

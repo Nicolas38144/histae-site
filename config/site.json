@@ -61,6 +61,17 @@
       "priority": 0.8
     }
   },
+  "billingReturns": {
+    "success": {
+      "path": "billing/success"
+    },
+    "cancel": {
+      "path": "billing/cancel"
+    },
+    "return": {
+      "path": "billing/return"
+    }
+  },
   "legalDocuments": {
     "terms-of-use": {
       "source": "conditions-utilisation"

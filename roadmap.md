@@ -1,6 +1,6 @@
 # Histae Site — feuille de route
 
-Travaux ouverts après la revue du 15 octobre 2026.
+Travaux ouverts après la revue du 15 octobre 2026, mis à jour le 17 octobre 2026.
 
 Cette feuille de route contient uniquement les travaux encore ouverts de la vitrine publique. Le site est un export
 statique Next.js, sans dépendance d'exécution à l'API. Il présente Histae en français, anglais, espagnol et italien.
@@ -20,7 +20,8 @@ valider une source de référence avant publication ; le site se charge ensuite 
 
 ## État acquis
 
-- export statique de 28 pages produit et 16 pages juridiques dans quatre langues, soit 44 pages localisées ;
+- export statique de 28 pages produit, 16 pages juridiques et 12 pages de retour Stripe dans quatre langues,
+  soit 56 pages localisées ;
 - navigation localisée, sélecteur de langue et redirection vers la langue par défaut ;
 - canonical, `hreflang`, `x-default`, métadonnées sociales, sitemap, robots et manifest ;
 - contrôle post-build de la langue du document, des canonical, des alternates, des liens de langue et de l'unique `h1` ;
@@ -30,6 +31,11 @@ valider une source de référence avant publication ; le site se charge ensuite 
 - explications des crédits, de l’essai et de la reconduction dans les quatre langues ;
 - liens vers les trois dépôts publics pour consultation et audits, avec les droits de modification et réutilisation réservés ;
 - aucune dépendance actuelle du navigateur à l'API et aucun mécanisme de mesure d'audience identifié.
+
+Les retours `/fr/billing/success`, `/fr/billing/cancel` et `/fr/billing/return` (également en `en`, `es`, `it`)
+guident vers une vérification de l'abonnement dans l'app. Ils ne lisent pas l'identifiant Checkout et ne
+confirment aucun droit. Le code et les URL locales API/Flutter sont préparés ; leur déploiement et les essais
+Stripe sur téléphone restent ouverts ci-dessous.
 
 Le catalogue `config/site.json` affiche Premium à 5 € par mois ou 48 € par an, avec 30 jours d’essai. Free
 reçoit 3 crédits gratuits par semaine, peut conserver 3 crédits publicitaires et confirme au plus 6 continuations
@@ -137,6 +143,11 @@ commerciales et fonctionnelles sensibles.
 - [ ] Définir les parcours publics de support, exercice des droits et signalement d'un problème de sécurité.
 - [ ] Mettre à jour FAQ, données structurées, métadonnées sociales, captures et statut du footer le jour du lancement.
 - [ ] Préparer une procédure de retrait d'un lien si une fiche store est suspendue ou compromise.
+- [ ] Publier les trois pages de retour Stripe, reporter leurs URL dans le `.env` API du serveur, recréer
+  l'API et compiler l'app avec les mêmes liens publics. Conserver les paiements mobiles désactivés avant
+  validation en environnement Stripe test.
+- [ ] Vérifier sur téléphone le retour manuel vers **Mon abonnement**, le rafraîchissement serveur,
+  l'annulation Checkout, la sortie du portail sans changement, le webhook retardé et la fermeture de l'app.
 
 ### Validation
 
@@ -154,9 +165,11 @@ d'un canal de support adapté.
 
 ### Couverture déjà présente
 
-Le script `scripts/fix-static-seo.mjs` contrôle les 44 pages localisées pour `lang`, canonical, `hreflang`,
+Le script `scripts/fix-static-seo.mjs` contrôle les 56 pages localisées pour `lang`, canonical, `hreflang`,
 `x-default`, description, changement de langue et unicité du `h1`, ainsi que le footer et les documents juridiques.
-Il vérifie aussi les 28 URL indexables du sitemap et `robots.txt`. Les brouillons juridiques restent en noindex. Ces contrôles doivent être conservés ; ils ne sont pas à recréer.
+Il vérifie aussi les 28 URL indexables du sitemap et `robots.txt`. Les brouillons juridiques et les retours
+Stripe restent en noindex. Les retours doivent aussi définir `no-referrer` et ne pas exposer `session_id`
+dans le HTML. Ces contrôles doivent être conservés ; ils ne sont pas à recréer.
 
 ### Travail restant
 
@@ -170,7 +183,7 @@ Il vérifie aussi les 28 URL indexables du sitemap et `robots.txt`. Les brouillo
 - [ ] Ajouter quelques parcours navigateur pour navigation principale, dialogue de langue, footer et appels à l'action.
 - [ ] Ajouter un script unique de validation réunissant typecheck, lint, build et tests ; ajouter un audit des
   dépendances de production sans l'exécuter au chargement du site.
-- [ ] Documenter la méthode de prévisualisation et la vérification des 44 pages localisées avant publication.
+- [ ] Documenter la méthode de prévisualisation et la vérification des 56 pages localisées avant publication.
 
 ### Critère de fin
 
@@ -209,6 +222,9 @@ les réponses publiques, pas déduite de `next.config.ts`.
 
 - [ ] vérifier sur le serveur la redirection de `histae.com` vers `www.histae.com` en conservant chemin et langue ;
 - [ ] Vérifier HTTPS, certificat, renouvellement, redirections et absence de contenu mixte.
+- [ ] Vérifier pour les retours Stripe la conservation du chemin et du paramètre de succès jusqu'à la page,
+  `Cache-Control: no-store`, `Referrer-Policy: no-referrer` et `X-Robots-Tag: noindex, follow`, y compris
+  au travers du CDN ; contrôler l'absence d'URL et d'identifiant de session dans les logs applicatifs.
 - [ ] Définir puis tester CSP, HSTS, anti-framing, `nosniff`, politique de référent et permissions navigateur sur
   toutes les réponses, y compris erreurs et redirections.
 - [ ] Vérifier que `out` ne contient ni secret, source map involontaire, URL interne, fichier de développement ou
