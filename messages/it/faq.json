@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "Qual è la differenza tra Free e Premium?",
-        "answer": "Free permette di creare match e iniziare a parlare gratis. Hai {freeCredits} crediti gratuiti a settimana per prolungare le conversazioni, con un massimo di {weeklyMaximum} prolungamenti confermati. Un video facoltativo dà 1 credito extra, fino a {advertisingStock} conservati. Premium Mensile costa {monthlyPrice} al mese; Premium Annuale costa {annualPrice} in un unico pagamento annuale. Entrambi offrono gli stessi vantaggi: nessun credito da consumare e nessuna pubblicità. La prova di {trialDays} giorni è disponibile una sola volta per account idoneo.",
+        "answer": "Free permette di creare match e iniziare a parlare gratis. Hai {freeCredits} crediti gratuiti a settimana per prolungare le conversazioni, con un massimo di {weeklyMaximum} prolungamenti confermati. Un video facoltativo dà 1 credito extra, fino a {advertisingStock} conservati. Premium Mensile costa {monthlyPrice} al mese; Premium Annuale costa {annualPrice} in un unico pagamento annuale. Entrambi offrono gli stessi vantaggi: nessun credito da consumare e nessuna pubblicità.",
         "linkLabel": "Confronta i prezzi"
       },
       "location": {

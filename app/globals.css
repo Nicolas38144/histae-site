@@ -237,7 +237,6 @@ h1, h2, h3 { text-wrap: balance; }
 .plan-billing { margin-top: 0.9rem; font-size: 0.88rem; }
 .plan-equivalent { margin-top: 0.5rem; font-size: 0.88rem; }
 .plan-saving { margin-top: 0.5rem; color: var(--lavender); font-size: 0.88rem; font-weight: 650; }
-.plan-trial { display: inline-flex; margin-top: 0.9rem; padding: 0.35rem 0.7rem; border: 1px solid rgba(240, 154, 130, 0.36); border-radius: 999px; color: var(--coral); font-size: 0.78rem; font-weight: 750; }
 .plan-description { margin-top: 1.8rem; }
 .pricing-card ul { display: grid; gap: 0.8rem; margin: 1.6rem 0 0; padding: 1.5rem 0 0; border-top: 1px solid var(--line); list-style: none; }
 .pricing-card li { position: relative; padding-left: 1.5rem; }

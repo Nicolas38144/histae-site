@@ -5,7 +5,7 @@
     "intro": "Discover Histae for free, or choose Premium to keep conversations going without credit limits or ads. Consent stays at the heart of every connection.",
     "comparisonTitle": "One free plan, two Premium options.",
     "comparisonIntro": "Premium Monthly and Premium Annual include the same benefits. Only the billing period changes.",
-    "notice": "The Premium trial is available once per eligible account. The amount and date of the first payment are shown before you confirm your subscription.",
+    "notice": "Premium is paid from the start of your subscription. The payment amount and date are shown before confirmation.",
     "cta": "See full pricing",
     "plans": {
       "free": {
@@ -35,12 +35,11 @@
       "noSubscription": "No subscription required",
       "monthlyPeriod": "per month",
       "annualPeriod": "per year",
-      "monthlyBilling": "Billed monthly after the trial",
-      "annualBilling": "Billed in one payment after the trial",
+      "monthlyBilling": "Billed monthly from the start of your subscription",
+      "annualBilling": "Billed in one payment for 12 months",
       "monthlyEquivalent": "Equivalent to {price} per month, billed yearly",
       "annualSaving": "Save {amount} a year compared with monthly billing",
-      "annualBadge": "Save {percent}% yearly",
-      "trial": "{days}-day trial"
+      "annualBadge": "Save {percent}% yearly"
     },
     "howItWorks": {
       "eyebrow": "The same approach on every plan",
@@ -87,9 +86,9 @@
     },
     "questionsTitle": "Before choosing Premium",
     "questions": {
-      "trial": {
-        "title": "How does the trial work?",
-        "text": "Eligible accounts get a {trialDays}-day Premium trial, once per account, on either the monthly or annual plan. A payment method is required. At the end of the trial, your chosen plan becomes paid and renews automatically unless you cancel renewal before that date."
+      "payment": {
+        "title": "When is the first payment due?",
+        "text": "Payment is requested when you subscribe: {monthlyPrice} for Premium Monthly, then every month, or {annualPrice} in one payment for Premium Annual, then every year. The amount and terms are shown before confirmation."
       },
       "annual": {
         "title": "Is the annual subscription paid monthly?",
@@ -97,7 +96,7 @@
       },
       "renewal": {
         "title": "Can I stop the renewal?",
-        "text": "You can cancel renewal through subscription management. Premium access remains valid until the end of the current period. During the trial, cancel before the stated date to avoid the first payment."
+        "text": "You can cancel renewal through subscription management. Premium access remains valid until the end of the current period."
       },
       "mixed": {
         "title": "What if only one person has Premium?",

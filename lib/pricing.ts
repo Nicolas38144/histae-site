@@ -16,7 +16,6 @@ export type PricingCardModel = {
   equivalent?: string;
   saving?: string;
   badge?: string;
-  trial?: string;
   features: { id: PlanFeatureId; label: string }[];
 };
 
@@ -44,7 +43,6 @@ export function getPricingCards(
   const features = (planId: PlanId) => getPlanFeatureIds(planId)
     .map((id) => ({ id, label: featureLabels[id] }));
   const values = getCommercialValues(locale);
-  const trial = t("billing.trial", { days: values.trialDays });
 
   return [
     {
@@ -63,7 +61,6 @@ export function getPricingCards(
       price: values.monthlyPrice,
       period: t("billing.monthlyPeriod"),
       billing: t("billing.monthlyBilling"),
-      trial,
       features: features("premium"),
     },
     {
@@ -76,7 +73,6 @@ export function getPricingCards(
       equivalent: t("billing.monthlyEquivalent", { price: values.annualMonthlyPrice }),
       saving: t("billing.annualSaving", { amount: values.annualSaving }),
       badge: t("billing.annualBadge", { percent: values.annualSavingPercent }),
-      trial,
       features: features("premium"),
     },
   ];

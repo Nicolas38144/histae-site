@@ -5,7 +5,7 @@
     "intro": "Scopri Histae gratis oppure scegli Premium per continuare le conversazioni senza limiti di crediti e senza pubblicità. Il consenso resta al centro di ogni incontro.",
     "comparisonTitle": "Un piano gratuito, due formule Premium.",
     "comparisonIntro": "Premium Mensile e Premium Annuale offrono gli stessi vantaggi. Cambia solo il periodo di fatturazione.",
-    "notice": "La prova Premium è disponibile una sola volta per account idoneo. Importo e data del primo pagamento sono mostrati prima di confermare l’abbonamento.",
+    "notice": "Premium è a pagamento dall’inizio dell’abbonamento. Importo e data del pagamento sono mostrati prima della conferma.",
     "cta": "Vedi tutti i prezzi",
     "plans": {
       "free": {
@@ -35,12 +35,11 @@
       "noSubscription": "Nessun abbonamento richiesto",
       "monthlyPeriod": "al mese",
       "annualPeriod": "all’anno",
-      "monthlyBilling": "Fatturato ogni mese dopo la prova",
-      "annualBilling": "Un unico pagamento dopo la prova",
+      "monthlyBilling": "Fatturato ogni mese dall’inizio dell’abbonamento",
+      "annualBilling": "Un unico pagamento per 12 mesi",
       "monthlyEquivalent": "Equivale a {price} al mese, con pagamento annuale",
       "annualSaving": "Risparmi {amount} all’anno rispetto al pagamento mensile",
-      "annualBadge": "Risparmia il {percent} % all’anno",
-      "trial": "{days} giorni di prova"
+      "annualBadge": "Risparmia il {percent} % all’anno"
     },
     "howItWorks": {
       "eyebrow": "Lo stesso principio per tutti i piani",
@@ -87,9 +86,9 @@
     },
     "questionsTitle": "Prima di scegliere Premium",
     "questions": {
-      "trial": {
-        "title": "Come funziona la prova?",
-        "text": "Gli account idonei hanno {trialDays} giorni di prova Premium, una sola volta per account, con la formula mensile o annuale. È richiesto un metodo di pagamento. Al termine della prova, il piano scelto diventa a pagamento e si rinnova automaticamente, salvo annullamento del rinnovo prima di quella data."
+      "payment": {
+        "title": "Quando è richiesto il primo pagamento?",
+        "text": "Il pagamento è richiesto all’abbonamento: {monthlyPrice} per Premium Mensile, poi ogni mese, oppure {annualPrice} in un unico pagamento per Premium Annuale, poi ogni anno. Importo e condizioni sono mostrati prima della conferma."
       },
       "annual": {
         "title": "L’abbonamento annuale si paga ogni mese?",
@@ -97,7 +96,7 @@
       },
       "renewal": {
         "title": "Posso interrompere il rinnovo?",
-        "text": "Puoi annullare il rinnovo dalla gestione del tuo abbonamento. L’accesso Premium resta valido fino alla fine del periodo in corso. Durante la prova, annulla prima della data indicata per evitare il primo pagamento."
+        "text": "Puoi annullare il rinnovo dalla gestione del tuo abbonamento. L’accesso Premium resta valido fino alla fine del periodo in corso."
       },
       "mixed": {
         "title": "E se solo una persona ha Premium?",

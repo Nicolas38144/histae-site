@@ -5,7 +5,7 @@
     "intro": "Descubre Histae gratis o elige Premium para seguir conversando sin límites de créditos ni anuncios. El consentimiento sigue siendo esencial en cada encuentro.",
     "comparisonTitle": "Un plan gratuito, dos opciones Premium.",
     "comparisonIntro": "Premium Mensual y Premium Anual incluyen las mismas ventajas. Solo cambia el período de facturación.",
-    "notice": "La prueba Premium está disponible una sola vez por cuenta elegible. El importe y la fecha del primer pago se muestran antes de confirmar la suscripción.",
+    "notice": "Premium es de pago desde el inicio de la suscripción. El importe y la fecha del pago se muestran antes de confirmar.",
     "cta": "Ver todos los precios",
     "plans": {
       "free": {
@@ -35,12 +35,11 @@
       "noSubscription": "No requiere suscripción",
       "monthlyPeriod": "al mes",
       "annualPeriod": "al año",
-      "monthlyBilling": "Se factura cada mes tras la prueba",
-      "annualBilling": "Un único pago tras la prueba",
+      "monthlyBilling": "Facturación mensual desde el inicio de la suscripción",
+      "annualBilling": "Un único pago para 12 meses",
       "monthlyEquivalent": "Equivale a {price} al mes, con pago anual",
       "annualSaving": "Ahorras {amount} al año frente al pago mensual",
-      "annualBadge": "Ahorra un {percent} % al año",
-      "trial": "{days} días de prueba"
+      "annualBadge": "Ahorra un {percent} % al año"
     },
     "howItWorks": {
       "eyebrow": "El mismo principio en todos los planes",
@@ -87,9 +86,9 @@
     },
     "questionsTitle": "Antes de elegir Premium",
     "questions": {
-      "trial": {
-        "title": "¿Cómo funciona la prueba?",
-        "text": "Las cuentas elegibles disponen de {trialDays} días de prueba Premium, una sola vez por cuenta, con el plan mensual o anual. Se solicita un método de pago. Al terminar la prueba, el plan elegido pasa a ser de pago y se renueva automáticamente, salvo que canceles la renovación antes de esa fecha."
+      "payment": {
+        "title": "¿Cuándo se realiza el primer pago?",
+        "text": "El pago se solicita al suscribirte: {monthlyPrice} por Premium Mensual y después cada mes, o {annualPrice} en un único pago por Premium Anual y después cada año. El importe y las condiciones se muestran antes de confirmar."
       },
       "annual": {
         "title": "¿La suscripción anual se paga cada mes?",
@@ -97,7 +96,7 @@
       },
       "renewal": {
         "title": "¿Puedo detener la renovación?",
-        "text": "Puedes cancelar la renovación desde la gestión de tu suscripción. El acceso Premium sigue siendo válido hasta el final del período en curso. Durante la prueba, cancela antes de la fecha indicada para evitar el primer pago."
+        "text": "Puedes cancelar la renovación desde la gestión de tu suscripción. El acceso Premium sigue siendo válido hasta el final del período en curso."
       },
       "mixed": {
         "title": "¿Y si solo una persona tiene Premium?",

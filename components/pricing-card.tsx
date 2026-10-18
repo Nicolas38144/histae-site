@@ -18,7 +18,6 @@ export function PricingCard({ plan }: PricingCardProps) {
       <p className="plan-billing">{plan.billing}</p>
       {plan.equivalent ? <p className="plan-equivalent">{plan.equivalent}</p> : null}
       {plan.saving ? <p className="plan-saving">{plan.saving}</p> : null}
-      {plan.trial ? <p className="plan-trial">{plan.trial}</p> : null}
       <p className="plan-description">{plan.description}</p>
       <ul>
         {plan.features.map((feature) => <li key={feature.id}>{feature.label}</li>)}

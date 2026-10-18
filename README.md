@@ -107,7 +107,7 @@ Le catalogue `config/site.json` distingue les trois crédits gratuits hebdomadai
 L’accueil et la page Tarifs présentent trois cartes : Free, Premium Mensuel et Premium Annuel. Les deux formules
 Premium partagent les mêmes fonctionnalités du catalogue. Le prix annuel est affiché comme un paiement unique ;
 son équivalent mensuel, l’économie annuelle et le pourcentage de réduction sont calculés à partir des prix du catalogue.
-La page Tarifs explique les crédits, les deux fenêtres de 24 heures, l’essai, la reconduction et les matchs Free/Premium.
+La page Tarifs explique les crédits, les deux fenêtres de 24 heures, la facturation dès la souscription, la reconduction et les matchs Free/Premium.
 Le site reste une vitrine : il ne propose ni achat ni précommande, et conserve un état de lancement en préparation.
 
 Les trois dépôts publics sont centralisés dans `config/site.json` et présentés sur les pages Sécurité et À propos,

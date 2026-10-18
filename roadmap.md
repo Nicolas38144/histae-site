@@ -28,7 +28,7 @@ valider une source de référence avant publication ; le site se charge ensuite 
 - contenu responsive pour accueil, fonctionnalités, tarifs, sécurité, FAQ, à propos et téléchargement ;
 - catalogue marketing centralisé dans `config/site.json` ;
 - trois cartes Free, Premium Mensuel et Premium Annuel, avec coût annuel, équivalent mensuel et économie calculés ;
-- explications des crédits, de l’essai et de la reconduction dans les quatre langues ;
+- explications des crédits, du paiement dès la souscription et de la reconduction dans les quatre langues ;
 - liens vers les trois dépôts publics pour consultation et audits, avec les droits de modification et réutilisation réservés ;
 - aucune dépendance actuelle du navigateur à l'API et aucun mécanisme de mesure d'audience identifié.
 
@@ -39,7 +39,7 @@ Les pages localisées guident vers une vérification de l'abonnement dans l'app.
 confirment aucun droit. Le code et les URL locales API/Flutter sont préparés ; leur déploiement et les essais
 Stripe sur téléphone restent ouverts ci-dessous.
 
-Le catalogue `config/site.json` affiche Premium à 5 € par mois ou 48 € par an, avec 30 jours d’essai. Free
+Le catalogue `config/site.json` affiche Premium à 5 € par mois ou 48 € par an, sans période d’essai. Free
 reçoit 3 crédits gratuits par semaine, peut conserver 3 crédits publicitaires et confirme au plus 6 continuations
 par semaine. Les règles sont décrites dans le [guide API](../histae-api-rust/docs/continuation-and-rewards.md).
 La concordance avec la version réellement livrée doit être vérifiée à chaque publication.
@@ -106,7 +106,7 @@ divergence silencieuse avec l'API ou les applications mobiles.
 
 ### Travail
 
-- [ ] Désigner une source et un propriétaire pour tarifs, devise, essai, quotas et liste des fonctionnalités.
+- [ ] Désigner une source et un propriétaire pour tarifs, devise, quotas et liste des fonctionnalités.
 - [ ] Vérifier `config/site.json` contre le catalogue destiné à la release, sans rendre le site dépendant de l'API en
   production.
 - [ ] Vérifier les affirmations sur découverte, consentements, localisation, révélation des photos, modération,

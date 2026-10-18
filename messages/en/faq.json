@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "What is the difference between Free and Premium?",
-        "answer": "Free lets you make matches and start chatting for free. You get {freeCredits} free credits each week to extend conversations, with up to {weeklyMaximum} confirmed extensions. An optional video earns 1 extra credit, with up to {advertisingStock} stored. Premium Monthly costs {monthlyPrice} per month; Premium Annual costs {annualPrice} in one yearly payment. Both include the same benefits: no credits to spend and no ads. A {trialDays}-day trial is offered once per eligible account.",
+        "answer": "Free lets you make matches and start chatting for free. You get {freeCredits} free credits each week to extend conversations, with up to {weeklyMaximum} confirmed extensions. An optional video earns 1 extra credit, with up to {advertisingStock} stored. Premium Monthly costs {monthlyPrice} per month; Premium Annual costs {annualPrice} in one yearly payment. Both include the same benefits: no credits to spend and no ads.",
         "linkLabel": "Compare pricing"
       },
       "location": {

@@ -52,6 +52,5 @@ export function getCommercialValues(locale: Locale) {
     annualMonthlyPrice: formatEuro(planCatalog.premium.annualPriceCents / 12, locale),
     annualSaving: formatEuro(planCatalog.premium.monthlyPriceCents * 12 - planCatalog.premium.annualPriceCents, locale),
     annualSavingPercent: Math.round((1 - planCatalog.premium.annualPriceCents / (planCatalog.premium.monthlyPriceCents * 12)) * 100),
-    trialDays: planCatalog.premium.trialDays,
   };
 }

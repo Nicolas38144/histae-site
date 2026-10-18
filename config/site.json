@@ -104,7 +104,6 @@
     "premium": {
       "monthlyPriceCents": 500,
       "annualPriceCents": 4800,
-      "trialDays": 30,
       "featured": true,
       "features": [
         "messaging",
