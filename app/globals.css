@@ -18,7 +18,7 @@
 html { scroll-behavior: smooth; background: var(--night); }
 
 body {
-  min-width: 320px;
+  min-width: 0;
   margin: 0;
   background: var(--night);
   color: var(--ink);
@@ -89,15 +89,17 @@ h1, h2, h3 { text-wrap: balance; }
 }
 
 .wordmark {
-  color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: -0.07em;
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+  min-height: 44px;
+  width: fit-content;
+  max-width: 100%;
   text-decoration: none;
 }
 
-.wordmark span { color: var(--coral); }
+.wordmark-logo { display: block; width: 154px; max-width: 100%; height: auto; }
+.wordmark-symbol { display: none; }
 
 .site-navigation { display: flex; justify-content: center; gap: clamp(1rem, 2.4vw, 2rem); }
 
@@ -318,7 +320,7 @@ h1, h2, h3 { text-wrap: balance; }
 .site-footer { border-top: 1px solid var(--line); background: rgba(7, 12, 21, 0.38); }
 .footer-main { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 1fr) minmax(16rem, 0.9fr); gap: clamp(2.5rem, 6vw, 5rem); padding-block: clamp(3.8rem, 7vw, 6rem); }
 .footer-brand { max-width: 27rem; }
-.footer-brand .wordmark { font-size: 2rem; }
+.footer-brand .wordmark-logo { width: 176px; }
 .footer-tagline { margin-top: 1rem; color: var(--ink); font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; }
 .footer-summary { max-width: 25rem; margin-top: 1.2rem; color: var(--faint); }
 .footer-navigation { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
@@ -351,7 +353,7 @@ h1, h2, h3 { text-wrap: balance; }
 .language-redirect { min-height: 100svh; background: var(--night); }
 
 @media (max-width: 850px) {
-  .header-content { grid-template-columns: 1fr auto auto; min-height: 68px; gap: 0.7rem; }
+  .header-content { grid-template-columns: minmax(0, 1fr) auto auto; min-height: 68px; gap: 0.7rem; }
   .menu-trigger { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.4rem; border: 0; background: transparent; cursor: pointer; font-size: 0.78rem; font-weight: 700; }
   .menu-lines { display: grid; gap: 4px; }
   .menu-lines i { display: block; width: 1.1rem; height: 1px; background: var(--ink); }
@@ -395,6 +397,11 @@ h1, h2, h3 { text-wrap: balance; }
   .footer-navigation { grid-template-columns: 1fr 1fr; }
   .footer-legal ul { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: 0.35rem; }
+}
+
+@media (max-width: 360px) {
+  .site-header .wordmark-logo { display: none; }
+  .site-header .wordmark-symbol { display: block; width: 40px; height: 40px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

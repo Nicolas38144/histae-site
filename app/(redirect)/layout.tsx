@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { brandIcons } from "../../lib/branding";
 import "../globals.css";
 import { publicUrl } from "../../lib/metadata";
 
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: "Histae",
   description: "Histae organise la découverte, les matchs réciproques et la conversation autour du temps, du consentement et du contrôle des données.",
   robots: { index: true, follow: true },
-  icons: { icon: "/logo.png" },
+  icons: brandIcons,
 };
 
 export default function RedirectLayout({ children }: Readonly<{ children: React.ReactNode }>) {

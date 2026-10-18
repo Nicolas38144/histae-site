@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { BrandSignature } from "./brand-signature";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import {
@@ -48,7 +49,7 @@ export function SiteHeader({ copy, locale }: { copy: SiteHeaderCopy; locale: Loc
     <header className="site-header">
       <div className="shell header-content">
         <Link className="wordmark" href={localizedHref(locale, "home")} onClick={() => setIsMenuOpen(false)} aria-label="Histae">
-          Histae<span aria-hidden="true">.</span>
+          <BrandSignature />
         </Link>
 
         <button

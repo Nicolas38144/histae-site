@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandSignature } from "./brand-signature";
 import { getTranslations } from "next-intl/server";
 import { localizedHref, type Locale, type SiteRouteId } from "../lib/site-config";
 import { legalDocumentHref, legalDocumentIds } from "../lib/legal-documents";
@@ -24,7 +25,7 @@ export async function SiteFooter({ locale }: { locale: Locale }) {
     <footer className="site-footer">
       <div className="shell footer-main">
         <div className="footer-brand">
-          <Link className="wordmark" href={localizedHref(locale, "home")}>Histae<span aria-hidden="true">.</span></Link>
+          <Link className="wordmark" href={localizedHref(locale, "home")} aria-label="Histae"><BrandSignature /></Link>
           <p className="footer-tagline">{t("footer.line")}</p>
           <p className="footer-summary">{t("footer.summary")}</p>
         </div>

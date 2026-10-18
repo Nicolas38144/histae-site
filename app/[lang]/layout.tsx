@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { brandIcons } from "../../lib/branding";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     ...createLocaleMetadata(lang, "home", copy.title, copy.description),
     metadataBase: new URL(publicUrl),
     title: { default: `${copy.title} · Histae`, template: "%s · Histae" },
-    icons: { icon: "/logo.png" },
+    icons: brandIcons,
   };
 }
 
