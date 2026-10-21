@@ -202,3 +202,15 @@ The approved logo is the open book from **02 / Les pages**. The Histae name is a
 ## Product voice — 21 October 2026
 
 The app and website share warmer, concrete copy in French, English, Spanish and Italian. The homepage illustrates an explicitly fictional conversation instead of abstract product artwork, and feature lists use fewer numbered panels. The night palette and open-book identity remain in place. Legal documents, commercial values and payment flows retain their existing behavior. These changes are local and do not publish the website.
+
+
+### Application screenshots
+
+The marketing pages use localized captures of the real Flutter widgets. Profiles
+and conversations are fictional and are labelled as such in visible captions.
+To update them, run `tool/preview_website_test.dart` in histae-app, then run
+`node scripts/export-app-screenshots.mjs` in histae-site. The script accepts an
+optional input folder and writes WebP assets to `public/images/app/{locale}/`.
+Keep full screen proportions, descriptive translated alt text, eager loading only
+for the hero, and lazy loading for the other screens. Long bios are intentional:
+the screenshots should show how people introduce themselves through their words.

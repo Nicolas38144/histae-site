@@ -2,9 +2,10 @@ import type { PricingCardModel } from "../lib/pricing";
 
 type PricingCardProps = {
   plan: PricingCardModel;
+  compact?: boolean;
 };
 
-export function PricingCard({ plan }: PricingCardProps) {
+export function PricingCard({ plan, compact = false }: PricingCardProps) {
   return (
     <article className="pricing-card" data-featured={plan.featured} aria-labelledby={`plan-${plan.id}`}>
       <div className="pricing-card-heading">
@@ -19,9 +20,9 @@ export function PricingCard({ plan }: PricingCardProps) {
       {plan.equivalent ? <p className="plan-equivalent">{plan.equivalent}</p> : null}
       {plan.saving ? <p className="plan-saving">{plan.saving}</p> : null}
       <p className="plan-description">{plan.description}</p>
-      <ul>
+      {compact ? null : <ul>
         {plan.features.map((feature) => <li key={feature.id}>{feature.label}</li>)}
-      </ul>
+      </ul>}
     </article>
   );
 }

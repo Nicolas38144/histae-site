@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AppScreenshot } from "./app-screenshot";
 import { getTranslations } from "next-intl/server";
 import { getCommercialValues } from "../lib/plans";
 import { localizedHref, type Locale, type SiteRouteId } from "../lib/site-config";
@@ -45,7 +46,8 @@ export async function FaqPage({ locale }: { locale: Locale }) {
         <p>{messages.faq.intro}</p>
       </section>
 
-      <section className="shell faq-list" aria-label={messages.faq.title}>
+      <section className="shell faq-illustrated" aria-label={messages.faq.title}>
+        <div className="faq-list">
         {faqItemIds.map((itemId, index) => {
           const item = messages.faq.items[itemId];
           const answer = itemId === "pricing"
@@ -67,6 +69,8 @@ export async function FaqPage({ locale }: { locale: Locale }) {
             </details>
           );
         })}
+        </div>
+        <AppScreenshot locale={locale} screen="chat" />
       </section>
 
       <section className="shell page-closing faq-closing">

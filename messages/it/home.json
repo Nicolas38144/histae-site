@@ -25,19 +25,19 @@
     "rhythmIntro": "Scegliete chi vi incuriosisce, cosa condividere e come proseguire. In due, a ogni passo.",
     "steps": {
       "preferences": {
-        "title": "01 · Scoprire",
+        "title": "Scoprire",
         "text": "Qualche parola su di voi, su cosa cercate e su ciò che vi rappresenta. Senza recitare una parte."
       },
       "mutualChoice": {
-        "title": "02 · Scegliersi",
+        "title": "Scegliersi",
         "text": "Un dettaglio vi incuriosisce? Potete mostrare il vostro interesse. La conversazione inizia solo se il desiderio è reciproco."
       },
       "conversation": {
-        "title": "03 · Conversare",
+        "title": "Conversare",
         "text": "Un primo saluto e 24 ore per parlare, senza mostrare subito le foto. Spazio per lasciare alle parole il loro tempo."
       },
       "continuation": {
-        "title": "04 · Continuare insieme",
+        "title": "Continuare insieme",
         "text": "Dopo 24 ore, i messaggi si fermano. Se scegliete entrambi di continuare, la conversazione riprende. Un rifiuto chiude l’incontro senza rivelare chi ha rifiutato. Mostrare le foto resta una scelta separata, sempre in due."
       }
     },
@@ -93,6 +93,19 @@
       "firstName": "Camille",
       "secondName": "Noa",
       "caption": "Uno scambio immaginario per raccontare lo spirito di Histae."
+    },
+    "screens": {
+      "caption": "Schermate dell’app · profili e conversazioni di fantasia.",
+      "feed": "Il feed di Histae mostra Léa, 27 anni, e una lunga presentazione personale, senza foto.",
+      "profile": "Il profilo di Camille su Histae, con una presentazione personale approfondita.",
+      "chat": "Una conversazione su Histae tra Léa e Camille, con tre messaggi di fantasia.",
+      "credits": "La schermata dei crediti di Histae distingue i crediti settimanali da quelli dei video facoltativi.",
+      "privacy": "La schermata dei consensi di Histae offre controlli separati per dati sensibili e posizione.",
+      "feedLabel": "Scoprirsi",
+      "profileLabel": "Raccontarsi",
+      "chatLabel": "Parlarsi",
+      "creditsLabel": "Scegliere come continuare",
+      "privacyLabel": "Mantenere il controllo"
     }
   }
 }

@@ -12,6 +12,8 @@ export async function SourceCodeSection({ locale }: { locale: Locale }) {
         <h2 id="source-code-title">{t("title")}</h2>
         <p>{t("intro")}</p>
       </div>
+      <details className="source-reveal">
+      <summary>{t("viewCode")}</summary>
       <div className="source-grid">
         {Object.entries(siteConfig.repositories).map(([id, href]) => (
           <article className="source-card" key={id}>
@@ -25,6 +27,7 @@ export async function SourceCodeSection({ locale }: { locale: Locale }) {
         ))}
       </div>
       <p className="source-policy">{t("policy")}</p>
+      </details>
     </section>
   );
 }

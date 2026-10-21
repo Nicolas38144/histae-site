@@ -25,19 +25,19 @@
     "rhythmIntro": "Vous choisissez qui vous intrigue, ce que vous partagez et la suite que vous souhaitez donner. À deux, à chaque étape.",
     "steps": {
       "preferences": {
-        "title": "01 · Définir ce qui compte",
+        "title": "Définir ce qui compte",
         "text": "Quelques mots sur vous, vos envies de rencontre et ce qui vous ressemble. Pas besoin de jouer un rôle."
       },
       "mutualChoice": {
-        "title": "02 · Se choisir vraiment",
+        "title": "Se choisir vraiment",
         "text": "Un détail vous interpelle ? Vous pouvez montrer votre intérêt. La conversation ne commence que si l’envie est réciproque."
       },
       "conversation": {
-        "title": "03 · Échanger pendant 24 heures",
+        "title": "Échanger pendant 24 heures",
         "text": "Un premier bonjour et 24 heures pour échanger, sans photo affichée d’emblée. De quoi laisser les mots faire leur chemin."
       },
       "continuation": {
-        "title": "04 · Continuer et révéler ensemble",
+        "title": "Continuer et révéler ensemble",
         "text": "Après 24 heures, les messages font une pause. Si vous choisissez tous les deux de continuer, l’échange reprend. Un refus termine la rencontre sans révéler qui a refusé. Montrer vos photos reste un autre choix, toujours à deux."
       }
     },
@@ -93,6 +93,19 @@
       "firstName": "Camille",
       "secondName": "Noa",
       "caption": "Un échange imaginé pour vous montrer l’esprit Histae."
+    },
+    "screens": {
+      "caption": "Captures de l’application · profils et échanges fictifs.",
+      "feed": "Le feed Histae affiche Léa, 27 ans, et une longue présentation personnelle, sans photo.",
+      "profile": "Le profil Camille dans Histae, avec une présentation personnelle développée.",
+      "chat": "Une conversation Histae entre Léa et Camille, avec trois messages fictifs.",
+      "credits": "L’écran des crédits Histae distingue les crédits hebdomadaires et les crédits des vidéos facultatives.",
+      "privacy": "L’écran Histae des consentements permet de gérer séparément les données sensibles et la localisation.",
+      "feedLabel": "Se découvrir",
+      "profileLabel": "Se raconter",
+      "chatLabel": "Se parler",
+      "creditsLabel": "Choisir la suite",
+      "privacyLabel": "Garder la main"
     }
   }
 }

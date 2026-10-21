@@ -25,19 +25,19 @@
     "rhythmIntro": "You choose who sparks your curiosity, what you share and what comes next. Together, at every step.",
     "steps": {
       "preferences": {
-        "title": "01 · Define what matters",
+        "title": "Define what matters",
         "text": "A few words about you, what you’re looking for and what makes you you. No role to play."
       },
       "mutualChoice": {
-        "title": "02 · Choose each other",
+        "title": "Choose each other",
         "text": "A detail catches your eye? Show your interest. A conversation only starts when the feeling is mutual."
       },
       "conversation": {
-        "title": "03 · Talk for 24 hours",
+        "title": "Talk for 24 hours",
         "text": "A first hello and 24 hours to talk, without photos shown straight away. Room for words to find their way."
       },
       "continuation": {
-        "title": "04 · Continue and reveal together",
+        "title": "Continue and reveal together",
         "text": "After 24 hours, messaging pauses. If you both choose to continue, the conversation resumes. A refusal ends the match without revealing who declined. Sharing photos is a separate choice, always mutual."
       }
     },
@@ -93,6 +93,19 @@
       "firstName": "Camille",
       "secondName": "Noa",
       "caption": "An imagined exchange to give you a feel for Histae."
+    },
+    "screens": {
+      "caption": "App screenshots · fictional profiles and conversations.",
+      "feed": "The Histae feed shows Léa, 27, and a long personal introduction, without a photo.",
+      "profile": "Camille’s Histae profile, with a detailed personal introduction.",
+      "chat": "A Histae conversation between Léa and Camille, with three fictional messages.",
+      "credits": "The Histae credits screen separates weekly credits from optional video credits.",
+      "privacy": "The Histae consent screen offers separate controls for sensitive data and location.",
+      "feedLabel": "Discover each other",
+      "profileLabel": "Tell your story",
+      "chatLabel": "Start talking",
+      "creditsLabel": "Choose what comes next",
+      "privacyLabel": "Stay in control"
     }
   }
 }

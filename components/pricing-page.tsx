@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { getCommercialValues } from "../lib/plans";
 import { localizedHref, type Locale } from "../lib/site-config";
 import { getMessagesForLocale } from "../messages";
+import { AppScreenshot } from "./app-screenshot";
 import { PricingCards } from "./pricing-cards";
 
 export async function PricingPage({ locale }: { locale: Locale }) {
@@ -31,31 +32,30 @@ export async function PricingPage({ locale }: { locale: Locale }) {
           <h2 id="continuation-title">{t("pricing.howItWorks.title")}</h2>
           <p>{t("pricing.howItWorks.intro")}</p>
         </div>
-        <ol className="pricing-steps">
-          {Object.entries(pricing.howItWorks.steps).map(([id, step], index) => (
-            <li key={id}>
-              <span className="pricing-step-number" aria-hidden="true">0{index + 1}</span>
+        <div className="pricing-reading editorial-pair">
+          {Object.entries(pricing.howItWorks.steps).map(([id, step]) => (
+            <article className="story-passage" key={id}>
               <h3>{step.title}</h3>
               <p>{step.text}</p>
-            </li>
-          ))}
-        </ol>
-      </section>
-      <section className="shell pricing-explainer" aria-labelledby="credits-title">
-        <div className="section-heading">
-          <p className="eyebrow">{t("pricing.credits.eyebrow")}</p>
-          <h2 id="credits-title">{t("pricing.credits.title")}</h2>
-          <p>{t("pricing.credits.intro")}</p>
-        </div>
-        <div className="pricing-credit-grid">
-          {Object.keys(pricing.credits.items).map((id) => (
-            <article className="pricing-credit" key={id}>
-              <h3>{t(`pricing.credits.items.${id}.title`, values)}</h3>
-              <p>{t(`pricing.credits.items.${id}.text`, values)}</p>
             </article>
           ))}
         </div>
-        <p className="pricing-mutual-note">{t("pricing.credits.mutualNote")}</p>
+      </section>
+      <section className="shell app-story" aria-labelledby="credits-title">
+        <div className="story-copy">
+          <p className="eyebrow">{t("pricing.credits.eyebrow")}</p>
+          <h2 id="credits-title">{t("pricing.credits.title")}</h2>
+          <p className="story-lead">{t("pricing.credits.intro")}</p>
+          <div className="story-passage"><h3>{t("pricing.credits.items.weekly.title", values)}</h3><p>{t("pricing.credits.items.weekly.text", values)}</p></div>
+          <div className="story-details">
+            {Object.keys(pricing.credits.items).filter(id => id !== "weekly").map(id => <details key={id}>
+              <summary>{t(`pricing.credits.items.${id}.title`, values)}<span aria-hidden="true">+</span></summary>
+              <p>{t(`pricing.credits.items.${id}.text`, values)}</p>
+            </details>)}
+          </div>
+          <p className="pricing-mutual-note">{t("pricing.credits.mutualNote")}</p>
+        </div>
+        <AppScreenshot locale={locale} screen="credits" />
       </section>
       <section className="shell pricing-questions" aria-labelledby="billing-title">
         <div className="section-heading">
