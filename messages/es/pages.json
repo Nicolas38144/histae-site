@@ -2,8 +2,8 @@
   "pages": {
     "feature": {
       "eyebrow": "Funciones",
-      "title": "Todo el recorrido, desde el descubrimiento.",
-      "intro": "Histae organiza cada etapa: perfil, compatibilidad, elección recíproca, conversación, continuación, seguridad y control de los datos.",
+      "title": "Cómo toma forma un encuentro.",
+      "intro": "Primero, unas palabras que dan ganas de responder. Después, una conversación y decisiones que se toman entre dos. Así funciona Histae.",
       "blocks": {
         "profile": {
           "title": "Un perfil más allá de la foto",
@@ -77,15 +77,15 @@
     "about": {
       "eyebrow": "Nosotros",
       "title": "Creemos que los encuentros merecen tiempo.",
-      "intro": "Histae parte de una idea simple: una aplicación de citas puede fomentar la curiosidad sin reducir a las personas a una serie de elecciones instantáneas.",
+      "intro": "Una respuesta que le hace sonreír puede decir mucho. Queremos dar espacio a esa curiosidad antes de descubrir un rostro.",
       "blocks": {
         "promise": {
           "title": "Una promesa modesta",
           "text": "No decidimos por las personas. Diseñamos reglas que hacen un encuentro más consciente y recíproco."
         },
         "product": {
-          "title": "Una base concreta",
-          "text": "Perfil, preferencias, descubrimiento, likes recíprocos, matches, mensajería, consentimientos y seguridad forman ya un recorrido coherente."
+          "title": "Decisiones que cambian la conversación",
+          "text": "Fotos que se revelan entre dos, un interés que debe ser mutuo y una conversación que cada persona elige continuar. Estos detalles dan su ritmo a Histae."
         },
         "privacy": {
           "title": "La privacidad desde el diseño",
@@ -100,7 +100,7 @@
     "download": {
       "eyebrow": "Lanzamiento",
       "title": "Histae llega pronto.",
-      "intro": "La aplicación para iOS y Android está en preparación. Los enlaces de descarga se publicarán aquí cuando se abra el lanzamiento.",
+      "intro": "Estamos preparando la aplicación para iOS y Android. Cuando se publique, encontrará aquí los enlaces a ambas tiendas.",
       "blocks": {
         "availability": {
           "title": "En iOS y Android",

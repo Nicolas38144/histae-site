@@ -2,8 +2,8 @@
   "pages": {
     "feature": {
       "eyebrow": "Funzioni",
-      "title": "L’intero percorso, dalla scoperta in poi.",
-      "intro": "Histae organizza ogni fase: profilo, compatibilità, scelta reciproca, conversazione, continuazione, sicurezza e controllo dei dati.",
+      "title": "Come prende forma un incontro.",
+      "intro": "Prima, qualche parola che fa venire voglia di rispondere. Poi una conversazione e scelte da fare in due. Ecco come funziona Histae.",
       "blocks": {
         "profile": {
           "title": "Un profilo oltre la foto",
@@ -77,15 +77,15 @@
     "about": {
       "eyebrow": "Chi siamo",
       "title": "Crediamo che gli incontri meritino tempo.",
-      "intro": "Histae parte da un’idea semplice: un’app di incontri può incoraggiare la curiosità senza ridurre le persone a una sequenza di scelte istantanee.",
+      "intro": "Una risposta che fa sorridere può dire molto. Vogliamo lasciare spazio a quella curiosità prima di scoprire un volto.",
       "blocks": {
         "promise": {
           "title": "Una promessa modesta",
           "text": "Non decidiamo al posto delle persone. Progettiamo regole che rendono un incontro più consapevole e reciproco."
         },
         "product": {
-          "title": "Una base concreta",
-          "text": "Profilo, preferenze, scoperta, like reciproci, match, messaggistica, consensi e sicurezza formano già un percorso coerente."
+          "title": "Scelte che cambiano il dialogo",
+          "text": "Foto da svelare insieme, un interesse che deve essere reciproco e una conversazione che ognuno sceglie di continuare. Questi dettagli danno a Histae il suo ritmo."
         },
         "privacy": {
           "title": "Privacy fin dalla progettazione",
@@ -100,7 +100,7 @@
     "download": {
       "eyebrow": "Lancio",
       "title": "Histae arriva presto.",
-      "intro": "L’app per iOS e Android è in preparazione. I link per il download saranno pubblicati qui all’apertura del lancio.",
+      "intro": "Stiamo preparando l’app per iOS e Android. Una volta pubblicata, troverete qui i link a entrambi gli store.",
       "blocks": {
         "availability": {
           "title": "Su iOS e Android",

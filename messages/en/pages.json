@@ -2,8 +2,8 @@
   "pages": {
     "feature": {
       "eyebrow": "Features",
-      "title": "The whole journey, from discovery onward.",
-      "intro": "Histae organises every stage of a connection: profile, compatibility, reciprocal choice, conversation, continuation, safety and data control.",
+      "title": "How a connection takes shape.",
+      "intro": "First, a few words that make you want to reply. Then a conversation, and choices you make together. Here’s how it works on Histae.",
       "blocks": {
         "profile": {
           "title": "A profile that goes beyond a picture",
@@ -77,15 +77,15 @@
     "about": {
       "eyebrow": "About",
       "title": "We believe connections deserve time.",
-      "intro": "Histae starts from a simple idea: a dating app can encourage curiosity without reducing people to a stream of instant choices.",
+      "intro": "An answer that makes you smile can say a lot. We want to leave room for that curiosity before you discover a face.",
       "blocks": {
         "promise": {
           "title": "A modest promise",
           "text": "We do not decide for people. We design the rules that make a connection more conscious and reciprocal."
         },
         "product": {
-          "title": "A concrete product foundation",
-          "text": "Profiles, mutual preferences, feed, reciprocal likes, timed matches, messaging, consent and safety tools already shape the product."
+          "title": "Choices that shape a conversation",
+          "text": "Photos you reveal together, interest that has to be mutual, and a conversation each person chooses to continue. These details give Histae its pace."
         },
         "privacy": {
           "title": "Privacy built into how it works",
@@ -100,7 +100,7 @@
     "download": {
       "eyebrow": "Launch",
       "title": "Histae is coming soon.",
-      "intro": "The iOS and Android app is being prepared. Download links will be published here when the launch opens.",
+      "intro": "We’re preparing the app for iOS and Android. Once it’s published, you’ll find links to both stores here.",
       "blocks": {
         "availability": {
           "title": "On iOS and Android",

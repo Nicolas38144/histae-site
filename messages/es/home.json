@@ -1,88 +1,98 @@
 {
   "home": {
-    "eyebrow": "Otra manera de conocerse",
-    "title": "Dar a un encuentro el tiempo de existir.",
-    "intro": "Histae está pensada para quienes prefieren la atención al reflejo, la curiosidad al desplazamiento infinito y el consentimiento en cada etapa.",
+    "eyebrow": "PRIMERO, UNA CONVERSACIÓN",
+    "title": "Conocerse sin prisas.",
+    "intro": "Un detalle que le hace sonreír. Una respuesta que despierta curiosidad. Aquí, las palabras van antes que las fotos, que ambos deciden revelar.",
     "primary": "Descubrir el lanzamiento",
     "secondary": "Entender el principio",
-    "principlesTitle": "Lo que queremos proteger",
+    "principlesTitle": "Espacio para lo que importa.",
     "principles": {
       "time": {
         "title": "El tiempo",
-        "text": "Sin carrera de swipes. Cada conversación tiene espacio para respirar."
+        "text": "Leer una respuesta hasta el final. Encontrar las palabras. Dejar que una conversación tome forma."
       },
       "reciprocity": {
         "title": "La reciprocidad",
-        "text": "Una conexión no avanza en solitario: ambas personas deciden qué viene después."
+        "text": "Las ganas deben ser mutuas. Para empezar a hablar y para decidir seguir."
       },
       "respect": {
         "title": "El respeto",
-        "text": "Las herramientas de denuncia y la moderación forman parte del producto, no de una nota al pie."
+        "text": "Poder decir sí, decir no, bloquear o denunciar. Y decidir qué se comparte."
       }
     },
     "rhythmEyebrow": "Un ritmo más humano",
-    "rhythmTitle": "Un encuentro se construye paso a paso.",
-    "rhythmIntro": "El producto organiza el descubrimiento, la reciprocidad y el consentimiento compartido antes de abrir más la relación.",
+    "rhythmTitle": "Ganas de hablar. Y de seguir hablando.",
+    "rhythmIntro": "Usted elige quién despierta su curiosidad, qué comparte y cómo quiere seguir. Entre dos, en cada paso.",
     "steps": {
       "preferences": {
         "title": "01 · Descubrir",
-        "text": "El feed presenta la compatibilidad útil — rasgos, edad y distancia — sin exponer de entrada la fecha exacta de nacimiento ni la foto."
+        "text": "Unas palabras sobre usted, lo que busca y lo que le representa. Sin interpretar ningún papel."
       },
       "mutualChoice": {
         "title": "02 · Elegirse",
-        "text": "Una conversación solo se abre cuando el interés es recíproco. Un like o un descarte no se transforma después por impulso."
+        "text": "¿Un detalle llama su atención? Puede mostrar su interés. La conversación empieza cuando las ganas son mutuas."
       },
       "conversation": {
         "title": "03 · Conversar",
-        "text": "Cada match comienza con una ventana de conversación de 24 horas para intercambiar sin acumular conexiones inactivas."
+        "text": "Un primer hola y 24 horas para hablar, sin mostrar las fotos de entrada. Espacio para que las palabras encuentren su camino."
       },
       "continuation": {
         "title": "04 · Continuar juntos",
-        "text": "Después de 24 horas se pausa el envío. Dos acuerdos privados reabren la conversación; un rechazo termina el match sin identificar a su autor. Revelar las fotos sigue siendo una decisión distinta."
+        "text": "Tras 24 horas, los mensajes se ponen en pausa. Si ambos deciden continuar, la conversación se reanuda. Un rechazo termina el encuentro sin revelar quién lo decidió. Mostrar las fotos es otra elección, siempre mutua."
       }
     },
-    "featuresEyebrow": "Lo esencial ya está diseñado",
-    "featuresTitle": "Una experiencia completa, no solo una promesa.",
-    "featuresIntro": "La base técnica de Histae ya cubre el recorrido que convierte un perfil en una conversación elegida.",
+    "featuresEyebrow": "Los pequeños detalles de Histae",
+    "featuresTitle": "Conocerse, con sencillez.",
+    "featuresIntro": "Una presentación que le representa, deseos que coinciden y libertad para avanzar a su ritmo.",
     "features": {
       "profiles": {
-        "title": "Perfiles y rasgos",
-        "text": "Nombre, edad, biografía y rasgos ayudan a conocer a alguien antes de revelar su foto."
+        "title": "Lo que le apasiona",
+        "text": "Una pasión, una respuesta, un rasgo de carácter. Su perfil deja entrever a la persona detrás de las palabras."
       },
       "preferences": {
-        "title": "Preferencias mutuas",
-        "text": "Rangos de edad, persona buscada y distancia máxima se comprueban en ambos sentidos."
+        "title": "Deseos que coinciden",
+        "text": "La edad, la distancia y las personas buscadas cuentan por ambas partes. Sus preferencias y las de la otra persona tienen el mismo lugar."
       },
       "location": {
-        "title": "Descubrimiento geolocalizado",
-        "text": "El feed usa una ubicación reciente, muestra una distancia redondeada y requiere un consentimiento separado."
+        "title": "Alguien cerca de usted",
+        "text": "Con su permiso, Histae usa una ubicación reciente para los encuentros cercanos. Los demás ven una distancia redondeada, nunca su ubicación exacta."
       },
       "likes": {
-        "title": "Likes recíprocos",
-        "text": "Solo dos likes crean un match. Los perfiles evaluados, bloqueados o ya emparejados salen del feed."
+        "title": "Una curiosidad compartida",
+        "text": "¿Ambos quieren saber más? Así empieza un encuentro. Un interés no correspondido sigue siendo privado."
       },
       "matches": {
-        "title": "Matches en dos etapas",
-        "text": "Una primera ventana de 24 horas abre la conversación y una segunda permite elegir juntos si continuar."
+        "title": "Las ganas de seguir",
+        "text": "Tras las primeras 24 horas, cada persona dispone de otras 24 horas para decidir cómo seguir. Hacen falta dos síes para retomar la conversación."
       },
       "photoReveal": {
-        "title": "Revelación mutua",
-        "text": "Las fotos aparecen únicamente con el acuerdo de ambos, independientemente de la continuación."
+        "title": "Un rostro, en el momento adecuado",
+        "text": "Cuando ambos lo deseen, sus fotos se revelan. Seguir hablando no obliga a mostrarlas."
       },
       "messaging": {
-        "title": "Mensajes y lectura",
-        "text": "Los mensajes pertenecen al match, se fechan y solo el destinatario puede marcarlos como leídos."
+        "title": "Sus palabras, su conversación",
+        "text": "Un espacio para escribir, leer y responder. Las confirmaciones indican cuándo sus mensajes se marcan como leídos."
       },
       "privacy": {
-        "title": "Seguridad y privacidad",
-        "text": "Consentimientos, bloqueos, denuncias, exportación, derechos y eliminación completa forman parte de la cuenta."
+        "title": "Sus límites cuentan",
+        "text": "Cambiar un consentimiento, bloquear a alguien, denunciar un problema o solicitar sus datos: estas opciones siguen disponibles en su cuenta."
       }
     },
     "safetyEyebrow": "Una atención práctica a la seguridad",
     "safetyTitle": "El respeto nunca debería ser opcional.",
     "safetyText": "Bloqueo, denuncias y moderación permiten actuar. Los datos sensibles y la ubicación dependen de consentimientos claros y revocables, con derechos de acceso, exportación y eliminación. El código fuente es público para que cualquiera pueda examinarlo y auditar su seguridad.",
     "safetyLink": "Ver nuestros compromisos de seguridad",
-    "closingTitle": "Menos reflejos. Más intención real.",
-    "closingText": "La aplicación está en preparación. Sigue el lanzamiento para descubrir Histae cuando llegue."
+    "closingTitle": "Un encuentro a su ritmo.",
+    "closingText": "Histae se prepara para recibirle en iOS y Android. Aquí encontrará los enlaces de descarga cuando se lance.",
+    "conversation": {
+      "eyebrow": "Todo empieza con un detalle",
+      "questionLabel": "Una pregunta para darse a conocer",
+      "question": "¿Una pequeña alegría que lo cambia todo?",
+      "answer": "Un café al sol y ninguna hora que mirar.",
+      "reply": "Creo que tenemos la misma idea del domingo. ¿Con un libro o solo el café?",
+      "firstName": "Camille",
+      "secondName": "Noa",
+      "caption": "Un intercambio ficticio para mostrarle el espíritu de Histae."
+    }
   }
 }

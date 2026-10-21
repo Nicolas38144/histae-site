@@ -4,6 +4,7 @@ import { localizedHref, type Locale } from "../lib/site-config";
 import { getMessagesForLocale } from "../messages";
 import { PricingCards } from "./pricing-cards";
 import { StructuredData } from "./structured-data";
+import { HeroConversation } from "./hero-conversation";
 
 export async function HomePage({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale });
@@ -25,15 +26,7 @@ export async function HomePage({ locale }: { locale: Locale }) {
             <Link className="text-link" href={localizedHref(locale, "feature")}>{t("home.secondary")}<span aria-hidden="true"> →</span></Link>
           </div>
         </div>
-        <div className="hero-art" aria-hidden="true">
-          <span className="art-glow art-glow-left" />
-          <span className="art-glow art-glow-right" />
-          <span className="art-orbit art-orbit-one" />
-          <span className="art-orbit art-orbit-two" />
-          <span className="art-thread art-thread-left" />
-          <span className="art-thread art-thread-right" />
-          <span className="art-point" />
-        </div>
+        <HeroConversation copy={messages.home.conversation} />
       </section>
 
       <section className="shell section" aria-labelledby="principles-title">
@@ -42,9 +35,8 @@ export async function HomePage({ locale }: { locale: Locale }) {
           <h2 id="principles-title">{t("home.principlesTitle")}</h2>
         </div>
         <div className="principles-grid">
-          {principles.map((principle, index) => (
+          {principles.map((principle) => (
             <article className="principle-card" key={principle.title}>
-              <span aria-hidden="true">0{index + 1}</span>
               <h3>{principle.title}</h3>
               <p>{principle.text}</p>
             </article>
@@ -77,9 +69,8 @@ export async function HomePage({ locale }: { locale: Locale }) {
           <p>{t("home.featuresIntro")}</p>
         </div>
         <div className="features-grid">
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <article className="feature-card" key={feature.title}>
-              <span aria-hidden="true">0{index + 1}</span>
               <h3>{feature.title}</h3>
               <p>{feature.text}</p>
             </article>

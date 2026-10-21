@@ -1,88 +1,98 @@
 {
   "home": {
-    "eyebrow": "A different way to meet",
-    "title": "Give a connection the time to exist.",
-    "intro": "Histae is for people who prefer attention over reflexes, curiosity over endless scrolling, and consent at every step.",
+    "eyebrow": "FIRST, A CONVERSATION",
+    "title": "Take your time to meet.",
+    "intro": "A detail that makes you smile. An answer that leaves you curious. Here, words come before photos, which you both choose to reveal.",
     "primary": "Discover the launch",
     "secondary": "How it works",
-    "principlesTitle": "What we want to protect",
+    "principlesTitle": "Room for what matters.",
     "principles": {
       "time": {
         "title": "Time",
-        "text": "No swiping race. Every conversation is given room to breathe."
+        "text": "Read an answer to the end. Find your words. Let a conversation take shape."
       },
       "reciprocity": {
         "title": "Reciprocity",
-        "text": "A match never moves forward alone: both people choose what comes next."
+        "text": "The wish to connect has to be mutual. To start talking, and to choose to continue."
       },
       "respect": {
         "title": "Respect",
-        "text": "Reporting tools and moderation are part of the product, not a footnote."
+        "text": "Be free to say yes, say no, block or report. And stay in control of what you share."
       }
     },
     "rhythmEyebrow": "A more human pace",
-    "rhythmTitle": "From discovery onward, every step is chosen.",
-    "rhythmIntro": "Histae brings compatible profiles together, then lets reciprocity and consent decide what happens next.",
+    "rhythmTitle": "The wish to talk. Then to keep talking.",
+    "rhythmIntro": "You choose who sparks your curiosity, what you share and what comes next. Together, at every step.",
     "steps": {
       "preferences": {
         "title": "01 · Define what matters",
-        "text": "Age ranges, distance, who you are looking for and personality traits give discovery a clear framework."
+        "text": "A few words about you, what you’re looking for and what makes you you. No role to play."
       },
       "mutualChoice": {
         "title": "02 · Choose each other",
-        "text": "The feed applies both people’s preferences. Only two reciprocal likes create a match."
+        "text": "A detail catches your eye? Show your interest. A conversation only starts when the feeling is mutual."
       },
       "conversation": {
         "title": "03 · Talk for 24 hours",
-        "text": "Conversation begins without immediately exposing photos, leaving room to discover the person first."
+        "text": "A first hello and 24 hours to talk, without photos shown straight away. Room for words to find their way."
       },
       "continuation": {
         "title": "04 · Continue and reveal together",
-        "text": "After 24 hours, sending is paused. Two private agreements reopen the conversation; a decline ends the match without naming who declined. Photo reveal remains a separate choice."
+        "text": "After 24 hours, messaging pauses. If you both choose to continue, the conversation resumes. A refusal ends the match without revealing who declined. Sharing photos is a separate choice, always mutual."
       }
     },
-    "featuresEyebrow": "Already at the product’s core",
-    "featuresTitle": "A complete experience designed as one system.",
-    "featuresIntro": "Profiles, discovery, conversation and data control work together to create a clearer framework.",
+    "featuresEyebrow": "The little details of Histae",
+    "featuresTitle": "Getting to know each other, simply.",
+    "featuresIntro": "An introduction that feels like you, wishes that align and the freedom to move at your own pace.",
     "features": {
       "profiles": {
-        "title": "Profiles and traits",
-        "text": "First name, age, bio and personality traits help people understand someone before their photo is revealed."
+        "title": "What moves you",
+        "text": "A passion, an answer, a character trait. Your profile offers a glimpse of the person behind the words."
       },
       "preferences": {
-        "title": "Mutual preferences",
-        "text": "Age ranges, who each person is looking for and maximum distance are checked in both directions."
+        "title": "Wishes that align",
+        "text": "Age, distance and who you’re looking for matter on both sides. Your preferences and theirs carry equal weight."
       },
       "location": {
-        "title": "Location-based discovery",
-        "text": "The feed uses a recent location, shows rounded distance and relies on separate location consent."
+        "title": "Someone nearby",
+        "text": "With your permission, Histae uses a recent location to find people nearby. Others see a rounded distance, never your exact location."
       },
       "likes": {
-        "title": "Reciprocal likes",
-        "text": "Only two likes create a match. Assessed, blocked and already matched profiles leave the feed."
+        "title": "A shared curiosity",
+        "text": "Do you both want to know more? That’s the start of a match. One-sided interest stays private."
       },
       "matches": {
-        "title": "Two-stage matches",
-        "text": "A first 24-hour window opens conversation, then a second lets both people choose whether to continue."
+        "title": "The wish to keep talking",
+        "text": "After the first 24 hours, each person has another 24 hours to choose what comes next. It takes two yeses to resume the conversation."
       },
       "photoReveal": {
-        "title": "Mutual reveal",
-        "text": "Photos appear only after both people agree, independently from the decision to continue."
+        "title": "A face, at the right moment",
+        "text": "When you both want to, your photos are revealed. Continuing to talk never obliges you to show them."
       },
       "messaging": {
-        "title": "Messaging and read status",
-        "text": "Messages belong to the match, are timestamped and can only be marked read by their recipient."
+        "title": "Your words, your conversation",
+        "text": "A place to write, read and reply. Read receipts show when your messages are marked as read."
       },
       "privacy": {
-        "title": "Safety and privacy",
-        "text": "Consent, blocks, reports, data export, rights requests and complete deletion are built into the account."
+        "title": "Your boundaries matter",
+        "text": "Change consent, block someone, report a problem or request your data: these choices stay within reach in your account."
       }
     },
     "safetyEyebrow": "A practical approach to safety",
     "safetyTitle": "Respect should never be optional.",
     "safetyText": "Histae includes blocking, reporting, moderation and directly accessible data rights. Sensitive choices, such as location and preferences, rely on explicit consent that can be withdrawn. The source code is public so anyone can examine it and audit its security.",
     "safetyLink": "Read our safety commitments",
-    "closingTitle": "Fewer reflexes. More real intention.",
-    "closingText": "The app is being prepared. Follow the launch to discover Histae when it arrives."
+    "closingTitle": "A connection at your own pace.",
+    "closingText": "Histae is getting ready to welcome you on iOS and Android. You’ll find the download links here at launch.",
+    "conversation": {
+      "eyebrow": "It starts with a little detail",
+      "questionLabel": "A question to share a little of yourself",
+      "question": "A small joy that changes everything?",
+      "answer": "Coffee in the sunshine, with nowhere to rush to.",
+      "reply": "I think we have the same idea of a Sunday. With a book, or just the coffee?",
+      "firstName": "Camille",
+      "secondName": "Noa",
+      "caption": "An imagined exchange to give you a feel for Histae."
+    }
   }
 }

@@ -2,8 +2,8 @@
   "pages": {
     "feature": {
       "eyebrow": "Fonctionnalités",
-      "title": "Tout le parcours, de la découverte à la suite.",
-      "intro": "Histae organise chaque étape de la rencontre : profil, compatibilité, décision réciproque, conversation, continuation, sécurité et maîtrise des données.",
+      "title": "Comment une rencontre prend forme.",
+      "intro": "D’abord, quelques mots qui donnent envie de répondre. Puis une conversation, et des choix qui se font à deux. Voici comment cela se passe sur Histae.",
       "blocks": {
         "profile": {
           "title": "Un profil qui va au-delà d’une photo",
@@ -77,15 +77,15 @@
     "about": {
       "eyebrow": "À propos",
       "title": "Nous croyons aux rencontres qui prennent leur temps.",
-      "intro": "Histae part d’un constat simple : une application de rencontre peut encourager la curiosité sans réduire les personnes à une succession de choix instantanés.",
+      "intro": "Une réponse qui vous fait sourire peut en dire beaucoup. Nous souhaitons laisser une place à cette curiosité, avant de découvrir un visage.",
       "blocks": {
         "promise": {
           "title": "Une promesse modeste",
           "text": "Nous ne décidons pas à la place des gens. Nous concevons les règles qui permettent une rencontre plus consciente et plus réciproque."
         },
         "product": {
-          "title": "Un socle produit déjà concret",
-          "text": "Profils, préférences mutuelles, feed, likes réciproques, matchs temporisés, messagerie, consentements et outils de sécurité structurent déjà le produit."
+          "title": "Des choix qui changent l’échange",
+          "text": "Des photos qui se dévoilent à deux, un intérêt qui doit être réciproque, et une conversation que chacun choisit de poursuivre. Ces détails donnent son rythme à Histae."
         },
         "privacy": {
           "title": "Une vie privée pensée dans le fonctionnement",
@@ -100,7 +100,7 @@
     "download": {
       "eyebrow": "Lancement",
       "title": "Histae arrive bientôt.",
-      "intro": "L’application iOS et Android est en préparation. Les liens de téléchargement seront publiés ici dès leur disponibilité réelle.",
+      "intro": "Nous préparons l’application pour iOS et Android. Dès sa publication, vous retrouverez ici les liens vers les deux stores.",
       "blocks": {
         "availability": {
           "title": "Sur iOS et Android",

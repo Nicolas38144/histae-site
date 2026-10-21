@@ -198,3 +198,7 @@ Les en-têtes CSP et protections navigateur s’appliquent aussi aux réponses d
 The approved logo is the open book from **02 / Les pages**. The Histae name is an optional accompanying signature, not part of the symbol. Header and footer use `public/branding/histae-signature.svg` with outlined lettering; the standalone book is `public/branding/histae-logo.svg`. On narrow mobile headers (360px and below), the book appears alone to keep it legible. No external font request is needed to render these assets.
 
 `lib/branding.ts` supplies the shared SVG/PNG favicon and Apple touch icon metadata. The web manifest uses explicit 192px/512px PNG sizes; the legacy `public/logo.png` path now contains the same book icon. Mobile native assets share this source in the adjacent Histae app repository. No website deployment is included in this change.
+
+## Product voice — 21 October 2026
+
+The app and website share warmer, concrete copy in French, English, Spanish and Italian. The homepage illustrates an explicitly fictional conversation instead of abstract product artwork, and feature lists use fewer numbered panels. The night palette and open-book identity remain in place. Legal documents, commercial values and payment flows retain their existing behavior. These changes are local and do not publish the website.
