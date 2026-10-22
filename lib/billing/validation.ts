@@ -25,7 +25,8 @@ export function paymentUrl(value: unknown, portal: boolean): string {
   if (typeof raw !== "string") throw new BillingFailure("invalid_response");
   let url: URL;
   try { url = new URL(raw); } catch { throw new BillingFailure("invalid_response"); }
-  if (url.protocol !== "https:" || url.username || url.password || url.port || url.hash
+  // Stripe Checkout URLs can include a fragment; preserve it for the redirect.
+  if (url.protocol !== "https:" || url.username || url.password || url.port || (portal && url.hash)
     || url.hostname !== (portal ? "billing.stripe.com" : "checkout.stripe.com")) throw new BillingFailure("invalid_response");
   return url.href;
 }

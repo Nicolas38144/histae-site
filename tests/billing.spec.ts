@@ -19,6 +19,20 @@ test("rejects untrusted payment URLs and inconsistent entitlement DTOs", () => {
   expect(() => parseOffers({ offers: [{ ...plans.offers[0], billing_period: { toString: {} } }] })).toThrow(BillingFailure);
   expect(() => paymentUrl({ url: { toString: {} } }, false)).toThrow(BillingFailure);
 });
+test("preserves Stripe Checkout fragments while rejecting untrusted destinations", () => {
+  const url = "https://checkout.stripe.com/c/pay/cs_test_synthetic#fidSynthetic%2Fvalue%3D";
+  expect(paymentUrl({ session_id: "cs_test_synthetic", url, expires_at: "2030-01-01T00:00:00Z" }, false)).toBe(url);
+  for (const invalid of [
+    "https://checkout.stripe.com.evil.test/c/pay/synthetic#fidSynthetic",
+    "https://checkout.stripe.com@evil.test/c/pay/synthetic#fidSynthetic",
+    "http://checkout.stripe.com/c/pay/synthetic#fidSynthetic",
+    "https://checkout.stripe.com:444/c/pay/synthetic#fidSynthetic",
+    "https://billing.stripe.com/p/session/synthetic#fidSynthetic",
+  ]) expect(() => paymentUrl({ url: invalid }, false)).toThrow(BillingFailure);
+  expect(() => paymentUrl({ url }, true)).toThrow(BillingFailure);
+  expect(paymentUrl({ url: "https://billing.stripe.com/p/session/synthetic" }, true)).toBe("https://billing.stripe.com/p/session/synthetic");
+});
+
 test("UUID and matching phone require OTP before Stripe; lost Checkout response reuses key", async ({ page }) => {
   let authenticated = false; const keys: string[] = []; const bodies: unknown[] = [];
   await page.route("**/api/web/billing/**", async (route) => {
