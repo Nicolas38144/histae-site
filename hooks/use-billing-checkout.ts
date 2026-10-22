@@ -83,7 +83,7 @@ export function useBillingCheckout(locale: Locale) {
         if (alive.current) window.location.assign(target);
       } catch (error: unknown) {
         if (error instanceof BillingFailure && error.code === "idempotency_key_consumed") {
-          await refresh(); clearCheckoutKey();
+          await refresh(); clearCheckoutKey(period);
         }
         throw error;
       }
