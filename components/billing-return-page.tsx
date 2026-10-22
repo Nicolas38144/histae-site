@@ -1,3 +1,4 @@
+import { subscriptionHref } from "../lib/billing/navigation";
 import Link from "next/link";
 import type { BillingReturnKind } from "../lib/billing-returns";
 import { localizedHref, type Locale } from "../lib/site-config";
@@ -24,7 +25,7 @@ export function BillingReturnPage({ locale, kind }: { locale: Locale; kind: Bill
           </ol>
         </div>
         <p className="billing-return-note">{copy.note}</p>
-        <Link className="button button-primary" href={`/${locale}/billing/subscribe/`}>{messages.billingCheckout.refresh}</Link>
+        <Link className="button button-primary" href={subscriptionHref(locale)}>{messages.billingCheckout.refresh}</Link>
         <Link className="text-link" href={localizedHref(locale, "home")}>{messages.common.backHome}</Link>
       </section>
     </main>

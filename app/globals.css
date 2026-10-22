@@ -246,7 +246,7 @@ h1, h2, h3 { text-wrap: balance; }
 
 .pricing-section { margin-top: clamp(5rem, 10vw, 9rem); padding-block: clamp(5rem, 10vw, 9rem); border-block: 1px solid var(--line); background: rgba(255, 255, 255, 0.025); }
 .pricing-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 3rem; }
-.pricing-card { position: relative; min-width: 0; padding: clamp(1.25rem, 2.5vw, 2rem); border: 1px solid var(--line); border-radius: 1.25rem; background: var(--panel); }
+.pricing-card { display: flex; flex-direction: column; position: relative; min-width: 0; padding: clamp(1.25rem, 2.5vw, 2rem); border: 1px solid var(--line); border-radius: 1.25rem; background: var(--panel); }
 .pricing-card[data-featured="true"] { border-color: rgba(182, 156, 255, 0.62); background: linear-gradient(145deg, rgba(182, 156, 255, 0.16), rgba(240, 154, 130, 0.08)); box-shadow: 0 24px 70px rgba(0, 0, 0, 0.2); }
 .pricing-card-heading { display: flex; min-height: 5.2rem; flex-direction: column; align-items: flex-start; gap: 0.65rem; }
 .pricing-card-heading h3 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.45rem, 2.5vw, 1.8rem); font-weight: 500; line-height: 1.2; }
@@ -281,9 +281,16 @@ h1, h2, h3 { text-wrap: balance; }
 .pricing-credit h3 { max-width: 29rem; font-size: 1.15rem; }
 .pricing-mutual-note { margin-top: 1.5rem; padding: 1.25rem 1.5rem; border-left: 3px solid var(--lavender); border-radius: 0 0.65rem 0.65rem 0; background: var(--panel); }
 .pricing-questions .faq-list { margin-top: 2rem; padding-bottom: 0; }
-.pricing-faq-link { display: inline-flex; margin: 1rem 0 0 1.5rem; }
-.pricing-page .page-closing .button { margin-top: 0.5rem; }
-.pricing-home-link { margin-top: 2rem; }
+.pricing-card-action { margin-top: auto; padding-top: 1.75rem; }
+.pricing-card-action .button { width: 100%; text-align: center; }
+.pricing-checkout-closing { padding-block: 1rem clamp(3rem, 6vw, 5rem); }
+.pricing-checkout-panel { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(16rem, 1fr); align-items: center; gap: 2rem; padding: clamp(1.5rem, 4vw, 3rem); border: 1px solid var(--line); border-radius: 1.25rem; background: var(--panel); }
+.pricing-checkout-copy h2 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 500; line-height: 1.15; }
+.pricing-checkout-copy p { max-width: 32rem; margin-top: 1rem; color: var(--muted); }
+.pricing-checkout-action { display: grid; justify-items: start; gap: 1rem; }
+.pricing-checkout-action p { max-width: 23rem; color: var(--faint); font-size: .85rem; }
+.pricing-help-links { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem 2rem; margin-top: 1.5rem; }
+
 
 .source-section { padding-bottom: clamp(4rem, 8vw, 7rem); scroll-margin-top: 7rem; }
 .source-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 2.5rem; }
@@ -370,7 +377,7 @@ h1, h2, h3 { text-wrap: balance; }
 
 .language-redirect { min-height: 100svh; background: var(--night); }
 
-@media (max-width: 850px) {
+@media (max-width: 1120px) {
   .header-content { grid-template-columns: minmax(0, 1fr) auto auto; min-height: 68px; gap: 0.7rem; }
   .menu-trigger { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.4rem; border: 0; background: transparent; cursor: pointer; font-size: 0.78rem; font-weight: 700; }
   .menu-lines { display: grid; gap: 4px; }
@@ -380,6 +387,9 @@ h1, h2, h3 { text-wrap: balance; }
   .site-navigation a { padding: 0.8rem 0; font-size: 1rem; }
   .language-trigger > span:last-child { display: none; }
   .header-cta { min-height: 2.35rem; padding-inline: 0.8rem; font-size: 0.78rem; }
+}
+
+@media (max-width: 850px) {
   .hero { grid-template-columns: 1fr; min-height: auto; padding-block: 4.8rem 4rem; }
   .hero-art { min-height: 20rem; }
   .principles-grid { grid-template-columns: 1fr; }
@@ -397,6 +407,12 @@ h1, h2, h3 { text-wrap: balance; }
   .footer-main { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .footer-brand { grid-column: 1 / -1; }
   .footer-legal ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 650px) {
+  .pricing-checkout-panel { grid-template-columns: 1fr; gap: 1.5rem; }
+  .pricing-checkout-action, .pricing-checkout-action .button { width: 100%; }
+  .pricing-help-links { flex-direction: column; align-items: flex-start; }
 }
 
 @media (max-width: 540px) {
@@ -474,6 +490,18 @@ h1, h2, h3 { text-wrap: balance; }
 .source-reveal { padding-block: 1.5rem; border-block: 1px solid var(--line); }
 .source-reveal > summary { cursor: pointer; font-family: Georgia,"Times New Roman",serif; font-size: 1.6rem; }
 .source-reveal .source-grid { margin-top: 2rem; }
+@media (max-width: 1120px) {
+  .header-content { grid-template-columns: minmax(0, 1fr) auto auto; min-height: 68px; gap: 0.7rem; }
+  .menu-trigger { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.4rem; border: 0; background: transparent; cursor: pointer; font-size: 0.78rem; font-weight: 700; }
+  .menu-lines { display: grid; gap: 4px; }
+  .menu-lines i { display: block; width: 1.1rem; height: 1px; background: var(--ink); }
+  .site-navigation { position: absolute; top: 100%; left: 0; display: none; width: 100%; padding: 1.1rem 24px 1.4rem; border-bottom: 1px solid var(--line); background: #111a2a; box-shadow: var(--shadow); }
+  .site-navigation[data-open="true"] { display: grid; justify-content: stretch; gap: 0.15rem; }
+  .site-navigation a { padding: 0.8rem 0; font-size: 1rem; }
+  .language-trigger > span:last-child { display: none; }
+  .header-cta { min-height: 2.35rem; padding-inline: 0.8rem; font-size: 0.78rem; }
+}
+
 @media (max-width: 850px) {
   .app-story { gap: 2.5rem; }
   .principles-ribbon > div { gap: 1.5rem; }

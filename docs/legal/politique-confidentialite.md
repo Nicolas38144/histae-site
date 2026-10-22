@@ -1,11 +1,9 @@
 # Politique de confidentialité de Histae
 
-> **Brouillon du 13 octobre 2026 — à compléter et faire valider avant publication.** Les passages entre crochets et les durées à confirmer ne doivent pas rester dans la version publiée.
-
-**Version publiée :** [À COMPLÉTER après validation]  
-**Date d’entrée en vigueur :** [À COMPLÉTER]  
-**Responsable du traitement :** [À COMPLÉTER : identité et adresse]  
-**Contact vie privée / DPO, s’il existe :** [À COMPLÉTER]
+**Version publiée :** En cours de validation.  
+**Date d’entrée en vigueur :** En cours de validation.  
+**Responsable du traitement :** En cours de validation.  
+**Contact vie privée / DPO, s’il existe :** En cours de validation.
 
 Cette notice décrit les traitements liés à l’application de rencontre Histae et à son API. Les traitements propres au site vitrine, notamment les éventuels traceurs et outils de mesure d’audience, doivent être vérifiés séparément avant d’étendre cette notice au site.
 
@@ -29,7 +27,7 @@ Le parcours actuel ne demande pas de consentement marketing. Toute prospection o
 
 Les autres utilisateurs voient les éléments de profil utiles à la découverte, dont le prénom, l’âge, le sexe déclaré, les traits et les contenus approuvés. La distance affichée est arrondie. La date de naissance exacte, le numéro de téléphone et les coordonnées géographiques précises ne sont pas affichés aux autres utilisateurs. Une photo de profil n’est révélée dans un match qu’après l’accord des deux personnes.
 
-Les personnes habilitées à administrer et modérer Histae accèdent uniquement aux informations nécessaires à leur mission ; leurs consultations sensibles sont journalisées. Des prestataires techniques peuvent traiter des données pour fournir le service, notamment l’envoi des SMS (Sweego), les paiements si activés (Stripe, Apple App Store, Google Play), l’hébergement, le stockage et la modération technique des photos. **À COMPLÉTER :** identité et rôle effectif des prestataires, lieux d’hébergement, accès des sous-traitants et éventuels transferts hors de l’Espace économique européen, avec leurs garanties.
+Les personnes habilitées à administrer et modérer Histae accèdent uniquement aux informations nécessaires à leur mission ; leurs consultations sensibles sont journalisées. Des prestataires techniques peuvent traiter des données pour fournir le service, notamment l’envoi des SMS (Sweego), les paiements si activés (Stripe, Apple App Store, Google Play), l’hébergement, le stockage et la modération technique des photos. **En cours de validation.** identité et rôle effectif des prestataires, lieux d’hébergement, accès des sous-traitants et éventuels transferts hors de l’Espace économique européen, avec leurs garanties.
 
 ## 3. Durées de conservation
 
@@ -37,17 +35,17 @@ Les informations de compte, de profil et de conversation sont conservées pendan
 
 Pour les mécanismes actuellement présents dans l’API : une position n’est plus utilisable pour la découverte après une heure et est supprimée après 24 heures sans mise à jour ; le retrait du consentement la supprime immédiatement. Les codes de connexion sont supprimés à leur expiration. Les journaux d’accès administrateur et de données sont nettoyés après un an ; les signalements résolus après trois ans ; les choix retirés et les demandes de droits closes après cinq ans, selon les règles de purge actuellement prévues. Ces durées doivent être confrontées aux sauvegardes, aux obligations légales et au fonctionnement réel de production avant publication.
 
-**À COMPLÉTER :** durées exactes pour les comptes inactifs, messages, factures et abonnements, sauvegardes, logs d’infrastructure, contenus de modération et éventuels litiges ; critères de prolongation ou d’archivage légal. La version publiée doit donner une durée ou un critère compréhensible pour chaque catégorie.
+**En cours de validation.** durées exactes pour les comptes inactifs, messages, factures et abonnements, sauvegardes, logs d’infrastructure, contenus de modération et éventuels litiges ; critères de prolongation ou d’archivage légal. La version publiée doit donner une durée ou un critère compréhensible pour chaque catégorie.
 
 ## 4. Vos choix et vos droits
 
 La prise de connaissance de cette notice ne constitue pas un consentement global aux traitements. L’acceptation des conditions d’utilisation, le consentement aux données sensibles et le consentement à la localisation sont des choix distincts. Le refus ou le retrait de l’un des deux consentements facultatifs empêche les fonctions qui en dépendent. Retirer le consentement aux données sensibles supprime le sexe et les préférences concernés ; retirer celui de localisation supprime la position enregistrée.
 
-Depuis le compte, l’utilisateur peut demander l’accès, la rectification, la portabilité, la limitation, l’opposition ou l’effacement, et obtenir un export de ses données selon le parcours proposé. Il peut également écrire à [À COMPLÉTER : contact vie privée]. Une demande peut nécessiter une vérification raisonnable de l’identité. Les limites légales applicables à certains droits seront expliquées dans la réponse. Une réclamation peut être adressée à la [CNIL](https://www.cnil.fr/fr/plaintes).
+Depuis le compte, l’utilisateur peut demander l’accès, la rectification, la portabilité, la limitation, l’opposition ou l’effacement, et obtenir un export de ses données selon le parcours proposé. Il peut également écrire à En cours de validation. Une demande peut nécessiter une vérification raisonnable de l’identité. Les limites légales applicables à certains droits seront expliquées dans la réponse. Une réclamation peut être adressée à la [CNIL](https://www.cnil.fr/fr/plaintes).
 
 ## 5. Sécurité, décisions automatisées et évolutions
 
-Histae utilise des contrôles d’accès, des limitations de tentatives, une modération et des mesures techniques destinées à protéger les données. Les critères de découverte filtrent les profils selon les préférences mutuelles. Certains contenus font l’objet d’une analyse automatisée et peuvent être soumis à une revue humaine avant leur affichage. **À VALIDER :** description des éventuelles décisions produisant des effets juridiques ou similaires, et des voies de contestation correspondantes.
+Histae utilise des contrôles d’accès, des limitations de tentatives, une modération et des mesures techniques destinées à protéger les données. Les critères de découverte filtrent les profils selon les préférences mutuelles. Certains contenus font l’objet d’une analyse automatisée et peuvent être soumis à une revue humaine avant leur affichage. **En cours de validation.** description des éventuelles décisions produisant des effets juridiques ou similaires, et des voies de contestation correspondantes.
 
 Une modification importante des finalités, destinataires, durées ou droits fera l’objet d’une information adaptée. La version et la date d’entrée en vigueur de la notice resteront accessibles. Les autres informations obligatoires de l’article 13 du RGPD, notamment les transferts et la source des données si elle ne vient pas de l’utilisateur, doivent être vérifiées dans la version finale.
 

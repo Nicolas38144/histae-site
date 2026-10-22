@@ -21,6 +21,7 @@ export async function PageShell({ children, locale }: { children: ReactNode; loc
       about: t("nav.about"),
       faq: t("nav.faq"),
       download: t("nav.download"),
+      subscription: t("nav.subscription"),
     },
   };
 

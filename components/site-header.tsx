@@ -1,5 +1,7 @@
 "use client";
 
+import { subscriptionHref } from "../lib/billing/navigation";
+
 import Link from "next/link";
 import { BrandSignature } from "./brand-signature";
 import { usePathname } from "next/navigation";
@@ -21,7 +23,7 @@ export type SiteHeaderCopy = {
     menu: string;
     navigation: string;
   };
-  nav: Record<SiteRouteId, string>;
+  nav: Record<SiteRouteId, string> & { subscription: string };
 };
 
 export function SiteHeader({ copy, locale }: { copy: SiteHeaderCopy; locale: Locale }) {
@@ -39,11 +41,18 @@ export function SiteHeader({ copy, locale }: { copy: SiteHeaderCopy; locale: Loc
   }, [isLanguageOpen]);
 
   const normalizedPath = pathname.replace(/\/$/, "") || `/${locale}`;
-  const navigation = navigationRouteIds.map((routeId) => ({
-    routeId,
-    href: localizedHref(locale, routeId),
-    label: copy.nav[routeId],
-  }));
+  const navigation = [
+    ...navigationRouteIds.map((routeId) => ({
+      routeId,
+      href: localizedHref(locale, routeId),
+      label: copy.nav[routeId],
+    })),
+    {
+      routeId: "subscription",
+      href: subscriptionHref(locale),
+      label: copy.nav.subscription,
+    },
+  ];
 
   return (
     <header className="site-header">
@@ -69,7 +78,7 @@ export function SiteHeader({ copy, locale }: { copy: SiteHeaderCopy; locale: Loc
             <Link
               key={item.routeId}
               href={item.href}
-              aria-current={normalizedPath === item.href ? "page" : undefined}
+              aria-current={normalizedPath === item.href.replace(/\/$/, "") ? "page" : undefined}
               onClick={() => setIsMenuOpen(false)}
             >
               {item.label}

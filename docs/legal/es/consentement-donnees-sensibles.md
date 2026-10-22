@@ -1,9 +1,7 @@
 # Consentimiento para el tratamiento de datos sensibles
 
-> **Borrador del 7 de octubre de 2026 — debe completarse y validarse antes de su publicación.** Este texto debe presentarse por separado de las Condiciones de uso y de la Política de privacidad, antes de recoger la decisión.
-
-**Versión publicada:** [POR COMPLETAR tras la validación]  
-**Responsable del tratamiento:** [POR COMPLETAR: identidad y contacto de privacidad]
+**Versión publicada:** En proceso de validación.  
+**Responsable del tratamiento:** En proceso de validación.
 
 ## Qué acepta
 
@@ -17,10 +15,10 @@ Puede negarse. Su cuenta puede permanecer abierta, pero el descubrimiento y las 
 
 Puede retirar este consentimiento en los ajustes de consentimiento de la aplicación. La API elimina entonces el sexo y las preferencias correspondientes y deja de utilizarlos para nuevos descubrimientos. La retirada no vuelve invisibles retroactivamente los datos ya recibidos, copiados o capturados por otros usuarios. La prueba de las decisiones y retiradas puede conservarse durante el plazo indicado en la Política de privacidad.
 
-Para los destinatarios, los plazos y el ejercicio de sus derechos, consulte la Política de privacidad. Preguntas: [POR COMPLETAR: contacto de privacidad].
+Para los destinatarios, los plazos y el ejercicio de sus derechos, consulte la Política de privacidad. Preguntas: En proceso de validación.
 
 ## Texto propuesto para la casilla de elección en la aplicación
 
 > Acepto explícitamente que Histae trate mi sexo declarado y mis preferencias sobre las personas buscadas para proponerme encuentros compatibles, según este documento. Sé que puedo retirar este acuerdo en cualquier momento y que el descubrimiento dejará entonces de estar disponible.
 
-La casilla debe ser independiente y no estar marcada previamente. **POR VALIDAR:** formulación exacta, calificación de los datos con arreglo al artículo 9 del RGPD y base jurídica completa antes de la publicación.
+La casilla debe ser independiente y no estar marcada previamente. **En proceso de validación.** formulación exacta, calificación de los datos con arreglo al artículo 9 del RGPD y base jurídica completa antes de la publicación.

@@ -33,6 +33,9 @@
     "storePrice": "I prezzi nelle applicazioni sono mostrati dal relativo store.",
     "session": "La sessione di pagamento dura 30 minuti. Non verrà creato un nuovo account.",
     "apple": "App Store",
-    "google": "Google Play"
+    "google": "Google Play",
+    "choosePlan": "Scegli {plan}",
+    "closingTitle": "Il tuo piano, al tuo ritmo.",
+    "closingIntro": "Scegli Premium o gestisci il tuo abbonamento con il tuo account Histae."
   }
 }

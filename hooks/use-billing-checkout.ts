@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { requestedBillingPeriod } from "../lib/billing/navigation";
 import type { Locale } from "../lib/site-config";
 import { BillingFailure, billingRequest, checkoutKey, clearCheckoutKey, parseOffers, parseSession, paymentUrl, type BillingPeriod, type WebOffer, type WebSession } from "../lib/web-billing";
 
@@ -14,6 +15,7 @@ export function useBillingCheckout(locale: Locale) {
   const [busy, setBusy] = useState(true);
   const [failure, setFailure] = useState<unknown>(null);
   const alive = useRef(true);
+  const periodInitialized = useRef(false);
   const running = useRef(false);
   const sendAttempt = useRef<{ input: string; key: string } | null>(null);
   const refresh = async () => {
@@ -23,6 +25,11 @@ export function useBillingCheckout(locale: Locale) {
   };
   useEffect(() => {
     alive.current = true;
+    if (!periodInitialized.current) {
+      const requestedPeriod = requestedBillingPeriod(window.location.search);
+      if (requestedPeriod) setPeriod(requestedPeriod);
+      periodInitialized.current = true;
+    }
     const controller = new AbortController();
     Promise.all([
       billingRequest("plans", locale, { signal: controller.signal }).then((value) => { if (alive.current && !controller.signal.aborted) setOffers(parseOffers(value)); }),

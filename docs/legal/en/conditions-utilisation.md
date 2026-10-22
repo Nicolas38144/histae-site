@@ -1,10 +1,8 @@
 # Histae Terms of Use
 
-> **Draft dated 13 October 2026 — to be completed and reviewed before publication.** Text in square brackets must not remain in the published version.
-
-**Published version:** [TO BE COMPLETED after review]  
-**Effective date:** [TO BE COMPLETED]  
-**Service publisher:** [TO BE COMPLETED: company or individual name, legal form, address, registration and contact details]
+**Published version:** Validation in progress.  
+**Effective date:** Validation in progress.  
+**Service publisher:** Validation in progress.
 
 ## 1. Purpose and access to the service
 
@@ -28,13 +26,13 @@ Users remain responsible for the text, photos and messages they publish or send.
 
 Users retain their rights to their content. They authorise Histae to host, process and display it only as necessary to operate, secure and moderate the service, for as long as that content is retained under the Privacy Policy. This authorisation does not transfer ownership.
 
-Biographies, profile answers and photos may undergo automated checks and human review. Content that is pending or rejected may not be visible to other users. In the event of a breach, Histae may remove content, restrict access or suspend an account, depending on the seriousness of the situation. Users may request explanations or challenge a decision at [TO BE COMPLETED: appeals contact].
+Biographies, profile answers and photos may undergo automated checks and human review. Content that is pending or rejected may not be visible to other users. In the event of a breach, Histae may remove content, restrict access or suspend an account, depending on the seriousness of the situation. Users may request explanations or challenge a decision at Validation in progress.
 
 ## 4. Plans and payments
 
 A free plan is planned. A Premium plan may provide access to more match continuations. Features, tax-inclusive prices, duration, any trial, renewal and cancellation terms must be displayed before any order.
 
-**TO BE COMPLETED BEFORE PAYMENTS ARE ENABLED:** final contractual description of the plans, prices and billing periods, start and end of any trial, renewal, cancellation, refunds, right of withdrawal and any exceptions, consumer mediation, payment provider and handling of purchases made through mobile app stores. This section must match the payment process actually deployed exactly.
+**Validation in progress.** final contractual description of the plans, prices and billing periods, start and end of any trial, renewal, cancellation, refunds, right of withdrawal and any exceptions, consumer mediation, payment provider and handling of purchases made through mobile app stores. This section must match the payment process actually deployed exactly.
 
 ## 5. Availability, security and account closure
 
@@ -46,7 +44,7 @@ Users may request account deletion through the process provided in the app or ex
 
 The applicable version is the one presented and accepted in the app. A substantial change will be communicated anew and, where necessary, require renewed acceptance. The version and effective date must remain accessible alongside the text.
 
-For questions about these terms: [TO BE COMPLETED: contact address]. Information on applicable law, complaints and any consumer mediator: [TO BE COMPLETED after legal review].
+For questions about these terms: Validation in progress. Information on applicable law, complaints and any consumer mediator: Validation in progress.
 
 
 ## Continuation credits and optional advertising

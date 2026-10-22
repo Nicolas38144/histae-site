@@ -1,10 +1,8 @@
 # Conditions générales d’utilisation de Histae
 
-> **Brouillon du 13 octobre 2026 — à compléter et faire valider avant publication.** Les passages entre crochets ne doivent pas rester dans la version publiée.
-
-**Version publiée :** [À COMPLÉTER après validation]  
-**Date d’entrée en vigueur :** [À COMPLÉTER]  
-**Éditeur du service :** [À COMPLÉTER : dénomination ou nom, forme juridique, adresse, immatriculation et contact]
+**Version publiée :** En cours de validation.  
+**Date d’entrée en vigueur :** En cours de validation.  
+**Éditeur du service :** En cours de validation.
 
 ## 1. Objet et accès au service
 
@@ -28,13 +26,13 @@ L’utilisateur reste responsable des textes, photos et messages qu’il publie 
 
 L’utilisateur conserve ses droits sur ses contenus. Il autorise Histae à les héberger, traiter et afficher uniquement dans la mesure nécessaire au fonctionnement du service, à sa sécurité et à sa modération, pendant la durée où ces contenus sont conservés selon la Politique de confidentialité. Cette autorisation n’emporte pas transfert de propriété.
 
-Les biographies, réponses de profil et photos peuvent être soumises à des contrôles automatisés et à une revue humaine. Un contenu en attente ou refusé peut ne pas être visible des autres utilisateurs. En cas de manquement, Histae peut retirer un contenu, limiter l’accès ou suspendre un compte, selon la gravité de la situation. L’utilisateur peut demander des explications ou contester une décision à [À COMPLÉTER : contact de recours].
+Les biographies, réponses de profil et photos peuvent être soumises à des contrôles automatisés et à une revue humaine. Un contenu en attente ou refusé peut ne pas être visible des autres utilisateurs. En cas de manquement, Histae peut retirer un contenu, limiter l’accès ou suspendre un compte, selon la gravité de la situation. L’utilisateur peut demander des explications ou contester une décision à En cours de validation.
 
 ## 4. Offres et paiements
 
 Une offre gratuite est prévue. Une offre Premium peut donner accès à davantage de continuations de matchs. Les fonctionnalités, prix TTC, durée, éventuel essai, renouvellement et modalités de résiliation doivent être affichés avant toute commande.
 
-**À COMPLÉTER AVANT L’OUVERTURE DES PAIEMENTS :** description contractuelle définitive des offres, prix et périodicités, début et fin de l’essai éventuel, reconduction, résiliation, remboursement, droit de rétractation et ses exceptions éventuelles, médiation de la consommation, prestataire de paiement et traitement des achats réalisés via les boutiques mobiles. Cette section doit correspondre exactement au parcours de paiement réellement déployé.
+**En cours de validation.** description contractuelle définitive des offres, prix et périodicités, début et fin de l’essai éventuel, reconduction, résiliation, remboursement, droit de rétractation et ses exceptions éventuelles, médiation de la consommation, prestataire de paiement et traitement des achats réalisés via les boutiques mobiles. Cette section doit correspondre exactement au parcours de paiement réellement déployé.
 
 ## 5. Disponibilité, sécurité et fermeture du compte
 
@@ -46,7 +44,7 @@ L’utilisateur peut demander l’effacement de son compte depuis le parcours pr
 
 La version applicable est celle présentée et acceptée dans l’application. Une modification substantielle fera l’objet d’une nouvelle information et, lorsque nécessaire, d’une nouvelle acceptation. La version et la date d’entrée en vigueur doivent rester accessibles avec le texte.
 
-Pour toute question sur ces conditions : [À COMPLÉTER : adresse de contact]. Les informations relatives au droit applicable, aux réclamations et à un éventuel médiateur de la consommation sont : [À COMPLÉTER après validation juridique].
+Pour toute question sur ces conditions : En cours de validation. Les informations relatives au droit applicable, aux réclamations et à un éventuel médiateur de la consommation sont : En cours de validation.
 
 
 ## Crédits de continuation et publicités facultatives

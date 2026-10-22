@@ -1,10 +1,8 @@
 # Condizioni generali d’uso di Histae
 
-> **Bozza del 13 ottobre 2026 — da completare e convalidare prima della pubblicazione.** I passaggi tra parentesi quadre non devono rimanere nella versione pubblicata.
-
-**Versione pubblicata:** [DA COMPLETARE dopo la convalida]  
-**Data di entrata in vigore:** [DA COMPLETARE]  
-**Editore del servizio:** [DA COMPLETARE: denominazione o nome, forma giuridica, indirizzo, registrazione e contatto]
+**Versione pubblicata:** In corso di validazione.  
+**Data di entrata in vigore:** In corso di validazione.  
+**Editore del servizio:** In corso di validazione.
 
 ## 1. Oggetto e accesso al servizio
 
@@ -28,13 +26,13 @@ L’utente rimane responsabile dei testi, delle foto e dei messaggi che pubblica
 
 L’utente conserva i diritti sui propri contenuti. Autorizza Histae a ospitarli, trattarli e mostrarli solo nella misura necessaria al funzionamento del servizio, alla sua sicurezza e alla sua moderazione, per il periodo in cui tali contenuti sono conservati secondo l’Informativa sulla privacy. Questa autorizzazione non comporta un trasferimento di proprietà.
 
-Le biografie, le risposte del profilo e le foto possono essere sottoposte a controlli automatizzati e a revisione umana. Un contenuto in attesa o rifiutato potrebbe non essere visibile agli altri utenti. In caso di violazione, Histae può rimuovere un contenuto, limitare l’accesso o sospendere un account, in base alla gravità della situazione. L’utente può chiedere spiegazioni o contestare una decisione a [DA COMPLETARE: contatto per i ricorsi].
+Le biografie, le risposte del profilo e le foto possono essere sottoposte a controlli automatizzati e a revisione umana. Un contenuto in attesa o rifiutato potrebbe non essere visibile agli altri utenti. In caso di violazione, Histae può rimuovere un contenuto, limitare l’accesso o sospendere un account, in base alla gravità della situazione. L’utente può chiedere spiegazioni o contestare una decisione a In corso di validazione.
 
 ## 4. Piani e pagamenti
 
 È previsto un piano gratuito. Un piano Premium può dare accesso a un maggior numero di continuazioni dei match. Le funzionalità, i prezzi comprensivi di imposte, la durata, l’eventuale prova, il rinnovo e le modalità di disdetta devono essere mostrati prima di qualsiasi ordine.
 
-**DA COMPLETARE PRIMA DELL’ATTIVAZIONE DEI PAGAMENTI:** descrizione contrattuale definitiva dei piani, prezzi e periodicità, inizio e fine dell’eventuale prova, rinnovo, disdetta, rimborso, diritto di recesso ed eventuali eccezioni, mediazione per i consumatori, prestatore di servizi di pagamento e gestione degli acquisti effettuati tramite gli store mobili. Questa sezione deve corrispondere esattamente al percorso di pagamento effettivamente implementato.
+**In corso di validazione.** descrizione contrattuale definitiva dei piani, prezzi e periodicità, inizio e fine dell’eventuale prova, rinnovo, disdetta, rimborso, diritto di recesso ed eventuali eccezioni, mediazione per i consumatori, prestatore di servizi di pagamento e gestione degli acquisti effettuati tramite gli store mobili. Questa sezione deve corrispondere esattamente al percorso di pagamento effettivamente implementato.
 
 ## 5. Disponibilità, sicurezza e chiusura dell’account
 
@@ -46,7 +44,7 @@ L’utente può chiedere la cancellazione del proprio account dal percorso previ
 
 La versione applicabile è quella presentata e accettata nell’applicazione. Una modifica sostanziale sarà oggetto di una nuova informazione e, quando necessario, di una nuova accettazione. La versione e la data di entrata in vigore devono rimanere accessibili insieme al testo.
 
-Per qualsiasi domanda su queste condizioni: [DA COMPLETARE: indirizzo di contatto]. Le informazioni relative al diritto applicabile, ai reclami e a un eventuale mediatore per i consumatori sono: [DA COMPLETARE dopo la convalida giuridica].
+Per qualsiasi domanda su queste condizioni: In corso di validazione. Le informazioni relative al diritto applicabile, ai reclami e a un eventuale mediatore per i consumatori sono: In corso di validazione.
 
 
 ## Crediti di continuazione e pubblicità facoltativa

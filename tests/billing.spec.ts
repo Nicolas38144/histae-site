@@ -1,9 +1,16 @@
 import { test, expect } from "@playwright/test";
 import { parseSession, parseOffers, paymentUrl, storeManagementUrl, BillingFailure } from "../lib/web-billing";
+import { requestedBillingPeriod, subscriptionHref } from "../lib/billing/navigation";
 const user = "11111111-1111-4111-8111-111111111111";
 const free = { user_id: user, onboarding_complete: true, subscription: { plan: "free", provider: null, access_granted: false, customer_portal_available: false, management_url: null } };
 const plans = { offers: [{ plan_code: "premium", billing_period: "monthly", price_cents: 500, currency: "EUR", display_name: "Premium" }, { plan_code: "premium", billing_period: "annual", price_cents: 4800, currency: "EUR", display_name: "Premium" }] };
 test("rejects untrusted payment URLs and inconsistent entitlement DTOs", () => {
+  expect(requestedBillingPeriod("?period=annual")).toBe("annual");
+  expect(requestedBillingPeriod("?period=monthly")).toBe("monthly");
+  expect(requestedBillingPeriod("?period=unexpected")).toBeUndefined();
+  expect(requestedBillingPeriod("")).toBeUndefined();
+  expect(subscriptionHref("fr", "annual")).toBe("/fr/billing/subscribe/?period=annual");
+  expect(subscriptionHref("es")).toBe("/es/billing/subscribe/");
   for (const url of ["http://checkout.stripe.com/x", "https://checkout.stripe.com.evil.test/x", "https://user@checkout.stripe.com/x", "https://checkout.stripe.com:444/x"]) expect(() => paymentUrl({ url }, false)).toThrow();
   expect(paymentUrl({ url: "https://checkout.stripe.com/c/pay/synthetic" },false)).toContain("checkout.stripe.com");
   expect(() => parseSession({ ...free, subscription: { ...free.subscription, access_granted: true } })).toThrow();
@@ -55,4 +62,29 @@ test("native subscribers get their store management link and no second Stripe pu
   await page.goto("/fr/billing/subscribe/");
   await expect(page.getByRole("link", { name: "Gérer mon abonnement" })).toHaveAttribute("href", "https://apps.apple.com/account/subscriptions");
   await expect(page.getByRole("button", { name: "Continuer vers le paiement" })).toHaveCount(0);
+});
+
+test("annual plan from pricing remains selected after authentication", async ({ page }) => {
+  let authenticated = false;
+  let selected: unknown;
+  await page.route("**/api/web/billing/**", async (route) => {
+    const path = new URL(route.request().url()).pathname.split("/api/web/billing/")[1];
+    if (path === "plans") return route.fulfill({ json: plans });
+    if (path === "session") return route.fulfill(authenticated ? { json: free } : { status: 401, json: { error: { code: "web_authentication_failed" } } });
+    if (path === "otp/send") return route.fulfill({ status: 202, json: { challenge_id: user } });
+    if (path === "otp/verify") { authenticated = true; return route.fulfill({ status: 204 }); }
+    if (path === "checkout") { selected = route.request().postDataJSON(); return route.abort("failed"); }
+    throw new Error("Unexpected simulated API operation");
+  });
+  await page.goto("/fr/pricing/");
+  await page.getByRole("link", { name: "Choisir Premium Annuel", exact: true }).click();
+  await expect(page).toHaveURL(/period=annual/);
+  await page.getByLabel("Identifiant du compte (UUID)").fill(user);
+  await page.getByLabel("Numéro de téléphone").fill("+33612345678");
+  await page.getByRole("button", { name: "Recevoir un code" }).click();
+  await page.getByLabel("Code reçu par SMS").fill("123456");
+  await page.getByRole("button", { name: "Confirmer le code" }).click();
+  await expect(page.getByRole("radio", { name: /Premium annuel/ })).toBeChecked();
+  await page.getByRole("button", { name: "Continuer vers le paiement" }).click();
+  await expect.poll(() => selected).toEqual({ billing_period: "annual" });
 });
