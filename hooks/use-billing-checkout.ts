@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { requestCheckout } from "../lib/billing/checkout";
 import { requestedBillingPeriod } from "../lib/billing/navigation";
 import type { Locale } from "../lib/site-config";
-import { BillingFailure, billingRequest, checkoutKey, clearCheckoutKey, parseOffers, parseSession, paymentUrl, type BillingPeriod, type WebOffer, type WebSession } from "../lib/web-billing";
+import { BillingFailure, billingRequest, clearCheckoutKey, parseOffers, parseSession, paymentUrl, type BillingPeriod, type WebOffer, type WebSession } from "../lib/web-billing";
 
 export function useBillingCheckout(locale: Locale) {
   const [session, setSession] = useState<WebSession | null>(null);
@@ -76,15 +77,12 @@ export function useBillingCheckout(locale: Locale) {
   const checkout = () => {
     if (!session) return;
     void run(async () => {
-      const key = checkoutKey(session.user_id, period);
       try {
-        const result = await billingRequest("checkout", locale, { method: "POST", headers: { "Idempotency-Key": key }, body: JSON.stringify({ billing_period: period }) });
+        const result = await requestCheckout(session.user_id, period, locale);
         const target = paymentUrl(result, false);
         if (alive.current) window.location.assign(target);
-      } catch (error: unknown) {
-        if (error instanceof BillingFailure && error.code === "idempotency_key_consumed") {
-          await refresh(); clearCheckoutKey(period);
-        }
+      } catch (error) {
+        if (error instanceof BillingFailure && error.code === "subscription_already_active") await refresh();
         throw error;
       }
     });
