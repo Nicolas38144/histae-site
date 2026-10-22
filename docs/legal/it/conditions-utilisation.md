@@ -52,3 +52,9 @@ Per qualsiasi domanda su queste condizioni: [DA COMPLETARE: indirizzo di contatt
 ## Crediti di continuazione e pubblicità facoltativa
 
 Free riceve tre crediti gratuiti ogni lunedì alle 00:00 UTC, senza accumulo. Ogni partecipante Free riserva un credito accettando; entrambi vengono addebitati atomicamente dopo due accordi. Un rifiuto o la scadenza libera le riserve. Un video pubblicitario volontario può dare un credito aggiuntivo, con fino a tre crediti pubblicitari conservati tra le settimane. I crediti appartengono al conto, non sono trasferibili e non hanno valore monetario. Free è limitato a sei continuazioni confermate per persona a settimana. Premium (5 EUR al mese o 48 EUR all’anno, con una prova prevista di 30 giorni) non consuma crediti, non mostra pubblicità e non impone questo limite. L’accordo reciproco resta sempre necessario.
+
+## Aggiornamento funzionale del 22 ottobre 2026 — acquisti da convalidare
+
+Gli acquisti nell’app Android utilizzano Google Play; quelli iOS, App Store; quelli sul sito, Stripe. L’accesso Premium appartiene all’account Histae e si può usare sui suoi dispositivi dopo la verifica del fornitore. Il canale scelto mostra prezzo e condizioni applicabili prima della conferma; non è previsto alcun nuovo periodo di prova gratuito. L’accesso al pagamento sul sito utilizza l’UUID dell’account esistente, il suo telefono e un codice SMS, senza creare un altro account. L’abbonamento si gestisce presso il fornitore originale. Eliminare l’account Histae non annulla automaticamente un abbonamento Apple o Google: va gestito nello store. Il ripristino non trasferisce un acquisto a un altro account Histae.
+
+Questa descrizione tecnica non sostituisce le condizioni contrattuali definitive di rinnovo, annullamento, rimborso o recesso. Restano necessarie le informazioni mancanti e la revisione legale prima dell’attivazione commerciale.

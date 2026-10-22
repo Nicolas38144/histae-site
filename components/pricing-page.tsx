@@ -75,6 +75,8 @@ export async function PricingPage({ locale }: { locale: Locale }) {
       </section>
       <section className="shell page-closing">
         <p>{t("pricing.launchNotice")}</p>
+        <Link className="button button-primary" href={`/${locale}/billing/subscribe/`}>{t("billingCheckout.open")}</Link>
+        <p>{t("billingCheckout.storePrice")}</p>
         <Link className="button button-primary" href={localizedHref(locale, "download")}>{t("pricing.launchCta")}</Link>
         <Link className="text-link pricing-faq-link" href={localizedHref(locale, "faq")}>{t("pricing.faqCta")}<span aria-hidden="true"> →</span></Link>
         <div className="pricing-home-link">

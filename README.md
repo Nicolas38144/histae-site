@@ -214,3 +214,34 @@ optional input folder and writes WebP assets to `public/images/app/{locale}/`.
 Keep full screen proportions, descriptive translated alt text, eager loading only
 for the hero, and lazy loading for the other screens. Long bios are intentional:
 the screenshots should show how people introduce themselves through their words.
+
+## Paiement Stripe authentifié sur le site
+
+Les pages `/fr/billing/subscribe/`, `/en/billing/subscribe/`, `/es/billing/subscribe/`,
+`/it/billing/subscribe/` vérifient un compte existant par UUID + téléphone puis OTP.
+Le cookie HttpOnly est posé par l’API ; aucun JWT, OTP ou téléphone n’est conservé dans le stockage web.
+Checkout n’est proposé qu’après vérification de la session et des consentements. Le retour Stripe ne
+constitue pas une preuve d’achat. Les abonnements Apple/Google affichent leur lien officiel de gestion.
+
+En production, le site reste statique. Le reverse proxy doit envoyer `/api/web/billing/*` à l’API, sur
+l’origine du site ; bypasser ces chemins dans les règles de cache Cloudflare et conserver `no-store`.
+En développement, `pnpm dev` réécrit ces chemins vers `HISTAE_API_DEV_UPSTREAM` (défaut
+`http://127.0.0.1:8080`). L’API exige `WEB_BILLING_ENABLED=true` et une `WEB_BILLING_ORIGIN`
+exactement égale à celle du navigateur. Les clés Stripe et les secrets des stores restent côté API.
+
+Tests : `pnpm test` (Playwright, Chromium installé par `pnpm exec playwright install chromium`).
+Les quatre tests du parcours utilisent uniquement des réponses API simulées, sans SMS ni paiement.
+Voir le [guide complet](../histae-api-rust/docs/store-billing.md) pour la livraison et les fournisseurs.
+
+
+Validation locale du 22 octobre 2026 : TypeScript, lint, export statique des quatre langues et
+**quatre tests Playwright/DTO réussis**. Les cas couvrent OTP incorrect, session requise avant paiement,
+réponse Checkout perdue avec reprise de la même clé et gestion d’un abonnement natif existant.
+Les brouillons juridiques ont été actualisés sans modifier les versions publiées ; ils exigent une
+validation avant publication. Aucun paiement/SMS réel ni déploiement n’a été effectué.
+
+
+Le parcours de paiement sépare désormais `components/billing-checkout.tsx` (vue et traductions),
+`hooks/use-billing-checkout.ts` (états et actions) et `lib/billing/` (modèles, transport, validation
+des DTO/URLs et stockage de la clé de reprise). Les événements des formulaires restent dans la vue ;
+le hook ne formate pas les messages. Les réponses annulées au changement de langue sont ignorées.

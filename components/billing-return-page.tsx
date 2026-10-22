@@ -24,6 +24,7 @@ export function BillingReturnPage({ locale, kind }: { locale: Locale; kind: Bill
           </ol>
         </div>
         <p className="billing-return-note">{copy.note}</p>
+        <Link className="button button-primary" href={`/${locale}/billing/subscribe/`}>{messages.billingCheckout.refresh}</Link>
         <Link className="text-link" href={localizedHref(locale, "home")}>{messages.common.backHome}</Link>
       </section>
     </main>

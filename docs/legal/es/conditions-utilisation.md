@@ -52,3 +52,9 @@ Para cualquier pregunta sobre estas condiciones: [POR COMPLETAR: dirección de c
 ## Créditos de continuación y publicidad opcional
 
 Free recibe tres créditos gratuitos cada lunes a las 00:00 UTC, sin acumular. Cada participante Free reserva un crédito al aceptar; ambos se consumen de forma atómica tras los dos acuerdos. Un rechazo o la caducidad libera las reservas. Un vídeo publicitario voluntario puede dar un crédito adicional, con hasta tres créditos publicitarios conservados entre semanas. Los créditos pertenecen a la cuenta, no son transferibles y no tienen valor monetario. Free permite un máximo de seis continuaciones confirmadas por persona y semana. Premium (5 EUR al mes o 48 EUR al año, con una prueba prevista de 30 días) no consume créditos, no muestra anuncios y no impone este límite. El acuerdo mutuo siempre es necesario.
+
+## Actualización funcional del 22 de octubre de 2026 — compras pendientes de validación
+
+Las compras en la aplicación Android utilizan Google Play; las de iOS, App Store; las del sitio, Stripe. El acceso Premium pertenece a la cuenta de Histae y se puede utilizar en sus dispositivos tras la verificación del proveedor. El canal elegido muestra el precio y las condiciones aplicables antes de confirmar; no se ofrece ninguna nueva prueba gratuita. El acceso al pago del sitio utiliza el UUID de la cuenta existente, su teléfono y un código SMS, sin crear otra cuenta. La suscripción se gestiona con el proveedor original. Eliminar la cuenta de Histae no cancela automáticamente una suscripción de Apple o Google: debe gestionarse en su tienda. La restauración no transfiere una compra a otra cuenta de Histae.
+
+Esta descripción técnica no sustituye las condiciones contractuales definitivas de renovación, cancelación, reembolso o desistimiento. Los datos pendientes y la revisión jurídica siguen siendo necesarios antes de la activación comercial.

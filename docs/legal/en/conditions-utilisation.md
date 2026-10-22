@@ -52,3 +52,9 @@ For questions about these terms: [TO BE COMPLETED: contact address]. Information
 ## Continuation credits and optional advertising
 
 Free receives three free credits every Monday at 00:00 UTC, without rollover. Each Free participant reserves one credit when accepting; both are charged atomically after both agree. Declining or expiry releases reservations. A voluntary advertising video can earn an extra credit, with up to three advertising credits retained across weeks. Credits belong to the account, are non-transferable and have no monetary value. Free is limited to six confirmed continuations per person per week. Premium (EUR 5 per month or EUR 48 per year, with a planned 30-day trial) has no credit charges, no ads and no weekly limit. Mutual agreement is always required.
+
+## Functional update, 22 October 2026 — purchases pending review
+
+Android in-app purchases use Google Play; iOS purchases use the App Store; website purchases use Stripe. Premium access belongs to the Histae account and can be used on its devices after provider verification. The applicable price and conditions are shown by the selected channel before confirmation; no new free trial is offered. Website payment sign-in uses the existing account UUID, its phone number and an SMS code without creating another account. Subscriptions are managed with the original provider. Deleting a Histae account does not automatically cancel an Apple or Google subscription: manage it in its store. Restoration does not transfer a purchase to another Histae account.
+
+This technical description does not replace final contractual terms for renewal, cancellation, refunds or withdrawal. The outstanding details and legal review above remain required before commercial activation.

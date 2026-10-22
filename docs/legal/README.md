@@ -32,7 +32,7 @@ Ces pages conservent les mentions de brouillon et les champs à compléter. Elle
 2. Faire valider les quatre textes et les libellés de consentement par une personne compétente en droit et protection des données. `LEGAL_REVIEW_REFERENCE` doit renvoyer à **cette validation réelle** ; ne pas lui donner une valeur fictive pour démarrer la production.
 3. Publier chaque texte sous une URL HTTPS stable et lisible dans le site Next.js. Un fichier `.md` placé tel quel dans `public/` ne constitue pas, à lui seul, une page HTML adaptée aux utilisateurs : rendre le Markdown dans une page du site et conserver une copie des versions antérieures.
 4. Reporter dans `.env` de l’API la version exacte du texte publié et son URL absolue HTTPS. Une modification substantielle doit donner une nouvelle version et déclencher le parcours de présentation/acceptation approprié.
-5. Le site vitrine existe en français, anglais, espagnol et italien. L’API ne fournit actuellement qu’une URL par document : choisir une page stable avec sélection de langue, ou faire évoluer ce contrat avant une publication multilingue. Vérifier que la version enregistrée correspond bien au texte présenté dans chaque langue.
+5. Le site vitrine existe en français, anglais, espagnol et italien. L’API localise les URL Histae connues selon la langue demandée (`fr`, `en`, `es`, `it`) ; les URL personnalisées exigent leur propre vérification. Vérifier que la version enregistrée correspond bien au texte présenté dans chaque langue.
 6. Prévoir aussi des **mentions légales du site** et, si des traceurs non essentiels sont utilisés, leur information et leurs choix propres. Ces sujets ne sont pas couverts par les quatre variables API ci-dessus.
 
 Les brouillons s’appuient sur les contrats actuels de `docs/http-contract.md`, les règles de purge de `src/privacy/maintenance.rs` et les descriptions publiques du site. Vérifier à nouveau ces sources au moment de la mise en ligne.
@@ -50,3 +50,11 @@ Les brouillons s’appuient sur les contrats actuels de `docs/http-contract.md`,
 Les CGU et notices des quatre langues décrivent la pause des messages, les décisions privées, le coût pour chaque participant Free, les allocations et réservations, et la publicité récompensée envisagée. Le fournisseur reste désactivé tant que le parcours mobile et les choix publicitaires ne sont pas intégrés et validés. Publier de nouvelles versions validées avant activation ; les versions API et `LEGAL_REVIEW_REFERENCE` ne sont pas modifiées par cette rédaction. Les récompenses restent internes au compte, non transférables et sans valeur monétaire.
 
 Sources complémentaires : [Google — règles des annonces récompensées](https://support.google.com/admob/answer/7313578?hl=fr), [Google — UMP](https://developers.google.com/admob/flutter/privacy), [CNIL — recommandations mobiles](https://www.cnil.fr/fr/recommandations-applications-mobiles).
+
+## Modification du 22 octobre 2026
+
+Les quatre versions de travail décrivent désormais Google Play / App Store pour les achats mobiles,
+Stripe pour le site et la connexion UUID + téléphone + OTP. Les sessions web et traces natives sont
+ajoutées à la notice. Les versions API publiées et `LEGAL_REVIEW_REFERENCE` restent inchangées :
+aucune validation juridique n’est inventée. Faire valider les textes et durées, publier une nouvelle
+version et aligner les variables API avant ouverture des paiements.
