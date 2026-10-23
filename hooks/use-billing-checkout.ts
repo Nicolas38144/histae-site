@@ -26,16 +26,20 @@ export function useBillingCheckout(locale: Locale) {
   };
   useEffect(() => {
     alive.current = true;
-    if (!periodInitialized.current) {
-      const requestedPeriod = requestedBillingPeriod(window.location.search);
-      if (requestedPeriod) setPeriod(requestedPeriod);
-      periodInitialized.current = true;
-    }
+    const requestedPeriod = requestedBillingPeriod(window.location.search);
     const controller = new AbortController();
     Promise.all([
       billingRequest("plans", locale, { signal: controller.signal }).then((value) => { if (alive.current && !controller.signal.aborted) setOffers(parseOffers(value)); }),
       billingRequest("session", locale, { signal: controller.signal }).then((value) => { if (alive.current && !controller.signal.aborted) setSession(parseSession(value)); }).catch((error: unknown) => { if (!(error instanceof BillingFailure) || error.status !== 401) throw error; }),
-    ]).catch(() => { if (alive.current && !controller.signal.aborted) setFailure(new BillingFailure("billing_unavailable", 503)); }).finally(() => { if (alive.current && !controller.signal.aborted) setBusy(false); });
+    ]).catch(() => { if (alive.current && !controller.signal.aborted) setFailure(new BillingFailure("billing_unavailable", 503)); }).finally(() => {
+      if (alive.current && !controller.signal.aborted) {
+        if (!periodInitialized.current) {
+          if (requestedPeriod) setPeriod(requestedPeriod);
+          periodInitialized.current = true;
+        }
+        setBusy(false);
+      }
+    });
     return () => { alive.current = false; controller.abort(); };
   }, [locale]);
   const run = async (action: () => Promise<void>) => {

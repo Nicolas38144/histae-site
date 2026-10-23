@@ -1,7 +1,7 @@
 {
   "reviewed_on": "2026-10-23",
   "repository": "histae-site",
-  "scope": "Declared licenses of resolved packages, including build/test and optional platforms; not a release SBOM or full license-text bundle.",
+  "scope": "Declared licenses of the installed dependency graph after the security update, including build/test and installed optional platforms; not a release SBOM or full license-text bundle.",
   "limitations": [
     "Registry metadata and local license inspection are not a certification of compliance.",
     "Native SDKs, complete container contents, model weights and historical grants require separate review.",
@@ -132,7 +132,7 @@
       "version": "4.9.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40eslint-community%2Feslint-utils/4.9.1"
     },
     {
       "name": "@eslint-community/regexpp",
@@ -146,77 +146,77 @@
       "version": "0.21.2",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40eslint%2Fconfig-array/0.21.2"
     },
     {
       "name": "@eslint/config-helpers",
       "version": "0.4.2",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40eslint%2Fconfig-helpers/0.4.2"
     },
     {
       "name": "@eslint/core",
       "version": "0.17.0",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40eslint%2Fcore/0.17.0"
     },
     {
       "name": "@eslint/eslintrc",
       "version": "3.3.6",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40eslint%2Feslintrc/3.3.6"
     },
     {
       "name": "@eslint/js",
       "version": "9.39.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40eslint%2Fjs/9.39.5"
     },
     {
       "name": "@eslint/object-schema",
       "version": "2.1.7",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40eslint%2Fobject-schema/2.1.7"
     },
     {
       "name": "@eslint/plugin-kit",
       "version": "0.4.1",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40eslint%2Fplugin-kit/0.4.1"
     },
     {
       "name": "@formatjs/fast-memoize",
       "version": "3.1.7",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40formatjs%2Ffast-memoize/3.1.7"
     },
     {
       "name": "@formatjs/icu-messageformat-parser",
       "version": "3.5.17",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40formatjs%2Ficu-messageformat-parser/3.5.17"
     },
     {
       "name": "@formatjs/icu-skeleton-parser",
       "version": "2.1.11",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40formatjs%2Ficu-skeleton-parser/2.1.11"
     },
     {
       "name": "@formatjs/intl-localematcher",
       "version": "0.8.13",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40formatjs%2Fintl-localematcher/0.8.13"
     },
     {
       "name": "@humanfs/core",
@@ -304,227 +304,129 @@
     },
     {
       "name": "@next/env",
-      "version": "16.3.8",
+      "version": "16.4.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40next%2Fenv/16.4.1"
     },
     {
       "name": "@next/eslint-plugin-next",
-      "version": "16.3.8",
+      "version": "16.4.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40next%2Feslint-plugin-next/16.4.1"
     },
     {
       "name": "@next/swc-win32-x64-msvc",
-      "version": "16.3.8",
+      "version": "16.4.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40next%2Fswc-win32-x64-msvc/16.4.1"
     },
     {
       "name": "@nodelib/fs.scandir",
       "version": "2.1.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40nodelib%2Ffs.scandir/2.1.5"
     },
     {
       "name": "@nodelib/fs.stat",
       "version": "2.0.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40nodelib%2Ffs.stat/2.0.5"
     },
     {
       "name": "@nodelib/fs.walk",
       "version": "1.2.8",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40nodelib%2Ffs.walk/1.2.8"
     },
     {
       "name": "@nolyfill/is-core-module",
       "version": "1.0.39",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40nolyfill%2Fis-core-module/1.0.39"
     },
     {
       "name": "@parcel/watcher",
       "version": "2.6.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40parcel%2Fwatcher/2.6.0"
     },
     {
       "name": "@parcel/watcher-win32-x64",
       "version": "2.6.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40parcel%2Fwatcher-win32-x64/2.6.0"
     },
     {
       "name": "@playwright/test",
       "version": "1.64.0",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
-    },
-    {
-      "name": "@pnpm/exe.android-arm64",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.android-arm64/12.10.1"
-    },
-    {
-      "name": "@pnpm/exe.android-x64",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.android-x64/12.10.1"
-    },
-    {
-      "name": "@pnpm/exe.darwin-arm64",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.darwin-arm64/12.10.1"
-    },
-    {
-      "name": "@pnpm/exe.darwin-x64",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.darwin-x64/12.10.1"
-    },
-    {
-      "name": "@pnpm/exe.freebsd-x64",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.freebsd-x64/12.10.1"
-    },
-    {
-      "name": "@pnpm/exe.linux-arm64",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.linux-arm64/12.10.1"
-    },
-    {
-      "name": "@pnpm/exe.linux-arm64-musl",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.linux-arm64-musl/12.10.1"
-    },
-    {
-      "name": "@pnpm/exe.linux-ppc64",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.linux-ppc64/12.10.1"
-    },
-    {
-      "name": "@pnpm/exe.linux-riscv64",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.linux-riscv64/12.10.1"
-    },
-    {
-      "name": "@pnpm/exe.linux-s390x",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.linux-s390x/12.10.1"
-    },
-    {
-      "name": "@pnpm/exe.linux-x64",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.linux-x64/12.10.1"
-    },
-    {
-      "name": "@pnpm/exe.linux-x64-musl",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.linux-x64-musl/12.10.1"
-    },
-    {
-      "name": "@pnpm/exe.win32-arm64",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.win32-arm64/12.10.1"
-    },
-    {
-      "name": "@pnpm/exe.win32-x64",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/%40pnpm%2Fexe.win32-x64/12.10.1"
+      "metadata_source": "https://registry.npmjs.org/%40playwright%2Ftest/1.64.0"
     },
     {
       "name": "@rtsao/scc",
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40rtsao%2Fscc/1.1.0"
     },
     {
       "name": "@schummar/icu-type-parser",
       "version": "1.21.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40schummar%2Ficu-type-parser/1.21.5"
     },
     {
       "name": "@swc/core",
       "version": "1.15.47",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40swc%2Fcore/1.15.47"
     },
     {
       "name": "@swc/core-win32-x64-msvc",
       "version": "1.15.47",
       "license": "Apache-2.0 AND MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40swc%2Fcore-win32-x64-msvc/1.15.47"
     },
     {
       "name": "@swc/counter",
       "version": "0.1.3",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40swc%2Fcounter/0.1.3"
     },
     {
       "name": "@swc/helpers",
       "version": "0.5.23",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40swc%2Fhelpers/0.5.23"
     },
     {
       "name": "@swc/types",
       "version": "0.1.28",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40swc%2Ftypes/0.1.28"
     },
     {
       "name": "@types/debug",
       "version": "4.1.13",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40types%2Fdebug/4.1.13"
     },
     {
       "name": "@types/estree",
@@ -538,14 +440,14 @@
       "version": "1.0.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40types%2Festree-jsx/1.0.5"
     },
     {
       "name": "@types/hast",
       "version": "3.0.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40types%2Fhast/3.0.5"
     },
     {
       "name": "@types/json-schema",
@@ -559,14 +461,14 @@
       "version": "0.0.29",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40types%2Fjson5/0.0.29"
     },
     {
       "name": "@types/mdast",
       "version": "4.0.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40types%2Fmdast/4.0.4"
     },
     {
       "name": "@types/ms",
@@ -580,35 +482,35 @@
       "version": "24.13.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40types%2Fnode/24.13.3"
     },
     {
       "name": "@types/react",
       "version": "19.2.18",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40types%2Freact/19.2.18"
     },
     {
       "name": "@types/react-dom",
       "version": "19.2.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40types%2Freact-dom/19.2.4"
     },
     {
       "name": "@types/unist",
       "version": "2.0.11",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40types%2Funist/2.0.11"
     },
     {
       "name": "@types/unist",
       "version": "3.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40types%2Funist/3.0.3"
     },
     {
       "name": "@typescript-eslint/eslint-plugin",
@@ -685,7 +587,7 @@
       "version": "1.4.0",
       "license": "ISC",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/%40ungap%2Fstructured-clone/1.4.0"
     },
     {
       "name": "@unrs/resolver-binding-win32-x64-msvc",
@@ -734,105 +636,105 @@
       "version": "5.3.2",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/aria-query/5.3.2"
     },
     {
       "name": "array-buffer-byte-length",
       "version": "1.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/array-buffer-byte-length/1.0.2"
     },
     {
       "name": "array-includes",
       "version": "3.1.9",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/array-includes/3.1.9"
     },
     {
       "name": "array.prototype.findlast",
       "version": "1.2.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/array.prototype.findlast/1.2.5"
     },
     {
       "name": "array.prototype.findlastindex",
       "version": "1.2.6",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/array.prototype.findlastindex/1.2.6"
     },
     {
       "name": "array.prototype.flat",
       "version": "1.3.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/array.prototype.flat/1.3.3"
     },
     {
       "name": "array.prototype.flatmap",
       "version": "1.3.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/array.prototype.flatmap/1.3.3"
     },
     {
       "name": "array.prototype.tosorted",
       "version": "1.1.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/array.prototype.tosorted/1.1.4"
     },
     {
       "name": "arraybuffer.prototype.slice",
       "version": "1.0.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/arraybuffer.prototype.slice/1.0.4"
     },
     {
       "name": "ast-types-flow",
       "version": "0.0.8",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/ast-types-flow/0.0.8"
     },
     {
       "name": "async-function",
       "version": "1.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/async-function/1.0.0"
     },
     {
       "name": "available-typed-arrays",
       "version": "1.0.7",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/available-typed-arrays/1.0.7"
     },
     {
       "name": "axe-core",
       "version": "4.13.0",
       "license": "MPL-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/axe-core/4.13.0"
     },
     {
       "name": "axobject-query",
       "version": "4.1.0",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/axobject-query/4.1.0"
     },
     {
       "name": "bail",
       "version": "2.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/bail/2.0.2"
     },
     {
       "name": "balanced-match",
@@ -853,28 +755,28 @@
       "version": "2.11.15",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/baseline-browser-mapping/2.11.15"
     },
     {
       "name": "brace-expansion",
       "version": "1.1.21",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/brace-expansion/1.1.21"
     },
     {
       "name": "brace-expansion",
       "version": "5.0.12",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/brace-expansion/5.0.12"
     },
     {
       "name": "braces",
       "version": "3.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/braces/3.0.3"
     },
     {
       "name": "browserslist",
@@ -888,21 +790,21 @@
       "version": "1.0.9",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/call-bind/1.0.9"
     },
     {
       "name": "call-bind-apply-helpers",
       "version": "1.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/call-bind-apply-helpers/1.0.2"
     },
     {
       "name": "call-bound",
       "version": "1.0.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/call-bound/1.0.4"
     },
     {
       "name": "callsites",
@@ -923,7 +825,7 @@
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/ccount/2.0.1"
     },
     {
       "name": "chalk",
@@ -937,35 +839,35 @@
       "version": "2.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/character-entities/2.0.2"
     },
     {
       "name": "character-entities-html4",
       "version": "2.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/character-entities-html4/2.1.0"
     },
     {
       "name": "character-entities-legacy",
       "version": "3.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/character-entities-legacy/3.0.0"
     },
     {
       "name": "character-reference-invalid",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/character-reference-invalid/2.0.1"
     },
     {
       "name": "client-only",
       "version": "0.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/client-only/0.0.1"
     },
     {
       "name": "color-convert",
@@ -986,7 +888,7 @@
       "version": "2.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/comma-separated-tokens/2.0.3"
     },
     {
       "name": "concat-map",
@@ -1014,42 +916,42 @@
       "version": "3.2.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/csstype/3.2.3"
     },
     {
       "name": "damerau-levenshtein",
       "version": "1.0.8",
       "license": "BSD-2-Clause",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/damerau-levenshtein/1.0.8"
     },
     {
       "name": "data-view-buffer",
       "version": "1.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/data-view-buffer/1.0.2"
     },
     {
       "name": "data-view-byte-length",
       "version": "1.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/data-view-byte-length/1.0.2"
     },
     {
       "name": "data-view-byte-offset",
       "version": "1.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/data-view-byte-offset/1.0.1"
     },
     {
       "name": "debug",
       "version": "3.2.7",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/debug/3.2.7"
     },
     {
       "name": "debug",
@@ -1063,7 +965,7 @@
       "version": "1.3.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/decode-named-character-reference/1.3.0"
     },
     {
       "name": "deep-is",
@@ -1077,14 +979,14 @@
       "version": "1.1.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/define-data-property/1.1.4"
     },
     {
       "name": "define-properties",
       "version": "1.2.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/define-properties/1.2.1"
     },
     {
       "name": "dequal",
@@ -1105,28 +1007,28 @@
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/devlop/1.1.0"
     },
     {
       "name": "doctrine",
       "version": "2.1.0",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/doctrine/2.1.0"
     },
     {
       "name": "dunder-proto",
       "version": "1.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/dunder-proto/1.0.1"
     },
     {
       "name": "electron-to-chromium",
       "version": "1.5.411",
       "license": "ISC",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/electron-to-chromium/1.5.411"
     },
     {
       "name": "emoji-regex",
@@ -1140,63 +1042,63 @@
       "version": "1.24.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/es-abstract/1.24.2"
     },
     {
       "name": "es-abstract-get",
       "version": "1.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/es-abstract-get/1.0.0"
     },
     {
       "name": "es-define-property",
       "version": "1.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/es-define-property/1.0.1"
     },
     {
       "name": "es-errors",
       "version": "1.3.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/es-errors/1.3.0"
     },
     {
       "name": "es-iterator-helpers",
       "version": "1.4.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/es-iterator-helpers/1.4.0"
     },
     {
       "name": "es-object-atoms",
       "version": "1.1.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/es-object-atoms/1.1.2"
     },
     {
       "name": "es-set-tostringtag",
       "version": "2.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/es-set-tostringtag/2.1.0"
     },
     {
       "name": "es-shim-unscopables",
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/es-shim-unscopables/1.1.0"
     },
     {
       "name": "es-to-primitive",
       "version": "1.3.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/es-to-primitive/1.3.4"
     },
     {
       "name": "escalade",
@@ -1217,77 +1119,77 @@
       "version": "5.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/escape-string-regexp/5.0.0"
     },
     {
       "name": "eslint",
       "version": "9.39.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/eslint/9.39.5"
     },
     {
       "name": "eslint-config-next",
-      "version": "16.3.8",
+      "version": "16.4.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/eslint-config-next/16.4.1"
     },
     {
       "name": "eslint-import-resolver-node",
       "version": "0.3.10",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/eslint-import-resolver-node/0.3.10"
     },
     {
       "name": "eslint-import-resolver-typescript",
       "version": "3.10.1",
       "license": "ISC",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/eslint-import-resolver-typescript/3.10.1"
     },
     {
       "name": "eslint-module-utils",
       "version": "2.14.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/eslint-module-utils/2.14.0"
     },
     {
       "name": "eslint-plugin-import",
       "version": "2.32.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/eslint-plugin-import/2.32.0"
     },
     {
       "name": "eslint-plugin-jsx-a11y",
       "version": "6.10.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/eslint-plugin-jsx-a11y/6.10.2"
     },
     {
       "name": "eslint-plugin-react",
       "version": "7.37.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/eslint-plugin-react/7.37.5"
     },
     {
       "name": "eslint-plugin-react-hooks",
       "version": "7.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/eslint-plugin-react-hooks/7.1.1"
     },
     {
       "name": "eslint-scope",
       "version": "8.4.0",
       "license": "BSD-2-Clause",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/eslint-scope/8.4.0"
     },
     {
       "name": "eslint-visitor-keys",
@@ -1301,7 +1203,7 @@
       "version": "4.2.1",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/eslint-visitor-keys/4.2.1"
     },
     {
       "name": "eslint-visitor-keys",
@@ -1315,7 +1217,7 @@
       "version": "10.4.0",
       "license": "BSD-2-Clause",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/espree/10.4.0"
     },
     {
       "name": "esquery",
@@ -1343,7 +1245,7 @@
       "version": "3.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/estree-util-is-identifier-name/3.0.0"
     },
     {
       "name": "esutils",
@@ -1357,7 +1259,7 @@
       "version": "3.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/extend/3.0.2"
     },
     {
       "name": "fast-deep-equal",
@@ -1371,7 +1273,7 @@
       "version": "3.3.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/fast-glob/3.3.1"
     },
     {
       "name": "fast-json-stable-stringify",
@@ -1413,7 +1315,7 @@
       "version": "7.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/fill-range/7.1.1"
     },
     {
       "name": "find-up",
@@ -1441,35 +1343,35 @@
       "version": "0.3.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/for-each/0.3.5"
     },
     {
       "name": "function-bind",
       "version": "1.1.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/function-bind/1.1.2"
     },
     {
       "name": "function.prototype.name",
       "version": "1.2.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/function.prototype.name/1.2.0"
     },
     {
       "name": "functions-have-names",
       "version": "1.2.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/functions-have-names/1.2.3"
     },
     {
       "name": "generator-function",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/generator-function/2.0.1"
     },
     {
       "name": "gensync",
@@ -1483,35 +1385,35 @@
       "version": "1.3.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/get-intrinsic/1.3.0"
     },
     {
       "name": "get-proto",
       "version": "1.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/get-proto/1.0.1"
     },
     {
       "name": "get-symbol-description",
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/get-symbol-description/1.1.0"
     },
     {
       "name": "get-tsconfig",
       "version": "4.14.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/get-tsconfig/4.14.3"
     },
     {
       "name": "glob-parent",
       "version": "5.1.2",
       "license": "ISC",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/glob-parent/5.1.2"
     },
     {
       "name": "glob-parent",
@@ -1525,35 +1427,35 @@
       "version": "14.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/globals/14.0.0"
     },
     {
       "name": "globals",
       "version": "16.4.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/globals/16.4.0"
     },
     {
       "name": "globalthis",
       "version": "1.0.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/globalthis/1.0.4"
     },
     {
       "name": "gopd",
       "version": "1.2.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/gopd/1.2.0"
     },
     {
       "name": "has-bigints",
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/has-bigints/1.1.0"
     },
     {
       "name": "has-flag",
@@ -1567,77 +1469,77 @@
       "version": "1.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/has-property-descriptors/1.0.2"
     },
     {
       "name": "has-proto",
       "version": "1.2.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/has-proto/1.2.0"
     },
     {
       "name": "has-symbols",
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/has-symbols/1.1.0"
     },
     {
       "name": "has-tostringtag",
       "version": "1.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/has-tostringtag/1.0.2"
     },
     {
       "name": "hasown",
       "version": "2.0.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/hasown/2.0.4"
     },
     {
       "name": "hast-util-to-jsx-runtime",
       "version": "2.3.6",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/hast-util-to-jsx-runtime/2.3.6"
     },
     {
       "name": "hast-util-whitespace",
       "version": "3.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/hast-util-whitespace/3.0.0"
     },
     {
       "name": "hermes-estree",
       "version": "0.25.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/hermes-estree/0.25.1"
     },
     {
       "name": "hermes-parser",
       "version": "0.25.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/hermes-parser/0.25.1"
     },
     {
       "name": "html-url-attributes",
       "version": "3.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/html-url-attributes/3.0.1"
     },
     {
       "name": "icu-minify",
       "version": "4.13.7",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/icu-minify/4.13.7"
     },
     {
       "name": "ignore",
@@ -1672,112 +1574,112 @@
       "version": "0.2.7",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/inline-style-parser/0.2.7"
     },
     {
       "name": "internal-slot",
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/internal-slot/1.1.0"
     },
     {
       "name": "intl-messageformat",
       "version": "11.2.14",
       "license": "BSD-3-Clause",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/intl-messageformat/11.2.14"
     },
     {
       "name": "is-alphabetical",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-alphabetical/2.0.1"
     },
     {
       "name": "is-alphanumerical",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-alphanumerical/2.0.1"
     },
     {
       "name": "is-array-buffer",
       "version": "3.0.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-array-buffer/3.0.5"
     },
     {
       "name": "is-async-function",
       "version": "2.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-async-function/2.1.1"
     },
     {
       "name": "is-bigint",
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-bigint/1.1.0"
     },
     {
       "name": "is-boolean-object",
       "version": "1.2.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-boolean-object/1.2.2"
     },
     {
       "name": "is-bun-module",
       "version": "2.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-bun-module/2.0.0"
     },
     {
       "name": "is-callable",
       "version": "1.2.7",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-callable/1.2.7"
     },
     {
       "name": "is-core-module",
       "version": "2.16.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-core-module/2.16.2"
     },
     {
       "name": "is-data-view",
       "version": "1.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-data-view/1.0.2"
     },
     {
       "name": "is-date-object",
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-date-object/1.1.0"
     },
     {
       "name": "is-decimal",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-decimal/2.0.1"
     },
     {
       "name": "is-document.all",
       "version": "1.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-document.all/1.0.0"
     },
     {
       "name": "is-extglob",
@@ -1791,14 +1693,14 @@
       "version": "1.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-finalizationregistry/1.1.1"
     },
     {
       "name": "is-generator-function",
       "version": "1.1.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-generator-function/1.1.2"
     },
     {
       "name": "is-glob",
@@ -1812,112 +1714,112 @@
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-hexadecimal/2.0.1"
     },
     {
       "name": "is-map",
       "version": "2.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-map/2.0.3"
     },
     {
       "name": "is-negative-zero",
       "version": "2.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-negative-zero/2.0.3"
     },
     {
       "name": "is-number",
       "version": "7.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-number/7.0.0"
     },
     {
       "name": "is-number-object",
       "version": "1.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-number-object/1.1.1"
     },
     {
       "name": "is-plain-obj",
       "version": "4.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-plain-obj/4.1.0"
     },
     {
       "name": "is-regex",
       "version": "1.2.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-regex/1.2.1"
     },
     {
       "name": "is-set",
       "version": "2.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-set/2.0.3"
     },
     {
       "name": "is-shared-array-buffer",
       "version": "1.0.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-shared-array-buffer/1.0.4"
     },
     {
       "name": "is-string",
       "version": "1.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-string/1.1.1"
     },
     {
       "name": "is-symbol",
       "version": "1.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-symbol/1.1.1"
     },
     {
       "name": "is-typed-array",
       "version": "1.1.15",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-typed-array/1.1.15"
     },
     {
       "name": "is-weakmap",
       "version": "2.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-weakmap/2.0.2"
     },
     {
       "name": "is-weakref",
       "version": "1.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-weakref/1.1.1"
     },
     {
       "name": "is-weakset",
       "version": "2.0.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/is-weakset/2.0.4"
     },
     {
       "name": "isarray",
       "version": "2.0.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/isarray/2.0.5"
     },
     {
       "name": "isexe",
@@ -1931,7 +1833,7 @@
       "version": "1.1.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/iterator.prototype/1.1.5"
     },
     {
       "name": "js-tokens",
@@ -1945,7 +1847,7 @@
       "version": "4.3.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/js-yaml/4.3.2"
     },
     {
       "name": "jsesc",
@@ -1980,7 +1882,7 @@
       "version": "1.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/json5/1.0.2"
     },
     {
       "name": "json5",
@@ -1994,7 +1896,7 @@
       "version": "3.3.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/jsx-ast-utils/3.3.5"
     },
     {
       "name": "keyv",
@@ -2008,14 +1910,14 @@
       "version": "0.3.23",
       "license": "CC0-1.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/language-subtag-registry/0.3.23"
     },
     {
       "name": "language-tags",
       "version": "1.0.9",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/language-tags/1.0.9"
     },
     {
       "name": "levn",
@@ -2036,21 +1938,21 @@
       "version": "4.6.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/lodash.merge/4.6.2"
     },
     {
       "name": "longest-streak",
       "version": "3.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/longest-streak/3.1.0"
     },
     {
       "name": "loose-envify",
       "version": "1.4.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/loose-envify/1.4.0"
     },
     {
       "name": "lru-cache",
@@ -2064,336 +1966,336 @@
       "version": "3.0.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/markdown-table/3.0.4"
     },
     {
       "name": "math-intrinsics",
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/math-intrinsics/1.1.0"
     },
     {
       "name": "mdast-util-find-and-replace",
       "version": "3.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-find-and-replace/3.0.3"
     },
     {
       "name": "mdast-util-from-markdown",
       "version": "2.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-from-markdown/2.1.0"
     },
     {
       "name": "mdast-util-gfm",
       "version": "3.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-gfm/3.1.0"
     },
     {
       "name": "mdast-util-gfm-autolink-literal",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-gfm-autolink-literal/2.0.1"
     },
     {
       "name": "mdast-util-gfm-footnote",
       "version": "2.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-gfm-footnote/2.1.0"
     },
     {
       "name": "mdast-util-gfm-strikethrough",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-gfm-strikethrough/2.0.1"
     },
     {
       "name": "mdast-util-gfm-table",
       "version": "2.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-gfm-table/2.0.0"
     },
     {
       "name": "mdast-util-gfm-task-list-item",
       "version": "2.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-gfm-task-list-item/2.0.0"
     },
     {
       "name": "mdast-util-mdx-expression",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-mdx-expression/2.0.1"
     },
     {
       "name": "mdast-util-mdx-jsx",
       "version": "3.2.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-mdx-jsx/3.2.0"
     },
     {
       "name": "mdast-util-mdxjs-esm",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-mdxjs-esm/2.0.1"
     },
     {
       "name": "mdast-util-phrasing",
       "version": "4.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-phrasing/4.1.0"
     },
     {
       "name": "mdast-util-to-hast",
       "version": "13.2.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-to-hast/13.2.1"
     },
     {
       "name": "mdast-util-to-markdown",
       "version": "2.2.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-to-markdown/2.2.0"
     },
     {
       "name": "mdast-util-to-string",
       "version": "4.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/mdast-util-to-string/4.0.0"
     },
     {
       "name": "merge2",
       "version": "1.4.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/merge2/1.4.1"
     },
     {
       "name": "micromark",
       "version": "4.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark/4.0.3"
     },
     {
       "name": "micromark-core-commonmark",
       "version": "2.0.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-core-commonmark/2.0.4"
     },
     {
       "name": "micromark-extension-gfm",
       "version": "3.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-extension-gfm/3.0.0"
     },
     {
       "name": "micromark-extension-gfm-autolink-literal",
       "version": "2.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-extension-gfm-autolink-literal/2.1.0"
     },
     {
       "name": "micromark-extension-gfm-footnote",
       "version": "2.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-extension-gfm-footnote/2.1.0"
     },
     {
       "name": "micromark-extension-gfm-strikethrough",
       "version": "2.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-extension-gfm-strikethrough/2.1.0"
     },
     {
       "name": "micromark-extension-gfm-table",
       "version": "2.1.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-extension-gfm-table/2.1.2"
     },
     {
       "name": "micromark-extension-gfm-tagfilter",
       "version": "2.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-extension-gfm-tagfilter/2.0.0"
     },
     {
       "name": "micromark-extension-gfm-task-list-item",
       "version": "2.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-extension-gfm-task-list-item/2.1.0"
     },
     {
       "name": "micromark-factory-destination",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-factory-destination/2.0.1"
     },
     {
       "name": "micromark-factory-label",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-factory-label/2.0.1"
     },
     {
       "name": "micromark-factory-space",
       "version": "2.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-factory-space/2.1.0"
     },
     {
       "name": "micromark-factory-title",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-factory-title/2.0.1"
     },
     {
       "name": "micromark-factory-whitespace",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-factory-whitespace/2.0.1"
     },
     {
       "name": "micromark-util-character",
       "version": "2.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-character/2.1.1"
     },
     {
       "name": "micromark-util-chunked",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-chunked/2.0.1"
     },
     {
       "name": "micromark-util-classify-character",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-classify-character/2.0.1"
     },
     {
       "name": "micromark-util-combine-extensions",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-combine-extensions/2.0.1"
     },
     {
       "name": "micromark-util-decode-numeric-character-reference",
       "version": "2.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-decode-numeric-character-reference/2.0.2"
     },
     {
       "name": "micromark-util-decode-string",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-decode-string/2.0.1"
     },
     {
       "name": "micromark-util-edit-map",
       "version": "1.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-edit-map/1.0.0"
     },
     {
       "name": "micromark-util-encode",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-encode/2.0.1"
     },
     {
       "name": "micromark-util-html-tag-name",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-html-tag-name/2.0.1"
     },
     {
       "name": "micromark-util-normalize-identifier",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-normalize-identifier/2.0.1"
     },
     {
       "name": "micromark-util-resolve-all",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-resolve-all/2.0.1"
     },
     {
       "name": "micromark-util-sanitize-uri",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-sanitize-uri/2.0.1"
     },
     {
       "name": "micromark-util-subtokenize",
       "version": "2.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-subtokenize/2.1.0"
     },
     {
       "name": "micromark-util-symbol",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-symbol/2.0.1"
     },
     {
       "name": "micromark-util-types",
       "version": "2.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromark-util-types/2.0.3"
     },
     {
       "name": "micromatch",
       "version": "4.0.8",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/micromatch/4.0.8"
     },
     {
       "name": "minimatch",
@@ -2428,7 +2330,7 @@
       "version": "3.3.18",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/nanoid/3.3.18"
     },
     {
       "name": "napi-postinstall",
@@ -2449,42 +2351,42 @@
       "version": "1.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/negotiator/1.0.0"
     },
     {
       "name": "next",
-      "version": "16.3.8",
+      "version": "16.4.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/next/16.4.1"
     },
     {
       "name": "next-intl",
       "version": "4.13.7",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/next-intl/4.13.7"
     },
     {
       "name": "next-intl-swc-plugin-extractor",
       "version": "4.13.7",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/next-intl-swc-plugin-extractor/4.13.7"
     },
     {
       "name": "node-addon-api",
       "version": "7.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/node-addon-api/7.1.1"
     },
     {
       "name": "node-exports-info",
       "version": "1.6.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/node-exports-info/1.6.2"
     },
     {
       "name": "node-releases",
@@ -2498,56 +2400,56 @@
       "version": "4.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/object-assign/4.1.1"
     },
     {
       "name": "object-inspect",
       "version": "1.13.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/object-inspect/1.13.4"
     },
     {
       "name": "object-keys",
       "version": "1.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/object-keys/1.1.1"
     },
     {
       "name": "object.assign",
       "version": "4.1.7",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/object.assign/4.1.7"
     },
     {
       "name": "object.entries",
       "version": "1.1.9",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/object.entries/1.1.9"
     },
     {
       "name": "object.fromentries",
       "version": "2.0.8",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/object.fromentries/2.0.8"
     },
     {
       "name": "object.groupby",
       "version": "1.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/object.groupby/1.0.3"
     },
     {
       "name": "object.values",
       "version": "1.2.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/object.values/1.2.1"
     },
     {
       "name": "optionator",
@@ -2561,7 +2463,7 @@
       "version": "1.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/own-keys/1.0.2"
     },
     {
       "name": "p-limit",
@@ -2589,7 +2491,7 @@
       "version": "4.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/parse-entities/4.0.2"
     },
     {
       "name": "path-exists",
@@ -2610,7 +2512,7 @@
       "version": "1.0.7",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/path-parse/1.0.7"
     },
     {
       "name": "picocolors",
@@ -2638,42 +2540,35 @@
       "version": "1.64.0",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/playwright/1.64.0"
     },
     {
       "name": "playwright-core",
       "version": "1.64.0",
       "license": "Apache-2.0",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
-    },
-    {
-      "name": "pnpm",
-      "version": "12.10.1",
-      "license": "MIT",
-      "ecosystem": "npm",
-      "metadata_source": "https://registry.npmjs.org/pnpm/12.10.1"
+      "metadata_source": "https://registry.npmjs.org/playwright-core/1.64.0"
     },
     {
       "name": "po-parser",
       "version": "2.2.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/po-parser/2.2.0"
     },
     {
       "name": "possible-typed-array-names",
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/possible-typed-array-names/1.1.0"
     },
     {
       "name": "postcss",
       "version": "8.5.23",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/postcss/8.5.23"
     },
     {
       "name": "prelude-ls",
@@ -2687,14 +2582,14 @@
       "version": "15.8.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/prop-types/15.8.1"
     },
     {
       "name": "property-information",
       "version": "7.2.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/property-information/7.2.0"
     },
     {
       "name": "punycode",
@@ -2708,84 +2603,84 @@
       "version": "1.2.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/queue-microtask/1.2.3"
     },
     {
       "name": "react",
-      "version": "19.2.0",
+      "version": "19.2.9",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/react/19.2.9"
     },
     {
       "name": "react-dom",
-      "version": "19.2.0",
+      "version": "19.2.9",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/react-dom/19.2.9"
     },
     {
       "name": "react-is",
       "version": "16.13.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/react-is/16.13.1"
     },
     {
       "name": "react-markdown",
       "version": "10.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/react-markdown/10.1.0"
     },
     {
       "name": "reflect.getprototypeof",
       "version": "1.0.10",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/reflect.getprototypeof/1.0.10"
     },
     {
       "name": "regexp.prototype.flags",
       "version": "1.5.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/regexp.prototype.flags/1.5.4"
     },
     {
       "name": "remark-gfm",
       "version": "4.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/remark-gfm/4.0.1"
     },
     {
       "name": "remark-parse",
       "version": "11.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/remark-parse/11.0.0"
     },
     {
       "name": "remark-rehype",
       "version": "11.1.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/remark-rehype/11.1.2"
     },
     {
       "name": "remark-stringify",
       "version": "11.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/remark-stringify/11.0.0"
     },
     {
       "name": "resolve",
       "version": "2.0.0-next.7",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/resolve/2.0.0-next.7"
     },
     {
       "name": "resolve-from",
@@ -2799,7 +2694,7 @@
       "version": "1.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/resolve-pkg-maps/1.0.0"
     },
     {
       "name": "reusify",
@@ -2813,35 +2708,35 @@
       "version": "1.2.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/run-parallel/1.2.0"
     },
     {
       "name": "safe-array-concat",
       "version": "1.1.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/safe-array-concat/1.1.4"
     },
     {
       "name": "safe-push-apply",
       "version": "1.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/safe-push-apply/1.0.0"
     },
     {
       "name": "safe-regex-test",
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/safe-regex-test/1.1.0"
     },
     {
       "name": "scheduler",
       "version": "0.27.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/scheduler/0.27.0"
     },
     {
       "name": "semver",
@@ -2862,21 +2757,21 @@
       "version": "1.2.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/set-function-length/1.2.2"
     },
     {
       "name": "set-function-name",
       "version": "2.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/set-function-name/2.0.2"
     },
     {
       "name": "set-proto",
       "version": "1.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/set-proto/1.0.0"
     },
     {
       "name": "sharp",
@@ -2904,105 +2799,105 @@
       "version": "1.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/side-channel/1.1.1"
     },
     {
       "name": "side-channel-list",
       "version": "1.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/side-channel-list/1.0.1"
     },
     {
       "name": "side-channel-map",
       "version": "1.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/side-channel-map/1.0.1"
     },
     {
       "name": "side-channel-weakmap",
       "version": "1.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/side-channel-weakmap/1.0.2"
     },
     {
       "name": "source-map-js",
       "version": "1.2.2",
       "license": "BSD-3-Clause",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/source-map-js/1.2.2"
     },
     {
       "name": "space-separated-tokens",
       "version": "2.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/space-separated-tokens/2.0.2"
     },
     {
       "name": "stable-hash",
       "version": "0.0.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/stable-hash/0.0.5"
     },
     {
       "name": "stop-iteration-iterator",
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/stop-iteration-iterator/1.1.0"
     },
     {
       "name": "string.prototype.includes",
       "version": "2.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/string.prototype.includes/2.0.1"
     },
     {
       "name": "string.prototype.matchall",
       "version": "4.0.12",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/string.prototype.matchall/4.0.12"
     },
     {
       "name": "string.prototype.repeat",
       "version": "1.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/string.prototype.repeat/1.0.0"
     },
     {
       "name": "string.prototype.trim",
       "version": "1.2.11",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/string.prototype.trim/1.2.11"
     },
     {
       "name": "string.prototype.trimend",
       "version": "1.0.10",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/string.prototype.trimend/1.0.10"
     },
     {
       "name": "string.prototype.trimstart",
       "version": "1.0.8",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/string.prototype.trimstart/1.0.8"
     },
     {
       "name": "stringify-entities",
       "version": "4.0.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/stringify-entities/4.0.4"
     },
     {
       "name": "strip-bom",
@@ -3023,21 +2918,21 @@
       "version": "1.1.21",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/style-to-js/1.1.21"
     },
     {
       "name": "style-to-object",
       "version": "1.0.14",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/style-to-object/1.0.14"
     },
     {
       "name": "styled-jsx",
       "version": "5.1.6",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/styled-jsx/5.1.6"
     },
     {
       "name": "supports-color",
@@ -3051,7 +2946,7 @@
       "version": "1.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/supports-preserve-symlinks-flag/1.0.0"
     },
     {
       "name": "tinyglobby",
@@ -3065,21 +2960,21 @@
       "version": "5.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/to-regex-range/5.0.1"
     },
     {
       "name": "trim-lines",
       "version": "3.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/trim-lines/3.0.1"
     },
     {
       "name": "trough",
       "version": "2.2.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/trough/2.2.0"
     },
     {
       "name": "ts-api-utils",
@@ -3093,7 +2988,7 @@
       "version": "3.15.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/tsconfig-paths/3.15.0"
     },
     {
       "name": "tslib",
@@ -3114,28 +3009,28 @@
       "version": "1.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/typed-array-buffer/1.0.3"
     },
     {
       "name": "typed-array-byte-length",
       "version": "1.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/typed-array-byte-length/1.0.3"
     },
     {
       "name": "typed-array-byte-offset",
       "version": "1.0.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/typed-array-byte-offset/1.0.4"
     },
     {
       "name": "typed-array-length",
       "version": "1.0.8",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/typed-array-length/1.0.8"
     },
     {
       "name": "typescript",
@@ -3156,56 +3051,56 @@
       "version": "1.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/unbox-primitive/1.1.0"
     },
     {
       "name": "undici-types",
       "version": "7.18.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/undici-types/7.18.2"
     },
     {
       "name": "unified",
       "version": "11.0.5",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/unified/11.0.5"
     },
     {
       "name": "unist-util-is",
       "version": "6.0.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/unist-util-is/6.0.1"
     },
     {
       "name": "unist-util-position",
       "version": "5.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/unist-util-position/5.0.0"
     },
     {
       "name": "unist-util-stringify-position",
       "version": "4.0.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/unist-util-stringify-position/4.0.0"
     },
     {
       "name": "unist-util-visit",
       "version": "5.1.0",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/unist-util-visit/5.1.0"
     },
     {
       "name": "unist-util-visit-parents",
       "version": "6.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/unist-util-visit-parents/6.0.2"
     },
     {
       "name": "unrs-resolver",
@@ -3219,7 +3114,7 @@
       "version": "1.3.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/update-browserslist-db/1.3.1"
     },
     {
       "name": "uri-js",
@@ -3233,21 +3128,21 @@
       "version": "4.13.7",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/use-intl/4.13.7"
     },
     {
       "name": "vfile",
       "version": "6.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/vfile/6.0.3"
     },
     {
       "name": "vfile-message",
       "version": "4.0.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/vfile-message/4.0.3"
     },
     {
       "name": "which",
@@ -3261,28 +3156,28 @@
       "version": "1.1.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/which-boxed-primitive/1.1.1"
     },
     {
       "name": "which-builtin-type",
       "version": "1.2.1",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/which-builtin-type/1.2.1"
     },
     {
       "name": "which-collection",
       "version": "1.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/which-collection/1.0.2"
     },
     {
       "name": "which-typed-array",
       "version": "1.1.22",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/which-typed-array/1.1.22"
     },
     {
       "name": "word-wrap",
@@ -3310,21 +3205,21 @@
       "version": "4.4.3",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/zod/4.4.3"
     },
     {
       "name": "zod-validation-error",
       "version": "4.0.2",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/zod-validation-error/4.0.2"
     },
     {
       "name": "zwitch",
       "version": "2.0.4",
       "license": "MIT",
       "ecosystem": "npm",
-      "metadata_source": "Installed package.json license field"
+      "metadata_source": "https://registry.npmjs.org/zwitch/2.0.4"
     }
   ]
 }

@@ -1,3 +1,4 @@
+import { buildSecurityHeaders } from "./security-headers.mjs";
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -145,3 +146,5 @@ if (localizedPageCount !== expectedPageCount) {
 }
 
 console.log(`Validated SEO, navigation and legal documents for ${localizedPageCount} localized pages and ${billingEntryCount} billing language entries; ${sitemapUrls.length} indexable sitemap URLs.`);
+
+await buildSecurityHeaders(outputDirectory);

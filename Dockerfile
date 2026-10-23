@@ -14,6 +14,7 @@ ENV XDG_CONFIG_HOME=/tmp/caddy-config XDG_DATA_HOME=/tmp/caddy-data
 USER 1000:1000
 COPY Caddyfile caddy-common.caddy /etc/caddy/
 COPY --from=build /app/out /srv
+COPY --from=build /app/.generated/security-headers.caddy /etc/caddy/security-headers.caddy
 
 EXPOSE 80
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 CMD wget -q -T 2 -O /dev/null http://127.0.0.1/fr/ || exit 1

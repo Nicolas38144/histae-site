@@ -70,6 +70,7 @@ new animation or third-party scripts.
 
 ## S06: hosting and operations
 
+- Validate the generated CSP with the runtime image and verify it is preserved through the CDN.
 - Verify canonical/locale redirects, HTTPS, billing parameters, headers, 404s and CDN cache rules.
 - Review all log sinks and exported files for unintended sensitive data.
 - Verify availability/certificate monitoring and rollback to an identifiable previous artifact.

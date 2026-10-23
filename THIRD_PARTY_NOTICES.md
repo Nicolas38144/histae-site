@@ -17,7 +17,10 @@ require their own release review. The website's original code remains proprietar
 
 ## Recorded package metadata
 
-474 package-version entries are recorded in [THIRD_PARTY_LICENSES.json](THIRD_PARTY_LICENSES.json). These counts include build/test and optional packages and may repeat a package across nested tools. They do not describe the contents of a production artifact.
+459 installed package-version entries are recorded in [THIRD_PARTY_LICENSES.json](THIRD_PARTY_LICENSES.json).
+The inventory was refreshed after the Next.js/React security update. Build/test and installed
+optional packages are included; packages for other deployment platforms require separate review.
+These counts do not describe the contents of a production artifact.
 
 | Declared license expression | Entries |
 | --- | ---: |
@@ -31,7 +34,7 @@ require their own release review. The website's original code remains proprietar
 | `CC-BY-4.0` | 1 |
 | `CC0-1.0` | 1 |
 | `ISC` | 15 |
-| `MIT` | 414 |
+| `MIT` | 399 |
 | `MPL-2.0` | 1 |
 | `Python-2.0` | 1 |
 

@@ -24,6 +24,7 @@ The subscription flow requires the API; see [billing](docs/billing.md).
 | --- | --- |
 | [Development](docs/development.md) | Structure, translations, design, screenshots and checks |
 | [Billing](docs/billing.md) | Web authentication, Stripe Checkout and payment recovery |
+| [Security](docs/security.md) | Static CSP, dependency findings and security checks |
 | [Deployment](docs/deployment.md) | Static export, API routing, caching and release checks |
 | [SEO](docs/seo-indexation.md) | Canonical URLs, indexing rules and verification |
 | [Legal content](docs/legal/README.md) | Localized document sources and publication workflow |
@@ -32,7 +33,7 @@ The subscription flow requires the API; see [billing](docs/billing.md).
 ## Architecture
 
 Next.js App Router, React, TypeScript and next-intl generate a static `out/` directory.
-Caddy serves it in production; there is no Next.js production server.
+Caddy serves it in production with a CSP generated from the same HTML; there is no Next.js production server.
 Subscription requests reach the API through a same-origin reverse proxy.
 
 `config/site.json` defines locales, public routes, feature/credit descriptions and legal document mappings.

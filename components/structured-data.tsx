@@ -1,3 +1,4 @@
+import { serializeJsonLd } from "../lib/json-ld";
 import { getTranslations } from "next-intl/server";
 import { absoluteLocalizedUrl } from "../lib/metadata";
 import { planCatalog } from "../lib/plans";
@@ -40,5 +41,5 @@ export async function StructuredData({ locale }: { locale: Locale }) {
     ],
   };
 
-  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(data) }} />;
 }

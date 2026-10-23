@@ -9,9 +9,13 @@ pnpm install --frozen-lockfile
 pnpm build
 ```
 
-Publish the generated `out/` directory. Production does not run a Next.js server.
+Publish the generated `out/` directory together with `.generated/security-headers.caddy`.
+For a non-Docker deployment, place the generated map beside the Caddyfile as
+`security-headers.caddy`. The Dockerfile copies both artifacts automatically. Production does not run a Next.js server.
 The Dockerfile builds with Node.js 24 and serves the export with the digest-pinned Caddy image.
-Keep `Dockerfile`, `Caddyfile` and `caddy-common.caddy` together when copying the runtime configuration.
+Keep `Dockerfile`, `Caddyfile` and `caddy-common.caddy` together; the runtime also requires the
+generated `security-headers.caddy` from that exact build. Missing or stale hashes must not be
+replaced with an unsafe-inline fallback. See [Security](security.md#static-content-security-policy).
 
 Caddy listens on internal HTTP port 80; the public proxy provides HTTPS. The runtime uses UID/GID
 1000 and disables the Caddy administration endpoint, automatic HTTPS and configuration persistence.

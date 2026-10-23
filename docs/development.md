@@ -98,7 +98,8 @@ pnpm build
 
 `pnpm build` exports `out/` and runs `scripts/fix-static-seo.mjs` through the postbuild script.
 If invoking Next.js directly, run that postbuild script separately. See [SEO](seo-indexation.md)
-for its coverage and production checks.
+for its coverage and production checks. The same postbuild also generates the per-page CSP map
+in `.generated/`; keep it with the matching HTML when deploying or rolling back.
 
 Billing storage and request tests use synthetic responses and do not require a browser:
 
@@ -118,7 +119,11 @@ Playwright starts a dedicated local development server. Billing fixtures simulat
 sending SMS or taking payments. Add regression tests for important behavior, rather than testing
 every presentation change. Report what ran; do not treat fixture tests as production verification.
 
-Generated `.next/`, `out/` and TypeScript build caches are not source files. Dependencies and the
+For CSP and synthetic injection checks against the built export, run `pnpm build` followed by
+`pnpm exec playwright test --config=playwright.export.config.ts`. See [Security](security.md)
+for the separate runtime validation and outstanding dependency finding.
+
+Generated `.next/`, `out/`, `.generated/` and TypeScript build caches are not source files. Dependencies and the
 lockfile should stay aligned with the package manager declared in `package.json`.
 
 ## Accessibility and weight of the current export
@@ -137,3 +142,8 @@ sizes do not establish hosted Core Web Vitals or performance on a slow mobile co
 Manual screen-reader, 200% zoom, touch/device and cross-browser review remain release checks.
 Verify real Stripe/store payments, delayed webhooks and deployed headers in the intended
 provider environment; browser fixtures never establish those outcomes.
+
+Next.js 16.4.1's generated development validator imports unused route-handler types even when
+there are no route handlers. Only `.next/dev/types/validator.ts` is excluded from standalone
+TypeScript checks for that reason. The build validator in `.next/types/` and the strict checks
+on application/test source remain enabled; do not disable noUnusedLocals globally.
