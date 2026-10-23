@@ -1,60 +1,44 @@
-# Histae
+# Histae website
 
-Histae is the official showcase website for an upcoming **dating application**.
+The public website for Histae, a dating app built around conversation, time and mutual consent.
+It presents the product in French, English, Spanish and Italian and lets existing users purchase
+or manage a Stripe subscription. Mobile purchases use the Apple and Google stores.
 
-The purpose of the website is to:
+**Website:** [www.histae.com](https://www.histae.com/)
 
-* Introduce the Histae concept and brand
-* Present the upcoming dating application
-* Build awareness before launch
-* Provide visitors with information about the future product
-* Prepare the online presence of Histae ahead of the app release
+## Getting started
 
-The Histae dating app is **coming soon**.
+Use Node.js 24 and the pnpm version declared in `package.json`.
 
-🌐 **Live website:** https://www.histae.com
-Alternative URL: https://histae.com
-
-
-## Tech Stack
-
-* [Next.js](https://nextjs.org/) — React framework for production
-* [React](https://react.dev/) — User interface library
-* [TypeScript](https://www.typescriptlang.org/) — Static type checking for JavaScript
-* [next-intl](https://next-intl.dev/) — Internationalization and localized navigation
-* CSS — Styling and responsive design
-* Node.js — JavaScript runtime
-
-
-## Project Structure
-
-```text
-.
-├── app/                # Next.js App Router pages and layouts
-├── components/         # Reusable React components
-├── config/             # Shared locales, routes and commercial catalogue
-├── i18n/               # next-intl request and navigation configuration
-├── messages/           # Translation catalogs split by locale and domain
-├── public/             # Static assets
-├── lib/                # Utilities and shared logic
-├── next.config.ts      # Next.js configuration
-├── tsconfig.json       # TypeScript configuration
-├── package.json        # Project dependencies and scripts
-└── README.md
+```bash
+pnpm install --frozen-lockfile
+pnpm dev
 ```
 
-## Performance & SEO
+Open the local URL printed by Next.js. Marketing and legal pages work without an API.
+The subscription flow requires the API; see [billing](docs/billing.md).
 
-The website takes advantage of Next.js features to provide a fast and modern experience:
+## Documentation
 
-* Static export generated at build time, without a Next.js production server
-* Optimized routing
-* SEO-friendly metadata
-* Canonical and hreflang links for every localized route
-* Responsive design
-* Type-safe development with TypeScript
+| Guide | Purpose |
+| --- | --- |
+| [Development](docs/development.md) | Structure, translations, design, screenshots and checks |
+| [Billing](docs/billing.md) | Web authentication, Stripe Checkout and payment recovery |
+| [Deployment](docs/deployment.md) | Static export, API routing, caching and release checks |
+| [SEO](docs/seo-indexation.md) | Canonical URLs, indexing rules and verification |
+| [Legal content](docs/legal/README.md) | Localized document sources and publication workflow |
+| [Roadmap](roadmap.md) | Remaining work and acceptance criteria |
 
-## Quality checks
+## Architecture
+
+Next.js App Router, React, TypeScript and next-intl generate a static `out/` directory.
+Caddy serves it in production; there is no Next.js production server.
+Subscription requests reach the API through a same-origin reverse proxy.
+
+`config/site.json` defines locales, public routes, the marketing catalogue and legal document mappings.
+`messages/` contains localized interface copy. Stripe credentials and account data belong to the API.
+
+## Checks
 
 ```bash
 pnpm typecheck
@@ -62,186 +46,12 @@ pnpm lint
 pnpm build
 ```
 
-The production build validates all localized pages, their canonical URLs, hreflang links, language switch links and heading structure.
+The build includes static SEO checks. Run focused tests when changing billing or other interactive
+behavior; commands and limitations are documented in [Development](docs/development.md#checks).
+A successful local build does not verify production headers, API configuration or real payments.
 
-## Roadmap
+## Source visibility and rights
 
-The current website represents the first public presence of Histae.
-
-The detailed backlog, priorities and completion criteria are maintained in [roadmap.md](roadmap.md).
-
-Future developments include:
-
-* Official launch of the Histae dating application
-* Additional information about the app and its features
-* Updates related to the launch
-* Expansion of the Histae ecosystem
-
-## Status
-
-🚧 **Histae is currently in development.**
-
-The website is live, while the dating application itself will be released soon.
-
-## License
-
-The source code is public for review and security audits. The repositories are not open to external contributions.
-The code remains proprietary: modification and reuse rights are reserved. Public visibility does not grant an open-source licence.
-
+The source is public for inspection and security audits. It remains proprietary; public visibility
+does not grant modification or reuse rights. External contributions are not accepted.
 All rights reserved.
-
----
-
-Built with **Next.js** and **TypeScript**.
-
-**Histae — Dating app coming soon.**
-
-**Website:** [www.histae.com](https://www.histae.com)
-
-## Règles de continuation
-
-Le catalogue `config/site.json` distingue les trois crédits gratuits hebdomadaires, le stock publicitaire de trois crédits et le plafond de six continuations confirmées par participant Free. Les valeurs sont injectées dans les tarifs, la FAQ et la page des fonctionnalités, dans les quatre langues. Les choix restent privés et l’envoi est suspendu pendant les 24 heures de décision. Chaque participant Free utilise son propre crédit ; un participant Premium n’en consomme pas et ne couvre pas le crédit de l’autre. Les textes juridiques décrivent aussi la publicité récompensée prévue et restent des brouillons à valider avant son activation. Aucun SDK publicitaire n’est ajouté au site.
-
-## Présentation des offres et du code public
-
-L’accueil et la page Tarifs présentent trois cartes : Free, Premium Mensuel et Premium Annuel. Les deux formules
-Premium partagent les mêmes fonctionnalités du catalogue. Le prix annuel est affiché comme un paiement unique ;
-son équivalent mensuel, l’économie annuelle et le pourcentage de réduction sont calculés à partir des prix du catalogue.
-La page Tarifs explique les crédits, les deux fenêtres de 24 heures, la facturation dès la souscription, la reconduction et les matchs Free/Premium.
-Le site reste une vitrine : il ne propose ni achat ni précommande, et conserve un état de lancement en préparation.
-
-Les trois dépôts publics sont centralisés dans `config/site.json` et présentés sur les pages Sécurité et À propos,
-avec un accès depuis le footer et la FAQ. La formulation retenue est « code source public et auditable » ; aucun droit
-de modification ou de réutilisation, ni aucune acceptation de contributions externes, n’est annoncé. Cette visibilité
-ne doit pas être présentée comme une licence open source. Les textes sont maintenus dans les quatre langues.
-
-## Retours Stripe vers l'application
-
-Trois pages de retour statiques sont définies dans `config/site.json` (`billingReturns`) et disponibles
-dans les quatre langues du site. Trois points d'entrée sans langue choisissent la langue du navigateur :
-
-```dotenv
-STRIPE_CHECKOUT_SUCCESS_URL=https://www.histae.com/billing/success?session_id={CHECKOUT_SESSION_ID}
-STRIPE_CHECKOUT_CANCEL_URL=https://www.histae.com/billing/cancel
-STRIPE_PORTAL_RETURN_URL=https://www.histae.com/billing/return
-```
-
-Les entrées `/billing/success/`, `/billing/cancel/` et `/billing/return/` sont elles aussi exportées
-statiquement. Elles choisissent avec JavaScript la première langue prise en charge parmi
-`navigator.languages`, puis redirigent avec `location.replace` vers `/{lang}/billing/…/` en conservant
-la chaîne de paramètres sans l'interpréter. Les variantes régionales (`it-IT`, `en-GB`, etc.) sont
-ramenées à leur langue ; une préférence non prise en charge est ignorée au profit de la suivante.
-Si aucune ne correspond, le français sert de secours. Sans JavaScript, quatre liens permettent de
-choisir la langue ; leur destination n'a pas besoin du paramètre de session. Une URL déjà localisée
-conserve sa langue. La redirection de l'accueil par Caddy reste distincte et ne capture pas ces routes.
-
-Les pages localisées guident vers l'app : revenir manuellement dans Histae, ouvrir **Mon abonnement** depuis le
-profil, puis utiliser **Vérifier mon abonnement** si nécessaire. Elles n'affirment pas qu'un paiement,
-un essai ou une résiliation est confirmé. Elles ne lisent ni n'affichent `session_id`, n'utilisent aucun
-stockage navigateur et n'appellent ni l'API ni Stripe. Aucun achat n'est proposé depuis le site.
-Les webhooks et la projection API restent responsables des droits Premium.
-
-Le domaine sans `www` redirige vers `www.histae.com`, puis Caddy sert le chemin avec slash final en
-conservant les paramètres. Les pages et les points d'entrée restent hors navigation et sitemap, avec `noindex, follow`.
-Leur HTML et leur réponse Caddy définissent `no-referrer` ; Caddy ajoute `Cache-Control: no-store` et
-`X-Robots-Tag: noindex, follow`. Les logs communs excluent déjà URL et paramètres. Vérifier que le CDN
-conserve ces règles sur les pages et leurs redirections.
-
-Publier le site avec `bash ../histae-scripts/reset-site.sh --production` avant de reporter ces trois
-valeurs dans le `.env` API du serveur, puis recréer l'API avec `reset-api.sh --production`.
-Les sessions Checkout déjà créées gardent leurs URL d'origine. Dans le `.env` Flutter, renseigner
-respectivement `BILLING_SUCCESS_URL`, `BILLING_CANCEL_URL` et `BILLING_PORTAL_RETURN_URL` avec les mêmes
-valeurs publiques ; aucune clé secrète ne doit être embarquée. Une modification du `.env` mobile exige
-une nouvelle compilation. Les paiements mobiles restent désactivés (`BILLING_ENABLED=false`) avant
-les essais Stripe test et la validation de la distribution choisie.
-
-Le build contrôle les douze pages de retour localisées et les trois entrées de langue, leurs métadonnées,
-les liens de secours et l'absence d'identifiant de session dans le HTML. Le retour au premier plan,
-le rafraîchissement de l'abonnement, l'annulation,
-le portail et les webhooks retardés restent à vérifier avec l'API et l'app sur téléphone.
-Voir le [parcours API](../histae-api-rust/docs/billing.md#retours-stripe-sur-le-site-vitrine).
-
-## Next.js and TypeScript conventions
-
-Presentation components remain Server Components unless browser interactivity requires a client boundary.
-`lib/plans.ts` validates the configured feature identifiers; `lib/pricing.ts` builds typed, localized card models;
-`PricingCard` renders them. Prices and credit limits come from `config/site.json`, with text supplied by next-intl.
-React keys use stable catalogue or content identifiers rather than translated labels.
-
-TypeScript is strict and checks unused code and switch fallthrough. ESLint includes the Next.js Core Web Vitals
-and TypeScript configurations. Run all three quality checks above before shipping; the static build also validates
-localized navigation and SEO. Do not commit generated `.next`, `out` or TypeScript build cache files.
-
-## Serveur Caddy et confidentialité des logs
-
-L’image finale utilise Caddy **2.11.7**, figé par digest, pour servir les fichiers statiques.
-`Caddyfile` désactive l’API d’administration, HTTPS automatique et la sauvegarde de configuration.
-Il écoute en HTTP interne et charge `caddy-common.caddy` pour la politique commune des logs et du corps HTTP.
-Le runtime utilise UID/GID 1000, une racine en lecture seule et uniquement `NET_BIND_SERVICE`.
-
-Les logs JSON suppriment la requête complète et les en-têtes de réponse. Ils conservent le statut,
-la durée, des métriques numériques, la méthode normalisée, la catégorie de route et l’UUID de réponse
-API validé. Les URL, paramètres, IP, cookies et autres en-têtes privés sont exclus. Les erreurs HTTP
-ordinaires sont représentées par ce log expurgé ; le logger runtime ne les duplique pas.
-La pile `reverse-proxy` borne les logs Docker à cinq fichiers de 10 Mo par conteneur.
-
-Lors d’une copie manuelle, copier **`Caddyfile`**, **`caddy-common.caddy`** et **`Dockerfile`**, puis reconstruire
-et recréer le service. Les anciens fichiers `nginx.conf` et `nginx-logging.conf` sont supprimés.
-Le guide et les vérifications sont dans `../histae-api-rust/docs/caddy-migration.md`.
-
-Les redirections du domaine canonique, des langues et des anciennes routes juridiques sont conservées.
-Les ressources publiques gardent leur cache d’un jour et une page absente garde le statut 404.
-Les en-têtes CSP et protections navigateur s’appliquent aussi aux réponses d’erreur.
-
-## Brand assets
-
-The approved logo is the open book from **02 / Les pages**. The Histae name is an optional accompanying signature, not part of the symbol. Header and footer use `public/branding/histae-signature.svg` with outlined lettering; the standalone book is `public/branding/histae-logo.svg`. On narrow mobile headers (360px and below), the book appears alone to keep it legible. No external font request is needed to render these assets.
-
-`lib/branding.ts` supplies the shared SVG/PNG favicon and Apple touch icon metadata. The web manifest uses explicit 192px/512px PNG sizes; the legacy `public/logo.png` path now contains the same book icon. Mobile native assets share this source in the adjacent Histae app repository. No website deployment is included in this change.
-
-## Product voice — 21 October 2026
-
-The app and website share warmer, concrete copy in French, English, Spanish and Italian. The homepage illustrates an explicitly fictional conversation instead of abstract product artwork, and feature lists use fewer numbered panels. The night palette and open-book identity remain in place. Legal documents, commercial values and payment flows retain their existing behavior. These changes are local and do not publish the website.
-
-
-### Application screenshots
-
-The marketing pages use localized captures of the real Flutter widgets. Profiles
-and conversations are fictional and are labelled as such in visible captions.
-To update them, run `tool/preview_website_test.dart` in histae-app, then run
-`node scripts/export-app-screenshots.mjs` in histae-site. The script accepts an
-optional input folder and writes WebP assets to `public/images/app/{locale}/`.
-Keep full screen proportions, descriptive translated alt text, eager loading only
-for the hero, and lazy loading for the other screens. Long bios are intentional:
-the screenshots should show how people introduce themselves through their words.
-
-## Paiement Stripe authentifié sur le site
-
-Les pages `/fr/billing/subscribe/`, `/en/billing/subscribe/`, `/es/billing/subscribe/`,
-`/it/billing/subscribe/` vérifient un compte existant par UUID + téléphone puis OTP.
-Le cookie HttpOnly est posé par l’API ; aucun JWT, OTP ou téléphone n’est conservé dans le stockage web.
-Checkout n’est proposé qu’après vérification de la session et des consentements. Le retour Stripe ne
-constitue pas une preuve d’achat. Les abonnements Apple/Google affichent leur lien officiel de gestion.
-
-En production, le site reste statique. Le reverse proxy doit envoyer `/api/web/billing/*` à l’API, sur
-l’origine du site ; bypasser ces chemins dans les règles de cache Cloudflare et conserver `no-store`.
-En développement, `pnpm dev` réécrit ces chemins vers `HISTAE_API_DEV_UPSTREAM` (défaut
-`http://127.0.0.1:8080`). L’API exige `WEB_BILLING_ENABLED=true` et une `WEB_BILLING_ORIGIN`
-exactement égale à celle du navigateur. Les clés Stripe et les secrets des stores restent côté API.
-
-Tests : `pnpm test` (Playwright, Chromium installé par `pnpm exec playwright install chromium`).
-Les quatre tests du parcours utilisent uniquement des réponses API simulées, sans SMS ni paiement.
-Voir le [guide complet](../histae-api-rust/docs/store-billing.md) pour la livraison et les fournisseurs.
-
-
-Validation locale du 22 octobre 2026 : TypeScript, lint, export statique des quatre langues et
-**quatre tests Playwright/DTO réussis**. Les cas couvrent OTP incorrect, session requise avant paiement,
-réponse Checkout perdue avec reprise de la même clé et gestion d’un abonnement natif existant.
-Les brouillons juridiques ont été actualisés sans modifier les versions publiées ; ils exigent une
-validation avant publication. Aucun paiement/SMS réel ni déploiement n’a été effectué.
-
-
-Le parcours de paiement sépare désormais `components/billing-checkout.tsx` (vue et traductions),
-`hooks/use-billing-checkout.ts` (états et actions) et `lib/billing/` (modèles, transport, validation
-des DTO/URLs et stockage de la clé de reprise). Les événements des formulaires restent dans la vue ;
-le hook ne formate pas les messages. Les réponses annulées au changement de langue sont ignorées.

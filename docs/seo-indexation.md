@@ -1,27 +1,51 @@
-# Vérification de l’indexation — 7 octobre 2026
+# SEO and indexation
 
-## Observations sur le site en ligne
+[Documentation](../README.md#documentation) · [Deployment](deployment.md)
 
-- Les 28 pages principales (7 pages × 4 langues) répondent en HTTP 200 après redirection vers `https://www.histae.com`. Elles portent `index, follow`, une balise canonique et cinq liens de langue (fr, en, es, it et x-default). Aucun en-tête `X-Robots-Tag` bloquant n’a été trouvé.
-- `https://www.histae.com/robots.txt` autorise l’exploration. Le sitemap répond en HTTP 200 et contient les 28 pages.
-- Une adresse inexistante renvoie bien HTTP 404.
-- Incohérence à corriger au déploiement : Cloudflare redirige `histae.com` vers `www.histae.com`, alors que les balises canoniques et le sitemap du site en ligne utilisent encore le domaine sans www. La configuration Caddy du dépôt redirigeait également dans le sens opposé.
-- L’accueil `https://www.histae.com/` renvoie actuellement une redirection 302 vers `http://www.histae.com/fr/`. Cette étape HTTP est à supprimer.
+## URL and indexing policy
 
-## Corrections dans le projet
+Use `https://www.histae.com` for canonical URLs, metadata, structured data, robots and sitemap entries.
+Every localized route should declare its canonical URL, supported language alternates and French
+`x-default`. The language selector should retain the current page or legal document.
 
-- Domaine canonique unique : `https://www.histae.com`, cohérent avec la redirection publique existante. Les métadonnées, les données structurées, le sitemap et robots.txt utilisent cette origine.
-- Redirection Caddy du domaine sans www vers www. Les redirections locales restent relatives avec des destinations de redirection relatives, pour conserver HTTPS lorsque Caddy est derrière le proxy.
-- Contrôle de l’export étendu aux 44 pages : langues, canonicals, hreflang réciproques, titres, descriptions, directives robots, navigation, liens juridiques et tableau de confidentialité. Le sitemap est vérifié contre les 28 URLs canoniques attendues.
-- Les 16 pages juridiques sont accessibles depuis le footer dans chaque langue. Elles restent en `noindex, follow` et hors sitemap pendant leur statut de brouillon, comme indiqué dans les sources. Leur finalisation demandera de revoir cette exclusion.
+Product routes in `config/site.json` are indexable. Legal pages and billing pages currently use
+`noindex, follow` and remain outside the sitemap. Removing a legal draft banner does not change
+indexing policy or establish legal approval. See the [legal workflow](legal/README.md).
 
-## Après déploiement
+The non-www host must redirect to www without losing the path or query. Language redirects must
+preserve HTTPS; no intermediate `http://` destination should be introduced by the proxy.
 
-1. Vérifier que `https://www.histae.com/fr/` indique bien cette même URL comme canonique, et que le domaine sans www redirige vers www.
-2. Vérifier que l’accueil ne renvoie plus vers une adresse HTTP.
-3. Soumettre `https://www.histae.com/sitemap.xml` dans Google Search Console. Une propriété de domaine `histae.com` couvre les deux hôtes ; une propriété de préfixe doit correspondre à `https://www.histae.com/`.
-4. Inspecter les pages d’accueil `/fr/`, `/en/`, `/es/` et `/it/` : test de l’URL publiée, accès autorisé aux robots, canonique déclarée et canonique choisie par Google. Demander une nouvelle indexation des pages importantes après le déploiement.
+## Build verification
 
-Ces contrôles vérifient l’aptitude technique à l’indexation. Ils ne confirment pas l’état réel dans votre compte Search Console, qui n’a pas été consulté, et ne garantissent pas que Google indexera toutes les pages.
+```bash
+pnpm build
+```
 
-Références : [versions linguistiques](https://developers.google.com/search/docs/specialty/international/localized-versions), [sitemaps](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview), [canonicals](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls).
+The postbuild script, `scripts/fix-static-seo.mjs`, normalizes alternate-link attributes and checks
+the configured localized product, legal and billing return routes. It checks document language,
+canonical and alternate links, titles, descriptions, robots directives, a single main heading,
+navigation and legal links. It also checks sitemap membership, robots.txt and the neutral billing
+return entry points, including their language fallbacks and privacy-related markup.
+
+This is a defined set of checks rather than a full crawler or accessibility audit. The subscription
+page is not currently part of the script's configured-route loop. Validate it through its focused
+billing checks and review its generated metadata when changing that route.
+
+## Hosted verification
+
+After deployment, confirm successful responses for representative localized pages and a 404 for an
+unknown path. Inspect canonical URLs, reciprocal alternates and robots directives in the delivered
+HTML, and check for conflicting HTTP headers or CDN cache rules.
+
+For billing pages, additionally verify `no-referrer` and `no-store` through redirects and the edge.
+The local export cannot verify live certificates, headers, redirects or search-engine decisions.
+
+Submit [the sitemap](https://www.histae.com/sitemap.xml) through the project's Search Console account.
+Inspect the localized homepages and compare declared and selected canonicals. Search Console access
+and actual indexation are separate from build checks; record a live finding only after verifying it.
+
+Existing reference material:
+
+- [Google: localized versions](https://developers.google.com/search/docs/specialty/international/localized-versions)
+- [Google: sitemap overview](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview)
+- [Google: canonical URLs](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)

@@ -1,60 +1,64 @@
-# Brouillons des documents juridiques Histae
+# Legal content workflow
 
-Ces quatre fichiers sont des **sources de travail en français**, pas des textes validés pour la production :
+[Documentation](../../README.md#documentation)
 
-| Fichier | Variables API correspondantes |
-| --- | --- |
-| `conditions-utilisation.md` | `TERMS_OF_SERVICE_VERSION`, `TERMS_OF_SERVICE_URL` |
-| `politique-confidentialite.md` | `PRIVACY_POLICY_VERSION`, `PRIVACY_POLICY_URL` |
-| `consentement-donnees-sensibles.md` | `SENSITIVE_DATA_CONSENT_VERSION`, `SENSITIVE_DATA_CONSENT_URL` |
-| `consentement-localisation.md` | `LOCATION_CONSENT_VERSION`, `LOCATION_CONSENT_URL` |
+This directory contains public legal content and its developer documentation. The four source
+documents are maintained in French, English, Spanish and Italian. Their publication languages
+must remain intact when the developer documentation is edited in English.
 
-## Intégration au site
+## Sources and public routes
 
-Les originaux français restent dans ce dossier. Leurs traductions de travail sont dans `en/`, `es/` et `it/`, avec les mêmes noms de fichiers. Toute modification du français doit être répercutée dans les traductions et leur validation.
+French originals are in this directory. Translations are in `en/`, `es/` and `it/`, with the same
+source filenames. `config/site.json` maps documents to stable public route identifiers;
+`lib/legal-documents.ts` loads the corresponding Markdown at build time.
 
-Le site génère une page HTML pour chaque document et langue sous `/{lang}/legal/{route}/`, accessible depuis le footer. Les chemins restent en anglais dans toutes les langues :
+| Source filename | Public route under `/{locale}/legal/` | API variable prefix |
+| --- | --- | --- |
+| `conditions-utilisation.md` | `terms-of-use/` | `TERMS_OF_SERVICE` |
+| `politique-confidentialite.md` | `privacy-policy/` | `PRIVACY_POLICY` |
+| `consentement-donnees-sensibles.md` | `sensitive-data-consent/` | `SENSITIVE_DATA_CONSENT` |
+| `consentement-localisation.md` | `location-consent/` | `LOCATION_CONSENT` |
 
-| Source Markdown | Route publique |
-| --- | --- |
-| `conditions-utilisation.md` | `/{lang}/legal/terms-of-use/` |
-| `politique-confidentialite.md` | `/{lang}/legal/privacy-policy/` |
-| `consentement-donnees-sensibles.md` | `/{lang}/legal/sensitive-data-consent/` |
-| `consentement-localisation.md` | `/{lang}/legal/location-consent/` |
+Each prefix has API `_VERSION` and `_URL` settings. Do not rename sources or public routes as part
+of a documentation cleanup. The footer and language selector link to rendered HTML pages. Caddy
+permanently redirects legacy French route names while retaining the locale and query string.
 
-La correspondance entre routes et sources est définie dans `config/site.json`. Le sélecteur de langue conserve le document consulté. Les textes sont lus directement depuis ces fichiers au moment de la compilation. Caddy redirige les anciennes adresses françaises vers les nouvelles avec le statut permanent 308, en conservant la langue et les paramètres de requête.
+## Review and publication
 
-Les bandeaux de brouillon sont retirés des pages publiques ; les informations manquantes portent la mention « En cours de validation. », traduite dans chaque langue. Elles sont en `noindex, follow` et absentes du sitemap tant que les textes ne sont pas finalisés. Après validation des textes et des traductions, adapter les métadonnées de la page juridique et le sitemap pour permettre leur indexation.
+Public draft banners have been removed. Missing information uses the localized equivalent of
+“Validation in progress.” This wording does not mean the documents have been approved. The pages
+remain `noindex, follow` and are excluded from the sitemap.
 
-## Avant publication
+Before treating the content as finalized, confirm the publisher and controller identity, contacts,
+hosting and processors, transfers, retention periods and the actual product and payment flows.
+Have the text, translations and consent wording reviewed by the responsible legal/privacy owner.
+`LEGAL_REVIEW_REFERENCE` must identify real approval rather than a fabricated placeholder.
 
-1. Remplacer tous les marqueurs `[À COMPLÉTER]` et `[À VALIDER]`. Vérifier l’identité de l’éditeur et du responsable de traitement, les contacts, l’hébergeur, les sous-traitants, les transferts éventuels, toutes les durées de conservation et le parcours commercial réel.
-2. Faire valider les quatre textes et les libellés de consentement par une personne compétente en droit et protection des données. `LEGAL_REVIEW_REFERENCE` doit renvoyer à **cette validation réelle** ; ne pas lui donner une valeur fictive pour démarrer la production.
-3. Publier chaque texte sous une URL HTTPS stable et lisible dans le site Next.js. Un fichier `.md` placé tel quel dans `public/` ne constitue pas, à lui seul, une page HTML adaptée aux utilisateurs : rendre le Markdown dans une page du site et conserver une copie des versions antérieures.
-4. Reporter dans `.env` de l’API la version exacte du texte publié et son URL absolue HTTPS. Une modification substantielle doit donner une nouvelle version et déclencher le parcours de présentation/acceptation approprié.
-5. Le site vitrine existe en français, anglais, espagnol et italien. L’API localise les URL Histae connues selon la langue demandée (`fr`, `en`, `es`, `it`) ; les URL personnalisées exigent leur propre vérification. Vérifier que la version enregistrée correspond bien au texte présenté dans chaque langue.
-6. Prévoir aussi des **mentions légales du site** et, si des traceurs non essentiels sont utilisés, leur information et leurs choix propres. Ces sujets ne sont pas couverts par les quatre variables API ci-dessus.
+Publish reviewed text at stable HTTPS HTML URLs. Align each API version and URL with what users
+actually see, keep prior versions available through the agreed process and use a new version when
+the applicable content changes substantially. Reassess indexing explicitly after approval.
+Website publisher information and any non-essential tracking choices require their own assessment;
+they are not replaced by these four app documents.
 
-Les brouillons s’appuient sur les contrats actuels de `docs/http-contract.md`, les règles de purge de `src/privacy/maintenance.rs` et les descriptions publiques du site. Vérifier à nouveau ces sources au moment de la mise en ligne.
+## Product sources to reconcile
 
-## Références de rédaction
+Use the API [HTTP contract](../../../histae-api-rust/docs/http-contract.md),
+[continuation and rewards guide](../../../histae-api-rust/docs/continuation-and-rewards.md) and
+[billing guide](../../../histae-api-rust/docs/store-billing.md), together with the current privacy
+maintenance implementation and actual provider configuration. These are inputs for review, not
+proof of legal compliance.
 
-- [CNIL — information des personnes et transparence](https://www.cnil.fr/fr/conformite-rgpd-information-des-personnes-et-transparence)
-- [CNIL — consentement](https://www.cnil.fr/fr/les-bases-legales/consentement)
-- [CNIL — géolocalisation des applications mobiles](https://www.cnil.fr/fr/geolocalisation-applications-mobiles-quelles-regles)
-- [CNIL — applications de rencontre et vie privée](https://www.cnil.fr/fr/sites-et-applications-de-rencontres-comment-proteger-votre-intimite)
-- [RGPD, notamment articles 7, 9 et 13](https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=fr)
+Keep translations aligned when changing continuation decisions, per-participant credit use,
+rewarded advertising, retention or payments. Mobile purchases use Apple/Google; the website uses
+Stripe and UUID/phone/SMS authentication. Documentation edits do not change published API consent
+versions, advertising settings or legal approval references.
 
-## Modification du 13 octobre 2026
+## Existing drafting references
 
-Les CGU et notices des quatre langues décrivent la pause des messages, les décisions privées, le coût pour chaque participant Free, les allocations et réservations, et la publicité récompensée envisagée. Le fournisseur reste désactivé tant que le parcours mobile et les choix publicitaires ne sont pas intégrés et validés. Publier de nouvelles versions validées avant activation ; les versions API et `LEGAL_REVIEW_REFERENCE` ne sont pas modifiées par cette rédaction. Les récompenses restent internes au compte, non transférables et sans valeur monétaire.
-
-Sources complémentaires : [Google — règles des annonces récompensées](https://support.google.com/admob/answer/7313578?hl=fr), [Google — UMP](https://developers.google.com/admob/flutter/privacy), [CNIL — recommandations mobiles](https://www.cnil.fr/fr/recommandations-applications-mobiles).
-
-## Modification du 22 octobre 2026
-
-Les quatre versions de travail décrivent désormais Google Play / App Store pour les achats mobiles,
-Stripe pour le site et la connexion UUID + téléphone + OTP. Les sessions web et traces natives sont
-ajoutées à la notice. Les versions API publiées et `LEGAL_REVIEW_REFERENCE` restent inchangées :
-aucune validation juridique n’est inventée. Faire valider les textes et durées, publier une nouvelle
-version et aligner les variables API avant ouverture des paiements.
+- [CNIL: transparency and information](https://www.cnil.fr/fr/conformite-rgpd-information-des-personnes-et-transparence)
+- [CNIL: consent](https://www.cnil.fr/fr/les-bases-legales/consentement)
+- [CNIL: mobile geolocation](https://www.cnil.fr/fr/geolocalisation-applications-mobiles-quelles-regles)
+- [CNIL: dating applications and privacy](https://www.cnil.fr/fr/sites-et-applications-de-rencontres-comment-proteger-votre-intimite)
+- [GDPR text](https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=en)
+- [Google: rewarded advertising](https://support.google.com/admob/answer/7313578?hl=en)
+- [Google: UMP for Flutter](https://developers.google.com/admob/flutter/privacy)
