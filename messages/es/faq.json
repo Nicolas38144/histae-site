@@ -51,7 +51,7 @@
       },
       "sourceCode": {
         "question": "¿Puedo consultar el código y realizar una auditoría de seguridad?",
-        "answer": "Sí. El código fuente de la API, la aplicación móvil y el sitio se publica en GitHub para su consulta y auditorías de seguridad. No se aceptan contribuciones externas y los derechos de modificación y reutilización quedan reservados. Los enlaces a los tres repositorios están en la página de Seguridad.",
+        "answer": "El código original de Histae es público para su consulta y auditorías de seguridad. Se prohíben su reutilización, incluso no comercial, su redistribución y su uso en otro proyecto sin autorización previa por escrito. No es una licencia de código abierto. Los componentes de terceros conservan sus propias licencias. No se aceptan contribuciones externas.",
         "linkLabel": "Consultar los repositorios públicos"
       }
     }

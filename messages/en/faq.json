@@ -51,7 +51,7 @@
       },
       "sourceCode": {
         "question": "Can I read the code and carry out a security audit?",
-        "answer": "Yes. The API, mobile app and website source code is published on GitHub for reading and security audits. External contributions are not accepted, and modification and reuse rights remain reserved. Links to all three repositories are on the Safety page.",
+        "answer": "Original Histae code is public for inspection and security audits. Reuse, including non-commercial reuse, redistribution and use in another project are prohibited without prior written permission. This is not an open-source license. Third-party components retain their own licenses. External contributions are not accepted.",
         "linkLabel": "Browse the public repositories"
       }
     }

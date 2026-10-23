@@ -65,7 +65,7 @@
     "intro": "Il codice sorgente dell’API, dell’app mobile e del sito Histae è disponibile su GitHub. Chiunque può studiarne il funzionamento e svolgere una propria verifica di sicurezza del codice.",
     "viewCode": "Vedi il codice su GitHub",
     "footerLink": "Codice sorgente e verifiche",
-    "policy": "I repository sono pubblicati per la consultazione e le verifiche di sicurezza. Non sono aperti a contributi esterni. I diritti di modifica e riutilizzo restano riservati: pubblicare il codice non concede una licenza open source.",
+    "policy": "Il codice originale di Histae è pubblico per la consultazione e le verifiche di sicurezza. Il riutilizzo, anche non commerciale, la ridistribuzione e l’uso in altri progetti sono vietati senza previa autorizzazione scritta. Non è una licenza open source. I componenti di terze parti mantengono le proprie licenze. Non si accettano contributi esterni.",
     "repositories": {
       "api": {
         "title": "L’API Rust",

@@ -51,7 +51,7 @@
       },
       "sourceCode": {
         "question": "Posso consultare il codice e verificarne la sicurezza?",
-        "answer": "Sì. Il codice sorgente dell’API, dell’app mobile e del sito è pubblicato su GitHub per la consultazione e le verifiche di sicurezza. Non si accettano contributi esterni e i diritti di modifica e riutilizzo restano riservati. I link ai tre repository sono nella pagina Sicurezza.",
+        "answer": "Il codice originale di Histae è pubblico per la consultazione e le verifiche di sicurezza. Il riutilizzo, anche non commerciale, la ridistribuzione e l’uso in altri progetti sono vietati senza previa autorizzazione scritta. Non è una licenza open source. I componenti di terze parti mantengono le proprie licenze. Non si accettano contributi esterni.",
         "linkLabel": "Consulta i repository pubblici"
       }
     }
