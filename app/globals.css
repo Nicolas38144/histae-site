@@ -186,38 +186,6 @@ h1, h2, h3 { text-wrap: balance; }
 .text-link { display: inline-flex; align-items: center; gap: 0.25rem; color: var(--ink); font-weight: 750; text-decoration: none; }
 .text-link:hover { color: var(--coral); }
 
-.hero-art { position: relative; min-height: 29rem; overflow: hidden; border: 1px solid rgba(182, 156, 255, 0.16); border-radius: 1.5rem; background: radial-gradient(circle at 53% 55%, rgba(182, 156, 255, 0.11), transparent 17%), linear-gradient(145deg, #111a2b, #101726 58%, #171728); box-shadow: var(--shadow); }
-.hero-art::before { position: absolute; inset: 0; content: ""; background-image: radial-gradient(rgba(249, 247, 242, 0.3) 0.65px, transparent 0.7px); background-size: 19px 19px; mask-image: linear-gradient(110deg, transparent 5%, black 38%, transparent 74%); opacity: 0.13; }
-.hero-art::after { position: absolute; inset: 1.5rem; border: 1px solid rgba(249, 247, 242, 0.07); border-radius: 1rem; content: ""; }
-.art-glow, .art-orbit, .art-thread, .art-point { position: absolute; display: block; }
-.art-glow { width: 18rem; height: 18rem; border-radius: 50%; filter: blur(40px); opacity: 0.28; }
-.art-glow-left { bottom: -7rem; left: -7rem; background: #8373bd; }
-.art-glow-right { top: -8rem; right: -8rem; background: #496d9a; }
-.art-orbit { width: 23rem; height: 23rem; border: 1px solid rgba(182, 156, 255, 0.22); border-radius: 50%; }
-.art-orbit-one { top: -9rem; left: -10rem; }
-.art-orbit-two { right: -12rem; bottom: -10rem; border-color: rgba(240, 154, 130, 0.14); }
-.art-thread { z-index: 1; top: 55%; height: 1px; transform-origin: right; }
-.art-thread-left { left: -4%; width: 56%; transform: rotate(22deg); background: linear-gradient(90deg, transparent, rgba(182, 156, 255, 0.32), rgba(249, 247, 242, 0.78)); }
-.art-thread-right { right: -4%; width: 51%; transform: rotate(-19deg); background: linear-gradient(90deg, rgba(249, 247, 242, 0.78), rgba(143, 158, 202, 0.38), transparent); }
-.art-point { z-index: 2; top: calc(55% - 0.35rem); left: calc(52% - 0.35rem); width: 0.7rem; height: 0.7rem; border-radius: 50%; background: #f2e4da; box-shadow: 0 0 0 0.4rem rgba(249, 247, 242, 0.07), 0 0 2.8rem 0.8rem rgba(182, 156, 255, 0.32); }
-
-/* A fictional exchange, clearly labelled, rather than a product dashboard. */
-.hero-conversation { position: relative; isolation: isolate; min-width: 0; margin: 0; padding: clamp(1.25rem, 3vw, 2rem) 0; }
-.conversation-thread { position: absolute; z-index: -1; inset: -2rem -1rem; width: calc(100% + 2rem); height: calc(100% + 4rem); color: var(--coral); opacity: 0.25; pointer-events: none; }
-.conversation-thread path { stroke: currentColor; stroke-width: 1.4; vector-effect: non-scaling-stroke; }
-.conversation-overline { margin: 0 0 1.6rem 0.4rem; color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; font-style: italic; }
-.conversation-question { max-width: 24rem; padding: 1.5rem; border-left: 2px solid var(--coral); background: linear-gradient(110deg, rgba(240,154,130,0.09), transparent); }
-.conversation-label { color: var(--muted); font-size: 0.82rem; }
-.conversation-question p { margin-top: 0.7rem; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.6rem, 2.5vw, 2.1rem); line-height: 1.2; letter-spacing: -0.025em; }
-.conversation-message { position: relative; max-width: 24rem; margin: 1.2rem 0 0; padding: 1.45rem 1.6rem; border: 1px solid rgba(182,156,255,0.2); border-radius: 1.4rem 1.4rem 1.4rem 0.35rem; background: #1b2435; box-shadow: 0 15px 35px rgba(0,0,0,0.12); }
-.conversation-message p { font-size: 1.05rem; line-height: 1.65; }
-.conversation-message cite { display: block; margin-top: 0.8rem; color: var(--lavender); font-size: 0.82rem; font-style: normal; }
-.conversation-first { transform: rotate(-1.5deg); }
-.conversation-reply { margin-left: clamp(1rem, 4vw, 3rem); border-color: rgba(240,154,130,0.22); border-radius: 1.4rem 1.4rem 0.35rem 1.4rem; background: #252331; transform: rotate(1deg); }
-.conversation-reply cite { color: var(--coral); }
-.hero-conversation figcaption { max-width: 25rem; margin: 1.6rem 0 0 0.4rem; color: var(--muted); font-size: 0.78rem; }
-@media (max-width: 780px) { .hero-conversation { max-width: 33rem; width: 100%; margin-inline: auto; } }
-@media (max-width: 420px) { .hero-conversation { padding-block: 1rem; } .conversation-message { padding: 1.2rem; } .conversation-reply { margin-left: 1rem; } }
 
 .section { padding-block: clamp(5rem, 10vw, 9rem); }
 .section-heading { max-width: 42rem; }
@@ -391,7 +359,6 @@ h1, h2, h3 { text-wrap: balance; }
 
 @media (max-width: 850px) {
   .hero { grid-template-columns: 1fr; min-height: auto; padding-block: 4.8rem 4rem; }
-  .hero-art { min-height: 20rem; }
   .principles-grid { grid-template-columns: 1fr; }
   .principle-card { min-height: auto; }
   .principle-card h3 { margin-top: 0; }
@@ -422,7 +389,6 @@ h1, h2, h3 { text-wrap: balance; }
   .hero h1, .page-intro h1 { font-size: clamp(2.8rem, 14vw, 4rem); }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 1.1rem; }
   .button { width: 100%; }
-  .hero-art { min-height: 18rem; }
   .content-block { grid-template-columns: 1fr; gap: 0.6rem; }
   .pricing-credit-grid { grid-template-columns: 1fr; }
   .pricing-faq-link { margin-left: 0; }
