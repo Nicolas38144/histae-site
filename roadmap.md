@@ -30,7 +30,8 @@ matching the hosted service. Pending-validation wording is not an approval recor
 ## S02: product and commercial accuracy
 
 - Assign owners for prices, quotas, availability and public product claims.
-- Compare `config/site.json`, translated marketing copy, the API catalogue and actual store offers.
+- Reconcile configured credit quotas, benefit descriptions and actual store offers with the API.
+- Public Premium amounts now use the Checkout API catalogue; verify its deployed route and unavailable state.
 - Review screenshots, consent/location/photo behavior, credit rules and payment wording per release.
 
 Done when the release records its app/API versions and content approval without making marketing
@@ -60,7 +61,8 @@ errors fail the release checks without introducing a broad test suite for every 
 ## S05: accessibility and performance
 
 - Agree supported devices, browsers and measurable asset/performance budgets.
-- Check keyboard navigation, focus, headings, contrast, 200% zoom, reduced motion and a screen reader.
+- Keep the focused keyboard, mobile overflow, image loading and reduced-motion checks in `tests/marketing.spec.ts`.
+- Complete manual screen-reader, zoom, contrast and cross-browser checks on representative devices.
 - Measure the hosted mobile experience, image loading and behavior on slow connections.
 
 Done when representative pages meet the agreed targets and regressions are addressed before adding

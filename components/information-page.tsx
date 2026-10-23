@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { createTranslator } from "next-intl";
 import { getCommercialValues } from "../lib/plans";
 import { getTranslations } from "next-intl/server";
 import { localizedHref, type InformationPageName, type Locale } from "../lib/site-config";
@@ -12,9 +13,9 @@ export async function InformationPage({ locale, pageName }: {
   const t = await getTranslations({ locale });
   const messages = getMessagesForLocale(locale);
   const page = messages.pages[pageName];
-  const values = getCommercialValues(locale);
+  const values = getCommercialValues();
   const blocks = Object.fromEntries(Object.entries(page.blocks).map(([id, block]) => [id, {
-    ...block, text: t(`pages.${pageName}.blocks.${id}.text`, values),
+    ...block, text: createTranslator({ locale, messages: block })("text", values),
   }]));
   function passage(id: string, heading = true) {
     const block = blocks[id];

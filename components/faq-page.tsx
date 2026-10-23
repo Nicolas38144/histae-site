@@ -36,7 +36,7 @@ const faqItemRoutes: Record<FaqItemId, SiteRouteId> = {
 export async function FaqPage({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale });
   const messages = getMessagesForLocale(locale);
-  const commercialValues = getCommercialValues(locale);
+  const commercialValues = getCommercialValues();
 
   return (
     <main id="main-content" className="information-page faq-page">

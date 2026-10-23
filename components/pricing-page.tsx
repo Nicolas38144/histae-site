@@ -10,7 +10,7 @@ import { PricingCards } from "./pricing-cards";
 export async function PricingPage({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale });
   const { pricing } = getMessagesForLocale(locale);
-  const values = getCommercialValues(locale);
+  const values = getCommercialValues();
 
   return (
     <main id="main-content" className="information-page pricing-page">
@@ -49,7 +49,7 @@ export async function PricingPage({ locale }: { locale: Locale }) {
           <p className="story-lead">{t("pricing.credits.intro")}</p>
           <div className="story-passage"><h3>{t("pricing.credits.items.weekly.title", values)}</h3><p>{t("pricing.credits.items.weekly.text", values)}</p></div>
           <div className="story-details">
-            {Object.keys(pricing.credits.items).filter(id => id !== "weekly").map(id => <details key={id}>
+            {(Object.keys(pricing.credits.items) as (keyof typeof pricing.credits.items)[]).filter(id => id !== "weekly").map(id => <details key={id}>
               <summary>{t(`pricing.credits.items.${id}.title`, values)}<span aria-hidden="true">+</span></summary>
               <p>{t(`pricing.credits.items.${id}.text`, values)}</p>
             </details>)}
@@ -63,10 +63,10 @@ export async function PricingPage({ locale }: { locale: Locale }) {
           <h2 id="billing-title">{t("pricing.questionsTitle")}</h2>
         </div>
         <div className="faq-list">
-          {Object.entries(pricing.questions).map(([id, question]) => (
+          {(Object.keys(pricing.questions) as (keyof typeof pricing.questions)[]).map(id => (
             <details className="faq-item" key={id}>
               <summary>
-                <span>{question.title}</span>
+                <span>{pricing.questions[id].title}</span>
                 <span className="faq-toggle" aria-hidden="true">+</span>
               </summary>
               <div className="faq-answer"><p>{t(`pricing.questions.${id}.text`, values)}</p></div>

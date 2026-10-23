@@ -54,7 +54,9 @@ The website repository does not define Docker log rotation or the entire hosting
 ## Release verification
 
 Before release, run the [development checks](development.md#checks), review all four locales and
-compare marketing values with the API and store offers for the release. Confirm launch links,
+compare credit quotas and benefit descriptions with the API and store offers for the release.
+Public Premium prices come from `/api/web/billing/plans`; verify its public unauthenticated response
+and that a failure shows a price link rather than a stale amount. Confirm launch links,
 fictional screenshots and legal content with their owners.
 
 After deployment, check representative pages and an unknown URL, canonical and language redirects,

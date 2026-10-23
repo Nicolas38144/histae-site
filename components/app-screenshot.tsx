@@ -1,3 +1,4 @@
+import screenshotVersions from "../config/app-screenshots.json";
 import { getMessagesForLocale } from "../messages";
 import type { Locale } from "../lib/site-config";
 
@@ -14,7 +15,7 @@ export function AppScreenshot({ locale, screen, priority = false }: {
       <div className="phone-frame">
         {/* Static export: ship already resized and compressed local assets. */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={`/images/app/${locale}/${screen}.webp`} width="780" height="1688"
+        <img src={`/images/app/${locale}/${screen}.webp?v=${screenshotVersions[locale][screen]}`} width="780" height="1688"
           alt={copy[screen]} loading={priority ? "eager" : "lazy"}
           fetchPriority={priority ? "high" : undefined} decoding="async" />
       </div>

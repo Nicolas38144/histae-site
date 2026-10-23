@@ -28,10 +28,18 @@ Support `fr`, `en`, `es` and `it`, with French as the fallback. Add visible copy
 translation domain in every locale. `messages/index.ts` assembles the domains and checks their
 TypeScript shape. Do not use translated labels as React keys.
 
-Marketing prices, credit limits and feature identifiers come from `config/site.json`.
-`lib/plans.ts` validates feature identifiers; `lib/pricing.ts` builds localized card models.
-The subscription form loads its offers from the API. Keep both catalogues aligned for a release;
-the API and payment provider remain authoritative for purchases and access rights.
+Credit limits and feature identifiers come from `config/site.json`; reconcile those rules with the
+API for a release. Premium amounts are not stored in the site configuration or translations.
+The public cards request `/api/web/billing/plans` once per mounted grid, without cookies or a session
+lookup, and use the same offer parser as Checkout. A timeout, malformed/duplicate or unavailable
+catalogue leaves a localized price link, never a stale fallback amount. Without JavaScript the
+same links remain usable. Annual savings require two offers in the same currency and a positive
+saving. Structured data only includes the static free offer, not invented Premium prices.
+
+`lib/pricing.ts` builds static card content. `lib/billing/public-offers.ts` owns the public request
+and deduplicates concurrent reads only. `hooks/use-public-offers.ts` owns its view state;
+`lib/pricing-offers.ts` owns amount formatting/comparison; `components/pricing-grid.tsx` combines them.
+The API and payment provider remain authoritative for purchases and access rights.
 
 Keep route and legal source identifiers stable. Public legal text has a separate
 [publication workflow](legal/README.md); its language is independent of the English developer docs.
@@ -39,7 +47,11 @@ Keep route and legal source identifiers stable. Public legal text has a separate
 ## Brand and writing
 
 Use the existing dark palette, typography and shared button styles. Write concrete, welcoming
-copy with short paragraphs rather than repeated numbered feature lists. Long profile biographies
+copy with short paragraphs rather than repeated numbered feature lists. Explain something a visitor
+can do or see before making a broad promise. Avoid repeated three-part slogans, invented founder
+stories, testimonials, community counts or claims that public source code has already been audited.
+Keep timing, consent, credit and launch limitations accurate. Adapt the wording naturally in each
+locale rather than reproducing every French sentence word for word. Long profile biographies
 are intentional: the product encourages discovering people through their words.
 
 The logo is the open book. The name is an optional accompanying signature:
@@ -70,6 +82,9 @@ Then, from this repository:
 node scripts/export-app-screenshots.mjs
 ```
 
+The converter also writes content hashes to `config/app-screenshots.json`; image URLs use these
+versions so a new capture is not hidden by an old browser cache.
+
 The converter reads `../histae-app/build/previews/website` by default and writes localized WebP files
 to `public/images/app/{locale}/`. An optional first argument selects another input directory.
 
@@ -95,12 +110,30 @@ For browser scenarios, install Chromium once and run the relevant cases:
 
 ```bash
 pnpm exec playwright install chromium
-pnpm exec playwright test tests/billing.spec.ts
+pnpm exec playwright test tests/marketing.spec.ts tests/billing.spec.ts
 ```
 
+Set `PLAYWRIGHT_CHANNEL=msedge` to use an already installed Edge instead of Playwright Chromium.
 Playwright starts a dedicated local development server. Billing fixtures simulate the API without
 sending SMS or taking payments. Add regression tests for important behavior, rather than testing
 every presentation change. Report what ran; do not treat fixture tests as production verification.
 
 Generated `.next/`, `out/` and TypeScript build caches are not source files. Dependencies and the
 lockfile should stay aligned with the package manager declared in `package.json`.
+
+## Accessibility and weight of the current export
+
+The local export was checked on 2026-10-23 with Edge and axe-core 4.13.0: ten representative
+routes, desktop and 375 px mobile, using the WCAG 2 A/AA and 2.1 AA rule sets. No automated
+violations or horizontal overflow were reported in those twenty views. The focused browser
+tests also exercise the keyboard skip link, language dialog focus/closing, reduced motion
+and loading of the three home screenshots. This does not establish full WCAG conformance.
+
+The twenty current WebP screenshots total 1,299,190 bytes; the largest is 86,682 bytes.
+Lazy loading is retained except for the hero. Keep each capture below 100 KiB when refreshing
+them, and check the actual page request mix after layout or dependency changes. Local asset
+sizes do not establish hosted Core Web Vitals or performance on a slow mobile connection.
+
+Manual screen-reader, 200% zoom, touch/device and cross-browser review remain release checks.
+Verify real Stripe/store payments, delayed webhooks and deployed headers in the intended
+provider environment; browser fixtures never establish those outcomes.

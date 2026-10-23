@@ -494,3 +494,26 @@ h1, h2, h3 { text-wrap: balance; }
 .billing-checkout .button { margin: .4rem .4rem .4rem 0; }
 .billing-checkout [role="alert"] { padding: 1rem; border: 1px solid currentColor; }
 .billing-checkout button:disabled { opacity: .55; cursor: not-allowed; }
+
+
+/* A short editorial passage, a conversation and a profile have different reading rhythms. */
+.reading-note { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); gap: clamp(2rem,8vw,7rem); padding-block: clamp(3rem,7vw,6rem); border-top: 1px solid var(--line); }
+.reading-note h2, .privacy-note h2 { font-family: Georgia,"Times New Roman",serif; font-weight: 400; font-size: clamp(1.8rem,3.2vw,2.7rem); line-height: 1.2; letter-spacing: -.035em; }
+.reading-note p { max-width: 36rem; color: var(--muted); font-size: 1.12rem; line-height: 1.8; }
+.reading-note p + p { margin-top: 1.3rem; color: var(--ink); }
+.conversation-story { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); gap: clamp(3rem,8vw,7rem); align-items: center; padding-block: clamp(3rem,7vw,6rem); }
+.conversation-aside { margin-top: 2rem; border-left: 2px solid var(--coral); padding: .2rem 0 .2rem 1.4rem; }
+.conversation-aside h3 { font-size: 1rem; }
+.conversation-aside p { margin-top: .7rem; color: var(--muted); line-height: 1.8; }
+.profile-story { padding-top: 3rem; }
+.privacy-note { max-width: 48rem; padding-block: 2rem clamp(4rem,8vw,7rem); }
+.privacy-note p { margin-block: 1.3rem; color: var(--muted); line-height: 1.8; }
+.pricing-source { min-height: 3em; max-width: 50rem; margin-top: 1.5rem; color: var(--muted); font-size: .9rem; }
+.plan-price { min-height: 4.5rem; }
+.plan-price strong { overflow-wrap: anywhere; }
+.pricing-card .plan-price strong { font-size: clamp(1.7rem,3vw,2.8rem); }
+@media (max-width: 640px) {
+  .reading-note, .conversation-story { grid-template-columns: 1fr; gap: 2rem; }
+  .conversation-story .story-copy { grid-row: 1; }
+  .conversation-story .app-screenshot { width: min(100%,300px); }
+}

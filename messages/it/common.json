@@ -42,7 +42,7 @@
   },
   "footer": {
     "line": "Histae — dare a un incontro il tempo di esistere.",
-    "summary": "Un’app di incontri fondata sul tempo, sulla reciprocità e sul consenso in ogni fase.",
+    "summary": "Profili da leggere, conversazioni per conoscersi e foto da mostrare quando entrambi volete.",
     "navigation": "Navigazione del piè di pagina",
     "exploreTitle": "Scopri",
     "projectTitle": "Il progetto",
@@ -53,16 +53,16 @@
       "sensitive-data-consent": "Consenso ai dati sensibili",
       "location-consent": "Consenso alla localizzazione"
     },
-    "statusLabel": "Stato del progetto",
+    "statusLabel": "A che punto è Histae?",
     "status": "App iOS e Android in preparazione",
     "availability": "Il primo lancio è previsto in Francia. I link ufficiali saranno pubblicati su questo sito.",
     "rights": "Tutti i diritti riservati.",
-    "madeFor": "Prima le parole. Gli incontri, con i vostri tempi."
+    "madeFor": "Spazio per quello che hai da raccontare."
   },
   "transparency": {
-    "eyebrow": "Trasparenza concreta",
-    "title": "Codice pubblico, da esaminare liberamente.",
-    "intro": "Il codice sorgente dell’API, dell’app mobile e del sito Histae è disponibile su GitHub. Chiunque può studiarne il funzionamento e svolgere una propria verifica di sicurezza del codice.",
+    "eyebrow": "Dietro le quinte",
+    "title": "Puoi leggere anche il codice.",
+    "intro": "Il codice dell’app, del server e del sito è pubblico su GitHub. Puoi esaminarlo o verificarne la sicurezza. Pubblicarlo non significa che sia già stato svolto un audit indipendente.",
     "viewCode": "Vedi il codice su GitHub",
     "footerLink": "Codice sorgente e verifiche",
     "policy": "Il codice originale di Histae è pubblico per la consultazione e le verifiche di sicurezza. Il riutilizzo, anche non commerciale, la ridistribuzione e l’uso in altri progetti sono vietati senza previa autorizzazione scritta. Non è una licenza open source. I componenti di terze parti mantengono le proprie licenze. Non si accettano contributi esterni.",

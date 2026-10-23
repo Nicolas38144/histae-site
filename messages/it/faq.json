@@ -1,8 +1,8 @@
 {
   "faq": {
     "eyebrow": "Domande frequenti",
-    "title": "Le risposte essenziali su Histae.",
-    "intro": "Disponibilità, funzionamento degli incontri, prezzi e privacy: ecco cosa sapere prima del lancio.",
+    "title": "Forse te lo stai chiedendo.",
+    "intro": "Le foto, le prime 24 ore, i crediti: ecco le risposte, con link per saperne di più.",
     "items": {
       "availability": {
         "question": "Quando e dove sarà disponibile Histae?",
@@ -16,7 +16,7 @@
       },
       "discovery": {
         "question": "Come vengono selezionati i profili suggeriti?",
-        "answer": "La scoperta verifica in entrambe le direzioni le fasce d’età, chi cerca ogni persona e la distanza massima. Usa una posizione recente e autorizzata ed esclude i profili già valutati, bloccati o abbinati.",
+        "answer": "Histae controlla le preferenze di entrambi: età, persone cercate e distanza massima devono andare bene a tutti e due. Le proposte usano la posizione recente con il tuo permesso. Non vengono proposti profili bloccati, già valutati o con cui hai già un match.",
         "linkLabel": "Scopri le funzioni"
       },
       "match": {
@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "Qual è la differenza tra Free e Premium?",
-        "answer": "Free permette di creare match e iniziare a parlare gratis. Hai {freeCredits} crediti gratuiti a settimana per prolungare le conversazioni, con un massimo di {weeklyMaximum} prolungamenti confermati. Un video facoltativo dà 1 credito extra, fino a {advertisingStock} conservati. Premium Mensile costa {monthlyPrice} al mese; Premium Annuale costa {annualPrice} in un unico pagamento annuale. Entrambi offrono gli stessi vantaggi: nessun credito da consumare e nessuna pubblicità.",
+        "answer": "Puoi creare un profilo, fare un match e iniziare a parlare gratis. Free include {freeCredits} crediti settimanali per continuare le conversazioni, fino a {weeklyMaximum} prolungamenti. Un video facoltativo dà un credito, con un massimo di {advertisingStock} crediti pubblicitari in riserva. Premium elimina il limite e la pubblicità. I prezzi aggiornati sono nella pagina Prezzi e vengono confermati prima del pagamento.",
         "linkLabel": "Confronta i prezzi"
       },
       "location": {
@@ -41,7 +41,7 @@
       },
       "moderation": {
         "question": "È possibile bloccare o segnalare una persona?",
-        "answer": "Sì. Un blocco interrompe il legame, chiude i match interessati e impedisce che vengano ricreati finché resta attivo. Una segnalazione può includere il motivo e, quando pertinente, il match coinvolto.",
+        "answer": "Sì, dall’app. Bloccare qualcuno chiude i vostri match e ne impedisce altri finché il blocco è attivo. Puoi anche segnalare la persona e spiegare cosa è successo.",
         "linkLabel": "Vedi le protezioni disponibili"
       },
       "privacy": {

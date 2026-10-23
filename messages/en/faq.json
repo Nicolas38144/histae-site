@@ -1,8 +1,8 @@
 {
   "faq": {
     "eyebrow": "Frequently asked questions",
-    "title": "The essential answers about Histae.",
-    "intro": "Availability, how connections work, pricing and privacy: here is what to know before launch.",
+    "title": "You might be wondering.",
+    "intro": "Photos, the first 24 hours, credits: here are the answers, with links if you’d like more detail.",
     "items": {
       "availability": {
         "question": "When and where will Histae be available?",
@@ -16,7 +16,7 @@
       },
       "discovery": {
         "question": "How are suggested profiles selected?",
-        "answer": "Discovery checks age ranges, who each person is looking for and maximum distance in both directions. It uses a recent, consented location and excludes profiles already assessed, blocked or matched.",
+        "answer": "Histae checks both people’s preferences: ages, who you’re looking for and maximum distance must work for each of you. Suggestions use your recent location with permission. Blocked profiles, people you’ve already made a choice about and existing matches aren’t suggested again.",
         "linkLabel": "Explore the features"
       },
       "match": {
@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "What is the difference between Free and Premium?",
-        "answer": "Free lets you make matches and start chatting for free. You get {freeCredits} free credits each week to extend conversations, with up to {weeklyMaximum} confirmed extensions. An optional video earns 1 extra credit, with up to {advertisingStock} stored. Premium Monthly costs {monthlyPrice} per month; Premium Annual costs {annualPrice} in one yearly payment. Both include the same benefits: no credits to spend and no ads.",
+        "answer": "You can create a profile, match and start chatting for free. Free includes {freeCredits} weekly credits to continue conversations, up to {weeklyMaximum} extensions. An optional video earns one credit, with up to {advertisingStock} ad credits in reserve. Premium removes the quota and advertising. Current prices are on the Pricing page and confirmed before payment.",
         "linkLabel": "Compare pricing"
       },
       "location": {
@@ -41,7 +41,7 @@
       },
       "moderation": {
         "question": "Can I block or report someone?",
-        "answer": "Yes. Blocking cuts the connection, closes the related matches and prevents them from being recreated while the block remains active. A report can include its reason and, when relevant, the related match.",
+        "answer": "Yes, in the app. Blocking someone ends your matches and prevents another one while the block is active. You can also report them and explain what happened.",
         "linkLabel": "See the available protections"
       },
       "privacy": {

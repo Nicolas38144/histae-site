@@ -42,7 +42,7 @@
   },
   "footer": {
     "line": "Histae — give a connection the time to exist.",
-    "summary": "A dating app built around time, reciprocity and consent at every step.",
+    "summary": "Profiles to read, conversations to get to know each other and photos to share when you both agree.",
     "navigation": "Footer navigation",
     "exploreTitle": "Discover",
     "projectTitle": "The project",
@@ -53,16 +53,16 @@
       "sensitive-data-consent": "Sensitive data consent",
       "location-consent": "Location consent"
     },
-    "statusLabel": "Project status",
+    "statusLabel": "How’s Histae coming along?",
     "status": "iOS and Android app in development",
     "availability": "The initial launch is planned for France. Official links will be published on this website.",
     "rights": "All rights reserved.",
-    "madeFor": "Words first. Connections at your own pace."
+    "madeFor": "Room for what you have to say."
   },
   "transparency": {
-    "eyebrow": "Transparency in practice",
-    "title": "Public code, for anyone to examine.",
-    "intro": "The source code for the Histae API, mobile app and website is available on GitHub. Anyone can study how it works and perform their own security audit of the code.",
+    "eyebrow": "Under the bonnet",
+    "title": "You can read the code too.",
+    "intro": "The app, server and website code is public on GitHub. You can inspect or audit it. Publishing the code does not mean an independent audit has already taken place.",
     "viewCode": "View the code on GitHub",
     "footerLink": "Source code and audits",
     "policy": "Original Histae code is public for inspection and security audits. Reuse, including non-commercial reuse, redistribution and use in another project are prohibited without prior written permission. This is not an open-source license. Third-party components retain their own licenses. External contributions are not accepted.",

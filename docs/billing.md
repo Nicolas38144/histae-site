@@ -48,6 +48,16 @@ is not confirmed, it clears only that formula's key and retries once. Other conf
 failures do not trigger a new purchase automatically. Native subscriptions show their official
 store-management link rather than a second Stripe purchase form.
 
+## Public website prices
+
+Home and Pricing display amounts from `GET /api/web/billing/plans`, the same catalogue used by
+the subscription form. They do not send cookies, load a session or trigger an OTP/payment action.
+Static content and plan links remain available without the API or JavaScript; absent or ambiguous
+offers display a price link instead of a hard-coded fallback. The final Checkout amount is still
+confirmed before payment. App Store and Google Play prices belong to their own purchase flows.
+Changing an API offer no longer requires editing website prices, FAQ amounts or paid structured
+offers. Credit quotas and benefit descriptions remain release-reviewed product content.
+
 ## Configuration
 
 In development, `pnpm dev` proxies the same-origin billing routes to `http://127.0.0.1:8080`.

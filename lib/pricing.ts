@@ -1,6 +1,6 @@
 import type { getTranslations } from "next-intl/server";
 import type { AppMessages } from "../messages";
-import { formatEuro, getCommercialValues, getPlanFeatureIds, planCatalog, type PlanFeatureId, type PlanId } from "./plans";
+import { formatEuro, getPlanFeatureIds, planCatalog, type PlanFeatureId, type PlanId } from "./plans";
 import type { Locale } from "./site-config";
 
 type PricingTranslations = Awaited<ReturnType<typeof getTranslations<"pricing">>>;
@@ -42,7 +42,6 @@ export function getPricingCards(
 
   const features = (planId: PlanId) => getPlanFeatureIds(planId)
     .map((id) => ({ id, label: featureLabels[id] }));
-  const values = getCommercialValues(locale);
 
   return [
     {
@@ -58,8 +57,8 @@ export function getPricingCards(
       id: "monthly",
       ...pricing.plans.monthly,
       featured: false,
-      price: values.monthlyPrice,
-      period: t("billing.monthlyPeriod"),
+      price: t("billing.priceOnCheckout"),
+      period: "",
       billing: t("billing.monthlyBilling"),
       features: features("premium"),
     },
@@ -67,12 +66,9 @@ export function getPricingCards(
       id: "annual",
       ...pricing.plans.annual,
       featured: planCatalog.premium.featured,
-      price: values.annualPrice,
-      period: t("billing.annualPeriod"),
+      price: t("billing.priceOnCheckout"),
+      period: "",
       billing: t("billing.annualBilling"),
-      equivalent: t("billing.monthlyEquivalent", { price: values.annualMonthlyPrice }),
-      saving: t("billing.annualSaving", { amount: values.annualSaving }),
-      badge: t("billing.annualBadge", { percent: values.annualSavingPercent }),
       features: features("premium"),
     },
   ];

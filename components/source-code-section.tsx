@@ -15,11 +15,11 @@ export async function SourceCodeSection({ locale }: { locale: Locale }) {
       <details className="source-reveal">
       <summary>{t("viewCode")}</summary>
       <div className="source-grid">
-        {Object.entries(siteConfig.repositories).map(([id, href]) => (
+        {(Object.keys(siteConfig.repositories) as (keyof typeof siteConfig.repositories)[]).map(id => (
           <article className="source-card" key={id}>
             <h3>{t(`repositories.${id}.title`)}</h3>
             <p>{t(`repositories.${id}.description`)}</p>
-            <a className="text-link" href={href}>
+            <a className="text-link" href={siteConfig.repositories[id]}>
               {t("viewCode")}<span className="visually-hidden"> — {t(`repositories.${id}.title`)}</span>
               <span aria-hidden="true"> ↗</span>
             </a>

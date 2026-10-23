@@ -1,49 +1,49 @@
 {
   "pages": {
     "feature": {
-      "eyebrow": "Funciones",
-      "title": "Cómo toma forma un encuentro.",
-      "intro": "Primero, unas palabras que dan ganas de responder. Después, una conversación y decisiones que se toman entre dos. Así funciona Histae.",
+      "eyebrow": "Dentro de la app",
+      "title": "De leer un perfil a enviar un mensaje.",
+      "intro": "Esto es lo que verás al abrir Histae y lo que ocurre cuando los dos tenéis ganas de hablar.",
       "blocks": {
         "profile": {
-          "title": "Un perfil más allá de la foto",
-          "text": "Nombre, edad, biografía, género, distancia y rasgos permiten descubrir a alguien sin exponer de inmediato su fecha exacta de nacimiento ni su foto."
+          "title": "Algo con lo que empezar una conversación",
+          "text": "Lees su presentación, sus respuestas y sus rasgos de personalidad. Ves su nombre y edad. Su foto sigue oculta hasta que ambos queráis compartirla."
         },
         "preferences": {
-          "title": "Compatibilidad en ambos sentidos",
-          "text": "Los criterios de edad, género buscado y distancia se comprueban para ambas personas, no solo para quien consulta el feed."
+          "title": "Cuentan las preferencias de los dos",
+          "text": "Estar en el rango de edad que busca alguien es un comienzo. Esa persona también tiene que estar en el tuyo. Histae comprueba en ambos sentidos las personas buscadas y la distancia máxima."
         },
         "location": {
           "title": "Una ubicación consentida y temporal",
           "text": "El descubrimiento requiere una posición reciente y un consentimiento específico. La posición queda obsoleta tras una hora y se elimina después de 24 horas sin actualizarse."
         },
         "discovery": {
-          "title": "Un feed más claro",
-          "text": "Los perfiles ya descartados, bloqueados o emparejados se excluyen para concentrar la atención en nuevas posibilidades relevantes."
+          "title": "¿Qué aparece en el feed?",
+          "text": "Una presentación, respuestas, algunos rasgos y una distancia redondeada. No vuelven a proponerse perfiles bloqueados, sobre los que ya has decidido o con los que ya tienes un match."
         },
         "stableDecisions": {
-          "title": "Decisiones estables",
-          "text": "Tu like o tu decisión de pasar se guarda: los perfiles que ya has evaluado dejan de aparecer. Así no vuelves a ver los mismos perfiles al descubrir personas."
+          "title": "¿Ya habías visto ese perfil?",
+          "text": "Tu decisión de pasar o mostrar interés se guarda. No tienes que volver a elegir cada vez que entras."
         },
         "reciprocity": {
-          "title": "El interés debe ser recíproco",
-          "text": "Nadie recibe aviso de un like aislado. El match nace únicamente cuando las dos personas se han elegido."
+          "title": "Tu interés sigue siendo privado",
+          "text": "Un like aislado no envía una notificación. Solo hay match cuando la otra persona también te ha elegido."
         },
         "conversationWindow": {
-          "title": "24 horas para empezar a hablar",
-          "text": "Al crear el match, una primera ventana de 24 horas abre los mensajes sin mostrar inmediatamente las fotos."
+          "title": "Un match y un primer saludo",
+          "text": "Ambos habéis mostrado interés por el perfil del otro. La conversación se abre durante 24 horas, con las fotos todavía ocultas. Vosotros elegís por dónde empezar."
         },
         "continuationWindow": {
           "title": "Otras 24 horas para elegir la continuación",
           "text": "Durante las 24 horas de decisión se pausa el envío y el historial sigue visible. Las decisiones permanecen privadas hasta que ambos aceptan. Un rechazo termina el match inmediatamente; sin dos acuerdos antes del plazo, caduca."
         },
         "photoReveal": {
-          "title": "Revelación de fotos independiente",
-          "text": "Cada persona puede consentir a la revelación. Las fotos aparecen con dos acuerdos, independientemente de la decisión de continuar."
+          "title": "Las fotos se deciden entre los dos",
+          "text": "Podéis seguir hablando con las fotos ocultas. Solo aparecen con el acuerdo de cada uno, separado de la decisión de continuar la conversación."
         },
         "messaging": {
-          "title": "Mensajes vinculados al match",
-          "text": "Los mensajes se fechan, tienen un máximo de 2.000 caracteres y solo el destinatario puede marcarlos como leídos. Un match expirado no admite mensajes nuevos."
+          "title": "Escribir y responder",
+          "text": "Los mensajes admiten hasta 2 000 caracteres. Puedes ver cuándo se han marcado como leídos. Cuando termina un match, ya no puedes enviarle mensajes."
         },
         "continuationCredits": {
           "title": "Una decisión y un coste claros",
@@ -53,54 +53,54 @@
     },
     "safety": {
       "eyebrow": "Seguridad",
-      "title": "Un marco claro para conocerse mejor.",
-      "intro": "La confianza también nace de reglas comprensibles, protecciones técnicas y la posibilidad de actuar cuando algo no está bien.",
+      "title": "Tus límites tienen sitio aquí.",
+      "intro": "Tú eliges qué compartes. Si algo no va bien, las herramientas para actuar están en la app.",
       "blocks": {
         "passwordless": {
           "title": "Proteger el acceso",
-          "text": "El acceso sin contraseña se verifica por teléfono y las sesiones se renuevan de forma segura, con límites contra intentos abusivos."
+          "text": "Recibes un código por SMS para entrar. No hay contraseña que recordar. Los intentos están limitados para reducir los abusos."
         },
         "consents": {
-          "title": "Consentir con claridad",
-          "text": "Las condiciones, el aviso de privacidad, los datos sensibles y la ubicación se presentan por separado. Las decisiones publicitarias también serán independientes: continuar un match no significa aceptar el seguimiento publicitario."
+          "title": "Una decisión para cada uso",
+          "text": "Aceptar las condiciones, leer el aviso de privacidad, autorizar datos sensibles y compartir tu ubicación son pasos distintos. Las preferencias publicitarias también se gestionan por separado: continuar un match no autoriza el seguimiento publicitario."
         },
         "consentWithdrawal": {
-          "title": "Poder cambiar de opinión",
-          "text": "Los consentimientos sensibles son revocables. Retirar el de ubicación elimina la presencia; retirar el de datos sensibles elimina las preferencias asociadas."
+          "title": "Puedes retirar el permiso",
+          "text": "Retirar el permiso de ubicación elimina la posición guardada. Retirar el de datos sensibles borra el sexo y las preferencias correspondientes. Algunas funciones, como las propuestas de perfiles, dejan de estar disponibles."
         },
         "rights": {
-          "title": "Ejercer tus derechos",
-          "text": "Acceso, rectificación, portabilidad, limitación, oposición y supresión cuentan con recorridos específicos y con seguimiento."
+          "title": "Recuperar o borrar tus datos",
+          "text": "Desde tu cuenta puedes solicitar una exportación, correcciones o la eliminación, además de otras peticiones sobre tus datos. Puedes seguir su tramitación en la app."
         }
       }
     },
     "about": {
       "eyebrow": "Nosotros",
-      "title": "Creemos que los encuentros merecen tiempo.",
-      "intro": "Una respuesta que le hace sonreír puede decir mucho. Queremos dar espacio a esa curiosidad antes de descubrir un rostro.",
+      "title": "Por qué las palabras van primero.",
+      "intro": "A veces basta con leer cómo alguien cuenta su día para querer conocerlo. Histae parte de esa posibilidad.",
       "blocks": {
         "promise": {
-          "title": "Una promesa modesta",
-          "text": "No decidimos por las personas. Diseñamos reglas que hacen un encuentro más consciente y recíproco."
+          "title": "Darle una oportunidad a la conversación",
+          "text": "Una foto no cuenta qué te hace reír, qué te apasiona o cómo escuchas. Una presentación y unos mensajes pueden contar un poco más."
         },
         "product": {
-          "title": "Decisiones que cambian la conversación",
-          "text": "Fotos que se revelan entre dos, un interés que debe ser mutuo y una conversación que cada persona elige continuar. Estos detalles dan su ritmo a Histae."
+          "title": "Decisiones que se ven en la app",
+          "text": "Una bio puede ser larga. Las fotos esperan dos acuerdos. Después de los primeros mensajes, cada persona elige si quiere continuar. Estas reglas forman parte de Histae desde el principio."
         },
         "privacy": {
-          "title": "La privacidad desde el diseño",
-          "text": "Minimizar la exposición, separar los consentimientos y permitir el control de los datos son decisiones de producto, no añadidos tardíos."
+          "title": "Permisos que puedes retirar",
+          "text": "Puedes retirar el permiso de ubicación y de datos sensibles desde tu cuenta. Mostrar fotos requiere el acuerdo de los dos, incluso con Premium."
         },
         "community": {
-          "title": "Un espacio para mejorar juntos",
-          "text": "La calidad de una comunidad depende de sus miembros y de las herramientas que les permiten poner límites."
+          "title": "Queda camino por hacer",
+          "text": "La app sigue en preparación. Las capturas de este sitio muestran su interfaz actual con perfiles ficticios. Los enlaces de descarga se publicarán aquí cuando esté disponible."
         }
       }
     },
     "download": {
       "eyebrow": "Lanzamiento",
-      "title": "Histae llega pronto.",
-      "intro": "Estamos preparando la aplicación para iOS y Android. Cuando se publique, encontrará aquí los enlaces a ambas tiendas.",
+      "title": "Todavía no está en las tiendas.",
+      "intro": "Histae está en preparación para iOS y Android, sin fecha de lanzamiento confirmada. Los enlaces de App Store y Google Play se añadirán aquí cuando estén disponibles.",
       "blocks": {
         "availability": {
           "title": "En iOS y Android",
@@ -108,7 +108,7 @@
         },
         "finalization": {
           "title": "Empieza gratis",
-          "text": "Con Free podrás crear tu perfil, descubrir personas compatibles y empezar a conversar. Premium Mensual y Premium Anual ofrecerán las mismas ventajas, con dos períodos de facturación."
+          "text": "Podrás crear tu perfil y empezar a hablar gratis. Premium será opcional, para seguir las conversaciones sin gastar créditos."
         },
         "officialLinks": {
           "title": "Tus enlaces oficiales",

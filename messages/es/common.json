@@ -42,7 +42,7 @@
   },
   "footer": {
     "line": "Histae — dar a un encuentro el tiempo de existir.",
-    "summary": "Una aplicación de citas basada en el tiempo, la reciprocidad y el consentimiento en cada etapa.",
+    "summary": "Perfiles para leer, conversaciones para conoceros y fotos para mostrar cuando ambos queráis.",
     "navigation": "Navegación del pie de página",
     "exploreTitle": "Descubrir",
     "projectTitle": "El proyecto",
@@ -53,16 +53,16 @@
       "sensitive-data-consent": "Consentimiento para datos sensibles",
       "location-consent": "Consentimiento de ubicación"
     },
-    "statusLabel": "Estado del proyecto",
+    "statusLabel": "¿Cómo va Histae?",
     "status": "Aplicación para iOS y Android en preparación",
     "availability": "El primer lanzamiento está previsto en Francia. Los enlaces oficiales se publicarán en este sitio.",
     "rights": "Todos los derechos reservados.",
-    "madeFor": "Las palabras primero. Los encuentros, a su ritmo."
+    "madeFor": "Sitio para lo que tienes que contar."
   },
   "transparency": {
-    "eyebrow": "Transparencia en la práctica",
-    "title": "Código público que cualquiera puede examinar.",
-    "intro": "El código fuente de la API, la aplicación móvil y el sitio de Histae está disponible en GitHub. Cualquiera puede estudiar su funcionamiento y realizar su propia auditoría de seguridad del código.",
+    "eyebrow": "Por dentro",
+    "title": "También puedes leer el código.",
+    "intro": "El código de la app, el servidor y el sitio es público en GitHub. Puedes examinarlo o auditarlo. Publicarlo no significa que ya haya pasado una auditoría independiente.",
     "viewCode": "Ver el código en GitHub",
     "footerLink": "Código fuente y auditorías",
     "policy": "El código original de Histae es público para su consulta y auditorías de seguridad. Se prohíben su reutilización, incluso no comercial, su redistribución y su uso en otro proyecto sin autorización previa por escrito. No es una licencia de código abierto. Los componentes de terceros conservan sus propias licencias. No se aceptan contribuciones externas.",

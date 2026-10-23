@@ -1,89 +1,26 @@
 {
   "home": {
-    "eyebrow": "D’ABORD, UNE CONVERSATION",
-    "title": "Prendre le temps de se rencontrer.",
-    "intro": "Un détail qui fait sourire. Une réponse qui donne envie d’en savoir plus. Ici, les mots passent avant les photos, que vous choisissez de dévoiler à deux.",
-    "primary": "Découvrir le lancement",
-    "secondary": "Comprendre le principe",
-    "principlesTitle": "De la place pour ce qui compte.",
-    "principles": {
-      "time": {
-        "title": "Le temps",
-        "text": "Lire une réponse jusqu’au bout. Trouver ses mots. Laisser une conversation prendre forme."
-      },
-      "reciprocity": {
-        "title": "La réciprocité",
-        "text": "L’envie doit être partagée. Pour commencer à échanger, et pour choisir de continuer."
-      },
-      "respect": {
-        "title": "Le respect",
-        "text": "Pouvoir dire oui, dire non, bloquer ou signaler. Et garder la main sur ce que l’on partage."
-      }
-    },
-    "rhythmEyebrow": "Un rythme plus humain",
-    "rhythmTitle": "Une envie de se parler. Puis de continuer.",
-    "rhythmIntro": "Vous choisissez qui vous intrigue, ce que vous partagez et la suite que vous souhaitez donner. À deux, à chaque étape.",
-    "steps": {
-      "preferences": {
-        "title": "Définir ce qui compte",
-        "text": "Quelques mots sur vous, vos envies de rencontre et ce qui vous ressemble. Pas besoin de jouer un rôle."
-      },
-      "mutualChoice": {
-        "title": "Se choisir vraiment",
-        "text": "Un détail vous interpelle ? Vous pouvez montrer votre intérêt. La conversation ne commence que si l’envie est réciproque."
-      },
-      "conversation": {
-        "title": "Échanger pendant 24 heures",
-        "text": "Un premier bonjour et 24 heures pour échanger, sans photo affichée d’emblée. De quoi laisser les mots faire leur chemin."
-      },
-      "continuation": {
-        "title": "Continuer et révéler ensemble",
-        "text": "Après 24 heures, les messages font une pause. Si vous choisissez tous les deux de continuer, l’échange reprend. Un refus termine la rencontre sans révéler qui a refusé. Montrer vos photos reste un autre choix, toujours à deux."
-      }
-    },
-    "featuresEyebrow": "Les petits détails d’Histae",
-    "featuresTitle": "Pour se découvrir, simplement.",
-    "featuresIntro": "Une présentation qui vous ressemble, des envies qui se rejoignent et la liberté d’avancer à votre rythme.",
-    "features": {
-      "profiles": {
-        "title": "Ce qui vous anime",
-        "text": "Une passion, une réponse, un trait de caractère. Votre profil laisse entrevoir la personne derrière les mots."
-      },
-      "preferences": {
-        "title": "Des envies qui se rejoignent",
-        "text": "Les âges, la distance et les personnes recherchées comptent des deux côtés. Vos préférences et celles de l’autre ont la même place."
-      },
-      "location": {
-        "title": "Quelqu’un près de vous",
-        "text": "Avec votre accord, Histae utilise une position récente pour les rencontres à proximité. Les autres voient une distance arrondie, jamais votre position exacte."
-      },
-      "likes": {
-        "title": "Une curiosité partagée",
-        "text": "Vous avez tous les deux envie d’en savoir plus ? C’est le début d’une rencontre. Un intérêt isolé reste discret."
-      },
-      "matches": {
-        "title": "L’envie de continuer",
-        "text": "Après les premières 24 heures, chacun choisit la suite pendant une nouvelle période de 24 heures. Il faut deux oui pour reprendre la conversation."
-      },
-      "photoReveal": {
-        "title": "Un visage, au bon moment",
-        "text": "Quand vous en avez tous les deux envie, vos photos se dévoilent. Continuer à parler ne vous oblige pas à les montrer."
-      },
-      "messaging": {
-        "title": "Vos mots, votre échange",
-        "text": "Un espace pour écrire, lire et se répondre. Les confirmations de lecture vous indiquent quand vos messages sont marqués comme lus."
-      },
-      "privacy": {
-        "title": "Vos limites ont leur place",
-        "text": "Modifier un consentement, bloquer une personne, signaler un problème ou demander vos données : ces choix restent accessibles depuis votre compte."
-      }
-    },
-    "safetyEyebrow": "Une attention concrète à la sécurité",
-    "safetyTitle": "Le respect ne devrait jamais être optionnel.",
-    "safetyText": "Histae intègre le blocage, le signalement, la modération et des droits directement accessibles. Les choix sensibles, comme la localisation ou les préférences, reposent sur un consentement explicite et révocable. Le code source est public pour permettre à chacun de l’examiner et d’en auditer la sécurité.",
-    "safetyLink": "Voir nos engagements de sécurité",
-    "closingTitle": "Une rencontre à votre rythme.",
-    "closingText": "Histae se prépare à vous accueillir sur iOS et Android. Vous trouverez les liens de téléchargement ici dès le lancement.",
+    "eyebrow": "L’application de rencontre où l’on se lit",
+    "title": "Commencez par ce que vous avez à vous dire.",
+    "intro": "Sur Histae, vous découvrez d’abord une bio, des réponses, une façon de voir les choses. Si l’intérêt est partagé, vous pouvez vous écrire. Les photos viendront quand vous le déciderez tous les deux.",
+    "primary": "Où en est le lancement ?",
+    "secondary": "Comment ça se passe",
+    "readingTitle": "Ce petit détail qui donne envie d’écrire.",
+    "readingText": "Le livre qu’on prête à tout le monde. Une opinion sur les dimanches pluvieux. Un projet dont on parle un peu trop. Un profil peut déjà donner matière à une première conversation, si on lui laisse assez de place.",
+    "readingAfterthought": "C’est pour ça que les bios ont de la place sur Histae. Vous pouvez prendre le temps de les lire.",
+    "conversationTitle": "Vous vous êtes choisis. À vous de faire connaissance.",
+    "conversationText": "Un intérêt réciproque ouvre la conversation pendant 24 heures. Vous pouvez poser une question sur son profil, rebondir sur une réponse ou simplement dire bonjour. Les photos restent cachées tant que vous n’avez pas tous les deux choisi de les montrer.",
+    "pauseTitle": "Et après les premières 24 heures ?",
+    "pauseText": "Les messages font une pause. Vous avez chacun 24 heures pour décider si vous souhaitez continuer. Deux oui rouvrent la conversation. Un non, ou le délai écoulé sans deux oui, termine la rencontre. Personne n’a à justifier son choix.",
+    "conversationLink": "Les détails d’une rencontre",
+    "profileTitle": "Racontez ce qu’on ne devine pas sur une photo.",
+    "profileText": "Vous avez le droit d’écrire plus que trois lignes. Ce qui vous occupe en ce moment, ce que vous aimez partager, ce que vous cherchez : votre présentation peut aller dans le détail.",
+    "profilePrompt": "Une question pour commencer : de quoi pourriez-vous parler pendant des heures ?",
+    "safetyTitle": "Vous pouvez aussi changer d’avis.",
+    "safetyText": "Bloquer quelqu’un, signaler un échange ou retirer votre accord à la localisation se fait depuis l’app. Poursuivre une conversation ne vous oblige jamais à montrer vos photos.",
+    "safetyLink": "Vos choix et vos données",
+    "closingTitle": "Histae se prépare à vous accueillir.",
+    "closingText": "L’application est en préparation pour iOS et Android. Les liens officiels seront ici dès sa publication.",
     "screens": {
       "caption": "Captures de l’application · profils et échanges fictifs.",
       "feed": "Le feed Histae affiche Léa, 27 ans, et une longue présentation personnelle, sans photo.",

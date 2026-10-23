@@ -37,20 +37,11 @@ export function formatEuro(cents: number, locale: Locale): string {
   }).format(cents / 100);
 }
 
-export function priceAmount(cents: number): string {
-  return String(cents / 100);
-}
-
-export function getCommercialValues(locale: Locale) {
+export function getCommercialValues() {
   return {
     freeContinuations: planCatalog.free.successfulContinuationsPerWeek,
     freeCredits: planCatalog.free.weeklyIncludedCredits,
     advertisingStock: planCatalog.free.advertisingCreditStockLimit,
     weeklyMaximum: planCatalog.free.successfulContinuationsPerWeek,
-    monthlyPrice: formatEuro(planCatalog.premium.monthlyPriceCents, locale),
-    annualPrice: formatEuro(planCatalog.premium.annualPriceCents, locale),
-    annualMonthlyPrice: formatEuro(planCatalog.premium.annualPriceCents / 12, locale),
-    annualSaving: formatEuro(planCatalog.premium.monthlyPriceCents * 12 - planCatalog.premium.annualPriceCents, locale),
-    annualSavingPercent: Math.round((1 - planCatalog.premium.annualPriceCents / (planCatalog.premium.monthlyPriceCents * 12)) * 100),
   };
 }

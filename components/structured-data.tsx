@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { absoluteLocalizedUrl } from "../lib/metadata";
-import { planCatalog, priceAmount } from "../lib/plans";
+import { planCatalog } from "../lib/plans";
 import type { Locale } from "../lib/site-config";
 import { getMessagesForLocale } from "../messages";
 
@@ -31,21 +31,7 @@ export async function StructuredData({ locale }: { locale: Locale }) {
           {
             "@type": "Offer",
             name: pricing.plans.free.name,
-            price: priceAmount(planCatalog.free.priceCents),
-            priceCurrency: "EUR",
-            url: absoluteLocalizedUrl(locale, "pricing"),
-          },
-          {
-            "@type": "Offer",
-            name: pricing.plans.monthly.name,
-            price: priceAmount(planCatalog.premium.monthlyPriceCents),
-            priceCurrency: "EUR",
-            url: absoluteLocalizedUrl(locale, "pricing"),
-          },
-          {
-            "@type": "Offer",
-            name: pricing.plans.annual.name,
-            price: priceAmount(planCatalog.premium.annualPriceCents),
+            price: String(planCatalog.free.priceCents / 100),
             priceCurrency: "EUR",
             url: absoluteLocalizedUrl(locale, "pricing"),
           },

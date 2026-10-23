@@ -1,8 +1,8 @@
 {
   "faq": {
     "eyebrow": "Preguntas frecuentes",
-    "title": "Las respuestas esenciales sobre Histae.",
-    "intro": "Disponibilidad, funcionamiento de los encuentros, precios y privacidad: esto es lo que debes saber antes del lanzamiento.",
+    "title": "Quizá te lo estés preguntando.",
+    "intro": "Las fotos, las primeras 24 horas, los créditos: aquí tienes las respuestas, con enlaces si quieres más detalles.",
     "items": {
       "availability": {
         "question": "¿Cuándo y dónde estará disponible Histae?",
@@ -16,7 +16,7 @@
       },
       "discovery": {
         "question": "¿Cómo se seleccionan los perfiles sugeridos?",
-        "answer": "El descubrimiento comprueba en ambos sentidos las edades, a quién busca cada persona y la distancia máxima. Utiliza una ubicación reciente y consentida, y excluye perfiles ya evaluados, bloqueados o emparejados.",
+        "answer": "Histae comprueba las preferencias de ambos: edades, personas buscadas y distancia máxima deben encajar para los dos. Las propuestas usan tu posición reciente con tu permiso. No se proponen perfiles bloqueados, ya evaluados o con los que ya tienes un match.",
         "linkLabel": "Descubrir las funciones"
       },
       "match": {
@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "¿Qué diferencia hay entre Free y Premium?",
-        "answer": "Free permite hacer matches y empezar a conversar gratis. Tienes {freeCredits} créditos gratuitos por semana para prolongar conversaciones, con un máximo de {weeklyMaximum} prolongaciones confirmadas. Un vídeo opcional da 1 crédito adicional, con un saldo máximo de {advertisingStock}. Premium Mensual cuesta {monthlyPrice} al mes; Premium Anual cuesta {annualPrice} en un único pago anual. Ambos incluyen las mismas ventajas: sin créditos que consumir ni anuncios.",
+        "answer": "Puedes crear un perfil, hacer un match y empezar a hablar gratis. Free incluye {freeCredits} créditos semanales para continuar conversaciones, hasta {weeklyMaximum} prolongaciones. Un vídeo opcional aporta un crédito, con hasta {advertisingStock} créditos publicitarios en reserva. Premium elimina el límite y la publicidad. Los precios actuales están en Tarifas y se confirman antes del pago.",
         "linkLabel": "Comparar precios"
       },
       "location": {
@@ -41,7 +41,7 @@
       },
       "moderation": {
         "question": "¿Se puede bloquear o denunciar a una persona?",
-        "answer": "Sí. Un bloqueo corta el vínculo, cierra los matches relacionados e impide que se vuelvan a crear mientras siga activo. Una denuncia puede incluir el motivo y, cuando corresponda, el match relacionado.",
+        "answer": "Sí, desde la app. Bloquear a alguien termina vuestros matches e impide otro mientras siga activo el bloqueo. También puedes denunciar a la persona y explicar lo ocurrido.",
         "linkLabel": "Ver las protecciones disponibles"
       },
       "privacy": {

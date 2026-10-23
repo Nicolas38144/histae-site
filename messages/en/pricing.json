@@ -1,24 +1,24 @@
 {
   "pricing": {
-    "eyebrow": "Simple pricing",
-    "title": "Your pace. A fair price.",
-    "intro": "Discover Histae for free, or choose Premium to keep conversations going without credit limits or ads. Consent stays at the heart of every connection.",
-    "comparisonTitle": "One free plan, two Premium options.",
-    "comparisonIntro": "Premium Monthly and Premium Annual include the same benefits. Only the billing period changes.",
+    "eyebrow": "Free and Premium",
+    "title": "You can start for free.",
+    "intro": "Creating a profile, matching and exchanging your first messages don’t need a subscription. Premium lets you continue conversations without a credit quota or advertising.",
+    "comparisonTitle": "What does Premium change?",
+    "comparisonIntro": "Monthly and annual have the same benefits. Pick the billing period that works for you.",
     "notice": "Premium is paid from the start of your subscription. The payment amount and date are shown before confirmation.",
     "cta": "See full pricing",
     "plans": {
       "free": {
         "name": "Free",
-        "description": "Discover profiles, make matches and start conversations for free."
+        "description": "Get to know people and choose the conversations you’d like to keep going."
       },
       "monthly": {
         "name": "Premium Monthly",
-        "description": "Every Premium benefit, with a subscription that renews each month."
+        "description": "Keep your conversations going, with a payment each month."
       },
       "annual": {
         "name": "Premium Annual",
-        "description": "The same Premium benefits for a year, at a better price."
+        "description": "The same Premium, paid in one go for twelve months."
       }
     },
     "features": {
@@ -39,7 +39,11 @@
       "annualBilling": "Billed in one payment for 12 months",
       "monthlyEquivalent": "Equivalent to {price} per month, billed yearly",
       "annualSaving": "Save {amount} a year compared with monthly billing",
-      "annualBadge": "Save {percent}% yearly"
+      "annualBadge": "Save {percent}% yearly",
+      "priceOnCheckout": "See price",
+      "pricesLoading": "Website prices are loading. You can also check them before payment.",
+      "pricesUnavailable": "Prices aren’t available here right now. Follow either plan’s link to check its price before paying.",
+      "pricesLive": "Website prices from the payment catalogue. App Store and Google Play prices are shown in the app."
     },
     "howItWorks": {
       "eyebrow": "The same approach on every plan",
@@ -62,7 +66,7 @@
     },
     "credits": {
       "eyebrow": "Understanding Free",
-      "title": "Your credits, explained.",
+      "title": "What’s a credit for?",
       "intro": "One credit extends one conversation. Each person uses their own balance: one person’s subscription does not replace the other’s credit.",
       "items": {
         "weekly": {
@@ -88,11 +92,11 @@
     "questions": {
       "payment": {
         "title": "When is the first payment due?",
-        "text": "Payment is requested when you subscribe: {monthlyPrice} for Premium Monthly, then every month, or {annualPrice} in one payment for Premium Annual, then every year. The amount and terms are shown before confirmation."
+        "text": "The first payment is due when you subscribe. Monthly then renews each month; annual renews each year. The exact amount appears in the offers above and on the payment page before you confirm. In-app prices are set by the app’s store."
       },
       "annual": {
         "title": "Is the annual subscription paid monthly?",
-        "text": "No. Premium Annual costs {annualPrice} in one payment for 12 months, then renews yearly. The {annualMonthlyPrice} monthly equivalent is only a way to compare plans. You save {annualSaving} a year compared with 12 monthly payments of {monthlyPrice}."
+        "text": "No, the twelve months are paid in one go. A monthly equivalent or saving shown in the offers above compares website prices; it is not a monthly payment."
       },
       "renewal": {
         "title": "Can I stop the renewal?",
@@ -103,7 +107,6 @@
         "text": "You must still both agree to continue. The Premium participant uses no credits; the Free participant uses their own and remains limited to {weeklyMaximum} extended conversations each week."
       }
     },
-    "launchNotice": "The iOS and Android app is being prepared. Subscriptions will be chosen in the app; official links will be published on the launch page.",
     "launchCta": "Check app availability",
     "faqCta": "All frequently asked questions"
   }

@@ -1,8 +1,8 @@
 {
   "faq": {
     "eyebrow": "Questions fréquentes",
-    "title": "Les réponses essentielles sur Histae.",
-    "intro": "Disponibilité, fonctionnement des rencontres, tarifs et vie privée : voici ce qu’il faut savoir avant le lancement.",
+    "title": "Vous vous posez peut-être la question.",
+    "intro": "Les photos, les premières 24 heures, les crédits : voici les réponses, avec un lien pour aller plus loin si besoin.",
     "items": {
       "availability": {
         "question": "Quand et où Histae sera-t-elle disponible ?",
@@ -16,7 +16,7 @@
       },
       "discovery": {
         "question": "Comment les profils proposés sont-ils sélectionnés ?",
-        "answer": "La découverte vérifie dans les deux sens les âges, les personnes recherchées et la distance maximale. Elle utilise une localisation récente et consentie, puis exclut les profils déjà évalués, bloqués ou appariés.",
+        "answer": "Histae vérifie vos préférences et celles de l’autre personne : âges, personnes recherchées et distance maximale doivent convenir aux deux. Les propositions utilisent votre position récente, avec votre accord. Un profil bloqué, déjà évalué ou déjà lié à vous par un match n’est plus proposé.",
         "linkLabel": "Découvrir les fonctionnalités"
       },
       "match": {
@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "Quelle différence entre Free et Premium ?",
-        "answer": "Free permet de créer des matchs et de commencer à discuter gratuitement. Vous disposez de {freeCredits} crédits gratuits par semaine pour prolonger vos conversations, avec un maximum de {weeklyMaximum} prolongations confirmées. Une vidéo facultative donne 1 crédit supplémentaire, avec un stock de {advertisingStock} maximum. Premium Mensuel coûte {monthlyPrice} par mois ; Premium Annuel coûte {annualPrice} en une fois par an. Les deux offrent les mêmes avantages : aucun crédit à consommer et aucune publicité.",
+        "answer": "Vous pouvez créer un profil, faire un match et commencer à discuter gratuitement. Free inclut {freeCredits} crédits par semaine pour continuer vos conversations, avec un maximum de {weeklyMaximum} prolongations. Une vidéo facultative rapporte un crédit, avec jusqu’à {advertisingStock} crédits publicitaires en réserve. Premium enlève le quota et la publicité. Ses tarifs à jour sont sur la page Tarifs et sont confirmés avant le paiement.",
         "linkLabel": "Comparer les tarifs"
       },
       "location": {
@@ -41,7 +41,7 @@
       },
       "moderation": {
         "question": "Peut-on bloquer ou signaler une personne ?",
-        "answer": "Oui. Un blocage coupe le lien, clôt les matchs concernés et empêche leur recréation tant qu’il reste actif. Un signalement peut préciser le motif et, lorsqu’il existe, le match concerné.",
+        "answer": "Oui, depuis l’app. Bloquer quelqu’un met fin à vos matchs et empêche une nouvelle rencontre tant que le blocage est actif. Vous pouvez aussi signaler la personne en indiquant ce qui s’est passé.",
         "linkLabel": "Voir les protections disponibles"
       },
       "privacy": {

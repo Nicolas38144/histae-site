@@ -35,7 +35,8 @@ Next.js App Router, React, TypeScript and next-intl generate a static `out/` dir
 Caddy serves it in production; there is no Next.js production server.
 Subscription requests reach the API through a same-origin reverse proxy.
 
-`config/site.json` defines locales, public routes, the marketing catalogue and legal document mappings.
+`config/site.json` defines locales, public routes, feature/credit descriptions and legal document mappings.
+Public Premium prices are loaded from the same API catalogue as Checkout; there is no second price list in the site.
 `messages/` contains localized interface copy. Stripe credentials and account data belong to the API.
 
 ## Checks

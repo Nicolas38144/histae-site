@@ -1,24 +1,24 @@
 {
   "pricing": {
-    "eyebrow": "Des tarifs simples",
-    "title": "À votre rythme. Au prix juste.",
-    "intro": "Découvrez Histae gratuitement, ou choisissez Premium pour poursuivre vos conversations sans limite de crédits et sans publicité. Le consentement reste au cœur de chaque rencontre.",
-    "comparisonTitle": "Une offre gratuite, deux formules Premium.",
-    "comparisonIntro": "Premium Mensuel et Premium Annuel donnent accès aux mêmes avantages. Seule la durée de facturation change.",
+    "eyebrow": "Gratuit et Premium",
+    "title": "Vous pouvez commencer gratuitement.",
+    "intro": "Créer un profil, faire un match et échanger les premiers messages ne demande pas d’abonnement. Premium permet de poursuivre les conversations sans quota de crédits et sans publicité.",
+    "comparisonTitle": "Que change Premium ?",
+    "comparisonIntro": "Le mensuel et l’annuel donnent les mêmes avantages. Choisissez surtout la durée qui vous convient.",
     "notice": "Premium est payant dès la souscription. Le montant et la date du paiement sont présentés avant confirmation.",
     "cta": "Voir tous les détails",
     "plans": {
       "free": {
         "name": "Free",
-        "description": "Pour découvrir des profils, faire des matchs et commencer à échanger gratuitement."
+        "description": "Pour faire connaissance et choisir les conversations que vous souhaitez continuer."
       },
       "monthly": {
         "name": "Premium Mensuel",
-        "description": "Tous les avantages Premium, avec un abonnement renouvelé chaque mois."
+        "description": "Pour continuer vos conversations, avec un paiement chaque mois."
       },
       "annual": {
         "name": "Premium Annuel",
-        "description": "Les mêmes avantages Premium pour une année, à un tarif plus avantageux."
+        "description": "Le même Premium, payé en une fois pour douze mois."
       }
     },
     "features": {
@@ -39,7 +39,11 @@
       "annualBilling": "Facturé en une fois pour 12 mois",
       "monthlyEquivalent": "Soit {price} par mois, facturés à l’année",
       "annualSaving": "{amount} économisés par an par rapport au mensuel",
-      "annualBadge": "−{percent} % sur l’année"
+      "annualBadge": "−{percent} % sur l’année",
+      "priceOnCheckout": "Voir le prix",
+      "pricesLoading": "Les tarifs du site se chargent. Vous pouvez aussi les consulter avant le paiement.",
+      "pricesUnavailable": "Les tarifs ne sont pas disponibles ici pour le moment. Le lien de chaque formule permet de les consulter avant de payer.",
+      "pricesLive": "Tarifs du site, issus du catalogue de paiement. Les prix de l’App Store et de Google Play sont affichés dans l’app."
     },
     "howItWorks": {
       "eyebrow": "Le même principe pour toutes les offres",
@@ -62,7 +66,7 @@
     },
     "credits": {
       "eyebrow": "Comprendre Free",
-      "title": "Vos crédits, simplement.",
+      "title": "À quoi sert un crédit ?",
       "intro": "Un crédit permet de prolonger une conversation. Chaque personne utilise son propre solde : l’abonnement de l’une ne remplace pas le crédit de l’autre.",
       "items": {
         "weekly": {
@@ -88,11 +92,11 @@
     "questions": {
       "payment": {
         "title": "Quand a lieu le premier paiement ?",
-        "text": "Le paiement est demandé à la souscription : {monthlyPrice} pour Premium Mensuel, puis chaque mois, ou {annualPrice} en une fois pour Premium Annuel, puis chaque année. Le montant et les conditions sont affichés avant confirmation."
+        "text": "Le premier paiement a lieu à la souscription. Le mensuel est ensuite renouvelé chaque mois, l’annuel chaque année. Le montant exact figure dans les offres ci-dessus puis sur la page de paiement, avant votre confirmation. Les prix dans l’app sont ceux de son store."
       },
       "annual": {
         "title": "L’abonnement annuel est-il payé chaque mois ?",
-        "text": "Non. Premium Annuel est facturé {annualPrice} en une fois pour 12 mois, puis renouvelé chaque année. L’équivalent de {annualMonthlyPrice} par mois sert uniquement à comparer les offres. Vous économisez {annualSaving} par an par rapport à 12 mensualités de {monthlyPrice}."
+        "text": "Non, les douze mois sont payés en une fois. Si un équivalent mensuel ou une économie s’affiche dans les offres ci-dessus, il sert à comparer les prix du site ; ce n’est pas un paiement mensuel."
       },
       "renewal": {
         "title": "Peut-on arrêter le renouvellement ?",
@@ -103,7 +107,6 @@
         "text": "Vous devez toujours accepter tous les deux de continuer. La personne Premium ne consomme pas de crédit ; la personne Free utilise le sien et reste soumise à la limite de {weeklyMaximum} conversations prolongées par semaine."
       }
     },
-    "launchNotice": "L’application iOS et Android est en préparation. Les abonnements se choisiront dans l’application ; les liens officiels seront publiés sur la page de lancement.",
     "launchCta": "Voir la disponibilité de l’application",
     "faqCta": "Toutes les questions fréquentes"
   }

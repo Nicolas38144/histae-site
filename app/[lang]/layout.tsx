@@ -33,7 +33,7 @@ export default async function LocaleLayout({ children, params }: Readonly<{ chil
   if (!isLocale(lang)) notFound();
   setRequestLocale(lang);
   return (
-    <html lang={lang}>
+    <html lang={lang} data-scroll-behavior="smooth">
       <body>
         <PageShell locale={lang}>{children}</PageShell>
       </body>

@@ -1,4 +1,5 @@
-import { mkdir } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -8,14 +9,18 @@ const require = createRequire(import.meta.url);
 const sharp = createRequire(require.resolve('next/package.json'))('sharp');
 const input = resolve(process.argv[2] ?? resolve(root, '../histae-app/build/previews/website'));
 let bytes = 0;
+const versions = {};
 for (const locale of ['fr', 'en', 'es', 'it']) {
   const output = resolve(root, 'public/images/app', locale);
+  versions[locale] = {};
   await mkdir(output, { recursive: true });
   for (const screen of ['feed', 'profile', 'chat', 'credits', 'privacy']) {
     const image = await sharp(resolve(input, locale, `${screen}.png`))
       .webp({ quality: 88, effort: 6 })
       .toFile(resolve(output, `${screen}.webp`));
     bytes += image.size;
+    versions[locale][screen] = createHash('sha256').update(await readFile(resolve(output, `${screen}.webp`))).digest('hex').slice(0, 12);
   }
 }
+await writeFile(resolve(root, 'config/app-screenshots.json'), JSON.stringify(versions, null, 2) + '\n');
 console.log(`Exported 20 localized app screenshots (${Math.round(bytes / 1024)} KiB).`);

@@ -42,7 +42,7 @@
   },
   "footer": {
     "line": "Histae — prendre le temps de se rencontrer.",
-    "summary": "Une application de rencontre fondée sur le temps, la réciprocité et le consentement à chaque étape.",
+    "summary": "Des profils à lire, des conversations pour se connaître et des photos à dévoiler à deux.",
     "navigation": "Navigation du pied de page",
     "exploreTitle": "Découvrir",
     "projectTitle": "Le projet",
@@ -53,16 +53,16 @@
       "sensitive-data-consent": "Consentement aux données sensibles",
       "location-consent": "Consentement à la localisation"
     },
-    "statusLabel": "Statut du projet",
+    "statusLabel": "Où en est Histae ?",
     "status": "Application iOS et Android en préparation",
     "availability": "Un premier lancement est prévu en France. Les liens officiels seront publiés sur ce site.",
     "rights": "Tous droits réservés.",
-    "madeFor": "Les mots d’abord. Les rencontres, à votre rythme."
+    "madeFor": "Une place pour ce que vous avez à raconter."
   },
   "transparency": {
-    "eyebrow": "La transparence, concrètement",
-    "title": "Du code public, que chacun peut examiner.",
-    "intro": "Le code source de l’API, de l’application mobile et du site Histae est consultable sur GitHub. Chacun peut étudier son fonctionnement et réaliser son propre audit de sécurité du code.",
+    "eyebrow": "Regarder sous le capot",
+    "title": "Vous pouvez lire le code, aussi.",
+    "intro": "Le code de l’app, du serveur et du site est public sur GitHub. Vous pouvez examiner ce qu’il fait ou l’auditer. Sa publication ne signifie pas qu’un audit indépendant a déjà été réalisé.",
     "viewCode": "Voir le code sur GitHub",
     "footerLink": "Code source et audits",
     "policy": "Le code original Histae est public pour la consultation et les audits de sécurité. Sa réutilisation, même non commerciale, sa redistribution et son utilisation dans un autre projet sont interdites sans autorisation écrite préalable. Ce n’est pas une licence open source. Les composants tiers conservent leurs propres licences. Les contributions externes ne sont pas acceptées.",

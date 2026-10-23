@@ -102,8 +102,6 @@
       "advertisingCreditStockLimit": 3
     },
     "premium": {
-      "monthlyPriceCents": 500,
-      "annualPriceCents": 4800,
       "featured": true,
       "features": [
         "messaging",
