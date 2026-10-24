@@ -16,9 +16,3 @@ You may refuse. Your account may remain open, but discovery and the features tha
 You may withdraw this consent in the app's consent settings. The API then deletes the sex and preferences concerned and stops using them for new discoveries. Withdrawal does not retroactively make information already received, copied or captured by other users invisible. Evidence of choices and withdrawals may be retained for the period indicated in the Privacy Policy.
 
 For recipients, retention periods and the exercise of your rights, see the Privacy Policy. Questions: Validation in progress.
-
-## Proposed wording for the choice checkbox in the app
-
-> I explicitly agree that Histae may process my declared sex and my preferences regarding the people I am looking for to suggest compatible encounters, as described in this document. I understand that I can withdraw this agreement at any time and that discovery will then no longer be available.
-
-The checkbox must be independent and not pre-ticked. **Validation in progress.** exact wording, classification of the data under GDPR Article 9 and the complete legal basis before publication.

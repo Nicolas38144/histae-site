@@ -12,9 +12,3 @@ L’API conserva l’ultima posizione trasmessa, non una cronologia degli sposta
 L’autorizzazione alla localizzazione concessa nelle impostazioni del telefono è distinta da questo consenso. Potete modificarla nel sistema operativo; l’applicazione deve anche raccogliere la vostra scelta nel proprio percorso. Questo consenso non copre alcun utilizzo pubblicitario della posizione.
 
 Per i destinatari, i vostri diritti e gli altri tempi di conservazione, consultate l’Informativa sulla privacy. Domande: In corso di validazione.
-
-## Testo proposto per la casella di scelta nell’applicazione
-
-> Acconsento all’utilizzo da parte di Histae della posizione che trasmetto per calcolare le distanze e propormi profili compatibili. So che posso revocare questo consenso in qualsiasi momento e che la scoperta richiederà quindi un nuovo consenso e una nuova posizione.
-
-La casella deve essere indipendente e non preselezionata. **In corso di validazione.** precisione minima necessaria, momento della richiesta e corrispondenza con le autorizzazioni effettivamente utilizzate dalle applicazioni mobili.

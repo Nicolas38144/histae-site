@@ -12,9 +12,3 @@ The API retains the last location transmitted, rather than a travel history. Thi
 The location permission granted in your phone's settings is separate from this consent. You can change it in your operating system; the app must also collect your choice through its own process. This agreement does not cover any advertising use of the location.
 
 For recipients, your rights and other retention periods, see the Privacy Policy. Questions: Validation in progress.
-
-## Proposed wording for the choice checkbox in the app
-
-> I agree that Histae may use the location I transmit to calculate distances and suggest compatible profiles. I understand that I can withdraw this agreement at any time and that discovery will then require renewed agreement and a new location.
-
-The checkbox must be independent and not pre-ticked. **Validation in progress.** minimum accuracy necessary, timing of the request and consistency with the permissions actually used by the mobile apps.

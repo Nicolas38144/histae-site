@@ -12,9 +12,3 @@ L’API conserve la dernière position transmise, et non un historique de trajet
 L’autorisation de localisation donnée dans les réglages de votre téléphone est distincte de ce consentement. Vous pouvez la modifier dans votre système d’exploitation ; l’application doit aussi recueillir votre choix dans son propre parcours. Aucune utilisation publicitaire de la position n’est couverte par cet accord.
 
 Pour les destinataires, vos droits et les autres durées de conservation, consultez la Politique de confidentialité. Questions : En cours de validation.
-
-## Libellé proposé pour la case de choix dans l’application
-
-> J’accepte que Histae utilise la position que je transmets pour calculer des distances et me proposer des profils compatibles. Je sais que je peux retirer cet accord à tout moment et que la découverte nécessitera alors un nouvel accord et une nouvelle position.
-
-La case doit être indépendante et non précochée. **En cours de validation.** précision minimale nécessaire, moment de la demande et concordance avec les permissions réellement utilisées par les applications mobiles.
