@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { ProductDemo } from "./product-demo";
+import { ProfileWritingGuide } from "./profile-writing-guide";
 import { createTranslator } from "next-intl";
 import { getCommercialValues } from "../lib/plans";
 import { getTranslations } from "next-intl/server";
@@ -47,6 +49,8 @@ export async function InformationPage({ locale, pageName }: {
         <p className="eyebrow">{page.eyebrow}</p><h1 id="page-title">{page.title}</h1><p>{page.intro}</p>
       </section>
       {pageName === "feature" ? <>
+        <ProductDemo copy={messages.discovery} />
+        <ProfileWritingGuide copy={messages.discovery} />
         {story("feed", "profile", ["preferences"], ["discovery", "location", "stableDecisions"])}
         {story("chat", "conversationWindow", ["reciprocity", "photoReveal"], ["continuationWindow", "messaging"], true)}
         <section className="shell credits-invitation">

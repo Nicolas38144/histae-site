@@ -17,7 +17,7 @@ export async function HomePage({ locale }: { locale: Locale }) {
           <p className="hero-intro">{t("home.intro")}</p>
           <div className="hero-actions">
             <Link className="button button-primary" href={localizedHref(locale, "download")}>{t("home.primary")}</Link>
-            <Link className="text-link" href={localizedHref(locale, "feature")}>{t("home.secondary")}<span aria-hidden="true"> →</span></Link>
+            <Link className="text-link" href={`${localizedHref(locale, "feature")}#demo`}>{t("discovery.try")}<span aria-hidden="true"> →</span></Link>
           </div>
         </div>
         <AppScreenshot locale={locale} screen="feed" priority />

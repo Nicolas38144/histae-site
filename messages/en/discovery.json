@@ -1,0 +1,79 @@
+{
+  "discovery": {
+    "title": "Take a little time to get acquainted.",
+    "intro": "Try a short Histae journey at your own pace.",
+    "fiction": "Fictional demo — no real account or messages.",
+    "steps": [
+      "The profile",
+      "The conversation",
+      "The photos"
+    ],
+    "name": "Camille, 29",
+    "bio": "I collect half-filled notebooks, little cinema addresses and recipes I promise to make again. On Sundays I often set off for a walk with no particular plan. Sometimes I come back with bread, a second-hand book and none of the things I originally meant to get. I like people who tell the small details: something they noticed on the train, a memory a song brought back, their latest slightly unlikely idea.\n\nI’m quiet at first, then I ask a lot of questions. I’d like to meet someone to cook with, explore a neighbourhood and keep talking long after dessert. We don’t have to love all the same things. What matters to me is being able to say what we care about and laugh at our little awkward moments. What place makes you want to slow down?",
+    "chatIntro": "In this example, both people liked each other’s profile and start talking.",
+    "chat": [
+      "Your Sunday story sounds familiar. What book did you find?",
+      "A travel journal with pencil notes. Now I want to visit the places it mentions.",
+      "We could start with a coffee and compare our finds."
+    ],
+    "photoIntro": "Continuing a conversation and sharing photos are separate choices. Try giving both permissions below.",
+    "mine": "I want to share my photos",
+    "theirs": "Camille also agrees (simulation)",
+    "waiting": "Photos stay private until both people agree.",
+    "revealed": "Both people agree: the photos can be revealed.",
+    "portrait": "Illustrated portrait for the demo",
+    "next": "Keep exploring",
+    "restart": "Start again",
+    "try": "Try the journey",
+    "guideTitle": "What could you say about yourself?",
+    "guideIntro": "A bio can take up space. Describe a moment, a habit or a wish: it gives someone a real starting point.",
+    "tips": [
+      {
+        "title": "An everyday detail",
+        "text": "Instead of “I like travelling”, describe a place you keep returning to, how you prepare for a trip or someone you still remember meeting."
+      },
+      {
+        "title": "Something you would like to share",
+        "text": "Wednesday dinner, a long walk, an evening listening to records: say what you would enjoy doing together, in your own words."
+      },
+      {
+        "title": "A question you care about",
+        "text": "End with something you would really like to discuss. For example: “What small tradition would you enjoy starting together?”"
+      }
+    ],
+    "guideEnd": "Read your words aloud. Keep what sounds like you, including the simple sentences. Your profile doesn’t need to be a performance.",
+    "search": "Search for an answer",
+    "category": "Topic",
+    "categories": {
+      "all": "All topics",
+      "start": "Getting started",
+      "meeting": "Connections and photos",
+      "billing": "Subscription",
+      "privacy": "Safety and privacy"
+    },
+    "results": "{count} answer(s)",
+    "empty": "No matching answers. Try another word or topic.",
+    "clear": "Clear filters",
+    "helpTitle": "Where did you subscribe?",
+    "helpIntro": "Your subscription is managed where you purchased it, even if you use Histae on another device.",
+    "restore": "Restore purchases looks for a subscription you already bought in the store. It does not create a new purchase.",
+    "helpNote": "Not sure? Your payment receipt identifies the seller. Deleting the app does not cancel your subscription.",
+    "channels": {
+      "stripe": {
+        "label": "On the website",
+        "text": "Sign in to My subscription on this website, then open Stripe subscription management to view invoices or cancel renewal. Website purchases are not restored through a store button: sign back in to your Histae account.",
+        "action": "Open my subscription"
+      },
+      "google": {
+        "label": "On Android",
+        "text": "Open Google Play with the account used for the purchase, then Payments & subscriptions → Subscriptions → Histae to manage renewal. After reinstalling, use Restore purchases in Histae with the same Google and Histae accounts.",
+        "action": "Open Google Play"
+      },
+      "apple": {
+        "label": "On iPhone",
+        "text": "In iPhone Settings, open your Apple Account → Subscriptions → Histae to manage renewal. After reinstalling, use Restore purchases in Histae with the same Apple and Histae accounts.",
+        "action": "Open Apple subscriptions"
+      }
+    }
+  }
+}

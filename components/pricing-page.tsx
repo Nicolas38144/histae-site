@@ -1,5 +1,6 @@
 import { subscriptionHref } from "../lib/billing/navigation";
 import Link from "next/link";
+import { SubscriptionHelp } from "./subscription-help";
 import { getTranslations } from "next-intl/server";
 import { getCommercialValues } from "../lib/plans";
 import { localizedHref, type Locale } from "../lib/site-config";
@@ -74,6 +75,7 @@ export async function PricingPage({ locale }: { locale: Locale }) {
           ))}
         </div>
       </section>
+      <SubscriptionHelp locale={locale} copy={getMessagesForLocale(locale).discovery} />
       <section className="shell pricing-checkout-closing" aria-labelledby="subscription-title">
         <div className="pricing-checkout-panel">
           <div className="pricing-checkout-copy">

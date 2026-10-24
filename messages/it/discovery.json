@@ -1,0 +1,79 @@
+{
+  "discovery": {
+    "title": "Prendetevi il tempo di conoscervi.",
+    "intro": "Prova un breve percorso Histae, al tuo ritmo.",
+    "fiction": "Dimostrazione immaginaria: nessun account o messaggio reale.",
+    "steps": [
+      "Il profilo",
+      "La conversazione",
+      "Le foto"
+    ],
+    "name": "Camille, 29 anni",
+    "bio": "Colleziono quaderni riempiti a metà, indirizzi di piccoli cinema e ricette che prometto di rifare. La domenica esco spesso a camminare senza un programma preciso. A volte torno con il pane, un libro usato e nessuna delle cose che volevo comprare. Mi piacciono le persone che raccontano i dettagli: qualcosa notato in metropolitana, il ricordo risvegliato da una canzone, la loro ultima idea un po’ improbabile.\n\nAll’inizio parlo piano, poi faccio tante domande. Vorrei conoscere qualcuno con cui cucinare, scoprire un quartiere e continuare a parlare molto dopo il dolce. Non dobbiamo amare tutte le stesse cose. Mi interessa poter dire ciò che conta per noi e ridere dei nostri piccoli momenti di imbarazzo. Quale posto ti fa venire voglia di rallentare?",
+    "chatIntro": "In questo esempio, entrambe le persone hanno apprezzato il profilo dell’altra e iniziano a parlare.",
+    "chat": [
+      "Mi riconosco nella tua domenica. Che libro hai trovato?",
+      "Un diario di viaggio con appunti a matita. Ora vorrei visitare i luoghi che racconta.",
+      "Potremmo iniziare con un caffè e confrontare le nostre scoperte."
+    ],
+    "photoIntro": "Continuare la conversazione e mostrare le foto sono scelte separate. Prova entrambi i consensi qui sotto.",
+    "mine": "Voglio condividere le mie foto",
+    "theirs": "Anche Camille acconsente (simulazione)",
+    "waiting": "Le foto restano private finché entrambe le persone non acconsentono.",
+    "revealed": "Entrambe le persone hanno acconsentito: le foto possono essere mostrate.",
+    "portrait": "Ritratto illustrato per la dimostrazione",
+    "next": "Continua a scoprire",
+    "restart": "Ricomincia",
+    "try": "Prova il percorso",
+    "guideTitle": "Che cosa puoi raccontare di te?",
+    "guideIntro": "Una bio può prendersi spazio. Racconta una scena, un’abitudine o un desiderio: darai all’altra persona un vero punto da cui partire.",
+    "tips": [
+      {
+        "title": "Un dettaglio quotidiano",
+        "text": "Invece di «mi piace viaggiare», racconta un luogo in cui torni, come prepari una partenza o un incontro che ricordi ancora."
+      },
+      {
+        "title": "Qualcosa da condividere",
+        "text": "Una cena in settimana, una lunga passeggiata, una serata ad ascoltare dischi: racconta con parole tue che cosa ti piacerebbe fare insieme."
+      },
+      {
+        "title": "Una domanda che ti interessa",
+        "text": "Concludi con qualcosa di cui vorresti davvero parlare. Per esempio: «Quale piccola tradizione ti piacerebbe inventare insieme?»"
+      }
+    ],
+    "guideEnd": "Leggi il testo ad alta voce. Tieni ciò che ti somiglia, comprese le frasi semplici. Il tuo profilo non deve essere una prova da superare.",
+    "search": "Cerca una risposta",
+    "category": "Argomento",
+    "categories": {
+      "all": "Tutti gli argomenti",
+      "start": "Primi passi",
+      "meeting": "Incontri e foto",
+      "billing": "Abbonamento",
+      "privacy": "Sicurezza e riservatezza"
+    },
+    "results": "{count} risposta/e",
+    "empty": "Nessuna risposta corrisponde. Prova un’altra parola o un altro argomento.",
+    "clear": "Cancella filtri",
+    "helpTitle": "Dove ti sei abbonato?",
+    "helpIntro": "L’abbonamento si gestisce dove lo hai acquistato, anche se usi Histae su un altro dispositivo.",
+    "restore": "Ripristina acquisti cerca un abbonamento già acquistato nello store. Non effettua un nuovo acquisto.",
+    "helpNote": "Hai un dubbio? La ricevuta indica il venditore. Eliminare l’app non annulla l’abbonamento.",
+    "channels": {
+      "stripe": {
+        "label": "Sul sito",
+        "text": "Accedi a Il mio abbonamento su questo sito, poi apri la gestione Stripe per consultare le fatture o annullare il rinnovo. Gli acquisti sul sito non si ripristinano con il pulsante degli store: accedi di nuovo al tuo account Histae.",
+        "action": "Apri il mio abbonamento"
+      },
+      "google": {
+        "label": "Su Android",
+        "text": "Apri Google Play con l’account usato per l’acquisto, poi Pagamenti e abbonamenti → Abbonamenti → Histae per gestire il rinnovo. Dopo una reinstallazione, usa Ripristina acquisti in Histae con gli stessi account Google e Histae.",
+        "action": "Apri Google Play"
+      },
+      "apple": {
+        "label": "Su iPhone",
+        "text": "Nelle Impostazioni dell’iPhone, apri il tuo account Apple → Abbonamenti → Histae per gestire il rinnovo. Dopo una reinstallazione, usa Ripristina acquisti in Histae con gli stessi account Apple e Histae.",
+        "action": "Apri gli abbonamenti Apple"
+      }
+    }
+  }
+}

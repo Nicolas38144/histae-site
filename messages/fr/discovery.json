@@ -1,0 +1,79 @@
+{
+  "discovery": {
+    "title": "Prenez le temps de faire connaissance.",
+    "intro": "Essayez un petit parcours Histae, à votre rythme.",
+    "fiction": "Démonstration fictive — aucun compte ni message réel.",
+    "steps": [
+      "Le profil",
+      "La conversation",
+      "Les photos"
+    ],
+    "name": "Camille, 29 ans",
+    "bio": "Je collectionne les carnets à moitié remplis, les adresses de petits cinémas et les recettes que je promets de refaire. Le dimanche, je pars souvent marcher sans objectif très précis. Il m’arrive de rentrer avec du pain, un livre d’occasion et aucune des choses prévues au départ. J’aime les gens qui racontent les détails : ce qu’ils ont remarqué dans le métro, le souvenir qu’une chanson vient de réveiller, leur dernière idée un peu improbable.\n\nAu début je parle doucement, puis je pose beaucoup de questions. Je cherche quelqu’un avec qui cuisiner à deux, découvrir un quartier et rester discuter longtemps après le dessert. On n’a pas besoin d’aimer tout pareil. J’aimerais surtout qu’on puisse se dire ce qui compte pour nous et rire de nos petites maladresses. Et vous, quel endroit vous donne envie de ralentir ?",
+    "chatIntro": "Dans cet exemple, les deux personnes ont aimé leur profil et commencent à discuter.",
+    "chat": [
+      "Votre histoire de dimanche me parle. Vous avez trouvé quoi comme livre ?",
+      "Un carnet de voyage annoté au crayon. Maintenant, j’ai envie de retrouver les endroits dont il parle.",
+      "On pourrait commencer par un café et comparer nos trouvailles."
+    ],
+    "photoIntro": "Continuer la conversation et montrer ses photos sont deux choix distincts. Essayez les deux accords ci-dessous.",
+    "mine": "Je souhaite montrer mes photos",
+    "theirs": "Camille donne aussi son accord (simulation)",
+    "waiting": "Les photos restent privées tant que les deux personnes n’ont pas donné leur accord.",
+    "revealed": "Les deux accords sont réunis : les photos peuvent être révélées.",
+    "portrait": "Portrait illustré pour la démonstration",
+    "next": "Poursuivre la découverte",
+    "restart": "Recommencer",
+    "try": "Essayer le parcours",
+    "guideTitle": "Qu’est-ce qu’on raconte de soi ?",
+    "guideIntro": "Une bio peut prendre de la place. Racontez une scène, une habitude ou une envie : cela donne à l’autre une vraie porte d’entrée.",
+    "tips": [
+      {
+        "title": "Un détail du quotidien",
+        "text": "Plutôt que « j’aime voyager », racontez un endroit où vous retournez, la façon dont vous préparez un départ ou une rencontre qui vous est restée."
+      },
+      {
+        "title": "La place que vous aimeriez partager",
+        "text": "Un repas du mercredi, une longue marche, une soirée à écouter des disques : dites ce qui vous ferait plaisir à deux, avec vos mots."
+      },
+      {
+        "title": "Une question qui vous ressemble",
+        "text": "Terminez par quelque chose dont vous aimeriez vraiment parler. Par exemple : « Quelle petite tradition vous ferait plaisir d’inventer à deux ? »"
+      }
+    ],
+    "guideEnd": "Relisez votre texte à voix haute. Gardez ce qui vous ressemble, y compris les phrases simples. Votre profil n’a pas besoin d’être une performance.",
+    "search": "Rechercher une réponse",
+    "category": "Sujet",
+    "categories": {
+      "all": "Tous les sujets",
+      "start": "Premiers pas",
+      "meeting": "Rencontres et photos",
+      "billing": "Abonnement",
+      "privacy": "Sécurité et confidentialité"
+    },
+    "results": "{count} réponse(s)",
+    "empty": "Aucune réponse ne correspond. Essayez un autre mot ou un autre sujet.",
+    "clear": "Effacer les filtres",
+    "helpTitle": "Où avez-vous souscrit ?",
+    "helpIntro": "La gestion de votre abonnement dépend du lieu de l’achat, même si vous utilisez Histae sur un autre appareil.",
+    "restore": "Restaurer mes achats recherche un abonnement déjà acheté dans le store. Cette action ne crée pas de nouvel achat.",
+    "helpNote": "Vous hésitez ? Le reçu de paiement indique le vendeur. Supprimer l’application ne résilie pas l’abonnement.",
+    "channels": {
+      "stripe": {
+        "label": "Sur le site",
+        "text": "Connectez-vous à Mon abonnement sur ce site, puis ouvrez la gestion de l’abonnement Stripe pour consulter les factures ou annuler le renouvellement. Un achat sur le site ne se restaure pas avec le bouton des stores : reconnectez-vous à votre compte Histae.",
+        "action": "Ouvrir mon abonnement"
+      },
+      "google": {
+        "label": "Sur Android",
+        "text": "Ouvrez Google Play avec le compte utilisé pour l’achat, puis Paiements et abonnements → Abonnements → Histae. Vous pouvez y gérer le renouvellement. Après une réinstallation, utilisez Restaurer mes achats dans Histae avec les mêmes comptes Google et Histae.",
+        "action": "Ouvrir Google Play"
+      },
+      "apple": {
+        "label": "Sur iPhone",
+        "text": "Dans les réglages de votre iPhone, ouvrez votre compte Apple → Abonnements → Histae pour gérer le renouvellement. Après une réinstallation, utilisez Restaurer mes achats dans Histae avec les mêmes comptes Apple et Histae.",
+        "action": "Ouvrir les abonnements Apple"
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "discovery": {
+    "title": "Tomaos un momento para conoceros.",
+    "intro": "Prueba un pequeño recorrido por Histae, a tu ritmo.",
+    "fiction": "Demostración ficticia: no hay cuentas ni mensajes reales.",
+    "steps": [
+      "El perfil",
+      "La conversación",
+      "Las fotos"
+    ],
+    "name": "Camille, 29 años",
+    "bio": "Colecciono cuadernos a medio llenar, direcciones de pequeños cines y recetas que prometo repetir. Los domingos suelo salir a caminar sin un plan concreto. A veces vuelvo con pan, un libro de segunda mano y ninguna de las cosas que pensaba comprar. Me gusta la gente que cuenta los detalles: algo que vio en el metro, el recuerdo que despertó una canción, su última idea un poco disparatada.\n\nAl principio hablo bajito; después hago muchas preguntas. Me gustaría conocer a alguien con quien cocinar, descubrir un barrio y seguir hablando mucho después del postre. No hace falta que nos guste todo lo mismo. Me importa poder decir lo que nos preocupa y reírnos de nuestras pequeñas torpezas. ¿Qué lugar te invita a bajar el ritmo?",
+    "chatIntro": "En este ejemplo, ambas personas han indicado que les gusta el perfil de la otra y empiezan a conversar.",
+    "chat": [
+      "Me suena tu historia del domingo. ¿Qué libro encontraste?",
+      "Un diario de viaje con notas a lápiz. Ahora quiero visitar los lugares que menciona.",
+      "Podríamos empezar por un café y compartir nuestros descubrimientos."
+    ],
+    "photoIntro": "Continuar la conversación y mostrar las fotos son decisiones distintas. Prueba los dos permisos de abajo.",
+    "mine": "Quiero compartir mis fotos",
+    "theirs": "Camille también acepta (simulación)",
+    "waiting": "Las fotos siguen siendo privadas hasta que ambas personas acepten.",
+    "revealed": "Ambas personas han aceptado: las fotos pueden mostrarse.",
+    "portrait": "Retrato ilustrado para la demostración",
+    "next": "Seguir descubriendo",
+    "restart": "Volver a empezar",
+    "try": "Probar el recorrido",
+    "guideTitle": "¿Qué puedes contar de ti?",
+    "guideIntro": "Una bio puede ocupar espacio. Cuenta una escena, una costumbre o un deseo: así das a la otra persona un punto de partida.",
+    "tips": [
+      {
+        "title": "Un detalle cotidiano",
+        "text": "En vez de «me gusta viajar», describe un lugar al que siempre vuelves, cómo preparas un viaje o alguien que recuerdas haber conocido."
+      },
+      {
+        "title": "Algo que te gustaría compartir",
+        "text": "Una cena entre semana, una caminata larga, una tarde escuchando discos: cuenta con tus palabras lo que disfrutarías haciendo en pareja."
+      },
+      {
+        "title": "Una pregunta que te interese",
+        "text": "Termina con algo de lo que realmente quieras hablar. Por ejemplo: «¿Qué pequeña tradición te gustaría inventar en pareja?»"
+      }
+    ],
+    "guideEnd": "Lee tu texto en voz alta. Conserva lo que suena a ti, incluidas las frases sencillas. Tu perfil no tiene que ser una actuación.",
+    "search": "Buscar una respuesta",
+    "category": "Tema",
+    "categories": {
+      "all": "Todos los temas",
+      "start": "Primeros pasos",
+      "meeting": "Encuentros y fotos",
+      "billing": "Suscripción",
+      "privacy": "Seguridad y privacidad"
+    },
+    "results": "{count} respuesta(s)",
+    "empty": "No hay respuestas coincidentes. Prueba otra palabra o tema.",
+    "clear": "Borrar filtros",
+    "helpTitle": "¿Dónde te suscribiste?",
+    "helpIntro": "La suscripción se gestiona donde la compraste, aunque uses Histae en otro dispositivo.",
+    "restore": "Restaurar compras busca una suscripción que ya compraste en la tienda. No realiza una compra nueva.",
+    "helpNote": "¿Tienes dudas? El recibo identifica al vendedor. Eliminar la app no cancela la suscripción.",
+    "channels": {
+      "stripe": {
+        "label": "En la web",
+        "text": "Inicia sesión en Mi suscripción en esta web y abre la gestión de Stripe para consultar facturas o cancelar la renovación. Las compras web no se restauran con el botón de las tiendas: vuelve a entrar en tu cuenta Histae.",
+        "action": "Abrir mi suscripción"
+      },
+      "google": {
+        "label": "En Android",
+        "text": "Abre Google Play con la cuenta de la compra y ve a Pagos y suscripciones → Suscripciones → Histae para gestionar la renovación. Tras reinstalar, usa Restaurar compras en Histae con las mismas cuentas de Google y Histae.",
+        "action": "Abrir Google Play"
+      },
+      "apple": {
+        "label": "En iPhone",
+        "text": "En Ajustes del iPhone, abre tu cuenta de Apple → Suscripciones → Histae para gestionar la renovación. Tras reinstalar, usa Restaurar compras en Histae con las mismas cuentas de Apple y Histae.",
+        "action": "Abrir suscripciones de Apple"
+      }
+    }
+  }
+}

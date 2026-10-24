@@ -147,3 +147,17 @@ Next.js 16.4.1's generated development validator imports unused route-handler ty
 there are no route handlers. Only `.next/dev/types/validator.ts` is excluded from standalone
 TypeScript checks for that reason. The build validator in `.next/types/` and the strict checks
 on application/test source remain enabled; do not disable noUnusedLocals globally.
+
+## Discovery and self-service help
+
+The features page includes a fictional interactive profile, conversation and mutual-photo-consent
+demonstration, followed by a profile-writing guide. Home links directly to the demo. State stays
+in component memory; the demo sends no account, message or consent requests. The FAQ searches
+localized answers and combines search with topic filters. Pricing and FAQ include a channel
+selector for Stripe, Google Play and Apple subscription help. Copy lives in discovery.json in
+all four locales. Run `pnpm exec playwright test tests/discovery.spec.ts` for these interactions.
+
+
+### Discovery feature boundaries
+
+The server pages compose localized content. `lib/faq.ts` owns FAQ metadata and filtering; `FaqExplorer` owns input state and renders results. Subscription guidance uses explicit channel IDs and `lib/billing/subscription-channels.ts` for destinations, rather than parallel translation arrays. The product demo separates its local journey state (`use-product-demo.ts`) from its controlled presentation panels (`demo-panels.tsx`). None of these modules makes account or payment requests.
