@@ -1,7 +1,7 @@
 import type { AppMessages } from '../messages';
 import type { SiteRouteId } from './site-config';
 
-export type FaqCategory = keyof AppMessages['discovery']['categories'];
+type FaqCategory = keyof AppMessages['discovery']['categories'];
 export type FaqEntry = {
   id: string;
   category: Exclude<FaqCategory, 'all'>;

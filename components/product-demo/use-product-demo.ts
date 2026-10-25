@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export const demoSteps = ['profile', 'conversation', 'photos'] as const;
-export type DemoStep = typeof demoSteps[number];
+type DemoStep = typeof demoSteps[number];
 
 export function useProductDemo() {
   const [step, setStep] = useState<DemoStep>('profile');

@@ -19,10 +19,10 @@ export async function InformationPage({ locale, pageName }: {
   const blocks = Object.fromEntries(Object.entries(page.blocks).map(([id, block]) => [id, {
     ...block, text: createTranslator({ locale, messages: block })("text", values),
   }]));
-  function passage(id: string, heading = true) {
+  function passage(id: string) {
     const block = blocks[id];
     return <div className="story-passage" key={id}>
-      {heading ? <h3>{block.title}</h3> : null}<p>{block.text}</p>
+      <h3>{block.title}</h3><p>{block.text}</p>
     </div>;
   }
   function details(ids: string[]) {

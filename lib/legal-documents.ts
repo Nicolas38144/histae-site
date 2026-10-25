@@ -3,9 +3,9 @@ import path from "node:path";
 import siteConfig from "../config/site.json";
 import type { Locale } from "./site-config";
 
-export const legalDocuments = siteConfig.legalDocuments;
+const legalDocuments = siteConfig.legalDocuments;
 
-export type LegalDocumentId = keyof typeof legalDocuments;
+type LegalDocumentId = keyof typeof legalDocuments;
 
 export function isLegalDocumentId(value: string): value is LegalDocumentId {
   return Object.prototype.hasOwnProperty.call(legalDocuments, value);

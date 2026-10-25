@@ -4,7 +4,7 @@ import type { Locale } from "./site-config";
 export const planCatalog = siteConfig.plans;
 export type PlanId = keyof typeof planCatalog;
 
-export const planFeatureIds = [
+const planFeatureIds = [
   "messaging",
   "photoReveal",
   "limitedContinuations",
@@ -39,7 +39,6 @@ export function formatEuro(cents: number, locale: Locale): string {
 
 export function getCommercialValues() {
   return {
-    freeContinuations: planCatalog.free.successfulContinuationsPerWeek,
     freeCredits: planCatalog.free.weeklyIncludedCredits,
     advertisingStock: planCatalog.free.advertisingCreditStockLimit,
     weeklyMaximum: planCatalog.free.successfulContinuationsPerWeek,

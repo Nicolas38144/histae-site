@@ -29,7 +29,7 @@ export const siteRoutes = siteConfig.routes;
 export type SiteRouteId = keyof typeof siteRoutes;
 export type InformationPageName = Exclude<SiteRouteId, "home" | "pricing" | "faq">;
 
-export function isSiteRouteId(value: string): value is SiteRouteId {
+function isSiteRouteId(value: string): value is SiteRouteId {
   return Object.prototype.hasOwnProperty.call(siteRoutes, value);
 }
 

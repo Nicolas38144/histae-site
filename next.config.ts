@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
+  agentRules: false,
   output: "export",
   trailingSlash: true,
   ...(process.env.NODE_ENV === "development" ? {

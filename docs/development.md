@@ -20,7 +20,10 @@
 
 Pages and presentation components remain Server Components unless state, events or browser APIs
 require a client boundary. Keep transport, parsing and storage out of presentation components.
-Read `AGENTS.md` and the relevant installed Next.js guide before changing framework behavior.
+Read any project instructions and the relevant installed Next.js guide before changing framework
+behavior. Automatic `AGENTS.md` generation is disabled with `agentRules: false` in `next.config.ts`.
+On the next development-server startup, Next.js removes its managed block and deletes the file
+if it contains nothing else; handwritten project instructions are preserved.
 
 ## Content and translations
 

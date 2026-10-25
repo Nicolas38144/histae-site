@@ -39,7 +39,7 @@ function defineMessages(messages: AppMessages): AppMessages {
   return messages;
 }
 
-export const messagesByLocale: Record<Locale, AppMessages> = {
+const messagesByLocale: Record<Locale, AppMessages> = {
   fr: frMessages,
   en: defineMessages({ ...enCommon, ...enHome, ...enPricing, ...enPages, ...enFaq, ...enBilling, ...enCheckout, ...enDiscovery }),
   es: defineMessages({ ...esCommon, ...esHome, ...esPricing, ...esPages, ...esFaq, ...esBilling, ...esCheckout, ...esDiscovery }),

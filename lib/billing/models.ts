@@ -1,5 +1,5 @@
 export type BillingPeriod = "monthly" | "annual";
-export type WebSubscription = {
+type WebSubscription = {
   plan: "free" | "premium";
   provider: "stripe" | "app_store" | "google_play" | null;
   access_granted: boolean;

@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-export function contentSecurityPolicy(html) {
+function contentSecurityPolicy(html) {
   const hashes = new Set();
   // Hash the exact script text, including whitespace (HTML normalizes CR/CRLF to LF).
   const scripts = /<script\b((?:[^"'<>]|"[^"]*"|'[^']*')*)>([\s\S]*?)<\/script\s*>/gi;

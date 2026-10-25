@@ -90,7 +90,6 @@
     "free": {
       "priceCents": 0,
       "successfulContinuationsPerWeek": 6,
-      "featured": false,
       "features": [
         "messaging",
         "photoReveal",
