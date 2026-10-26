@@ -1,7 +1,7 @@
 # Política de privacidad de Histae
 
 **Versión publicada:** En proceso de validación.  
-**Fecha de entrada en vigor:** En proceso de validación.  
+**Fecha del documento:** 26 de octubre de 2026.  
 **Responsable del tratamiento:** En proceso de validación.  
 **Contacto de privacidad / DPD, si existe:** En proceso de validación.
 

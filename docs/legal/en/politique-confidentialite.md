@@ -1,7 +1,7 @@
 # Histae Privacy Policy
 
 **Published version:** Validation in progress.  
-**Effective date:** Validation in progress.  
+**Document date:** 26 October 2026.  
 **Data controller:** Validation in progress.  
 **Privacy contact / DPO, if appointed:** Validation in progress.
 

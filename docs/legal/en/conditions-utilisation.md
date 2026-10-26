@@ -1,7 +1,7 @@
 # Histae Terms of Use
 
 **Published version:** Validation in progress.  
-**Effective date:** Validation in progress.  
+**Document date:** 26 October 2026.  
 **Service publisher:** Validation in progress.
 
 ## 1. Purpose and access to the service

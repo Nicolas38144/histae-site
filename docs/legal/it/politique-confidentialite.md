@@ -1,7 +1,7 @@
 # Informativa sulla privacy di Histae
 
 **Versione pubblicata:** In corso di validazione.  
-**Data di entrata in vigore:** In corso di validazione.  
+**Data del documento:** 26 ottobre 2026.  
 **Titolare del trattamento:** In corso di validazione.  
 **Contatto privacy / DPO, se presente:** In corso di validazione.
 

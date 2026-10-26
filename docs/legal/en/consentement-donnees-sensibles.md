@@ -1,6 +1,7 @@
 # Consent to the processing of sensitive data
 
 **Published version:** Validation in progress.  
+**Document date:** 26 October 2026.  
 **Data controller:** Validation in progress.
 
 ## What you agree to

@@ -1,6 +1,7 @@
 # Consentimiento para el uso de la ubicación
 
 **Versión publicada:** En proceso de validación.  
+**Fecha del documento:** 26 de octubre de 2026.  
 **Responsable del tratamiento:** En proceso de validación.
 
 ## Qué acepta

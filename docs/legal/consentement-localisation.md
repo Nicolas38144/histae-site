@@ -1,6 +1,7 @@
 # Consentement à l’utilisation de la localisation
 
 **Version publiée :** En cours de validation.  
+**Date du document :** 26 octobre 2026.  
 **Responsable du traitement :** En cours de validation.
 
 ## Ce que vous acceptez

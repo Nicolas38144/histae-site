@@ -1,6 +1,7 @@
 # Consenso al trattamento dei dati sensibili
 
 **Versione pubblicata:** In corso di validazione.  
+**Data del documento:** 26 ottobre 2026.  
 **Titolare del trattamento:** In corso di validazione.
 
 ## Cosa accettate

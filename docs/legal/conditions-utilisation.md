@@ -1,7 +1,7 @@
 # Conditions générales d’utilisation de Histae
 
 **Version publiée :** En cours de validation.  
-**Date d’entrée en vigueur :** En cours de validation.  
+**Date du document :** 26 octobre 2026.  
 **Éditeur du service :** En cours de validation.
 
 ## 1. Objet et accès au service

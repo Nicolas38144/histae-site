@@ -1,7 +1,7 @@
 # Politique de confidentialité de Histae
 
 **Version publiée :** En cours de validation.  
-**Date d’entrée en vigueur :** En cours de validation.  
+**Date du document :** 26 octobre 2026.  
 **Responsable du traitement :** En cours de validation.  
 **Contact vie privée / DPO, s’il existe :** En cours de validation.
 
