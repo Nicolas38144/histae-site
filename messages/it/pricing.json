@@ -75,7 +75,7 @@
         },
         "video": {
           "title": "Crediti extra, se lo desideri",
-          "text": "Un video pubblicitario facoltativo permette di ottenere 1 credito. Puoi conservare fino a {advertisingStock} crediti pubblicitari, che restano disponibili da una settimana all’altra."
+          "text": "Un video pubblicitario facoltativo permette di ottenere 1 credito. Puoi avere fino a {advertisingStock} crediti pubblicitari. I crediti inutilizzati, inclusi quelli prenotati, scadono ogni lunedì alle 00:00 UTC e devono essere guadagnati di nuovo tramite video."
         },
         "limit": {
           "title": "Fino a {weeklyMaximum} conversazioni prolungate a settimana",

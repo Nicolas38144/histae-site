@@ -47,7 +47,7 @@
         },
         "continuationCredits": {
           "title": "A clear choice and credit cost",
-          "text": "Each Free participant receives {freeCredits} credits each week. A credit is reserved when they choose to continue a match after the first 24 hours, then spent only after both people agree. A refusal or expiry releases it. An optional video earns 1 credit, with up to {advertisingStock} advertising credits carried over between weeks. Each Free participant can extend up to {weeklyMaximum} conversations per week. A Premium participant uses no credits; the other person keeps their own plan’s limits."
+          "text": "Each Free participant receives {freeCredits} credits each week. A credit is reserved when they choose to continue a match after the first 24 hours, then spent only after both people agree. A refusal or expiry releases it. An optional video earns 1 credit, with up to {advertisingStock} advertising credits in stock, expiring every Monday at 00:00 UTC. Each Free participant can extend up to {weeklyMaximum} conversations per week. A Premium participant uses no credits; the other person keeps their own plan’s limits."
         },
         "pause": {
           "title": "Take a break and keep your conversations",

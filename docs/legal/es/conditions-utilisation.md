@@ -49,7 +49,7 @@ Para cualquier pregunta sobre estas condiciones: En proceso de validación. La i
 
 ## Créditos de continuación y publicidad opcional
 
-Free recibe tres créditos gratuitos cada lunes a las 00:00 UTC, sin acumular. Cada participante Free reserva un crédito al aceptar; ambos se consumen de forma atómica tras los dos acuerdos. Un rechazo o la caducidad libera las reservas. Un vídeo publicitario voluntario puede dar un crédito adicional, con hasta tres créditos publicitarios conservados entre semanas. Los créditos pertenecen a la cuenta, no son transferibles y no tienen valor monetario. Free permite un máximo de seis continuaciones confirmadas por persona y semana. Premium (5 EUR al mes o 48 EUR al año, con una prueba prevista de 30 días) no consume créditos, no muestra anuncios y no impone este límite. El acuerdo mutuo siempre es necesario.
+Free recibe dos créditos gratuitos cada lunes a las 00:00 UTC, sin acumular. Cada participante Free reserva un crédito al aceptar; ambos se consumen de forma atómica tras los dos acuerdos. Un rechazo o la caducidad libera las reservas. Un vídeo publicitario voluntario puede dar un crédito adicional, con hasta tres créditos publicitarios que se ponen a cero cada lunes a las 00:00 UTC y deben ganarse de nuevo mediante vídeos. Los créditos pertenecen a la cuenta, no son transferibles y no tienen valor monetario. Free permite un máximo de cinco continuaciones confirmadas por persona y semana. Premium (5 EUR al mes o 48 EUR al año) no consume créditos, no muestra anuncios y no impone este límite. El acuerdo mutuo siempre es necesario.
 
 ## Actualización funcional del 22 de octubre de 2026 — compras pendientes de validación
 

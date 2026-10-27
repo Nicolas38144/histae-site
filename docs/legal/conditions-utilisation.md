@@ -49,7 +49,7 @@ Pour toute question sur ces conditions : En cours de validation. Les information
 
 ## Crédits de continuation et publicités facultatives
 
-Free reçoit trois crédits gratuits chaque lundi à 00:00 UTC, sans cumul. Chaque participant Free réserve un crédit lors de son accord ; les deux participants sont débités atomiquement après les deux accords. Un refus ou une expiration libère les réservations. Une vidéo publicitaire volontaire peut donner un crédit supplémentaire, jusqu’à trois crédits publicitaires en stock, conservés entre les semaines. Les crédits sont internes au compte, non transférables et sans valeur monétaire. Free est limité à six continuations confirmées par personne et par semaine. Premium (5 EUR par mois ou 48 EUR par an, essai prévu de 30 jours) ne consomme pas de crédit, ne diffuse pas de publicité et n’impose pas cette limite. L’accord mutuel reste toujours nécessaire.
+Free reçoit deux crédits gratuits chaque lundi à 00:00 UTC, sans cumul. Chaque participant Free réserve un crédit lors de son accord ; les deux participants sont débités atomiquement après les deux accords. Un refus ou une expiration libère les réservations. Une vidéo publicitaire volontaire peut donner un crédit supplémentaire, jusqu’à trois crédits publicitaires en stock, remis à zéro chaque lundi à 00:00 UTC et à regagner par vidéo. Les crédits sont internes au compte, non transférables et sans valeur monétaire. Free est limité à cinq continuations confirmées par personne et par semaine. Premium (5 EUR par mois ou 48 EUR par an) ne consomme pas de crédit, ne diffuse pas de publicité et n’impose pas cette limite. L’accord mutuel reste toujours nécessaire.
 
 ## Mise à jour fonctionnelle du 22 octobre 2026 — achats à valider
 

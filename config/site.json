@@ -89,7 +89,7 @@
   "plans": {
     "free": {
       "priceCents": 0,
-      "successfulContinuationsPerWeek": 6,
+      "successfulContinuationsPerWeek": 5,
       "features": [
         "messaging",
         "photoReveal",
@@ -97,7 +97,7 @@
         "rewardedCredits",
         "weeklyLimit"
       ],
-      "weeklyIncludedCredits": 3,
+      "weeklyIncludedCredits": 2,
       "advertisingCreditStockLimit": 3
     },
     "premium": {

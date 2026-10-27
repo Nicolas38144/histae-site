@@ -49,7 +49,7 @@ For questions about these terms: Validation in progress. Information on applicab
 
 ## Continuation credits and optional advertising
 
-Free receives three free credits every Monday at 00:00 UTC, without rollover. Each Free participant reserves one credit when accepting; both are charged atomically after both agree. Declining or expiry releases reservations. A voluntary advertising video can earn an extra credit, with up to three advertising credits retained across weeks. Credits belong to the account, are non-transferable and have no monetary value. Free is limited to six confirmed continuations per person per week. Premium (EUR 5 per month or EUR 48 per year, with a planned 30-day trial) has no credit charges, no ads and no weekly limit. Mutual agreement is always required.
+Free receives two free credits every Monday at 00:00 UTC, without rollover. Each Free participant reserves one credit when accepting; both are charged atomically after both agree. Declining or expiry releases reservations. A voluntary advertising video can earn an extra credit, with up to three advertising credits reset to zero every Monday at 00:00 UTC and earned again through videos. Credits belong to the account, are non-transferable and have no monetary value. Free is limited to five confirmed continuations per person per week. Premium (EUR 5 per month or EUR 48 per year) has no credit charges, no ads and no weekly limit. Mutual agreement is always required.
 
 ## Functional update, 22 October 2026 — purchases pending review
 

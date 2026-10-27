@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "What is the difference between Free and Premium?",
-        "answer": "You can create a profile, match and start chatting for free. Free includes {freeCredits} weekly credits to continue conversations, up to {weeklyMaximum} extensions. An optional video earns one credit, with up to {advertisingStock} ad credits in reserve. Premium removes the quota and advertising. Current prices are on the Pricing page and confirmed before payment.",
+        "answer": "You can create a profile, match and start chatting for free. Free includes {freeCredits} weekly credits to continue conversations, up to {weeklyMaximum} extensions. An optional video earns one credit, with up to {advertisingStock} ad credits in reserve until Monday at 00:00 UTC. Premium removes the quota and advertising. Current prices are on the Pricing page and confirmed before payment.",
         "linkLabel": "Compare pricing"
       },
       "location": {

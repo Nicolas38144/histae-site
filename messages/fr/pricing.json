@@ -75,7 +75,7 @@
         },
         "video": {
           "title": "Des crédits en plus, si vous le souhaitez",
-          "text": "Une vidéo publicitaire facultative permet de gagner 1 crédit. Vous pouvez conserver jusqu’à {advertisingStock} crédits publicitaires ; ce stock reste disponible d’une semaine à l’autre."
+          "text": "Une vidéo publicitaire facultative permet de gagner 1 crédit. Vous pouvez détenir jusqu’à {advertisingStock} crédits publicitaires. Les crédits inutilisés, y compris réservés, expirent chaque lundi à 00:00 UTC ; ils doivent ensuite être regagnés par vidéo."
         },
         "limit": {
           "title": "Jusqu’à {weeklyMaximum} conversations prolongées par semaine",

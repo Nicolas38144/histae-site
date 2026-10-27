@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "¿Qué diferencia hay entre Free y Premium?",
-        "answer": "Puedes crear un perfil, hacer un match y empezar a hablar gratis. Free incluye {freeCredits} créditos semanales para continuar conversaciones, hasta {weeklyMaximum} prolongaciones. Un vídeo opcional aporta un crédito, con hasta {advertisingStock} créditos publicitarios en reserva. Premium elimina el límite y la publicidad. Los precios actuales están en Tarifas y se confirman antes del pago.",
+        "answer": "Puedes crear un perfil, hacer un match y empezar a hablar gratis. Free incluye {freeCredits} créditos semanales para continuar conversaciones, hasta {weeklyMaximum} prolongaciones. Un vídeo opcional aporta un crédito, con hasta {advertisingStock} créditos publicitarios en reserva hasta el lunes a las 00:00 UTC. Premium elimina el límite y la publicidad. Los precios actuales están en Tarifas y se confirman antes del pago.",
         "linkLabel": "Comparar precios"
       },
       "location": {

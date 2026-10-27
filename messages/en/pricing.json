@@ -75,7 +75,7 @@
         },
         "video": {
           "title": "Extra credits, if you want them",
-          "text": "An optional video ad earns 1 credit. You can store up to {advertisingStock} advertising credits, which carry over between weeks."
+          "text": "An optional video ad earns 1 credit. You can hold up to {advertisingStock} advertising credits. Unused credits, including reserved credits, expire every Monday at 00:00 UTC and must then be earned again by watching videos."
         },
         "limit": {
           "title": "Extend up to {weeklyMaximum} conversations each week",

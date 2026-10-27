@@ -75,7 +75,7 @@
         },
         "video": {
           "title": "Créditos extra, si quieres",
-          "text": "Un vídeo publicitario opcional permite ganar 1 crédito. Puedes conservar hasta {advertisingStock} créditos publicitarios, que se mantienen de una semana a otra."
+          "text": "Un vídeo publicitario opcional permite ganar 1 crédito. Puedes tener hasta {advertisingStock} créditos publicitarios. Los créditos no utilizados, incluidos los reservados, caducan cada lunes a las 00:00 UTC y deben ganarse de nuevo mediante vídeos."
         },
         "limit": {
           "title": "Hasta {weeklyMaximum} conversaciones prolongadas por semana",
