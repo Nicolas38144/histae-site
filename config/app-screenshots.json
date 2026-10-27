@@ -1,30 +1,30 @@
 {
   "fr": {
-    "feed": "fbe1306f75ea",
-    "profile": "a2feba327c18",
-    "chat": "abafbc1c748f",
-    "credits": "823108f3d538",
-    "privacy": "dbd58d534d4d"
+    "feed": "d6cfa3fbe12e",
+    "profile": "b5a966045f4a",
+    "chat": "efec933ae759",
+    "credits": "7646ad8eb292",
+    "privacy": "40c5bcdc4e46"
   },
   "en": {
-    "feed": "6c40054cb795",
-    "profile": "d8a6bbf21faf",
-    "chat": "62c87af3749c",
-    "credits": "4ceaf214ba48",
-    "privacy": "da0380843fed"
+    "feed": "a63bb0feb5ea",
+    "profile": "170d65f5b531",
+    "chat": "1ce6a1026c66",
+    "credits": "87e28413f394",
+    "privacy": "ae0f14f1f93a"
   },
   "es": {
-    "feed": "0bb2da8d5586",
-    "profile": "3dc71006a41d",
-    "chat": "bfce9aa52c1d",
-    "credits": "67267fd94031",
-    "privacy": "2d02105a09dd"
+    "feed": "77e574c67e02",
+    "profile": "9aaadf74752b",
+    "chat": "3ba54aa72cf0",
+    "credits": "c9bfd34baa69",
+    "privacy": "9a0d43d19395"
   },
   "it": {
-    "feed": "3cd77460b250",
-    "profile": "97392129cb77",
-    "chat": "5d9a3eb7b201",
-    "credits": "0e066450e58c",
-    "privacy": "84a3deb04c4f"
+    "feed": "f0b387189173",
+    "profile": "01a37808019a",
+    "chat": "bc38e08f2329",
+    "credits": "aa157c8ece6d",
+    "privacy": "e4581f3f804b"
   }
 }
