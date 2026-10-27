@@ -11,15 +11,15 @@
         },
         "preferences": {
           "title": "Cuentan las preferencias de los dos",
-          "text": "Estar en el rango de edad que busca alguien es un comienzo. Esa persona también tiene que estar en el tuyo. Histae comprueba en ambos sentidos las personas buscadas y la distancia máxima."
+          "text": "La edad, las personas que buscáis y la distancia deben encajar para los dos. Por ejemplo, si tu límite es de 50 km y el de la otra persona es de 20 km, solo podréis aparecer en las propuestas del otro dentro de esos 20 km."
         },
         "location": {
           "title": "Una ubicación consentida y temporal",
-          "text": "El descubrimiento requiere una posición reciente y un consentimiento específico. La posición queda obsoleta tras una hora y se elimina después de 24 horas sin actualizarse."
+          "text": "Ambas personas necesitan una ubicación reciente, con un consentimiento separado para utilizarla. La distancia mostrada se redondea; tu posición exacta nunca aparece en el perfil. La ubicación queda obsoleta tras una hora y se elimina después de 24 horas sin actualizarse. Puedes retirar tu permiso en la app."
         },
         "discovery": {
           "title": "¿Qué aparece en el feed?",
-          "text": "Una presentación, respuestas, algunos rasgos y una distancia redondeada. No vuelven a proponerse perfiles bloqueados, sobre los que ya has decidido o con los que ya tienes un match."
+          "text": "Los perfiles compatibles se proponen por cercanía. Se excluyen los bloqueos en ambos sentidos, los likes o perfiles descartados ya registrados y las personas con las que ya hay un match registrado."
         },
         "stableDecisions": {
           "title": "¿Ya habías visto ese perfil?",
@@ -39,7 +39,7 @@
         },
         "photoReveal": {
           "title": "Las fotos se deciden entre los dos",
-          "text": "Podéis seguir hablando con las fotos ocultas. Solo aparecen con el acuerdo de cada uno, separado de la decisión de continuar la conversación."
+          "text": "Debes añadir una foto para acceder al feed, pero nunca se muestra en él. Dentro de un match, las fotos siguen ocultas hasta que ambos aceptáis revelarlas, por separado de la decisión de continuar la conversación. Podéis seguir hablando sin mostrarlas."
         },
         "messaging": {
           "title": "Escribir y responder",
@@ -48,6 +48,10 @@
         "continuationCredits": {
           "title": "Una decisión y un coste claros",
           "text": "Cada persona Free recibe {freeCredits} créditos por semana. Un crédito se reserva al elegir continuar un match después de las primeras 24 horas y se consume solo cuando ambos aceptan. Un rechazo o la caducidad lo libera. Un vídeo opcional da 1 crédito, con hasta {advertisingStock} créditos publicitarios conservados entre semanas. Cada persona Free puede prolongar hasta {weeklyMaximum} conversaciones por semana. Una persona Premium no consume créditos; la otra mantiene los límites de su propio plan."
+        },
+        "pause": {
+          "title": "Tómate un descanso y conserva tus conversaciones",
+          "text": "Activa el modo pausa desde tu perfil para dejar de aparecer en nuevas propuestas y de descubrir nuevos perfiles. Tus matches y conversaciones existentes siguen disponibles. Puedes retomar el descubrimiento cuando quieras."
         }
       }
     },

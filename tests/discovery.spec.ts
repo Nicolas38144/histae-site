@@ -22,7 +22,13 @@ test('FAQ combines search and topic and guides each billing channel',async({page
  await page.getByLabel('Sujet',{exact:true}).selectOption('billing');
  await expect(page.locator('.faq-explorer details')).toHaveCount(0);
  await page.getByRole('button',{name:'Effacer les filtres'}).click();
- await expect(page.locator('.faq-explorer details')).toHaveCount(10);
+ await expect(page.locator('.faq-explorer details')).toHaveCount(13);
+ await page.getByRole('searchbox').fill('Elo');
+ await expect(page.locator('.faq-explorer details')).toHaveCount(1);
+ const ranking=page.locator('.faq-explorer details');
+ await ranking.locator('summary').click();
+ await expect(ranking.locator('.faq-answer')).toContainText('affichés par proximité');
+ await page.getByRole('button',{name:'Effacer les filtres'}).click();
  const help=page.locator('#subscription-help');
  await help.getByRole('button',{name:'Sur Android',exact:true}).click();
  await expect(help.getByRole('link')).toHaveAttribute('href','https://play.google.com/store/account/subscriptions');

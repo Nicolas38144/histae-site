@@ -51,7 +51,7 @@ export async function InformationPage({ locale, pageName }: {
       {pageName === "feature" ? <>
         <ProductDemo copy={messages.discovery} />
         <ProfileWritingGuide copy={messages.discovery} />
-        {story("feed", "profile", ["preferences"], ["discovery", "location", "stableDecisions"])}
+        {story("feed", "profile", ["preferences", "pause"], ["discovery", "location", "stableDecisions"])}
         {story("chat", "conversationWindow", ["reciprocity", "photoReveal"], ["continuationWindow", "messaging"], true)}
         <section className="shell credits-invitation">
           <p className="eyebrow">{messages.home.screens.creditsLabel}</p>

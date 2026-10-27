@@ -16,7 +16,7 @@
       },
       "discovery": {
         "question": "Come vengono selezionati i profili suggeriti?",
-        "answer": "Histae controlla le preferenze di entrambi: età, persone cercate e distanza massima devono andare bene a tutti e due. Le proposte usano la posizione recente con il tuo permesso. Non vengono proposti profili bloccati, già valutati o con cui hai già un match.",
+        "answer": "Histae controlla le preferenze di entrambi: età, persone cercate e distanza massima devono andare bene a tutti e due. I profili compatibili vengono mostrati in ordine di vicinanza. Sono esclusi i blocchi in entrambe le direzioni, i like o i profili saltati già registrati e le persone con cui esiste già un match registrato.",
         "linkLabel": "Scopri le funzioni"
       },
       "match": {
@@ -25,8 +25,8 @@
         "linkLabel": "Comprendi il percorso"
       },
       "photos": {
-        "question": "Perché le foto non sono visibili subito?",
-        "answer": "Histae mette prima in evidenza il profilo, la personalità e la conversazione. Le foto vengono rivelate solo con l’accordo di entrambe le persone, indipendentemente dalla decisione di continuare il match.",
+        "question": "Devo aggiungere una foto? Chi può vederla?",
+        "answer": "Una foto è obbligatoria per accedere al feed, ma non compare mai nelle proposte di profili. In un match, le foto vengono rivelate solo con il consenso di entrambe le persone, indipendentemente dalla decisione di continuare la conversazione.",
         "linkLabel": "Scopri come funziona la rivelazione"
       },
       "pricing": {
@@ -53,6 +53,21 @@
         "question": "Posso consultare il codice e verificarne la sicurezza?",
         "answer": "Il codice originale di Histae è pubblico per la consultazione e le verifiche di sicurezza. Il riutilizzo, anche non commerciale, la ridistribuzione e l’uso in altri progetti sono vietati senza previa autorizzazione scritta. Non è una licenza open source. I componenti di terze parti mantengono le proprie licenze. Non si accettano contributi esterni.",
         "linkLabel": "Consulta i repository pubblici"
+      },
+      "emptyFeed": {
+        "question": "Perché il mio feed è vuoto?",
+        "answer": "Controlla il profilo, la foto, le preferenze e i consensi, e verifica che la modalità pausa sia disattivata. La tua posizione e quella dell’altra persona devono risalire a meno di un’ora fa. Sono esclusi anche i profili a cui hai già dato un like, che hai saltato, bloccato o con cui hai già un match. Se vuoi, puoi aggiornare la posizione o modificare le preferenze; un feed vuoto può semplicemente indicare che al momento nessun profilo soddisfa queste condizioni.",
+        "linkLabel": "Capire le proposte di profili"
+      },
+      "ranking": {
+        "question": "I profili hanno un voto o una classifica di popolarità?",
+        "answer": "No. Histae non assegna voti di attrattiva o punteggi di popolarità e non usa un sistema Elo. I profili che rispettano le preferenze reciproche vengono mostrati in ordine di vicinanza. Ricevere più like non fa salire un profilo nel feed.",
+        "linkLabel": "Scopri come funziona il feed"
+      },
+      "pause": {
+        "question": "Posso prendermi una pausa senza perdere i match?",
+        "answer": "Sì. La modalità pausa, disponibile nel tuo profilo, ti rimuove dalle nuove proposte e interrompe la scoperta di nuovi profili. I match e le conversazioni esistenti restano disponibili. Quando riprendi, valgono i requisiti abituali, inclusa una posizione recente.",
+        "linkLabel": "Scopri la modalità pausa"
       }
     }
   }

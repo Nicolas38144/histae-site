@@ -16,7 +16,7 @@
       },
       "discovery": {
         "question": "How are suggested profiles selected?",
-        "answer": "Histae checks both people’s preferences: ages, who you’re looking for and maximum distance must work for each of you. Suggestions use your recent location with permission. Blocked profiles, people you’ve already made a choice about and existing matches aren’t suggested again.",
+        "answer": "Histae checks both people’s preferences: age, who you are looking for and maximum distance must work for each of you. Compatible profiles are shown in order of proximity. Blocks in either direction, saved likes or passes, and people you already have a recorded match with are excluded.",
         "linkLabel": "Explore the features"
       },
       "match": {
@@ -25,8 +25,8 @@
         "linkLabel": "Understand the journey"
       },
       "photos": {
-        "question": "Why are photos not visible immediately?",
-        "answer": "Histae puts the profile, personality and conversation first. Photos are revealed only after both people agree, independently from their decision to continue the match.",
+        "question": "Do I need to add a photo, and who can see it?",
+        "answer": "A photo is required to access the feed, but it never appears in profile suggestions. Within a match, photos are revealed only after both people agree, independently of the decision to continue the conversation.",
         "linkLabel": "See how photo reveal works"
       },
       "pricing": {
@@ -53,6 +53,21 @@
         "question": "Can I read the code and carry out a security audit?",
         "answer": "Original Histae code is public for inspection and security audits. Reuse, including non-commercial reuse, redistribution and use in another project are prohibited without prior written permission. This is not an open-source license. Third-party components retain their own licenses. External contributions are not accepted.",
         "linkLabel": "Browse the public repositories"
+      },
+      "emptyFeed": {
+        "question": "Why is my feed empty?",
+        "answer": "Check your profile, photo, preferences and consent choices, and make sure pause mode is off. Your location and the other person’s must both be less than an hour old. People you have already liked, passed, blocked or matched with are also excluded. You can update your location or adjust your preferences if you wish; an empty feed may simply mean that no profiles meet these conditions at the moment.",
+        "linkLabel": "Understand profile suggestions"
+      },
+      "ranking": {
+        "question": "Are profiles rated or ranked by popularity?",
+        "answer": "No. Histae does not assign attractiveness ratings or popularity scores, and does not use an Elo system. Profiles that meet both people’s preferences are shown in order of proximity. Receiving more likes does not move a profile up the feed.",
+        "linkLabel": "See how the feed works"
+      },
+      "pause": {
+        "question": "Can I take a break without losing my matches?",
+        "answer": "Yes. Pause mode, available in your profile, removes you from new suggestions and stops discovery of new profiles. Your existing matches and conversations remain available. When you resume, the usual requirements apply, including a recent location.",
+        "linkLabel": "Learn about pause mode"
       }
     }
   }

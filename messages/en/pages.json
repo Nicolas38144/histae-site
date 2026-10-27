@@ -11,15 +11,15 @@
         },
         "preferences": {
           "title": "Your preferences both matter",
-          "text": "Being in someone’s preferred age range is a start. They also need to be in yours. Histae checks who you’re looking for and the maximum distance in both directions too."
+          "text": "Age, who you are looking for and distance must work for both of you. For example, if your limit is 50 km and the other person’s is 20 km, you can only be suggested to each other within 20 km."
         },
         "location": {
           "title": "Location that is consensual and temporary",
-          "text": "Discovery requires a recent position and dedicated consent. The position becomes stale after one hour and is deleted after 24 hours without an update."
+          "text": "Both people need a recent location, with separate permission to use it. The distance shown is rounded; your exact location never appears on your profile. A location becomes stale after one hour and is deleted after 24 hours without an update. You can withdraw permission in the app."
         },
         "discovery": {
           "title": "What’s in your feed?",
-          "text": "A bio, answers, a few traits and a rounded distance. People you’ve blocked, already made a choice about or already matched with won’t be suggested again."
+          "text": "Compatible profiles are suggested in order of proximity. Blocks in either direction, saved likes or passes, and people you already have a recorded match with are excluded from suggestions."
         },
         "stableDecisions": {
           "title": "Seen that profile before?",
@@ -39,7 +39,7 @@
         },
         "photoReveal": {
           "title": "Decide about photos together",
-          "text": "You can keep talking with your photos hidden. They appear only when each of you agrees, separately from your choice to continue the conversation."
+          "text": "You need to add a photo to access the feed, but it is never shown there. Within a match, photos stay hidden until you both agree to reveal them, separately from choosing to continue the conversation. You can keep talking without sharing them."
         },
         "messaging": {
           "title": "Writing back",
@@ -48,6 +48,10 @@
         "continuationCredits": {
           "title": "A clear choice and credit cost",
           "text": "Each Free participant receives {freeCredits} credits each week. A credit is reserved when they choose to continue a match after the first 24 hours, then spent only after both people agree. A refusal or expiry releases it. An optional video earns 1 credit, with up to {advertisingStock} advertising credits carried over between weeks. Each Free participant can extend up to {weeklyMaximum} conversations per week. A Premium participant uses no credits; the other person keeps their own plan’s limits."
+        },
+        "pause": {
+          "title": "Take a break and keep your conversations",
+          "text": "Turn on pause mode in your profile to stop appearing in new suggestions and stop discovering new profiles. Your existing matches and conversations remain available. You can resume discovery whenever you feel ready."
         }
       }
     },

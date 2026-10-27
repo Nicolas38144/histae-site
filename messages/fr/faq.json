@@ -16,7 +16,7 @@
       },
       "discovery": {
         "question": "Comment les profils proposés sont-ils sélectionnés ?",
-        "answer": "Histae vérifie vos préférences et celles de l’autre personne : âges, personnes recherchées et distance maximale doivent convenir aux deux. Les propositions utilisent votre position récente, avec votre accord. Un profil bloqué, déjà évalué ou déjà lié à vous par un match n’est plus proposé.",
+        "answer": "Histae vérifie vos préférences et celles de l’autre personne : âge, personnes recherchées et distance maximale doivent convenir aux deux. Les profils compatibles sont présentés par proximité. Les blocages dans les deux sens, les likes ou passages déjà enregistrés et les profils avec lesquels un match est déjà enregistré sont exclus.",
         "linkLabel": "Découvrir les fonctionnalités"
       },
       "match": {
@@ -25,8 +25,8 @@
         "linkLabel": "Comprendre le parcours"
       },
       "photos": {
-        "question": "Pourquoi les photos ne sont-elles pas visibles immédiatement ?",
-        "answer": "Histae met d’abord en avant le profil, la personnalité et la conversation. Les photos ne sont révélées qu’après l’accord des deux personnes, indépendamment de leur décision de continuer le match.",
+        "question": "Faut-il ajouter une photo ? Qui peut la voir ?",
+        "answer": "Une photo est obligatoire pour accéder au feed, mais elle n’est jamais affichée dans les propositions de profils. Dans un match, les photos ne sont révélées qu’après l’accord des deux personnes, indépendamment de leur décision de continuer la conversation.",
         "linkLabel": "Voir le fonctionnement des photos"
       },
       "pricing": {
@@ -53,6 +53,21 @@
         "question": "Peut-on consulter le code et faire un audit de sécurité ?",
         "answer": "Le code original Histae est public pour la consultation et les audits de sécurité. Sa réutilisation, même non commerciale, sa redistribution et son utilisation dans un autre projet sont interdites sans autorisation écrite préalable. Ce n’est pas une licence open source. Les composants tiers conservent leurs propres licences. Les contributions externes ne sont pas acceptées.",
         "linkLabel": "Consulter les dépôts publics"
+      },
+      "emptyFeed": {
+        "question": "Pourquoi mon feed est-il vide ?",
+        "answer": "Vérifiez votre profil, votre photo, vos préférences et vos consentements, puis assurez-vous que le mode pause est désactivé. Votre position et celle de l’autre personne doivent dater de moins d’une heure. Les profils déjà likés ou passés, bloqués ou déjà liés à un match sont aussi écartés. Vous pouvez actualiser votre position ou ajuster vos préférences si vous le souhaitez ; un feed vide peut simplement signifier qu’aucun profil ne remplit ces conditions pour l’instant.",
+        "linkLabel": "Comprendre les propositions de profils"
+      },
+      "ranking": {
+        "question": "Les profils ont-ils une note ou un score de popularité ?",
+        "answer": "Non. Histae n’attribue pas de note d’attractivité ni de score de popularité et n’utilise pas de système Elo. Les profils compatibles avec vos préférences réciproques sont affichés par proximité. Le nombre de likes reçus ne détermine pas leur place dans le feed.",
+        "linkLabel": "Voir comment fonctionne le feed"
+      },
+      "pause": {
+        "question": "Puis-je faire une pause sans perdre mes matchs ?",
+        "answer": "Oui. Le mode pause, accessible depuis votre profil, vous retire des nouvelles propositions et suspend la découverte de nouveaux profils. Vos matchs et vos conversations existants restent accessibles. À la reprise, les conditions habituelles s’appliquent, notamment une position récente.",
+        "linkLabel": "Découvrir le mode pause"
       }
     }
   }
