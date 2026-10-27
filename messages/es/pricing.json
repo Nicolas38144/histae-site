@@ -75,7 +75,7 @@
         },
         "video": {
           "title": "Créditos extra, si quieres",
-          "text": "Un vídeo publicitario opcional permite ganar 1 crédito. Puedes tener hasta {advertisingStock} créditos publicitarios. Los créditos no utilizados, incluidos los reservados, caducan cada lunes a las 00:00 UTC y deben ganarse de nuevo mediante vídeos."
+          "text": "Un vídeo publicitario opcional permite ganar 1 crédito. Puedes tener hasta {advertisingStock} créditos publicitarios. Los créditos publicitarios no utilizados, incluidos los reservados, caducan cada lunes a las 00:00 UTC y deben ganarse de nuevo mediante vídeos."
         },
         "limit": {
           "title": "Hasta {weeklyMaximum} conversaciones prolongadas por semana",
@@ -83,7 +83,7 @@
         },
         "reservation": {
           "title": "Un crédito utilizado solo si ambos continuáis",
-          "text": "Tu crédito se reserva cuando eliges continuar. Solo se consume tras los dos acuerdos. Si la otra persona rechaza o termina el plazo, la reserva se libera."
+          "text": "Tu crédito se reserva cuando eliges continuar. Solo se consume tras los dos acuerdos. Si la otra persona rechaza o termina el plazo, la reserva se libera. Una reserva gratuita puede seguir vinculada a la semana en la que aceptaste, aunque la conversación se confirme después del lunes."
         }
       },
       "mutualNote": "Premium nunca permite acceder a una conversación ni a las fotos sin el acuerdo de la otra persona."

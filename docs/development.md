@@ -137,7 +137,7 @@ violations or horizontal overflow were reported in those twenty views. The focus
 tests also exercise the keyboard skip link, language dialog focus/closing, reduced motion
 and loading of the three home screenshots. This does not establish full WCAG conformance.
 
-The twenty WebP screenshots refreshed on 2026-10-27 total 1,380,676 bytes; the largest is 91,262 bytes.
+The twenty WebP screenshots refreshed on 2026-10-27 total 1,380,262 bytes; the largest is 91,262 bytes.
 Lazy loading is retained except for the hero. Keep each capture below 100 KiB when refreshing
 them, and check the actual page request mix after layout or dependency changes. Local asset
 sizes do not establish hosted Core Web Vitals or performance on a slow mobile connection.

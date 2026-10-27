@@ -75,7 +75,7 @@
         },
         "video": {
           "title": "Crediti extra, se lo desideri",
-          "text": "Un video pubblicitario facoltativo permette di ottenere 1 credito. Puoi avere fino a {advertisingStock} crediti pubblicitari. I crediti inutilizzati, inclusi quelli prenotati, scadono ogni lunedì alle 00:00 UTC e devono essere guadagnati di nuovo tramite video."
+          "text": "Un video pubblicitario facoltativo permette di ottenere 1 credito. Puoi avere fino a {advertisingStock} crediti pubblicitari. I crediti pubblicitari inutilizzati, inclusi quelli prenotati, scadono ogni lunedì alle 00:00 UTC e devono essere guadagnati di nuovo tramite video."
         },
         "limit": {
           "title": "Fino a {weeklyMaximum} conversazioni prolungate a settimana",
@@ -83,7 +83,7 @@
         },
         "reservation": {
           "title": "Un credito usato solo se continuate entrambi",
-          "text": "Il credito viene riservato quando scegli di continuare. Si consuma solo dopo i due consensi. Se l’altra persona rifiuta o il tempo scade, la riserva viene liberata."
+          "text": "Il credito viene riservato quando scegli di continuare. Si consuma solo dopo i due consensi. Se l’altra persona rifiuta o il tempo scade, la riserva viene liberata. Una prenotazione gratuita può restare legata alla settimana del consenso, anche se la conversazione viene confermata dopo il lunedì."
         }
       },
       "mutualNote": "Premium non dà mai accesso a una conversazione o alle foto senza il consenso dell’altra persona."

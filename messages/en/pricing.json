@@ -75,7 +75,7 @@
         },
         "video": {
           "title": "Extra credits, if you want them",
-          "text": "An optional video ad earns 1 credit. You can hold up to {advertisingStock} advertising credits. Unused credits, including reserved credits, expire every Monday at 00:00 UTC and must then be earned again by watching videos."
+          "text": "An optional video ad earns 1 credit. You can hold up to {advertisingStock} advertising credits. Unused advertising credits, including reserved credits, expire every Monday at 00:00 UTC and must then be earned again by watching videos."
         },
         "limit": {
           "title": "Extend up to {weeklyMaximum} conversations each week",
@@ -83,7 +83,7 @@
         },
         "reservation": {
           "title": "A credit spent only when you both continue",
-          "text": "Your credit is reserved when you choose to continue. It is only spent after both people agree. If the other person declines or the time runs out, the reservation is released."
+          "text": "Your credit is reserved when you choose to continue. It is only spent after both people agree. If the other person declines or the time runs out, the reservation is released. A free-credit reservation may remain linked to the week you agreed, even if the conversation is confirmed after Monday."
         }
       },
       "mutualNote": "Premium never grants access to a conversation or photos without the other person’s agreement."
