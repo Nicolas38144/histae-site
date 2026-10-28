@@ -37,11 +37,36 @@ The subscription flow requires the API; see [billing](docs/billing.md).
 Next.js App Router, React, TypeScript and next-intl generate a static `out/` directory.
 Caddy serves it in production with a CSP generated from the same HTML; there is no Next.js production server.
 Subscription requests reach the API through a same-origin reverse proxy.
+Account authentication and privacy requests use that same proxy.
 
 `config/site.json` defines locales, public routes, the public support address, feature/credit descriptions
 and legal document mappings.
 Public Premium prices are loaded from the same API catalogue as Checkout; there is no second price list in the site.
 `messages/` contains localized interface copy. Stripe credentials and account data belong to the API.
+
+## Account and data deletion
+
+The footer links to `/{fr,en,es,it}/account/data/`. Instructions, retention information and a
+support email are public, including for people who have uninstalled the app or lost their UUID.
+Automatic actions require the existing account UUID, matching phone number and SMS verification.
+The short-lived HttpOnly website session is shared with subscription management; no mobile token
+or private account data is written to browser storage.
+
+Users can remove their profile photo, erase their saved location and withdraw location consent,
+or erase sex/dating preferences and withdraw sensitive-data consent without closing their account.
+Closing the account requires a separate confirmation and a one-time deletion token. The page
+acknowledges acceptance of background erasure, rather than claiming that cleanup has finished.
+Neither paid access nor completed onboarding is required. Apple/Google subscriptions must be
+cancelled in their store; Stripe subscriptions follow the existing account-erasure workflow.
+
+Deploy the API, site and reverse proxy together. The proxy must forward `/api/web/account/*` and
+`/api/web/privacy/*`, in addition to `/api/web/billing/*`. No database reset or migration is needed.
+`WEB_BILLING_ORIGIN` must match the website origin even if `WEB_BILLING_ENABLED=false`.
+
+Once deployed, the Google Play account-deletion URL can point to
+`https://www.histae.com/fr/account/data/#delete-account` and its optional partial-data-deletion URL
+to `https://www.histae.com/fr/account/data/#delete-data`. Confirm the real production retention
+and backup practices before submitting the declaration; this page does not finalise the draft legal policy.
 
 ## Checks
 

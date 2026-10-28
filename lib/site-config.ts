@@ -2,6 +2,10 @@ import siteConfig from "../config/site.json";
 
 export const publicUrl = siteConfig.publicUrl;
 export const supportEmail = siteConfig.supportEmail;
+export const accountDataPath = siteConfig.accountPages.data.path;
+export function accountDataHref(locale: Locale): string {
+  return `/${locale}/${accountDataPath}/`;
+}
 export const localeConfig = siteConfig.locales;
 export type Locale = keyof typeof localeConfig;
 

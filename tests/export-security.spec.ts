@@ -12,6 +12,7 @@ test.beforeEach(async ({ page }) => {
   });
   await page.route("**/api/web/billing/**", route => route.fulfill(route.request().url().endsWith("/plans")
     ? { json: { offers } } : { status: 401, json: { error: { code: "web_authentication_failed" } } }));
+  await page.route("**/api/web/account/**", route => route.fulfill({ status: 401, json: { error: { code: "web_authentication_failed" } } }));
 });
 
 test("every exported page has exact inline-script hashes and a bounded header", async () => {
@@ -34,13 +35,14 @@ test("every exported page has exact inline-script hashes and a bounded header", 
 
 for (const locale of ["fr", "en", "es", "it"]) {
   test(`${locale}: valid hydration and catalogue requests work under the production CSP`, async ({ page }) => {
-    for (const suffix of ["", "pricing/", "billing/subscribe/"]) {
+    for (const suffix of ["", "pricing/", "billing/subscribe/", "account/data/"]) {
       const response = await page.goto(`/${locale}/${suffix}`);
       expect(response?.status()).toBe(200);
       expect(response?.headers()["content-security-policy"]).toContain("sha256-");
       await expect(page.locator("main h1")).toHaveCount(1);
       if (suffix === "pricing/") await expect(page.locator(".pricing-card").nth(1).locator(".plan-price")).toContainText(/5[,.]00/);
       if (suffix === "billing/subscribe/") await expect(page.locator("main form button").first()).toBeEnabled();
+      if (suffix === "account/data/") await expect(page.locator("#data-login form button").first()).toBeEnabled();
       await page.locator(".language-trigger").click();
       await expect(page.getByRole("dialog")).toBeVisible();
       await page.keyboard.press("Escape");
@@ -83,5 +85,14 @@ test("public navigation to billing remains usable with an existing document poli
   await expect(page.locator(".pricing-card").nth(1).locator(".plan-price")).toContainText(/5[,.]00/);
   await page.getByRole("link", { name: "Choisir Premium Mensuel", exact: true }).click();
   await expect(page.getByRole("button", { name: "Recevoir un code" })).toBeEnabled();
+  expect(await page.evaluate(() => (window as unknown as AuditWindow).blocked)).toEqual([]);
+});
+
+test("the footer opens data management without breaking the document security policy", async ({ page }) => {
+  await page.goto("/fr/");
+  await page.getByRole("contentinfo").getByRole("link", { name: "Gérer mes données", exact: true }).click();
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Gérer mes données Histae");
+  await expect(page.getByRole("button", { name: "Recevoir un code", exact: true })).toBeEnabled();
+  await expect(page.locator("#data-help a[href^='mailto:']")).toBeVisible();
   expect(await page.evaluate(() => (window as unknown as AuditWindow).blocked)).toEqual([]);
 });

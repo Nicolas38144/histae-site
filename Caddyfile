@@ -28,7 +28,7 @@ import caddy-common.caddy
 	}
 
 	map {path} {histae_referrer_policy} {
-		~^/((fr|en|es|it)/)?billing/(success|cancel|return|subscribe)(/index\.html|/)?$ no-referrer
+		~^/((fr|en|es|it)/)?(billing/(success|cancel|return|subscribe)|account/data)(/index\.html|/)?$ no-referrer
 		default strict-origin-when-cross-origin
 	}
 	header {
@@ -40,7 +40,7 @@ import caddy-common.caddy
 		X-Content-Type-Options nosniff
 		X-Frame-Options DENY
 	}
-	@billing_returns path_regexp ^/((fr|en|es|it)/)?billing/(success|cancel|return|subscribe)(/index\.html|/)?$
+	@billing_returns path_regexp ^/((fr|en|es|it)/)?(billing/(success|cancel|return|subscribe)|account/data)(/index\.html|/)?$
 	header @billing_returns {
 		Cache-Control no-store
 		X-Robots-Tag "noindex, follow"

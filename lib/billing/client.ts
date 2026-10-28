@@ -1,8 +1,8 @@
 import { BillingFailure, object } from "./failure";
-export async function billingRequest(path: string, language: string, options: RequestInit = {}): Promise<unknown> {
+export async function billingRequest(path: string, language: string, options: RequestInit = {}, scope: "billing" | "account" | "privacy" = "billing"): Promise<unknown> {
   let response: Response;
   try {
-    response = await fetch(`/api/web/billing/${path}`, {
+    response = await fetch(`/api/web/${scope}/${path}`, {
       ...options, credentials: "same-origin", cache: "no-store", redirect: "error",
       headers: { "Content-Type": "application/json", "Accept-Language": language, ...options.headers },
       signal: AbortSignal.any([AbortSignal.timeout(25000), ...(options.signal ? [options.signal] : [])]),

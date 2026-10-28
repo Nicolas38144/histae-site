@@ -10,6 +10,7 @@ const legalDocuments = Object.keys(siteConfig.legalDocuments);
 const routes = [
   ...Object.values(siteConfig.routes).map((route) => ({ ...route, indexable: true })),
   ...Object.values(siteConfig.billingReturns).map((route) => ({ ...route, indexable: false })),
+  ...Object.values(siteConfig.accountPages).map((route) => ({ ...route, indexable: false })),
   ...legalDocuments.map((document) => ({ path: `legal/${document}`, indexable: false })),
 ];
 
@@ -85,6 +86,7 @@ for (const locale of locales) {
     if (!primaryNavigation) throw new Error(`${file}: missing primary navigation`);
     if (primaryNavigation.includes(`href="${faqHref}"`)) throw new Error(`${file}: FAQ remains in the menu`);
     assertIncludes(footer, `href="${faqHref}"`, `${file}: FAQ missing from footer`);
+    assertIncludes(footer, `href="/${locale}/${siteConfig.accountPages.data.path}/"`, `${file}: data management missing from footer`);
     for (const document of legalDocuments) {
       assertIncludes(footer, `href="/${locale}/legal/${document}/"`, `${file}: legal document missing from footer: ${document}`);
     }

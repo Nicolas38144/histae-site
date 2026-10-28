@@ -1,3 +1,7 @@
+import frAccountData from "./fr/account-data.json";
+import enAccountData from "./en/account-data.json";
+import esAccountData from "./es/account-data.json";
+import itAccountData from "./it/account-data.json";
 import itDiscovery from "./it/discovery.json";
 import esDiscovery from "./es/discovery.json";
 import enDiscovery from "./en/discovery.json";
@@ -32,7 +36,7 @@ import itPages from "./it/pages.json";
 import itPricing from "./it/pricing.json";
 import type { Locale } from "../lib/site-config";
 
-const frMessages = { ...frCommon, ...frHome, ...frPricing, ...frPages, ...frFaq, ...frBilling, ...frCheckout, ...frDiscovery };
+const frMessages = { ...frCommon, ...frHome, ...frPricing, ...frPages, ...frFaq, ...frBilling, ...frCheckout, ...frDiscovery, ...frAccountData };
 export type AppMessages = typeof frMessages;
 
 function defineMessages(messages: AppMessages): AppMessages {
@@ -41,9 +45,9 @@ function defineMessages(messages: AppMessages): AppMessages {
 
 const messagesByLocale: Record<Locale, AppMessages> = {
   fr: frMessages,
-  en: defineMessages({ ...enCommon, ...enHome, ...enPricing, ...enPages, ...enFaq, ...enBilling, ...enCheckout, ...enDiscovery }),
-  es: defineMessages({ ...esCommon, ...esHome, ...esPricing, ...esPages, ...esFaq, ...esBilling, ...esCheckout, ...esDiscovery }),
-  it: defineMessages({ ...itCommon, ...itHome, ...itPricing, ...itPages, ...itFaq, ...itBilling, ...itCheckout, ...itDiscovery }),
+  en: defineMessages({ ...enCommon, ...enHome, ...enPricing, ...enPages, ...enFaq, ...enBilling, ...enCheckout, ...enDiscovery, ...enAccountData }),
+  es: defineMessages({ ...esCommon, ...esHome, ...esPricing, ...esPages, ...esFaq, ...esBilling, ...esCheckout, ...esDiscovery, ...esAccountData }),
+  it: defineMessages({ ...itCommon, ...itHome, ...itPricing, ...itPages, ...itFaq, ...itBilling, ...itCheckout, ...itDiscovery, ...itAccountData }),
 };
 
 export function getMessagesForLocale(locale: Locale): AppMessages {

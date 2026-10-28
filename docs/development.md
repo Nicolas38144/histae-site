@@ -115,6 +115,7 @@ For browser scenarios, install Chromium once and run the relevant cases:
 ```bash
 pnpm exec playwright install chromium
 pnpm exec playwright test tests/marketing.spec.ts tests/billing.spec.ts
+pnpm exec playwright test tests/account-data.spec.ts
 ```
 
 Set `PLAYWRIGHT_CHANNEL=msedge` to use an already installed Edge instead of Playwright Chromium.

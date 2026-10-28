@@ -62,6 +62,9 @@
       "priority": 0.8
     }
   },
+  "accountPages": {
+    "data": { "path": "account/data" }
+  },
   "billingReturns": {
     "success": {
       "path": "billing/success"

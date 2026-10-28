@@ -483,3 +483,29 @@ h1, h2, h3 { text-wrap: balance; }
 @media(max-width:640px) { .writing-passages,.faq-filters { grid-template-columns:1fr; } .demo-chat p { max-width:95%; } }
 
 .demo-actions button { border:0; cursor:pointer; }
+
+/* Account controls use the same quiet palette as the public site. */
+.account-data-shell { max-width: 1120px; }
+.account-intro { max-width: 54rem; margin-bottom: 2.5rem; }
+.account-intro h1 { font: 400 clamp(2.3rem,5vw,4.5rem)/1.08 Georgia,serif; letter-spacing: -.04em; margin-block: .8rem 1.5rem; }
+.account-data-page p { line-height: 1.8; margin-block: 1rem; }
+.account-data-page h2 { font: 400 clamp(1.5rem,3vw,2.2rem)/1.2 Georgia,serif; }
+.account-data-page h3 { font-size: 1.15rem; line-height: 1.4; }
+.account-shortcuts,.account-button-row { display:flex; flex-wrap:wrap; gap:1rem; }
+.account-panel { border:1px solid var(--line); border-radius:20px; background:var(--panel); padding:clamp(1.25rem,3vw,2rem); margin-block:1.5rem; }
+.account-section { margin-block:3rem; scroll-margin-top:7rem; }
+.account-panel[id] { scroll-margin-top:7rem; }
+.account-data-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
+.account-data-grid .account-panel { display:flex; flex-direction:column; margin-block:1rem; }
+.account-data-grid .account-panel p { flex:1; }
+.account-data-page .account-note { color:var(--muted); font-size:.92rem; }
+.account-reference { overflow-wrap:anywhere; }
+.account-delete,.account-confirmation { border-color:var(--coral); }
+.account-data-page .button-danger { color:var(--ink); border:1px solid var(--coral); background:transparent; cursor:pointer; }
+.account-data-page button:disabled { opacity:.55; cursor:not-allowed; }
+.account-confirmation input { width:100%; padding:.85rem; border:1px solid currentColor; border-radius:.5rem; background:transparent; color:inherit; font:inherit; margin-block:.6rem 1rem; }
+.account-confirmation label { display:block; }
+.account-status [role="alert"],.account-status > [role="status"] { padding:1rem; border:1px solid var(--lavender); border-radius:12px; }
+.account-status:empty { display:none; }
+.account-status:focus { outline:2px solid var(--lavender); outline-offset:4px; }
+@media(max-width:760px) { .account-data-grid { grid-template-columns:1fr; } .account-data-grid .account-panel { margin-block:.4rem; } }
