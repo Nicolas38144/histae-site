@@ -1,6 +1,7 @@
 import siteConfig from "../config/site.json";
 
 export const publicUrl = siteConfig.publicUrl;
+export const supportEmail = siteConfig.supportEmail;
 export const localeConfig = siteConfig.locales;
 export type Locale = keyof typeof localeConfig;
 

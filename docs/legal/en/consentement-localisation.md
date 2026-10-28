@@ -12,4 +12,4 @@ The API retains the last location transmitted, rather than a travel history. Thi
 
 The location permission granted in your phone's settings is separate from this consent. You can change it in your operating system; the app must also collect your choice through its own process. This agreement does not cover any advertising use of the location.
 
-For recipients, your rights and other retention periods, see the Privacy Policy. Questions: Validation in progress.
+For recipients, your rights and other retention periods, see the Privacy Policy. Questions: [support.histae@gmail.com](mailto:support.histae@gmail.com).

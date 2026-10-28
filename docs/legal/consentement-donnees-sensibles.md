@@ -16,4 +16,4 @@ Vous pouvez refuser. Votre compte peut rester ouvert, mais la découverte et les
 
 Vous pouvez retirer ce consentement dans les réglages de consentement de l’application. L’API supprime alors le sexe et les préférences concernés et cesse de les utiliser pour de nouvelles découvertes. Le retrait ne rend pas rétroactivement invisibles les informations déjà reçues, copiées ou capturées par d’autres utilisateurs. La preuve des choix et retraits peut être conservée pendant la durée indiquée dans la Politique de confidentialité.
 
-Pour les destinataires, les durées et l’exercice de vos droits, consultez la Politique de confidentialité. Questions : En cours de validation.
+Pour les destinataires, les durées et l’exercice de vos droits, consultez la Politique de confidentialité. Questions : [support.histae@gmail.com](mailto:support.histae@gmail.com).

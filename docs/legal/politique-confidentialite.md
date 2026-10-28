@@ -3,7 +3,7 @@
 **Version publiée :** En cours de validation.  
 **Date du document :** 26 octobre 2026.  
 **Responsable du traitement :** En cours de validation.  
-**Contact vie privée / DPO, s’il existe :** En cours de validation.
+**Contact vie privée :** [support.histae@gmail.com](mailto:support.histae@gmail.com)
 
 Cette notice décrit les traitements liés à l’application de rencontre Histae et à son API. Les traitements propres au site vitrine, notamment les éventuels traceurs et outils de mesure d’audience, doivent être vérifiés séparément avant d’étendre cette notice au site.
 
@@ -41,7 +41,7 @@ Pour les mécanismes actuellement présents dans l’API : une position n’est 
 
 La prise de connaissance de cette notice ne constitue pas un consentement global aux traitements. L’acceptation des conditions d’utilisation, le consentement aux données sensibles et le consentement à la localisation sont des choix distincts. Le refus ou le retrait de l’un des deux consentements facultatifs empêche les fonctions qui en dépendent. Retirer le consentement aux données sensibles supprime le sexe et les préférences concernés ; retirer celui de localisation supprime la position enregistrée.
 
-Depuis le compte, l’utilisateur peut demander l’accès, la rectification, la portabilité, la limitation, l’opposition ou l’effacement, et obtenir un export de ses données selon le parcours proposé. Il peut également écrire à En cours de validation. Une demande peut nécessiter une vérification raisonnable de l’identité. Les limites légales applicables à certains droits seront expliquées dans la réponse. Une réclamation peut être adressée à la [CNIL](https://www.cnil.fr/fr/plaintes).
+Depuis le compte, l’utilisateur peut demander l’accès, la rectification, la portabilité, la limitation, l’opposition ou l’effacement, et obtenir un export de ses données selon le parcours proposé. Il peut également écrire à [support.histae@gmail.com](mailto:support.histae@gmail.com). Une demande peut nécessiter une vérification raisonnable de l’identité. Les limites légales applicables à certains droits seront expliquées dans la réponse. Une réclamation peut être adressée à la [CNIL](https://www.cnil.fr/fr/plaintes).
 
 ## 5. Sécurité, décisions automatisées et évolutions
 

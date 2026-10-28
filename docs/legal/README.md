@@ -23,6 +23,10 @@ Each prefix has API `_VERSION` and `_URL` settings. Do not rename sources or pub
 of a documentation cleanup. The footer and language selector link to rendered HTML pages. Caddy
 permanently redirects legacy French route names while retaining the locale and query string.
 
+The public support and privacy contact is [support.histae@gmail.com](mailto:support.histae@gmail.com).
+The footer and subscription help use `supportEmail` in `config/site.json`; keep the contact links
+in all four document languages and the app's `SUPPORT_EMAIL` aligned when it changes.
+
 ## Review and publication
 
 Public draft banners have been removed. Missing information uses the localized equivalent of

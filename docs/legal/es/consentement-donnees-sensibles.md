@@ -16,4 +16,4 @@ Puede negarse. Su cuenta puede permanecer abierta, pero el descubrimiento y las 
 
 Puede retirar este consentimiento en los ajustes de consentimiento de la aplicación. La API elimina entonces el sexo y las preferencias correspondientes y deja de utilizarlos para nuevos descubrimientos. La retirada no vuelve invisibles retroactivamente los datos ya recibidos, copiados o capturados por otros usuarios. La prueba de las decisiones y retiradas puede conservarse durante el plazo indicado en la Política de privacidad.
 
-Para los destinatarios, los plazos y el ejercicio de sus derechos, consulte la Política de privacidad. Preguntas: En proceso de validación.
+Para los destinatarios, los plazos y el ejercicio de sus derechos, consulte la Política de privacidad. Preguntas: [support.histae@gmail.com](mailto:support.histae@gmail.com).

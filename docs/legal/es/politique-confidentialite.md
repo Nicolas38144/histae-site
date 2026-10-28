@@ -3,7 +3,7 @@
 **Versión publicada:** En proceso de validación.  
 **Fecha del documento:** 26 de octubre de 2026.  
 **Responsable del tratamiento:** En proceso de validación.  
-**Contacto de privacidad / DPD, si existe:** En proceso de validación.
+**Contacto de privacidad:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
 
 Este aviso describe los tratamientos relacionados con la aplicación de citas Histae y su API. Los tratamientos propios del sitio de presentación, en particular los posibles rastreadores y herramientas de medición de audiencia, deben verificarse por separado antes de extender este aviso al sitio.
 
@@ -41,7 +41,7 @@ Para los mecanismos actualmente presentes en la API: una ubicación deja de pode
 
 La toma de conocimiento de este aviso no constituye un consentimiento global a los tratamientos. La aceptación de las condiciones de uso, el consentimiento para los datos sensibles y el consentimiento para la ubicación son decisiones independientes. El rechazo o la retirada de cualquiera de los dos consentimientos opcionales impide las funciones que dependen de él. Retirar el consentimiento para los datos sensibles elimina el sexo y las preferencias correspondientes; retirar el de ubicación elimina la ubicación registrada.
 
-Desde la cuenta, el usuario puede solicitar el acceso, la rectificación, la portabilidad, la limitación, la oposición o la supresión, y obtener una exportación de sus datos mediante el proceso propuesto. También puede escribir a En proceso de validación. Una solicitud puede requerir una verificación razonable de la identidad. Los límites legales aplicables a determinados derechos se explicarán en la respuesta. Puede presentarse una reclamación ante la [CNIL](https://www.cnil.fr/fr/plaintes).
+Desde la cuenta, el usuario puede solicitar el acceso, la rectificación, la portabilidad, la limitación, la oposición o la supresión, y obtener una exportación de sus datos mediante el proceso propuesto. También puede escribir a [support.histae@gmail.com](mailto:support.histae@gmail.com). Una solicitud puede requerir una verificación razonable de la identidad. Los límites legales aplicables a determinados derechos se explicarán en la respuesta. Puede presentarse una reclamación ante la [CNIL](https://www.cnil.fr/fr/plaintes).
 
 ## 5. Seguridad, decisiones automatizadas y cambios
 

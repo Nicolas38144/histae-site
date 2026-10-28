@@ -16,4 +16,4 @@ Potete rifiutare. Il vostro account può rimanere aperto, ma la scoperta e le fu
 
 Potete revocare questo consenso nelle impostazioni dei consensi dell’applicazione. L’API elimina quindi il sesso e le preferenze interessati e smette di utilizzarli per nuove scoperte. La revoca non rende retroattivamente invisibili le informazioni già ricevute, copiate o catturate da altri utenti. La prova delle scelte e delle revoche può essere conservata per il periodo indicato nell’Informativa sulla privacy.
 
-Per i destinatari, le durate e l’esercizio dei vostri diritti, consultate l’Informativa sulla privacy. Domande: In corso di validazione.
+Per i destinatari, le durate e l’esercizio dei vostri diritti, consultate l’Informativa sulla privacy. Domande: [support.histae@gmail.com](mailto:support.histae@gmail.com).

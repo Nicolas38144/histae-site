@@ -3,7 +3,7 @@
 **Versione pubblicata:** In corso di validazione.  
 **Data del documento:** 26 ottobre 2026.  
 **Titolare del trattamento:** In corso di validazione.  
-**Contatto privacy / DPO, se presente:** In corso di validazione.
+**Contatto privacy:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
 
 Questa informativa descrive i trattamenti legati all’applicazione di incontri Histae e alla sua API. I trattamenti propri del sito vetrina, in particolare eventuali strumenti di tracciamento e misurazione del pubblico, devono essere verificati separatamente prima di estendere questa informativa al sito.
 
@@ -41,7 +41,7 @@ Per i meccanismi attualmente presenti nell’API: una posizione non è più util
 
 La presa visione di questa informativa non costituisce un consenso globale ai trattamenti. L’accettazione delle condizioni d’uso, il consenso ai dati sensibili e il consenso alla localizzazione sono scelte distinte. Il rifiuto o la revoca di uno dei due consensi facoltativi impedisce le funzioni che ne dipendono. Revocare il consenso ai dati sensibili elimina il sesso e le preferenze interessati; revocare quello alla localizzazione elimina la posizione registrata.
 
-Dal proprio account, l’utente può chiedere l’accesso, la rettifica, la portabilità, la limitazione, l’opposizione o la cancellazione e ottenere un’esportazione dei propri dati secondo il percorso proposto. Può anche scrivere a In corso di validazione. Una richiesta può richiedere una ragionevole verifica dell’identità. I limiti legali applicabili a determinati diritti saranno spiegati nella risposta. È possibile presentare un reclamo alla [CNIL](https://www.cnil.fr/fr/plaintes).
+Dal proprio account, l’utente può chiedere l’accesso, la rettifica, la portabilità, la limitazione, l’opposizione o la cancellazione e ottenere un’esportazione dei propri dati secondo il percorso proposto. Può anche scrivere a [support.histae@gmail.com](mailto:support.histae@gmail.com). Una richiesta può richiedere una ragionevole verifica dell’identità. I limiti legali applicabili a determinati diritti saranno spiegati nella risposta. È possibile presentare un reclamo alla [CNIL](https://www.cnil.fr/fr/plaintes).
 
 ## 5. Sicurezza, decisioni automatizzate ed evoluzioni
 

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import type { AppMessages } from '../messages';
-import type { Locale } from '../lib/site-config';
+import { supportEmail, type Locale } from '../lib/site-config';
 import { subscriptionChannels, subscriptionManagementHref, type SubscriptionChannel } from '../lib/billing/subscription-channels';
 
 type Copy = Pick<AppMessages['discovery'], 'helpTitle' | 'helpIntro' | 'channels' | 'restore' | 'helpNote'>;
@@ -29,6 +29,7 @@ export function SubscriptionHelp({ copy, locale }: { copy: Copy; locale: Locale 
       </div>
       <p>{copy.restore}</p>
       <p className="demo-notice">{copy.helpNote}</p>
+      <a className="text-link" href={`mailto:${supportEmail}`}>{supportEmail}</a>
     </section>
   );
 }

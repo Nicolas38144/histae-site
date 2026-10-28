@@ -12,4 +12,4 @@ L’API conserve la dernière position transmise, et non un historique de trajet
 
 L’autorisation de localisation donnée dans les réglages de votre téléphone est distincte de ce consentement. Vous pouvez la modifier dans votre système d’exploitation ; l’application doit aussi recueillir votre choix dans son propre parcours. Aucune utilisation publicitaire de la position n’est couverte par cet accord.
 
-Pour les destinataires, vos droits et les autres durées de conservation, consultez la Politique de confidentialité. Questions : En cours de validation.
+Pour les destinataires, vos droits et les autres durées de conservation, consultez la Politique de confidentialité. Questions : [support.histae@gmail.com](mailto:support.histae@gmail.com).

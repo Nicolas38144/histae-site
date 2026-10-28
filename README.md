@@ -6,6 +6,8 @@ or manage a Stripe subscription. Mobile purchases use the Apple and Google store
 
 **Website:** [www.histae.com](https://www.histae.com/)
 
+**Support:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
+
 ## Getting started
 
 Use Node.js 24 and the pnpm version declared in `package.json`.
@@ -36,7 +38,8 @@ Next.js App Router, React, TypeScript and next-intl generate a static `out/` dir
 Caddy serves it in production with a CSP generated from the same HTML; there is no Next.js production server.
 Subscription requests reach the API through a same-origin reverse proxy.
 
-`config/site.json` defines locales, public routes, feature/credit descriptions and legal document mappings.
+`config/site.json` defines locales, public routes, the public support address, feature/credit descriptions
+and legal document mappings.
 Public Premium prices are loaded from the same API catalogue as Checkout; there is no second price list in the site.
 `messages/` contains localized interface copy. Stripe credentials and account data belong to the API.
 

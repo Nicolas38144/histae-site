@@ -26,7 +26,7 @@ L’utente rimane responsabile dei testi, delle foto e dei messaggi che pubblica
 
 L’utente conserva i diritti sui propri contenuti. Autorizza Histae a ospitarli, trattarli e mostrarli solo nella misura necessaria al funzionamento del servizio, alla sua sicurezza e alla sua moderazione, per il periodo in cui tali contenuti sono conservati secondo l’Informativa sulla privacy. Questa autorizzazione non comporta un trasferimento di proprietà.
 
-Le biografie, le risposte del profilo e le foto possono essere sottoposte a controlli automatizzati e a revisione umana. Un contenuto in attesa o rifiutato potrebbe non essere visibile agli altri utenti. In caso di violazione, Histae può rimuovere un contenuto, limitare l’accesso o sospendere un account, in base alla gravità della situazione. L’utente può chiedere spiegazioni o contestare una decisione a In corso di validazione.
+Le biografie, le risposte del profilo e le foto possono essere sottoposte a controlli automatizzati e a revisione umana. Un contenuto in attesa o rifiutato potrebbe non essere visibile agli altri utenti. In caso di violazione, Histae può rimuovere un contenuto, limitare l’accesso o sospendere un account, in base alla gravità della situazione. L’utente può chiedere spiegazioni o contestare una decisione scrivendo a [support.histae@gmail.com](mailto:support.histae@gmail.com).
 
 ## 4. Piani e pagamenti
 
@@ -44,7 +44,7 @@ L’utente può chiedere la cancellazione del proprio account dal percorso previ
 
 La versione applicabile è quella presentata e accettata nell’applicazione. Una modifica sostanziale sarà oggetto di una nuova informazione e, quando necessario, di una nuova accettazione. La versione e la data di entrata in vigore devono rimanere accessibili insieme al testo.
 
-Per qualsiasi domanda su queste condizioni: In corso di validazione. Le informazioni relative al diritto applicabile, ai reclami e a un eventuale mediatore per i consumatori sono: In corso di validazione.
+Per qualsiasi domanda su queste condizioni: [support.histae@gmail.com](mailto:support.histae@gmail.com). Le informazioni relative al diritto applicabile, ai reclami e a un eventuale mediatore per i consumatori sono: In corso di validazione.
 
 
 ## Crediti di continuazione e pubblicità facoltativa

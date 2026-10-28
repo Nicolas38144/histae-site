@@ -3,7 +3,7 @@
 **Published version:** Validation in progress.  
 **Document date:** 26 October 2026.  
 **Data controller:** Validation in progress.  
-**Privacy contact / DPO, if appointed:** Validation in progress.
+**Privacy contact:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
 
 This notice describes processing associated with the Histae dating app and its API. Processing specific to the showcase website, including any trackers and audience measurement tools, must be checked separately before extending this notice to the website.
 
@@ -41,7 +41,7 @@ For the mechanisms currently present in the API: a location can no longer be use
 
 Acknowledging this notice does not constitute blanket consent to processing. Acceptance of the terms of use, consent to sensitive data processing and consent to location use are separate choices. Refusing or withdrawing either optional consent prevents the features that depend on it. Withdrawing sensitive data consent deletes the sex and preferences concerned; withdrawing location consent deletes the recorded location.
 
-From their account, users may request access, rectification, portability, restriction, objection or erasure, and obtain an export of their data through the process provided. They may also write to Validation in progress. A request may require reasonable identity verification. Legal limitations applicable to certain rights will be explained in the response. A complaint may be submitted to the [CNIL](https://www.cnil.fr/fr/plaintes).
+From their account, users may request access, rectification, portability, restriction, objection or erasure, and obtain an export of their data through the process provided. They may also write to [support.histae@gmail.com](mailto:support.histae@gmail.com). A request may require reasonable identity verification. Legal limitations applicable to certain rights will be explained in the response. A complaint may be submitted to the [CNIL](https://www.cnil.fr/fr/plaintes).
 
 ## 5. Security, automated decisions and changes
 

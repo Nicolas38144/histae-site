@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BrandSignature } from "./brand-signature";
 import { getTranslations } from "next-intl/server";
-import { localizedHref, type Locale, type SiteRouteId } from "../lib/site-config";
+import { localizedHref, supportEmail, type Locale, type SiteRouteId } from "../lib/site-config";
 import { legalDocumentHref, legalDocumentIds } from "../lib/legal-documents";
 
 const footerGroups: Array<{ titleKey: "exploreTitle" | "projectTitle"; routes: SiteRouteId[] }> = [
@@ -28,6 +28,7 @@ export async function SiteFooter({ locale }: { locale: Locale }) {
           <Link className="wordmark" href={localizedHref(locale, "home")} aria-label="Histae"><BrandSignature /></Link>
           <p className="footer-tagline">{t("footer.line")}</p>
           <p className="footer-summary">{t("footer.summary")}</p>
+          <p><a className="text-link" href={`mailto:${supportEmail}`}>{supportEmail}</a></p>
         </div>
 
         <nav className="footer-navigation" aria-label={t("footer.navigation")}>

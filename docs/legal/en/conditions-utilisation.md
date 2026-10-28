@@ -26,7 +26,7 @@ Users remain responsible for the text, photos and messages they publish or send.
 
 Users retain their rights to their content. They authorise Histae to host, process and display it only as necessary to operate, secure and moderate the service, for as long as that content is retained under the Privacy Policy. This authorisation does not transfer ownership.
 
-Biographies, profile answers and photos may undergo automated checks and human review. Content that is pending or rejected may not be visible to other users. In the event of a breach, Histae may remove content, restrict access or suspend an account, depending on the seriousness of the situation. Users may request explanations or challenge a decision at Validation in progress.
+Biographies, profile answers and photos may undergo automated checks and human review. Content that is pending or rejected may not be visible to other users. In the event of a breach, Histae may remove content, restrict access or suspend an account, depending on the seriousness of the situation. Users may request explanations or challenge a decision at [support.histae@gmail.com](mailto:support.histae@gmail.com).
 
 ## 4. Plans and payments
 
@@ -44,7 +44,7 @@ Users may request account deletion through the process provided in the app or ex
 
 The applicable version is the one presented and accepted in the app. A substantial change will be communicated anew and, where necessary, require renewed acceptance. The version and effective date must remain accessible alongside the text.
 
-For questions about these terms: Validation in progress. Information on applicable law, complaints and any consumer mediator: Validation in progress.
+For questions about these terms: [support.histae@gmail.com](mailto:support.histae@gmail.com). Information on applicable law, complaints and any consumer mediator: Validation in progress.
 
 
 ## Continuation credits and optional advertising

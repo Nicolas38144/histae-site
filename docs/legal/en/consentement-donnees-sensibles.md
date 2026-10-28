@@ -16,4 +16,4 @@ You may refuse. Your account may remain open, but discovery and the features tha
 
 You may withdraw this consent in the app's consent settings. The API then deletes the sex and preferences concerned and stops using them for new discoveries. Withdrawal does not retroactively make information already received, copied or captured by other users invisible. Evidence of choices and withdrawals may be retained for the period indicated in the Privacy Policy.
 
-For recipients, retention periods and the exercise of your rights, see the Privacy Policy. Questions: Validation in progress.
+For recipients, retention periods and the exercise of your rights, see the Privacy Policy. Questions: [support.histae@gmail.com](mailto:support.histae@gmail.com).

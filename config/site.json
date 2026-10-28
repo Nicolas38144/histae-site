@@ -1,5 +1,6 @@
 {
   "publicUrl": "https://www.histae.com",
+  "supportEmail": "support.histae@gmail.com",
   "defaultLocale": "fr",
   "repositories": {
     "api": "https://github.com/Nicolas38144/histae-api-rust",

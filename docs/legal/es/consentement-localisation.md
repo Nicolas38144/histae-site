@@ -12,4 +12,4 @@ La API conserva la última ubicación transmitida, no un historial de desplazami
 
 El permiso de ubicación concedido en los ajustes de su teléfono es independiente de este consentimiento. Puede modificarlo en su sistema operativo; la aplicación también debe recoger su decisión mediante su propio proceso. Este acuerdo no cubre ningún uso publicitario de la ubicación.
 
-Para los destinatarios, sus derechos y los demás plazos de conservación, consulte la Política de privacidad. Preguntas: En proceso de validación.
+Para los destinatarios, sus derechos y los demás plazos de conservación, consulte la Política de privacidad. Preguntas: [support.histae@gmail.com](mailto:support.histae@gmail.com).
