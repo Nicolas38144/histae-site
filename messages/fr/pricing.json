@@ -84,6 +84,10 @@
         "reservation": {
           "title": "Un crédit utilisé seulement si vous continuez à deux",
           "text": "Votre crédit est réservé lorsque vous choisissez de continuer. Il est consommé uniquement après les deux accords. Si l’autre personne refuse ou si le délai expire, il est libéré. Une réservation gratuite peut rester liée à la semaine de votre accord, même si la conversation est confirmée après le lundi."
+        },
+        "inactivity": {
+          "title": "Que deviennent les conversations inactives ?",
+          "text": "Après 10 jours sans nouveau message, une conversation confirmée est archivée. Un avertissement est envoyé après 23 jours ; le match et les messages sont supprimés après 30 jours. Un nouveau message relance le délai, sans nouveau crédit. La même règle s’applique à Free et Premium. Lire ou ouvrir l’application ne relance pas le délai."
         }
       },
       "mutualNote": "Premium ne donne jamais accès à une conversation ou à des photos sans l’accord de l’autre personne."

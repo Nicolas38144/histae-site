@@ -56,3 +56,7 @@ Free receives two free credits every Monday at 00:00 UTC, without rollover. Each
 Android in-app purchases use Google Play; iOS purchases use the App Store; website purchases use Stripe. Premium access belongs to the Histae account and can be used on its devices after provider verification. The applicable price and conditions are shown by the selected channel before confirmation; no new free trial is offered. Website payment sign-in uses the existing account UUID, its phone number and an SMS code without creating another account. Subscriptions are managed with the original provider. Deleting a Histae account does not automatically cancel an Apple or Google subscription: manage it in its store. Restoration does not transfer a purchase to another Histae account.
 
 This technical description does not replace final contractual terms for renewal, cancellation, refunds or withdrawal. The outstanding details and legal review above remain required before commercial activation.
+
+## What happens to inactive conversations?
+
+After 10 days without a new message, a confirmed conversation is archived. A warning is sent after 23 days; the match and messages are deleted after 30 days. A new message resets the deadline without spending another credit. The same rule applies to Free and Premium. Reading or opening the app does not reset the deadline.

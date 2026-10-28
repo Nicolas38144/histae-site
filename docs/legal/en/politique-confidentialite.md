@@ -59,3 +59,7 @@ Google AdMob rewarded ads are planned for the mobile app, with no ads on this we
 Website payment sign-in checks an existing account using its UUID, phone number and SMS code. It uses a thirty-minute HttpOnly session cookie; challenges expire within ten minutes. Maintenance removes expired sessions and challenges. Card details remain with the payment provider.
 
 To verify Apple/Google purchases, Histae sends technical purchase references and an opaque account binding without sending profiles, messages or location. References needed for provider checks are encrypted in the database; Google tokens are indexed by a hash. Projections are included in the data export without secret tokens. Account anonymisation removes website sessions, encrypted references and account links. Minimal replay-prevention records are purged 400 days after the period ends. Imported financial reports are separate from profiles and require a reviewed accounting retention period. Recipients, roles, transfers and final retention periods remain to be completed and reviewed before publication.
+
+## What happens to inactive conversations?
+
+After 10 days without a new message, a confirmed conversation is archived. A warning is sent after 23 days; the match and messages are deleted after 30 days. A new message resets the deadline without spending another credit. The same rule applies to Free and Premium. Reading or opening the app does not reset the deadline.

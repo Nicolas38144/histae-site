@@ -84,6 +84,10 @@
         "reservation": {
           "title": "Un credito usato solo se continuate entrambi",
           "text": "Il credito viene riservato quando scegli di continuare. Si consuma solo dopo i due consensi. Se l’altra persona rifiuta o il tempo scade, la riserva viene liberata. Una prenotazione gratuita può restare legata alla settimana del consenso, anche se la conversazione viene confermata dopo il lunedì."
+        },
+        "inactivity": {
+          "title": "Cosa succede alle conversazioni inattive?",
+          "text": "Dopo 10 giorni senza nuovi messaggi, una conversazione confermata viene archiviata. Un avviso viene inviato dopo 23 giorni; il match e i messaggi vengono eliminati dopo 30 giorni. Un nuovo messaggio rinnova il termine senza spendere altri crediti. La stessa regola vale per Free e Premium. Leggere o aprire l’app non rinnova il termine."
         }
       },
       "mutualNote": "Premium non dà mai accesso a una conversazione o alle foto senza il consenso dell’altra persona."

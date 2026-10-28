@@ -47,7 +47,7 @@
         },
         "continuationCredits": {
           "title": "Una decisión y un coste claros",
-          "text": "Cada persona Free recibe {freeCredits} créditos por semana. Un crédito se reserva al elegir continuar un match después de las primeras 24 horas y se consume solo cuando ambos aceptan. Un rechazo o la caducidad lo libera. Un vídeo opcional da 1 crédito, con hasta {advertisingStock} créditos publicitarios en reserva, que caducan cada lunes a las 00:00 UTC. Cada persona Free puede prolongar hasta {weeklyMaximum} conversaciones por semana. Una persona Premium no consume créditos; la otra mantiene los límites de su propio plan."
+          "text": "Cada persona Free recibe {freeCredits} créditos por semana. Un crédito se reserva al elegir continuar un match después de las primeras 24 horas y se consume solo cuando ambos aceptan. Un rechazo o la caducidad lo libera. Un vídeo opcional da 1 crédito, con hasta {advertisingStock} créditos publicitarios en reserva, que caducan cada lunes a las 00:00 UTC. Cada persona Free puede prolongar hasta {weeklyMaximum} conversaciones por semana. Una persona Premium no consume créditos; la otra mantiene los límites de su propio plan. Tras 10 días sin un nuevo mensaje, la conversación confirmada se archiva. Se avisa a los 23 días; el match y los mensajes se eliminan a los 30 días. Un nuevo mensaje reinicia el plazo sin gastar otro crédito. La misma regla se aplica a Free y Premium. Leer o abrir la aplicación no reinicia el plazo."
         },
         "pause": {
           "title": "Tómate un descanso y conserva tus conversaciones",

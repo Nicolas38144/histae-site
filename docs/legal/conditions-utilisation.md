@@ -56,3 +56,7 @@ Free reçoit deux crédits gratuits chaque lundi à 00:00 UTC, sans cumul. Chaqu
 Les achats dans l’application Android passent par Google Play ; ceux dans l’application iOS par l’App Store ; les achats sur le site par Stripe. L’accès Premium est lié au compte Histae et peut être utilisé sur ses appareils après vérification du fournisseur. Les prix et conditions applicables sont affichés par le canal choisi avant confirmation ; aucun nouvel essai gratuit n’est proposé. La connexion au paiement du site utilise l’UUID du compte existant, son numéro de téléphone et un code SMS, sans créer de nouveau compte. L’abonnement se gère auprès du fournisseur d’origine. Supprimer le compte Histae ne résilie pas automatiquement un abonnement Apple ou Google : il doit être géré auprès du store. La restauration ne transfère pas un achat vers un autre compte Histae.
 
 Cette description technique ne remplace pas les conditions contractuelles définitives de renouvellement, résiliation, remboursement et rétractation. Les mentions à compléter et la validation juridique ci-dessus restent nécessaires avant activation commerciale.
+
+## Que deviennent les conversations inactives ?
+
+Après 10 jours sans nouveau message, une conversation confirmée est archivée. Un avertissement est envoyé après 23 jours ; le match et les messages sont supprimés après 30 jours. Un nouveau message relance le délai, sans nouveau crédit. La même règle s’applique à Free et Premium. Lire ou ouvrir l’application ne relance pas le délai.

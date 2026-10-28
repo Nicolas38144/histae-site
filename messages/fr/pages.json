@@ -47,7 +47,7 @@
         },
         "continuationCredits": {
           "title": "Continuer avec un choix et un coût explicites",
-          "text": "Chaque personne Free reçoit {freeCredits} crédits chaque semaine. Un crédit est réservé lorsqu’elle choisit de continuer un match après les premières 24 heures, puis consommé seulement après les deux accords. Un refus ou une expiration le libère. Une vidéo facultative rapporte 1 crédit, jusqu’à {advertisingStock} crédits publicitaires en stock, qui expirent chaque lundi à 00:00 UTC. Chaque personne Free peut prolonger au plus {weeklyMaximum} conversations par semaine. Une personne Premium ne consomme pas de crédit ; l’autre personne garde les limites de sa propre offre."
+          "text": "Chaque personne Free reçoit {freeCredits} crédits chaque semaine. Un crédit est réservé lorsqu’elle choisit de continuer un match après les premières 24 heures, puis consommé seulement après les deux accords. Un refus ou une expiration le libère. Une vidéo facultative rapporte 1 crédit, jusqu’à {advertisingStock} crédits publicitaires en stock, qui expirent chaque lundi à 00:00 UTC. Chaque personne Free peut prolonger au plus {weeklyMaximum} conversations par semaine. Une personne Premium ne consomme pas de crédit ; l’autre personne garde les limites de sa propre offre. Après 10 jours sans nouveau message, une conversation confirmée est archivée. Un avertissement est envoyé après 23 jours ; le match et les messages sont supprimés après 30 jours. Un nouveau message relance le délai, sans nouveau crédit. La même règle s’applique à Free et Premium. Lire ou ouvrir l’application ne relance pas le délai."
         },
         "pause": {
           "title": "Faire une pause, garder ses échanges",

@@ -31,7 +31,7 @@
       },
       "pricing": {
         "question": "Qual è la differenza tra Free e Premium?",
-        "answer": "Puoi creare un profilo, fare un match e iniziare a parlare gratis. Free include {freeCredits} crediti settimanali per continuare le conversazioni, fino a {weeklyMaximum} prolungamenti. Un video facoltativo dà un credito, con un massimo di {advertisingStock} crediti pubblicitari in riserva fino al lunedì alle 00:00 UTC. Premium elimina il limite e la pubblicità. I prezzi aggiornati sono nella pagina Prezzi e vengono confermati prima del pagamento.",
+        "answer": "Puoi creare un profilo, fare un match e iniziare a parlare gratis. Free include {freeCredits} crediti settimanali per continuare le conversazioni, fino a {weeklyMaximum} prolungamenti. Un video facoltativo dà un credito, con un massimo di {advertisingStock} crediti pubblicitari in riserva fino al lunedì alle 00:00 UTC. Premium elimina il limite e la pubblicità. I prezzi aggiornati sono nella pagina Prezzi e vengono confermati prima del pagamento. Dopo 10 giorni senza nuovi messaggi, una conversazione confermata viene archiviata. Un avviso viene inviato dopo 23 giorni; il match e i messaggi vengono eliminati dopo 30 giorni. Un nuovo messaggio rinnova il termine senza spendere altri crediti.",
         "linkLabel": "Confronta i prezzi"
       },
       "location": {

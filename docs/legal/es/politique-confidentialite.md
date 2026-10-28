@@ -59,3 +59,7 @@ Se prevén anuncios con recompensa de Google AdMob en la aplicación móvil, sin
 El acceso al pago del sitio verifica una cuenta existente mediante su UUID, teléfono y código SMS. Utiliza una cookie de sesión HttpOnly de treinta minutos; los desafíos caducan como máximo a los diez minutos. El mantenimiento elimina sesiones y desafíos caducados. Los datos de tarjeta permanecen con el proveedor de pago.
 
 Para verificar compras de Apple/Google, Histae transmite referencias técnicas de compra y un identificador opaco de vinculación, sin perfiles, mensajes ni ubicación. Las referencias necesarias para consultar al proveedor se cifran en la base de datos; el token de Google se indexa mediante una huella. Las proyecciones se incluyen en la exportación sin tokens secretos. La anonimización elimina las sesiones del sitio, las referencias cifradas y los vínculos con la cuenta. Los registros mínimos contra la reutilización se eliminan 400 días después del fin del período. Los informes financieros importados están separados de los perfiles y requieren validar su conservación contable. Deben completarse y validarse destinatarios, funciones, transferencias y plazos definitivos antes de la publicación.
+
+## ¿Qué ocurre con las conversaciones inactivas?
+
+Tras 10 días sin un nuevo mensaje, la conversación confirmada se archiva. Se avisa a los 23 días; el match y los mensajes se eliminan a los 30 días. Un nuevo mensaje reinicia el plazo sin gastar otro crédito. La misma regla se aplica a Free y Premium. Leer o abrir la aplicación no reinicia el plazo.

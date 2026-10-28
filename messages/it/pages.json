@@ -47,7 +47,7 @@
         },
         "continuationCredits": {
           "title": "Una scelta e un costo espliciti",
-          "text": "Ogni persona Free riceve {freeCredits} crediti a settimana. Un credito viene riservato quando sceglie di continuare un match dopo le prime 24 ore e consumato solo dopo i due consensi. Un rifiuto o la scadenza lo libera. Un video facoltativo dà 1 credito, fino a {advertisingStock} crediti pubblicitari in riserva, che scadono ogni lunedì alle 00:00 UTC. Ogni persona Free può prolungare al massimo {weeklyMaximum} conversazioni a settimana. Una persona Premium non consuma crediti; l’altra mantiene i limiti del proprio piano."
+          "text": "Ogni persona Free riceve {freeCredits} crediti a settimana. Un credito viene riservato quando sceglie di continuare un match dopo le prime 24 ore e consumato solo dopo i due consensi. Un rifiuto o la scadenza lo libera. Un video facoltativo dà 1 credito, fino a {advertisingStock} crediti pubblicitari in riserva, che scadono ogni lunedì alle 00:00 UTC. Ogni persona Free può prolungare al massimo {weeklyMaximum} conversazioni a settimana. Una persona Premium non consuma crediti; l’altra mantiene i limiti del proprio piano. Dopo 10 giorni senza nuovi messaggi, una conversazione confermata viene archiviata. Un avviso viene inviato dopo 23 giorni; il match e i messaggi vengono eliminati dopo 30 giorni. Un nuovo messaggio rinnova il termine senza spendere altri crediti. La stessa regola vale per Free e Premium. Leggere o aprire l’app non rinnova il termine."
         },
         "pause": {
           "title": "Prenditi una pausa e conserva le conversazioni",
