@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BrandSignature } from "./brand-signature";
 import { getTranslations } from "next-intl/server";
-import { accountDataHref, localizedHref, supportEmail, type Locale, type SiteRouteId } from "../lib/site-config";
+import { accountDataHref, childSafetyHref, localizedHref, supportEmail, type Locale, type SiteRouteId } from "../lib/site-config";
 import { legalDocumentHref, legalDocumentIds } from "../lib/legal-documents";
 
 const footerGroups: Array<{ titleKey: "exploreTitle" | "projectTitle"; routes: SiteRouteId[] }> = [
@@ -58,6 +58,7 @@ export async function SiteFooter({ locale }: { locale: Locale }) {
         <nav className="footer-column footer-legal" aria-label={t("footer.legalTitle")}>
           <h2>{t("footer.legalTitle")}</h2>
           <ul>
+            <li><Link href={childSafetyHref(locale)}>{t("childSafety.footer")}</Link></li>
             <li><Link href={accountDataHref(locale)}>{t("accountData.footer")}</Link></li>
             {legalDocumentIds.map((document) => (
               <li key={document}>

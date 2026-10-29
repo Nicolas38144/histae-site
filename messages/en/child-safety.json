@@ -1,0 +1,41 @@
+{
+  "childSafety": {
+    "title": "Child safety on Histae",
+    "eyebrow": "Our rules and commitments",
+    "intro": "Histae is a dating app for people aged 18 and over. Child sexual abuse and exploitation are strictly prohibited, both in profiles and in conversations.",
+    "footer": "Child safety",
+    "updated": "Last updated:",
+    "contactTitle": "Report a concern or contact us",
+    "contact": "The person responsible for Histae receives child-safety reports and enquiries at this address. It is also the designated contact for Google Play and authorities regarding our review procedures and actions taken.",
+    "emailSubject": "Child safety — Histae",
+    "contactButton": "Contact Histae",
+    "related": "Related documents and resources",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "google": "Google Play child safety standards",
+    "authoritiesLink": "Reporting an offence in France: official guidance",
+    "emergency": "If a child is in immediate danger, contact emergency services: 17 in France or 112 in the European Union. Do not wait for a reply from Histae support.",
+    "sections": {
+      "adults": {
+        "title": "A service for adults only",
+        "paragraphs": ["You must be at least 18 to use Histae. The declared date of birth is checked when creating a profile; this is not identity verification. Creating an account for a minor or falsifying your age is prohibited. An account identified as belonging to a minor must be disabled."]
+      },
+      "prohibited": {
+        "title": "Explicit prohibitions",
+        "paragraphs": ["No child sexual abuse and exploitation (CSAE) content or behaviour is permitted. This includes child sexual abuse material (CSAM), creating, publishing, possessing or sharing it through the service, and sexual depictions of minors, including artificially generated or manipulated images.", "Sexual solicitation or grooming of a minor, sexual extortion, requests for sexual content, trafficking and any form of child sexual exploitation are also prohibited. These rules extend to links to content or services that facilitate such conduct."]
+      },
+      "report": {
+        "title": "How to report a concern",
+        "paragraphs": ["In the app, open the menu on a profile or in a conversation and select ‘Report this person’. For a suspected minor or exploitation concern, select ‘Other reason’ and describe what happened in the text field. You can also block the person. You do not need to be certain that an offence occurred before reporting a concern.", "You can also use the contact address below, including if you cannot access your account. Provide details that help locate the profile or conversation and any relevant dates. Do not send explicit images or videos, download such material or forward it to anyone else."]
+      },
+      "response": {
+        "title": "How reports are handled",
+        "paragraphs": ["Child-safety reports must receive priority review by the authorised person responsible. When child sexual abuse material is identified, Histae removes it or blocks access and takes appropriate action against the account, including suspension. Good-faith reporting must not result in retaliation.", "Only information necessary for review and legal obligations is processed, with access restricted to authorised people. Histae does not ask users to collect copies of illegal content themselves. Support is not an emergency service and no continuous staffing is claimed."]
+      },
+      "authorities": {
+        "title": "Reporting to the relevant authorities",
+        "paragraphs": ["Confirmed cases of child sexual abuse material are reported to the relevant regional or national authorities in accordance with applicable law. Histae’s responsible person handles these reports and lawful requests; moderation action does not replace reporting to the authorities.", "In France, cases are referred to the police, gendarmerie or relevant public prosecutor. PHAROS can be used for public content within its remit; an incident in a private exchange may require direct contact with law enforcement. In other territories, the appropriate authority is contacted, including NCMEC where that reporting channel applies."]
+      }
+    }
+  }
+}

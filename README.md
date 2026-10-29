@@ -29,6 +29,7 @@ The subscription flow requires the API; see [billing](docs/billing.md).
 | [Security](docs/security.md) | Static CSP, dependency findings and security checks |
 | [Deployment](docs/deployment.md) | Static export, API routing, caching and release checks |
 | [SEO](docs/seo-indexation.md) | Canonical URLs, indexing rules and verification |
+| [Child safety](docs/child-safety.md) | Published standards, in-app reporting and operator procedure |
 | [Legal content](docs/legal/README.md) | Localized document sources and publication workflow |
 | [Roadmap](roadmap.md) | Remaining work and acceptance criteria |
 

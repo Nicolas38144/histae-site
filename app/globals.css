@@ -509,3 +509,8 @@ h1, h2, h3 { text-wrap: balance; }
 .account-status:empty { display:none; }
 .account-status:focus { outline:2px solid var(--lavender); outline-offset:4px; }
 @media(max-width:760px) { .account-data-grid { grid-template-columns:1fr; } .account-data-grid .account-panel { margin-block:.4rem; } }
+
+/* Keep policy anchors clear of the sticky site header. */
+.child-safety-page section[id] { scroll-margin-top: 7rem; }
+
+.child-safety-page .button-primary { color: var(--night); }

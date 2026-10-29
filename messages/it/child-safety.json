@@ -1,0 +1,41 @@
+{
+  "childSafety": {
+    "title": "Sicurezza dei minori su Histae",
+    "eyebrow": "Le nostre regole e i nostri impegni",
+    "intro": "Histae è un’app di incontri riservata alle persone di almeno 18 anni. Lo sfruttamento e gli abusi sessuali sui minori sono rigorosamente vietati, nei profili come nelle conversazioni.",
+    "footer": "Sicurezza dei minori",
+    "updated": "Ultimo aggiornamento:",
+    "contactTitle": "Segnalare una situazione o contattarci",
+    "contact": "La persona responsabile di Histae riceve segnalazioni e richieste sulla sicurezza dei minori a questo indirizzo. È anche il contatto designato per Google Play e le autorità per le procedure di esame e le misure adottate.",
+    "emailSubject": "Sicurezza dei minori — Histae",
+    "contactButton": "Contattare Histae",
+    "related": "Documenti e risorse utili",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Condizioni d’uso",
+    "google": "Norme sulla sicurezza dei minori di Google Play",
+    "authoritiesLink": "Segnalare un reato in Francia: indicazioni ufficiali",
+    "emergency": "Se un minore è in pericolo immediato, contattate i servizi di emergenza: 17 in Francia o 112 nell’Unione europea. Non aspettate una risposta dall’assistenza Histae.",
+    "sections": {
+      "adults": {
+        "title": "Un servizio riservato agli adulti",
+        "paragraphs": ["Per usare Histae occorre avere almeno 18 anni. La data di nascita dichiarata viene controllata alla creazione del profilo; non è una verifica dell’identità. È vietato creare un account per un minore o falsificare l’età. Un account identificato come appartenente a un minore deve essere disattivato."]
+      },
+      "prohibited": {
+        "title": "Divieti espliciti",
+        "paragraphs": ["Non sono consentiti contenuti o comportamenti di sfruttamento o abuso sessuale di minori (CSAE). Sono inclusi i materiali di abuso sessuale sui minori (CSAM), la loro creazione, pubblicazione, detenzione o condivisione tramite il servizio e le rappresentazioni sessuali di minori, comprese le immagini generate o manipolate artificialmente.", "Sono vietati anche l’adescamento di minori a fini sessuali, il ricatto sessuale, le richieste di contenuti sessuali, la tratta e ogni forma di sfruttamento sessuale di un minore. Le regole valgono anche per i collegamenti a contenuti o servizi che facilitano tali atti."]
+      },
+      "report": {
+        "title": "Come segnalare una situazione",
+        "paragraphs": ["Nell’app, aprite il menu di un profilo o di una conversazione e scegliete l’opzione per segnalare la persona. Se sospettate la presenza di un minore o una situazione di sfruttamento, scegliete ‘Altro motivo’ e descrivete i fatti nel campo di testo. Potete anche bloccare la persona. Non occorre avere la certezza di un reato per segnalare un dubbio.", "Potete anche usare l’indirizzo indicato sotto, anche senza accesso all’account. Fornite elementi che permettano di individuare il profilo o la conversazione e le date utili. Non inviate immagini o video espliciti, non scaricate questi materiali e non inoltrateli ad altre persone."]
+      },
+      "response": {
+        "title": "Gestione delle segnalazioni",
+        "paragraphs": ["Le segnalazioni relative alla sicurezza di un minore devono essere esaminate in via prioritaria dalla persona responsabile autorizzata. Quando viene identificato materiale di abuso sessuale sui minori, Histae lo rimuove o ne blocca l’accesso e adotta le misure necessarie contro l’account, fino alla sospensione. Le segnalazioni in buona fede non devono comportare ritorsioni.", "Sono trattate solo le informazioni necessarie all’esame e agli obblighi di legge, con accesso limitato alle persone autorizzate. Histae non chiede agli utenti di raccogliere copie di contenuti illeciti. L’assistenza non è un servizio di emergenza e non viene dichiarata una presenza continua."]
+      },
+      "authorities": {
+        "title": "Segnalazione alle autorità competenti",
+        "paragraphs": ["I casi confermati di materiale di abuso sessuale sui minori vengono segnalati alle autorità regionali o nazionali competenti secondo la legge applicabile. La persona responsabile di Histae effettua la segnalazione e risponde alle richieste legittime; un intervento di moderazione non sostituisce la segnalazione alle autorità.", "In Francia, i fatti sono trasmessi alla polizia, alla gendarmeria o alla procura competente. PHAROS può essere usato per contenuti pubblici che rientrano nelle sue competenze; un episodio in uno scambio privato può richiedere un contatto diretto con le forze dell’ordine. Negli altri territori viene contattata l’autorità competente, incluso NCMEC quando tale canale è applicabile."]
+      }
+    }
+  }
+}

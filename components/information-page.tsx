@@ -4,7 +4,7 @@ import { ProfileWritingGuide } from "./profile-writing-guide";
 import { createTranslator } from "next-intl";
 import { getCommercialValues } from "../lib/plans";
 import { getTranslations } from "next-intl/server";
-import { localizedHref, type InformationPageName, type Locale } from "../lib/site-config";
+import { childSafetyHref, localizedHref, type InformationPageName, type Locale } from "../lib/site-config";
 import { getMessagesForLocale } from "../messages";
 import { SourceCodeSection } from "./source-code-section";
 import { AppScreenshot, type ScreenKind } from "./app-screenshot";
@@ -64,6 +64,11 @@ export async function InformationPage({ locale, pageName }: {
       {pageName === "safety" ? <>
         {story("privacy", "consents", ["consentWithdrawal"], [], true)}
         <section className="shell editorial-pair">{passage("passwordless")}{passage("rights")}</section>
+        <section className="shell credits-invitation" aria-labelledby="child-safety-title">
+          <h2 id="child-safety-title">{messages.childSafety.title}</h2>
+          <p>{messages.childSafety.intro}</p>
+          <Link className="text-link" href={childSafetyHref(locale)}>{messages.childSafety.footer} →</Link>
+        </section>
       </> : null}
       {pageName === "about" ? <>
         <section className="shell editorial-statement"><h2>{blocks.promise.title}</h2><p>{blocks.promise.text}</p></section>
