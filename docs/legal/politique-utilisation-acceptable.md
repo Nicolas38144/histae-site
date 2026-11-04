@@ -10,6 +10,8 @@
 
 Cette politique complète les [Conditions d’utilisation](/fr/legal/terms-of-use/) et s’applique à tous les comptes, gratuits ou payants, aux profils, aux photos, aux messages et aux liens partagés. Histae est un service de rencontre entre adultes, pas une plateforme de vente de contenus ou de services sexuels. Il faut avoir au moins 18 ans pour l’utiliser. Il est interdit de falsifier son âge, de créer un compte pour un mineur ou de lui permettre d’utiliser son compte.
 
+Le parcours d’inscription utilise un numéro de téléphone français et un code SMS à usage unique. La vérification du code confirme l’accès au numéro, pas l’identité civile. Le serveur refuse l’enregistrement d’un profil dont la date de naissance déclarée indique moins de 18 ans. Ce contrôle déclaratif ne certifie pas l’âge réel. Aucune vérification systématique par pièce d’identité, selfie ou biométrie, ni validation humaine de chaque nouveau profil, n’est actuellement mise en œuvre. L’utilisateur doit fournir des informations le concernant, garder le contrôle de ses sessions et ne pas créer de compte pour autrui ou contourner une suspension.
+
 ## 2. Contenus et usages interdits
 
 Il est interdit de publier, transmettre, demander, promouvoir ou faciliter :
@@ -25,7 +27,7 @@ Il est interdit de publier, transmettre, demander, promouvoir ou faciliter :
 
 ## 3. Consentement et respect des personnes
 
-Un match, un abonnement Premium ou un accord pour révéler une photo ne donne aucun droit d’imposer une interaction ou de redistribuer les contenus d’une autre personne. Respectez les refus et les limites exprimées. Publiez uniquement des contenus que vous avez le droit d’utiliser, vous concernant et conformes à cette politique. Un accord entre deux personnes ne rend pas autorisé un contenu interdit ici.
+Un match, un abonnement Premium ou un accord pour révéler une photo ne donne aucun droit d’imposer une interaction ou de redistribuer les contenus d’une autre personne. Respectez les refus et les limites exprimées. Publiez uniquement des contenus que vous avez le droit d’utiliser, vous concernant et conformes à cette politique. Un accord entre deux personnes ne rend pas autorisé un contenu interdit ici. La validation d’un numéro par SMS ne prouve pas l’identité de son titulaire. L’accord de révélation dans un match ne prouve ni l’identité de la personne représentée sur une photo ni son autorisation de la publier. Histae ne vérifie pas systématiquement les pièces d’identité, les selfies, la provenance des photos ou le consentement des personnes représentées.
 
 ## 4. Signalement et sécurité des enfants
 
@@ -35,9 +37,9 @@ Les [normes de sécurité des enfants](/fr/child-safety/) décrivent les interdi
 
 ## 5. Modération, mesures et recours
 
-Histae peut examiner les contenus et les signalements et, selon les faits, retirer un contenu, limiter des interactions, suspendre ou fermer un compte. La disponibilité d’un contenu ne garantit pas qu’il a fait l’objet d’une vérification préalable. Les mesures tiennent compte de la gravité, de la sécurité des personnes et des obligations applicables. Les signalements de bonne foi ne doivent pas donner lieu à des représailles.
+Les biographies et réponses de profil sont analysées par des règles visant le spam, les insultes, les coordonnées personnelles et les termes sexuels ; les contenus détectés sont placés en attente. Les photos sont converties techniquement, sans analyse automatique de leur contenu, estimation d’âge, reconnaissance faciale ou comparaison avec des empreintes CSAM. Leur disponibilité ne certifie aucun examen préalable. Les signalements enregistrés et les courriels doivent être examinés manuellement par le responsable habilité, à partir du motif, des faits et des contenus disponibles. L’accès administratif aux messages exige un signalement lié à la conversation et aux deux participants ; les consultations sensibles sont journalisées. Les outils permettent de rejeter un contenu, retirer une photo, bannir ou débannir un compte. Le bannissement invalide les sessions mobiles. Un signalement seul n’est pas une preuve ; les mesures tiennent compte de la gravité et des obligations applicables. Aucun délai garanti ni SLA chiffré n’est actuellement publié. Les signalements de bonne foi ne doivent pas entraîner de représailles.
 
-Pour demander des explications ou contester une mesure, écrivez au contact indiqué en précisant le compte et la décision concernés. Une suspension ne supprime pas les droits impératifs liés à un achat ou à la protection des données. Les signalements et demandes d’autorités sont traités selon les [protocoles à destination des forces de l’ordre](/fr/legal/law-enforcement-policy/) et la [Politique de confidentialité](/fr/legal/privacy-policy/).
+Pour demander des explications ou faire appel, écrivez au contact indiqué, même sans accès au compte, en précisant son identifiant si connu, la décision contestée, vos motifs et les éléments utiles. La procédure prévoit un réexamen manuel par le responsable habilité ; elle ne garantit ni validation humaine préalable de tous les profils ni instance d’appel indépendante. Aucun délai de réponse garanti n’est publié. Si une erreur est reconnue, les corrections légalement et techniquement possibles sont déterminées ; un contenu définitivement supprimé ne peut pas être garanti récupérable. Si le recours est rejeté, la mesure est maintenue et une réponse est prévue sous réserve des restrictions légales, de confidentialité et de sécurité. Une suspension ne supprime pas les droits impératifs relatifs aux achats ou aux données. Les [protocoles à destination des forces de l’ordre](/fr/legal/law-enforcement-policy/) et la [Politique de confidentialité](/fr/legal/privacy-policy/) encadrent les demandes correspondantes.
 
 ## 6. Mise à jour et validation
 

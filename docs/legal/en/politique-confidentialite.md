@@ -6,16 +6,16 @@
 **Data controller’s legal identity and address:** Validation in progress.\
 **Privacy contact:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
 
-This notice describes processing associated with the Histae dating app and its API. Processing specific to the showcase website, including any trackers and audience measurement tools, must be checked separately before extending this notice to the website.
+This notice describes processing associated with the Histae app, its API and authenticated website journeys for subscriptions and account data requests. Any trackers or audience measurement tools specific to the showcase website must be assessed separately; this notice does not presume their activation.
 
 ## 1. Data and purposes
 
 | Data concerned | Why it is used | Proposed legal basis, subject to review |
 | --- | --- | --- |
 | Phone number, phone number fingerprint, temporary codes, sessions | Create and secure the account, send and verify login codes | Performance of the service and account security |
-| First name, date of birth, biography, photo, traits and profile answers | Present the profile, verify adulthood, enable discovery and moderation | Performance of the service; legitimate interest in security and moderation |
+| First name, declared birth date, biography, photo, traits and profile answers | Present the profile, check declared adulthood, enable discovery and moderation; without certifying identity or actual age | Performance of the service; legitimate interest in security and moderation |
 | Declared sex and preferences regarding people sought | Apply mutual discovery criteria; this information may reveal sex life or sexual orientation | Separate explicit consent, subject to review of the analysis of GDPR Articles 6 and 9 |
-| Recorded location and update date | Calculate distances and suggest profiles based on mutual criteria | Separate consent to location use |
+| Centre of an approximate zone of about 5 km and update date | Calculate approximate distances and suggest profiles based on mutual criteria; received coordinates are minimised before recording presence | Separate consent to location use |
 | Likes or passes, matches, agreements to reveal photos, messages, blocks | Operate the interactions requested | Performance of the service |
 | Reports, moderation decisions and administrator access logs | Protect people, handle abuse and document interventions | Legitimate interest in security; legal obligation where applicable |
 | Choices regarding texts and consent, with their versions and dates | Record choices, allow withdrawal and demonstrate that they have been taken into account | Compliance obligation and legitimate interest in retaining evidence, subject to review |
@@ -26,30 +26,29 @@ The current process does not request marketing consent. Any future direct market
 
 ## 2. Visibility and recipients
 
-Other users see the profile elements useful for discovery, including first name, age, declared sex, traits and approved content. The displayed distance is rounded. The exact date of birth, phone number and precise geographic coordinates are not shown to other users. A profile photo is revealed in a match only after both people agree.
+Other users see profile elements useful for discovery: first name, calculated declared age, declared sex, traits and permitted content. Received coordinates are replaced by the centre of an approximate zone of about 5 km before being recorded as presence; public distances are rounded in 5 km steps, with a minimum of 5 km. This reduces precision without guaranteeing anonymity. Exact birth dates and phone numbers are not shown to other users. The photo remains private and does not appear in the feed; within a match, it requires two photo-sharing agreements. Withdrawal hides it in subsequent reads; an already issued private link may remain usable for at most 60 seconds for new links, or until object deletion. Copies already received cannot be erased remotely.
 
-People authorised to administer and moderate Histae access only the information necessary for their duties; their sensitive consultations are logged. Technical providers may process data to provide the service, including SMS delivery (Sweego), payments if enabled (Stripe, Apple App Store, Google Play), hosting, storage and technical photo moderation. **Validation in progress.** providers' identities and actual roles, hosting locations, access by processors and any transfers outside the European Economic Area, with their safeguards.
+People authorised to administer and moderate Histae have restricted access and logged sensitive consultations. Administrative access to messages requires a retained report linked to the conversation and both participants; a profile-only report is insufficient. Providers may handle SMS (Sweego), enabled payments (Stripe, Apple App Store, Google Play), hosting, technical photo conversion and storage. Conversion does not automatically analyse image content. **Validation in progress.** Each provider's identity, role and location, processor access, any transfers outside the European Economic Area and their safeguards remain to be finalised.
 
 ## 3. Retention periods
 
 Account, profile and conversation information is retained for the life of the account, subject to applicable deletions, expirations and obligations. Closing an account immediately disables its use, then triggers technical erasure that may finish in the background; messages already exchanged may be anonymised to preserve the other participant's conversation.
 
-For the mechanisms currently present in the API: a location can no longer be used for discovery after one hour and is deleted after 24 hours without an update; withdrawal of consent deletes it immediately. Login codes are deleted when they expire. Administrator and data access logs are cleared after one year; resolved reports after three years; withdrawn choices and closed rights requests after five years, under the purge rules currently planned. These periods must be checked against backups, legal obligations and actual production operation before publication.
+Approximate presence can no longer be used for discovery after one hour without an update; maintenance purges it after 24 hours, or it is deleted when consent is withdrawn. This resource does not create a travel history. Login codes are purged on expiry. Data access logs and administrator authentication events are purged after one year; resolved reports three years after resolution; withdrawn consent five years after withdrawal; closed rights requests five years after closure. These periods describe the API's batched maintenance rules and must be reconciled with backups and applicable obligations.
 
-**Validation in progress.** exact retention periods for inactive accounts, messages, invoices and subscriptions, backups, infrastructure logs, moderation content and any disputes; criteria for extending retention or legal archiving. The published version must give an understandable period or criterion for each category.
+**Validation in progress.** exact retention periods for inactive accounts, messages, invoices and subscriptions, backups, infrastructure logs, moderation content and any disputes; criteria for extending retention or legal archiving. The published version must give an understandable period or criterion for each category. Historical backups may still contain data from before location minimisation until their expiry; their retention periods and arrangements remain subject to review.
 
 ## 4. Your choices and rights
 
 Acknowledging this notice does not constitute blanket consent to processing. Acceptance of the terms of use, consent to sensitive data processing and consent to location use are separate choices. Refusing or withdrawing either optional consent prevents the features that depend on it. Withdrawing sensitive data consent deletes the sex and preferences concerned; withdrawing location consent deletes the recorded location.
 
-From their account, users may request access, rectification, portability, restriction, objection or erasure, and obtain an export of their data through the process provided. They may also write to [support.histae@gmail.com](mailto:support.histae@gmail.com). A request may require reasonable identity verification. Legal limitations applicable to certain rights will be explained in the response. A complaint may be submitted to the [CNIL](https://www.cnil.fr/fr/plaintes).
+The account and dedicated website journey allow access, rectification, portability and erasure requests; an owner data export is also available. Restriction and objection currently have no dedicated new-request types in the API: where applicable, these rights remain exercisable through [support.histae@gmail.com](mailto:support.histae@gmail.com). Rectification requests are handled manually; closing one does not automatically update the profile. A request may require reasonable identity verification, without treating an SMS code as certification of civil identity. Legal limitations will be explained in the response; a complaint may be submitted to the [CNIL](https://www.cnil.fr/fr/plaintes).
 
 ## 5. Security, automated decisions and changes
 
-Histae uses access controls, limits on attempts, moderation and technical measures designed to protect data. Discovery criteria filter profiles based on mutual preferences. Some content undergoes automated analysis and may be subject to human review before display. **Validation in progress.** description of any decisions producing legal or similarly significant effects, and the corresponding avenues for challenge.
+Histae uses access controls, limits on attempts and rule-based moderation for biographies and profile answers. Discovery filters apply mutual preferences. Photos undergo neither automated content analysis nor facial recognition or identity verification; adulthood is checked against the declared date. Tools allow human review and content removal. Reporting and appeal arrangements are described in the [Acceptable Use Policy](/en/legal/acceptable-use-policy/). **Validation in progress.** The legal classification of any automated decisions producing significant effects and the corresponding additional information remain to be assessed.
 
 A significant change to purposes, recipients, retention periods or rights will be communicated appropriately. The notice's version and effective date will remain accessible. Other mandatory information under GDPR Article 13, including transfers and the source of data when it does not come from the user, must be checked in the final version.
-
 
 ## Optional rewarded advertising — before activation
 
@@ -63,7 +62,7 @@ To verify Apple/Google purchases, Histae sends technical purchase references and
 
 ## What happens to inactive conversations?
 
-After 10 days without a new message, a confirmed conversation is archived. A warning is sent after 23 days; the match and messages are deleted after 30 days. A new message resets the deadline without spending another credit. The same rule applies to Free and Premium. Reading or opening the app does not reset the deadline.
+For a confirmed conversation, the inactivity period starts at mutual confirmation and resets only when a new message is sent. After 10 days the conversation is archived but remains accessible; after 23 days a warning is scheduled. At 30 days access closes and maintenance deletes the match, its messages and associated notifications. A new message before the deadline unarchives the conversation without another agreement or additional credit; reading or opening the app does not reset the period. Reports follow their own retention period and may survive match deletion. The same rule applies to Free and Premium.
 
 ## Requests from authorities
 

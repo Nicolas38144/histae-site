@@ -63,7 +63,7 @@
     }
   },
   "policyPages": {
-    "childSafety": { "path": "child-safety", "updatedAt": "2026-10-29" }
+    "childSafety": { "path": "child-safety", "updatedAt": "2026-11-04" }
   },
   "accountPages": {
     "data": { "path": "account/data" }

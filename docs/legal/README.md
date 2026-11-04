@@ -86,6 +86,10 @@ they are not replaced by these four app documents.
 
 ## Product sources to reconcile
 
+See the [4 November 2026 API alignment review](api-alignment.md) for factual corrections, source
+references and outstanding operational/legal decisions. Keep age/identity checks, photo moderation,
+approximate presence, report/appeal procedures and provider prices aligned across all four languages.
+
 Use the API [HTTP contract](../../../histae-api-rust/docs/http-contract.md),
 [continuation and rewards guide](../../../histae-api-rust/docs/continuation-and-rewards.md) and
 [billing guide](../../../histae-api-rust/docs/store-billing.md), together with the current privacy

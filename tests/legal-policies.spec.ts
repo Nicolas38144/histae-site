@@ -11,7 +11,8 @@ const { publicUrl, supportEmail } = config;
 
 test.use({ javaScriptEnabled: false });
 
-const documents = ["terms-of-use", "acceptable-use-policy", "law-enforcement-policy"] as const;
+const stripeDocuments = ["terms-of-use", "acceptable-use-policy", "law-enforcement-policy"] as const;
+const documents = [...stripeDocuments, "privacy-policy", "sensitive-data-consent", "location-consent"] as const;
 const pending = {
   fr: "En cours de validation",
   en: "Validation in progress",
@@ -20,7 +21,7 @@ const pending = {
 };
 
 for (const locale of locales) {
-  test(`${locale}: Stripe policies are public, localized and linked from the footer`, async ({ page }) => {
+  test(`${locale}: legal documents are public, localized and disclose current API limits`, async ({ page }) => {
     const messages: Pick<AppMessages, "footer"> = JSON.parse(
       readFileSync(new URL(`../messages/${locale}/common.json`, import.meta.url), "utf8"),
     );
@@ -45,12 +46,20 @@ for (const locale of locales) {
       }
 
       if (document === "terms-of-use") {
-        for (const policy of documents.slice(1)) {
-          await expect(article.locator(`a[href="/${locale}/legal/${policy}/"]`)).toBeVisible();
+        for (const policy of stripeDocuments.slice(1)) {
+          await expect(article.locator(`a[href="/${locale}/legal/${policy}/"]`).first()).toBeVisible();
         }
-      } else {
+        await expect(article).toContainText("SMS");
+        await expect(article).toContainText("18");
+        await expect(article).toContainText("48");
+        await expect(article).toContainText("60");
+      } else if (document === "acceptable-use-policy" || document === "law-enforcement-policy") {
         await expect(article.locator(`a[href="/${locale}/child-safety/"]`)).toBeVisible();
         await expect(article.locator(`a[href="/${locale}/legal/privacy-policy/"]`)).toBeVisible();
+      }
+      if (document === "privacy-policy" || document === "location-consent") {
+        await expect(article).toContainText("5 km");
+        await expect(article).toContainText("24");
       }
     }
 

@@ -9,15 +9,15 @@
 
 Histae es un servicio de citas destinado a personas mayores de edad. Permite crear un perfil, definir preferencias de descubrimiento, consultar perfiles compatibles, indicar que te gustan o descartarlos y, después, intercambiar mensajes cuando una elección recíproca crea un match. La disponibilidad territorial y las funciones efectivamente abiertas se indican en la aplicación en el momento de su uso.
 
-El acceso inicial requiere un número de teléfono y un código de un solo uso enviado por SMS. El usuario debe tener al menos 18 años, proporcionar información que le corresponda y mantener el control de su teléfono y de sus sesiones. No debe crear una cuenta para otra persona ni eludir una suspensión.
+El registro utiliza un número de teléfono francés y un código SMS de un solo uso. Verificar el código confirma el acceso al número, no la identidad civil. El servidor rechaza el registro de un perfil cuya fecha de nacimiento declarada indique menos de 18 años. Este control declarativo no certifica la edad real. Actualmente no existe una verificación sistemática mediante documento de identidad, selfie o biometría, ni una aprobación humana de cada nuevo perfil. El usuario debe proporcionar información propia, mantener el control de sus sesiones y no crear una cuenta para otra persona ni eludir una suspensión.
 
 La aceptación de estas condiciones es necesaria para utilizar el servicio. La toma de conocimiento de la Política de privacidad se presenta por separado. Los consentimientos relativos a los datos sensibles y a la ubicación también se solicitan por separado, antes de las funciones que los necesitan.
 
 ## 2. Funcionamiento de las citas
 
-El descubrimiento utiliza el perfil, las preferencias recíprocas y una ubicación reciente cuando el usuario ha aceptado su uso. No garantiza sugerencias de perfiles, matches ni respuestas de otra persona. Un match solo se crea tras dos indicaciones recíprocas de que ambos perfiles se gustan.
+El descubrimiento utiliza el perfil, las preferencias recíprocas y una ubicación reciente, sujeto a los consentimientos requeridos. La ubicación se reduce al centro de una zona aproximada de unos 5 km; por ello, los umbrales de distancia pueden ser aproximados. Se requiere una foto privada técnicamente disponible y no rechazada, pero no se muestra en el feed. El modo pausa retira el perfil de nuevos descubrimientos e impide nuevos likes y matches; conserva las conversaciones y suscripciones existentes. El descubrimiento no garantiza sugerencias, matches ni respuestas.
 
-Tras dos likes recíprocos, podéis conversar durante 24 horas. Después se pausa el envío durante otras 24 horas: el historial sigue visible y cada persona decide continuar o terminar. Las decisiones son privadas hasta que ambos aceptan y se reabre la conversación. Un rechazo o la falta de dos acuerdos dentro del plazo termina el match sin identificar quién rechazó.
+Tras dos likes recíprocos, la conversación se abre durante 24 horas. Después se suspende el envío durante el periodo de decisión, que termina 48 horas después de la creación del match; el historial sigue siendo legible. Dos acuerdos reabren la conversación; un rechazo o la falta de dos acuerdos dentro del plazo termina el match sin revelar las decisiones individuales. Revelar las fotos requiere dos acuerdos distintos del de continuar. Cada persona puede retirar su acuerdo sobre las fotos: las nuevas lecturas las ocultan entonces para ambas personas, sin gastar créditos. Una foto de sustitución se convierte en la foto actual de los matches aún autorizados. Un enlace privado ya emitido puede seguir funcionando hasta su caducidad, como máximo 60 segundos para los nuevos enlaces, o hasta la eliminación del objeto. Una imagen ya guardada no puede recuperarse a distancia.
 
 Los usuarios pueden bloquear o denunciar a otra persona. El bloqueo interrumpe las interacciones correspondientes. Las denuncias pueden ser examinadas por el equipo autorizado.
 
@@ -27,13 +27,13 @@ El usuario sigue siendo responsable de los textos, fotos y mensajes que publique
 
 El usuario conserva sus derechos sobre sus contenidos. Autoriza a Histae a alojarlos, tratarlos y mostrarlos únicamente en la medida necesaria para el funcionamiento del servicio, su seguridad y su moderación, durante el tiempo en que se conserven según la Política de privacidad. Esta autorización no implica una transferencia de propiedad.
 
-Las biografías, las respuestas del perfil y las fotos pueden someterse a controles automatizados y a revisión humana. Un contenido pendiente o rechazado puede no ser visible para los demás usuarios. En caso de incumplimiento, Histae puede retirar un contenido, limitar el acceso o suspender una cuenta, según la gravedad de la situación. El usuario puede solicitar explicaciones o impugnar una decisión escribiendo a [support.histae@gmail.com](mailto:support.histae@gmail.com).
+Las biografías y respuestas del perfil se analizan mediante reglas dirigidas al spam, los insultos, los datos de contacto personales y los términos sexuales; los contenidos detectados quedan pendientes de moderación. Las fotos se convierten técnicamente, sin análisis automático del contenido, verificación del rostro, estimación de edad ni comparación con una base de huellas CSAM. Una foto técnicamente válida no es una foto cuyo contenido o persona representada se haya verificado. Las herramientas permiten revisión manual, rechazo de contenidos, retirada de fotos y bloqueo de cuentas. Los usuarios pueden denunciar un perfil o una conversación y solicitar una revisión en [support.histae@gmail.com](mailto:support.histae@gmail.com), según la [Política de uso aceptable](/es/legal/acceptable-use-policy/).
 
 ## 4. Planes y pagos
 
-Se prevé un plan gratuito. Un plan Premium puede dar acceso a más continuaciones de matches. Las funciones, los precios con impuestos incluidos, la duración, una posible prueba, la renovación y las condiciones de cancelación deben mostrarse antes de cualquier pedido.
+El plan Free permite crear un perfil, formar un match e iniciar conversaciones. Premium se ofrece en planes mensuales y anuales, sin una nueva prueba gratuita. Los precios y condiciones del canal elegido se muestran antes de confirmar: catálogo de pagos del sitio para Stripe y precios de la tienda para las compras Apple o Google. Los importes pueden variar según el canal y la moneda; los precios de otro canal no sustituyen a los del pedido.
 
-**En proceso de validación.** descripción contractual definitiva de los planes, precios y periodicidades, inicio y fin de una posible prueba, renovación, cancelación, reembolso, derecho de desistimiento y sus posibles excepciones, mediación en materia de consumo, proveedor de pagos y tratamiento de las compras realizadas a través de las tiendas de aplicaciones móviles. Esta sección debe corresponder exactamente al proceso de pago realmente implantado.
+**En proceso de validación.** Las condiciones contractuales definitivas de renovación, cancelación, reembolso, desistimiento y posibles excepciones, así como la información sobre mediación de consumo, siguen pendientes de finalización. Deben corresponder al proceso de pago realmente implantado y respetar los derechos imperativos aplicables.
 
 ## 5. Disponibilidad, seguridad y cierre de la cuenta
 
@@ -47,10 +47,9 @@ La versión aplicable es la presentada y aceptada en la aplicación. Una modific
 
 Para cualquier pregunta sobre estas condiciones: [support.histae@gmail.com](mailto:support.histae@gmail.com). La información relativa al derecho aplicable, las reclamaciones y un posible mediador en materia de consumo es: En proceso de validación.
 
-
 ## Créditos de continuación y publicidad opcional
 
-Free recibe dos créditos gratuitos cada lunes a las 00:00 UTC, sin acumular. Cada participante Free reserva un crédito al aceptar; ambos se consumen de forma atómica tras los dos acuerdos. Un rechazo o la caducidad libera las reservas. Un vídeo publicitario voluntario puede dar un crédito adicional, con hasta tres créditos publicitarios que se ponen a cero cada lunes a las 00:00 UTC y deben ganarse de nuevo mediante vídeos. Los créditos pertenecen a la cuenta, no son transferibles y no tienen valor monetario. Free permite un máximo de cinco continuaciones confirmadas por persona y semana. Premium (5 EUR al mes o 48 EUR al año) no consume créditos, no muestra anuncios y no impone este límite. El acuerdo mutuo siempre es necesario.
+Free recibe 2 créditos gratuitos cada lunes a las 00:00 UTC, sin acumulación. Cada participante Free reserva su propio crédito al aceptar continuar; solo se cobra a los participantes Free después de los dos acuerdos. Un participante Premium no consume créditos. El rechazo o la caducidad libera las reservas; un crédito ya consumido para una continuación confirmada no se devuelve al terminarla. Un vídeo opcional validado puede otorgar 1 crédito publicitario, hasta un saldo de 3 incluidos los reservados. Los créditos publicitarios caducan cada lunes a las 00:00 UTC; un acuerdo basado en un crédito publicitario caducado debe renovarse antes de un cargo de sustitución. Los créditos son internos, intransferibles y sin valor monetario. Free permite como máximo 5 continuaciones confirmadas por persona y semana UTC. Premium elimina este límite y la publicidad; el acuerdo mutuo sigue siendo necesario.
 
 ## Actualización funcional del 22 de octubre de 2026 — compras pendientes de validación
 
@@ -60,7 +59,7 @@ Esta descripción técnica no sustituye las condiciones contractuales definitiva
 
 ## ¿Qué ocurre con las conversaciones inactivas?
 
-Tras 10 días sin un nuevo mensaje, la conversación confirmada se archiva. Se avisa a los 23 días; el match y los mensajes se eliminan a los 30 días. Un nuevo mensaje reinicia el plazo sin gastar otro crédito. La misma regla se aplica a Free y Premium. Leer o abrir la aplicación no reinicia el plazo.
+Para una conversación confirmada, el plazo de inactividad comienza con la confirmación mutua y se reinicia únicamente al enviar un nuevo mensaje. A los 10 días se archiva, pero sigue siendo accesible; a los 23 días está previsto un aviso. A los 30 días se cierra el acceso y el mantenimiento elimina el match, sus mensajes y notificaciones asociados. Un nuevo mensaje antes del vencimiento desarchiva la conversación sin otro acuerdo ni crédito adicional; leer o abrir la aplicación no reinicia el plazo. Las denuncias siguen su propio periodo de conservación y pueden subsistir tras eliminarse el match. La misma regla se aplica a Free y Premium.
 
 ## 7. Reglas de seguridad y solicitudes de las autoridades
 

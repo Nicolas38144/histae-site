@@ -36,7 +36,7 @@ La réponse doit utiliser un canal adapté à la sensibilité des données et ê
 
 Une demande de conservation doit préciser son fondement, les comptes et catégories visés, la période, la durée requise et la référence de procédure. Une conservation ciblée, lorsqu’elle est légalement requise et techniquement réalisable, doit être confirmée avec son périmètre et sa durée ; elle n’autorise pas à elle seule une communication ultérieure.
 
-Les délais d’effacement de la Politique de confidentialité continuent à compter. L’envoi d’une demande ne suspend pas automatiquement les purges et ne garantit aucune conservation sans confirmation. Histae ne promet ni la récupération de données déjà supprimées ni la fourniture de données jamais collectées. Une demande ne crée pas un historique de localisation ou une capacité de surveillance en temps réel.
+Les délais d’effacement de la Politique de confidentialité continuent à compter. L’envoi d’une demande ne suspend pas automatiquement les purges et ne garantit aucune conservation sans confirmation. Histae ne promet ni la récupération de données déjà supprimées ni la fourniture de données jamais collectées. Une demande ne crée pas un historique de localisation ou une capacité de surveillance en temps réel. La donnée de présence disponible est un centre de zone approximatif, pas une coordonnée GPS précise ; sa fraîcheur, ses purges et les copies historiques éventuelles suivent la Politique de confidentialité. Les messages d’un match purgé pour inactivité ne sont pas garantis disponibles, même si un signalement a été conservé.
 
 ## 5. Urgences et protection des enfants
 

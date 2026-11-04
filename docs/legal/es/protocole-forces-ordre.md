@@ -36,7 +36,7 @@ La respuesta debe utilizar un canal adecuado a la sensibilidad de los datos y li
 
 Una solicitud de conservación debe especificar su fundamento, las cuentas y categorías afectadas, el periodo, la duración requerida y la referencia del procedimiento. La conservación específica, cuando sea legalmente exigida y técnicamente viable, debe confirmarse con su alcance y duración; por sí sola no autoriza una comunicación posterior.
 
-Los plazos de supresión de la Política de privacidad siguen transcurriendo. El envío de una solicitud no suspende automáticamente las depuraciones ni garantiza la conservación sin confirmación. Histae no promete recuperar datos ya eliminados ni proporcionar datos nunca recopilados. Una solicitud no crea un historial de ubicación ni una capacidad de vigilancia en tiempo real.
+Los plazos de supresión de la Política de privacidad siguen transcurriendo. El envío de una solicitud no suspende automáticamente las depuraciones ni garantiza la conservación sin confirmación. Histae no promete recuperar datos ya eliminados ni proporcionar datos nunca recopilados. Una solicitud no crea un historial de ubicación ni una capacidad de vigilancia en tiempo real. El dato de presencia disponible es el centro de una zona aproximada, no una coordenada GPS precisa; su vigencia, eliminación y posibles copias históricas siguen la Política de privacidad. No se garantiza que los mensajes de un match eliminado por inactividad sigan disponibles, aunque se conserve una denuncia.
 
 ## 5. Emergencias y protección de menores
 

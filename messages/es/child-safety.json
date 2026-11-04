@@ -18,7 +18,7 @@
     "sections": {
       "adults": {
         "title": "Un servicio exclusivo para adultos",
-        "paragraphs": ["Es necesario tener al menos 18 años para utilizar Histae. La fecha de nacimiento declarada se comprueba al crear el perfil; no se trata de una verificación de identidad. Está prohibido crear una cuenta para un menor o falsear la edad. Una cuenta identificada como perteneciente a un menor debe desactivarse."]
+        "paragraphs": ["Es necesario tener al menos 18 años para utilizar Histae. La fecha de nacimiento declarada se comprueba al crear el perfil; no se trata de una verificación de identidad. Está prohibido crear una cuenta para un menor o falsear la edad. Una cuenta identificada como perteneciente a un menor debe desactivarse.", "El acceso al número de teléfono se verifica mediante código SMS. Ni este código ni la fecha de nacimiento declarada certifican la identidad civil o la edad real. Actualmente no existe verificación sistemática mediante documento de identidad, selfie o biometría, ni aprobación humana previa de cada perfil."]
       },
       "prohibited": {
         "title": "Prohibiciones explícitas",
@@ -30,7 +30,7 @@
       },
       "response": {
         "title": "Tratamiento de los avisos",
-        "paragraphs": ["Los avisos relativos a la seguridad de un menor deben revisarse de forma prioritaria por la persona responsable autorizada. Al identificar material de abuso sexual infantil, Histae lo retira o bloquea su acceso y toma las medidas adecuadas contra la cuenta, incluida su suspensión. Los avisos de buena fe no deben dar lugar a represalias.", "Solo se trata la información necesaria para la revisión y las obligaciones legales, con acceso limitado a las personas autorizadas. Histae no pide a los usuarios que recopilen copias de contenido ilícito. El soporte no es un servicio de emergencia ni se anuncia atención continua."]
+        "paragraphs": ["Los avisos relativos a la seguridad de un menor deben revisarse de forma prioritaria por la persona responsable autorizada. Al identificar material de abuso sexual infantil, Histae lo retira o bloquea su acceso y toma las medidas adecuadas contra la cuenta, incluida su suspensión. Los avisos de buena fe no deben dar lugar a represalias.", "Los controles automáticos se aplican a las biografías y respuestas del perfil, incluidos ciertos términos sexuales; no constituyen un detector especializado de CSAM. Las fotos no se someten a análisis automático del contenido ni a comparación con una base de huellas CSAM. Las herramientas permiten revisar manualmente las denuncias y retirar las fotos afectadas; la disponibilidad de una foto no significa que haya sido revisada.", "Solo se trata la información necesaria para la revisión y las obligaciones legales, con acceso limitado a las personas autorizadas. Histae no pide a los usuarios que recopilen copias de contenido ilícito. El soporte no es un servicio de emergencia ni se anuncia atención continua."]
       },
       "authorities": {
         "title": "Comunicación a las autoridades competentes",

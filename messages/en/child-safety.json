@@ -18,7 +18,7 @@
     "sections": {
       "adults": {
         "title": "A service for adults only",
-        "paragraphs": ["You must be at least 18 to use Histae. The declared date of birth is checked when creating a profile; this is not identity verification. Creating an account for a minor or falsifying your age is prohibited. An account identified as belonging to a minor must be disabled."]
+        "paragraphs": ["You must be at least 18 to use Histae. The declared date of birth is checked when creating a profile; this is not identity verification. Creating an account for a minor or falsifying your age is prohibited. An account identified as belonging to a minor must be disabled.", "Access to the phone number is verified by SMS code. Neither this code nor the declared birth date certifies civil identity or actual age. There is currently no systematic ID-document, selfie or biometric check, or human approval of every profile beforehand."]
       },
       "prohibited": {
         "title": "Explicit prohibitions",
@@ -30,7 +30,7 @@
       },
       "response": {
         "title": "How reports are handled",
-        "paragraphs": ["Child-safety reports must receive priority review by the authorised person responsible. When child sexual abuse material is identified, Histae removes it or blocks access and takes appropriate action against the account, including suspension. Good-faith reporting must not result in retaliation.", "Only information necessary for review and legal obligations is processed, with access restricted to authorised people. Histae does not ask users to collect copies of illegal content themselves. Support is not an emergency service and no continuous staffing is claimed."]
+        "paragraphs": ["Child-safety reports must receive priority review by the authorised person responsible. When child sexual abuse material is identified, Histae removes it or blocks access and takes appropriate action against the account, including suspension. Good-faith reporting must not result in retaliation.", "Automatic checks concern biographies and profile answers, including certain sexual terms; they are not a specialised CSAM detector. Photos undergo neither automatic content analysis nor comparison with a CSAM hash database. Tools allow manual report review and removal of the photos concerned; availability of a photo does not mean it has been reviewed.", "Only information necessary for review and legal obligations is processed, with access restricted to authorised people. Histae does not ask users to collect copies of illegal content themselves. Support is not an emergency service and no continuous staffing is claimed."]
       },
       "authorities": {
         "title": "Reporting to the relevant authorities",

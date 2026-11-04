@@ -7,9 +7,9 @@
 
 ## Cosa accettate
 
-Quando attivate la scoperta, Histae può ricevere la posizione trasmessa dall’applicazione sotto forma di latitudine e longitudine. La posizione serve a calcolare le distanze tra i profili e ad applicare i limiti di distanza scelti da entrambe le persone. Gli altri utenti vedono una distanza arrotondata, mai le vostre coordinate precise.
+Quando attivate la scoperta, l’app trasmette latitudine e longitudine a Histae. Prima di registrare la presenza, il server le sostituisce con il centro di una zona approssimativa di circa 5 km. La scoperta utilizza questi centri e le preferenze reciproche di distanza; le soglie sono approssimative. Gli altri utenti vedono una distanza arrotondata a scaglioni di 5 km, con un minimo di 5 km, non le coordinate precise. Questo riduce la precisione senza garantire l’anonimato o provare la posizione reale. Il cambio di zona è limitato a uno ogni cinque minuti; rimane possibile aggiornare all’interno della stessa zona.
 
-L’API conserva l’ultima posizione trasmessa, non una cronologia degli spostamenti. Questa posizione non è più utilizzabile per la scoperta dopo un’ora; senza aggiornamento viene eliminata dopo 24 ore. Potete rifiutare o revocare il vostro consenso. La revoca elimina la posizione registrata e interrompe la scoperta basata sulla distanza fino a un nuovo consenso e a una nuova posizione.
+La presenza conserva solo l’ultimo centro di zona e la data di aggiornamento, non una cronologia degli spostamenti. Non è più utilizzabile per la scoperta dopo un’ora senza aggiornamento; la manutenzione la elimina dopo 24 ore. Potete rifiutare o revocare il consenso: la revoca elimina la presenza registrata e impedisce le funzioni che ne dipendono fino a un nuovo consenso e una nuova posizione. I dati già ricevuti da altre persone e i backup seguono i limiti e i tempi dell’Informativa sulla privacy.
 
 L’autorizzazione alla localizzazione concessa nelle impostazioni del telefono è distinta da questo consenso. Potete modificarla nel sistema operativo; l’applicazione deve anche raccogliere la vostra scelta nel proprio percorso. Questo consenso non copre alcun utilizzo pubblicitario della posizione.
 

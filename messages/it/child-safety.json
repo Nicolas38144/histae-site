@@ -18,7 +18,7 @@
     "sections": {
       "adults": {
         "title": "Un servizio riservato agli adulti",
-        "paragraphs": ["Per usare Histae occorre avere almeno 18 anni. La data di nascita dichiarata viene controllata alla creazione del profilo; non è una verifica dell’identità. È vietato creare un account per un minore o falsificare l’età. Un account identificato come appartenente a un minore deve essere disattivato."]
+        "paragraphs": ["Per usare Histae occorre avere almeno 18 anni. La data di nascita dichiarata viene controllata alla creazione del profilo; non è una verifica dell’identità. È vietato creare un account per un minore o falsificare l’età. Un account identificato come appartenente a un minore deve essere disattivato.", "L’accesso al numero di telefono viene verificato tramite codice SMS. Né il codice né la data di nascita dichiarata certificano l’identità civile o l’età reale. Attualmente non esiste un controllo sistematico tramite documento d’identità, selfie o biometria, né approvazione umana preventiva di ogni profilo."]
       },
       "prohibited": {
         "title": "Divieti espliciti",
@@ -30,7 +30,7 @@
       },
       "response": {
         "title": "Gestione delle segnalazioni",
-        "paragraphs": ["Le segnalazioni relative alla sicurezza di un minore devono essere esaminate in via prioritaria dalla persona responsabile autorizzata. Quando viene identificato materiale di abuso sessuale sui minori, Histae lo rimuove o ne blocca l’accesso e adotta le misure necessarie contro l’account, fino alla sospensione. Le segnalazioni in buona fede non devono comportare ritorsioni.", "Sono trattate solo le informazioni necessarie all’esame e agli obblighi di legge, con accesso limitato alle persone autorizzate. Histae non chiede agli utenti di raccogliere copie di contenuti illeciti. L’assistenza non è un servizio di emergenza e non viene dichiarata una presenza continua."]
+        "paragraphs": ["Le segnalazioni relative alla sicurezza di un minore devono essere esaminate in via prioritaria dalla persona responsabile autorizzata. Quando viene identificato materiale di abuso sessuale sui minori, Histae lo rimuove o ne blocca l’accesso e adotta le misure necessarie contro l’account, fino alla sospensione. Le segnalazioni in buona fede non devono comportare ritorsioni.", "I controlli automatici riguardano biografie e risposte del profilo, inclusi alcuni termini sessuali; non costituiscono un rilevatore specializzato di CSAM. Le foto non sono sottoposte ad analisi automatica del contenuto né a confronto con una banca dati di impronte CSAM. Gli strumenti consentono revisione manuale delle segnalazioni e rimozione delle foto interessate; la disponibilità di una foto non significa che sia stata controllata.", "Sono trattate solo le informazioni necessarie all’esame e agli obblighi di legge, con accesso limitato alle persone autorizzate. Histae non chiede agli utenti di raccogliere copie di contenuti illeciti. L’assistenza non è un servizio di emergenza e non viene dichiarata una presenza continua."]
       },
       "authorities": {
         "title": "Segnalazione alle autorità competenti",

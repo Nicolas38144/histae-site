@@ -10,6 +10,8 @@
 
 This policy supplements the [Terms of Use](/en/legal/terms-of-use/) and applies to every account, free or paid, profiles, photos, messages and shared links. Histae is a dating service for adults, not a platform for selling sexual content or services. You must be at least 18 to use it. Falsifying your age, creating an account for a minor or allowing a minor to use your account is prohibited.
 
+Registration uses a French phone number and a one-time SMS code. Verifying the code confirms access to the number, not civil identity. The server refuses to save a profile whose declared birth date indicates an age below 18. This declaration-based check does not certify actual age. There is currently no systematic ID-document, selfie or biometric check, or human approval of every new profile. Users must provide information about themselves, retain control of their sessions and not create an account for someone else or circumvent a suspension.
+
 ## 2. Prohibited content and use
 
 You must not publish, transmit, request, promote or facilitate:
@@ -25,7 +27,7 @@ You must not publish, transmit, request, promote or facilitate:
 
 ## 3. Consent and respect for others
 
-A match, a Premium subscription or agreement to reveal a photo does not entitle anyone to impose an interaction or redistribute another person's content. Respect refusals and expressed boundaries. Publish only content you are entitled to use, concerning you and complying with this policy. Agreement between two people does not make content prohibited here acceptable.
+A match, a Premium subscription or agreement to reveal a photo does not entitle anyone to impose an interaction or redistribute another person's content. Respect refusals and expressed boundaries. Publish only content you are entitled to use, concerning you and complying with this policy. Agreement between two people does not make content prohibited here acceptable. SMS verification of a number does not establish its holder's identity. A photo-sharing agreement in a match proves neither the identity of the person depicted nor their permission to publish the image. Histae does not systematically verify ID documents, selfies, photo provenance or the consent of people depicted.
 
 ## 4. Reporting and child safety
 
@@ -35,9 +37,9 @@ The [Child Safety Standards](/en/child-safety/) describe the prohibitions, prior
 
 ## 5. Moderation, measures and appeals
 
-Histae may examine content and reports and, depending on the facts, remove content, restrict interactions, suspend or close an account. Content being available does not guarantee that it has been reviewed beforehand. Measures take account of seriousness, people's safety and applicable obligations. Good-faith reports must not lead to retaliation.
+Biographies and profile answers are analysed by rules targeting spam, insults, personal contact details and sexual terms; detected content is placed pending review. Photos are technically converted without automated content analysis, age estimation, facial recognition or CSAM hash comparison. Their availability does not certify prior review. Recorded reports and emails are to be reviewed manually by the authorised responsible person, based on the reason, facts and available content. Administrative access to messages requires a report linked to the conversation and both participants; sensitive consultations are logged. Tools allow content rejection, photo removal, account banning and unbanning. Banning invalidates mobile sessions. A report alone is not proof; measures consider seriousness and applicable obligations. No guaranteed deadline or numerical SLA is currently published. Good-faith reporting must not lead to retaliation.
 
-To request an explanation or challenge a measure, write to the contact provided, identifying the account and decision concerned. A suspension does not remove mandatory rights relating to purchases or data protection. Reports and requests from authorities are handled under the [Law Enforcement Policy](/en/legal/law-enforcement-policy/) and [Privacy Policy](/en/legal/privacy-policy/).
+To request explanations or appeal, email the contact provided, even without account access, with the account identifier if known, the decision challenged, your reasons and relevant information. The procedure provides for manual review by the authorised responsible person; it guarantees neither human approval of every profile beforehand nor an independent appeal body. No guaranteed response time is published. If an error is recognised, legally and technically possible corrections are determined; recovery of permanently deleted content cannot be guaranteed. If the appeal is rejected, the measure remains in place and a response is provided for subject to legal, confidentiality and safety restrictions. Suspension does not remove mandatory purchase or data rights. The [Law Enforcement Policy](/en/legal/law-enforcement-policy/) and [Privacy Policy](/en/legal/privacy-policy/) govern the corresponding requests.
 
 ## 6. Updates and review
 

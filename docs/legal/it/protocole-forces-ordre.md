@@ -36,7 +36,7 @@ La risposta deve utilizzare un canale adeguato alla sensibilità dei dati e limi
 
 Una richiesta di conservazione deve specificare il fondamento, gli account e le categorie interessati, il periodo, la durata richiesta e il riferimento del procedimento. La conservazione mirata, quando richiesta dalla legge e tecnicamente realizzabile, deve essere confermata con il relativo ambito e durata; da sola non autorizza una successiva comunicazione.
 
-I termini di cancellazione dell’Informativa sulla privacy continuano a decorrere. L’invio di una richiesta non sospende automaticamente le eliminazioni né garantisce la conservazione senza conferma. Histae non promette di recuperare dati già cancellati o di fornire dati mai raccolti. Una richiesta non crea una cronologia di localizzazione o una capacità di sorveglianza in tempo reale.
+I termini di cancellazione dell’Informativa sulla privacy continuano a decorrere. L’invio di una richiesta non sospende automaticamente le eliminazioni né garantisce la conservazione senza conferma. Histae non promette di recuperare dati già cancellati o di fornire dati mai raccolti. Una richiesta non crea una cronologia di localizzazione o una capacità di sorveglianza in tempo reale. Il dato di presenza disponibile è il centro di una zona approssimativa, non una coordinata GPS precisa; validità, eliminazioni ed eventuali copie storiche seguono l’Informativa sulla privacy. Non è garantita la disponibilità dei messaggi di un match eliminato per inattività, anche quando una segnalazione viene conservata.
 
 ## 5. Emergenze e protezione dei minori
 

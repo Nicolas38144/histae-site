@@ -36,7 +36,7 @@ Responses must use a channel appropriate to the sensitivity of the data and be l
 
 A preservation request must specify its legal basis, targeted accounts and categories, period, required preservation duration and case reference. Targeted preservation, when legally required and technically feasible, must be confirmed with its scope and duration; preservation alone does not authorise subsequent disclosure.
 
-Privacy Policy deletion periods continue to run. Sending a request does not automatically suspend purges or guarantee preservation without confirmation. Histae does not promise recovery of already deleted data or provision of data never collected. A request does not create a location history or real-time surveillance capability.
+Privacy Policy deletion periods continue to run. Sending a request does not automatically suspend purges or guarantee preservation without confirmation. Histae does not promise recovery of already deleted data or provision of data never collected. A request does not create a location history or real-time surveillance capability. Available presence data is an approximate zone centre, not a precise GPS coordinate; its freshness, purges and any historical copies follow the Privacy Policy. Messages from a match purged for inactivity are not guaranteed to remain available even where a report was retained.
 
 ## 5. Emergencies and child protection
 
