@@ -1,8 +1,9 @@
 # Politique de confidentialité de Histae
 
-**Version publiée :** En cours de validation.  
-**Date du document :** 26 octobre 2026.  
-**Responsable du traitement :** En cours de validation.  
+**Version publiée :** En cours de validation.\
+**Date du document :** 4 novembre 2026.\
+**Responsable du traitement :** Histae.\
+**Identité juridique et adresse du responsable du traitement :** En cours de validation.\
 **Contact vie privée :** [support.histae@gmail.com](mailto:support.histae@gmail.com)
 
 Cette notice décrit les traitements liés à l’application de rencontre Histae et à son API. Les traitements propres au site vitrine, notamment les éventuels traceurs et outils de mesure d’audience, doivent être vérifiés séparément avant d’étendre cette notice au site.
@@ -63,3 +64,7 @@ Pour vérifier les achats Apple/Google, Histae transmet les références techniq
 ## Que deviennent les conversations inactives ?
 
 Après 10 jours sans nouveau message, une conversation confirmée est archivée. Un avertissement est envoyé après 23 jours ; le match et les messages sont supprimés après 30 jours. Un nouveau message relance le délai, sans nouveau crédit. La même règle s’applique à Free et Premium. Lire ou ouvrir l’application ne relance pas le délai.
+
+## Demandes des autorités
+
+Les demandes officielles sont examinées selon les [protocoles à destination des forces de l’ordre](/fr/legal/law-enforcement-policy/). Une communication éventuelle est limitée aux données disponibles et nécessaires, sur un fondement juridique applicable, après vérification de l’autorité et de la demande. Ce protocole ne constitue pas un consentement global de l’utilisateur et ne garantit pas la conservation ou la récupération de données déjà supprimées.

@@ -83,6 +83,12 @@
     "terms-of-use": {
       "source": "conditions-utilisation"
     },
+    "acceptable-use-policy": {
+      "source": "politique-utilisation-acceptable"
+    },
+    "law-enforcement-policy": {
+      "source": "protocole-forces-ordre"
+    },
     "privacy-policy": {
       "source": "politique-confidentialite"
     },

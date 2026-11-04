@@ -1,8 +1,9 @@
 # Política de privacidad de Histae
 
-**Versión publicada:** En proceso de validación.  
-**Fecha del documento:** 26 de octubre de 2026.  
-**Responsable del tratamiento:** En proceso de validación.  
+**Versión publicada:** En proceso de validación.\
+**Fecha del documento:** 4 de noviembre de 2026.\
+**Responsable del tratamiento:** Histae.\
+**Identidad jurídica y dirección del responsable del tratamiento:** En proceso de validación.\
 **Contacto de privacidad:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
 
 Este aviso describe los tratamientos relacionados con la aplicación de citas Histae y su API. Los tratamientos propios del sitio de presentación, en particular los posibles rastreadores y herramientas de medición de audiencia, deben verificarse por separado antes de extender este aviso al sitio.
@@ -63,3 +64,7 @@ Para verificar compras de Apple/Google, Histae transmite referencias técnicas d
 ## ¿Qué ocurre con las conversaciones inactivas?
 
 Tras 10 días sin un nuevo mensaje, la conversación confirmada se archiva. Se avisa a los 23 días; el match y los mensajes se eliminan a los 30 días. Un nuevo mensaje reinicia el plazo sin gastar otro crédito. La misma regla se aplica a Free y Premium. Leer o abrir la aplicación no reinicia el plazo.
+
+## Solicitudes de las autoridades
+
+Las solicitudes oficiales se examinan según el [Protocolo para las fuerzas del orden](/es/legal/law-enforcement-policy/). Cualquier comunicación se limita a los datos disponibles y necesarios, sobre una base jurídica aplicable, tras verificar la autoridad y la solicitud. Este protocolo no constituye un consentimiento global del usuario ni garantiza la conservación o recuperación de datos ya eliminados.

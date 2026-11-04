@@ -1,8 +1,9 @@
 # Histae Privacy Policy
 
-**Published version:** Validation in progress.  
-**Document date:** 26 October 2026.  
-**Data controller:** Validation in progress.  
+**Published version:** Validation in progress.\
+**Document date:** 4 November 2026.\
+**Data controller:** Histae.\
+**Data controller’s legal identity and address:** Validation in progress.\
 **Privacy contact:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
 
 This notice describes processing associated with the Histae dating app and its API. Processing specific to the showcase website, including any trackers and audience measurement tools, must be checked separately before extending this notice to the website.
@@ -63,3 +64,7 @@ To verify Apple/Google purchases, Histae sends technical purchase references and
 ## What happens to inactive conversations?
 
 After 10 days without a new message, a confirmed conversation is archived. A warning is sent after 23 days; the match and messages are deleted after 30 days. A new message resets the deadline without spending another credit. The same rule applies to Free and Premium. Reading or opening the app does not reset the deadline.
+
+## Requests from authorities
+
+Official requests are assessed under the [Law Enforcement Policy](/en/legal/law-enforcement-policy/). Any disclosure is limited to available and necessary data, on an applicable legal basis, after verification of the authority and request. This policy is not blanket consent from the user and does not guarantee preservation or recovery of already deleted data.

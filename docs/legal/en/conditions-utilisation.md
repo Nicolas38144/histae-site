@@ -1,8 +1,9 @@
 # Histae Terms of Use
 
-**Published version:** Validation in progress.  
-**Document date:** 26 October 2026.  
-**Service publisher:** Validation in progress.
+**Published version:** Validation in progress.\
+**Document date:** 4 November 2026.\
+**Service publisher:** Histae.\
+**Publisher’s legal identity and address:** Validation in progress.
 
 ## 1. Purpose and access to the service
 
@@ -60,3 +61,7 @@ This technical description does not replace final contractual terms for renewal,
 ## What happens to inactive conversations?
 
 After 10 days without a new message, a confirmed conversation is archived. A warning is sent after 23 days; the match and messages are deleted after 30 days. A new message resets the deadline without spending another credit. The same rule applies to Free and Premium. Reading or opening the app does not reset the deadline.
+
+## 7. Safety rules and requests from authorities
+
+The [Acceptable Use Policy](/en/legal/acceptable-use-policy/) supplements these terms regarding prohibited content and behaviour, reporting and moderation measures. The [Child Safety Standards](/en/child-safety/) detail the rules protecting minors. The [Law Enforcement Policy](/en/legal/law-enforcement-policy/) explains the handling of official requests; it does not create a general authorisation to disclose users’ data.

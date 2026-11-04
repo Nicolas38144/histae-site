@@ -1,8 +1,9 @@
 # Condizioni generali d’uso di Histae
 
-**Versione pubblicata:** In corso di validazione.  
-**Data del documento:** 26 ottobre 2026.  
-**Editore del servizio:** In corso di validazione.
+**Versione pubblicata:** In corso di validazione.\
+**Data del documento:** 4 novembre 2026.\
+**Editore del servizio:** Histae.\
+**Identità giuridica e indirizzo dell’editore:** In corso di validazione.
 
 ## 1. Oggetto e accesso al servizio
 
@@ -60,3 +61,7 @@ Questa descrizione tecnica non sostituisce le condizioni contrattuali definitive
 ## Cosa succede alle conversazioni inattive?
 
 Dopo 10 giorni senza nuovi messaggi, una conversazione confermata viene archiviata. Un avviso viene inviato dopo 23 giorni; il match e i messaggi vengono eliminati dopo 30 giorni. Un nuovo messaggio rinnova il termine senza spendere altri crediti. La stessa regola vale per Free e Premium. Leggere o aprire l’app non rinnova il termine.
+
+## 7. Regole di sicurezza e richieste delle autorità
+
+La [Politica di utilizzo accettabile](/it/legal/acceptable-use-policy/) integra queste condizioni per i contenuti e i comportamenti vietati, le segnalazioni e le misure di moderazione. Gli [standard di sicurezza dei minori](/it/child-safety/) precisano le regole di protezione dei minori. Il [Protocollo per le forze dell’ordine](/it/legal/law-enforcement-policy/) descrive la gestione delle richieste ufficiali; non crea un’autorizzazione generale a comunicare i dati degli utenti.

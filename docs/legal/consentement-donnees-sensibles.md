@@ -1,8 +1,9 @@
 # Consentement au traitement des données sensibles
 
-**Version publiée :** En cours de validation.  
-**Date du document :** 26 octobre 2026.  
-**Responsable du traitement :** En cours de validation.
+**Version publiée :** En cours de validation.\
+**Date du document :** 4 novembre 2026.\
+**Responsable du traitement :** Histae.\
+**Identité juridique et adresse du responsable du traitement :** En cours de validation.
 
 ## Ce que vous acceptez
 

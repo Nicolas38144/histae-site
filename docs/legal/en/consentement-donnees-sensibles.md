@@ -1,8 +1,9 @@
 # Consent to the processing of sensitive data
 
-**Published version:** Validation in progress.  
-**Document date:** 26 October 2026.  
-**Data controller:** Validation in progress.
+**Published version:** Validation in progress.\
+**Document date:** 4 November 2026.\
+**Data controller:** Histae.\
+**Data controller’s legal identity and address:** Validation in progress.
 
 ## What you agree to
 

@@ -3,8 +3,8 @@
 [Documentation](../../README.md#documentation)
 
 This directory contains public legal content and its developer documentation. The four source
-documents are maintained in French, English, Spanish and Italian. Their publication languages
-must remain intact when the developer documentation is edited in English.
+app documents and two compliance policies are maintained in French, English, Spanish and Italian.
+Their publication languages must remain intact when the developer documentation is edited in English.
 
 ## Sources and public routes
 
@@ -18,8 +18,10 @@ source filenames. `config/site.json` maps documents to stable public route ident
 | `politique-confidentialite.md` | `privacy-policy/` | `PRIVACY_POLICY` |
 | `consentement-donnees-sensibles.md` | `sensitive-data-consent/` | `SENSITIVE_DATA_CONSENT` |
 | `consentement-localisation.md` | `location-consent/` | `LOCATION_CONSENT` |
+| `politique-utilisation-acceptable.md` | `acceptable-use-policy/` | No separate API variable |
+| `protocole-forces-ordre.md` | `law-enforcement-policy/` | No separate API variable |
 
-Each prefix has API `_VERSION` and `_URL` settings. Do not rename sources or public routes as part
+Each of the four API prefixes has `_VERSION` and `_URL` settings. Do not rename sources or public routes as part
 of a documentation cleanup. The footer and language selector link to rendered HTML pages. Caddy
 permanently redirects legacy French route names while retaining the locale and query string.
 
@@ -32,6 +34,44 @@ in all four document languages and the app's `SUPPORT_EMAIL` aligned when it cha
 Public draft banners have been removed. Missing information uses the localized equivalent of
 “Validation in progress.” This wording does not mean the documents have been approved. The pages
 remain `noindex, follow` and are excluded from the sitemap.
+
+Use Histae as the service/publisher name; keep the publisher/controller's legal identity and address
+separately marked as pending until the owner supplies them. Do not replace approval, version,
+retention or contractual placeholders with the brand name.
+
+## Stripe compliance review
+
+Stripe's request asks for three public policies, not three links to interchangeable privacy texts:
+
+| Requested document | French public URL |
+| --- | --- |
+| Terms of use | `https://www.histae.com/fr/legal/terms-of-use/` |
+| Acceptable use policy | `https://www.histae.com/fr/legal/acceptable-use-policy/` |
+| Law enforcement protocols | `https://www.histae.com/fr/legal/law-enforcement-policy/` |
+
+All six legal documents appear in the footer. The same routes exist under `en`, `es` and `it`.
+Run `pnpm exec playwright test tests/legal-policies.spec.ts` to check the three requested public
+pages, localized navigation, cross-links and pending-review notices in all four languages.
+The new policies cover prohibited conduct and content, reports, moderation/appeals, verification
+of official requests, legal bases, targeted preservation, emergencies and child protection.
+The terms and privacy policy link to the relevant policies. Their publication does not change API
+acceptance versions, build new moderation or preservation tooling, or establish Stripe approval.
+
+On 4 November 2026, the live terms returned HTTP 200 but retained unresolved publisher and
+commercial clauses; the two new policy URLs returned HTTP 404. Deploy the updated site before
+providing the new links, then verify all three URLs without authentication. `noindex` does not
+prevent direct public access. The publisher/controller identity, version approval, final renewal,
+cancellation, refund, withdrawal and consumer-mediation terms still require completion/review.
+The law-enforcement policy also requires an operational owner to validate request authentication,
+secure transmission, preservation and logging procedures before representing them as operational.
+
+Stripe treats online dating as a restricted business requiring additional review; public policies
+alone do not guarantee approval. Do not select an attestation in Stripe on the owner's behalf.
+See [Stripe restricted businesses](https://stripe.com/legal/restricted-businesses),
+[CNIL on legally required disclosures](https://www.cnil.fr/fr/les-bases-legales/obligation-legale)
+and [distance-selling disclosures](https://entreprendre.service-public.gouv.fr/vosdroits/F23455).
+
+## Finalization checks
 
 Before treating the content as finalized, confirm the publisher and controller identity, contacts,
 hosting and processors, transfers, retention periods and the actual product and payment flows.

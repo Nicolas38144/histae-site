@@ -1,8 +1,9 @@
 # Consenso al trattamento dei dati sensibili
 
-**Versione pubblicata:** In corso di validazione.  
-**Data del documento:** 26 ottobre 2026.  
-**Titolare del trattamento:** In corso di validazione.
+**Versione pubblicata:** In corso di validazione.\
+**Data del documento:** 4 novembre 2026.\
+**Titolare del trattamento:** Histae.\
+**Identità giuridica e indirizzo del titolare del trattamento:** In corso di validazione.
 
 ## Cosa accettate
 

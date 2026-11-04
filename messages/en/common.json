@@ -49,6 +49,8 @@
     "legalTitle": "Legal information",
     "legalLinks": {
       "terms-of-use": "Terms of use",
+      "acceptable-use-policy": "Acceptable use policy",
+      "law-enforcement-policy": "Law enforcement policy",
       "privacy-policy": "Privacy policy",
       "sensitive-data-consent": "Sensitive data consent",
       "location-consent": "Location consent"

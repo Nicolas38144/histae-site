@@ -49,6 +49,8 @@
     "legalTitle": "Información legal",
     "legalLinks": {
       "terms-of-use": "Condiciones de uso",
+      "acceptable-use-policy": "Política de uso aceptable",
+      "law-enforcement-policy": "Protocolo para las fuerzas del orden",
       "privacy-policy": "Política de privacidad",
       "sensitive-data-consent": "Consentimiento para datos sensibles",
       "location-consent": "Consentimiento de ubicación"

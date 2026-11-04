@@ -1,8 +1,9 @@
 # Condiciones generales de uso de Histae
 
-**Versión publicada:** En proceso de validación.  
-**Fecha del documento:** 26 de octubre de 2026.  
-**Editor del servicio:** En proceso de validación.
+**Versión publicada:** En proceso de validación.\
+**Fecha del documento:** 4 de noviembre de 2026.\
+**Editor del servicio:** Histae.\
+**Identidad jurídica y dirección del editor:** En proceso de validación.
 
 ## 1. Objeto y acceso al servicio
 
@@ -60,3 +61,7 @@ Esta descripción técnica no sustituye las condiciones contractuales definitiva
 ## ¿Qué ocurre con las conversaciones inactivas?
 
 Tras 10 días sin un nuevo mensaje, la conversación confirmada se archiva. Se avisa a los 23 días; el match y los mensajes se eliminan a los 30 días. Un nuevo mensaje reinicia el plazo sin gastar otro crédito. La misma regla se aplica a Free y Premium. Leer o abrir la aplicación no reinicia el plazo.
+
+## 7. Reglas de seguridad y solicitudes de las autoridades
+
+La [Política de uso aceptable](/es/legal/acceptable-use-policy/) complementa estas condiciones respecto a los contenidos y comportamientos prohibidos, las denuncias y las medidas de moderación. Las [normas de seguridad de los menores](/es/child-safety/) detallan las reglas de protección de menores. El [Protocolo para las fuerzas del orden](/es/legal/law-enforcement-policy/) explica la tramitación de las solicitudes oficiales; no crea una autorización general para comunicar los datos de los usuarios.
