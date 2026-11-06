@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
-import { localizedHref, storeLinks, supportEmail, type Locale } from "../lib/site-config";
+import { localizedHref, storeLinks, type Locale } from "../lib/site-config";
 import { getMessagesForLocale } from "../messages";
 import { AppScreenshot } from "./app-screenshot";
 
@@ -30,15 +30,6 @@ export async function DownloadPage({ locale }: { locale: Locale }) {
           <h2 id="ios-title">{page.ios.status}</h2>
           <p>{page.ios.text}</p>
         </article>
-      </section>
-      <section className="shell availability-feedback" aria-labelledby="feedback-title">
-        <div>
-          <h2 id="feedback-title">{page.feedbackTitle}</h2>
-          <p>{page.feedbackText}</p>
-        </div>
-        <a className="text-link" href={`mailto:${supportEmail}?subject=${encodeURIComponent(page.feedbackSubject)}`}>
-          {page.feedbackLink}<span aria-hidden="true"> →</span>
-        </a>
       </section>
       <section className="shell availability-previews" aria-labelledby="previews-title">
         <h2 id="previews-title">{page.previewTitle}</h2>

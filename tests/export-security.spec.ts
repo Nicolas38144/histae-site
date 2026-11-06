@@ -96,3 +96,17 @@ test("the footer opens data management without breaking the document security po
   await expect(page.locator("#data-help a[href^='mailto:']")).toBeVisible();
   expect(await page.evaluate(() => (window as unknown as AuditWindow).blocked)).toEqual([]);
 });
+
+for (const locale of ["fr", "en", "es", "it"]) {
+  test(`${locale}: legacy Security links reach About without JavaScript`, async ({ browser }) => {
+    const context = await browser.newContext({ javaScriptEnabled: false });
+    try {
+      const page = await context.newPage();
+      await page.goto(`/${locale}/security/`);
+      await expect(page).toHaveURL(new RegExp(`/${locale}/about/$`));
+      await expect(page.locator("main #privacy")).toBeVisible();
+    } finally {
+      await context.close();
+    }
+  });
+}

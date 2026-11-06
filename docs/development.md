@@ -168,7 +168,7 @@ The server pages compose localized content. `lib/faq.ts` owns FAQ metadata and f
 
 ## Product availability
 
-`DownloadPage` owns the platform status and tester feedback presentation. Its copy lives in
+`DownloadPage` owns the platform status and invited-tester store link. Its copy lives in
 `pages.download` in all four locales. Android testing is invitation-only; do not publish a
 public download badge or infer an enrolment URL from the package name. The owner-provided
 Google Play listing is stored in `config/site.json` under `storeLinks.androidTest` and displayed
@@ -183,7 +183,9 @@ or real-device delivery; those checks remain in the app/API release checklist.
 
 ## Content ownership and regression scope
 
-`FeaturePage`, `SafetyPage` and `AboutPage` own their typed translation blocks and page composition.
+`FeaturePage` and `AboutPage` own their typed translation blocks and page composition.
+The unified About page includes the project rationale, consent controls, account access, data
+rights and source-code section. The former Security page is a redirect, not duplicate content.
 `InformationPage` supplies only the shared frame; `AppStory`, `StoryPassage` and `StoryDetails`
 render provided content without selecting blocks by unchecked strings. Only credit text needs
 commercial interpolation. Availability remains in `DownloadPage`.

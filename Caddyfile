@@ -74,6 +74,9 @@ import caddy-common.caddy
 		default "?{query}"
 	}
 
+	@old_security path_regexp old_security ^/(fr|en|es|it)/security(/index\.html|/)?$
+	redir @old_security /{re.old_security.1}/about/{histae_query_suffix} 308
+
 	@terms path_regexp terms ^/(fr|en|es|it)/legal/conditions-utilisation/?$
 	@privacy path_regexp privacy ^/(fr|en|es|it)/legal/politique-confidentialite/?$
 	@sensitive path_regexp sensitive ^/(fr|en|es|it)/legal/consentement-donnees-sensibles/?$

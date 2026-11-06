@@ -3,8 +3,7 @@
     "home": "Accueil",
     "feature": "Fonctionnalités",
     "pricing": "Tarifs",
-    "safety": "Sécurité",
-    "about": "À propos",
+    "about": "À propos et sécurité",
     "faq": "FAQ",
     "download": "Disponibilité",
     "subscription": "Mon abonnement"
@@ -27,11 +26,8 @@
     "pricing": {
       "title": "Tarifs Free, Premium Mensuel et Annuel"
     },
-    "safety": {
-      "title": "Sécurité et confidentialité"
-    },
     "about": {
-      "title": "Notre vision des rencontres"
+      "title": "À propos, sécurité et vie privée"
     },
     "faq": {
       "title": "Questions fréquentes sur Histae"

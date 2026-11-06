@@ -46,7 +46,7 @@ export async function HomePage({ locale }: { locale: Locale }) {
       <section className="shell privacy-note" aria-labelledby="safety-title">
         <h2 id="safety-title">{t("home.safetyTitle")}</h2>
         <p>{t("home.safetyText")}</p>
-        <Link className="text-link" href={localizedHref(locale, "safety")}>{t("home.safetyLink")}<span aria-hidden="true"> →</span></Link>
+        <Link className="text-link" href={`${localizedHref(locale, "about")}#privacy`}>{t("home.safetyLink")}<span aria-hidden="true"> →</span></Link>
       </section>
       <section className="pricing-section" aria-labelledby="pricing-title">
         <div className="shell">

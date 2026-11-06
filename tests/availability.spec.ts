@@ -16,8 +16,7 @@ for (const [locale, restriction] of Object.entries(invitedAccess)) {
     await expect(android.getByRole("link")).toHaveAttribute("href",
       "https://play.google.com/store/apps/details?id=com.histae.histae_app");
     await expect(page.locator('main a[href*="apps.apple.com"]')).toHaveCount(0);
-    await expect(page.locator(".availability-feedback a")).toHaveAttribute("href",
-      /^mailto:support\.histae@gmail\.com\?subject=.+/);
+    await expect(page.locator(".availability-feedback")).toHaveCount(0);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
   });
 }

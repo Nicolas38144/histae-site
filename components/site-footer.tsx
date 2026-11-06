@@ -5,7 +5,7 @@ import { accountDataHref, childSafetyHref, localizedHref, supportEmail, type Loc
 import { legalDocumentHref, legalDocumentIds } from "../lib/legal-documents";
 
 const footerGroups: Array<{ titleKey: "exploreTitle" | "projectTitle"; routes: SiteRouteId[] }> = [
-  { titleKey: "exploreTitle", routes: ["home", "feature", "pricing", "safety"] },
+  { titleKey: "exploreTitle", routes: ["home", "feature", "pricing"] },
   { titleKey: "projectTitle", routes: ["about", "faq", "download"] },
 ];
 
@@ -15,7 +15,6 @@ export async function SiteFooter({ locale }: { locale: Locale }) {
     home: t("nav.home"),
     feature: t("nav.feature"),
     pricing: t("nav.pricing"),
-    safety: t("nav.safety"),
     about: t("nav.about"),
     faq: t("nav.faq"),
     download: t("nav.download"),
@@ -42,7 +41,7 @@ export async function SiteFooter({ locale }: { locale: Locale }) {
                   </li>
                 ))}
                 {group.titleKey === "projectTitle" ? (
-                  <li><Link href={`${localizedHref(locale, "safety")}#source-code`}>{t("transparency.footerLink")}</Link></li>
+                  <li><Link href={`${localizedHref(locale, "about")}#source-code`}>{t("transparency.footerLink")}</Link></li>
                 ) : null}
               </ul>
             </div>

@@ -71,11 +71,15 @@
         }
       }
     },
-    "safety": {
-      "eyebrow": "Sicurezza",
-      "title": "Qui c’è posto per i tuoi limiti.",
-      "intro": "Scegli tu cosa condividere. Se qualcosa non va, gli strumenti per intervenire sono nell’app.",
+    "about": {
+      "eyebrow": "Progetto e sicurezza",
+      "title": "Perché le parole vengono prima.",
+      "intro": "Histae lascia spazio a ciò che hai da raccontare. Ti offre anche scelte concrete su cosa condividi, chi può contattarti e come gestire i tuoi dati.",
       "blocks": {
+        "promise": {
+          "title": "Dare una possibilità alla conversazione",
+          "text": "Una foto non racconta cosa ti fa ridere, cosa ti appassiona o come ascolti. Una presentazione e qualche messaggio possono dire qualcosa in più."
+        },
         "passwordless": {
           "title": "Proteggere l’accesso",
           "text": "Un codice ricevuto via SMS permette di accedere senza ricordare una password. I tentativi sono limitati. In Le mie sessioni puoi controllare gli accessi e revocare quelli che non riconosci."
@@ -91,29 +95,6 @@
         "rights": {
           "title": "Recuperare o cancellare i tuoi dati",
           "text": "Puoi esportare i dati o richiedere l’eliminazione dell’account dall’app. Un dato che non puoi correggere da solo? Descrivi la correzione in Le mie richieste e segui la risposta. Consensi, blocchi e sessioni hanno i propri controlli."
-        }
-      }
-    },
-    "about": {
-      "eyebrow": "Chi siamo",
-      "title": "Perché le parole vengono prima.",
-      "intro": "A volte basta leggere come qualcuno racconta la sua giornata per volerlo conoscere. Histae nasce attorno a questa possibilità.",
-      "blocks": {
-        "promise": {
-          "title": "Dare una possibilità alla conversazione",
-          "text": "Una foto non racconta cosa ti fa ridere, cosa ti appassiona o come ascolti. Una presentazione e qualche messaggio possono dire qualcosa in più."
-        },
-        "product": {
-          "title": "Scelte che si vedono nell’app",
-          "text": "Una bio può essere lunga. Le foto aspettano due consensi. Dopo i primi scambi, ciascuno decide se continuare. Queste regole fanno parte di Histae fin dall’inizio."
-        },
-        "privacy": {
-          "title": "Consensi che puoi ritirare",
-          "text": "Puoi ritirare il consenso alla posizione e ai dati sensibili dall’account. Mostrare le foto richiede l’accordo di entrambi, anche con Premium."
-        },
-        "community": {
-          "title": "C’è ancora da costruire",
-          "text": "I primi test su invito sono iniziati su Android. Le schermate mostrano l’interfaccia attuale con profili fittizi. La pagina Disponibilità spiega l’accesso; iOS è ancora in preparazione."
         }
       }
     },
@@ -134,10 +115,6 @@
         "status": "In preparazione",
         "text": "Non sono ancora stati annunciati test iOS o un link App Store. Questa pagina verrà aggiornata quando sarà aperto l’accesso."
       },
-      "feedbackTitle": "Stai già partecipando ai test?",
-      "feedbackText": "Un pulsante poco chiaro, una schermata bloccata o un’idea mentre usi l’app: i tuoi commenti aiutano a preparare il seguito. Indica il modello del telefono e i passaggi per riprodurre il problema, senza codici SMS o conversazioni private.",
-      "feedbackLink": "Invia un commento",
-      "feedbackSubject": "Commenti sul test Android di Histae",
       "previewTitle": "Uno sguardo all’app",
       "footerNote": "Histae è riservato alle persone dai 18 anni in su. La registrazione supporta attualmente i numeri francesi con prefisso +33."
     }

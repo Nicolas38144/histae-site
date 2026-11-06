@@ -127,6 +127,20 @@ for (const locale of locales) {
   }
 }
 
+// Keep old bookmarks usable on static hosts even when JavaScript is disabled.
+for (const locale of locales) {
+  const file = path.join(outputDirectory, locale, "security", "index.html");
+  let html = normalizeHeadAttributes(await readFile(file, "utf8"), file);
+  const target = `/${locale}/${siteConfig.routes.about.path}/`;
+  const head = extractHead(html, file);
+  assertIncludes(head, '<meta name="robots" content="noindex, follow"', `${file}: legacy redirect must remain noindex`);
+  assertIncludes(head, `<link rel="canonical" href="${siteConfig.publicUrl}${target}"`, `${file}: legacy canonical must target About`);
+  if (!/<meta[^>]+http-equiv="refresh"/i.test(head)) {
+    html = html.replace("</head>", `<meta http-equiv="refresh" content="0;url=${target}"/></head>`);
+  }
+  await writeFile(file, html, "utf8");
+}
+
 let billingEntryCount = 0;
 for (const route of Object.values(siteConfig.billingReturns)) {
   const file = path.join(outputDirectory, route.path, "index.html");

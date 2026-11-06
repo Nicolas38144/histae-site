@@ -24,7 +24,7 @@ export function StoryDetails({ blocks }: { blocks: StoryBlocks }) {
   );
 }
 
-export function AppStory({ locale, screen, id, main, supporting = {}, more = {}, reverse = false }: {
+export function AppStory({ locale, screen, id, main, supporting = {}, more = {}, reverse = false, anchorId }: {
   locale: Locale;
   screen: ScreenKind;
   id: string;
@@ -32,10 +32,11 @@ export function AppStory({ locale, screen, id, main, supporting = {}, more = {},
   supporting?: StoryBlocks;
   more?: StoryBlocks;
   reverse?: boolean;
+  anchorId?: string;
 }) {
   const screens = getMessagesForLocale(locale).home.screens;
   return (
-    <section className={`shell app-story${reverse ? " app-story-reverse" : ""}`} aria-labelledby={`story-${id}`}>
+    <section id={anchorId} className={`shell app-story${reverse ? " app-story-reverse" : ""}`} aria-labelledby={`story-${id}`}>
       <div className="story-copy">
         <p className="eyebrow">{screens[`${screen}Label`]}</p>
         <h2 id={`story-${id}`}>{main.title}</h2>

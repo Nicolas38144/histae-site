@@ -517,17 +517,16 @@ h1, h2, h3 { text-wrap: balance; }
 .availability-platforms { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(1.5rem, 4vw, 3rem); }
 .availability-platform { padding: clamp(1.5rem, 4vw, 2.5rem); border: 1px solid var(--line); border-radius: 24px; }
 .availability-android { background: var(--panel); border-top: 2px solid var(--coral); }
-.availability-platform h2, .availability-feedback h2, .availability-previews > h2 { font: 400 clamp(1.8rem, 3vw, 2.5rem)/1.15 Georgia, serif; letter-spacing: -.035em; }
+.availability-platform h2, .availability-previews > h2 { font: 400 clamp(1.8rem, 3vw, 2.5rem)/1.15 Georgia, serif; letter-spacing: -.035em; }
 .availability-platform h2 { margin-block: 1rem 1.25rem; }
-.availability-platform > p:not(.eyebrow), .availability-feedback p { color: var(--muted); line-height: 1.8; }
+.availability-platform > p:not(.eyebrow) { color: var(--muted); line-height: 1.8; }
 .availability-platform .availability-access { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--ink); }
-.availability-feedback { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-block: 4rem 5rem; }
-.availability-feedback p { max-width: 65ch; margin-top: 1rem; }
-.availability-feedback > a { flex-shrink: 0; }
 .availability-page .page-closing > p { max-width: 65ch; }
 @media (max-width: 700px) {
   .availability-platforms { grid-template-columns: 1fr; }
-  .availability-feedback { align-items: flex-start; flex-direction: column; margin-block: 3rem; }
 }
 
 .availability-android > .text-link { display: inline-block; margin-top: 1.5rem; }
+
+.availability-previews { margin-top: 4rem; }
+#privacy { scroll-margin-top: 7rem; }

@@ -13,7 +13,7 @@ export type FaqEntry = {
 
 export const faqTopics = [
   { id: 'availability', category: 'start', route: 'download' },
-  { id: 'account', category: 'start', route: 'safety' },
+  { id: 'account', category: 'start', route: 'about' },
   { id: 'help', category: 'start', route: 'download' },
   { id: 'discovery', category: 'meeting', route: 'feature' },
   { id: 'reading', category: 'meeting', route: 'feature' },
@@ -27,10 +27,10 @@ export const faqTopics = [
   { id: 'notifications', category: 'privacy', route: 'feature' },
   { id: 'pricing', category: 'billing', route: 'pricing' },
   { id: 'renewal', category: 'billing', route: 'pricing' },
-  { id: 'sourceCode', category: 'privacy', route: 'safety' },
-  { id: 'location', category: 'privacy', route: 'safety' },
-  { id: 'moderation', category: 'privacy', route: 'safety' },
-  { id: 'privacy', category: 'privacy', route: 'safety' },
+  { id: 'sourceCode', category: 'privacy', route: 'about' },
+  { id: 'location', category: 'privacy', route: 'about' },
+  { id: 'moderation', category: 'privacy', route: 'about' },
+  { id: 'privacy', category: 'privacy', route: 'about' },
 ] as const satisfies readonly {
   id: keyof AppMessages['faq']['items'];
   category: FaqEntry['category'];

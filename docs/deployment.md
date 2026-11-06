@@ -71,3 +71,11 @@ a lost response. A local fixture test is not evidence of a successful production
 Keep an identifiable previous artifact and verify the rollback procedure. Use the shared Histae
 monitoring setup for availability and certificates without introducing visitor tracking by default.
 Current release work belongs in the [roadmap](../roadmap.md), not in a dated README activity log.
+
+## Unified project and safety page
+
+`/{locale}/about/` is the single project, safety and privacy page. The former
+`/{locale}/security` paths (with a slash or `/index.html`) receive a permanent 308 from Caddy,
+keeping the query string. The exported redirect document also provides a browser fallback.
+Deploy the Caddyfile with the new export. Navigation, FAQ, canonicals and the sitemap use About;
+`#privacy` and `#source-code` are the relevant anchors.

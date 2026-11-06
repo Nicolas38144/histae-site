@@ -30,8 +30,6 @@ export function getRouteMetadataCopy(messages: AppMessages, routeId: SiteRouteId
       return { title: messages.seo.pricing.title, description: messages.pricing.intro };
     case "feature":
       return { title: messages.seo.feature.title, description: messages.pages.feature.intro };
-    case "safety":
-      return { title: messages.seo.safety.title, description: messages.pages.safety.intro };
     case "about":
       return { title: messages.seo.about.title, description: messages.pages.about.intro };
     case "faq":

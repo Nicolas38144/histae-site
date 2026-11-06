@@ -41,11 +41,6 @@
       "navigation": true,
       "priority": 0.8
     },
-    "safety": {
-      "path": "security",
-      "navigation": true,
-      "priority": 0.8
-    },
     "faq": {
       "path": "faq",
       "navigation": false,

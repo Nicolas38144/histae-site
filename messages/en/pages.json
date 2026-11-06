@@ -71,11 +71,15 @@
         }
       }
     },
-    "safety": {
-      "eyebrow": "Safety and privacy",
-      "title": "Your boundaries belong here.",
-      "intro": "You choose what to share. If something goes wrong, the tools to act are in the app.",
+    "about": {
+      "eyebrow": "About & safety",
+      "title": "Why the words come first.",
+      "intro": "Histae makes room for what you have to say. It also gives you practical choices about what you share, who can contact you and how you manage your data.",
       "blocks": {
+        "promise": {
+          "title": "Give the conversation a chance",
+          "text": "A photo doesn’t tell you what makes someone laugh, what fascinates them or how they listen. A bio and a few messages can tell you a little more."
+        },
         "passwordless": {
           "title": "Passwordless access",
           "text": "A code sent by SMS lets you sign in without a password to remember. Attempts are limited. My sessions lets you review access and revoke sessions you do not recognise."
@@ -91,29 +95,6 @@
         "rights": {
           "title": "Get a copy or delete your data",
           "text": "You can export your data or request account deletion in the app. Need to correct something you cannot edit yourself? Describe the correction in My requests and follow the reply. Consent choices, blocked people and sessions have their own controls."
-        }
-      }
-    },
-    "about": {
-      "eyebrow": "About",
-      "title": "Why the words come first.",
-      "intro": "Sometimes the way someone describes their day is enough to make you want to meet them. Histae is built around that possibility.",
-      "blocks": {
-        "promise": {
-          "title": "Give the conversation a chance",
-          "text": "A photo doesn’t tell you what makes someone laugh, what fascinates them or how they listen. A bio and a few messages can tell you a little more."
-        },
-        "product": {
-          "title": "Choices you can see in the app",
-          "text": "A bio can be long. Photos wait for two agreements. After the first exchange, each person chooses whether to continue. Those rules are part of Histae from the start."
-        },
-        "privacy": {
-          "title": "Permission you can take back",
-          "text": "Location and sensitive-data consent can be withdrawn from your account. Showing photos takes agreement from both people, even with Premium."
-        },
-        "community": {
-          "title": "There’s more to build",
-          "text": "The first invitation-only tests are underway on Android. Screenshots on this site show the current interface with fictional profiles. The availability page explains access; iOS is still in preparation."
         }
       }
     },
@@ -134,10 +115,6 @@
         "status": "In preparation",
         "text": "No iOS test or App Store link has been announced yet. This page will be updated when access opens."
       },
-      "feedbackTitle": "Already taking part?",
-      "feedbackText": "An unclear button, a screen that gets stuck or an idea while using the app: your feedback helps shape what comes next. Include your phone model and the steps to reproduce the problem, without SMS codes or private conversations.",
-      "feedbackLink": "Send feedback",
-      "feedbackSubject": "Feedback on the Histae Android test",
       "previewTitle": "A look inside the app",
       "footerNote": "Histae is for people aged 18 and over. Registration currently supports French +33 phone numbers."
     }

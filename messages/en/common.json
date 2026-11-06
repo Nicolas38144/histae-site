@@ -3,8 +3,7 @@
     "home": "Home",
     "feature": "Features",
     "pricing": "Pricing",
-    "safety": "Safety",
-    "about": "About",
+    "about": "About & safety",
     "faq": "FAQ",
     "download": "App launch",
     "subscription": "My subscription"
@@ -27,11 +26,8 @@
     "pricing": {
       "title": "Free, Premium Monthly and Annual pricing"
     },
-    "safety": {
-      "title": "Safety and privacy"
-    },
     "about": {
-      "title": "Our vision for dating"
+      "title": "About Histae, safety and privacy"
     },
     "faq": {
       "title": "Frequently asked questions about Histae"
