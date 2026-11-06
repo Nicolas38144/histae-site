@@ -71,9 +71,9 @@
         }
       }
     },
-    "about": {
-      "eyebrow": "Progetto e sicurezza",
-      "title": "Perché le parole vengono prima.",
+    "security": {
+      "eyebrow": "Le tue scelte e i tuoi dati",
+      "title": "Sicurezza",
       "intro": "Histae lascia spazio a ciò che hai da raccontare. Ti offre anche scelte concrete su cosa condividi, chi può contattarti e come gestire i tuoi dati.",
       "blocks": {
         "promise": {

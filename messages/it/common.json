@@ -3,7 +3,7 @@
     "home": "Home",
     "feature": "Funzioni",
     "pricing": "Prezzi",
-    "about": "Progetto e sicurezza",
+    "security": "Sicurezza",
     "faq": "Domande frequenti",
     "download": "Lancio",
     "subscription": "Il mio abbonamento"
@@ -26,8 +26,8 @@
     "pricing": {
       "title": "Prezzi di Free, Premium Mensile e Annuale"
     },
-    "about": {
-      "title": "Histae, sicurezza e privacy"
+    "security": {
+      "title": "Sicurezza"
     },
     "faq": {
       "title": "Domande frequenti su Histae"

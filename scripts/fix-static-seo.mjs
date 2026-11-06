@@ -127,18 +127,20 @@ for (const locale of locales) {
   }
 }
 
-// Keep old bookmarks usable on static hosts even when JavaScript is disabled.
+// Retired addresses must not leave exported redirect or duplicate documents behind.
+const retiredPaths = ["about", "legal/conditions-utilisation", "legal/politique-confidentialite",
+  "legal/consentement-donnees-sensibles", "legal/consentement-localisation"];
 for (const locale of locales) {
-  const file = path.join(outputDirectory, locale, "security", "index.html");
-  let html = normalizeHeadAttributes(await readFile(file, "utf8"), file);
-  const target = `/${locale}/${siteConfig.routes.about.path}/`;
-  const head = extractHead(html, file);
-  assertIncludes(head, '<meta name="robots" content="noindex, follow"', `${file}: legacy redirect must remain noindex`);
-  assertIncludes(head, `<link rel="canonical" href="${siteConfig.publicUrl}${target}"`, `${file}: legacy canonical must target About`);
-  if (!/<meta[^>]+http-equiv="refresh"/i.test(head)) {
-    html = html.replace("</head>", `<meta http-equiv="refresh" content="0;url=${target}"/></head>`);
+  for (const retired of retiredPaths) {
+    const file = path.join(outputDirectory, locale, retired, "index.html");
+    try {
+      await access(file);
+    } catch (error) {
+      if (error.code === "ENOENT") continue;
+      throw error;
+    }
+    throw new Error(`${file}: retired route must not be exported`);
   }
-  await writeFile(file, html, "utf8");
 }
 
 let billingEntryCount = 0;

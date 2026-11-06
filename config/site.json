@@ -46,8 +46,8 @@
       "navigation": false,
       "priority": 0.8
     },
-    "about": {
-      "path": "about",
+    "security": {
+      "path": "security",
       "navigation": true,
       "priority": 0.8
     },

@@ -183,9 +183,9 @@ or real-device delivery; those checks remain in the app/API release checklist.
 
 ## Content ownership and regression scope
 
-`FeaturePage` and `AboutPage` own their typed translation blocks and page composition.
-The unified About page includes the project rationale, consent controls, account access, data
-rights and source-code section. The former Security page is a redirect, not duplicate content.
+`FeaturePage` and `SecurityPage` own their typed translation blocks and page composition.
+The unified Security page includes the project rationale, consent controls, account access, data
+rights and source-code section. The former About page is removed and returns 404; it has no redirect or fallback document.
 `InformationPage` supplies only the shared frame; `AppStory`, `StoryPassage` and `StoryDetails`
 render provided content without selecting blocks by unchecked strings. Only credit text needs
 commercial interpolation. Availability remains in `DownloadPage`.

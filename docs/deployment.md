@@ -35,7 +35,7 @@ relying on new Checkout lifecycle behavior. Keep all payment and session secrets
 
 The canonical origin is `https://www.histae.com`. The non-www host redirects there with the path and
 query intact. Caddy selects a supported language for `/`, serves static directories with trailing
-slashes and redirects legacy French legal paths to their stable English route names.
+slashes. Retired page names and former French legal URL aliases are not served.
 
 The Caddyfile defines CSP, anti-framing, MIME sniffing protection, cross-origin policies and browser
 permissions. Billing pages additionally use `Referrer-Policy: no-referrer`, `Cache-Control: no-store`
@@ -72,10 +72,11 @@ Keep an identifiable previous artifact and verify the rollback procedure. Use th
 monitoring setup for availability and certificates without introducing visitor tracking by default.
 Current release work belongs in the [roadmap](../roadmap.md), not in a dated README activity log.
 
-## Unified project and safety page
+## Security page and retired addresses
 
-`/{locale}/about/` is the single project, safety and privacy page. The former
-`/{locale}/security` paths (with a slash or `/index.html`) receive a permanent 308 from Caddy,
-keeping the query string. The exported redirect document also provides a browser fallback.
-Deploy the Caddyfile with the new export. Navigation, FAQ, canonicals and the sitemap use About;
-`#privacy` and `#source-code` are the relevant anchors.
+`/{locale}/security/` is the single project, safety and privacy page. `/about` and localized
+About paths are removed, including slash and `/index.html` variants. Former French legal URL
+aliases are also removed; current legal route names are defined in `config/site.json`.
+Retired addresses return 404 with no redirect or exported fallback. Deploy the Caddyfile with
+the fresh export, replacing older artifacts. The export check rejects retired HTML documents.
+Navigation, FAQ, canonicals and the sitemap use Security; `#privacy` and `#source-code` are its anchors.

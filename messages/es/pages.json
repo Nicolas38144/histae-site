@@ -71,9 +71,9 @@
         }
       }
     },
-    "about": {
-      "eyebrow": "Proyecto y seguridad",
-      "title": "Por qué las palabras van primero.",
+    "security": {
+      "eyebrow": "Tus decisiones y tus datos",
+      "title": "Seguridad",
       "intro": "Histae deja espacio para lo que tienes que contar. También ofrece decisiones concretas sobre lo que compartes, quién puede contactarte y cómo gestionar tus datos.",
       "blocks": {
         "promise": {

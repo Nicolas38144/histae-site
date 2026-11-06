@@ -71,9 +71,9 @@
         }
       }
     },
-    "about": {
-      "eyebrow": "À propos et sécurité",
-      "title": "Pourquoi les mots passent en premier.",
+    "security": {
+      "eyebrow": "Vos choix et vos données",
+      "title": "Sécurité",
       "intro": "Histae laisse de la place à ce que vous avez à raconter. Son fonctionnement repose aussi sur des choix concrets : ce que vous partagez, qui peut vous contacter et comment gérer vos données.",
       "blocks": {
         "promise": {

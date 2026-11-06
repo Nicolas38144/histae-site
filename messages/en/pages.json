@@ -71,9 +71,9 @@
         }
       }
     },
-    "about": {
-      "eyebrow": "About & safety",
-      "title": "Why the words come first.",
+    "security": {
+      "eyebrow": "Your choices and data",
+      "title": "Security",
       "intro": "Histae makes room for what you have to say. It also gives you practical choices about what you share, who can contact you and how you manage your data.",
       "blocks": {
         "promise": {

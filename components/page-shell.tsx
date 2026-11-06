@@ -17,7 +17,7 @@ export async function PageShell({ children, locale }: { children: ReactNode; loc
       home: t("nav.home"),
       feature: t("nav.feature"),
       pricing: t("nav.pricing"),
-      about: t("nav.about"),
+      security: t("nav.security"),
       faq: t("nav.faq"),
       download: t("nav.download"),
       subscription: t("nav.subscription"),

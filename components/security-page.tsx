@@ -4,9 +4,9 @@ import { getMessagesForLocale } from "../messages";
 import { AppStory, StoryPassage } from "./app-story";
 import { InformationPage } from "./information-page";
 
-export function AboutPage({ locale }: { locale: Locale }) {
+export function SecurityPage({ locale }: { locale: Locale }) {
   const messages = getMessagesForLocale(locale);
-  const page = messages.pages.about;
+  const page = messages.pages.security;
   const blocks = page.blocks;
   return (
     <InformationPage locale={locale} page={page} withSourceCode>

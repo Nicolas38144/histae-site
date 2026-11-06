@@ -97,16 +97,15 @@ test("the footer opens data management without breaking the document security po
   expect(await page.evaluate(() => (window as unknown as AuditWindow).blocked)).toEqual([]);
 });
 
-for (const locale of ["fr", "en", "es", "it"]) {
-  test(`${locale}: legacy Security links reach About without JavaScript`, async ({ browser }) => {
-    const context = await browser.newContext({ javaScriptEnabled: false });
-    try {
-      const page = await context.newPage();
-      await page.goto(`/${locale}/security/`);
-      await expect(page).toHaveURL(new RegExp(`/${locale}/about/$`));
-      await expect(page.locator("main #privacy")).toBeVisible();
-    } finally {
-      await context.close();
-    }
-  });
-}
+test("retired addresses return 404 without redirecting", async ({ request }) => {
+  const retiredPaths = ["about", "about/", "about/index.html",
+    "legal/conditions-utilisation/", "legal/politique-confidentialite/",
+    "legal/consentement-donnees-sensibles/", "legal/consentement-localisation/"];
+  const paths = ["/about", "/about/", ...["fr", "en", "es", "it"].flatMap(locale =>
+    retiredPaths.map(path => `/${locale}/${path}`))];
+  for (const path of paths) {
+    const response = await request.get(path, { maxRedirects: 0 });
+    expect(response.status(), path).toBe(404);
+    expect(response.headers().location, path).toBeUndefined();
+  }
+});
