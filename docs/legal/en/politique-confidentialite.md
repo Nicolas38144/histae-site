@@ -1,12 +1,12 @@
 # Histae Privacy Policy
 
 **Published version:** Validation in progress.\
-**Document date:** 4 November 2026.\
+**Document date:** 7 November 2026.\
 **Data controller:** Histae.\
 **Data controller’s legal identity and address:** Validation in progress.\
 **Privacy contact:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
 
-This notice describes processing associated with the Histae app, its API and authenticated website journeys for subscriptions and account data requests. Any trackers or audience measurement tools specific to the showcase website must be assessed separately; this notice does not presume their activation.
+This notice describes processing associated with the Histae app, its API and authenticated website journeys for subscriptions and account data requests. Website cookies and storage are described in section 6.
 
 ## 1. Data and purposes
 
@@ -49,6 +49,21 @@ The account and dedicated website journey allow access, rectification, portabili
 Histae uses access controls, limits on attempts and rule-based moderation for biographies and profile answers. Discovery filters apply mutual preferences. Photos undergo neither automated content analysis nor facial recognition or identity verification; adulthood is checked against the declared date. Tools allow human review and content removal. Reporting and appeal arrangements are described in the [Acceptable Use Policy](/en/legal/acceptable-use-policy/). **Validation in progress.** The legal classification of any automated decisions producing significant effects and the corresponding additional information remain to be assessed.
 
 A significant change to purposes, recipients, retention periods or rights will be communicated appropriately. The notice's version and effective date will remain accessible. Other mandatory information under GDPR Article 13, including transfers and the source of data when it does not come from the user, must be checked in the final version.
+
+## 6. Website cookies and local storage
+
+The Histae website does not use advertising or audience measurement trackers. Histae only uses the mechanisms below for the sign-in and payment features you request; they are not used to track your browsing for advertising purposes.
+
+| Mechanism and stored data | Purpose | When stored and for how long |
+| --- | --- | --- |
+| `__Host-histae_billing` cookie: a random session identifier linked to the account on the server | Keep you signed in to the subscription and account data areas | Set after SMS code validation; expires after 30 minutes or is deleted when you sign out of the website journey |
+| Tab session storage (`sessionStorage`), `histae_web_checkout` entry: account UUID, requested billing periods (monthly or annual) and random request keys | Retry a payment request whose response was lost while preventing duplicate requests | Stored when requesting payment; retained for the tab session, with no additional application expiry timer. Cleared when signing out of the subscription area or when that area detects an active subscription |
+
+The sign-in cookie has the `HttpOnly`, `Secure` and `SameSite=Strict` attributes: page scripts cannot read it, and it is sent only over HTTPS, with restrictions on sending it from other websites. Neither mechanism stores a phone number, SMS code, mobile app authentication token or card details. The language choice is part of the page address and does not require a cookie.
+
+Session storage is normally cleared when the tab closes; a browser restoration feature may restore it. You can delete or block website cookies and data in your browser settings. This may interrupt sign-in or payment retries; public pages remain accessible. When redirected to Stripe, any provider cookies are covered by the information it supplies on its own pages.
+
+These operations are strictly necessary for services you expressly request and do not require prior consent. Any addition of optional trackers will be accompanied by information and, where required, consent collection before use.
 
 ## Optional rewarded advertising — before activation
 

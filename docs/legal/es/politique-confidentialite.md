@@ -1,12 +1,12 @@
 # Política de privacidad de Histae
 
 **Versión publicada:** En proceso de validación.\
-**Fecha del documento:** 4 de noviembre de 2026.\
+**Fecha del documento:** 7 de noviembre de 2026.\
 **Responsable del tratamiento:** Histae.\
 **Identidad jurídica y dirección del responsable del tratamiento:** En proceso de validación.\
 **Contacto de privacidad:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
 
-Este aviso describe los tratamientos vinculados a la aplicación Histae, su API y los procesos autenticados del sitio para suscripciones y solicitudes sobre los datos de la cuenta. Los posibles rastreadores o herramientas de medición de audiencia propios del sitio de presentación deben evaluarse por separado; este aviso no presupone su activación.
+Este aviso describe los tratamientos vinculados a la aplicación Histae, su API y los procesos autenticados del sitio para suscripciones y solicitudes sobre los datos de la cuenta. Las cookies y el almacenamiento del sitio se describen en la sección 6.
 
 ## 1. Datos y finalidades
 
@@ -49,6 +49,21 @@ La cuenta y el proceso web específico permiten solicitudes de acceso, rectifica
 Histae utiliza controles de acceso, límites de intentos y moderación basada en reglas para biografías y respuestas del perfil. Los filtros de descubrimiento aplican las preferencias mutuas. Las fotos no se someten a análisis automático de contenido, reconocimiento facial ni verificación de identidad; la mayoría de edad se comprueba con la fecha declarada. Las herramientas permiten revisión humana y retirada de contenidos. Los mecanismos de denuncia y recurso figuran en la [Política de uso aceptable](/es/legal/acceptable-use-policy/). **En proceso de validación.** La calificación jurídica de posibles decisiones automatizadas con efectos significativos y la información adicional correspondiente siguen pendientes de evaluación.
 
 Un cambio importante de las finalidades, destinatarios, plazos o derechos será objeto de una información adecuada. La versión y la fecha de entrada en vigor del aviso seguirán siendo accesibles. La demás información obligatoria del artículo 13 del RGPD, en particular las transferencias y la fuente de los datos si no proceden del usuario, debe verificarse en la versión final.
+
+## 6. Cookies y almacenamiento local del sitio
+
+El sitio Histae no utiliza rastreadores publicitarios ni de medición de audiencia. Histae solo utiliza los mecanismos siguientes para las funciones de acceso y pago que solicita; no se emplean para seguir su navegación con fines publicitarios.
+
+| Mecanismo y datos almacenados | Finalidad | Momento y duración del almacenamiento |
+| --- | --- | --- |
+| Cookie `__Host-histae_billing`: identificador de sesión aleatorio, vinculado a la cuenta en el servidor | Mantener su sesión en las áreas de suscripción y datos de la cuenta | Se instala tras validar el código SMS; caduca después de 30 minutos o se elimina al cerrar la sesión del proceso web |
+| Almacenamiento de sesión de la pestaña (`sessionStorage`), entrada `histae_web_checkout`: UUID de la cuenta, períodos de facturación solicitados (mensual o anual) y claves de solicitud aleatorias | Reintentar una solicitud de pago cuya respuesta se haya perdido, evitando solicitudes duplicadas | Se guarda al solicitar un pago y se conserva durante la sesión de la pestaña, sin un plazo de caducidad adicional de la aplicación. Se borra al cerrar la sesión del área de suscripción o cuando esta detecta una suscripción activa |
+
+La cookie de acceso tiene los atributos `HttpOnly`, `Secure` y `SameSite=Strict`: los scripts de la página no pueden leerla y solo se envía mediante HTTPS, con restricciones para su envío desde otros sitios. Ninguno de estos dos mecanismos almacena el número de teléfono, el código SMS, un token de autenticación de la aplicación móvil ni datos de tarjeta. La elección del idioma figura en la dirección de la página y no requiere una cookie.
+
+El almacenamiento de sesión normalmente se borra al cerrar la pestaña; una función de restauración del navegador puede recuperarlo. Puede eliminar o bloquear las cookies y los datos del sitio en la configuración del navegador. Esto puede interrumpir el acceso o la reanudación del pago; las páginas públicas siguen siendo accesibles. Al redirigirse a Stripe, las posibles cookies del proveedor se rigen por la información que este facilita en sus propias páginas.
+
+Estas operaciones son estrictamente necesarias para los servicios que solicita expresamente y no requieren consentimiento previo. Cualquier incorporación de rastreadores opcionales irá acompañada de información y, cuando proceda, de la obtención del consentimiento antes de utilizarlos.
 
 ## Publicidad opcional con recompensa — antes de su activación
 
