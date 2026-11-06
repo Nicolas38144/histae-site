@@ -37,7 +37,7 @@
       "title": "Preguntas frecuentes sobre Histae"
     },
     "download": {
-      "title": "Aplicación próximamente"
+      "title": "Prueba Android por invitación y disponibilidad en iOS"
     }
   },
   "footer": {
@@ -56,8 +56,8 @@
       "location-consent": "Consentimiento de ubicación"
     },
     "statusLabel": "¿Cómo va Histae?",
-    "status": "Aplicación para iOS y Android en preparación",
-    "availability": "El primer lanzamiento está previsto en Francia. Los enlaces oficiales se publicarán en este sitio.",
+    "status": "En pruebas en Android · iOS en preparación",
+    "availability": "La prueba Android es por invitación. No hay fecha anunciada para el lanzamiento público.",
     "rights": "Todos los derechos reservados.",
     "madeFor": "Sitio para lo que tienes que contar."
   },

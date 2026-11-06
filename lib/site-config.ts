@@ -2,13 +2,14 @@ import siteConfig from "../config/site.json";
 
 export const publicUrl = siteConfig.publicUrl;
 export const supportEmail = siteConfig.supportEmail;
+export const storeLinks = siteConfig.storeLinks;
 export const policyPages = siteConfig.policyPages;
 export const childSafetyPath = policyPages.childSafety.path;
 export const childSafetyUpdatedAt = policyPages.childSafety.updatedAt;
 export function childSafetyHref(locale: Locale): string {
   return `/${locale}/${childSafetyPath}/`;
 }
-export const accountDataPath = siteConfig.accountPages.data.path;
+const accountDataPath = siteConfig.accountPages.data.path;
 export function accountDataHref(locale: Locale): string {
   return `/${locale}/${accountDataPath}/`;
 }
@@ -38,7 +39,6 @@ export function preferredLocale(languages: readonly string[]): Locale {
 
 export const siteRoutes = siteConfig.routes;
 export type SiteRouteId = keyof typeof siteRoutes;
-export type InformationPageName = Exclude<SiteRouteId, "home" | "pricing" | "faq">;
 
 function isSiteRouteId(value: string): value is SiteRouteId {
   return Object.prototype.hasOwnProperty.call(siteRoutes, value);

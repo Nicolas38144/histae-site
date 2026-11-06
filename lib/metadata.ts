@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { brandSocialImage } from "./branding";
 import {
   defaultLocale,
   localeConfig,
@@ -8,8 +9,6 @@ import {
   type Locale,
   type SiteRouteId,
 } from "./site-config";
-
-export { publicUrl } from "./site-config";
 
 export function absoluteLocalizedUrl(locale: Locale, routeId: SiteRouteId): string {
   return absoluteLocalizedPathUrl(locale, siteRoutes[routeId].path);
@@ -29,7 +28,7 @@ export function createPathMetadata(locale: Locale, path: string, title: string, 
     ...locales.map((targetLocale) => [targetLocale, absoluteLocalizedPathUrl(targetLocale, path)]),
     ["x-default", absoluteLocalizedPathUrl(defaultLocale, path)],
   ]);
-  const socialImage = `${publicUrl}/og.png`;
+  const socialImage = `${publicUrl}${brandSocialImage.url}`;
   const alternateLocale = locales
     .filter((targetLocale) => targetLocale !== locale)
     .map((targetLocale) => localeConfig[targetLocale].openGraph);
@@ -44,7 +43,7 @@ export function createPathMetadata(locale: Locale, path: string, title: string, 
       alternateLocale,
       title: `Histae — ${title}`,
       description,
-      images: [{ url: socialImage, width: 1728, height: 904, alt: "Histae" }],
+      images: [{ url: socialImage, width: brandSocialImage.width, height: brandSocialImage.height, alt: brandSocialImage.alt }],
     },
     twitter: {
       card: "summary_large_image",

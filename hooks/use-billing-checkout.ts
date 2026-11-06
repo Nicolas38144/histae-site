@@ -3,7 +3,11 @@ import { useEffect, useRef, useState } from "react";
 import { requestCheckout } from "../lib/billing/checkout";
 import { requestedBillingPeriod } from "../lib/billing/navigation";
 import type { Locale } from "../lib/site-config";
-import { BillingFailure, billingRequest, clearCheckoutKey, parseOffers, parseSession, paymentUrl, type BillingPeriod, type WebOffer, type WebSession } from "../lib/web-billing";
+import { BillingFailure } from "../lib/billing/failure";
+import { billingRequest } from "../lib/billing/client";
+import { clearCheckoutKey } from "../lib/billing/checkout-storage";
+import { parseOffers, parseSession, paymentUrl } from "../lib/billing/validation";
+import type { BillingPeriod, WebOffer, WebSession } from "../lib/billing/models";
 
 export function useBillingCheckout(locale: Locale) {
   const [session, setSession] = useState<WebSession | null>(null);

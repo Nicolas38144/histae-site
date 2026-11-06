@@ -7,7 +7,7 @@
       "blocks": {
         "profile": {
           "title": "Uno spunto per iniziare a parlare",
-          "text": "Leggi la presentazione, le risposte e i tratti della personalità. Vedi il nome e l’età. La foto resta nascosta finché entrambi non volete condividerla."
+          "text": "Leggi la presentazione, le risposte e i tratti della personalità. Vedi il nome e l’età. La foto resta nascosta finché entrambi non volete condividerla. Prima di scoprire gli altri, un’anteprima permette anche di rileggere il tuo profilo così come sarà presentato."
         },
         "preferences": {
           "title": "Contano le preferenze di entrambi",
@@ -23,7 +23,7 @@
         },
         "stableDecisions": {
           "title": "Hai già visto quel profilo?",
-          "text": "La scelta di passare o mostrare interesse viene conservata. Non devi ripeterla a ogni visita."
+          "text": "Like e profili passati vengono conservati per 30 giorni, così non devi ripetere la stessa scelta a ogni visita in quel periodo. Non è garantito che un profilo ritorni dopo: continuano ad applicarsi le condizioni di compatibilità."
         },
         "reciprocity": {
           "title": "Il tuo interesse resta privato",
@@ -35,23 +35,39 @@
         },
         "continuationWindow": {
           "title": "Altre 24 ore per scegliere il seguito",
-          "text": "Nelle 24 ore della decisione l’invio è sospeso e la cronologia resta leggibile. Le scelte sono private fino a entrambi gli accordi. Un rifiuto conclude subito il match; senza due accordi entro il termine, scade."
+          "text": "L’invio si interrompe e la cronologia resta leggibile durante le 24 ore per decidere. L’azione di invio in chat lascia il posto alla scelta di continuare, mostrando il costo applicabile. Una notifica può segnalare che l’altra persona vuole continuare. Solo i due consensi riaprono la conversazione."
         },
         "photoReveal": {
           "title": "Le foto si decidono insieme",
-          "text": "Serve una foto per accedere al feed, ma non viene mai mostrata lì. In un match, le foto restano nascoste finché entrambi non accettate di rivelarle, con una scelta separata da quella di continuare la conversazione. Potete quindi continuare a parlare senza mostrarle."
+          "text": "Una foto è necessaria per accedere al feed, ma non viene mai mostrata lì. Condividerla in un match richiede due consensi ed è distinto dal continuare. Chiunque può ritirare il consenso, nascondendo di nuovo entrambe le foto. Sostituire la foto la aggiorna nei match in cui la condivisione è consentita."
         },
         "messaging": {
           "title": "Scrivere e rispondere",
-          "text": "I messaggi possono contenere fino a 2 000 caratteri. Puoi vedere quando vengono segnati come letti. Quando un match finisce, non puoi più inviargli messaggi."
+          "text": "I messaggi possono contenere fino a 2.000 caratteri. Un indicatore discreto segnala l’ultimo messaggio inviato e l’ultimo letto. Tocca un messaggio per vederne la data. Puoi continuare a scrivere mentre un messaggio viene inviato."
         },
         "continuationCredits": {
           "title": "Una scelta e un costo espliciti",
-          "text": "Ogni persona Free riceve {freeCredits} crediti a settimana. Un credito viene riservato quando sceglie di continuare un match dopo le prime 24 ore e consumato solo dopo i due consensi. Un rifiuto o la scadenza lo libera. Un video facoltativo dà 1 credito, fino a {advertisingStock} crediti pubblicitari in riserva, che scadono ogni lunedì alle 00:00 UTC. Ogni persona Free può prolungare al massimo {weeklyMaximum} conversazioni a settimana. Una persona Premium non consuma crediti; l’altra mantiene i limiti del proprio piano. Dopo 10 giorni senza nuovi messaggi, una conversazione confermata viene archiviata. Un avviso viene inviato dopo 23 giorni; il match e i messaggi vengono eliminati dopo 30 giorni. Un nuovo messaggio rinnova il termine senza spendere altri crediti. La stessa regola vale per Free e Premium. Leggere o aprire l’app non rinnova il termine."
+          "text": "Ogni persona Free riceve {freeCredits} crediti a settimana e può prolungare fino a {weeklyMaximum} conversazioni. Il credito viene consumato solo dopo i due consensi. Un video facoltativo può aggiungere un credito, fino a {advertisingStock} crediti pubblicitari disponibili. I tuoi crediti mostra i saldi e il prossimo rinnovo; Premium continua senza consumare crediti."
         },
         "pause": {
           "title": "Prenditi una pausa e conserva le conversazioni",
           "text": "Attiva la modalità pausa dal tuo profilo per non apparire nelle nuove proposte e non scoprire nuovi profili. I match e le conversazioni esistenti restano disponibili. Puoi riprendere la scoperta quando vuoi."
+        },
+        "reading": {
+          "title": "Un profilo da leggere con calma",
+          "text": "Una barra sottile si riempie durante i primi tre secondi di lettura. Poi tocca due volte per mostrare interesse o scorri verso l’alto alla fine del profilo per passare oltre. Aa regola dimensione del testo e interlinea. Una breve guida presenta questi gesti al primo feed."
+        },
+        "dailyUse": {
+          "title": "Ritrova una conversazione e riprendi il filo",
+          "text": "Cerca un nome tra i match e riconosci i messaggi non letti dal contatore. Le conversazioni archiviate hanno un accesso separato. In chat, toccare il nome riapre il profilo, con la foto più grande se avete entrambi accettato di condividerla."
+        },
+        "drafts": {
+          "title": "Il tuo messaggio può aspettare",
+          "text": "Puoi ritrovare un messaggio non inviato o una risposta del profilo incompleta sullo stesso dispositivo dopo aver chiuso l’app. Le bozze restano sul telefono e vengono cancellate quando esci dall’account. La biografia non viene salvata così."
+        },
+        "notifications": {
+          "title": "Avvisi quando non sei nell’app",
+          "text": "Se autorizzi le notifiche, gli avvisi ti informano sugli scambi, sulle scelte di continuare e sulle foto condivise. Quelli legati a un match includono il nome dell’altra persona, senza il testo dei messaggi. Con l’app aperta, le conversazioni si aggiornano direttamente."
         }
       }
     },
@@ -62,7 +78,7 @@
       "blocks": {
         "passwordless": {
           "title": "Proteggere l’accesso",
-          "text": "Ricevi un codice via SMS per accedere. Nessuna password da ricordare. I tentativi sono limitati per ridurre gli abusi."
+          "text": "Un codice ricevuto via SMS permette di accedere senza ricordare una password. I tentativi sono limitati. In Le mie sessioni puoi controllare gli accessi e revocare quelli che non riconosci."
         },
         "consents": {
           "title": "Una scelta per ogni utilizzo",
@@ -74,7 +90,7 @@
         },
         "rights": {
           "title": "Recuperare o cancellare i tuoi dati",
-          "text": "Dal tuo account puoi chiedere un’esportazione, correzioni o la cancellazione, oltre alle altre richieste sui dati. Puoi seguirne lo stato nell’app."
+          "text": "Puoi esportare i dati o richiedere l’eliminazione dell’account dall’app. Un dato che non puoi correggere da solo? Descrivi la correzione in Le mie richieste e segui la risposta. Consensi, blocchi e sessioni hanno i propri controlli."
         }
       }
     },
@@ -97,29 +113,33 @@
         },
         "community": {
           "title": "C’è ancora da costruire",
-          "text": "L’app è ancora in preparazione. Le schermate del sito mostrano l’interfaccia attuale con profili inventati. I link per scaricarla saranno pubblicati qui quando sarà disponibile."
+          "text": "I primi test su invito sono iniziati su Android. Le schermate mostrano l’interfaccia attuale con profili fittizi. La pagina Disponibilità spiega l’accesso; iOS è ancora in preparazione."
         }
       }
     },
     "download": {
-      "eyebrow": "Lancio",
-      "title": "Non è ancora negli store.",
-      "intro": "Histae è in preparazione per iOS e Android, senza una data di lancio confermata. I link App Store e Google Play saranno aggiunti qui quando disponibili.",
-      "blocks": {
-        "availability": {
-          "title": "Su iOS e Android",
-          "text": "I link App Store e Google Play appariranno su questa pagina quando l’app sarà pubblicata."
-        },
-        "finalization": {
-          "title": "Inizia gratis",
-          "text": "Potrai creare il profilo e iniziare a parlare gratis. Premium sarà facoltativo, per continuare le conversazioni senza usare crediti."
-        },
-        "officialLinks": {
-          "title": "I tuoi link ufficiali",
-          "text": "Trova qui i link agli store ufficiali. La data di lancio sarà annunciata quando sarà confermata."
-        }
+      "eyebrow": "Disponibilità",
+      "title": "Sono iniziati i test su Android.",
+      "intro": "Histae è in fase di test su Android, solo con persone invitate. Non è ancora stata annunciata una data per il lancio al pubblico.",
+      "platformsTitle": "L’accesso in base al tuo telefono",
+      "android": {
+        "label": "Android",
+        "status": "Test su invito",
+        "text": "L’app viene attualmente testata tramite Google Play. L’accesso resta riservato alle persone invitate, anche dal link qui sotto.",
+        "access": "Apri la scheda con l’account Google associato al tuo invito. Il solo link non dà accesso al test.",
+        "action": "Apri Google Play · persone invitate"
       },
-      "footerNote": "Torna presto per i link App Store e Google Play."
+      "ios": {
+        "label": "iPhone",
+        "status": "In preparazione",
+        "text": "Non sono ancora stati annunciati test iOS o un link App Store. Questa pagina verrà aggiornata quando sarà aperto l’accesso."
+      },
+      "feedbackTitle": "Stai già partecipando ai test?",
+      "feedbackText": "Un pulsante poco chiaro, una schermata bloccata o un’idea mentre usi l’app: i tuoi commenti aiutano a preparare il seguito. Indica il modello del telefono e i passaggi per riprodurre il problema, senza codici SMS o conversazioni private.",
+      "feedbackLink": "Invia un commento",
+      "feedbackSubject": "Commenti sul test Android di Histae",
+      "previewTitle": "Uno sguardo all’app",
+      "footerNote": "Histae è riservato alle persone dai 18 anni in su. La registrazione supporta attualmente i numeri francesi con prefisso +33."
     }
   }
 }

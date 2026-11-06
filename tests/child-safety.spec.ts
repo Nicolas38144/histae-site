@@ -34,9 +34,6 @@ for (const locale of locales) {
       expect(apiRequests).toEqual([]);
       await page.setViewportSize({ width: 375, height: 812 });
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
-      if (locale === "fr") await page.screenshot({ path: "test-results/child-safety-mobile.png", fullPage: true });
-      await page.setViewportSize({ width: 1440, height: 1000 });
-      if (locale === "fr") await page.screenshot({ path: "test-results/child-safety-desktop.png", fullPage: true });
     } finally {
       await context.close();
     }

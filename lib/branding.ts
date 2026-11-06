@@ -7,3 +7,10 @@ export const brandIcons = {
   ],
   apple: [{ url: "/branding/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
 } satisfies Metadata["icons"];
+
+export const brandSocialImage = {
+  url: "/logo.png",
+  width: 1024,
+  height: 1024,
+  alt: "Histae",
+};

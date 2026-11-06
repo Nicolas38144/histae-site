@@ -56,7 +56,7 @@
         },
         "choose": {
           "title": "24 ore per scegliere insieme",
-          "text": "L’invio dei messaggi viene poi sospeso, ma la cronologia resta leggibile. Ognuno decide in privato se continuare. Un rifiuto o la mancanza di due consensi entro il termine chiude il match."
+          "text": "L’invio si interrompe, ma la cronologia resta leggibile. Ognuno sceglie se continuare; una notifica può segnalare il desiderio dell’altra persona. Un rifiuto o la mancanza di due consensi entro il termine conclude il match."
         },
         "continue": {
           "title": "Due consensi per riprendere",
@@ -71,11 +71,11 @@
       "items": {
         "weekly": {
           "title": "{freeCredits} crediti gratuiti ogni settimana",
-          "text": "Il saldo gratuito si rinnova ogni lunedì alle 00:00 UTC. I crediti gratuiti non utilizzati non si aggiungono a quelli della settimana successiva."
+          "text": "I crediti gratuiti si rinnovano ogni lunedì alle 00:00 UTC e non si accumulano. I tuoi crediti mostra la prossima data e ora di rinnovo nel tuo fuso orario."
         },
         "video": {
           "title": "Crediti extra, se lo desideri",
-          "text": "Un video pubblicitario facoltativo permette di ottenere 1 credito. Puoi avere fino a {advertisingStock} crediti pubblicitari. I crediti pubblicitari inutilizzati, inclusi quelli prenotati, scadono ogni lunedì alle 00:00 UTC e devono essere guadagnati di nuovo tramite video."
+          "text": "Un video facoltativo dà 1 credito, fino a {advertisingStock} crediti pubblicitari disponibili. Scadono ogni lunedì alle 00:00 UTC, anche se prenotati. L’app avvisa se non ci sono video disponibili. I video non permettono di superare il limite settimanale di continuazioni."
         },
         "limit": {
           "title": "Fino a {weeklyMaximum} conversazioni prolungate a settimana",

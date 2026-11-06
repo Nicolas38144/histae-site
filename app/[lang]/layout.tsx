@@ -4,9 +4,9 @@ import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import { PageShell } from "../../components/page-shell";
-import { createLocaleMetadata, publicUrl } from "../../lib/metadata";
+import { createLocaleMetadata } from "../../lib/metadata";
 import { getRouteMetadataCopy } from "../../lib/localized-page";
-import { isLocale, locales } from "../../lib/site-config";
+import { isLocale, locales, publicUrl } from "../../lib/site-config";
 import { getMessagesForLocale } from "../../messages";
 
 export function generateStaticParams() {

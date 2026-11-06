@@ -63,10 +63,15 @@
     }
   },
   "policyPages": {
-    "childSafety": { "path": "child-safety", "updatedAt": "2026-11-04" }
+    "childSafety": {
+      "path": "child-safety",
+      "updatedAt": "2026-11-04"
+    }
   },
   "accountPages": {
-    "data": { "path": "account/data" }
+    "data": {
+      "path": "account/data"
+    }
   },
   "billingReturns": {
     "success": {
@@ -122,5 +127,8 @@
         "noAds"
       ]
     }
+  },
+  "storeLinks": {
+    "androidTest": "https://play.google.com/store/apps/details?id=com.histae.histae_app"
   }
 }

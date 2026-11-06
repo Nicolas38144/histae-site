@@ -7,7 +7,7 @@
       "blocks": {
         "profile": {
           "title": "Il y a de quoi commencer une conversation",
-          "text": "Vous lisez sa présentation, ses réponses et ses traits de caractère. Vous connaissez son prénom et son âge. Sa photo reste cachée : pour la découvrir, vous devrez tous les deux le souhaiter."
+          "text": "Vous lisez sa présentation, ses réponses et ses traits de caractère. Vous connaissez son prénom et son âge. Sa photo reste cachée : pour la découvrir, vous devrez tous les deux le souhaiter. Avant de découvrir les autres, un aperçu vous permet aussi de relire votre propre profil tel qu’il sera présenté."
         },
         "preferences": {
           "title": "Les préférences comptent pour vous deux",
@@ -23,7 +23,7 @@
         },
         "stableDecisions": {
           "title": "Vous avez déjà vu ce profil ?",
-          "text": "Votre choix de passer ou de montrer votre intérêt est conservé. Vous n’avez donc pas à refaire le même choix à chaque visite."
+          "text": "Vos likes et vos passages sont conservés pendant 30 jours. Vous n’avez donc pas à refaire le même choix à chaque visite durant cette période. Cela ne garantit pas qu’un profil reviendra ensuite : les conditions de compatibilité continuent de s’appliquer."
         },
         "reciprocity": {
           "title": "Votre intérêt reste discret",
@@ -35,23 +35,39 @@
         },
         "continuationWindow": {
           "title": "24 heures supplémentaires pour choisir la suite",
-          "text": "L’envoi est suspendu et l’historique reste lisible pendant les 24 heures de décision. Les choix restent privés jusqu’aux deux accords. Un refus termine immédiatement le match ; sans deux accords dans le délai, il expire."
+          "text": "L’envoi est suspendu et l’historique reste lisible pendant les 24 heures de décision. Depuis la conversation, l’action d’envoi laisse place au choix de continuer, avec le coût applicable. Si l’autre personne souhaite continuer, une notification peut vous le signaler. La discussion reprend seulement après vos deux accords."
         },
         "photoReveal": {
           "title": "Pour les photos, prenez votre décision à deux",
-          "text": "Une photo est nécessaire pour accéder au feed, mais elle n’y est jamais affichée. Dans un match, vos photos restent cachées jusqu’à votre accord mutuel, distinct du choix de continuer la conversation. Vous pouvez donc continuer à discuter sans les montrer."
+          "text": "Une photo est nécessaire pour accéder au feed, mais elle n’y est jamais affichée. Dans un match, le partage demande deux accords et reste distinct de la continuation. Chacun peut ensuite retirer son accord : les deux photos redeviennent cachées. Si vous remplacez votre photo, les matchs autorisés voient la nouvelle."
         },
         "messaging": {
           "title": "Écrire et se répondre",
-          "text": "Les messages peuvent contenir jusqu’à 2 000 caractères. Vous voyez quand ils ont été marqués comme lus. Quand un match se termine, vous ne pouvez plus lui envoyer de message."
+          "text": "Les messages peuvent contenir jusqu’à 2 000 caractères. Un repère discret indique le dernier message envoyé et le dernier message lu. Touchez un message pour voir sa date. Vous pouvez continuer à écrire pendant qu’un envoi est en cours."
         },
         "continuationCredits": {
           "title": "Continuer avec un choix et un coût explicites",
-          "text": "Chaque personne Free reçoit {freeCredits} crédits chaque semaine. Un crédit est réservé lorsqu’elle choisit de continuer un match après les premières 24 heures, puis consommé seulement après les deux accords. Un refus ou une expiration le libère. Une vidéo facultative rapporte 1 crédit, jusqu’à {advertisingStock} crédits publicitaires en stock, qui expirent chaque lundi à 00:00 UTC. Chaque personne Free peut prolonger au plus {weeklyMaximum} conversations par semaine. Une personne Premium ne consomme pas de crédit ; l’autre personne garde les limites de sa propre offre. Après 10 jours sans nouveau message, une conversation confirmée est archivée. Un avertissement est envoyé après 23 jours ; le match et les messages sont supprimés après 30 jours. Un nouveau message relance le délai, sans nouveau crédit. La même règle s’applique à Free et Premium. Lire ou ouvrir l’application ne relance pas le délai."
+          "text": "Chaque personne Free reçoit {freeCredits} crédits par semaine et peut prolonger au plus {weeklyMaximum} conversations. Un crédit n’est consommé qu’après les deux accords. Une vidéo facultative peut ajouter un crédit, dans la limite de {advertisingStock} crédits publicitaires en stock. L’écran Vos crédits affiche les soldes et le prochain renouvellement ; Premium permet de continuer sans débit de crédit."
         },
         "pause": {
           "title": "Faire une pause, garder ses échanges",
           "text": "Activez le mode pause depuis votre profil pour ne plus apparaître dans les nouvelles propositions ni découvrir de nouveaux profils. Vos matchs et vos conversations restent accessibles. Vous pouvez reprendre la découverte quand vous le souhaitez."
+        },
+        "reading": {
+          "title": "Un profil à lire, à votre rythme",
+          "text": "Une fine barre accompagne les trois premières secondes de lecture. Ensuite, un double appui montre votre intérêt ; en bas de la présentation, un geste vers le haut passe au profil suivant. Le bouton Aa ajuste la taille du texte et l’interligne. Un mini-guide présente ces gestes au premier feed."
+        },
+        "dailyUse": {
+          "title": "Retrouver quelqu’un, reprendre le fil",
+          "text": "Dans vos matchs, cherchez un prénom et repérez les messages non lus grâce à leur compteur. Les conversations archivées ont leur propre accès. Depuis une conversation, toucher le prénom rouvre le profil, avec la photo en grand si vous l’avez dévoilée à deux."
+        },
+        "drafts": {
+          "title": "Votre message peut attendre",
+          "text": "Un message non envoyé ou une réponse de profil inachevée peut être retrouvé sur le même appareil après avoir fermé l’app. Ces brouillons restent sur votre téléphone et sont effacés à la déconnexion. La bio n’est pas sauvegardée de cette façon."
+        },
+        "notifications": {
+          "title": "Des alertes quand vous n’êtes pas dans l’app",
+          "text": "Si les notifications sont autorisées, elles vous accompagnent pour les nouveaux échanges, les choix de continuation et le partage des photos. Les alertes liées à une rencontre indiquent le prénom de l’autre personne, sans afficher le texte de ses messages. Dans l’app ouverte, les échanges se mettent à jour directement."
         }
       }
     },
@@ -62,7 +78,7 @@
       "blocks": {
         "passwordless": {
           "title": "Un accès sans mot de passe",
-          "text": "Vous recevez un code par SMS pour vous connecter. Pas de mot de passe à retenir. Les tentatives sont limitées pour réduire les abus."
+          "text": "Vous recevez un code par SMS pour vous connecter, sans mot de passe à retenir. Les tentatives sont limitées. Dans Mes sessions, vous pouvez consulter vos accès et révoquer ceux que vous ne reconnaissez pas."
         },
         "consents": {
           "title": "Un choix pour chaque usage",
@@ -74,7 +90,7 @@
         },
         "rights": {
           "title": "Retrouver ou supprimer vos données",
-          "text": "Votre compte donne accès aux demandes d’export, de correction et de suppression, ainsi qu’aux autres demandes concernant vos données. Vous pouvez suivre leur traitement depuis l’app."
+          "text": "Vous pouvez exporter vos données ou demander la suppression de votre compte depuis l’app. Une donnée impossible à corriger vous-même ? Décrivez précisément la correction dans Mes démarches, puis suivez la réponse. Les consentements, les blocages et les sessions se gèrent dans leurs écrans dédiés."
         }
       }
     },
@@ -97,29 +113,33 @@
         },
         "community": {
           "title": "La suite reste à construire",
-          "text": "L’application est encore en préparation. Les captures de ce site montrent son interface actuelle avec des profils fictifs. Les liens de téléchargement seront publiés ici lorsqu’elle sera disponible."
+          "text": "Les premiers essais sont en cours sur Android, sur invitation. Les captures de ce site montrent l’interface actuelle avec des profils fictifs. La page Disponibilité précise les accès ouverts ; iOS reste en préparation."
         }
       }
     },
     "download": {
-      "eyebrow": "Lancement",
-      "title": "Pas encore dans les stores.",
-      "intro": "Histae est en préparation pour iOS et Android. Il n’y a pas encore de date de lancement confirmée. Les liens App Store et Google Play seront ajoutés ici quand ils seront disponibles.",
-      "blocks": {
-        "availability": {
-          "title": "Sur iOS et Android",
-          "text": "Les liens App Store et Google Play seront disponibles sur cette page dès la publication de l’application."
-        },
-        "finalization": {
-          "title": "Commencer gratuitement",
-          "text": "Vous pourrez créer votre profil et commencer à discuter gratuitement. Premium sera facultatif, pour continuer les conversations sans utiliser de crédits."
-        },
-        "officialLinks": {
-          "title": "Vos liens officiels",
-          "text": "Retrouvez ici les liens vers les boutiques officielles. La date de lancement sera annoncée lorsqu’elle sera confirmée."
-        }
+      "eyebrow": "Disponibilité",
+      "title": "Les essais ont commencé sur Android.",
+      "intro": "Histae est en cours de test sur Android, uniquement avec des personnes invitées. Le lancement auprès du grand public n’a pas encore de date annoncée.",
+      "platformsTitle": "L’accès selon votre téléphone",
+      "android": {
+        "label": "Android",
+        "status": "Essai sur invitation",
+        "text": "L’application est actuellement testée via Google Play. L’accès reste réservé aux personnes invitées, même depuis le lien ci-dessous.",
+        "access": "Ouvrez la fiche avec le compte Google associé à votre invitation. Le lien seul ne donne pas accès au test.",
+        "action": "Ouvrir Google Play · testeurs invités"
       },
-      "footerNote": "Revenez prochainement pour les liens App Store et Google Play."
+      "ios": {
+        "label": "iPhone",
+        "status": "En préparation",
+        "text": "Aucun essai iOS ni lien App Store n’est annoncé pour le moment. Cette page sera mise à jour quand un accès sera ouvert."
+      },
+      "feedbackTitle": "Vous participez aux essais ?",
+      "feedbackText": "Un bouton peu clair, un écran qui bloque, une idée en utilisant l’app : vos retours aident à préparer la suite. Indiquez votre modèle de téléphone et les étapes pour retrouver le problème, sans joindre de code SMS ni de conversation privée.",
+      "feedbackLink": "Envoyer un retour",
+      "feedbackSubject": "Retour sur l’essai Android Histae",
+      "previewTitle": "Un aperçu avant de commencer",
+      "footerNote": "Histae est réservé aux personnes de 18 ans et plus. L’inscription prend actuellement en charge les numéros français en +33."
     }
   }
 }

@@ -6,12 +6,12 @@
     "items": {
       "availability": {
         "question": "When and where will Histae be available?",
-        "answer": "The iOS and Android app is in development. The initial launch is planned for France, with no confirmed public date yet. Official store links will be published on this website as soon as they open.",
+        "answer": "Histae is being tested on Android by invited testers only. There is no announced date for a public launch yet. Open the listing with the Google account associated with your invitation. The link alone does not grant access to the test. No iOS test or App Store link has been announced yet. This page will be updated when access opens.",
         "linkLabel": "Follow availability"
       },
       "account": {
-        "question": "How will I create an account?",
-        "answer": "Access is designed to be passwordless, using a one-time code sent by SMS. The initial launch supports French +33 phone numbers.",
+        "question": "How do I create an account?",
+        "answer": "Start with your profile, preferences and consent choices. Your phone number and SMS verification come last. Registration is for adults and currently supports French +33 numbers. Returning users go straight to phone verification.",
         "linkLabel": "See the safety measures"
       },
       "discovery": {
@@ -21,12 +21,12 @@
       },
       "match": {
         "question": "How does a match work?",
-        "answer": "After two mutual likes, you can talk for 24 hours. Sending is then paused for a further 24 hours: history remains readable and each person can continue or end the match. Choices stay private until both agree, reopening the conversation. A decline or no mutual agreement within the deadline ends the match without naming who declined.",
+        "answer": "After mutual likes, you can talk for 24 hours. Sending then pauses for another 24 hours, while history remains readable. The chat button lets you choose to continue and confirm any cost. A notification can tell you the other person would like to continue; only both agreements reopen the conversation. A decline or the deadline passing without both agreements ends the match.",
         "linkLabel": "Understand the journey"
       },
       "photos": {
         "question": "Do I need to add a photo, and who can see it?",
-        "answer": "A photo is required to access the feed, but it never appears in profile suggestions. Within a match, photos are revealed only after both people agree, independently of the decision to continue the conversation.",
+        "answer": "A photo is required for the feed but stays hidden from suggested profiles. Take one with the camera or choose from your gallery. Both people must agree before sharing in a match, separately from continuation. Either person can withdraw consent and hide both photos again. Replacing a photo also updates it in matches where sharing is allowed.",
         "linkLabel": "See how photo reveal works"
       },
       "pricing": {
@@ -46,7 +46,7 @@
       },
       "privacy": {
         "question": "How can I exercise my rights or delete my data?",
-        "answer": "Histae provides dedicated journeys for access, portability, correction, restriction, objection and erasure. The export gathers account data; deletion removes the main data, anonymises messages and closes matches.",
+        "answer": "Privacy and safety lets you export your data, delete your account, manage consent and revoke sessions. My requests is for corrections you cannot make yourself: describe the data and follow the reply. The website footer also links to data and account deletion tools.",
         "linkLabel": "Learn more about your rights"
       },
       "sourceCode": {
@@ -68,6 +68,36 @@
         "question": "Can I take a break without losing my matches?",
         "answer": "Yes. Pause mode, available in your profile, removes you from new suggestions and stops discovery of new profiles. Your existing matches and conversations remain available. When you resume, the usual requirements apply, including a recent location.",
         "linkLabel": "Learn about pause mode"
+      },
+      "reading": {
+        "question": "How do I read and move between profiles?",
+        "answer": "The bar at the top fills during three seconds of reading. You can then double-tap to like or swipe up at the end of the text to pass; buttons offer the same actions. Aa adjusts text size and line spacing. The first-feed guide remains available in Help and contact.",
+        "linkLabel": "Explore the feed"
+      },
+      "drafts": {
+        "question": "Are unsent messages kept?",
+        "answer": "Yes. Message drafts and answers to profile questions are kept on this device so you can find them after closing the app. They do not sync between devices and are erased on sign-out. This does not include your biography.",
+        "linkLabel": "Explore conversations"
+      },
+      "conversations": {
+        "question": "How do I find a match or spot unread messages?",
+        "answer": "Search by first name in Your matches. Each match’s counter shows unread messages. Archived conversations have a separate entry point. Tapping a name in a conversation opens the profile, including the photo if both people have agreed to share.",
+        "linkLabel": "See how chats work"
+      },
+      "notifications": {
+        "question": "When does the app send a notification?",
+        "answer": "With your permission, background alerts can cover matches, messages, a request to continue, mutual confirmation or shared photos. Reminders also accompany deadlines. A reply to a data request or a new sign-in can trigger an alert too. Match alerts show the first name, without message contents. The open app updates without these system alerts; manage devices and notifications from your profile.",
+        "linkLabel": "Learn about alerts"
+      },
+      "renewal": {
+        "question": "When do credits renew, and what if I run out?",
+        "answer": "Weekly balances reset on Monday at 00:00 UTC. Your credits shows the next deadline in local time. Without free credits, a video can add one when limits allow. After the weekly continuation cap is reached, the app suggests subscriptions instead of a video. If no ad is available, it tells you; no credit is added.",
+        "linkLabel": "Understand credits"
+      },
+      "help": {
+        "question": "Where can I get help or contact Histae?",
+        "answer": "Open Help and contact in Profile to revisit the feed guide, read explanations about photos, credits and purchases, or contact support. The contact address also appears in every website footer.",
+        "linkLabel": "Check availability"
       }
     }
   }

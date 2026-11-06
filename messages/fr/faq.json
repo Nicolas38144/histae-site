@@ -6,12 +6,12 @@
     "items": {
       "availability": {
         "question": "Quand et où Histae sera-t-elle disponible ?",
-        "answer": "L’application iOS et Android est en préparation. Le premier lancement est prévu en France, sans date publique confirmée. Les liens officiels seront publiés sur ce site dès leur ouverture.",
+        "answer": "Histae est en cours de test sur Android, uniquement avec des personnes invitées. Le lancement auprès du grand public n’a pas encore de date annoncée. Ouvrez la fiche avec le compte Google associé à votre invitation. Le lien seul ne donne pas accès au test. Aucun essai iOS ni lien App Store n’est annoncé pour le moment. Cette page sera mise à jour quand un accès sera ouvert.",
         "linkLabel": "Suivre la disponibilité"
       },
       "account": {
         "question": "Comment créer un compte ?",
-        "answer": "L’accès est prévu sans mot de passe, avec un code à usage unique envoyé par SMS. Le lancement initial prend en charge les numéros français en +33.",
+        "answer": "Vous commencez par votre profil, vos préférences et vos choix de consentement. Le numéro de téléphone et le code SMS arrivent à la dernière étape. L’inscription est réservée aux adultes et prend actuellement en charge les numéros français en +33. Pour vous reconnecter, vous passez directement par la vérification du téléphone.",
         "linkLabel": "Voir les mesures de sécurité"
       },
       "discovery": {
@@ -21,12 +21,12 @@
       },
       "match": {
         "question": "Comment fonctionne un match ?",
-        "answer": "Après deux likes réciproques, vous échangez pendant 24 heures. L’envoi est ensuite suspendu pendant 24 heures : l’historique reste lisible et chacun choisit de continuer ou de terminer. Les choix restent privés jusqu’aux deux accords, qui rouvrent la conversation. Un refus ou l’absence de deux accords dans le délai termine le match, sans préciser qui a refusé.",
+        "answer": "Après deux likes réciproques, vous échangez pendant 24 heures. L’envoi est ensuite suspendu pendant 24 heures, avec un historique toujours lisible. Le bouton de la conversation permet alors de choisir la suite et de confirmer le coût éventuel. Une notification peut signaler que l’autre personne souhaite continuer ; seuls vos deux accords rouvrent la discussion. Un refus ou le délai écoulé sans deux accords termine le match.",
         "linkLabel": "Comprendre le parcours"
       },
       "photos": {
         "question": "Faut-il ajouter une photo ? Qui peut la voir ?",
-        "answer": "Une photo est obligatoire pour accéder au feed, mais elle n’est jamais affichée dans les propositions de profils. Dans un match, les photos ne sont révélées qu’après l’accord des deux personnes, indépendamment de leur décision de continuer la conversation.",
+        "answer": "Une photo est obligatoire pour accéder au feed, mais reste cachée dans les propositions. Elle peut être prise avec l’appareil photo ou choisie dans la galerie. Dans un match, les photos sont révélées après deux accords, indépendamment de la continuation. Chacun peut retirer son accord et masquer à nouveau les deux photos. Remplacer sa photo la met aussi à jour dans les matchs où le partage est autorisé.",
         "linkLabel": "Voir le fonctionnement des photos"
       },
       "pricing": {
@@ -46,7 +46,7 @@
       },
       "privacy": {
         "question": "Comment exercer ses droits ou supprimer ses données ?",
-        "answer": "Histae prévoit des parcours dédiés pour l’accès, la portabilité, la rectification, la restriction, l’objection et l’effacement. L’export rassemble les données du compte ; la suppression efface les données principales, anonymise les messages et clôt les matchs.",
+        "answer": "Depuis Vie privée et sécurité, vous pouvez exporter vos données, supprimer votre compte, gérer vos consentements et révoquer des sessions. Mes démarches sert notamment à demander une correction que vous ne pouvez pas faire dans l’app : vous précisez la donnée concernée et suivez la réponse. Vous pouvez aussi accéder aux outils de suppression depuis le lien du pied de page du site.",
         "linkLabel": "En savoir plus sur vos droits"
       },
       "sourceCode": {
@@ -68,6 +68,36 @@
         "question": "Puis-je faire une pause sans perdre mes matchs ?",
         "answer": "Oui. Le mode pause, accessible depuis votre profil, vous retire des nouvelles propositions et suspend la découverte de nouveaux profils. Vos matchs et vos conversations existants restent accessibles. À la reprise, les conditions habituelles s’appliquent, notamment une position récente.",
         "linkLabel": "Découvrir le mode pause"
+      },
+      "reading": {
+        "question": "Comment lire et passer les profils ?",
+        "answer": "La barre en haut du profil se remplit pendant trois secondes de lecture. Vous pouvez ensuite aimer par double appui ou passer d’un geste vers le haut en bas du texte ; des boutons permettent aussi ces actions. Le bouton Aa règle la taille du texte et l’interligne. Le guide du premier feed reste accessible dans Aide et contact.",
+        "linkLabel": "Voir le feed"
+      },
+      "drafts": {
+        "question": "Un message non envoyé est-il conservé ?",
+        "answer": "Oui, les brouillons des messages et des réponses aux questions du profil sont gardés sur cet appareil pour les retrouver après fermeture de l’app. Ils ne sont pas synchronisés entre appareils et sont effacés à la déconnexion. Ce fonctionnement ne concerne pas la bio.",
+        "linkLabel": "Découvrir les conversations"
+      },
+      "conversations": {
+        "question": "Comment retrouver un match ou voir les messages non lus ?",
+        "answer": "Cherchez son prénom dans Vos rencontres. Le compteur de chaque match indique les messages non lus. Les conversations archivées ont un accès distinct. Dans une conversation, toucher le prénom permet de relire le profil ; sa photo apparaît aussi si le partage est autorisé des deux côtés.",
+        "linkLabel": "Voir les échanges"
+      },
+      "notifications": {
+        "question": "Quand l’app m’envoie-t-elle une notification ?",
+        "answer": "Avec votre autorisation, les alertes en arrière-plan peuvent concerner un match, un message, une demande de continuation, sa confirmation ou le partage des photos. Des rappels accompagnent aussi les échéances. Une réponse à une démarche ou une nouvelle connexion peuvent également déclencher une alerte. Le prénom apparaît pour une rencontre, sans le contenu des messages. L’app ouverte se met à jour sans ces alertes système ; vos appareils et notifications se gèrent depuis le profil.",
+        "linkLabel": "Comprendre les alertes"
+      },
+      "renewal": {
+        "question": "Quand mes crédits reviennent-ils ? Et si je n’en ai plus ?",
+        "answer": "Les soldes hebdomadaires repartent le lundi à 00:00 UTC ; Vos crédits indique la prochaine échéance dans votre heure locale. Sans crédit gratuit, une vidéo peut fournir un crédit si les limites le permettent. Quand le quota hebdomadaire est atteint, l’app propose les abonnements plutôt qu’une vidéo. Une absence de publicité est signalée ; elle n’ajoute aucun crédit.",
+        "linkLabel": "Comprendre les crédits"
+      },
+      "help": {
+        "question": "Où trouver de l’aide ou contacter Histae ?",
+        "answer": "Dans Profil, ouvrez Aide et contact. Vous pouvez y revoir le guide du feed, consulter les explications sur les photos, les crédits et les achats, ou contacter le support. L’adresse de contact est également présente en bas de chaque page du site.",
+        "linkLabel": "Voir la disponibilité"
       }
     }
   }

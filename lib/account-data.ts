@@ -2,8 +2,7 @@ import { billingRequest } from "./billing/client";
 import { BillingFailure, object } from "./billing/failure";
 import type { Locale } from "./site-config";
 
-export const dataCategories = ["photo", "location", "sensitive_profile"] as const;
-export type DataCategory = typeof dataCategories[number];
+export type DataCategory = "photo" | "location" | "sensitive_profile";
 export type AccountSession = { user_id: string; onboarding_complete: boolean };
 const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 

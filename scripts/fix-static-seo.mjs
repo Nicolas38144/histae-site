@@ -1,5 +1,5 @@
 import { buildSecurityHeaders } from "./security-headers.mjs";
-import { readFile, writeFile } from "node:fs/promises";
+import { access, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const outputDirectory = path.resolve("out");
@@ -41,6 +41,7 @@ function assertIncludes(value, expected, message) {
 }
 
 let localizedPageCount = 0;
+const checkedSocialImages = new Set();
 
 for (const locale of locales) {
   for (const route of routes) {
@@ -49,6 +50,16 @@ for (const locale of locales) {
     const html = normalizeHeadAttributes(originalHtml, file);
     const head = extractHead(html, file);
     const canonical = pageUrl(locale, route);
+    const socialImage = head.match(/<meta property="og:image" content="([^"]+)"/)?.[1];
+    if (socialImage && !checkedSocialImages.has(socialImage)) {
+      const url = new URL(socialImage);
+      if (url.origin !== new URL(siteConfig.publicUrl).origin) throw new Error(`${file}: unexpected social-image origin`);
+      const asset = path.resolve(outputDirectory, "." + url.pathname);
+      if (path.relative(outputDirectory, asset).startsWith("..")) throw new Error(`${file}: social-image path escapes export`);
+      await access(asset);
+      checkedSocialImages.add(socialImage);
+    }
+
 
     const documentLanguage = html.match(/<html lang="([^"]+)"/)?.[1];
     if (documentLanguage !== locale) {

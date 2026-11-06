@@ -66,7 +66,4 @@ test("mobile reading, screenshots, skip link and language dialog work with a key
   await page.keyboard.press("Escape");
   await expect(page.getByRole("dialog")).not.toBeVisible();
   await expect(page.getByRole("button", { name: "Langue", exact: true })).toBeFocused();
-  await page.screenshot({ path: "test-results/home-mobile.png", fullPage: true });
-  await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.screenshot({ path: "test-results/home-desktop.png", fullPage: true });
 });

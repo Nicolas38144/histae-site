@@ -56,7 +56,7 @@
         },
         "choose": {
           "title": "24 hours to choose together",
-          "text": "Sending messages then pauses, while your conversation history stays readable. Each person privately decides whether to continue. A refusal or the lack of two agreements within the time limit ends the match."
+          "text": "Sending pauses, but history remains readable. Each person chooses whether to continue; a notification can let you know the other person wants to. A decline or no mutual agreement by the deadline ends the match."
         },
         "continue": {
           "title": "Two agreements to keep going",
@@ -71,11 +71,11 @@
       "items": {
         "weekly": {
           "title": "{freeCredits} free credits each week",
-          "text": "Your free balance resets every Monday at 00:00 UTC. Unused free credits do not carry over to the following week."
+          "text": "Free credits renew each Monday at 00:00 UTC and do not roll over. In the app, Your credits shows the next renewal date and time in your local time zone."
         },
         "video": {
           "title": "Extra credits, if you want them",
-          "text": "An optional video ad earns 1 credit. You can hold up to {advertisingStock} advertising credits. Unused advertising credits, including reserved credits, expire every Monday at 00:00 UTC and must then be earned again by watching videos."
+          "text": "An optional video earns 1 credit, up to {advertisingStock} advertising credits in stock. They expire every Monday at 00:00 UTC, including reserved credits. The app tells you if no video is available. Videos cannot bypass the weekly continuation limit."
         },
         "limit": {
           "title": "Extend up to {weeklyMaximum} conversations each week",

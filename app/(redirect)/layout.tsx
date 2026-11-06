@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { brandIcons } from "../../lib/branding";
 import "../globals.css";
-import { publicUrl } from "../../lib/metadata";
+import { publicUrl } from "../../lib/site-config";
 
 export const metadata: Metadata = {
   metadataBase: new URL(publicUrl),

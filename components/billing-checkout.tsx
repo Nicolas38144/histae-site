@@ -1,7 +1,8 @@
 "use client";
 import type { AppMessages } from "../messages";
 import type { Locale } from "../lib/site-config";
-import { BillingFailure, storeManagementUrl } from "../lib/web-billing";
+import { BillingFailure } from "../lib/billing/failure";
+import { storeManagementUrl } from "../lib/billing/validation";
 import { useBillingCheckout } from "../hooks/use-billing-checkout";
 
 type Copy = AppMessages["billingCheckout"];

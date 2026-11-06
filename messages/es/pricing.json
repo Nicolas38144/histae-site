@@ -56,7 +56,7 @@
         },
         "choose": {
           "title": "24 h para decidir entre los dos",
-          "text": "El envío de mensajes se pausa, pero el historial sigue siendo legible. Cada persona decide en privado si quiere continuar. Un rechazo o la falta de dos acuerdos dentro del plazo termina el match."
+          "text": "El envío se pausa, pero el historial sigue disponible. Cada persona decide si quiere continuar; un aviso puede indicar el deseo de la otra. Un rechazo o la falta de dos acuerdos al acabar el plazo termina el match."
         },
         "continue": {
           "title": "Dos acuerdos para seguir",
@@ -71,11 +71,11 @@
       "items": {
         "weekly": {
           "title": "{freeCredits} créditos gratuitos cada semana",
-          "text": "El saldo gratuito se renueva cada lunes a las 00:00 UTC. Los créditos gratuitos no utilizados no se suman a los de la semana siguiente."
+          "text": "Los créditos gratuitos se renuevan cada lunes a las 00:00 UTC y no se acumulan. Tus créditos muestra la próxima fecha y hora de renovación en tu hora local."
         },
         "video": {
           "title": "Créditos extra, si quieres",
-          "text": "Un vídeo publicitario opcional permite ganar 1 crédito. Puedes tener hasta {advertisingStock} créditos publicitarios. Los créditos publicitarios no utilizados, incluidos los reservados, caducan cada lunes a las 00:00 UTC y deben ganarse de nuevo mediante vídeos."
+          "text": "Un vídeo opcional da 1 crédito, hasta {advertisingStock} créditos publicitarios en reserva. Caducan cada lunes a las 00:00 UTC, incluso los reservados. La app avisa si no hay vídeo disponible. Los vídeos no permiten superar el límite semanal de continuaciones."
         },
         "limit": {
           "title": "Hasta {weeklyMaximum} conversaciones prolongadas por semana",

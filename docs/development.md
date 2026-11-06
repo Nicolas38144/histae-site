@@ -138,7 +138,7 @@ violations or horizontal overflow were reported in those twenty views. The focus
 tests also exercise the keyboard skip link, language dialog focus/closing, reduced motion
 and loading of the three home screenshots. This does not establish full WCAG conformance.
 
-The twenty WebP screenshots refreshed on 2026-10-27 total 1,380,262 bytes; the largest is 91,262 bytes.
+The twenty localized WebP screenshots were refreshed from the current app on 2026-11-06.
 Lazy loading is retained except for the hero. Keep each capture below 100 KiB when refreshing
 them, and check the actual page request mix after layout or dependency changes. Local asset
 sizes do not establish hosted Core Web Vitals or performance on a slow mobile connection.
@@ -165,3 +165,33 @@ all four locales. Run `pnpm exec playwright test tests/discovery.spec.ts` for th
 ### Discovery feature boundaries
 
 The server pages compose localized content. `lib/faq.ts` owns FAQ metadata and filtering; `FaqExplorer` owns input state and renders results. Subscription guidance uses explicit channel IDs and `lib/billing/subscription-channels.ts` for destinations, rather than parallel translation arrays. The product demo separates its local journey state (`use-product-demo.ts`) from its controlled presentation panels (`demo-panels.tsx`). None of these modules makes account or payment requests.
+
+## Product availability
+
+`DownloadPage` owns the platform status and tester feedback presentation. Its copy lives in
+`pages.download` in all four locales. Android testing is invitation-only; do not publish a
+public download badge or infer an enrolment URL from the package name. The owner-provided
+Google Play listing is stored in `config/site.json` under `storeLinks.androidTest` and displayed
+with an invited-tester label. Opening it does not grant test access. iOS remains in preparation.
+When access changes, update availability, home, footer, FAQ and SEO together. Keep test access
+distinct from a free Premium trial. `tests/availability.spec.ts` checks this distinction.
+
+The product copy now covers reading controls, saved message/answer drafts, unread counts,
+profile access from chats, withdrawal/replacement of shared photos and the continuation action
+inside the composer. Notification copy describes implemented events, not proof of deployment
+or real-device delivery; those checks remain in the app/API release checklist.
+
+## Content ownership and regression scope
+
+`FeaturePage`, `SafetyPage` and `AboutPage` own their typed translation blocks and page composition.
+`InformationPage` supplies only the shared frame; `AppStory`, `StoryPassage` and `StoryDetails`
+render provided content without selecting blocks by unchecked strings. Only credit text needs
+commercial interpolation. Availability remains in `DownloadPage`.
+
+Import billing transport, validation and storage from their owning `lib/billing/` modules.
+Branding owns the real social image and its dimensions; the export check verifies the image exists.
+
+Keep security, privacy and payment-recovery tests, including migration of older Checkout attempts.
+Regression tests assert behavior and asset loading. They no longer write manual screenshots on
+each run; use a deliberate browser capture when reviewing a design. Availability checks protect
+invited access and store destinations without comparing the page to its own translation files.

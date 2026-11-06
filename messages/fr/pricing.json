@@ -56,7 +56,7 @@
         },
         "choose": {
           "title": "24 h pour décider à deux",
-          "text": "L’envoi des messages est ensuite mis en pause, mais l’historique reste lisible. Chacun choisit en privé s’il souhaite continuer. Un refus ou l’absence de deux accords dans le délai termine le match."
+          "text": "L’envoi des messages est ensuite mis en pause, mais l’historique reste lisible. Chacun choisit s’il souhaite continuer ; une notification peut signaler le souhait de l’autre personne. Un refus ou l’absence de deux accords dans le délai termine le match."
         },
         "continue": {
           "title": "Deux accords pour reprendre",
@@ -71,11 +71,11 @@
       "items": {
         "weekly": {
           "title": "{freeCredits} crédits offerts chaque semaine",
-          "text": "Le solde gratuit est renouvelé chaque lundi à 00:00 UTC. Les crédits gratuits non utilisés ne s’ajoutent pas à ceux de la semaine suivante."
+          "text": "Le solde gratuit est renouvelé chaque lundi à 00:00 UTC. Les crédits gratuits non utilisés ne se cumulent pas. Dans l’app, Vos crédits affiche la date et l’heure du prochain renouvellement dans votre heure locale."
         },
         "video": {
           "title": "Des crédits en plus, si vous le souhaitez",
-          "text": "Une vidéo publicitaire facultative permet de gagner 1 crédit. Vous pouvez détenir jusqu’à {advertisingStock} crédits publicitaires. Les crédits publicitaires inutilisés, même réservés, expirent chaque lundi à 00:00 UTC ; ils doivent ensuite être regagnés par vidéo."
+          "text": "Une vidéo facultative permet de gagner 1 crédit, dans la limite de {advertisingStock} crédits publicitaires en stock. Ils expirent chaque lundi à 00:00 UTC, même s’ils sont réservés. Si aucune vidéo n’est disponible, l’app vous le signale. Une vidéo ne permet pas de dépasser le quota hebdomadaire."
         },
         "limit": {
           "title": "Jusqu’à {weeklyMaximum} conversations prolongées par semaine",

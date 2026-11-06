@@ -1,6 +1,6 @@
-import { InformationPage } from "../../../components/information-page";
+import { AboutPage } from "../../../components/about-page";
 import { createLocalizedPage, createPageMetadata } from "../../../lib/localized-page";
 
 export const generateMetadata = createPageMetadata("about");
 
-export default createLocalizedPage((locale) => <InformationPage locale={locale} pageName="about" />);
+export default createLocalizedPage((locale) => <AboutPage locale={locale} />);

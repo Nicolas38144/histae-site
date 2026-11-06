@@ -353,7 +353,7 @@ h1, h2, h3 { text-wrap: balance; }
 .screenshot-hero > .app-screenshot::before { content: ""; z-index: -1; position: absolute; inset: 18% -25% 12%; border-radius: 50%; background: radial-gradient(ellipse,rgba(182,156,255,.14),transparent 70%); }
 .app-story { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,.9fr); gap: clamp(3rem,8vw,8rem); align-items: center; padding-block: clamp(3.5rem,8vw,7rem); }
 .app-story-reverse .story-copy { order: 2; }
-.story-copy h2, .credits-invitation h2, .editorial-statement h2, .launch-note h2 { font-family: Georgia,"Times New Roman",serif; font-size: clamp(2rem,4vw,3rem); line-height: 1.15; letter-spacing: -.045em; font-weight: 400; }
+.story-copy h2, .credits-invitation h2, .editorial-statement h2 { font-family: Georgia,"Times New Roman",serif; font-size: clamp(2rem,4vw,3rem); line-height: 1.15; letter-spacing: -.045em; font-weight: 400; }
 .story-copy > .eyebrow { margin-bottom: 1rem; }
 .story-lead { margin-top: 1.5rem; color: var(--muted); font-size: 1.08rem; line-height: 1.75; max-width: 38rem; }
 .story-passage { margin-top: 1.7rem; max-width: 38rem; }
@@ -378,8 +378,6 @@ h1, h2, h3 { text-wrap: balance; }
 .editorial-statement > p { margin-top: 1.4rem; color: var(--muted); font-family: Georgia,"Times New Roman",serif; font-size: clamp(1.3rem,3vw,1.8rem); line-height: 1.65; }
 .launch-gallery { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 2.5rem; align-items: start; padding-block: 3rem; }
 .launch-gallery .app-screenshot:nth-child(2) { margin-top: 4rem; }
-.launch-note { max-width: 48rem; margin-block: 3rem; }
-.launch-note > p { margin-top: 1.2rem; color: var(--muted); }
 .pricing-reading { padding-block: 3rem; }
 .pricing-reading .story-passage:first-child { margin-top: 0; }
 .faq-illustrated { display: grid; grid-template-columns: minmax(0,1fr) 280px; gap: 5rem; align-items: start; }
@@ -514,3 +512,22 @@ h1, h2, h3 { text-wrap: balance; }
 .child-safety-page section[id] { scroll-margin-top: 7rem; }
 
 .child-safety-page .button-primary { color: var(--night); }
+
+/* Availability describes invited access before showing the app previews. */
+.availability-platforms { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(1.5rem, 4vw, 3rem); }
+.availability-platform { padding: clamp(1.5rem, 4vw, 2.5rem); border: 1px solid var(--line); border-radius: 24px; }
+.availability-android { background: var(--panel); border-top: 2px solid var(--coral); }
+.availability-platform h2, .availability-feedback h2, .availability-previews > h2 { font: 400 clamp(1.8rem, 3vw, 2.5rem)/1.15 Georgia, serif; letter-spacing: -.035em; }
+.availability-platform h2 { margin-block: 1rem 1.25rem; }
+.availability-platform > p:not(.eyebrow), .availability-feedback p { color: var(--muted); line-height: 1.8; }
+.availability-platform .availability-access { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--ink); }
+.availability-feedback { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-block: 4rem 5rem; }
+.availability-feedback p { max-width: 65ch; margin-top: 1rem; }
+.availability-feedback > a { flex-shrink: 0; }
+.availability-page .page-closing > p { max-width: 65ch; }
+@media (max-width: 700px) {
+  .availability-platforms { grid-template-columns: 1fr; }
+  .availability-feedback { align-items: flex-start; flex-direction: column; margin-block: 3rem; }
+}
+
+.availability-android > .text-link { display: inline-block; margin-top: 1.5rem; }

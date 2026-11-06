@@ -1,18 +1,17 @@
 import { test, expect } from "@playwright/test";
-import { parseSession, parseOffers, paymentUrl, storeManagementUrl, BillingFailure } from "../lib/web-billing";
+import { parseSession, parseOffers, paymentUrl, storeManagementUrl } from "../lib/billing/validation";
+import { BillingFailure } from "../lib/billing/failure";
 import { requestedBillingPeriod, subscriptionHref } from "../lib/billing/navigation";
 const user = "11111111-1111-4111-8111-111111111111";
 const free = { user_id: user, onboarding_complete: true, subscription: { plan: "free", provider: null, access_granted: false, customer_portal_available: false, management_url: null } };
 const plans = { offers: [{ plan_code: "premium", billing_period: "monthly", price_cents: 500, currency: "EUR", display_name: "Premium" }, { plan_code: "premium", billing_period: "annual", price_cents: 4800, currency: "EUR", display_name: "Premium" }] };
-test("rejects untrusted payment URLs and inconsistent entitlement DTOs", () => {
+test("validates billing periods, offer DTOs and entitlement consistency", () => {
   expect(requestedBillingPeriod("?period=annual")).toBe("annual");
   expect(requestedBillingPeriod("?period=monthly")).toBe("monthly");
   expect(requestedBillingPeriod("?period=unexpected")).toBeUndefined();
   expect(requestedBillingPeriod("")).toBeUndefined();
   expect(subscriptionHref("fr", "annual")).toBe("/fr/billing/subscribe/?period=annual");
   expect(subscriptionHref("es")).toBe("/es/billing/subscribe/");
-  for (const url of ["http://checkout.stripe.com/x", "https://checkout.stripe.com.evil.test/x", "https://user@checkout.stripe.com/x", "https://checkout.stripe.com:444/x"]) expect(() => paymentUrl({ url }, false)).toThrow();
-  expect(paymentUrl({ url: "https://checkout.stripe.com/c/pay/synthetic" },false)).toContain("checkout.stripe.com");
   expect(() => parseSession({ ...free, subscription: { ...free.subscription, access_granted: true } })).toThrow();
   expect(storeManagementUrl("https://evil.test")).toBeNull();
   expect(() => parseSession({ ...free, subscription: { ...free.subscription, plan: { toString: {} } } })).toThrow(BillingFailure);

@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { faqTopics } from '../lib/faq';
 test('fictional journey requires two agreements and can restart',async({page})=>{
  await page.goto('/fr/feature/');
  const demo=page.locator('#demo');
@@ -13,7 +14,6 @@ test('fictional journey requires two agreements and can restart',async({page})=>
  await expect(demo.getByText('Camille, 29 ans',{exact:true})).toBeVisible();
  await page.setViewportSize({width:375,height:812});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
- await demo.screenshot({path:'test-results/discovery-mobile.png'});
 });
 test('FAQ combines search and topic and guides each billing channel',async({page})=>{
  await page.goto('/fr/faq/');
@@ -22,7 +22,7 @@ test('FAQ combines search and topic and guides each billing channel',async({page
  await page.getByLabel('Sujet',{exact:true}).selectOption('billing');
  await expect(page.locator('.faq-explorer details')).toHaveCount(0);
  await page.getByRole('button',{name:'Effacer les filtres'}).click();
- await expect(page.locator('.faq-explorer details')).toHaveCount(13);
+ await expect(page.locator('.faq-explorer details')).toHaveCount(faqTopics.length);
  await page.getByRole('searchbox').fill('Elo');
  await expect(page.locator('.faq-explorer details')).toHaveCount(1);
  const ranking=page.locator('.faq-explorer details');
@@ -31,7 +31,7 @@ test('FAQ combines search and topic and guides each billing channel',async({page
  await page.getByRole('button',{name:'Effacer les filtres'}).click();
  const help=page.locator('#subscription-help');
  await help.getByRole('button',{name:'Sur Android',exact:true}).click();
- await expect(help.getByRole('link')).toHaveAttribute('href','https://play.google.com/store/account/subscriptions');
+ await expect(help.locator('#provider-help').getByRole('link')).toHaveAttribute('href','https://play.google.com/store/account/subscriptions');
  await help.getByRole('button',{name:'Sur iPhone',exact:true}).click();
- await expect(help.getByRole('link')).toHaveAttribute('href','https://apps.apple.com/account/subscriptions');
+ await expect(help.locator('#provider-help').getByRole('link')).toHaveAttribute('href','https://apps.apple.com/account/subscriptions');
 });
