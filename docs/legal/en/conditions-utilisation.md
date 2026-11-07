@@ -1,11 +1,13 @@
 # Histae Terms of Use
 
 **Published version:** Validation in progress.\
-**Document date:** 4 November 2026.\
+**Document date:** 7 November 2026.\
 **Service publisher:** Histae.\
 **Publisher’s legal identity and address:** Validation in progress.
 
 ## 1. Purpose and access to the service
+
+Histae is strictly restricted to people aged 18 or older. Histae does not allow any person under the age of 18 to register, create a profile or use the service. Falsifying your age, creating an account for a minor or allowing a minor to use your account is prohibited.
 
 Histae is a dating service for adults. It allows users to create a profile, set discovery preferences, view compatible profiles, choose to like or pass on them, and then exchange messages when a mutual choice creates a match. Geographic availability and the features actually available are indicated in the app at the time of use.
 
@@ -23,7 +25,16 @@ Users can block or report another person. Blocking stops the interactions concer
 
 ## 3. Content and conduct
 
-Users remain responsible for the text, photos and messages they publish or send. They must respect other people and their choices. Prohibited conduct includes impersonation, harassment, threats, unlawful content, disclosure of another person's personal data without consent, fraudulent solicitations and abusive automated use of the service.
+Users remain responsible for the text, photos and messages they publish or send. They must respect other people and their choices. The following prohibitions apply to profiles, photos, messages, links and all other use of the service. You must not publish, transmit, request, promote or facilitate:
+
+- **Sexually explicit profile content**, including pornographic text or images, nudity and depictions of sexual acts; this content is also prohibited in messages and shared links, even between consenting adults.
+- **Child sexual exploitation or abuse and child sexual abuse material (CSAM)**, including artificially generated or manipulated depictions, links to such material, sexual solicitation of a minor and grooming.
+- **Sexual violence**, including sexual assault, forced sexual acts, sexual coercion and threats of sexual violence.
+- **Non-consensual content**, including intimate images shared without permission, non-consensual sexual manipulations, profiles created without the depicted person's consent and disclosure of another person's personal data without consent.
+- **Human or sex trafficking**, including organising, promoting or facilitating these activities.
+- **Scams or fraudulent activity intended to defraud end-users of the platform**, including romance scams, fraudulent requests for money and phishing.
+- **Impersonation**, including pretending to be another person or using their identity or images to deceive users.
+- **Illegal acts**, their organisation, incitement or facilitation, as well as unlawful content, harassment, threats and abusive automated use of the service.
 
 Users retain their rights to their content. They authorise Histae to host, process and display it only as necessary to operate, secure and moderate the service, for as long as that content is retained under the Privacy Policy. This authorisation does not transfer ownership.
 

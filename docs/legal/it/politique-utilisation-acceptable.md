@@ -1,7 +1,7 @@
 # Politica di utilizzo accettabile di Histae
 
 **Versione pubblicata:** In corso di validazione.\
-**Data del documento:** 4 novembre 2026.\
+**Data del documento:** 7 novembre 2026.\
 **Editore del servizio:** Histae.\
 **Identità giuridica dell’editore:** In corso di validazione.\
 **Contatto:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
@@ -16,13 +16,17 @@ La registrazione utilizza un numero di telefono francese e un codice SMS monouso
 
 È vietato pubblicare, trasmettere, richiedere, promuovere o agevolare:
 
-- Lo sfruttamento o l’abuso sessuale di minori, il relativo materiale (CSAM), l’adescamento sessuale di un minore, il grooming o il ricatto sessuale. Sono incluse le rappresentazioni generate o manipolate artificialmente e i link che agevolano questi atti.
-- La tratta di esseri umani, lo sfruttamento sessuale, la prostituzione, i servizi di escort, gli incontri sessuali a pagamento e la vendita o promozione di contenuti o prestazioni sessuali.
-- I contenuti pornografici, le immagini di nudità o di atti sessuali, anche quando riguardano adulti consenzienti.
-- Le immagini intime condivise senza autorizzazione, i fotomontaggi sessuali non consensuali, la divulgazione di dati privati, la sorveglianza o le minacce di diffusione.
+- **Lo sfruttamento o l’abuso sessuale di minori e il materiale di abuso sessuale su minori (CSAM)**, l’adescamento sessuale di un minore, il grooming o il ricatto sessuale. Sono incluse le rappresentazioni generate o manipolate artificialmente e i link che agevolano questi atti.
+- **La tratta di esseri umani o la tratta a fini di sfruttamento sessuale**, nonché l’organizzazione, la promozione o l’agevolazione di queste attività.
+- Lo sfruttamento sessuale, la prostituzione, i servizi di escort, gli incontri sessuali a pagamento e la vendita o promozione di contenuti o prestazioni sessuali.
+- **I contenuti del profilo sessualmente espliciti**, i contenuti pornografici, le immagini di nudità o di atti sessuali. Il divieto si applica anche ai messaggi e ai link condivisi, persino tra adulti consenzienti.
+- **La violenza sessuale**, incluse le aggressioni sessuali, gli atti sessuali imposti, la coercizione sessuale e le minacce di violenza sessuale.
+- **I contenuti non consensuali**, incluse le immagini intime condivise senza autorizzazione, i fotomontaggi sessuali non consensuali, i profili creati senza il consenso della persona rappresentata, la divulgazione di dati privati, la sorveglianza o le minacce di diffusione.
 - Le molestie, le minacce, la violenza, l’incitamento all’odio, la discriminazione o l’intimidazione.
-- Le truffe sentimentali, le richieste fraudolente di denaro, il phishing, il furto d’identità, i profili ingannevoli o i documenti falsificati.
-- Lo spam, le sollecitazioni commerciali non autorizzate, i contenuti che violano diritti altrui, i software dannosi e le attività illegali.
+- **La sostituzione di persona o il furto d’identità**, incluso spacciarsi per un’altra persona, utilizzare la sua identità o le sue immagini per ingannare gli utenti, creare profili ingannevoli o fornire documenti falsificati.
+- **Le truffe o le attività fraudolente volte a frodare gli utenti della piattaforma**, incluse le truffe sentimentali, le richieste fraudolente di denaro e il phishing.
+- **Gli atti illegali**, incluso utilizzare il servizio per commettere, organizzare, incoraggiare o agevolare un reato.
+- Lo spam, le sollecitazioni commerciali non autorizzate, i contenuti che violano diritti altrui e i software dannosi.
 - La raccolta automatizzata non autorizzata di profili o dati, l’accesso agli account altrui, l’aggiramento delle protezioni, di un blocco o di una sospensione e l’utilizzo abusivo di strumenti automatizzati.
 
 ## 3. Consenso e rispetto delle persone

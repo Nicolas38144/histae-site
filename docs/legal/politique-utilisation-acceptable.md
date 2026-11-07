@@ -1,7 +1,7 @@
 # Politique d’utilisation acceptable de Histae
 
 **Version publiée :** En cours de validation.\
-**Date du document :** 4 novembre 2026.\
+**Date du document :** 7 novembre 2026.\
 **Éditeur du service :** Histae.\
 **Identité juridique de l’éditeur :** En cours de validation.\
 **Contact :** [support.histae@gmail.com](mailto:support.histae@gmail.com)
@@ -16,13 +16,17 @@ Le parcours d’inscription utilise un numéro de téléphone français et un co
 
 Il est interdit de publier, transmettre, demander, promouvoir ou faciliter :
 
-- L’exploitation ou les abus sexuels sur mineurs, les contenus correspondants (CSAM), la sollicitation sexuelle d’un mineur, le grooming ou le chantage sexuel. Cela inclut les représentations générées ou manipulées artificiellement et les liens qui facilitent ces actes.
-- La traite des êtres humains, l’exploitation sexuelle, la prostitution, l’escorting, les relations sexuelles rémunérées et la vente ou la promotion de contenus ou de prestations sexuels.
-- Les contenus pornographiques, les images de nudité ou d’actes sexuels, y compris lorsqu’ils concernent des adultes consentants.
-- Les images intimes partagées sans autorisation, les montages sexuels non consentis, la divulgation de données privées, la surveillance ou les menaces de diffusion.
+- **L’exploitation ou les abus sexuels sur mineurs et les contenus correspondants (CSAM)**, la sollicitation sexuelle d’un mineur, le grooming ou le chantage sexuel. Cela inclut les représentations générées ou manipulées artificiellement et les liens qui facilitent ces actes.
+- **La traite des êtres humains ou la traite à des fins d’exploitation sexuelle**, ainsi que toute organisation, promotion ou facilitation de ces activités.
+- L’exploitation sexuelle, la prostitution, l’escorting, les relations sexuelles rémunérées et la vente ou la promotion de contenus ou de prestations sexuels.
+- **Les contenus de profil sexuellement explicites**, les contenus pornographiques, les images de nudité ou d’actes sexuels. L’interdiction s’applique aussi aux messages et aux liens partagés, même entre adultes consentants.
+- **Les violences sexuelles**, notamment les agressions sexuelles, les actes sexuels imposés, la coercition sexuelle et les menaces de violence sexuelle.
+- **Les contenus non consentis**, notamment les images intimes partagées sans autorisation, les montages sexuels non consentis, les profils créés sans le consentement de la personne représentée, la divulgation de données privées, la surveillance ou les menaces de diffusion.
 - Le harcèlement, les menaces, les violences, l’incitation à la haine, les discriminations ou l’intimidation.
-- Les escroqueries sentimentales, demandes frauduleuses d’argent, hameçonnage, usurpations d’identité, profils trompeurs ou faux justificatifs.
-- Le spam, les sollicitations commerciales non autorisées, les contenus portant atteinte aux droits d’autrui, les logiciels malveillants et les activités illégales.
+- **L’usurpation d’identité**, notamment le fait de se faire passer pour une autre personne, d’utiliser son identité ou ses images pour tromper les utilisateurs, de créer des profils trompeurs ou de fournir de faux justificatifs.
+- **Les escroqueries et les activités frauduleuses visant à tromper ou à spolier les utilisateurs du service**, notamment les escroqueries sentimentales, les demandes frauduleuses d’argent et l’hameçonnage.
+- **Les actes illégaux**, notamment l’utilisation du service pour commettre, organiser, encourager ou faciliter une infraction.
+- Le spam, les sollicitations commerciales non autorisées, les contenus portant atteinte aux droits d’autrui et les logiciels malveillants.
 - La collecte automatisée de profils ou de données sans autorisation, l’accès aux comptes d’autrui, le contournement des protections, d’un blocage ou d’une suspension et l’utilisation abusive d’outils automatisés.
 
 ## 3. Consentement et respect des personnes

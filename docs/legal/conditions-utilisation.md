@@ -1,11 +1,13 @@
 # Conditions générales d’utilisation de Histae
 
 **Version publiée :** En cours de validation.\
-**Date du document :** 4 novembre 2026.\
+**Date du document :** 7 novembre 2026.\
 **Éditeur du service :** Histae.\
 **Identité juridique et adresse de l’éditeur :** En cours de validation.
 
 ## 1. Objet et accès au service
+
+Histae est strictement réservé aux personnes âgées de 18 ans ou plus. Histae n’autorise aucune personne de moins de 18 ans à s’inscrire, créer un profil ou utiliser le service. Il est interdit de falsifier son âge, de créer un compte pour un mineur ou de lui permettre d’utiliser son compte.
 
 Histae est un service de rencontre destiné aux personnes majeures. Il permet de créer un profil, de définir des préférences de découverte, d’examiner des profils compatibles, de choisir de les apprécier ou de les passer, puis d’échanger lorsqu’un choix réciproque crée un match. La disponibilité territoriale et les fonctionnalités effectivement ouvertes sont indiquées dans l’application au moment de l’utilisation.
 
@@ -23,7 +25,16 @@ Les utilisateurs peuvent bloquer ou signaler une autre personne. Un blocage inte
 
 ## 3. Contenus et comportement
 
-L’utilisateur reste responsable des textes, photos et messages qu’il publie ou envoie. Il doit respecter les autres personnes et leurs choix. Sont notamment interdits : l’usurpation d’identité, le harcèlement, les menaces, les contenus illicites, l’exposition non consentie de données personnelles d’autrui, les sollicitations frauduleuses et l’utilisation automatisée abusive du service.
+L’utilisateur reste responsable des textes, photos et messages qu’il publie ou envoie. Il doit respecter les autres personnes et leurs choix. Les interdictions suivantes s’appliquent aux profils, aux photos, aux messages, aux liens et à tout autre usage du service. Il est interdit de publier, transmettre, demander, promouvoir ou faciliter :
+
+- **Les contenus de profil sexuellement explicites**, notamment les textes ou images pornographiques, la nudité et les représentations d’actes sexuels ; ces contenus sont également interdits dans les messages et les liens partagés, même entre adultes consentants.
+- **L’exploitation ou les abus sexuels sur mineurs et les contenus correspondants (CSAM)**, y compris les représentations générées ou manipulées artificiellement, les liens vers ces contenus, la sollicitation sexuelle d’un mineur et le grooming.
+- **Les violences sexuelles**, notamment les agressions sexuelles, les actes sexuels imposés, la coercition sexuelle et les menaces de violence sexuelle.
+- **Les contenus non consentis**, notamment les images intimes diffusées sans autorisation, les montages sexuels non consentis, les profils créés sans le consentement de la personne représentée et l’exposition non consentie de données personnelles d’autrui.
+- **La traite des êtres humains ou la traite à des fins d’exploitation sexuelle**, ainsi que toute organisation, promotion ou facilitation de ces activités.
+- **Les escroqueries et les activités frauduleuses visant à tromper ou à spolier les utilisateurs du service**, notamment les escroqueries sentimentales, les demandes frauduleuses d’argent et l’hameçonnage.
+- **L’usurpation d’identité**, notamment le fait de se faire passer pour une autre personne ou d’utiliser son identité ou ses images pour tromper les utilisateurs.
+- **Les actes illégaux**, leur organisation, leur incitation ou leur facilitation, ainsi que les contenus illicites, le harcèlement, les menaces et l’utilisation automatisée abusive du service.
 
 L’utilisateur conserve ses droits sur ses contenus. Il autorise Histae à les héberger, traiter et afficher uniquement dans la mesure nécessaire au fonctionnement du service, à sa sécurité et à sa modération, pendant la durée où ces contenus sont conservés selon la Politique de confidentialité. Cette autorisation n’emporte pas transfert de propriété.
 

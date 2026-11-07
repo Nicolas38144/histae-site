@@ -1,7 +1,7 @@
 # Histae Acceptable Use Policy
 
 **Published version:** Validation in progress.\
-**Document date:** 4 November 2026.\
+**Document date:** 7 November 2026.\
 **Service publisher:** Histae.\
 **Publisher's legal identity:** Validation in progress.\
 **Contact:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
@@ -16,13 +16,17 @@ Registration uses a French phone number and a one-time SMS code. Verifying the c
 
 You must not publish, transmit, request, promote or facilitate:
 
-- Child sexual abuse or exploitation, related material (CSAM), sexual solicitation of a minor, grooming or sexual extortion. This includes artificially generated or manipulated depictions and links facilitating these acts.
-- Human trafficking, sexual exploitation, prostitution, escort services, paid sexual encounters and the sale or promotion of sexual content or services.
-- Pornographic content, images of nudity or sexual acts, including those involving consenting adults.
-- Intimate images shared without permission, non-consensual sexual manipulations, disclosure of private data, stalking or threats to distribute such material.
+- **Child sexual exploitation or abuse and child sexual abuse material (CSAM)**, sexual solicitation of a minor, grooming or sexual extortion. This includes artificially generated or manipulated depictions and links facilitating these acts.
+- **Human or sex trafficking**, including organising, promoting or facilitating these activities.
+- Sexual exploitation, prostitution, escort services, paid sexual encounters and the sale or promotion of sexual content or services.
+- **Sexually explicit profile content**, pornographic content, images of nudity or sexual acts. This prohibition also applies to messages and shared links, even between consenting adults.
+- **Sexual violence**, including sexual assault, forced sexual acts, sexual coercion and threats of sexual violence.
+- **Non-consensual content**, including intimate images shared without permission, non-consensual sexual manipulations, profiles created without the depicted person's consent, disclosure of private data, stalking or threats to distribute such material.
 - Harassment, threats, violence, incitement to hatred, discrimination or intimidation.
-- Romance scams, fraudulent requests for money, phishing, impersonation, deceptive profiles or falsified documents.
-- Spam, unauthorised commercial solicitation, content infringing others' rights, malware and unlawful activities.
+- **Impersonation**, including pretending to be another person, using their identity or images to deceive users, creating deceptive profiles or providing falsified documents.
+- **Scams or fraudulent activity intended to defraud end-users of the platform**, including romance scams, fraudulent requests for money and phishing.
+- **Illegal acts**, including using the service to commit, organise, encourage or facilitate an offence.
+- Spam, unauthorised commercial solicitation, content infringing others' rights and malware.
 - Unauthorised automated collection of profiles or data, access to other people's accounts, circumvention of safeguards, blocks or suspensions, and abusive use of automated tools.
 
 ## 3. Consent and respect for others
