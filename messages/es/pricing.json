@@ -33,17 +33,9 @@
     "billing": {
       "freePeriod": "gratis",
       "noSubscription": "No requiere suscripción",
-      "monthlyPeriod": "al mes",
-      "annualPeriod": "al año",
       "monthlyBilling": "Facturación mensual desde el inicio de la suscripción",
       "annualBilling": "Un único pago para 12 meses",
-      "monthlyEquivalent": "Equivale a {price} al mes, con pago anual",
-      "annualSaving": "Ahorras {amount} al año frente al pago mensual",
-      "annualBadge": "Ahorra un {percent} % al año",
-      "priceOnCheckout": "Ver precio",
-      "pricesLoading": "Se están cargando los precios del sitio. También puedes consultarlos antes de pagar.",
-      "pricesUnavailable": "Ahora no se pueden mostrar los precios aquí. Sigue el enlace de cada opción para verlos antes de pagar.",
-      "pricesLive": "Precios del sitio, obtenidos del catálogo de pago. Los de App Store y Google Play se muestran en la app."
+      "priceInApp": "Precio en la app"
     },
     "howItWorks": {
       "eyebrow": "El mismo principio en todos los planes",
@@ -96,15 +88,15 @@
     "questions": {
       "payment": {
         "title": "¿Cuándo se realiza el primer pago?",
-        "text": "El primer pago se realiza al suscribirte. La opción mensual se renueva cada mes; la anual, cada año. El importe exacto aparece en las ofertas de arriba y en la página de pago antes de confirmar. Los precios dentro de la app son los de su tienda."
+        "text": "El primer pago se realiza al suscribirse en la aplicación mediante App Store o Google Play. El plan mensual se renueva cada mes y el anual cada año. La tienda muestra el importe y las condiciones antes de confirmar."
       },
       "annual": {
         "title": "¿La suscripción anual se paga cada mes?",
-        "text": "No, los doce meses se pagan de una vez. Si las ofertas de arriba muestran un equivalente mensual o un ahorro, sirve para comparar los precios del sitio; no es un pago mensual."
+        "text": "No, los doce meses se pagan de una vez. App Store o Google Play muestra el precio del plan anual antes de confirmar en la aplicación."
       },
       "renewal": {
         "title": "¿Puedo detener la renovación?",
-        "text": "Puedes cancelar la renovación desde la gestión de tu suscripción. El acceso Premium sigue siendo válido hasta el final del período en curso."
+        "text": "Puedes cancelar la renovación en los ajustes de suscripciones de App Store o Google Play con la cuenta utilizada para la compra. El acceso Premium sigue vigente hasta el final del período actual."
       },
       "mixed": {
         "title": "¿Y si solo una persona tiene Premium?",
@@ -112,6 +104,8 @@
       }
     },
     "launchCta": "Consultar la disponibilidad de la aplicación",
-    "faqCta": "Todas las preguntas frecuentes"
+    "faqCta": "Todas las preguntas frecuentes",
+    "appCta": "Encuentra Histae en la aplicación",
+    "storePrices": "Las suscripciones se contratan únicamente en la aplicación, mediante App Store o Google Play. La tienda muestra el precio y las condiciones aplicables antes de confirmar."
   }
 }

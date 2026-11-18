@@ -1,52 +1,36 @@
 import { test, expect } from "@playwright/test";
-import { annualComparison } from "../lib/pricing-offers";
-import type { WebOffer } from "../lib/billing/models";
 
-const offers = [
-  { plan_code: "premium", billing_period: "monthly", price_cents: 750, currency: "EUR", display_name: "Premium" },
-  { plan_code: "premium", billing_period: "annual", price_cents: 7200, currency: "EUR", display_name: "Premium" },
-];
-
-test("annual comparisons never promise a saving for a more expensive or different-currency offer", () => {
-  expect(annualComparison(offers as WebOffer[])).toEqual({ monthlyEquivalent: 600, saving: 1800, percent: 20 });
-  expect(annualComparison([offers[0], { ...offers[1], currency: "USD" }] as WebOffer[])).toBeNull();
-  expect(annualComparison([offers[0]] as WebOffer[])).toBeNull();
-  expect(annualComparison([offers[0], { ...offers[1], price_cents: 10000 }] as WebOffer[])?.saving).toBe(0);
-});
-
-for (const locale of ["fr", "en", "es", "it"]) {
-  test(`${locale}: public prices use current offers, without a session or payment request`, async ({ page }) => {
+for (const [locale, account, price] of [
+  ["fr", "Mon compte", "Prix dans l’app"],
+  ["en", "My account", "Price in the app"],
+  ["es", "Mi cuenta", "Precio en la app"],
+  ["it", "Il mio account", "Prezzo nell’app"],
+]) {
+  test(`${locale}: public plans guide visitors to the app without contacting an API`, async ({ page }) => {
     const requests: string[] = [];
-    await page.route("**/api/web/billing/**", route => {
-      requests.push(route.request().url().split("/api/web/billing/")[1]);
-      return route.fulfill({ json: { offers } });
+    await page.route("**/api/**", route => {
+      requests.push(route.request().url());
+      return route.abort();
     });
     await page.goto(`/${locale}/pricing/`);
     const cards = page.locator(".pricing-card");
-    await expect(cards.nth(1).locator(".plan-price strong")).toContainText(/7[,.]50/);
-    await expect(cards.nth(2).locator(".plan-price strong")).toContainText(/72/);
-    await expect(cards.nth(2).locator(".plan-saving")).toContainText(/18/);
-    expect(requests).toEqual(["plans"]);
-    await expect(cards.nth(2).getByRole("link")).toHaveAttribute("href", `/${locale}/billing/subscribe/?period=annual`);
+    await expect(cards).toHaveCount(3);
+    for (const card of [cards.nth(1), cards.nth(2)]) {
+      await expect(card.locator(".plan-price strong")).toHaveText(price);
+    }
+    for (const card of await cards.all()) {
+      await expect(card.getByRole("link")).toHaveAttribute("href", `/${locale}/download/`);
+    }
+    await expect(page.locator("#site-navigation").getByRole("link", { name: account, exact: true }))
+      .toHaveAttribute("href", `/${locale}/account/data/`);
+    await expect(page.locator('a[href*="/billing/"]')).toHaveCount(0);
+    expect(requests).toEqual([]);
     await page.setViewportSize({ width: 375, height: 812 });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
   });
 }
 
-test("an unavailable or ambiguous catalogue never falls back to stale Premium prices", async ({ page }) => {
-  for (const response of [{ status: 503, body: "{}" }, { json: { offers: [offers[0], offers[0]] } }]) {
-    await page.route("**/api/web/billing/plans", route => route.fulfill(response));
-    await page.goto("/fr/pricing/");
-    await expect(page.locator(".pricing-source")).toContainText("ne sont pas disponibles");
-    await expect(page.locator(".pricing-card").nth(1).locator(".plan-price")).toHaveText("Voir le prix");
-    await expect(page.locator(".plan-saving")).toHaveCount(0);
-    await expect(page.locator(".pricing-card").nth(2).getByRole("link")).toBeVisible();
-    await page.unroute("**/api/web/billing/plans");
-  }
-});
-
 test("mobile reading, screenshots, skip link and language dialog work with a keyboard", async ({ page }) => {
-  await page.route("**/api/web/billing/plans", route => route.fulfill({ json: { offers } }));
   await page.setViewportSize({ width: 375, height: 812 });
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/fr/");

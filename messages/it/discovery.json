@@ -59,11 +59,6 @@
     "restore": "Ripristina acquisti cerca un abbonamento già acquistato nello store. Non effettua un nuovo acquisto.",
     "helpNote": "Hai un dubbio? La ricevuta indica il venditore. Eliminare l’app non annulla l’abbonamento.",
     "channels": {
-      "stripe": {
-        "label": "Sul sito",
-        "text": "Accedi a Il mio abbonamento su questo sito, poi apri la gestione Stripe per consultare le fatture o annullare il rinnovo. Gli acquisti sul sito non si ripristinano con il pulsante degli store: accedi di nuovo al tuo account Histae.",
-        "action": "Apri il mio abbonamento"
-      },
       "google": {
         "label": "Su Android",
         "text": "Apri Google Play con l’account usato per l’acquisto, poi Pagamenti e abbonamenti → Abbonamenti → Histae per gestire il rinnovo. Dopo una reinstallazione, usa Ripristina acquisti in Histae con gli stessi account Google e Histae.",

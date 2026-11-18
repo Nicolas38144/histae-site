@@ -1,4 +1,3 @@
-import { subscriptionHref } from "../lib/billing/navigation";
 import Link from "next/link";
 import { SubscriptionHelp } from "./subscription-help";
 import { getTranslations } from "next-intl/server";
@@ -75,18 +74,8 @@ export async function PricingPage({ locale }: { locale: Locale }) {
           ))}
         </div>
       </section>
-      <SubscriptionHelp locale={locale} copy={getMessagesForLocale(locale).discovery} />
-      <section className="shell pricing-checkout-closing" aria-labelledby="subscription-title">
-        <div className="pricing-checkout-panel">
-          <div className="pricing-checkout-copy">
-            <h2 id="subscription-title">{t("billingCheckout.closingTitle")}</h2>
-            <p>{t("billingCheckout.closingIntro")}</p>
-          </div>
-          <div className="pricing-checkout-action">
-            <Link className="button button-primary" href={subscriptionHref(locale)}>{t("billingCheckout.open")}</Link>
-            <p>{t("billingCheckout.storePrice")}</p>
-          </div>
-        </div>
+      <SubscriptionHelp copy={getMessagesForLocale(locale).discovery} />
+      <section className="shell pricing-closing">
         <div className="pricing-help-links">
           <Link className="text-link" href={localizedHref(locale, "download")}>{t("pricing.launchCta")}<span aria-hidden="true"> →</span></Link>
           <Link className="text-link" href={localizedHref(locale, "faq")}>{t("pricing.faqCta")}<span aria-hidden="true"> →</span></Link>

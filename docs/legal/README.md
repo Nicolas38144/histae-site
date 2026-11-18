@@ -22,8 +22,8 @@ source filenames. `config/site.json` maps documents to stable public route ident
 | `protocole-forces-ordre.md` | `law-enforcement-policy/` | No separate API variable |
 
 Each of the four API prefixes has `_VERSION` and `_URL` settings. Do not rename sources or public routes as part
-of a documentation cleanup. The footer and language selector link to rendered HTML pages. Caddy
-permanently redirects legacy French route names while retaining the locale and query string.
+of a documentation cleanup. The footer and language selector link to rendered HTML pages.
+Retired French route aliases return 404.
 
 The public support and privacy contact is [support.histae@gmail.com](mailto:support.histae@gmail.com).
 The footer and subscription help use `supportEmail` in `config/site.json`; keep the contact links
@@ -39,37 +39,23 @@ Use Histae as the service/publisher name; keep the publisher/controller's legal 
 separately marked as pending until the owner supplies them. Do not replace approval, version,
 retention or contractual placeholders with the brand name.
 
-## Stripe compliance review
+## Public policies
 
-Stripe's request asks for three public policies, not three links to interchangeable privacy texts:
+All six legal documents appear in the footer in French, English, Spanish and Italian. The
+acceptable-use and law-enforcement policies remain part of the service rules, including the
+18+ restriction, prohibited content, reports, moderation, appeals and official requests.
+Their publication does not change API consent versions or establish legal approval.
 
-| Requested document | French public URL |
-| --- | --- |
-| Terms of use | `https://www.histae.com/fr/legal/terms-of-use/` |
-| Acceptable use policy | `https://www.histae.com/fr/legal/acceptable-use-policy/` |
-| Law enforcement protocols | `https://www.histae.com/fr/legal/law-enforcement-policy/` |
+Run `pnpm exec playwright test tests/legal-policies.spec.ts` to check all six public documents,
+localized navigation, cross-links and pending-review notices without signing in or JavaScript.
+The publisher/controller identity, version approval and final mobile subscription terms still
+require completion. An operational owner must validate request authentication, secure
+transmission, preservation and logging procedures before representing them as operational.
 
-All six legal documents appear in the footer. The same routes exist under `en`, `es` and `it`.
-Run `pnpm exec playwright test tests/legal-policies.spec.ts` to check the three requested public
-pages, localized navigation, cross-links and pending-review notices in all four languages.
-The new policies cover prohibited conduct and content, reports, moderation/appeals, verification
-of official requests, legal bases, targeted preservation, emergencies and child protection.
-The terms and privacy policy link to the relevant policies. Their publication does not change API
-acceptance versions, build new moderation or preservation tooling, or establish Stripe approval.
-
-On 4 November 2026, the live terms returned HTTP 200 but retained unresolved publisher and
-commercial clauses; the two new policy URLs returned HTTP 404. Deploy the updated site before
-providing the new links, then verify all three URLs without authentication. `noindex` does not
-prevent direct public access. The publisher/controller identity, version approval, final renewal,
-cancellation, refund, withdrawal and consumer-mediation terms still require completion/review.
-The law-enforcement policy also requires an operational owner to validate request authentication,
-secure transmission, preservation and logging procedures before representing them as operational.
-
-Stripe treats online dating as a restricted business requiring additional review; public policies
-alone do not guarantee approval. Do not select an attestation in Stripe on the owner's behalf.
-See [Stripe restricted businesses](https://stripe.com/legal/restricted-businesses),
-[CNIL on legally required disclosures](https://www.cnil.fr/fr/les-bases-legales/obligation-legale)
-and [distance-selling disclosures](https://entreprendre.service-public.gouv.fr/vosdroits/F23455).
+The website supports account/data management only. Purchases and subscription management take
+place through the mobile app and its Apple/Google store. The privacy policy describes the
+remaining account-authentication cookie; no payment retry storage remains in the website.
+See the [account guide](../account.md) for its API contract and deployment requirements.
 
 ## Finalization checks
 
@@ -97,8 +83,8 @@ maintenance implementation and actual provider configuration. These are inputs f
 proof of legal compliance.
 
 Keep translations aligned when changing continuation decisions, per-participant credit use,
-rewarded advertising, retention or payments. Mobile purchases use Apple/Google; the website uses
-Stripe and UUID/phone/SMS authentication. Documentation edits do not change published API consent
+rewarded advertising, retention or payments. Mobile purchases use Apple/Google; website account
+management uses UUID/phone/SMS authentication. Documentation edits do not change published API consent
 versions, advertising settings or legal approval references.
 
 ## Existing drafting references

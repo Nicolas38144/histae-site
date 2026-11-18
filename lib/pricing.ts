@@ -13,8 +13,6 @@ export type PricingCardModel = {
   price: string;
   period: string;
   billing: string;
-  equivalent?: string;
-  saving?: string;
   badge?: string;
   features: { id: PlanFeatureId; label: string }[];
 };
@@ -57,7 +55,7 @@ export function getPricingCards(
       id: "monthly",
       ...pricing.plans.monthly,
       featured: false,
-      price: t("billing.priceOnCheckout"),
+      price: t("billing.priceInApp"),
       period: "",
       billing: t("billing.monthlyBilling"),
       features: features("premium"),
@@ -66,7 +64,7 @@ export function getPricingCards(
       id: "annual",
       ...pricing.plans.annual,
       featured: planCatalog.premium.featured,
-      price: t("billing.priceOnCheckout"),
+      price: t("billing.priceInApp"),
       period: "",
       billing: t("billing.annualBilling"),
       features: features("premium"),

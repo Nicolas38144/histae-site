@@ -1,5 +1,4 @@
-import { billingRequest } from "./billing/client";
-import { BillingFailure, object } from "./billing/failure";
+import { webRequest, WebFailure, object } from "./web-client";
 import type { Locale } from "./site-config";
 
 export type DataCategory = "photo" | "location" | "sensitive_profile";
@@ -12,32 +11,32 @@ export function validAccountIdentity(user: string, phone: string): boolean {
 export function parseAccountSession(value: unknown): AccountSession {
   const data = object(value);
   if (typeof data.user_id !== "string" || !uuid.test(data.user_id) || typeof data.onboarding_complete !== "boolean") {
-    throw new BillingFailure("invalid_response");
+    throw new WebFailure("invalid_response");
   }
   return { user_id: data.user_id, onboarding_complete: data.onboarding_complete };
 }
 export function parseChallenge(value: unknown): string {
   const id = object(value).challenge_id;
-  if (typeof id !== "string" || !uuid.test(id)) throw new BillingFailure("invalid_response");
+  if (typeof id !== "string" || !uuid.test(id)) throw new WebFailure("invalid_response");
   return id;
 }
 export function parseDeletionToken(value: unknown): string {
   const token = object(value).confirmation_token;
   if (typeof token !== "string" || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}:[A-Za-z0-9_-]{43}$/.test(token)) {
-    throw new BillingFailure("invalid_response");
+    throw new WebFailure("invalid_response");
   }
   return token;
 }
 export function parseErasureReceipt(value: unknown): string {
   const data = object(value);
   if (data.status !== "in_progress" || typeof data.request_id !== "string" || !uuid.test(data.request_id)) {
-    throw new BillingFailure("invalid_response");
+    throw new WebFailure("invalid_response");
   }
   return data.request_id;
 }
 export function accountRequest(path: string, locale: Locale, options: RequestInit = {}) {
-  return billingRequest(path, locale, options, "account");
+  return webRequest("account", path, locale, options);
 }
 export function privacyRequest(path: string, locale: Locale, options: RequestInit = {}) {
-  return billingRequest(path, locale, options, "privacy");
+  return webRequest("privacy", path, locale, options);
 }

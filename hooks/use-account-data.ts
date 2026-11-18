@@ -5,8 +5,7 @@ import {
   parseDeletionToken, parseErasureReceipt, validAccountIdentity,
   type AccountSession, type DataCategory,
 } from "../lib/account-data";
-import { BillingFailure } from "../lib/billing/failure";
-import { clearCheckoutKey } from "../lib/billing/checkout-storage";
+import { WebFailure } from "../lib/web-client";
 import type { Locale } from "../lib/site-config";
 
 export function useAccountData(locale: Locale) {
@@ -32,7 +31,7 @@ export function useAccountData(locale: Locale) {
     accountRequest("session", locale, { signal: controller.signal })
       .then(value => { if (!controller.signal.aborted) setSession(parseAccountSession(value)); })
       .catch((error: unknown) => {
-        if (!controller.signal.aborted && (!(error instanceof BillingFailure) || error.status !== 401)) setFailure(error);
+        if (!controller.signal.aborted && (!(error instanceof WebFailure) || error.status !== 401)) setFailure(error);
       }).finally(() => { if (!controller.signal.aborted) setBusy(false); });
     return () => { alive.current = false; controller.abort(); pending.current?.abort(); };
   }, [locale]);
@@ -47,13 +46,13 @@ export function useAccountData(locale: Locale) {
     void action(controller.signal).catch((error: unknown) => {
       if (!alive.current || controller.signal.aborted) return;
       setFailure(error);
-      if (error instanceof BillingFailure && error.status === 401 && session) {
+      if (error instanceof WebFailure && error.status === 401 && session) {
         setSession(null); setConfirmation(null); setConfirmationText(""); resetIdentity();
       }
     }).finally(() => { running.current = false; if (alive.current) setBusy(false); });
   };
   const identify = () => {
-    if (!validAccountIdentity(userId, phone)) { setFailure(new BillingFailure("invalid_input")); return; }
+    if (!validAccountIdentity(userId, phone)) { setFailure(new WebFailure("invalid_input")); return; }
     run(async signal => {
       const input = JSON.stringify({ user_id: userId.trim().toLowerCase(), phone_number: phone });
       if (sendAttempt.current?.input !== input) sendAttempt.current = { input, key: crypto.randomUUID() };
@@ -64,7 +63,7 @@ export function useAccountData(locale: Locale) {
     });
   };
   const verify = () => {
-    if (!challenge || !/^[0-9]{6}$/.test(code)) { setFailure(new BillingFailure("invalid_input")); return; }
+    if (!challenge || !/^[0-9]{6}$/.test(code)) { setFailure(new WebFailure("invalid_input")); return; }
     run(async signal => {
       try {
         await accountRequest("otp/verify", locale, {
@@ -72,7 +71,7 @@ export function useAccountData(locale: Locale) {
         });
       } catch (error) {
         // A lost verification response may already have installed the cookie.
-        if (!(error instanceof BillingFailure) || error.code !== "network_error") throw error;
+        if (!(error instanceof WebFailure) || error.code !== "network_error") throw error;
       }
       const current = parseAccountSession(await accountRequest("session", locale, { signal }));
       if (alive.current) { setSession(current); resetIdentity(); }
@@ -93,14 +92,13 @@ export function useAccountData(locale: Locale) {
         try {
           value = await privacyRequest("account", locale, { method: "DELETE", signal, body: JSON.stringify({ confirmation_token: token }) });
         } catch (error) {
-          if (error instanceof BillingFailure && error.code === "network_error") {
+          if (error instanceof WebFailure && error.code === "network_error") {
             if (alive.current) { setSession(null); resetIdentity(); setConfirmation(null); setConfirmationText(""); }
-            throw new BillingFailure("deletion_unconfirmed");
+            throw new WebFailure("deletion_unconfirmed");
           }
           throw error;
         }
         const id = parseErasureReceipt(value);
-        clearCheckoutKey();
         if (alive.current) { setReceipt(id); setSession(null); resetIdentity(); }
       } else {
         await privacyRequest("data", locale, { method: "DELETE", signal, body: JSON.stringify({ category }) });
@@ -111,7 +109,6 @@ export function useAccountData(locale: Locale) {
   };
   const signOut = () => run(async signal => {
     await accountRequest("session", locale, { method: "DELETE", signal });
-    clearCheckoutKey();
     if (alive.current) { setSession(null); resetIdentity(); setConfirmation(null); setConfirmationText(""); }
   });
   const back = () => { if (!busy) { setChallenge(null); setCode(""); setFailure(null); sendAttempt.current = null; } };

@@ -2,13 +2,13 @@
 
 import { useState } from 'react';
 import type { AppMessages } from '../messages';
-import { supportEmail, type Locale } from '../lib/site-config';
-import { subscriptionChannels, subscriptionManagementHref, type SubscriptionChannel } from '../lib/billing/subscription-channels';
+import { supportEmail } from '../lib/site-config';
+import { subscriptionChannels, subscriptionManagementHref, type SubscriptionChannel } from '../lib/store-subscriptions';
 
 type Copy = Pick<AppMessages['discovery'], 'helpTitle' | 'helpIntro' | 'channels' | 'restore' | 'helpNote'>;
 
-export function SubscriptionHelp({ copy, locale }: { copy: Copy; locale: Locale }) {
-  const [channel, setChannel] = useState<SubscriptionChannel>('stripe');
+export function SubscriptionHelp({ copy }: { copy: Copy }) {
+  const [channel, setChannel] = useState<SubscriptionChannel>('google');
   const selected = copy.channels[channel];
 
   return (
@@ -25,7 +25,7 @@ export function SubscriptionHelp({ copy, locale }: { copy: Copy; locale: Locale 
       <div id="provider-help" className="provider-help">
         <h3>{selected.label}</h3>
         <p>{selected.text}</p>
-        <a className="button button-primary" href={subscriptionManagementHref(channel, locale)}>{selected.action}</a>
+        <a className="button button-primary" href={subscriptionManagementHref(channel)}>{selected.action}</a>
       </div>
       <p>{copy.restore}</p>
       <p className="demo-notice">{copy.helpNote}</p>

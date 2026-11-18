@@ -1,7 +1,7 @@
 # Condizioni generali d’uso di Histae
 
 **Versione pubblicata:** In corso di validazione.\
-**Data del documento:** 7 novembre 2026.\
+**Data del documento:** 18 novembre 2026.\
 **Editore del servizio:** Histae.\
 **Identità giuridica e indirizzo dell’editore:** In corso di validazione.
 
@@ -42,7 +42,7 @@ Le biografie e le risposte del profilo vengono analizzate tramite regole contro 
 
 ## 4. Piani e pagamenti
 
-Il piano Free consente di creare un profilo, formare un match e iniziare a conversare. Premium è offerto in piani mensili e annuali, senza una nuova prova gratuita. Prezzi e condizioni del canale scelto vengono mostrati prima della conferma: catalogo di pagamento del sito per Stripe e prezzi dello store per gli acquisti Apple o Google. Gli importi possono variare per canale e valuta; i prezzi di un altro canale non sostituiscono quelli dell’ordine.
+Il piano Free consente di creare un profilo, formare un match e iniziare a conversare. Premium è disponibile con piani mensile e annuale, senza un nuovo periodo di prova gratuito. Gli acquisti avvengono soltanto nell’app tramite App Store o Google Play. Lo store scelto mostra prezzi, valuta e condizioni applicabili prima della conferma. Non è possibile acquistare o rinnovare abbonamenti sul sito.
 
 **In corso di validazione.** Le condizioni contrattuali definitive di rinnovo, disdetta, rimborso, recesso ed eventuali eccezioni, insieme alle informazioni sulla mediazione per i consumatori, restano da finalizzare. Devono corrispondere al percorso di pagamento effettivamente implementato e preservare i diritti inderogabili applicabili.
 
@@ -62,11 +62,11 @@ Per qualsiasi domanda su queste condizioni: [support.histae@gmail.com](mailto:su
 
 Free riceve 2 crediti gratuiti ogni lunedì alle 00:00 UTC, senza accumulo. Ogni partecipante Free riserva il proprio credito quando accetta di continuare; solo ai partecipanti Free viene addebitato un credito dopo entrambi gli accordi. Un partecipante Premium non consuma crediti. Un rifiuto o una scadenza libera le riserve; un credito già consumato per una continuazione confermata non viene restituito alla sua chiusura. Un video facoltativo convalidato può assegnare 1 credito pubblicitario, fino a un saldo di 3 compresi quelli riservati. I crediti pubblicitari scadono ogni lunedì alle 00:00 UTC; un accordo basato su un credito pubblicitario scaduto deve essere rinnovato prima di un addebito sostitutivo. I crediti sono interni, non trasferibili e senza valore monetario. Free consente al massimo 5 continuazioni confermate per persona e settimana UTC. Premium elimina questo limite e le pubblicità; l’accordo reciproco rimane necessario.
 
-## Aggiornamento funzionale del 22 ottobre 2026 — acquisti da convalidare
+## Acquisti e gestione degli abbonamenti nell’app
 
-Gli acquisti nell’app Android utilizzano Google Play; quelli iOS, App Store; quelli sul sito, Stripe. L’accesso Premium appartiene all’account Histae e si può usare sui suoi dispositivi dopo la verifica del fornitore. Il canale scelto mostra prezzo e condizioni applicabili prima della conferma; non è previsto alcun nuovo periodo di prova gratuito. L’accesso al pagamento sul sito utilizza l’UUID dell’account esistente, il suo telefono e un codice SMS, senza creare un altro account. L’abbonamento si gestisce presso il fornitore originale. Eliminare l’account Histae non annulla automaticamente un abbonamento Apple o Google: va gestito nello store. Il ripristino non trasferisce un acquisto a un altro account Histae.
+Gli acquisti nell’app Android passano da Google Play; quelli nell’app iOS dall’App Store. L’accesso Premium è legato all’account Histae e può essere utilizzato sui suoi dispositivi dopo la verifica del fornitore. Lo store scelto mostra prezzi e condizioni applicabili prima della conferma; non è previsto un nuovo periodo di prova gratuito. L’abbonamento si gestisce presso lo store di origine. Eliminare l’account Histae non annulla automaticamente un abbonamento Apple o Google: deve essere gestito nello store. Il ripristino non trasferisce un acquisto a un altro account Histae.
 
-Questa descrizione tecnica non sostituisce le condizioni contrattuali definitive di rinnovo, annullamento, rimborso o recesso. Restano necessarie le informazioni mancanti e la revisione legale prima dell’attivazione commerciale.
+Questa descrizione tecnica non sostituisce le condizioni contrattuali definitive di rinnovo, disdetta, rimborso e recesso. Le informazioni mancanti e la verifica giuridica indicate sopra restano necessarie prima dell’attivazione commerciale.
 
 ## Cosa succede alle conversazioni inattive?
 

@@ -2,14 +2,13 @@
 import { useEffect, useRef } from "react";
 import type { AppMessages } from "../messages";
 import { type Locale, supportEmail } from "../lib/site-config";
-import { BillingFailure } from "../lib/billing/failure";
-import { subscriptionHref } from "../lib/billing/navigation";
+import { WebFailure } from "../lib/web-client";
 import { useAccountData } from "../hooks/use-account-data";
 
 type Copy = AppMessages["accountData"];
-type AuthCopy = AppMessages["billingCheckout"];
+type AuthCopy = Copy["auth"];
 function failureMessage(error: unknown, copy: Copy, auth: AuthCopy): string {
-  if (!(error instanceof BillingFailure)) return auth.error;
+  if (!(error instanceof WebFailure)) return auth.error;
   if (error.code === "deletion_unconfirmed") return copy.unconfirmed;
   if (error.code === "invalid_input") return auth.invalid;
   if (error.status === 401) return auth.auth;
@@ -19,7 +18,8 @@ function failureMessage(error: unknown, copy: Copy, auth: AuthCopy): string {
   return auth.error;
 }
 
-export function AccountDataPage({ locale, copy, auth }: { locale: Locale; copy: Copy; auth: AuthCopy }) {
+export function AccountDataPage({ locale, copy }: { locale: Locale; copy: Copy }) {
+  const auth = copy.auth;
   const data = useAccountData(locale);
   const confirmationInput = useRef<HTMLInputElement>(null);
   const statusRef = useRef<HTMLDivElement>(null);
@@ -53,7 +53,7 @@ export function AccountDataPage({ locale, copy, auth }: { locale: Locale; copy: 
         </section>}
       </div>
 
-      {!data.receipt && <section id="data-login" className="account-panel billing-checkout" aria-labelledby="data-login-title">
+      {!data.receipt && <section id="data-login" className="account-panel account-form" aria-labelledby="data-login-title">
         <h2 id="data-login-title">{copy.authTitle}</h2>
         {data.session ? <>
           <p>{copy.connected} <span className="account-reference">{data.session.user_id}</span></p>
@@ -86,7 +86,6 @@ export function AccountDataPage({ locale, copy, auth }: { locale: Locale; copy: 
       <section id="delete-account" className="account-panel account-delete" aria-labelledby="delete-account-title">
         <h2 id="delete-account-title">{copy.deleteTitle}</h2><p>{copy.deleteBody}</p>
         <p className="account-note">{copy.subscriptionWarning}</p>
-        <p><a className="text-link" href={subscriptionHref(locale)}>{copy.subscriptionLink}</a></p>
         {!data.receipt && (data.session ? <button className="button button-danger" disabled={data.busy} onClick={() => data.ask("account")}>{copy.deleteAction}</button> : <a className="button" href="#data-login">{copy.deleteAction}</a>)}
       </section>
 
@@ -94,7 +93,7 @@ export function AccountDataPage({ locale, copy, auth }: { locale: Locale; copy: 
         <h2 id="confirmation-title">{copy.confirmTitle} — {selected?.title ?? copy.deleteTitle}</h2>
         <p>{data.confirmation === "account" ? copy.confirmAccount : copy.confirmData}</p>
         {selected && <p>{selected.body}</p>}
-        <form className="billing-checkout" onSubmit={event => { event.preventDefault(); data.confirm(); }}>
+        <form className="account-form" onSubmit={event => { event.preventDefault(); data.confirm(); }}>
           <label>{copy.confirmLabel}<input ref={confirmationInput} autoComplete="off" spellCheck={false} value={data.confirmationText} maxLength={6} disabled={data.busy} onChange={event => data.setConfirmationText(event.target.value)} /></label>
           <div className="account-button-row">
             <button className="button button-danger" disabled={data.busy || data.confirmationText !== "HISTAE"}>{copy.confirmAction}</button>

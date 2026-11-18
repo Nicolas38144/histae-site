@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { billingRequest } from "../lib/billing/client";
+import { webRequest } from "../lib/web-client";
 
 const originalFetch = globalThis.fetch;
 test.afterEach(() => { globalThis.fetch = originalFetch; });
@@ -10,10 +10,8 @@ test("bodyless website actions do not declare an empty JSON payload", async () =
     requests.push(options ?? {});
     return new Response(null, { status: 204 });
   };
-  await billingRequest("deletion-token", "fr", { method: "POST" }, "privacy");
-  await billingRequest("session", "fr", { method: "DELETE" }, "account");
-  await billingRequest("session", "fr", { method: "DELETE" });
-  await billingRequest("portal", "fr", { method: "POST" });
+  await webRequest("privacy", "deletion-token", "fr", { method: "POST" });
+  await webRequest("account", "session", "fr", { method: "DELETE" });
   for (const request of requests) {
     const headers = new Headers(request.headers);
     expect(headers.has("Content-Type")).toBe(false);
@@ -23,7 +21,7 @@ test("bodyless website actions do not declare an empty JSON payload", async () =
     expect(request.cache).toBe("no-store");
     expect(request.redirect).toBe("error");
   }
-  expect(requests).toHaveLength(4);
+  expect(requests).toHaveLength(2);
 });
 
 test("JSON mutations preserve their body, locale and caller headers", async () => {
@@ -33,9 +31,9 @@ test("JSON mutations preserve their body, locale and caller headers", async () =
     return new Response(null, { status: 204 });
   };
   const body = JSON.stringify({ category: "location" });
-  await billingRequest("data", "it", {
+  await webRequest("privacy", "data", "it", {
     method: "DELETE", body, headers: new Headers({ "X-Request-Id": "fixture" }),
-  }, "privacy");
+  });
   const headers = new Headers(request?.headers);
   expect(headers.get("Content-Type")).toBe("application/json");
   expect(headers.get("Accept-Language")).toBe("it");

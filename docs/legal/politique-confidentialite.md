@@ -1,12 +1,12 @@
 # Politique de confidentialité de Histae
 
 **Version publiée :** En cours de validation.\
-**Date du document :** 7 novembre 2026.\
+**Date du document :** 18 novembre 2026.\
 **Responsable du traitement :** Histae.\
 **Identité juridique et adresse du responsable du traitement :** En cours de validation.\
 **Contact vie privée :** [support.histae@gmail.com](mailto:support.histae@gmail.com)
 
-Cette notice décrit les traitements liés à l’application Histae, à son API et aux parcours authentifiés du site pour les abonnements et les demandes relatives aux données du compte. Les cookies et le stockage propres au site sont décrits à la section 6.
+Cette notice décrit les traitements liés à l’application Histae, à son API et au parcours authentifié du site pour la gestion des données et du compte. Les cookies propres au site sont décrits à la section 6.
 
 ## 1. Données et finalités
 
@@ -28,7 +28,7 @@ Le parcours actuel ne demande pas de consentement marketing. Toute prospection o
 
 Les autres utilisateurs voient les éléments de profil utiles à la découverte : prénom, âge déclaré calculé, sexe déclaré, traits et contenus autorisés. Les coordonnées reçues sont remplacées par un centre de zone approximatif d’environ 5 km avant leur enregistrement comme présence ; les distances publiques sont arrondies par paliers de 5 km, avec un minimum de 5 km. Cela réduit la précision sans garantir l’anonymat. La date de naissance exacte et le téléphone ne sont pas affichés aux autres utilisateurs. La photo reste privée et n’apparaît pas dans le feed ; dans un match, elle exige deux accords de révélation. Le retrait d’un accord la masque dans les nouvelles lectures ; un lien privé déjà émis peut rester utilisable au plus 60 secondes pour les nouveaux liens, ou jusqu’à suppression de l’objet. Les copies déjà reçues ne peuvent pas être effacées à distance.
 
-Les personnes habilitées à administrer et modérer Histae disposent d’accès limités et de consultations sensibles journalisées. La consultation administrative des messages exige un signalement conservé lié à la conversation et à ses deux participants ; un simple signalement de profil ne suffit pas. Les prestataires peuvent intervenir pour les SMS (Sweego), les paiements activés (Stripe, Apple App Store, Google Play), l’hébergement, la conversion technique et le stockage des photos. Cette conversion n’analyse pas automatiquement leur contenu. **En cours de validation.** L’identité, le rôle et la localisation de chaque prestataire, les accès des sous-traitants et les éventuels transferts hors de l’Espace économique européen et leurs garanties restent à finaliser.
+Les personnes habilitées à administrer et modérer Histae disposent d’accès limités et de consultations sensibles journalisées. La consultation administrative des messages exige un signalement conservé lié à la conversation et à ses deux participants ; un simple signalement de profil ne suffit pas. Les prestataires peuvent intervenir pour les SMS (Sweego), les paiements activés (Apple App Store, Google Play), l’hébergement, la conversion technique et le stockage des photos. Cette conversion n’analyse pas automatiquement leur contenu. **En cours de validation.** L’identité, le rôle et la localisation de chaque prestataire, les accès des sous-traitants et les éventuels transferts hors de l’Espace économique européen et leurs garanties restent à finaliser.
 
 ## 3. Durées de conservation
 
@@ -50,28 +50,21 @@ Histae utilise des contrôles d’accès, des limitations de tentatives et une m
 
 Une modification importante des finalités, destinataires, durées ou droits fera l’objet d’une information adaptée. La version et la date d’entrée en vigueur de la notice resteront accessibles. Les autres informations obligatoires de l’article 13 du RGPD, notamment les transferts et la source des données si elle ne vient pas de l’utilisateur, doivent être vérifiées dans la version finale.
 
-## 6. Cookies et stockage local du site
+## 6. Cookies du site
 
-Le site Histae n’utilise pas de traceurs publicitaires ni de mesure d’audience. Histae utilise uniquement les mécanismes ci-dessous pour les fonctions de connexion et de paiement que vous demandez ; ils ne servent pas à suivre votre navigation à des fins publicitaires.
+Le site Histae n’utilise pas de traceurs publicitaires ni de mesure d’audience. La gestion du compte utilise un cookie de connexion nommé `__Host-histae_billing`, contenant uniquement un identifiant de session aléatoire associé au compte côté serveur. Il est déposé après validation du code SMS et permet de réaliser les actions demandées sur les données ou le compte. Il expire après 30 minutes, ou est supprimé à la déconnexion et lors de l’acceptation de la suppression du compte.
 
-| Mécanisme et données conservées | Finalité | Dépôt et durée |
-| --- | --- | --- |
-| Cookie `__Host-histae_billing` : identifiant de session aléatoire, associé au compte côté serveur | Maintenir votre connexion aux espaces abonnement et données du compte | Déposé après validation du code SMS ; expire après 30 minutes, ou est supprimé à la déconnexion du parcours web |
-| Stockage de session de l’onglet (`sessionStorage`), entrée `histae_web_checkout` : UUID du compte, périodes de facturation demandées (mensuelle ou annuelle) et clés de requête aléatoires | Reprendre une demande de paiement dont la réponse a été perdue, en évitant les demandes en double | Enregistré lors d’une demande de paiement ; conservé pendant la session de l’onglet, sans délai d’expiration applicatif supplémentaire. Effacé à la déconnexion de l’espace abonnement ou lorsque cet espace détecte un abonnement actif |
+Ce cookie est protégé par les attributs `HttpOnly`, `Secure` et `SameSite=Strict` : il n’est pas lisible par les scripts de la page et n’est envoyé qu’en HTTPS, avec une restriction des envois depuis d’autres sites. Il ne contient ni numéro de téléphone, ni code SMS, ni jeton de connexion de l’application mobile, ni donnée bancaire. Les challenges SMS expirent au plus après dix minutes ; les sessions et challenges expirés sont supprimés par une passe de maintenance. Le choix de langue figure dans l’adresse de la page et ne nécessite pas de cookie.
 
-Le cookie de connexion est protégé par les attributs `HttpOnly`, `Secure` et `SameSite=Strict` : il n’est pas lisible par les scripts de la page et n’est envoyé qu’en HTTPS, avec une restriction des envois depuis d’autres sites. Aucun numéro de téléphone, code SMS, jeton de connexion de l’application mobile ni donnée de carte bancaire n’est conservé dans ces deux mécanismes. Le choix de langue figure dans l’adresse de la page et ne nécessite pas de cookie.
-
-Le stockage de session est normalement effacé à la fermeture de l’onglet ; une fonction de restauration du navigateur peut toutefois le rétablir. Vous pouvez supprimer ou bloquer les cookies et données du site dans les paramètres du navigateur. Cela peut interrompre la connexion ou la reprise du paiement ; les pages publiques restent consultables. Lors d’une redirection vers Stripe, les éventuels cookies du prestataire relèvent des informations qu’il fournit sur ses propres pages.
-
-Ces opérations sont strictement nécessaires aux services expressément demandés et ne nécessitent pas de consentement préalable. Tout ajout de traceurs facultatifs fera l’objet d’une information et, lorsque requis, d’un recueil du consentement avant leur utilisation.
+Vous pouvez supprimer ou bloquer les cookies et données du site dans les paramètres du navigateur. Cela peut interrompre la connexion à la gestion du compte ; les pages publiques restent consultables. Ce cookie est strictement nécessaire au service expressément demandé et ne nécessite pas de consentement préalable. Tout ajout de traceurs facultatifs fera l’objet d’une information et, lorsque requis, d’un recueil du consentement avant leur utilisation.
 
 ## Publicités récompensées facultatives — avant activation
 
 Les publicités récompensées sont prévues via Google AdMob dans l’application mobile, sans publicité sur ce site. Leur activation nécessite une information dédiée et des choix publicitaires séparés, modifiables et retirables. Regarder une vidéo ou accepter la continuation ne constitue pas un consentement au suivi ou à la personnalisation. Les deux crédits gratuits restent accessibles sans regarder de publicité. Le SDK peut traiter notamment des identifiants techniques, des informations sur l’appareil et l’interaction publicitaire selon les choix applicables ; la liste précise, les destinataires, transferts et garanties doivent être validés avant activation. Histae ne transmet pas au réseau publicitaire le numéro de téléphone, l’UUID du compte, le profil, le sexe, les préférences, la position précise ni les messages. Une intention aléatoire temporaire relie la récompense au compte côté Histae ; la preuve signée et l’unicité de la transaction conditionnent l’ajout du crédit. Les intentions et preuves internes sont conservées au plus 90 jours, puis purgées lors d’une passe de maintenance ; les crédits publicitaires expirent chaque lundi à 00:00 UTC, même réservés. Le dernier solde et sa semaine restent enregistrés jusqu’à leur remplacement ou à l’effacement du compte. Ces données figurent dans l’export et sont supprimées lors de l’effacement du compte. Les accords de continuation de l’autre personne ne sont pas révélés.
 
-## Mise à jour fonctionnelle du 22 octobre 2026 — paiements
+## Achats dans l’application
 
-La connexion de paiement du site vérifie un compte existant par son UUID, son téléphone et un code SMS. Elle utilise un cookie de session HttpOnly limité à trente minutes ; les challenges expirent au plus après dix minutes. Les sessions et challenges expirés sont supprimés par une passe de maintenance. Les données de carte restent chez le prestataire de paiement.
+Les achats Premium sont réalisés uniquement dans l’application mobile, via l’App Store ou Google Play. Les données de carte restent chez le prestataire de paiement. Le site propose la gestion des données et du compte, sans achat ni gestion d’abonnement web.
 
 Pour vérifier les achats Apple/Google, Histae transmet les références techniques de l’achat et un identifiant opaque de liaison au compte, sans transmettre le profil, les messages ou la position. Les références nécessaires à la relecture sont chiffrées en base ; le token Google est indexé par empreinte. Les projections sont incluses dans l’export, sans token secret. À l’anonymisation, les sessions du site, les références chiffrées et les liens au compte sont supprimés. Les traces minimales anti-rejeu sont purgées 400 jours après la fin de période. Les rapports financiers importés, séparés des profils, ont une durée comptable à valider. La liste des destinataires, leurs rôles, transferts et durées définitives restent à compléter et valider avant publication.
 

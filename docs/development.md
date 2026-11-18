@@ -6,10 +6,10 @@
 
 | Path | Responsibility |
 | --- | --- |
-| `app/` | Localized pages, layouts and static billing return entry points |
+| `app/` | Localized product, legal and account pages and layouts |
 | `components/` | Presentation and interactive UI boundaries |
 | `hooks/` | Browser state and user actions |
-| `lib/` | Typed configuration, metadata, pricing, legal content and billing helpers |
+| `lib/` | Typed configuration, metadata, mobile plan descriptions, legal content and account helpers |
 | `config/site.json` | Locales, routes, repositories, marketing values and legal mappings |
 | `messages/{locale}/` | Translation files grouped by domain |
 | `i18n/` | next-intl routing and request configuration |
@@ -33,16 +33,9 @@ TypeScript shape. Do not use translated labels as React keys.
 
 Credit limits and feature identifiers come from `config/site.json`; reconcile those rules with the
 API for a release. Premium amounts are not stored in the site configuration or translations.
-The public cards request `/api/web/billing/plans` once per mounted grid, without cookies or a session
-lookup, and use the same offer parser as Checkout. A timeout, malformed/duplicate or unavailable
-catalogue leaves a localized price link, never a stale fallback amount. Without JavaScript the
-same links remain usable. Annual savings require two offers in the same currency and a positive
-saving. Structured data only includes the static free offer, not invented Premium prices.
-
-`lib/pricing.ts` builds static card content. `lib/billing/public-offers.ts` owns the public request
-and deduplicates concurrent reads only. `hooks/use-public-offers.ts` owns its view state;
-`lib/pricing-offers.ts` owns amount formatting/comparison; `components/pricing-grid.tsx` combines them.
-The API and payment provider remain authoritative for purchases and access rights.
+`lib/pricing.ts` builds static card content, rendered by `PricingCards` without client-side requests.
+Cards link to app availability; the App Store or Google Play shows the applicable prices and terms
+before an in-app purchase. Structured data includes only the static free offer.
 
 Keep route and legal source identifiers stable. Public legal text has a separate
 [publication workflow](legal/README.md); its language is independent of the English developer docs.
@@ -104,23 +97,23 @@ If invoking Next.js directly, run that postbuild script separately. See [SEO](se
 for its coverage and production checks. The same postbuild also generates the per-page CSP map
 in `.generated/`; keep it with the matching HTML when deploying or rolling back.
 
-Billing storage and request tests use synthetic responses and do not require a browser:
+Account transport tests use synthetic responses and do not require a browser:
 
 ```bash
-pnpm exec playwright test tests/checkout-storage.spec.ts tests/checkout-request.spec.ts
+pnpm exec playwright test tests/web-client.spec.ts tests/security.spec.ts
 ```
 
 For browser scenarios, install Chromium once and run the relevant cases:
 
 ```bash
 pnpm exec playwright install chromium
-pnpm exec playwright test tests/marketing.spec.ts tests/billing.spec.ts
+pnpm exec playwright test tests/marketing.spec.ts
 pnpm exec playwright test tests/account-data.spec.ts
 ```
 
 Set `PLAYWRIGHT_CHANNEL=msedge` to use an already installed Edge instead of Playwright Chromium.
-Playwright starts a dedicated local development server. Billing fixtures simulate the API without
-sending SMS or taking payments. Add regression tests for important behavior, rather than testing
+Playwright starts a dedicated local development server. Account fixtures simulate the API without
+sending SMS or deleting real accounts. Add regression tests for important behavior, rather than testing
 every presentation change. Report what ran; do not treat fixture tests as production verification.
 
 For CSP and synthetic injection checks against the built export, run `pnpm build` followed by
@@ -144,8 +137,8 @@ them, and check the actual page request mix after layout or dependency changes. 
 sizes do not establish hosted Core Web Vitals or performance on a slow mobile connection.
 
 Manual screen-reader, 200% zoom, touch/device and cross-browser review remain release checks.
-Verify real Stripe/store payments, delayed webhooks and deployed headers in the intended
-provider environment; browser fixtures never establish those outcomes.
+Verify deployed account authentication, API origin checks and headers in the intended environment;
+browser fixtures never establish those outcomes. Store purchase checks belong to the mobile release.
 
 Next.js 16.4.1's generated development validator imports unused route-handler types even when
 there are no route handlers. Only `.next/dev/types/validator.ts` is excluded from standalone
@@ -158,13 +151,13 @@ The features page includes a fictional interactive profile, conversation and mut
 demonstration, followed by a profile-writing guide. Home links directly to the demo. State stays
 in component memory; the demo sends no account, message or consent requests. The FAQ searches
 localized answers and combines search with topic filters. Pricing and FAQ include a channel
-selector for Stripe, Google Play and Apple subscription help. Copy lives in discovery.json in
+selector for Google Play and Apple subscription help. Copy lives in discovery.json in
 all four locales. Run `pnpm exec playwright test tests/discovery.spec.ts` for these interactions.
 
 
 ### Discovery feature boundaries
 
-The server pages compose localized content. `lib/faq.ts` owns FAQ metadata and filtering; `FaqExplorer` owns input state and renders results. Subscription guidance uses explicit channel IDs and `lib/billing/subscription-channels.ts` for destinations, rather than parallel translation arrays. The product demo separates its local journey state (`use-product-demo.ts`) from its controlled presentation panels (`demo-panels.tsx`). None of these modules makes account or payment requests.
+The server pages compose localized content. `lib/faq.ts` owns FAQ metadata and filtering; `FaqExplorer` owns input state and renders results. Subscription guidance uses explicit store IDs and `lib/store-subscriptions.ts` for destinations, rather than parallel translation arrays. The product demo separates its local journey state (`use-product-demo.ts`) from its controlled presentation panels (`demo-panels.tsx`). None of these modules makes account or payment requests.
 
 ## Product availability
 
@@ -190,10 +183,10 @@ rights and source-code section. The former About page is removed and returns 404
 render provided content without selecting blocks by unchecked strings. Only credit text needs
 commercial interpolation. Availability remains in `DownloadPage`.
 
-Import billing transport, validation and storage from their owning `lib/billing/` modules.
+Import account transport from `lib/web-client.ts` and account response validation from `lib/account-data.ts`.
 Branding owns the real social image and its dimensions; the export check verifies the image exists.
 
-Keep security, privacy and payment-recovery tests, including migration of older Checkout attempts.
+Keep security, account authentication, privacy and retired-route regression tests.
 Regression tests assert behavior and asset loading. They no longer write manual screenshots on
 each run; use a deliberate browser capture when reviewing a design. Availability checks protect
 invited access and store destinations without comparing the page to its own translation files.

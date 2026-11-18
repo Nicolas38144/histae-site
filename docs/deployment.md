@@ -23,13 +23,14 @@ Container filesystem and capability restrictions belong to the deployment stack,
 
 ## API routing
 
-The outer reverse proxy must forward `/api/web/billing/*` to the Histae API on the website origin,
+The outer reverse proxy must forward `/api/web/account/*` and `/api/web/privacy/*` to the Histae API on the website origin,
 not to the static Caddy service. Preserve methods, request bodies, Origin, cookies and response headers.
 Bypass CDN caching for these endpoints and retain API `no-store` responses and Set-Cookie headers.
 The site's Caddyfile does not provide this proxy route.
 
-Align the API's web-billing origin with the public site origin. Deploy matching API changes before
-relying on new Checkout lifecycle behavior. Keep all payment and session secrets on the API side.
+Align the API's configured website origin with the public site origin. Its current setting is
+`WEB_BILLING_ORIGIN`, also used for account management with `WEB_BILLING_ENABLED=false`.
+Remove any former website-payment proxy routes. Keep session secrets on the API side.
 
 ## Routes, headers and cache
 
@@ -38,7 +39,7 @@ query intact. Caddy selects a supported language for `/`, serves static director
 slashes. Retired page names and former French legal URL aliases are not served.
 
 The Caddyfile defines CSP, anti-framing, MIME sniffing protection, cross-origin policies and browser
-permissions. Billing pages additionally use `Referrer-Policy: no-referrer`, `Cache-Control: no-store`
+permissions. Account pages additionally use `Referrer-Policy: no-referrer`, `Cache-Control: no-store`
 and `X-Robots-Tag: noindex, follow`. Public assets have a one-day cache lifetime. Missing pages must
 retain a 404 status, and private paths and source maps must not be served.
 
@@ -59,14 +60,14 @@ The website repository does not define Docker log rotation or the entire hosting
 
 Before release, run the [development checks](development.md#checks), review all four locales and
 compare credit quotas and benefit descriptions with the API and store offers for the release.
-Public Premium prices come from `/api/web/billing/plans`; verify its public unauthenticated response
-and that a failure shows a price link rather than a stale amount. Confirm launch links,
+Premium cards are static and link to app availability; they must make no catalogue or session requests.
+The mobile store shows prices and terms before purchase. Confirm launch links,
 fictional screenshots and legal content with their owners.
 
 After deployment, check representative pages and an unknown URL, canonical and language redirects,
-billing return parameters, API routing, cookies, cache bypass and security headers. Exercise the
-subscription flow in the intended test environment, including switching formulas and resuming after
-a lost response. A local fixture test is not evidence of a successful production payment.
+account API routing, cookies, cache bypass and security headers. Exercise SMS sign-in, partial deletion,
+confirmed account erasure and sign-out in the intended test environment. Confirm retired payment
+addresses return 404. A local fixture test is not evidence of deployed account behavior.
 
 Keep an identifiable previous artifact and verify the rollback procedure. Use the shared Histae
 monitoring setup for availability and certificates without introducing visitor tracking by default.

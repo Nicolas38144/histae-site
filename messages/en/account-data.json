@@ -5,7 +5,7 @@
     "footer": "Manage my data",
     "actions": "Your deletion options",
     "authTitle": "Secure sign-in",
-    "authIntro": "As with “My subscription”, verify your account using its identifier and a code sent by SMS. You do not need to create an account or buy a subscription.",
+    "authIntro": "Verify your Histae account with your identifier and a code received by SMS. No account creation or subscription is required.",
     "identityHelp": "Your UUID is in your account information in the app. If you no longer have it or cannot receive the SMS, contact us below.",
     "session": "The session expires after 30 minutes. Your SMS code and phone number are not kept in the browser after sign-in.",
     "connected": "Signed-in account:",
@@ -23,8 +23,7 @@
     "deleteTitle": "Permanently delete my account",
     "deleteBody": "Your account is deactivated as soon as the request is accepted. Your phone number, profile, photos, location and associated data are then erased in the background. Messages already exchanged may be anonymised to preserve the other person’s conversation. This action is irreversible.",
     "deleteAction": "Delete my account",
-    "subscriptionWarning": "Deleting your account does not automatically cancel an Apple or Google subscription. Cancel it with the relevant store. Stripe subscriptions are handled by the erasure workflow.",
-    "subscriptionLink": "My subscription",
+    "subscriptionWarning": "Deleting your account does not automatically cancel an Apple or Google subscription. Cancel it in the App Store or Google Play subscription settings.",
     "retentionTitle": "What may be retained",
     "retentionBody": "Closing your account does not erase records needed for security or rights management: closed rights requests may be kept for 5 years after closure, access logs for 1 year and resolved reports for 3 years after resolution. Technical deletions take place during maintenance runs.",
     "retentionBilling": "Purchase references dissociated from the profile may remain for up to 400 days after the subscription period ends to prevent replay. Payment records remain subject to the relevant provider’s retention periods. Contact us about backups or any specific retention.",
@@ -45,6 +44,22 @@
     "receiptBody": "The account is deactivated. Erasure continues in the background; this acknowledgement does not mean all technical cleanup is complete. Keep the reference if you need to contact support.",
     "receiptLabel": "Request reference:",
     "unconfirmed": "The server response could not be confirmed. Deletion may have been accepted. Contact support before trying again.",
-    "notFound": "This data or account is no longer available. Contact support if needed."
+    "notFound": "This data or account is no longer available. Contact support if needed.",
+    "auth": {
+      "userId": "Account identifier (UUID)",
+      "phone": "Phone number",
+      "identify": "Send a code",
+      "code": "Code received by SMS",
+      "verify": "Confirm code",
+      "sent": "If these details match an existing account, a code will be sent.",
+      "logout": "Sign out",
+      "loading": "Loading…",
+      "back": "Change my details",
+      "error": "The request failed. Please try again shortly.",
+      "invalid": "Check the UUID and phone number.",
+      "auth": "The account or code is invalid or expired. Request a new code.",
+      "limited": "Too many attempts. Wait before trying again.",
+      "unavailable": "Account management is temporarily unavailable."
+    }
   }
 }

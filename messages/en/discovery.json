@@ -59,11 +59,6 @@
     "restore": "Restore purchases looks for a subscription you already bought in the store. It does not create a new purchase.",
     "helpNote": "Not sure? Your payment receipt identifies the seller. Deleting the app does not cancel your subscription.",
     "channels": {
-      "stripe": {
-        "label": "On the website",
-        "text": "Sign in to My subscription on this website, then open Stripe subscription management to view invoices or cancel renewal. Website purchases are not restored through a store button: sign back in to your Histae account.",
-        "action": "Open my subscription"
-      },
       "google": {
         "label": "On Android",
         "text": "Open Google Play with the account used for the purchase, then Payments & subscriptions → Subscriptions → Histae to manage renewal. After reinstalling, use Restore purchases in Histae with the same Google and Histae accounts.",

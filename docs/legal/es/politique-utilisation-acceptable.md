@@ -1,7 +1,7 @@
 # Política de uso aceptable de Histae
 
 **Versión publicada:** En proceso de validación.\
-**Fecha del documento:** 7 de noviembre de 2026.\
+**Fecha del documento:** 18 de noviembre de 2026.\
 **Editor del servicio:** Histae.\
 **Identidad jurídica del editor:** En proceso de validación.\
 **Contacto:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
@@ -47,4 +47,4 @@ Para solicitar explicaciones o recurrir, escriba al contacto indicado, incluso s
 
 ## 6. Actualizaciones y validación
 
-Los cambios sustanciales se comunican a los usuarios mediante el proceso aplicable. La identidad jurídica del editor, la versión definitiva y la validación de este texto siguen en proceso de validación. Esta página no constituye una aprobación de Histae por parte de Stripe.
+Los cambios sustanciales se comunican a los usuarios mediante el proceso aplicable. La identidad jurídica del editor, la versión definitiva y la validación de este texto siguen en proceso de validación.

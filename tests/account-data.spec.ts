@@ -72,7 +72,7 @@ for (const [locale, title, footer, deletion] of [
   });
 }
 
-test("SMS login permits partial erasure without requiring onboarding or billing", async ({ page }) => {
+test("SMS login permits partial erasure without requiring onboarding or a subscription", async ({ page }) => {
   const state = await simulateApi(page);
   await page.goto("/fr/account/data/");
   await page.getByRole("link", { name: "Supprimer ma position", exact: true }).click();
@@ -110,6 +110,11 @@ test("partial deletion distinguishes photo and sensitive profile and honours can
 
 test("account deletion uses a one-time token and displays acceptance rather than completed erasure", async ({ page }) => {
   const state = await simulateApi(page, true);
+  await page.addInitScript(() => {
+    for (const storage of ["localStorage", "sessionStorage"]) {
+      Object.defineProperty(window, storage, { get() { throw new Error("Browser storage is disabled"); } });
+    }
+  });
   await page.goto("/fr/account/data/");
   await page.getByRole("button", { name: "Supprimer mon compte", exact: true }).click();
   expect(state.tokens).toBe(0);
@@ -119,6 +124,19 @@ test("account deletion uses a one-time token and displays acceptance rather than
   await expect(page.getByRole("status")).toContainText(requestId);
   await expect(page.getByRole("button", { name: "Supprimer mon compte", exact: true })).toHaveCount(0);
   expect(state.tokens).toBe(1); expect(state.deleted).toBe(1);
+});
+
+test("account sign-out does not depend on browser storage", async ({ page }) => {
+  const state = await simulateApi(page, true);
+  await page.addInitScript(() => {
+    for (const storage of ["localStorage", "sessionStorage"]) {
+      Object.defineProperty(window, storage, { get() { throw new Error("Browser storage is disabled"); } });
+    }
+  });
+  await page.goto("/fr/account/data/");
+  await page.getByRole("button", { name: "Se déconnecter", exact: true }).click();
+  await expect(page.getByRole("button", { name: "Recevoir un code", exact: true })).toBeEnabled();
+  expect(state.authenticated).toBe(false);
 });
 
 test("a lost destructive response never claims successful deletion or retries automatically", async ({ page }) => {

@@ -1,7 +1,7 @@
 # Histae Acceptable Use Policy
 
 **Published version:** Validation in progress.\
-**Document date:** 7 November 2026.\
+**Document date:** 18 November 2026.\
 **Service publisher:** Histae.\
 **Publisher's legal identity:** Validation in progress.\
 **Contact:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
@@ -47,4 +47,4 @@ To request explanations or appeal, email the contact provided, even without acco
 
 ## 6. Updates and review
 
-Substantial changes are communicated to users through the applicable process. The publisher's legal identity, final version and review of this text remain in progress. This page does not constitute Stripe's approval of Histae.
+Substantial changes are communicated to users through the applicable process. The publisher's legal identity, final version and review of this text remain in progress.

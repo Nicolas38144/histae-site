@@ -196,10 +196,8 @@ h1, h2, h3 { text-wrap: balance; }
 .plan-badge { padding: 0.35rem 0.65rem; border-radius: 999px; background: var(--lavender); color: var(--night); font-size: 0.68rem; font-weight: 850; letter-spacing: 0.04em; }
 .plan-price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.65rem; margin-top: 1.2rem; }
 .plan-price strong { font-family: Georgia, "Times New Roman", serif; font-size: clamp(3.2rem, 7vw, 5rem); font-weight: 500; letter-spacing: -0.065em; line-height: 1; }
-.plan-price span, .plan-billing, .plan-equivalent, .plan-description, .pricing-notice, .pricing-footer p { color: var(--muted); }
+.plan-price span, .plan-billing, .plan-description, .pricing-notice, .pricing-footer p { color: var(--muted); }
 .plan-billing { margin-top: 0.9rem; font-size: 0.88rem; }
-.plan-equivalent { margin-top: 0.5rem; font-size: 0.88rem; }
-.plan-saving { margin-top: 0.5rem; color: var(--lavender); font-size: 0.88rem; font-weight: 650; }
 .plan-description { margin-top: 1.8rem; }
 .pricing-card ul { display: grid; gap: 0.8rem; margin: 1.6rem 0 0; padding: 1.5rem 0 0; border-top: 1px solid var(--line); list-style: none; }
 .pricing-card li { position: relative; padding-left: 1.5rem; }
@@ -219,12 +217,6 @@ h1, h2, h3 { text-wrap: balance; }
 .pricing-questions .faq-list { margin-top: 2rem; padding-bottom: 0; }
 .pricing-card-action { margin-top: auto; padding-top: 1.75rem; }
 .pricing-card-action .button { width: 100%; text-align: center; }
-.pricing-checkout-closing { padding-block: 1rem clamp(3rem, 6vw, 5rem); }
-.pricing-checkout-panel { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(16rem, 1fr); align-items: center; gap: 2rem; padding: clamp(1.5rem, 4vw, 3rem); border: 1px solid var(--line); border-radius: 1.25rem; background: var(--panel); }
-.pricing-checkout-copy h2 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 500; line-height: 1.15; }
-.pricing-checkout-copy p { max-width: 32rem; margin-top: 1rem; color: var(--muted); }
-.pricing-checkout-action { display: grid; justify-items: start; gap: 1rem; }
-.pricing-checkout-action p { max-width: 23rem; color: var(--faint); font-size: .85rem; }
 .pricing-help-links { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem 2rem; margin-top: 1.5rem; }
 
 
@@ -288,18 +280,6 @@ h1, h2, h3 { text-wrap: balance; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 2rem; padding-block: 1.5rem; border-top: 1px solid var(--line); }
 .footer-bottom p { color: var(--faint); font-size: 0.8rem; }
 
-.billing-return-page { padding-block: clamp(2rem, 7vw, 5rem); }
-.billing-return-card { max-width: 760px; padding: clamp(1.5rem, 5vw, 3.5rem); border: 1px solid var(--line); border-radius: 1.5rem; background: var(--panel); box-shadow: var(--shadow); }
-.billing-return-symbol { display: grid; place-items: center; width: 3.25rem; height: 3.25rem; margin-bottom: 1.75rem; border: 1px solid var(--line); border-radius: 1rem; color: var(--lavender); font-size: 1.75rem; }
-.billing-return-card h1 { margin-top: 0.8rem; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 7vw, 3.4rem); line-height: 1.12; letter-spacing: -0.045em; }
-.billing-return-intro { margin-top: 1.5rem; color: var(--muted); font-size: 1.08rem; }
-.billing-return-next { margin-block: 2rem; padding-block: 1.5rem; border-block: 1px solid var(--line); }
-.billing-return-next h2 { font-size: 1.1rem; }
-.billing-return-next ol { display: grid; gap: 0.9rem; margin: 1.1rem 0 0; padding-left: 1.4rem; color: var(--muted); }
-.billing-return-next li { padding-left: 0.35rem; }
-.billing-return-next li::marker { color: var(--lavender); font-weight: 700; }
-.billing-return-note { margin-bottom: 1.5rem; color: var(--faint); font-size: 0.9rem; }
-.billing-language-options { display: grid; justify-items: start; gap: 1rem; margin-top: 2rem; }
 
 .language-redirect { min-height: 100svh; background: var(--night); }
 
@@ -315,10 +295,7 @@ h1, h2, h3 { text-wrap: balance; }
   .footer-legal ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-@media (max-width: 650px) {
-  .pricing-checkout-panel { grid-template-columns: 1fr; gap: 1.5rem; }
-  .pricing-checkout-action, .pricing-checkout-action .button { width: 100%; }
-  .pricing-help-links { flex-direction: column; align-items: flex-start; }
+@media (max-width: 650px) {  .pricing-help-links { flex-direction: column; align-items: flex-start; }
 }
 
 @media (max-width: 540px) {
@@ -415,13 +392,13 @@ h1, h2, h3 { text-wrap: balance; }
   .credits-invitation { padding: 1.5rem; }
 }
 
-/* Authenticated web billing keeps form controls readable on narrow screens. */
-.billing-checkout form, .billing-checkout fieldset { display: grid; gap: 1rem; margin-block: 1.5rem; }
-.billing-checkout label { display: grid; gap: .5rem; text-align: start; }
-.billing-checkout input:not([type="radio"]) { width: 100%; padding: .85rem; border: 1px solid currentColor; border-radius: .5rem; background: transparent; color: inherit; font: inherit; }
-.billing-checkout .button { margin: .4rem .4rem .4rem 0; }
-.billing-checkout [role="alert"] { padding: 1rem; border: 1px solid currentColor; }
-.billing-checkout button:disabled { opacity: .55; cursor: not-allowed; }
+/* Account forms remain readable on narrow screens. */
+.account-form form { display: grid; gap: 1rem; margin-block: 1.5rem; }
+.account-form label { display: grid; gap: .5rem; text-align: start; }
+.account-form input { width: 100%; padding: .85rem; border: 1px solid currentColor; border-radius: .5rem; background: transparent; color: inherit; font: inherit; }
+.account-form .button { margin: .4rem .4rem .4rem 0; }
+.account-form [role="alert"] { padding: 1rem; border: 1px solid currentColor; }
+.account-form button:disabled { opacity: .55; cursor: not-allowed; }
 
 
 /* A short editorial passage, a conversation and a profile have different reading rhythms. */
@@ -530,3 +507,5 @@ h1, h2, h3 { text-wrap: balance; }
 
 .availability-previews { margin-top: 4rem; }
 #privacy { scroll-margin-top: 7rem; }
+
+.pricing-closing { padding-block: 1rem clamp(3rem, 6vw, 5rem); }

@@ -20,7 +20,7 @@ export async function PageShell({ children, locale }: { children: ReactNode; loc
       security: t("nav.security"),
       faq: t("nav.faq"),
       download: t("nav.download"),
-      subscription: t("nav.subscription"),
+      account: t("nav.account"),
     },
   };
 

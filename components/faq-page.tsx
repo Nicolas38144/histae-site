@@ -31,7 +31,7 @@ export async function FaqPage({ locale }: { locale: Locale }) {
         <AppScreenshot locale={locale} screen="chat" />
       </section>
 
-      <SubscriptionHelp locale={locale} copy={messages.discovery} />
+      <SubscriptionHelp copy={messages.discovery} />
       <section className="shell page-closing faq-closing">
         <Link className="text-link" href={localizedHref(locale, "home")}>{t("common.backHome")}<span aria-hidden="true"> →</span></Link>
       </section>

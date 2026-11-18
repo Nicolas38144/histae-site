@@ -59,11 +59,6 @@
     "restore": "Restaurer mes achats recherche un abonnement déjà acheté dans le store. Cette action ne crée pas de nouvel achat.",
     "helpNote": "Vous hésitez ? Le reçu de paiement indique le vendeur. Supprimer l’application ne résilie pas l’abonnement.",
     "channels": {
-      "stripe": {
-        "label": "Sur le site",
-        "text": "Connectez-vous à Mon abonnement sur ce site, puis ouvrez la gestion de l’abonnement Stripe pour consulter les factures ou annuler le renouvellement. Un achat sur le site ne se restaure pas avec le bouton des stores : reconnectez-vous à votre compte Histae.",
-        "action": "Ouvrir mon abonnement"
-      },
       "google": {
         "label": "Sur Android",
         "text": "Ouvrez Google Play avec le compte utilisé pour l’achat, puis Paiements et abonnements → Abonnements → Histae. Vous pouvez y gérer le renouvellement. Après une réinstallation, utilisez Restaurer mes achats dans Histae avec les mêmes comptes Google et Histae.",

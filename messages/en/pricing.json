@@ -33,17 +33,9 @@
     "billing": {
       "freePeriod": "free",
       "noSubscription": "No subscription required",
-      "monthlyPeriod": "per month",
-      "annualPeriod": "per year",
       "monthlyBilling": "Billed monthly from the start of your subscription",
       "annualBilling": "Billed in one payment for 12 months",
-      "monthlyEquivalent": "Equivalent to {price} per month, billed yearly",
-      "annualSaving": "Save {amount} a year compared with monthly billing",
-      "annualBadge": "Save {percent}% yearly",
-      "priceOnCheckout": "See price",
-      "pricesLoading": "Website prices are loading. You can also check them before payment.",
-      "pricesUnavailable": "Prices aren’t available here right now. Follow either plan’s link to check its price before paying.",
-      "pricesLive": "Website prices from the payment catalogue. App Store and Google Play prices are shown in the app."
+      "priceInApp": "Price in the app"
     },
     "howItWorks": {
       "eyebrow": "The same approach on every plan",
@@ -96,15 +88,15 @@
     "questions": {
       "payment": {
         "title": "When is the first payment due?",
-        "text": "The first payment is due when you subscribe. Monthly then renews each month; annual renews each year. The exact amount appears in the offers above and on the payment page before you confirm. In-app prices are set by the app’s store."
+        "text": "The first payment takes place when subscribing in the app through the App Store or Google Play. Monthly plans then renew each month and annual plans each year. The store shows the amount and terms before you confirm."
       },
       "annual": {
         "title": "Is the annual subscription paid monthly?",
-        "text": "No, the twelve months are paid in one go. A monthly equivalent or saving shown in the offers above compares website prices; it is not a monthly payment."
+        "text": "No, all twelve months are paid in one go. The App Store or Google Play shows the annual plan price before confirmation in the app."
       },
       "renewal": {
         "title": "Can I stop the renewal?",
-        "text": "You can cancel renewal through subscription management. Premium access remains valid until the end of the current period."
+        "text": "You can cancel renewal in the App Store or Google Play subscription settings, using the account that made the purchase. Premium access remains valid until the end of the current period."
       },
       "mixed": {
         "title": "What if only one person has Premium?",
@@ -112,6 +104,8 @@
       }
     },
     "launchCta": "Check app availability",
-    "faqCta": "All frequently asked questions"
+    "faqCta": "All frequently asked questions",
+    "appCta": "Find Histae in the app",
+    "storePrices": "Subscriptions are purchased only in the app, through the App Store or Google Play. The store shows the applicable price and terms before confirmation."
   }
 }

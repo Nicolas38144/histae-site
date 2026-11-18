@@ -5,7 +5,7 @@
     "footer": "Gérer mes données",
     "actions": "Vos options de suppression",
     "authTitle": "Connexion sécurisée",
-    "authIntro": "Comme pour « Mon abonnement », vérifiez votre compte avec votre identifiant et un code reçu par SMS. Aucune création de compte ni souscription n’est nécessaire.",
+    "authIntro": "Vérifiez votre compte Histae avec votre identifiant et un code reçu par SMS. Aucune création de compte ni souscription n’est nécessaire.",
     "identityHelp": "Votre identifiant UUID se trouve dans les informations de votre compte dans l’app. Si vous ne l’avez plus ou si vous ne recevez pas le SMS, contactez-nous ci-dessous.",
     "session": "La session expire après 30 minutes. Votre code SMS et votre numéro ne sont pas conservés dans le navigateur après connexion.",
     "connected": "Compte connecté :",
@@ -23,8 +23,7 @@
     "deleteTitle": "Supprimer définitivement mon compte",
     "deleteBody": "Votre compte est désactivé dès l’acceptation. L’effacement du téléphone, du profil, des photos, de la position et des données associées est ensuite traité en arrière-plan. Les messages déjà échangés peuvent être anonymisés pour préserver la conversation de l’autre personne. Cette action est irréversible.",
     "deleteAction": "Supprimer mon compte",
-    "subscriptionWarning": "La suppression du compte ne résilie pas automatiquement un abonnement Apple ou Google. Pensez à le résilier auprès de la boutique concernée. Les abonnements Stripe sont traités par le parcours d’effacement.",
-    "subscriptionLink": "Mon abonnement",
+    "subscriptionWarning": "La suppression du compte ne résilie pas automatiquement un abonnement Apple ou Google. Résiliez-le dans les réglages d’abonnement de l’App Store ou de Google Play.",
     "retentionTitle": "Ce qui peut être conservé",
     "retentionBody": "La fermeture du compte n’efface pas les traces nécessaires à la sécurité ou au suivi des droits : les demandes de droits closes peuvent être conservées 5 ans après leur clôture, les journaux d’accès 1 an et les signalements traités 3 ans après leur résolution. Les suppressions techniques s’effectuent lors des traitements de maintenance.",
     "retentionBilling": "Des références d’achat dissociées du profil peuvent rester jusqu’à 400 jours après la fin de la période d’abonnement pour prévenir les rejeux. Les justificatifs de paiement restent soumis aux durées applicables chez le prestataire concerné. Pour toute question sur les sauvegardes ou une conservation particulière, contactez-nous.",
@@ -45,6 +44,22 @@
     "receiptBody": "Le compte est désactivé. L’effacement se poursuit en arrière-plan ; cet accusé ne signifie pas que tout le nettoyage technique est terminé. Conservez la référence si vous devez contacter le support.",
     "receiptLabel": "Référence de la demande :",
     "unconfirmed": "La réponse du serveur n’a pas pu être confirmée. La suppression a peut-être été acceptée. Contactez le support avant de recommencer.",
-    "notFound": "Cette donnée ou ce compte n’est plus disponible. Si besoin, contactez le support."
+    "notFound": "Cette donnée ou ce compte n’est plus disponible. Si besoin, contactez le support.",
+    "auth": {
+      "userId": "Identifiant du compte (UUID)",
+      "phone": "Numéro de téléphone",
+      "identify": "Recevoir un code",
+      "code": "Code reçu par SMS",
+      "verify": "Confirmer le code",
+      "sent": "Si ces informations correspondent à un compte existant, un code sera envoyé.",
+      "logout": "Se déconnecter",
+      "loading": "Chargement…",
+      "back": "Modifier mes informations",
+      "error": "La demande a échoué. Réessayez dans un instant.",
+      "invalid": "Vérifiez l’UUID et le numéro de téléphone.",
+      "auth": "Le compte ou le code est incorrect ou expiré. Demandez un nouveau code.",
+      "limited": "Trop de tentatives. Attendez avant de recommencer.",
+      "unavailable": "La gestion du compte est temporairement indisponible."
+    }
   }
 }

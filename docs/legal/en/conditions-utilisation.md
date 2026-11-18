@@ -1,7 +1,7 @@
 # Histae Terms of Use
 
 **Published version:** Validation in progress.\
-**Document date:** 7 November 2026.\
+**Document date:** 18 November 2026.\
 **Service publisher:** Histae.\
 **Publisher’s legal identity and address:** Validation in progress.
 
@@ -42,7 +42,7 @@ Biographies and profile answers are analysed by rules targeting spam, insults, p
 
 ## 4. Plans and payments
 
-The Free plan allows profile creation, matching and initial conversations. Premium is offered in monthly and annual plans without a new free trial. The chosen channel's prices and conditions are shown before confirmation: the website payment catalogue for Stripe and store prices for Apple or Google purchases. Amounts may differ by channel and currency; prices displayed by another channel do not replace those of the order.
+The Free plan allows profile creation, matching and initial conversations. Premium is offered in monthly and annual plans without a new free trial. Purchases take place only in the app through the App Store or Google Play. The chosen store shows the applicable prices, currency and terms before confirmation. Subscriptions cannot be purchased or renewed on the website.
 
 **Validation in progress.** Final contractual renewal, cancellation, refund and withdrawal terms, any exceptions, and consumer mediation information remain to be finalised. They must match the payment process actually deployed and preserve applicable mandatory rights.
 
@@ -62,11 +62,11 @@ For questions about these terms: [support.histae@gmail.com](mailto:support.hista
 
 Free receives 2 free credits every Monday at 00:00 UTC, without accumulation. Each Free participant reserves their own credit when agreeing to continue; only Free participants are charged after both agreements. A Premium participant spends no credit. Refusal or expiry releases reservations; a credit already spent on a confirmed continuation is not returned when it ends. A validated optional video may grant 1 advertising credit, up to a stock of 3 including reserved credits. Advertising credits expire every Monday at 00:00 UTC; an agreement relying on an expired advertising credit must be renewed before a replacement charge. Credits are internal, non-transferable and have no monetary value. Free allows at most 5 confirmed continuations per person per UTC week. Premium removes this limit and advertising; mutual agreement remains necessary.
 
-## Functional update, 22 October 2026 — purchases pending review
+## In-app purchases and subscription management
 
-Android in-app purchases use Google Play; iOS purchases use the App Store; website purchases use Stripe. Premium access belongs to the Histae account and can be used on its devices after provider verification. The applicable price and conditions are shown by the selected channel before confirmation; no new free trial is offered. Website payment sign-in uses the existing account UUID, its phone number and an SMS code without creating another account. Subscriptions are managed with the original provider. Deleting a Histae account does not automatically cancel an Apple or Google subscription: manage it in its store. Restoration does not transfer a purchase to another Histae account.
+Android in-app purchases use Google Play; iOS purchases use the App Store. Premium access is linked to the Histae account and can be used on its devices after provider verification. The chosen store shows applicable prices and terms before confirmation; no new free trial is offered. Subscriptions are managed through the original store. Deleting a Histae account does not automatically cancel an Apple or Google subscription: it must be managed through the store. Restoring purchases does not transfer a purchase to another Histae account.
 
-This technical description does not replace final contractual terms for renewal, cancellation, refunds or withdrawal. The outstanding details and legal review above remain required before commercial activation.
+This technical description does not replace final contractual renewal, cancellation, refund and withdrawal terms. The missing information and legal review above remain necessary before commercial activation.
 
 ## What happens to inactive conversations?
 

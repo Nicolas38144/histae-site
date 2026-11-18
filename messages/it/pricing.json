@@ -33,17 +33,9 @@
     "billing": {
       "freePeriod": "gratis",
       "noSubscription": "Nessun abbonamento richiesto",
-      "monthlyPeriod": "al mese",
-      "annualPeriod": "all’anno",
       "monthlyBilling": "Fatturato ogni mese dall’inizio dell’abbonamento",
       "annualBilling": "Un unico pagamento per 12 mesi",
-      "monthlyEquivalent": "Equivale a {price} al mese, con pagamento annuale",
-      "annualSaving": "Risparmi {amount} all’anno rispetto al pagamento mensile",
-      "annualBadge": "Risparmia il {percent} % all’anno",
-      "priceOnCheckout": "Vedi il prezzo",
-      "pricesLoading": "I prezzi del sito si stanno caricando. Puoi consultarli anche prima del pagamento.",
-      "pricesUnavailable": "I prezzi non sono disponibili qui al momento. Segui il link di ogni formula per consultarli prima di pagare.",
-      "pricesLive": "Prezzi del sito dal catalogo di pagamento. Quelli di App Store e Google Play sono mostrati nell’app."
+      "priceInApp": "Prezzo nell’app"
     },
     "howItWorks": {
       "eyebrow": "Lo stesso principio per tutti i piani",
@@ -96,15 +88,15 @@
     "questions": {
       "payment": {
         "title": "Quando è richiesto il primo pagamento?",
-        "text": "Il primo pagamento avviene quando ti abboni. Il mensile si rinnova ogni mese, l’annuale ogni anno. L’importo esatto appare nelle offerte qui sopra e nella pagina di pagamento, prima della conferma. Nell’app valgono i prezzi del suo store."
+        "text": "Il primo pagamento avviene alla sottoscrizione nell’app tramite App Store o Google Play. Il piano mensile si rinnova ogni mese e quello annuale ogni anno. Lo store mostra l’importo e le condizioni prima della conferma."
       },
       "annual": {
         "title": "L’abbonamento annuale si paga ogni mese?",
-        "text": "No, i dodici mesi si pagano in una volta. Se le offerte qui sopra mostrano un equivalente mensile o un risparmio, serve per confrontare i prezzi del sito; non è una rata mensile."
+        "text": "No, i dodici mesi si pagano in un’unica soluzione. App Store o Google Play mostra il prezzo del piano annuale prima della conferma nell’app."
       },
       "renewal": {
         "title": "Posso interrompere il rinnovo?",
-        "text": "Puoi annullare il rinnovo dalla gestione del tuo abbonamento. L’accesso Premium resta valido fino alla fine del periodo in corso."
+        "text": "Puoi annullare il rinnovo nelle impostazioni degli abbonamenti di App Store o Google Play con l’account utilizzato per l’acquisto. L’accesso Premium resta valido fino alla fine del periodo in corso."
       },
       "mixed": {
         "title": "E se solo una persona ha Premium?",
@@ -112,6 +104,8 @@
       }
     },
     "launchCta": "Verifica la disponibilità dell’app",
-    "faqCta": "Tutte le domande frequenti"
+    "faqCta": "Tutte le domande frequenti",
+    "appCta": "Trova Histae nell’app",
+    "storePrices": "Gli abbonamenti si acquistano soltanto nell’app, tramite App Store o Google Play. Lo store mostra il prezzo e le condizioni applicabili prima della conferma."
   }
 }

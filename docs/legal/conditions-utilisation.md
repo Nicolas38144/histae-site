@@ -1,7 +1,7 @@
 # Conditions générales d’utilisation de Histae
 
 **Version publiée :** En cours de validation.\
-**Date du document :** 7 novembre 2026.\
+**Date du document :** 18 novembre 2026.\
 **Éditeur du service :** Histae.\
 **Identité juridique et adresse de l’éditeur :** En cours de validation.
 
@@ -42,7 +42,7 @@ Les biographies et réponses de profil sont analysées par des règles visant no
 
 ## 4. Offres et paiements
 
-L’offre Free permet de créer un profil, former un match et commencer à échanger. Premium est proposé en formules mensuelle et annuelle, sans nouvel essai gratuit. Les prix et conditions du canal choisi sont présentés avant confirmation : catalogue de paiement du site pour Stripe, prix du store pour les achats Apple ou Google. Les montants peuvent différer selon le canal et la devise ; les prix affichés par un autre canal ne remplacent pas ceux de la commande.
+L’offre Free permet de créer un profil, former un match et commencer à échanger. Premium est proposé en formules mensuelle et annuelle, sans nouvel essai gratuit. Les achats se font uniquement dans l’application via l’App Store ou Google Play. Le store choisi présente les prix, la devise et les conditions applicables avant confirmation. Aucun achat ni renouvellement d’abonnement ne se fait sur le site.
 
 **En cours de validation.** Les conditions contractuelles définitives de renouvellement, résiliation, remboursement, droit de rétractation et exceptions éventuelles, ainsi que les informations de médiation de la consommation, restent à finaliser. Elles doivent correspondre au parcours de paiement effectivement déployé et préserver les droits impératifs applicables.
 
@@ -62,9 +62,9 @@ Pour toute question sur ces conditions : [support.histae@gmail.com](mailto:suppo
 
 Free reçoit 2 crédits gratuits chaque lundi à 00:00 UTC, sans cumul. Chaque participant Free réserve son propre crédit lorsqu’il accepte de continuer ; seuls les participants Free sont débités après les deux accords. Un participant Premium ne consomme aucun crédit. Un refus ou une expiration libère les réservations ; un crédit déjà consommé pour une continuation confirmée n’est pas restitué à sa clôture. Une vidéo facultative validée peut rapporter 1 crédit publicitaire, jusqu’à un stock de 3, y compris les crédits réservés. Ces crédits publicitaires expirent chaque lundi à 00:00 UTC ; si un accord reposait sur un crédit publicitaire expiré, un nouvel accord est nécessaire avant un débit de remplacement. Les crédits sont internes, non transférables et sans valeur monétaire. Free permet au plus 5 continuations confirmées par personne et par semaine UTC. Premium retire cette limite et les publicités ; l’accord mutuel reste toujours requis.
 
-## Mise à jour fonctionnelle du 22 octobre 2026 — achats à valider
+## Achats et gestion des abonnements dans l’application
 
-Les achats dans l’application Android passent par Google Play ; ceux dans l’application iOS par l’App Store ; les achats sur le site par Stripe. L’accès Premium est lié au compte Histae et peut être utilisé sur ses appareils après vérification du fournisseur. Les prix et conditions applicables sont affichés par le canal choisi avant confirmation ; aucun nouvel essai gratuit n’est proposé. La connexion au paiement du site utilise l’UUID du compte existant, son numéro de téléphone et un code SMS, sans créer de nouveau compte. L’abonnement se gère auprès du fournisseur d’origine. Supprimer le compte Histae ne résilie pas automatiquement un abonnement Apple ou Google : il doit être géré auprès du store. La restauration ne transfère pas un achat vers un autre compte Histae.
+Les achats dans l’application Android passent par Google Play ; ceux dans l’application iOS par l’App Store. L’accès Premium est lié au compte Histae et peut être utilisé sur ses appareils après vérification du fournisseur. Les prix et conditions applicables sont affichés par le store choisi avant confirmation ; aucun nouvel essai gratuit n’est proposé. L’abonnement se gère auprès du store d’origine. Supprimer le compte Histae ne résilie pas automatiquement un abonnement Apple ou Google : il doit être géré auprès du store. La restauration ne transfère pas un achat vers un autre compte Histae.
 
 Cette description technique ne remplace pas les conditions contractuelles définitives de renouvellement, résiliation, remboursement et rétractation. Les mentions à compléter et la validation juridique ci-dessus restent nécessaires avant activation commerciale.
 

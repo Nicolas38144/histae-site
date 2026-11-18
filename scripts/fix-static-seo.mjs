@@ -9,7 +9,6 @@ const locales = Object.keys(siteConfig.locales);
 const legalDocuments = Object.keys(siteConfig.legalDocuments);
 const routes = [
   ...Object.values(siteConfig.routes).map((route) => ({ ...route, indexable: true })),
-  ...Object.values(siteConfig.billingReturns).map((route) => ({ ...route, indexable: false })),
   ...Object.values(siteConfig.policyPages).map((route) => ({ ...route, indexable: true })),
   ...Object.values(siteConfig.accountPages).map((route) => ({ ...route, indexable: false })),
   ...legalDocuments.map((document) => ({ path: `legal/${document}`, indexable: false })),
@@ -109,9 +108,8 @@ for (const locale of locales) {
         throw new Error(`${file}: privacy table not rendered`);
       }
     }
-    if (route.path.startsWith("billing/")) {
-      assertIncludes(head, '<meta name="referrer" content="no-referrer"', `${file}: billing return must not send a referrer`);
-      if (html.includes("session_id")) throw new Error(`${file}: billing return exposes a session identifier`);
+    if (route.path.startsWith("account/")) {
+      assertIncludes(head, '<meta name="referrer" content="no-referrer"', `${file}: account page must not send a referrer`);
     }
 
     const languageLinks = html.match(/<a[^>]+lang="[^"]+"[^>]*>/g) ?? [];
@@ -128,7 +126,7 @@ for (const locale of locales) {
 }
 
 // Retired addresses must not leave exported redirect or duplicate documents behind.
-const retiredPaths = ["about", "legal/conditions-utilisation", "legal/politique-confidentialite",
+const retiredPaths = ["about", "billing/subscribe", "billing/success", "billing/cancel", "billing/return", "legal/conditions-utilisation", "legal/politique-confidentialite",
   "legal/consentement-donnees-sensibles", "legal/consentement-localisation"];
 for (const locale of locales) {
   for (const retired of retiredPaths) {
@@ -143,19 +141,15 @@ for (const locale of locales) {
   }
 }
 
-let billingEntryCount = 0;
-for (const route of Object.values(siteConfig.billingReturns)) {
-  const file = path.join(outputDirectory, route.path, "index.html");
-  const html = await readFile(file, "utf8");
-  const head = extractHead(html, file);
-  assertIncludes(head, '<meta name="robots" content="noindex, follow"', `${file}: language entry must remain noindex`);
-  assertIncludes(head, '<meta name="referrer" content="no-referrer"', `${file}: language entry must not send a referrer`);
-  assertIncludes(head, `<link rel="canonical" href="${siteConfig.publicUrl}/${route.path}/"`, `${file}: incorrect language entry canonical`);
-  if (html.includes("session_id")) throw new Error(`${file}: language entry exposes a session identifier`);
-  for (const locale of locales) {
-    assertIncludes(html, `href="/${locale}/${route.path}/"`, `${file}: missing fallback for ${locale}`);
+for (const retired of ["billing/subscribe", "billing/success", "billing/cancel", "billing/return"]) {
+  const file = path.join(outputDirectory, retired, "index.html");
+  try {
+    await access(file);
+  } catch (error) {
+    if (error.code === "ENOENT") continue;
+    throw error;
   }
-  billingEntryCount += 1;
+  throw new Error(`${file}: retired route must not be exported`);
 }
 
 const sitemap = await readFile(path.join(outputDirectory, "sitemap.xml"), "utf8");
@@ -176,6 +170,6 @@ if (localizedPageCount !== expectedPageCount) {
   throw new Error(`Expected ${expectedPageCount} localized pages, validated ${localizedPageCount}`);
 }
 
-console.log(`Validated SEO, navigation and legal documents for ${localizedPageCount} localized pages and ${billingEntryCount} billing language entries; ${sitemapUrls.length} indexable sitemap URLs.`);
+console.log(`Validated SEO, navigation and legal documents for ${localizedPageCount} localized pages; ${sitemapUrls.length} indexable sitemap URLs.`);
 
 await buildSecurityHeaders(outputDirectory);

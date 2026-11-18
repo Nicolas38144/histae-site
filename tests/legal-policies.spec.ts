@@ -11,8 +11,8 @@ const { publicUrl, supportEmail } = config;
 
 test.use({ javaScriptEnabled: false });
 
-const stripeDocuments = ["terms-of-use", "acceptable-use-policy", "law-enforcement-policy"] as const;
-const documents = [...stripeDocuments, "privacy-policy", "sensitive-data-consent", "location-consent"] as const;
+const safetyDocuments = ["terms-of-use", "acceptable-use-policy", "law-enforcement-policy"] as const;
+const documents = [...safetyDocuments, "privacy-policy", "sensitive-data-consent", "location-consent"] as const;
 const pending = {
   fr: "En cours de validation",
   en: "Validation in progress",
@@ -46,7 +46,7 @@ for (const locale of locales) {
       }
 
       if (document === "terms-of-use") {
-        for (const policy of stripeDocuments.slice(1)) {
+        for (const policy of safetyDocuments.slice(1)) {
           await expect(article.locator(`a[href="/${locale}/legal/${policy}/"]`).first()).toBeVisible();
         }
         await expect(article).toContainText("SMS");

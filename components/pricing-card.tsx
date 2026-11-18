@@ -19,8 +19,6 @@ export function PricingCard({ plan, compact = false, action }: PricingCardProps)
         <span>{plan.period}</span>
       </p>
       <p className="plan-billing">{plan.billing}</p>
-      {plan.equivalent ? <p className="plan-equivalent">{plan.equivalent}</p> : null}
-      {plan.saving ? <p className="plan-saving">{plan.saving}</p> : null}
       <p className="plan-description">{plan.description}</p>
       {!compact && (
         <ul>

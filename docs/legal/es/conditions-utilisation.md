@@ -1,7 +1,7 @@
 # Condiciones generales de uso de Histae
 
 **Versión publicada:** En proceso de validación.\
-**Fecha del documento:** 7 de noviembre de 2026.\
+**Fecha del documento:** 18 de noviembre de 2026.\
 **Editor del servicio:** Histae.\
 **Identidad jurídica y dirección del editor:** En proceso de validación.
 
@@ -42,7 +42,7 @@ Las biografías y respuestas del perfil se analizan mediante reglas dirigidas al
 
 ## 4. Planes y pagos
 
-El plan Free permite crear un perfil, formar un match e iniciar conversaciones. Premium se ofrece en planes mensuales y anuales, sin una nueva prueba gratuita. Los precios y condiciones del canal elegido se muestran antes de confirmar: catálogo de pagos del sitio para Stripe y precios de la tienda para las compras Apple o Google. Los importes pueden variar según el canal y la moneda; los precios de otro canal no sustituyen a los del pedido.
+El plan Free permite crear un perfil, formar un match y comenzar a conversar. Premium se ofrece en planes mensual y anual, sin un nuevo período de prueba gratuito. Las compras se realizan únicamente en la aplicación mediante App Store o Google Play. La tienda elegida muestra los precios, la moneda y las condiciones aplicables antes de confirmar. No se pueden comprar ni renovar suscripciones en el sitio web.
 
 **En proceso de validación.** Las condiciones contractuales definitivas de renovación, cancelación, reembolso, desistimiento y posibles excepciones, así como la información sobre mediación de consumo, siguen pendientes de finalización. Deben corresponder al proceso de pago realmente implantado y respetar los derechos imperativos aplicables.
 
@@ -62,11 +62,11 @@ Para cualquier pregunta sobre estas condiciones: [support.histae@gmail.com](mail
 
 Free recibe 2 créditos gratuitos cada lunes a las 00:00 UTC, sin acumulación. Cada participante Free reserva su propio crédito al aceptar continuar; solo se cobra a los participantes Free después de los dos acuerdos. Un participante Premium no consume créditos. El rechazo o la caducidad libera las reservas; un crédito ya consumido para una continuación confirmada no se devuelve al terminarla. Un vídeo opcional validado puede otorgar 1 crédito publicitario, hasta un saldo de 3 incluidos los reservados. Los créditos publicitarios caducan cada lunes a las 00:00 UTC; un acuerdo basado en un crédito publicitario caducado debe renovarse antes de un cargo de sustitución. Los créditos son internos, intransferibles y sin valor monetario. Free permite como máximo 5 continuaciones confirmadas por persona y semana UTC. Premium elimina este límite y la publicidad; el acuerdo mutuo sigue siendo necesario.
 
-## Actualización funcional del 22 de octubre de 2026 — compras pendientes de validación
+## Compras y gestión de suscripciones en la aplicación
 
-Las compras en la aplicación Android utilizan Google Play; las de iOS, App Store; las del sitio, Stripe. El acceso Premium pertenece a la cuenta de Histae y se puede utilizar en sus dispositivos tras la verificación del proveedor. El canal elegido muestra el precio y las condiciones aplicables antes de confirmar; no se ofrece ninguna nueva prueba gratuita. El acceso al pago del sitio utiliza el UUID de la cuenta existente, su teléfono y un código SMS, sin crear otra cuenta. La suscripción se gestiona con el proveedor original. Eliminar la cuenta de Histae no cancela automáticamente una suscripción de Apple o Google: debe gestionarse en su tienda. La restauración no transfiere una compra a otra cuenta de Histae.
+Las compras en la aplicación Android pasan por Google Play; las de iOS, por App Store. El acceso Premium está vinculado a la cuenta de Histae y puede utilizarse en sus dispositivos tras la verificación del proveedor. La tienda elegida muestra los precios y las condiciones aplicables antes de confirmar; no se ofrece un nuevo período de prueba gratuito. La suscripción se gestiona en la tienda de origen. Eliminar la cuenta de Histae no cancela automáticamente una suscripción de Apple o Google: debe gestionarse en la tienda. Restaurar las compras no transfiere una compra a otra cuenta de Histae.
 
-Esta descripción técnica no sustituye las condiciones contractuales definitivas de renovación, cancelación, reembolso o desistimiento. Los datos pendientes y la revisión jurídica siguen siendo necesarios antes de la activación comercial.
+Esta descripción técnica no sustituye las condiciones contractuales definitivas de renovación, cancelación, reembolso y desistimiento. La información pendiente y la validación jurídica anteriores siguen siendo necesarias antes de la activación comercial.
 
 ## ¿Qué ocurre con las conversaciones inactivas?
 

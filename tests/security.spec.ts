@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { serializeJsonLd } from "../lib/json-ld";
-import { billingRequest } from "../lib/billing/client";
+import { webRequest } from "../lib/web-client";
 
 test("JSON-LD cannot introduce another HTML element", () => {
   const input = { description: '</script><img src=x onerror="window.injected=true">' };
@@ -18,7 +18,7 @@ test("request deadline remains active alongside caller cancellation", async () =
       options!.signal!.addEventListener("abort", () => reject(new Error("aborted")), { once: true });
     });
     const controller = new AbortController();
-    await expect(billingRequest("session", "fr", { signal: controller.signal })).rejects.toMatchObject({ code: "network_error" });
+    await expect(webRequest("account", "session", "fr", { signal: controller.signal })).rejects.toMatchObject({ code: "network_error" });
     expect(controller.signal.aborted).toBe(false);
   } finally { globalThis.fetch = originalFetch; AbortSignal.timeout = originalTimeout; }
 });
@@ -30,7 +30,7 @@ test("caller cancellation still interrupts a request with its own deadline", asy
       options!.signal!.addEventListener("abort", () => reject(new Error("aborted")), { once: true });
     });
     const controller = new AbortController();
-    const request = billingRequest("session", "fr", { signal: controller.signal });
+    const request = webRequest("account", "session", "fr", { signal: controller.signal });
     controller.abort();
     await expect(request).rejects.toMatchObject({ code: "network_error" });
   } finally { globalThis.fetch = originalFetch; }

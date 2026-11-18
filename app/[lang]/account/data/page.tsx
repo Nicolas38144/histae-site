@@ -21,5 +21,5 @@ export async function generateMetadata({ params }: LocalizedPageProps) {
 }
 export default createLocalizedPage(locale => {
   const messages = getMessagesForLocale(locale);
-  return <AccountDataPage locale={locale} copy={messages.accountData} auth={messages.billingCheckout} />;
+  return <AccountDataPage locale={locale} copy={messages.accountData} />;
 });

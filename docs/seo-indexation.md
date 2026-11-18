@@ -8,7 +8,7 @@ Use `https://www.histae.com` for canonical URLs, metadata, structured data, robo
 Every localized route should declare its canonical URL, supported language alternates and French
 `x-default`. The language selector should retain the current page or legal document.
 
-Product routes in `config/site.json` are indexable. Legal pages and billing pages currently use
+Product routes in `config/site.json` are indexable. Legal pages and account pages currently use
 `noindex, follow` and remain outside the sitemap. Removing a legal draft banner does not change
 indexing policy or establish legal approval. See the [legal workflow](legal/README.md).
 
@@ -22,14 +22,11 @@ pnpm build
 ```
 
 The postbuild script, `scripts/fix-static-seo.mjs`, normalizes alternate-link attributes and checks
-the configured localized product, legal and billing return routes. It checks document language,
+the configured localized product, legal and account routes. It checks document language,
 canonical and alternate links, titles, descriptions, robots directives, a single main heading,
-navigation and legal links. It also checks sitemap membership, robots.txt and the neutral billing
-return entry points, including their language fallbacks and privacy-related markup.
-
-This is a defined set of checks rather than a full crawler or accessibility audit. The subscription
-page is not currently part of the script's configured-route loop. Validate it through its focused
-billing checks and review its generated metadata when changing that route.
+navigation and legal links. It also checks sitemap membership, robots.txt and the absence of
+retired payment pages. Account routes retain their privacy-related markup. This is a defined
+set of checks rather than a full crawler or accessibility audit.
 
 ## Hosted verification
 
@@ -37,7 +34,7 @@ After deployment, confirm successful responses for representative localized page
 unknown path. Inspect canonical URLs, reciprocal alternates and robots directives in the delivered
 HTML, and check for conflicting HTTP headers or CDN cache rules.
 
-For billing pages, additionally verify `no-referrer` and `no-store` through redirects and the edge.
+For account pages, additionally verify `no-referrer` and `no-store` through redirects and the edge.
 The local export cannot verify live certificates, headers, redirects or search-engine decisions.
 
 Submit [the sitemap](https://www.histae.com/sitemap.xml) through the project's Search Console account.

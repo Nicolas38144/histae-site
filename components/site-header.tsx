@@ -1,7 +1,5 @@
 "use client";
 
-import { subscriptionHref } from "../lib/billing/navigation";
-
 import Link from "next/link";
 import { BrandSignature } from "./brand-signature";
 import { usePathname } from "next/navigation";
@@ -10,6 +8,7 @@ import {
   localeConfig,
   locales,
   localizedHref,
+  accountDataHref,
   navigationRouteIds,
   switchPathLocale,
   type Locale,
@@ -23,7 +22,7 @@ export type SiteHeaderCopy = {
     menu: string;
     navigation: string;
   };
-  nav: Record<SiteRouteId, string> & { subscription: string };
+  nav: Record<SiteRouteId, string> & { account: string };
 };
 
 export function SiteHeader({ copy, locale }: { copy: SiteHeaderCopy; locale: Locale }) {
@@ -48,9 +47,9 @@ export function SiteHeader({ copy, locale }: { copy: SiteHeaderCopy; locale: Loc
       label: copy.nav[routeId],
     })),
     {
-      routeId: "subscription",
-      href: subscriptionHref(locale),
-      label: copy.nav.subscription,
+      routeId: "account",
+      href: accountDataHref(locale),
+      label: copy.nav.account,
     },
   ];
 

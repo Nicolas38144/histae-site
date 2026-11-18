@@ -5,20 +5,19 @@
 ## Boundary
 
 Production serves static HTML, scripts and assets through Caddy. Next.js runs only for local
-development and builds. SMS, sessions, authorization, rate limits and payments belong to the
+development and builds. SMS, sessions, authorization and rate limits belong to the
 Rust API. Public source availability is not evidence that an independent audit has passed.
 
-The billing client uses same-origin cookies, no-store requests and rejects HTTP redirects.
-A 25-second deadline remains active alongside caller cancellation. Checkout and portal URLs
-must have their exact approved Stripe HTTPS host, without credentials or custom ports.
-Retry keys remain associated with the account and formula; they do not prove identity.
-No browser return URL or session_id parameter grants Premium access.
+The account client uses same-origin cookies, no-store requests and rejects HTTP redirects.
+A 25-second deadline remains active alongside caller cancellation. Account response identifiers
+and deletion tokens are validated before use. Authentication and deletion data stay in memory;
+neither localStorage nor sessionStorage is required, including for sign-out and account erasure.
 
-The Rust web handlers were read: OTP send/verify and logout call validate_origin; Checkout
-and portal call payer, which checks the exact enabled origin and authenticated session.
-Cookies are HttpOnly, SameSite=Strict and host-scoped with Secure in the production configuration.
-These observations are a code review, not a test of the deployed API. No API tests or real
-SMS, payment or production account operations were run for this website change.
+Account/privacy handlers require the exact configured website origin on mutations and a valid
+session for private actions. Cookies are HttpOnly, SameSite=Strict and host-scoped with Secure in
+the production configuration. The current API retains the historical cookie/configuration names
+documented in the [account guide](account.md). These observations are a code review, not a test
+of the deployed API. No real SMS or production account operations were run for this website change.
 
 ## Static content security policy
 
@@ -40,6 +39,12 @@ JSON-LD is serialized with literal less-than characters escaped, so text cannot 
 script element and create another HTML element. This defense is retained alongside CSP.
 
 ## Dependencies and environment files
+
+On 2026-11-18, the build and development commands reported a known security vulnerability in
+the installed Next.js 16.4.1. Rerunning allowed the checks to finish but did not resolve the alert.
+Update Next.js and the matching ESLint configuration to a reviewed patched release. The official
+[16.4.5 release](https://github.com/vercel/next.js/releases/tag/v16.4.5) lists subsequent security fixes.
+Dependency versions were not changed as part of removing website payments.
 
 The 2026-10-14 Next.js security release was checked against the official advisory. Next.js
 and eslint-config-next are pinned to 16.4.1; React and React DOM to 19.2.9. The Next.js-resolved
@@ -76,7 +81,7 @@ pnpm audit --audit-level=high
 The export suite serves the built files with the generated policies on localhost, checks
 hashes and header size, exercises hydration in four languages and verifies that injected
 inline scripts/event handlers are blocked. It uses synthetic API responses and a local
-Node test server. It does not validate the Caddy parser, real Stripe or the CDN configuration.
+Node test server. It does not validate the Caddy parser, real account operations or the CDN configuration.
 
 For the actual runtime, build and validate the image with Docker:
 
@@ -89,4 +94,4 @@ Native Caddy validation was not run locally: Docker/Caddy were not installed, an
 download failed its published checksum comparison and was not extracted or executed.
 The runtime version and pinned container digest were not changed. After deployment, verify
 the actual response CSP, no-store/referrer headers, cookies and API origin checks. Exercise
-real provider flows only in the intended test environment.
+real account flows only in the intended test environment.

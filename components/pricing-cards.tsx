@@ -1,19 +1,18 @@
-import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { getPricingCards } from "../lib/pricing";
-import type { Locale } from "../lib/site-config";
+import { localizedHref, type Locale } from "../lib/site-config";
 import { getMessagesForLocale } from "../messages";
-import { PricingGrid } from "./pricing-grid";
+import { PricingCard } from "./pricing-card";
 
 export async function PricingCards({ locale, compact = false }: { locale: Locale; compact?: boolean }) {
-  const [t, checkout] = await Promise.all([
-    getTranslations({ locale, namespace: "pricing" }),
-    getTranslations({ locale, namespace: "billingCheckout" }),
-  ]);
+  const t = await getTranslations({ locale, namespace: "pricing" });
   const { pricing } = getMessagesForLocale(locale);
   const plans = getPricingCards(locale, pricing, t);
-  const actions = Object.fromEntries(plans.map(plan => [plan.id, checkout("choosePlan", { plan: plan.name })]));
-  return <NextIntlClientProvider locale={locale} messages={{ pricing: { billing: pricing.billing } }}>
-    <PricingGrid locale={locale} plans={plans} compact={compact} actions={actions} />
-  </NextIntlClientProvider>;
+  return <>
+    <div className="pricing-grid">
+      {plans.map(plan => <PricingCard key={plan.id} plan={plan} compact={compact}
+        action={{ href: localizedHref(locale, "download"), label: t("appCta") }} />)}
+    </div>
+    <p className="pricing-source">{t("storePrices")}</p>
+  </>;
 }

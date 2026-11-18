@@ -5,7 +5,7 @@
     "footer": "Gestisci i miei dati",
     "actions": "Opzioni di eliminazione",
     "authTitle": "Accesso sicuro",
-    "authIntro": "Come per «Il mio abbonamento», verifica l’account con il suo identificativo e un codice ricevuto via SMS. Non occorre creare un account né acquistare un abbonamento.",
+    "authIntro": "Verifica il tuo account Histae con il tuo identificativo e un codice ricevuto via SMS. Non è necessario creare un account o sottoscrivere un abbonamento.",
     "identityHelp": "Il tuo UUID si trova nelle informazioni dell’account nell’app. Se non lo hai più o non ricevi l’SMS, contattaci qui sotto.",
     "session": "La sessione scade dopo 30 minuti. Il codice SMS e il numero di telefono non vengono conservati nel browser dopo l’accesso.",
     "connected": "Account connesso:",
@@ -23,8 +23,7 @@
     "deleteTitle": "Elimina definitivamente il mio account",
     "deleteBody": "L’account viene disattivato appena la richiesta è accettata. Telefono, profilo, foto, posizione e dati associati vengono poi cancellati in background. I messaggi già scambiati possono essere anonimizzati per preservare la conversazione dell’altra persona. L’azione è irreversibile.",
     "deleteAction": "Elimina il mio account",
-    "subscriptionWarning": "Eliminare l’account non annulla automaticamente un abbonamento Apple o Google. Annullalo nello store pertinente. Gli abbonamenti Stripe vengono gestiti dal processo di cancellazione.",
-    "subscriptionLink": "Il mio abbonamento",
+    "subscriptionWarning": "Eliminare l’account non annulla automaticamente un abbonamento Apple o Google. Annullalo nelle impostazioni degli abbonamenti di App Store o Google Play.",
     "retentionTitle": "Cosa può essere conservato",
     "retentionBody": "Chiudere l’account non elimina le tracce necessarie per la sicurezza o la gestione dei diritti: le richieste chiuse possono essere conservate per 5 anni dalla chiusura, i registri di accesso per 1 anno e le segnalazioni risolte per 3 anni dalla risoluzione. Le eliminazioni tecniche avvengono durante la manutenzione.",
     "retentionBilling": "I riferimenti degli acquisti scollegati dal profilo possono restare fino a 400 giorni dopo la fine del periodo di abbonamento per impedire riutilizzi. I documenti di pagamento restano soggetti ai tempi del fornitore interessato. Contattaci per informazioni sui backup o su conservazioni specifiche.",
@@ -45,6 +44,22 @@
     "receiptBody": "L’account è disattivato. La cancellazione prosegue in background; questa conferma non significa che tutta la pulizia tecnica sia terminata. Conserva il riferimento se devi contattare l’assistenza.",
     "receiptLabel": "Riferimento della richiesta:",
     "unconfirmed": "Non è stato possibile confermare la risposta del server. La cancellazione potrebbe essere stata accettata. Contatta l’assistenza prima di riprovare.",
-    "notFound": "Questi dati o questo account non sono più disponibili. Contatta l’assistenza se necessario."
+    "notFound": "Questi dati o questo account non sono più disponibili. Contatta l’assistenza se necessario.",
+    "auth": {
+      "userId": "Identificativo account (UUID)",
+      "phone": "Numero di telefono",
+      "identify": "Ricevi un codice",
+      "code": "Codice ricevuto via SMS",
+      "verify": "Conferma il codice",
+      "sent": "Se questi dati corrispondono a un account esistente, verrà inviato un codice.",
+      "logout": "Esci",
+      "loading": "Caricamento…",
+      "back": "Modifica i miei dati",
+      "error": "La richiesta non è riuscita. Riprova tra poco.",
+      "invalid": "Controlla l’UUID e il numero di telefono.",
+      "auth": "L’account o il codice non è valido oppure è scaduto. Richiedi un nuovo codice.",
+      "limited": "Troppi tentativi. Attendi prima di riprovare.",
+      "unavailable": "La gestione dell’account è temporaneamente indisponibile."
+    }
   }
 }

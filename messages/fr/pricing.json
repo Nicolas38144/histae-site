@@ -33,17 +33,9 @@
     "billing": {
       "freePeriod": "gratuit",
       "noSubscription": "Aucun abonnement requis",
-      "monthlyPeriod": "par mois",
-      "annualPeriod": "par an",
       "monthlyBilling": "Facturé chaque mois dès la souscription",
       "annualBilling": "Facturé en une fois pour 12 mois",
-      "monthlyEquivalent": "Soit {price} par mois, facturés à l’année",
-      "annualSaving": "{amount} économisés par an par rapport au mensuel",
-      "annualBadge": "−{percent} % sur l’année",
-      "priceOnCheckout": "Voir le prix",
-      "pricesLoading": "Les tarifs du site se chargent. Vous pouvez aussi les consulter avant le paiement.",
-      "pricesUnavailable": "Les tarifs ne sont pas disponibles ici pour le moment. Le lien de chaque formule permet de les consulter avant de payer.",
-      "pricesLive": "Tarifs du site, issus du catalogue de paiement. Les prix de l’App Store et de Google Play sont affichés dans l’app."
+      "priceInApp": "Prix dans l’app"
     },
     "howItWorks": {
       "eyebrow": "Le même principe pour toutes les offres",
@@ -96,15 +88,15 @@
     "questions": {
       "payment": {
         "title": "Quand a lieu le premier paiement ?",
-        "text": "Le premier paiement a lieu à la souscription. Le mensuel est ensuite renouvelé chaque mois, l’annuel chaque année. Le montant exact figure dans les offres ci-dessus puis sur la page de paiement, avant votre confirmation. Les prix dans l’app sont ceux de son store."
+        "text": "Le premier paiement a lieu à la souscription dans l’application, via l’App Store ou Google Play. Le mensuel est ensuite renouvelé chaque mois, l’annuel chaque année. Le store présente le montant et les conditions avant votre confirmation."
       },
       "annual": {
         "title": "L’abonnement annuel est-il payé chaque mois ?",
-        "text": "Non, les douze mois sont payés en une fois. Si un équivalent mensuel ou une économie s’affiche dans les offres ci-dessus, il sert à comparer les prix du site ; ce n’est pas un paiement mensuel."
+        "text": "Non, les douze mois sont payés en une fois. Le prix de la formule annuelle est présenté par l’App Store ou Google Play avant confirmation dans l’application."
       },
       "renewal": {
         "title": "Peut-on arrêter le renouvellement ?",
-        "text": "Vous pouvez annuler la reconduction depuis la gestion de votre abonnement. L’accès Premium reste valable jusqu’à la fin de la période en cours."
+        "text": "Vous pouvez annuler la reconduction dans les réglages d’abonnement de l’App Store ou de Google Play, avec le compte utilisé pour l’achat. L’accès Premium reste valable jusqu’à la fin de la période en cours."
       },
       "mixed": {
         "title": "Et si une seule personne a Premium ?",
@@ -112,6 +104,8 @@
       }
     },
     "launchCta": "Voir la disponibilité de l’application",
-    "faqCta": "Toutes les questions fréquentes"
+    "faqCta": "Toutes les questions fréquentes",
+    "appCta": "Retrouver Histae dans l’application",
+    "storePrices": "Les abonnements se souscrivent uniquement dans l’application, via l’App Store ou Google Play. Le store présente le prix et les conditions applicables avant confirmation."
   }
 }

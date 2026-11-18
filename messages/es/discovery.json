@@ -59,11 +59,6 @@
     "restore": "Restaurar compras busca una suscripción que ya compraste en la tienda. No realiza una compra nueva.",
     "helpNote": "¿Tienes dudas? El recibo identifica al vendedor. Eliminar la app no cancela la suscripción.",
     "channels": {
-      "stripe": {
-        "label": "En la web",
-        "text": "Inicia sesión en Mi suscripción en esta web y abre la gestión de Stripe para consultar facturas o cancelar la renovación. Las compras web no se restauran con el botón de las tiendas: vuelve a entrar en tu cuenta Histae.",
-        "action": "Abrir mi suscripción"
-      },
       "google": {
         "label": "En Android",
         "text": "Abre Google Play con la cuenta de la compra y ve a Pagos y suscripciones → Suscripciones → Histae para gestionar la renovación. Tras reinstalar, usa Restaurar compras en Histae con las mismas cuentas de Google y Histae.",

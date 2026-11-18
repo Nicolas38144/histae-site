@@ -1,12 +1,12 @@
 # Histae Privacy Policy
 
 **Published version:** Validation in progress.\
-**Document date:** 7 November 2026.\
+**Document date:** 18 November 2026.\
 **Data controller:** Histae.\
 **Data controller’s legal identity and address:** Validation in progress.\
 **Privacy contact:** [support.histae@gmail.com](mailto:support.histae@gmail.com)
 
-This notice describes processing associated with the Histae app, its API and authenticated website journeys for subscriptions and account data requests. Website cookies and storage are described in section 6.
+This notice describes processing associated with the Histae app, its API and the authenticated website journey for managing account data and the account itself. Website cookies are described in section 6.
 
 ## 1. Data and purposes
 
@@ -28,7 +28,7 @@ The current process does not request marketing consent. Any future direct market
 
 Other users see profile elements useful for discovery: first name, calculated declared age, declared sex, traits and permitted content. Received coordinates are replaced by the centre of an approximate zone of about 5 km before being recorded as presence; public distances are rounded in 5 km steps, with a minimum of 5 km. This reduces precision without guaranteeing anonymity. Exact birth dates and phone numbers are not shown to other users. The photo remains private and does not appear in the feed; within a match, it requires two photo-sharing agreements. Withdrawal hides it in subsequent reads; an already issued private link may remain usable for at most 60 seconds for new links, or until object deletion. Copies already received cannot be erased remotely.
 
-People authorised to administer and moderate Histae have restricted access and logged sensitive consultations. Administrative access to messages requires a retained report linked to the conversation and both participants; a profile-only report is insufficient. Providers may handle SMS (Sweego), enabled payments (Stripe, Apple App Store, Google Play), hosting, technical photo conversion and storage. Conversion does not automatically analyse image content. **Validation in progress.** Each provider's identity, role and location, processor access, any transfers outside the European Economic Area and their safeguards remain to be finalised.
+People authorised to administer and moderate Histae have restricted access and logged sensitive consultations. Administrative access to messages requires a retained report linked to the conversation and both participants; a profile-only report is insufficient. Providers may handle SMS (Sweego), enabled payments (Apple App Store, Google Play), hosting, technical photo conversion and storage. Conversion does not automatically analyse image content. **Validation in progress.** Each provider's identity, role and location, processor access, any transfers outside the European Economic Area and their safeguards remain to be finalised.
 
 ## 3. Retention periods
 
@@ -50,28 +50,21 @@ Histae uses access controls, limits on attempts and rule-based moderation for bi
 
 A significant change to purposes, recipients, retention periods or rights will be communicated appropriately. The notice's version and effective date will remain accessible. Other mandatory information under GDPR Article 13, including transfers and the source of data when it does not come from the user, must be checked in the final version.
 
-## 6. Website cookies and local storage
+## 6. Website cookies
 
-The Histae website does not use advertising or audience measurement trackers. Histae only uses the mechanisms below for the sign-in and payment features you request; they are not used to track your browsing for advertising purposes.
+The Histae website does not use advertising or audience measurement trackers. Account management uses a sign-in cookie named `__Host-histae_billing`, containing only a random session identifier linked to the account on the server. It is set after SMS code validation and enables requested actions on account data or the account itself. It expires after 30 minutes or is deleted on sign-out and when account deletion is accepted.
 
-| Mechanism and stored data | Purpose | When stored and for how long |
-| --- | --- | --- |
-| `__Host-histae_billing` cookie: a random session identifier linked to the account on the server | Keep you signed in to the subscription and account data areas | Set after SMS code validation; expires after 30 minutes or is deleted when you sign out of the website journey |
-| Tab session storage (`sessionStorage`), `histae_web_checkout` entry: account UUID, requested billing periods (monthly or annual) and random request keys | Retry a payment request whose response was lost while preventing duplicate requests | Stored when requesting payment; retained for the tab session, with no additional application expiry timer. Cleared when signing out of the subscription area or when that area detects an active subscription |
+This cookie has the `HttpOnly`, `Secure` and `SameSite=Strict` attributes: page scripts cannot read it, and it is sent only over HTTPS, with restrictions on sending it from other websites. It contains no phone number, SMS code, mobile app authentication token or banking data. SMS challenges expire within ten minutes; maintenance removes expired sessions and challenges. The language choice is part of the page address and does not require a cookie.
 
-The sign-in cookie has the `HttpOnly`, `Secure` and `SameSite=Strict` attributes: page scripts cannot read it, and it is sent only over HTTPS, with restrictions on sending it from other websites. Neither mechanism stores a phone number, SMS code, mobile app authentication token or card details. The language choice is part of the page address and does not require a cookie.
-
-Session storage is normally cleared when the tab closes; a browser restoration feature may restore it. You can delete or block website cookies and data in your browser settings. This may interrupt sign-in or payment retries; public pages remain accessible. When redirected to Stripe, any provider cookies are covered by the information it supplies on its own pages.
-
-These operations are strictly necessary for services you expressly request and do not require prior consent. Any addition of optional trackers will be accompanied by information and, where required, consent collection before use.
+You can delete or block website cookies and data in your browser settings. This may interrupt account management sign-in; public pages remain accessible. This cookie is strictly necessary for the service you expressly request and does not require prior consent. Any addition of optional trackers will be accompanied by information and, where required, consent collection before use.
 
 ## Optional rewarded advertising — before activation
 
 Google AdMob rewarded ads are planned for the mobile app, with no ads on this website. Activation requires dedicated information and separate advertising choices that can be changed or withdrawn. Watching a video or agreeing to continue does not constitute consent to tracking or personalization. The two free credits remain available without watching ads. Depending on applicable choices, the SDK may process technical identifiers, device information and advertising interactions; the precise data, recipients, transfers and safeguards must be reviewed before activation. Histae does not send the phone number, account UUID, profile, sex, preferences, precise location or messages to the ad network. A temporary random intent links the reward to the account within Histae; a signed proof and a unique transaction are required to add a credit. Internal intents and proofs are retained for up to 90 days and purged during maintenance; advertising credits expire every Monday at 00:00 UTC, including reserved credits. The latest balance and its week remain recorded until replaced or the account is erased. These data are included in the export and removed on account erasure. The other person’s individual continuation choices are not disclosed.
 
-## Functional update, 22 October 2026 — payments
+## In-app purchases
 
-Website payment sign-in checks an existing account using its UUID, phone number and SMS code. It uses a thirty-minute HttpOnly session cookie; challenges expire within ten minutes. Maintenance removes expired sessions and challenges. Card details remain with the payment provider.
+Premium purchases take place only in the mobile app, through the App Store or Google Play. Card details remain with the payment provider. The website provides account and data management, without website purchases or subscription management.
 
 To verify Apple/Google purchases, Histae sends technical purchase references and an opaque account binding without sending profiles, messages or location. References needed for provider checks are encrypted in the database; Google tokens are indexed by a hash. Projections are included in the data export without secret tokens. Account anonymisation removes website sessions, encrypted references and account links. Minimal replay-prevention records are purged 400 days after the period ends. Imported financial reports are separate from profiles and require a reviewed accounting retention period. Recipients, roles, transfers and final retention periods remain to be completed and reviewed before publication.
 
