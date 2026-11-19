@@ -32,9 +32,12 @@ translation domain in every locale. `messages/index.ts` assembles the domains an
 TypeScript shape. Do not use translated labels as React keys.
 
 Credit limits and feature identifiers come from `config/site.json`; reconcile those rules with the
-API for a release. Premium amounts are not stored in the site configuration or translations.
+API for a release. Reference Premium prices in EUR are stored in cents in `config/site.json` under
+`plans.premium.monthlyPriceCents` and `annualPriceCents`. Keep them aligned with the API catalogue
+seed in `db/002_insert_postgres.sql`; do not use synthetic app test fixtures as price sources.
 `lib/pricing.ts` builds static card content, rendered by `PricingCards` without client-side requests.
-Cards link to app availability; the App Store or Google Play shows the applicable prices and terms
+Cards show the reference amounts with localized billing periods and link to app availability.
+The App Store or Google Play shows the applicable purchase prices and terms
 before an in-app purchase. Structured data includes only the static free offer.
 
 Keep route and legal source identifiers stable. Public legal text has a separate

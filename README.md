@@ -41,7 +41,8 @@ Account authentication and privacy requests reach the API through a same-origin 
 
 `config/site.json` defines locales, public routes, the public support address, feature/credit descriptions
 and legal document mappings.
-Premium cards describe the mobile plans and link to app availability; store prices are shown in the app.
+Premium cards show the reference EUR catalogue prices from `config/site.json` and link to app availability;
+the applicable purchase price is confirmed by the mobile store in the app.
 `messages/` contains localized interface copy. Account data and sessions belong to the API.
 
 ## Account and data deletion

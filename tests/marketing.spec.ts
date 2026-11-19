@@ -1,10 +1,10 @@
 import { test, expect } from "@playwright/test";
 
-for (const [locale, account, price] of [
-  ["fr", "Mon compte", "Prix dans l’app"],
-  ["en", "My account", "Price in the app"],
-  ["es", "Mi cuenta", "Precio en la app"],
-  ["it", "Il mio account", "Prezzo nell’app"],
+for (const [locale, account, monthlyPrice, annualPrice, monthlyPeriod, annualPeriod] of [
+  ["fr", "Mon compte", "5 €", "48 €", "par mois", "par an"],
+  ["en", "My account", "€5", "€48", "per month", "per year"],
+  ["es", "Mi cuenta", "5 €", "48 €", "al mes", "al año"],
+  ["it", "Il mio account", "5 €", "48 €", "al mese", "all’anno"],
 ]) {
   test(`${locale}: public plans guide visitors to the app without contacting an API`, async ({ page }) => {
     const requests: string[] = [];
@@ -15,9 +15,10 @@ for (const [locale, account, price] of [
     await page.goto(`/${locale}/pricing/`);
     const cards = page.locator(".pricing-card");
     await expect(cards).toHaveCount(3);
-    for (const card of [cards.nth(1), cards.nth(2)]) {
-      await expect(card.locator(".plan-price strong")).toHaveText(price);
-    }
+    await expect(cards.nth(1).locator(".plan-price strong")).toHaveText(monthlyPrice);
+    await expect(cards.nth(1).locator(".plan-price span")).toHaveText(monthlyPeriod);
+    await expect(cards.nth(2).locator(".plan-price strong")).toHaveText(annualPrice);
+    await expect(cards.nth(2).locator(".plan-price span")).toHaveText(annualPeriod);
     for (const card of await cards.all()) {
       await expect(card.getByRole("link")).toHaveAttribute("href", `/${locale}/download/`);
     }

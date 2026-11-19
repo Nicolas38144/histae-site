@@ -35,7 +35,8 @@
       "noSubscription": "No subscription required",
       "monthlyBilling": "Billed monthly from the start of your subscription",
       "annualBilling": "Billed in one payment for 12 months",
-      "priceInApp": "Price in the app"
+      "monthlyPeriod": "per month",
+      "annualPeriod": "per year"
     },
     "howItWorks": {
       "eyebrow": "The same approach on every plan",
@@ -106,6 +107,6 @@
     "launchCta": "Check app availability",
     "faqCta": "All frequently asked questions",
     "appCta": "Find Histae in the app",
-    "storePrices": "Subscriptions are purchased only in the app, through the App Store or Google Play. The store shows the applicable price and terms before confirmation."
+    "storePrices": "Reference prices in euros. Subscribe in the app; the App Store or Google Play confirms the price and terms before purchase."
   }
 }

@@ -44,8 +44,8 @@ Session expiry returns the user to sign-in. Sign-out and erasure do not require 
 ## Purchases and deployment
 
 Premium is purchased and managed only through the mobile app and its Apple/Google store.
-Public plan cards link to app availability and make no catalogue or session requests. Store
-help links open the official subscription settings. Account deletion does not cancel those
+Public plan cards show reference EUR prices, link to app availability and make no catalogue or
+session requests. Store help links open the official subscription settings. Account deletion does not cancel those
 store subscriptions automatically.
 
 Deploy the fresh export and generated security headers together, replacing the old artifact.

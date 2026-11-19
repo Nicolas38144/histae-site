@@ -104,6 +104,8 @@
     },
     "premium": {
       "featured": true,
+      "monthlyPriceCents": 500,
+      "annualPriceCents": 4800,
       "features": [
         "messaging",
         "photoReveal",

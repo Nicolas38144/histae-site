@@ -35,7 +35,8 @@
       "noSubscription": "Nessun abbonamento richiesto",
       "monthlyBilling": "Fatturato ogni mese dall’inizio dell’abbonamento",
       "annualBilling": "Un unico pagamento per 12 mesi",
-      "priceInApp": "Prezzo nell’app"
+      "monthlyPeriod": "al mese",
+      "annualPeriod": "all’anno"
     },
     "howItWorks": {
       "eyebrow": "Lo stesso principio per tutti i piani",
@@ -106,6 +107,6 @@
     "launchCta": "Verifica la disponibilità dell’app",
     "faqCta": "Tutte le domande frequenti",
     "appCta": "Trova Histae nell’app",
-    "storePrices": "Gli abbonamenti si acquistano soltanto nell’app, tramite App Store o Google Play. Lo store mostra il prezzo e le condizioni applicabili prima della conferma."
+    "storePrices": "Prezzi di riferimento in euro. L’abbonamento si acquista nell’app; App Store o Google Play conferma il prezzo e le condizioni prima dell’acquisto."
   }
 }
