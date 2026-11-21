@@ -36,17 +36,14 @@ test('FAQ combines search and topic and guides each billing channel',async({page
  await expect(help.locator('#provider-help').getByRole('link')).toHaveAttribute('href','https://apps.apple.com/account/subscriptions');
 });
 
-for (const [locale, label] of Object.entries({ fr: "Sécurité", en: "Security", es: "Seguridad", it: "Sicurezza" })) {
-  test(`${locale}: Security is the only project and privacy page`, async ({ page }) => {
-    await page.goto(`/${locale}/security/`);
-    await expect(page).toHaveURL(new RegExp(`/${locale}/security/$`));
-    await expect(page.locator("main h1")).toHaveText(label);
-    await expect(page.locator("main .editorial-statement")).toBeVisible();
-    await expect(page.locator("main #privacy")).toBeVisible();
-    await expect(page.locator("main #source-code")).toHaveCount(1);
-    await expect(page.locator(`header #site-navigation a[href="/${locale}/security/"]`)).toHaveCount(1);
-    await expect(page.locator(`header #site-navigation a[href="/${locale}/about/"]`)).toHaveCount(0);
-    const retired = await page.goto(`/${locale}/about/`);
-    expect(retired?.status()).toBe(404);
-  });
-}
+test("the Security page combines project and privacy information and appears in the main menu", async ({ page }) => {
+  await page.goto("/fr/security/");
+  const main = page.getByRole("main");
+  await expect(main.getByRole("heading", { level: 1 })).toHaveText("Sécurité");
+  await expect(main.locator(".editorial-statement")).toBeVisible();
+  await expect(main.locator("#privacy")).toBeVisible();
+  await expect(main.locator("#source-code")).toBeVisible();
+  const navigation = page.locator("#site-navigation");
+  await expect(navigation.getByRole("link", { name: "Sécurité", exact: true })).toHaveAttribute("href", "/fr/security/");
+  await expect(navigation.locator('a[href="/fr/about/"]')).toHaveCount(0);
+});

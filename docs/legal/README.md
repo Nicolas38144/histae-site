@@ -46,8 +46,9 @@ acceptable-use and law-enforcement policies remain part of the service rules, in
 18+ restriction, prohibited content, reports, moderation, appeals and official requests.
 Their publication does not change API consent versions or establish legal approval.
 
-Run `pnpm exec playwright test tests/legal-policies.spec.ts` to check all six public documents,
-localized navigation, cross-links and pending-review notices without signing in or JavaScript.
+Run `pnpm exec playwright test tests/legal-policies.spec.ts` to check public access, contact links,
+cross-links and pending-review notices in all four languages without signing in or JavaScript.
+The build checks legal page metadata and footer destinations in the static export.
 The publisher/controller identity, version approval and final mobile subscription terms still
 require completion. An operational owner must validate request authentication, secure
 transmission, preservation and logging procedures before representing them as operational.
