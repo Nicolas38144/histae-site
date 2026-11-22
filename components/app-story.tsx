@@ -1,6 +1,6 @@
 import { getMessagesForLocale } from "../messages";
 import type { Locale } from "../lib/site-config";
-import { AppScreenshot, type ScreenKind } from "./app-screenshot";
+import { AppScreenshot } from "./app-screenshot";
 
 type StoryBlock = { title: string; text: string };
 type StoryBlocks = Readonly<Record<string, StoryBlock>>;
@@ -26,7 +26,7 @@ export function StoryDetails({ blocks }: { blocks: StoryBlocks }) {
 
 export function AppStory({ locale, screen, id, main, supporting = {}, more = {}, reverse = false, anchorId }: {
   locale: Locale;
-  screen: ScreenKind;
+  screen: "feed" | "chat" | "privacy";
   id: string;
   main: StoryBlock;
   supporting?: StoryBlocks;
