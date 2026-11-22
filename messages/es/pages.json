@@ -43,7 +43,7 @@
         },
         "messaging": {
           "title": "Escribir y responder",
-          "text": "Los mensajes pueden tener hasta 2.000 caracteres. Un indicador discreto marca el último mensaje enviado y el último leído. Toca un mensaje para ver su fecha. Puedes seguir escribiendo mientras se envía otro mensaje."
+          "text": "Los mensajes pueden tener hasta 500 caracteres. Un indicador discreto marca el último mensaje enviado y el último leído. Toca un mensaje para ver su fecha. Puedes seguir escribiendo mientras se envía otro mensaje."
         },
         "continuationCredits": {
           "title": "Una decisión y un coste claros",

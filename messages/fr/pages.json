@@ -43,7 +43,7 @@
         },
         "messaging": {
           "title": "Écrire et se répondre",
-          "text": "Les messages peuvent contenir jusqu’à 2 000 caractères. Un repère discret indique le dernier message envoyé et le dernier message lu. Touchez un message pour voir sa date. Vous pouvez continuer à écrire pendant qu’un envoi est en cours."
+          "text": "Les messages peuvent contenir jusqu’à 500 caractères. Un repère discret indique le dernier message envoyé et le dernier message lu. Touchez un message pour voir sa date. Vous pouvez continuer à écrire pendant qu’un envoi est en cours."
         },
         "continuationCredits": {
           "title": "Continuer avec un choix et un coût explicites",

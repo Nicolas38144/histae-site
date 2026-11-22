@@ -43,7 +43,7 @@
         },
         "messaging": {
           "title": "Writing back",
-          "text": "Messages can contain up to 2,000 characters. A discreet receipt marks your latest sent message and latest read message. Tap a message to see its date. You can keep writing while a message is being sent."
+          "text": "Messages can contain up to 500 characters. A discreet receipt marks your latest sent message and latest read message. Tap a message to see its date. You can keep writing while a message is being sent."
         },
         "continuationCredits": {
           "title": "A clear choice and credit cost",

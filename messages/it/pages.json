@@ -43,7 +43,7 @@
         },
         "messaging": {
           "title": "Scrivere e rispondere",
-          "text": "I messaggi possono contenere fino a 2.000 caratteri. Un indicatore discreto segnala l’ultimo messaggio inviato e l’ultimo letto. Tocca un messaggio per vederne la data. Puoi continuare a scrivere mentre un messaggio viene inviato."
+          "text": "I messaggi possono contenere fino a 500 caratteri. Un indicatore discreto segnala l’ultimo messaggio inviato e l’ultimo letto. Tocca un messaggio per vederne la data. Puoi continuare a scrivere mentre un messaggio viene inviato."
         },
         "continuationCredits": {
           "title": "Una scelta e un costo espliciti",
