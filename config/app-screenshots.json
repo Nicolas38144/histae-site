@@ -1,30 +1,90 @@
 {
   "fr": {
-    "feed": "e72dafc5dc80",
-    "profile": "a3ae1fc1ce06",
-    "chat": "c9ebfac78754",
-    "credits": "eccc3b9fa1bb",
-    "privacy": "40c5bcdc4e46"
+    "feed": {
+      "original": "e72dafc5dc80",
+      "small": "85a429cce482"
+    },
+    "profile": {
+      "original": "a3ae1fc1ce06",
+      "small": "fc4a4ccddd74"
+    },
+    "chat": {
+      "original": "c9ebfac78754",
+      "small": "d2adf15fedbc"
+    },
+    "credits": {
+      "original": "eccc3b9fa1bb",
+      "small": "d8cfed6b6910"
+    },
+    "privacy": {
+      "original": "40c5bcdc4e46",
+      "small": "a126c8b9ae98"
+    }
   },
   "en": {
-    "feed": "ae9171aeeeba",
-    "profile": "c40b5ba09b0d",
-    "chat": "022c0d30cd33",
-    "credits": "c69d7562d416",
-    "privacy": "ae0f14f1f93a"
+    "feed": {
+      "original": "ae9171aeeeba",
+      "small": "a4fa5eff7bdc"
+    },
+    "profile": {
+      "original": "c40b5ba09b0d",
+      "small": "a294052e6fd9"
+    },
+    "chat": {
+      "original": "022c0d30cd33",
+      "small": "06d3c15c7c05"
+    },
+    "credits": {
+      "original": "c69d7562d416",
+      "small": "70e48ff22a1c"
+    },
+    "privacy": {
+      "original": "ae0f14f1f93a",
+      "small": "a390dedbe05b"
+    }
   },
   "es": {
-    "feed": "5bc19c61b514",
-    "profile": "767c63acb11a",
-    "chat": "840db5ca47ee",
-    "credits": "00a3ab43592d",
-    "privacy": "9a0d43d19395"
+    "feed": {
+      "original": "5bc19c61b514",
+      "small": "4df2755512b1"
+    },
+    "profile": {
+      "original": "767c63acb11a",
+      "small": "c9e5eceaf120"
+    },
+    "chat": {
+      "original": "840db5ca47ee",
+      "small": "e80d04f5b073"
+    },
+    "credits": {
+      "original": "00a3ab43592d",
+      "small": "3bcddc43de07"
+    },
+    "privacy": {
+      "original": "9a0d43d19395",
+      "small": "3a73393facec"
+    }
   },
   "it": {
-    "feed": "89a291c462ed",
-    "profile": "db7cd5b0f771",
-    "chat": "5e2659ad9cf5",
-    "credits": "fab19d6b6d00",
-    "privacy": "e4581f3f804b"
+    "feed": {
+      "original": "89a291c462ed",
+      "small": "5d256439305e"
+    },
+    "profile": {
+      "original": "db7cd5b0f771",
+      "small": "6ff67e1da519"
+    },
+    "chat": {
+      "original": "5e2659ad9cf5",
+      "small": "6a80bdd465f2"
+    },
+    "credits": {
+      "original": "fab19d6b6d00",
+      "small": "4874cc92a9cf"
+    },
+    "privacy": {
+      "original": "e4581f3f804b",
+      "small": "4d8030de8aeb"
+    }
   }
 }

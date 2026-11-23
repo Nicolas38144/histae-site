@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
 import { dirname, resolve } from 'node:path';
@@ -15,12 +15,23 @@ for (const locale of ['fr', 'en', 'es', 'it']) {
   versions[locale] = {};
   await mkdir(output, { recursive: true });
   for (const screen of ['feed', 'profile', 'chat', 'credits', 'privacy']) {
-    const image = await sharp(resolve(input, locale, `${screen}.png`))
-      .webp({ quality: 88, effort: 6 })
-      .toFile(resolve(output, `${screen}.webp`));
-    bytes += image.size;
-    versions[locale][screen] = createHash('sha256').update(await readFile(resolve(output, `${screen}.webp`))).digest('hex').slice(0, 12);
+    const source = sharp(resolve(input, locale, `${screen}.png`));
+    const { width, height } = await source.metadata();
+    if (width !== 780 || height !== 1688) {
+      throw new Error(`${locale}/${screen}: expected a 780 × 1688 source image`);
+    }
+    const original = await source.clone().webp({ quality: 88, effort: 6 }).toBuffer();
+    const small = await source.clone().resize({ width: 320 }).webp({ quality: 88, effort: 6 }).toBuffer();
+    await Promise.all([
+      writeFile(resolve(output, `${screen}.webp`), original),
+      writeFile(resolve(output, `${screen}-320.webp`), small),
+    ]);
+    bytes += original.length + small.length;
+    versions[locale][screen] = {
+      original: createHash('sha256').update(original).digest('hex').slice(0, 12),
+      small: createHash('sha256').update(small).digest('hex').slice(0, 12),
+    };
   }
 }
 await writeFile(resolve(root, 'config/app-screenshots.json'), JSON.stringify(versions, null, 2) + '\n');
-console.log(`Exported 20 localized app screenshots (${Math.round(bytes / 1024)} KiB).`);
+console.log(`Exported 40 localized app screenshot files (${Math.round(bytes / 1024)} KiB).`);

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { BrandSignature } from "./brand-signature";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import {
   localeConfig,
   locales,
@@ -14,6 +14,17 @@ import {
   type Locale,
   type SiteRouteId,
 } from "../lib/site-config";
+
+const narrowNavigation = "(max-width: 1120px)";
+
+function subscribeToNavigationWidth(onChange: () => void) {
+  const query = window.matchMedia(narrowNavigation);
+  query.addEventListener("change", onChange);
+  return () => query.removeEventListener("change", onChange);
+}
+
+const isNarrowNavigation = () => window.matchMedia(narrowNavigation).matches;
+const renderNarrowNavigation = () => true;
 
 export type SiteHeaderCopy = {
   common: {
@@ -28,8 +39,14 @@ export type SiteHeaderCopy = {
 export function SiteHeader({ copy, locale }: { copy: SiteHeaderCopy; locale: Locale }) {
   const pathname = usePathname();
   const dialogRef = useRef<HTMLDialogElement>(null);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLUListElement>(null);
+  const isNarrow = useSyncExternalStore(subscribeToNavigationWidth, isNarrowNavigation, renderNarrowNavigation);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+
+  function closeMenu() {
+    const menu = menuRef.current;
+    if (menu?.hidePopover && menu.matches(":popover-open")) menu.hidePopover();
+  }
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -56,33 +73,28 @@ export function SiteHeader({ copy, locale }: { copy: SiteHeaderCopy; locale: Loc
   return (
     <header className="site-header">
       <div className="shell header-content">
-        <Link className="wordmark" href={localizedHref(locale, "home")} onClick={() => setIsMenuOpen(false)} aria-label="Histae">
+        <Link className="wordmark" href={localizedHref(locale, "home")} aria-label="Histae">
           <BrandSignature />
         </Link>
 
-        <button
-          className="menu-trigger"
-          type="button"
-          aria-label={isMenuOpen ? copy.common.close : copy.common.menu}
-          aria-controls="site-navigation"
-          aria-expanded={isMenuOpen}
-          onClick={() => setIsMenuOpen((current) => !current)}
-        >
-          <span className="menu-trigger-label">{copy.common.menu}</span>
-          <span className="menu-lines" aria-hidden="true"><i /><i /></span>
-        </button>
-
-        <nav id="site-navigation" className="site-navigation" data-open={isMenuOpen} aria-label={copy.common.navigation}>
-          {navigation.map((item) => (
-            <Link
-              key={item.routeId}
-              href={item.href}
-              aria-current={normalizedPath === item.href.replace(/\/$/, "") ? "page" : undefined}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {item.label}
-            </Link>
-          ))}
+        <nav id="site-navigation" className="site-navigation" aria-label={copy.common.navigation}>
+          <button className="menu-trigger" type="button" popoverTarget="site-menu" aria-controls="site-menu" aria-label={copy.common.menu}>
+            <span className="menu-trigger-label">{copy.common.menu}</span>
+            <span className="menu-lines" aria-hidden="true"><i /><i /></span>
+          </button>
+          <ul className="site-menu" id="site-menu" ref={menuRef} popover={isNarrow ? "auto" : undefined}>
+            {navigation.map((item) => (
+              <li key={item.routeId}>
+                <Link
+                  href={item.href}
+                  aria-current={normalizedPath === item.href.replace(/\/$/, "") ? "page" : undefined}
+                  onClick={closeMenu}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </nav>
 
         <div className="header-actions">

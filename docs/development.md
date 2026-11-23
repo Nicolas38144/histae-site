@@ -81,8 +81,9 @@ Then, from this repository:
 node scripts/export-app-screenshots.mjs
 ```
 
-The converter also writes content hashes to `config/app-screenshots.json`; image URLs use these
-versions so a new capture is not hidden by an old browser cache.
+The converter writes 320 px and 780 px WebP versions and hashes each file in
+`config/app-screenshots.json`. `AppScreenshot` uses `srcset` and `sizes` so the browser can choose
+a suitable resolution. Keep `sizes` aligned with the screenshot widths in `app/globals.css`.
 
 The converter reads `../histae-app/build/previews/website` by default and writes localized WebP files
 to `public/images/app/{locale}/`. An optional first argument selects another input directory.

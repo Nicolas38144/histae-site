@@ -8,7 +8,7 @@ export async function DownloadPage({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale });
   const page = getMessagesForLocale(locale).pages.download;
   return (
-    <main id="main-content" className="information-page availability-page">
+    <main id="main-content" tabIndex={-1} className="information-page availability-page">
       <section className="shell page-intro" aria-labelledby="page-title">
         <p className="eyebrow">{page.eyebrow}</p>
         <h1 id="page-title">{page.title}</h1>

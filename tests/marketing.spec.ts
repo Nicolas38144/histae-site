@@ -37,12 +37,22 @@ test("mobile reading, screenshots, skip link and language dialog work with a key
   await page.goto("/fr/");
   await page.keyboard.press("Tab");
   await expect(page.getByRole("link", { name: "Aller au contenu" })).toBeFocused();
+  await page.keyboard.press("Enter");
+  await expect(page.getByRole("main")).toBeFocused();
+  expect(await page.evaluate(() => {
+    const header = document.querySelector(".site-header")!.getBoundingClientRect();
+    const main = document.querySelector("main")!.getBoundingClientRect();
+    return main.top >= header.bottom;
+  })).toBeTruthy();
+  await page.keyboard.press("Tab");
+  await expect(page.locator(".hero-actions a").first()).toBeFocused();
   await expect(page.locator("main h1")).toHaveCount(1);
   await expect(page.locator("main img")).toHaveCount(3);
   const images = page.locator("main img");
   for (const img of await images.all()) {
     await img.scrollIntoViewIfNeeded();
     await expect.poll(() => img.evaluate((element: HTMLImageElement) => element.complete && element.naturalWidth > 0)).toBeTruthy();
+    await expect.poll(() => img.evaluate((element: HTMLImageElement) => element.currentSrc)).toMatch(/-320\.webp\?/);
   }
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
   await page.getByRole("button", { name: "Langue", exact: true }).focus();
@@ -51,4 +61,29 @@ test("mobile reading, screenshots, skip link and language dialog work with a key
   await page.keyboard.press("Escape");
   await expect(page.getByRole("dialog")).not.toBeVisible();
   await expect(page.getByRole("button", { name: "Langue", exact: true })).toBeFocused();
+});
+
+test.describe("mobile navigation without JavaScript", () => {
+  test.use({ javaScriptEnabled: false, viewport: { width: 375, height: 812 } });
+
+  test("the menu opens with the keyboard, closes with Escape and follows links", async ({ page }) => {
+    await page.goto("/fr/");
+    const navigation = page.getByRole("navigation", { name: "Navigation principale" });
+    const trigger = navigation.getByRole("button", { name: "Menu", exact: true });
+    const home = navigation.getByRole("link", { name: "Accueil", exact: true });
+    const security = navigation.getByRole("link", { name: "Sécurité", exact: true });
+
+    await trigger.focus();
+    await page.keyboard.press("Enter");
+    await expect(home).toHaveAttribute("aria-current", "page");
+    await page.keyboard.press("Tab");
+    await expect(home).toBeFocused();
+    await page.keyboard.press("Escape");
+    await expect(home).toBeHidden();
+    await expect(trigger).toBeFocused();
+
+    await page.keyboard.press("Enter");
+    await security.click();
+    await expect(page).toHaveURL(/\/fr\/security\/$/);
+  });
 });

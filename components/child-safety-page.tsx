@@ -11,7 +11,7 @@ export function ChildSafetyPage({ locale }: { locale: Locale }) {
   const contactHref = `mailto:${supportEmail}?subject=${encodeURIComponent(copy.emailSubject)}`;
 
   return (
-    <main id="main-content" className="information-page child-safety-page">
+    <main id="main-content" tabIndex={-1} className="information-page child-safety-page">
       <div className="shell legal-content">
         <p className="eyebrow">{copy.eyebrow}</p>
         <article className="legal-document" lang={locale}>

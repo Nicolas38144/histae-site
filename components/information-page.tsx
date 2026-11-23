@@ -15,7 +15,7 @@ export function InformationPage({ locale, page, children, withSourceCode = false
 }) {
   const { common } = getMessagesForLocale(locale);
   return (
-    <main id="main-content" className="information-page illustrated-page">
+    <main id="main-content" tabIndex={-1} className="information-page illustrated-page">
       <section className="shell page-intro" aria-labelledby="page-title">
         <p className="eyebrow">{page.eyebrow}</p>
         <h1 id="page-title">{page.title}</h1>

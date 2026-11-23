@@ -61,7 +61,7 @@ export default async function LegalPage({ params }: LegalPageProps) {
   ]);
 
   return (
-    <main id="main-content" className="information-page legal-page">
+    <main id="main-content" tabIndex={-1} className="information-page legal-page">
       <div className="shell legal-content">
         <p className="eyebrow">{t("footer.legalTitle")}</p>
         <article className="legal-document" lang={lang}>

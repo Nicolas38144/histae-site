@@ -33,7 +33,7 @@ export function AccountDataPage({ locale, copy }: { locale: Locale; copy: Copy }
     { code: "sensitive_profile", title: copy.sensitiveTitle, body: copy.sensitiveBody, action: copy.sensitiveAction, success: copy.successSensitive },
   ] as const;
   const selected = categories.find(category => category.code === data.confirmation);
-  return <main id="main-content" className="information-page account-data-page">
+  return <main id="main-content" tabIndex={-1} className="information-page account-data-page">
     <div className="shell account-data-shell">
       <header className="account-intro">
         <p className="eyebrow">Histae</p><h1>{copy.title}</h1><p>{copy.intro}</p>

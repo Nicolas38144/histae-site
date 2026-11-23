@@ -14,7 +14,7 @@ export async function FaqPage({ locale }: { locale: Locale }) {
   const commercialValues = getCommercialValues();
 
   return (
-    <main id="main-content" className="information-page faq-page">
+    <main id="main-content" tabIndex={-1} className="information-page faq-page">
       <section className="shell page-intro" aria-labelledby="page-title">
         <p className="eyebrow">{messages.faq.eyebrow}</p>
         <h1 id="page-title">{messages.faq.title}</h1>

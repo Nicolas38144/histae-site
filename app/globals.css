@@ -8,6 +8,7 @@
   --line: rgba(249, 247, 242, 0.14);
   --panel: rgba(255, 255, 255, 0.055);
   --shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+  --site-header-height: 76px;
   color-scheme: dark;
 }
 
@@ -65,6 +66,8 @@ h1, h2, h3 { text-wrap: balance; }
 }
 
 .skip-link:focus { transform: translateY(0); }
+#main-content { scroll-margin-block-start: calc(var(--site-header-height) + 0.5rem); }
+#main-content:focus-visible { outline-offset: -3px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
 :focus-visible { outline: 3px solid #f6be73; outline-offset: 4px; }
@@ -82,7 +85,7 @@ h1, h2, h3 { text-wrap: balance; }
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  min-height: 76px;
+  min-height: var(--site-header-height);
   gap: 2rem;
 }
 
@@ -99,7 +102,19 @@ h1, h2, h3 { text-wrap: balance; }
 .wordmark-logo { display: block; width: 154px; max-width: 100%; height: auto; }
 .wordmark-symbol { display: none; }
 
-.site-navigation { display: flex; justify-content: center; gap: clamp(1rem, 2.4vw, 2rem); }
+.site-menu {
+  position: static;
+  display: flex;
+  justify-content: center;
+  gap: clamp(1rem, 2.4vw, 2rem);
+  inline-size: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  list-style: none;
+}
 
 .site-navigation a, .language-trigger {
   color: var(--muted);
@@ -110,6 +125,7 @@ h1, h2, h3 { text-wrap: balance; }
 }
 
 .site-navigation a:hover, .site-navigation a[aria-current="page"], .language-trigger:hover { color: var(--ink); }
+.site-navigation a[aria-current="page"] { text-decoration: underline; text-underline-offset: 0.3em; }
 
 .header-actions { display: flex; align-items: center; gap: 0.9rem; }
 
@@ -364,15 +380,43 @@ h1, h2, h3 { text-wrap: balance; }
 .source-reveal .source-grid { margin-top: 2rem; }
 
 @media (max-width: 1120px) {
-  .header-content { grid-template-columns: minmax(0, 1fr) auto auto; min-height: 68px; gap: 0.7rem; }
-  .menu-trigger { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.4rem; border: 0; background: transparent; cursor: pointer; font-size: 0.78rem; font-weight: 700; }
-  .menu-lines { display: grid; gap: 4px; }
-  .menu-lines i { display: block; width: 1.1rem; height: 1px; background: var(--ink); }
-  .site-navigation { position: absolute; top: 100%; left: 0; display: none; width: 100%; padding: 1.1rem 24px 1.4rem; border-bottom: 1px solid var(--line); background: #111a2a; box-shadow: var(--shadow); }
-  .site-navigation[data-open="true"] { display: grid; justify-content: stretch; gap: 0.15rem; }
-  .site-navigation a { padding: 0.8rem 0; font-size: 1rem; }
+  :root { --site-header-height: 68px; }
+  .header-content { grid-template-columns: minmax(0, 1fr) auto; gap: 0.7rem; }
+  .site-navigation { grid-column: 1 / -1; order: 1; }
+  .site-menu { flex-wrap: wrap; gap: 0.15rem 1rem; padding-block-end: 0.6rem; }
+  .site-navigation a { display: block; padding: 0.6rem 0; font-size: 1rem; }
   .language-trigger > span:last-child { display: none; }
   .header-cta { min-height: 2.35rem; padding-inline: 0.8rem; font-size: 0.78rem; }
+
+  @supports not selector(:popover-open) {
+    .site-header { position: relative; }
+  }
+
+  @supports selector(:popover-open) {
+    .site-header { anchor-name: --site-header; }
+    .header-content { grid-template-columns: minmax(0, 1fr) auto auto; }
+    .site-navigation { grid-column: auto; order: 0; }
+    .menu-trigger { display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; min-inline-size: 44px; min-block-size: 44px; padding: 0.4rem; border: 0; background: transparent; cursor: pointer; font-size: 0.78rem; font-weight: 700; }
+    .menu-lines { display: grid; gap: 4px; }
+    .menu-lines i { display: block; width: 1.1rem; height: 1px; background: var(--ink); }
+    .site-menu {
+      display: none;
+      position: fixed;
+      inset: auto 0;
+      inset-block-start: calc(var(--site-header-height) + 1px);
+      inset-block-start: anchor(--site-header bottom, calc(var(--site-header-height) + 1px));
+      inline-size: 100%;
+      max-inline-size: none;
+      max-block-size: calc(100dvh - var(--site-header-height) - 1px);
+      overflow: auto;
+      padding: 1.1rem 24px 1.4rem;
+      border-block-end: 1px solid var(--line);
+      background: #111a2a;
+      box-shadow: var(--shadow);
+    }
+    .site-menu:popover-open { display: grid; justify-content: stretch; }
+    .site-menu a { padding: 0.8rem 0; }
+  }
 }
 
 @media (max-width: 850px) {

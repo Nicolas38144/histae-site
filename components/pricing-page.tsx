@@ -13,7 +13,7 @@ export async function PricingPage({ locale }: { locale: Locale }) {
   const values = getCommercialValues();
 
   return (
-    <main id="main-content" className="information-page pricing-page">
+    <main id="main-content" tabIndex={-1} className="information-page pricing-page">
       <section className="shell page-intro" aria-labelledby="page-title">
         <p className="eyebrow">{t("pricing.eyebrow")}</p>
         <h1 id="page-title">{t("pricing.title")}</h1>

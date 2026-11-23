@@ -8,7 +8,7 @@ import { AppScreenshot } from "./app-screenshot";
 export async function HomePage({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale });
   return (
-    <main id="main-content">
+    <main id="main-content" tabIndex={-1}>
       <StructuredData locale={locale} />
       <section className="hero shell screenshot-hero" aria-labelledby="hero-title">
         <div className="hero-copy">
