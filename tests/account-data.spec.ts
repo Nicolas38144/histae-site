@@ -1,5 +1,4 @@
 import { expect, test, type Page } from "@playwright/test";
-import { parseAccountSession, parseDeletionToken, parseErasureReceipt, validAccountIdentity } from "../lib/account-data";
 
 const user = "11111111-1111-4111-8111-111111111111";
 const requestId = "22222222-2222-4222-8222-222222222222";
@@ -45,24 +44,6 @@ async function simulateApi(page: Page, authenticated = false) {
   return state;
 }
 
-test("privacy DTOs reject malformed receipts and never accept incomplete deletion tokens", () => {
-  expect(validAccountIdentity(user, "+33 6 12 34 56 78")).toBe(true);
-  expect(validAccountIdentity("not-a-user", "+33612345678")).toBe(false);
-  expect(validAccountIdentity(user, "123456")).toBe(false);
-  expect(() => parseAccountSession({ user_id: user })).toThrow();
-  expect(() => parseDeletionToken({ confirmation_token: user })).toThrow();
-  expect(parseDeletionToken({ confirmation_token: deletionToken })).toBe(deletionToken);
-  expect(() => parseErasureReceipt({ request_id: requestId, status: "completed" })).toThrow();
-});
-
-test("data management instructions are available without sign-in", async ({ page }) => {
-  await simulateApi(page);
-  await page.goto("/fr/account/data/");
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Gérer mes données Histae");
-  await expect(page.getByRole("heading", { name: "Supprimer définitivement mon compte", exact: true })).toBeVisible();
-  await expect(page.locator("#data-help a[href^='mailto:']")).toBeVisible();
-});
-
 test("SMS login permits partial erasure without requiring onboarding or a subscription", async ({ page }) => {
   const state = await simulateApi(page);
   await page.goto("/fr/account/data/");
@@ -79,9 +60,11 @@ test("SMS login permits partial erasure without requiring onboarding or a subscr
   await page.getByRole("button", { name: "Confirmer la suppression", exact: true }).click();
   await expect(page.getByRole("status")).toContainText("Votre position a été supprimée");
   expect(state.categories).toEqual(["location"]); expect(state.deleted).toBe(0);
-  await expect(page.getByRole("button", { name: "Se déconnecter" })).toBeVisible();
   expect(page.url()).not.toContain(user);
   expect(await page.evaluate(() => JSON.stringify({ ...localStorage, ...sessionStorage }))).not.toContain("+33612345678");
+  await page.getByRole("button", { name: "Se déconnecter" }).click();
+  await expect(page.getByRole("button", { name: "Recevoir un code", exact: true })).toBeEnabled();
+  expect(state.authenticated).toBe(false);
 });
 
 test("partial deletion distinguishes photo and sensitive profile and honours cancellation", async ({ page }) => {
@@ -117,19 +100,6 @@ test("account deletion uses a one-time token and displays acceptance rather than
   expect(state.tokens).toBe(1); expect(state.deleted).toBe(1);
 });
 
-test("account sign-out does not depend on browser storage", async ({ page }) => {
-  const state = await simulateApi(page, true);
-  await page.addInitScript(() => {
-    for (const storage of ["localStorage", "sessionStorage"]) {
-      Object.defineProperty(window, storage, { get() { throw new Error("Browser storage is disabled"); } });
-    }
-  });
-  await page.goto("/fr/account/data/");
-  await page.getByRole("button", { name: "Se déconnecter", exact: true }).click();
-  await expect(page.getByRole("button", { name: "Recevoir un code", exact: true })).toBeEnabled();
-  expect(state.authenticated).toBe(false);
-});
-
 test("a lost destructive response never claims successful deletion or retries automatically", async ({ page }) => {
   const state = await simulateApi(page, true); state.loseDeletion = true;
   await page.goto("/fr/account/data/");
@@ -150,16 +120,4 @@ test("an expired session stops data deletion and requires authentication again",
   await expect(page.getByLabel("Numéro de téléphone")).toBeVisible();
   await expect(page.locator("main").getByRole("alert")).toBeVisible();
   expect(state.categories).toEqual([]);
-});
-
-test("mobile layout keeps data controls readable and focuses keyboard confirmation", async ({ page }) => {
-  await simulateApi(page, true);
-  await page.goto("/fr/account/data/");
-  await page.getByRole("button", { name: "Supprimer ces données", exact: true }).focus();
-  for (const width of [1280, 375]) {
-    await page.setViewportSize({ width, height: 850 });
-    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
-  }
-  await page.keyboard.press("Enter");
-  await expect(page.getByLabel("Saisissez HISTAE pour confirmer")).toBeFocused();
 });

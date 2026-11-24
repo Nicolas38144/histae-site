@@ -101,18 +101,17 @@ If invoking Next.js directly, run that postbuild script separately. See [SEO](se
 for its coverage and production checks. The same postbuild also generates the per-page CSP map
 in `.generated/`; keep it with the matching HTML when deploying or rolling back.
 
-Account transport tests use synthetic responses and do not require a browser:
+Run the validation, JSON-LD and HTTP client unit tests without a browser or a local server:
 
 ```bash
-pnpm exec playwright test tests/web-client.spec.ts tests/security.spec.ts
+pnpm test:unit
 ```
 
-For browser scenarios, install Chromium once and run the relevant cases:
+For the account and mobile navigation scenarios, install Chromium once:
 
 ```bash
 pnpm exec playwright install chromium
-pnpm exec playwright test tests/marketing.spec.ts
-pnpm exec playwright test tests/account-data.spec.ts
+pnpm test
 ```
 
 Set `PLAYWRIGHT_CHANNEL=msedge` to use an already installed Edge instead of Playwright Chromium.
@@ -120,9 +119,15 @@ Playwright starts a dedicated local development server. Account fixtures simulat
 sending SMS or deleting real accounts. Add regression tests for important behavior, rather than testing
 every presentation change. Report what ran; do not treat fixture tests as production verification.
 
-For CSP and synthetic injection checks against the built export, run `pnpm build` followed by
-`pnpm exec playwright test --config=playwright.export.config.ts`. See [Security](security.md)
-for the separate runtime validation and outstanding dependency finding.
+Run `pnpm build` before the export checks. The export suite runs two browser scenarios for
+the CSP and two checks for the generated headers and retired URLs. To run just the browser tests
+against the export, select `tests/export-security.spec.ts`.
+
+```bash
+pnpm exec playwright test --config=playwright.export.config.ts
+```
+
+See [Security](security.md) for the separate runtime validation and outstanding dependency finding.
 
 Generated `.next/`, `out/`, `.generated/` and TypeScript build caches are not source files. Dependencies and the
 lockfile should stay aligned with the package manager declared in `package.json`.
@@ -131,9 +136,8 @@ lockfile should stay aligned with the package manager declared in `package.json`
 
 The local export was checked on 2026-10-23 with Edge and axe-core 4.13.0: ten representative
 routes, desktop and 375 px mobile, using the WCAG 2 A/AA and 2.1 AA rule sets. No automated
-violations or horizontal overflow were reported in those twenty views. The focused browser
-tests also exercise the keyboard skip link, language dialog focus/closing, reduced motion
-and loading of the three home screenshots. This does not establish full WCAG conformance.
+violations or horizontal overflow were reported in those twenty views. The mobile browser test
+checks keyboard navigation with JavaScript disabled.
 
 The twenty localized WebP screenshots were refreshed from the current app on 2026-11-06.
 Lazy loading is retained except for the hero. Keep each capture below 100 KiB when refreshing
@@ -156,7 +160,7 @@ demonstration, followed by a profile-writing guide. Home links directly to the d
 in component memory; the demo sends no account, message or consent requests. The FAQ searches
 localized answers and combines search with topic filters. Pricing and FAQ include a channel
 selector for Google Play and Apple subscription help. Copy lives in discovery.json in
-all four locales. Run `pnpm exec playwright test tests/discovery.spec.ts` for these interactions.
+all four locales.
 
 
 ### Discovery feature boundaries
@@ -171,8 +175,7 @@ public download badge or infer an enrolment URL from the package name. The owner
 Google Play listing is stored in `config/site.json` under `storeLinks.androidTest` and displayed
 with an invited-tester label. Opening it does not grant test access. iOS remains in preparation.
 When access changes, update availability, home, footer, FAQ and SEO together. Keep test access
-distinct from a free Premium trial. `tests/availability.spec.ts` checks the Google Play listing,
-invitation wording and absence of an App Store link on the French mobile page.
+distinct from a free Premium trial.
 
 The product copy now covers reading controls, saved message/answer drafts, unread counts,
 profile access from chats, withdrawal/replacement of shared photos and the continuation action

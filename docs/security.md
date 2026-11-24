@@ -72,17 +72,17 @@ References: [Next.js security release](https://nextjs.org/blog/nextjs-security-u
 
 ```bash
 pnpm build
-pnpm exec playwright test
+pnpm test:unit
+pnpm test
 pnpm exec playwright test --config=playwright.export.config.ts
 pnpm audit --prod --audit-level=high
 pnpm audit --audit-level=high
 ```
 
-The export suite serves the built files with the generated policies on localhost, checks
-hashes and header size across the export, exercises hydration on representative French pages,
-and verifies that injected inline scripts and event handlers are blocked. It uses synthetic API
-responses and a local Node test server. It does not validate the Caddy parser, real account
-operations or the CDN configuration.
+The export suite serves the built files with the generated policies on localhost. Two browser
+scenarios exercise the language dialog and account page under the CSP, including blocking injected
+scripts and event handlers. Checks without a browser validate hashes, header sizes and the 404
+responses for retired URLs. The suite uses synthetic API responses and a local Node test server.
 
 For the actual runtime, build and validate the image with Docker:
 

@@ -41,7 +41,5 @@ Child-safety disclosures now state the same age/identity and automated-image-ana
 
 ## Verification
 
-The production postbuild checks every configured legal page and locale, links, metadata and generated
-CSP. `tests/legal-policies.spec.ts` checks all six documents without JavaScript or authentication,
-including the new approximate-location and registration disclosures; `tests/child-safety.spec.ts`
-covers the separate child-safety pages. These checks do not establish legal compliance.
+The production postbuild checks the legal and child-safety page exports, metadata and footer
+links in all four languages. Review the translated disclosures as part of the legal approval.
