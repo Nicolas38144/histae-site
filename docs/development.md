@@ -171,7 +171,8 @@ public download badge or infer an enrolment URL from the package name. The owner
 Google Play listing is stored in `config/site.json` under `storeLinks.androidTest` and displayed
 with an invited-tester label. Opening it does not grant test access. iOS remains in preparation.
 When access changes, update availability, home, footer, FAQ and SEO together. Keep test access
-distinct from a free Premium trial. `tests/availability.spec.ts` checks this distinction.
+distinct from a free Premium trial. `tests/availability.spec.ts` checks the Google Play listing,
+invitation wording and absence of an App Store link on the French mobile page.
 
 The product copy now covers reading controls, saved message/answer drafts, unread counts,
 profile access from chats, withdrawal/replacement of shared photos and the continuation action

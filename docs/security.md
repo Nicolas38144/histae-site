@@ -79,9 +79,10 @@ pnpm audit --audit-level=high
 ```
 
 The export suite serves the built files with the generated policies on localhost, checks
-hashes and header size, exercises hydration in four languages and verifies that injected
-inline scripts/event handlers are blocked. It uses synthetic API responses and a local
-Node test server. It does not validate the Caddy parser, real account operations or the CDN configuration.
+hashes and header size across the export, exercises hydration on representative French pages,
+and verifies that injected inline scripts and event handlers are blocked. It uses synthetic API
+responses and a local Node test server. It does not validate the Caddy parser, real account
+operations or the CDN configuration.
 
 For the actual runtime, build and validate the image with Docker:
 

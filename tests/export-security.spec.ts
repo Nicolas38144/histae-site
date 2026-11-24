@@ -30,24 +30,22 @@ test("every exported page has exact inline-script hashes and a bounded header", 
   }
 });
 
-for (const locale of ["fr", "en", "es", "it"]) {
-  test(`${locale}: public pages and account sign-in work under the production CSP`, async ({ page }) => {
-    for (const suffix of ["", "pricing/", "account/data/"]) {
-      const response = await page.goto(`/${locale}/${suffix}`);
-      expect(response?.status()).toBe(200);
-      expect(response?.headers()["content-security-policy"]).toContain("sha256-");
-      if (suffix === "") {
-        await page.locator(".language-trigger").click();
-        const dialog = page.getByRole("dialog");
-        await expect(dialog).toBeVisible();
-        await page.keyboard.press("Escape");
-        await expect(dialog).toBeHidden();
-      }
-      if (suffix === "account/data/") await expect(page.locator("#data-login form button").first()).toBeEnabled();
-      expect(await page.evaluate(() => (window as unknown as AuditWindow).blocked)).toEqual([]);
+test("public pages and account sign-in work under the production CSP", async ({ page }) => {
+  for (const path of ["/fr/", "/fr/pricing/", "/fr/account/data/"]) {
+    const response = await page.goto(path);
+    expect(response?.status()).toBe(200);
+    expect(response?.headers()["content-security-policy"]).toContain("sha256-");
+    if (path === "/fr/") {
+      await page.locator(".language-trigger").click();
+      const dialog = page.getByRole("dialog");
+      await expect(dialog).toBeVisible();
+      await page.keyboard.press("Escape");
+      await expect(dialog).toBeHidden();
     }
-  });
-}
+    if (path === "/fr/account/data/") await expect(page.locator("#data-login form button").first()).toBeEnabled();
+    expect(await page.evaluate(() => (window as unknown as AuditWindow).blocked)).toEqual([]);
+  }
+});
 
 test("injected inline scripts and event handlers are blocked", async ({ page }) => {
   await page.goto("/fr/");

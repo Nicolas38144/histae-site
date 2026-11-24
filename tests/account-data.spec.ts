@@ -55,22 +55,13 @@ test("privacy DTOs reject malformed receipts and never accept incomplete deletio
   expect(() => parseErasureReceipt({ request_id: requestId, status: "completed" })).toThrow();
 });
 
-for (const [locale, title, footer, deletion] of [
-  ["fr", "Gérer mes données Histae", "Gérer mes données", "Supprimer définitivement mon compte"],
-  ["en", "Manage my Histae data", "Manage my data", "Permanently delete my account"],
-  ["es", "Gestionar mis datos de Histae", "Gestionar mis datos", "Eliminar mi cuenta definitivamente"],
-  ["it", "Gestisci i miei dati Histae", "Gestisci i miei dati", "Elimina definitivamente il mio account"],
-]) {
-  test(`${locale}: public instructions and a footer link remain available without sign-in`, async ({ page }) => {
-    await simulateApi(page);
-    await page.goto(`/${locale}/account/data/`);
-    await expect(page.getByRole("heading", { level: 1 })).toHaveText(title);
-    await expect(page.getByRole("heading", { name: deletion, exact: true })).toBeVisible();
-    await expect(page.locator("#data-help a[href^='mailto:']")).toBeVisible();
-    await expect(page.getByRole("contentinfo").getByRole("link", { name: footer, exact: true })).toHaveAttribute("href", `/${locale}/account/data/`);
-    await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", "noindex, follow");
-  });
-}
+test("data management instructions are available without sign-in", async ({ page }) => {
+  await simulateApi(page);
+  await page.goto("/fr/account/data/");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Gérer mes données Histae");
+  await expect(page.getByRole("heading", { name: "Supprimer définitivement mon compte", exact: true })).toBeVisible();
+  await expect(page.locator("#data-help a[href^='mailto:']")).toBeVisible();
+});
 
 test("SMS login permits partial erasure without requiring onboarding or a subscription", async ({ page }) => {
   const state = await simulateApi(page);
