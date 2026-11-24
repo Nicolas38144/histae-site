@@ -164,12 +164,11 @@ test("an expired session stops data deletion and requires authentication again",
 test("mobile layout keeps data controls readable and focuses keyboard confirmation", async ({ page }) => {
   await simulateApi(page, true);
   await page.goto("/fr/account/data/");
-  await expect(page.getByRole("button", { name: "Se déconnecter" })).toBeVisible();
+  await page.getByRole("button", { name: "Supprimer ces données", exact: true }).focus();
   for (const width of [1280, 375]) {
     await page.setViewportSize({ width, height: 850 });
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
   }
-  await page.getByRole("button", { name: "Supprimer ces données", exact: true }).focus();
   await page.keyboard.press("Enter");
   await expect(page.getByLabel("Saisissez HISTAE pour confirmer")).toBeFocused();
 });

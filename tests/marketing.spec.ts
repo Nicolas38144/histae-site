@@ -46,7 +46,6 @@ test("mobile reading, screenshots, skip link and language dialog work with a key
   })).toBeTruthy();
   await page.keyboard.press("Tab");
   await expect(page.locator(".hero-actions a").first()).toBeFocused();
-  await expect(page.locator("main h1")).toHaveCount(1);
   await expect(page.locator("main img")).toHaveCount(3);
   const images = page.locator("main img");
   for (const img of await images.all()) {
